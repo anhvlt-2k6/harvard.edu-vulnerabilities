@@ -17,3 +17,110 @@
 <taskbegin task="Parallel DNS resolution of 1 host." time="1730738390"/>
 <taskend task="Parallel DNS resolution of 1 host." time="1730738390"/>
 <taskbegin task="Connect Scan" time="1730738390"/>
+<taskend task="Connect Scan" time="1730738395" extrainfo="1000 total ports"/>
+<taskbegin task="Service scan" time="1730738395"/>
+<taskend task="Service scan" time="1730738413" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1730738413"/>
+<taskend task="NSE" time="1730738413"/>
+<taskbegin task="NSE" time="1730738413"/>
+<taskend task="NSE" time="1730738413"/>
+<taskbegin task="NSE" time="1730738413"/>
+<taskend task="NSE" time="1730738413"/>
+<host starttime="1730738390" endtime="1730738413"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="34.233.25.204" addrtype="ipv4"/>
+<hostnames>
+<hostname name="author-v5.uat.lxp.huit.harvard.edu" type="user"/>
+<hostname name="ec2-34-233-25-204.compute-1.amazonaws.com" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="998">
+<extrareasons reason="no-responses" count="998"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="awselb/2.0" servicefp="SF-Port80-TCP:V=7.80%I=7%D=11/4%Time=6728F8E1%P=x86_64-pc-linux-gnu%r(GetRequest,17B,&quot;HTTP/1\.1\x20301\x20Moved\x20Permanently\r\nServer:\x20awselb/2\.0\r\nDate:\x20Mon,\x2004\x20Nov\x202024\x2016:40:01\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20134\r\nConnection:\x20close\r\nLocation:\x20https://lxp-uat-tailor-alb-322d84a-244513027\.us-east-1\.elb\.amazonaws\.com:443/\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;301\x20Moved\x20Permanently&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;301\x20Moved\x20Permanently&lt;/h1&gt;&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(HTTPOptions,17B,&quot;HTTP/1\.1\x20301\x20Moved\x20Permanently\r\nServer:\x20awselb/2\.0\r\nDate:\x20Mon,\x2004\x20Nov\x202024\x2016:40:01\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20134\r\nConnection:\x20close\r\nLocation:\x20https://lxp-uat-tailor-alb-322d84a-244513027\.us-east-1\.elb\.amazonaws\.com:443/\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;301\x20Moved\x20Permanently&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;301\x20Moved\x20Permanently&lt;/h1&gt;&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(RTSPRequest,7A,&quot;&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(X11Probe,110,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nServer:\x20awselb/2\.0\r\nDate:\x20Mon,\x2004\x20Nov\x202024\x2016:40:01\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20122\r\nConnection:\x20close\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(FourOhFourRequest,19E,&quot;HTTP/1\.1\x20301\x20Moved\x20Permanently\r\nServer:\x20awselb/2\.0\r\nDate:\x20Mon,\x2004\x20Nov\x202024\x2016:40:01\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20134\r\nConnection:\x20close\r\nLocation:\x20https://lxp-uat-tailor-alb-322d84a-244513027\.us-east-1\.elb\.amazonaws\.com:443/nice%20ports%2C/Tri%6Eity\.txt%2ebak\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;301\x20Moved\x20Permanently&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;301\x20Moved\x20Permanently&lt;/h1&gt;&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;);" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  FourOhFourRequest: &#xa;    HTTP/1.1 301 Moved Permanently&#xa;    Server: awselb/2.0&#xa;    Date: Mon, 04 Nov 2024 16:40:01 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 134&#xa;    Connection: close&#xa;    Location: https://lxp-uat-tailor-alb-322d84a-244513027.us-east-1.elb.amazonaws.com:443/nice%20ports%2C/Tri%6Eity.txt%2ebak&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;301 Moved Permanently&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;301 Moved Permanently&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;&#xa;  GetRequest, HTTPOptions: &#xa;    HTTP/1.1 301 Moved Permanently&#xa;    Server: awselb/2.0&#xa;    Date: Mon, 04 Nov 2024 16:40:01 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 134&#xa;    Connection: close&#xa;    Location: https://lxp-uat-tailor-alb-322d84a-244513027.us-east-1.elb.amazonaws.com:443/&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;301 Moved Permanently&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;301 Moved Permanently&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;&#xa;  RTSPRequest: &#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;&#xa;  X11Probe: &#xa;    HTTP/1.1 400 Bad Request&#xa;    Server: awselb/2.0&#xa;    Date: Mon, 04 Nov 2024 16:40:01 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 122&#xa;    Connection: close&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;"><elem key="FourOhFourRequest">&#xa;    HTTP/1.1 301 Moved Permanently&#xa;    Server: awselb/2.0&#xa;    Date: Mon, 04 Nov 2024 16:40:01 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 134&#xa;    Connection: close&#xa;    Location: https://lxp-uat-tailor-alb-322d84a-244513027.us-east-1.elb.amazonaws.com:443/nice%20ports%2C/Tri%6Eity.txt%2ebak&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;301 Moved Permanently&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;301 Moved Permanently&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;</elem>
+<elem key="GetRequest, HTTPOptions">&#xa;    HTTP/1.1 301 Moved Permanently&#xa;    Server: awselb/2.0&#xa;    Date: Mon, 04 Nov 2024 16:40:01 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 134&#xa;    Connection: close&#xa;    Location: https://lxp-uat-tailor-alb-322d84a-244513027.us-east-1.elb.amazonaws.com:443/&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;301 Moved Permanently&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;301 Moved Permanently&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;</elem>
+<elem key="RTSPRequest">&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;</elem>
+<elem key="X11Probe">&#xa;    HTTP/1.1 400 Bad Request&#xa;    Server: awselb/2.0&#xa;    Date: Mon, 04 Nov 2024 16:40:01 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 122&#xa;    Connection: close&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;</elem>
+</script><script id="http-server-header" output="awselb/2.0"><elem>awselb/2.0</elem>
+</script><script id="http-title" output="403 Forbidden"><elem key="title">403 Forbidden</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" product="awselb/2.0" servicefp="SF-Port443-TCP:V=7.80%T=SSL%I=7%D=11/4%Time=6728F8E7%P=x86_64-pc-linux-gnu%r(GetRequest,3F7,&quot;HTTP/1\.1\x20503\x20Service\x20Temporarily\x20Unavailable\r\nServer:\x20awselb/2\.0\r\nDate:\x20Mon,\x2004\x20Nov\x202024\x2016:40:07\x20GMT\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nContent-Length:\x20830\r\nConnection:\x20close\r\n\r\n\n&lt;!DOCTYPE\x20html&gt;\n&lt;html\x20lang=\&quot;en\&quot;&gt;\n\n&lt;head&gt;\n&lt;meta\x20http-equiv=\&quot;Content-Type\&quot;\x20content=\&quot;text/html;\x20charset=UTF-8\&quot;&gt;\n&lt;title&gt;Protected\x20System:\x20VPN\x20Required&lt;/title&gt;\n&lt;meta\x20name=\&quot;viewport\&quot;\x20content=\&quot;width=device-width,\x20initial-scale=1\&quot;&gt;\n&lt;link\x20rel=\&quot;stylesheet\&quot;\x20href=\&quot;https://lxp-uat-tai-vpnmessage-20240216220630195800000002\.s3\.amazonaws\.com/assets/main\.css\&quot;&gt;\n&lt;/head&gt;\n\n&lt;body&gt;\n&lt;main&gt;\n&lt;img\x20class=\&quot;logo\&quot;\x20alt=\&quot;HUIT\x20logo\&quot;\x20src=\&quot;https://lxp-uat-tai-vpnmessage-20240216220630195800000002\.s3\.amazonaws\.com/assets/logo\.png\&quot;&gt;\n&lt;h1&gt;Protected\x20System&lt;/h1&gt;\n&lt;p&gt;\nThe\x20resource\x20you\x20are\x20trying\x20to\x20access\x20is\x20protected\x20and\x20can\x20only\x20be\x20accessed\x20by\x20members\x20\nof\x20the\x20Harvard\x20LXP\x20technical\x20team\.\x20If\x20you\x20expect\x20to\x20have\x20access\x20to\x20this\x20system,\x20please\x20\ncontact&quot;)%r(HTTPOptions,3F7,&quot;HTTP/1\.1\x20503\x20Service\x20Temporarily\x20Unavailable\r\nServer:\x20awselb/2\.0\r\nDate:\x20Mon,\x2004\x20Nov\x202024\x2016:40:07\x20GMT\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nContent-Length:\x20830\r\nConnection:\x20close\r\n\r\n\n&lt;!DOCTYPE\x20html&gt;\n&lt;html\x20lang=\&quot;en\&quot;&gt;\n\n&lt;head&gt;\n&lt;meta\x20http-equiv=\&quot;Content-Type\&quot;\x20content=\&quot;text/html;\x20charset=UTF-8\&quot;&gt;\n&lt;title&gt;Protected\x20System:\x20VPN\x20Required&lt;/title&gt;\n&lt;meta\x20name=\&quot;viewport\&quot;\x20content=\&quot;width=device-width,\x20initial-scale=1\&quot;&gt;\n&lt;link\x20rel=\&quot;stylesheet\&quot;\x20href=\&quot;https://lxp-uat-tai-vpnmessage-20240216220630195800000002\.s3\.amazonaws\.com/assets/main\.css\&quot;&gt;\n&lt;/head&gt;\n\n&lt;body&gt;\n&lt;main&gt;\n&lt;img\x20class=\&quot;logo\&quot;\x20alt=\&quot;HUIT\x20logo\&quot;\x20src=\&quot;https://lxp-uat-tai-vpnmessage-20240216220630195800000002\.s3\.amazonaws\.com/assets/logo\.png\&quot;&gt;\n&lt;h1&gt;Protected\x20System&lt;/h1&gt;\n&lt;p&gt;\nThe\x20resource\x20you\x20are\x20trying\x20to\x20access\x20is\x20protected\x20and\x20can\x20only\x20be\x20accessed\x20by\x20members\x20\nof\x20the\x20Harvard\x20LXP\x20technical\x20team\.\x20If\x20you\x20expect\x20to\x20have\x20access\x20to\x20this\x20system,\x20please\x20\ncontact&quot;);" tunnel="ssl" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  GetRequest, HTTPOptions: &#xa;    HTTP/1.1 503 Service Temporarily Unavailable&#xa;    Server: awselb/2.0&#xa;    Date: Mon, 04 Nov 2024 16:40:07 GMT&#xa;    Content-Type: text/html; charset=utf-8&#xa;    Content-Length: 830&#xa;    Connection: close&#xa;    &lt;!DOCTYPE html&gt;&#xa;    &lt;html lang=&quot;en&quot;&gt;&#xa;    &lt;head&gt;&#xa;    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;&#xa;    &lt;title&gt;Protected System: VPN Required&lt;/title&gt;&#xa;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;&#xa;    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://lxp-uat-tai-vpnmessage-20240216220630195800000002.s3.amazonaws.com/assets/main.css&quot;&gt;&#xa;    &lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;main&gt;&#xa;    &lt;img class=&quot;logo&quot; alt=&quot;HUIT logo&quot; src=&quot;https://lxp-uat-tai-vpnmessage-20240216220630195800000002.s3.amazonaws.com/assets/logo.png&quot;&gt;&#xa;    &lt;h1&gt;Protected System&lt;/h1&gt;&#xa;    resource you are trying to access is protected and can only be accessed by members &#xa;    Harvard LXP technical team. If you expect to have access to this system, please &#xa;    contact"><elem key="GetRequest, HTTPOptions">&#xa;    HTTP/1.1 503 Service Temporarily Unavailable&#xa;    Server: awselb/2.0&#xa;    Date: Mon, 04 Nov 2024 16:40:07 GMT&#xa;    Content-Type: text/html; charset=utf-8&#xa;    Content-Length: 830&#xa;    Connection: close&#xa;    &lt;!DOCTYPE html&gt;&#xa;    &lt;html lang=&quot;en&quot;&gt;&#xa;    &lt;head&gt;&#xa;    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;&#xa;    &lt;title&gt;Protected System: VPN Required&lt;/title&gt;&#xa;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;&#xa;    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://lxp-uat-tai-vpnmessage-20240216220630195800000002.s3.amazonaws.com/assets/main.css&quot;&gt;&#xa;    &lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;main&gt;&#xa;    &lt;img class=&quot;logo&quot; alt=&quot;HUIT logo&quot; src=&quot;https://lxp-uat-tai-vpnmessage-20240216220630195800000002.s3.amazonaws.com/assets/logo.png&quot;&gt;&#xa;    &lt;h1&gt;Protected System&lt;/h1&gt;&#xa;    resource you are trying to access is protected and can only be accessed by members &#xa;    Harvard LXP technical team. If you expect to have access to this system, please &#xa;    contact</elem>
+</script><script id="http-server-header" output="awselb/2.0"><elem>awselb/2.0</elem>
+</script><script id="http-title" output="403 Forbidden"><elem key="title">403 Forbidden</elem>
+</script><script id="ssl-cert" output="Subject: commonName=author-v5.uat.lxp.huit.harvard.edu&#xa;Subject Alternative Name: DNS:author-v5.uat.lxp.huit.harvard.edu&#xa;Issuer: commonName=Amazon RSA 2048 M03/organizationName=Amazon/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-09-09T00:00:00&#xa;Not valid after:  2025-10-08T23:59:59&#xa;MD5:   e1a0 75f2 ec01 5ae2 a5cb f38e 160b e0b9&#xa;SHA-1: d358 1708 9d06 c99d 20af a725 eeb0 bc96 d01a fd05"><table key="subject">
+<elem key="commonName">author-v5.uat.lxp.huit.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">Amazon RSA 2048 M03</elem>
+<elem key="organizationName">Amazon</elem>
+<elem key="countryName">US</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">2048</elem>
+<elem key="modulus">BIGNUM: 0x5623a6947d48</elem>
+<elem key="type">rsa</elem>
+<elem key="exponent">BIGNUM: 0x5623a6947cc8</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">55:D9:18:5F:D2:1C:CC:01:E1:58:B4:BE:AB:D9:55:42:01:D7:2E:02</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">8F:27:FA:A6:53:57:43:5C:52:65:C9:48:D8:75:0B:FB:DB:99:57:E6</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="value">DNS:author-v5.uat.lxp.huit.harvard.edu</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+<table>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">Full Name:&#xa;  URI:http://crl.r2m03.amazontrust.com/r2m03.crl</elem>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+</table>
+<table>
+<elem key="value">OCSP - URI:http://ocsp.r2m03.amazontrust.com&#xa;CA Issuers - URI:http://crt.r2m03.amazontrust.com/r2m03.cer</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 12:F1:4E:34:BD:53:72:4C:84:06:19:C3:8F:3F:7A:13:&#xa;                F8:E7:B5:62:87:88:9C:6D:30:05:84:EB:E5:86:26:3A&#xa;    Timestamp : Sep  9 16:43:11.324 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:34:98:97:26:F8:C0:24:6F:76:2F:F0:41:&#xa;                AC:51:E0:F3:34:CF:0B:64:16:CA:69:B6:C6:26:6F:1E:&#xa;                24:58:60:86:02:21:00:EC:8C:CB:81:78:50:A3:F1:A4:&#xa;                7D:63:52:6D:09:DF:11:EB:23:89:3A:9A:F0:FA:AC:9E:&#xa;                FA:E1:54:90:26:3D:1E&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 7D:59:1E:12:E1:78:2A:7B:1C:61:67:7C:5E:FD:F8:D0:&#xa;                87:5C:14:A0:4E:95:9E:B9:03:2F:D9:0E:8C:2E:79:B8&#xa;    Timestamp : Sep  9 16:43:11.208 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:B3:AA:93:CE:F4:1D:F9:6E:53:3E:7C:&#xa;                A4:C6:63:62:BB:90:97:78:D9:93:5D:9F:62:97:5F:A4:&#xa;                3B:7A:BB:AD:F0:02:20:44:94:D5:7D:FA:25:7F:00:3C:&#xa;                D0:46:83:EA:52:0A:C8:2B:43:E2:CD:50:F3:8D:9A:F7:&#xa;                C2:2A:74:9D:4D:01:13&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : CC:FB:0F:6A:85:71:09:65:FE:95:9B:53:CE:E9:B2:7C:&#xa;                22:E9:85:5C:0D:97:8D:B6:A9:7E:54:C0:FE:4C:0D:B0&#xa;    Timestamp : Sep  9 16:43:11.200 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:4B:77:C2:28:C7:A6:B6:DC:61:86:7C:A8:&#xa;                72:DD:8F:B8:6B:B8:4E:55:12:72:C7:C1:7A:8F:64:D4:&#xa;                57:46:F9:73:02:20:22:30:EF:F3:B7:1A:BA:67:CA:A6:&#xa;                E4:00:98:50:A5:34:2E:51:93:23:E3:E8:FE:2B:5D:A7:&#xa;                8C:1F:6B:27:28:EA</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-09-09T00:00:00</elem>
+<elem key="notAfter">2025-10-08T23:59:59</elem>
+</table>
+<elem key="md5">e1a075f2ec015ae2a5cbf38e160be0b9</elem>
+<elem key="sha1">d35817089d06c99d20afa725eeb0bc96d01afd05</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIF7zCCBNegAwIBAgIQCPorsbkhgOJCM17XdjdW5DANBgkqhkiG9w0BAQsFADA8&#xa;MQswCQYDVQQGEwJVUzEPMA0GA1UEChMGQW1hem9uMRwwGgYDVQQDExNBbWF6b24g&#xa;UlNBIDIwNDggTTAzMB4XDTI0MDkwOTAwMDAwMFoXDTI1MTAwODIzNTk1OVowLTEr&#xa;MCkGA1UEAxMiYXV0aG9yLXY1LnVhdC5seHAuaHVpdC5oYXJ2YXJkLmVkdTCCASIw&#xa;DQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALsxMMX2D3R7jcyFKfzjcbYf+QGA&#xa;Jy6KB6GTK9Wg5Vi1hQy7LhWEoVceugp/i+1z9+kV/zEk/m60cFQsayIGv1dHuItw&#xa;+1Wa7GBSllPCANdlCTzclsfRZqu7LrO6CHAnefq2H6FXOU/DE3CCWqTi0YWAwfyb&#xa;f+jYjsRpf0nxhtswLhu/TxC6jQcJ0D0ohSsZ3rZLoO7JnJmyixEeLNO7sp4d/64w&#xa;qr+vD/6RErOkBT9ZBGyefv+vDBJ1Pc0zH9fViZW02XaLfJ6ydjqHFGL61cQB/K7Z&#xa;RZOXYkI9qpOHqCq8wJ+YIrL7E2ItX8Bxx58VfggXetFs3pVUFqbXmx05L2MCAwEA&#xa;AaOCAvowggL2MB8GA1UdIwQYMBaAFFXZGF/SHMwB4Vi0vqvZVUIB1y4CMB0GA1Ud&#xa;DgQWBBSPJ/qmU1dDXFJlyUjYdQv725lX5jAtBgNVHREEJjAkgiJhdXRob3ItdjUu&#xa;dWF0Lmx4cC5odWl0LmhhcnZhcmQuZWR1MBMGA1UdIAQMMAowCAYGZ4EMAQIBMA4G&#xa;A1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwOwYD&#xa;VR0fBDQwMjAwoC6gLIYqaHR0cDovL2NybC5yMm0wMy5hbWF6b250cnVzdC5jb20v&#xa;cjJtMDMuY3JsMHUGCCsGAQUFBwEBBGkwZzAtBggrBgEFBQcwAYYhaHR0cDovL29j&#xa;c3AucjJtMDMuYW1hem9udHJ1c3QuY29tMDYGCCsGAQUFBzAChipodHRwOi8vY3J0&#xa;LnIybTAzLmFtYXpvbnRydXN0LmNvbS9yMm0wMy5jZXIwDAYDVR0TAQH/BAIwADCC&#xa;AX0GCisGAQQB1nkCBAIEggFtBIIBaQFnAHYAEvFONL1TckyEBhnDjz96E/jntWKH&#xa;iJxtMAWE6+WGJjoAAAGR16r2XAAABAMARzBFAiA0mJcm+MAkb3Yv8EGsUeDzNM8L&#xa;ZBbKabbGJm8eJFhghgIhAOyMy4F4UKPxpH1jUm0J3xHrI4k6mvD6rJ764VSQJj0e&#xa;AHYAfVkeEuF4KnscYWd8Xv340IdcFKBOlZ65Ay/ZDowuebgAAAGR16r16AAABAMA&#xa;RzBFAiEAs6qTzvQd+W5TPnykxmNiu5CXeNmTXZ9il1+kO3q7rfACIESU1X36JX8A&#xa;PNBGg+pSCsgrQ+LNUPONmvfCKnSdTQETAHUAzPsPaoVxCWX+lZtTzumyfCLphVwN&#xa;l422qX5UwP5MDbAAAAGR16r14AAABAMARjBEAiBLd8Iox6a23GGGfKhy3Y+4a7hO&#xa;VRJyx8F6j2TUV0b5cwIgIjDv87caumfKpuQAmFClNC5RkyPj6P4rXaeMH2snKOow&#xa;DQYJKoZIhvcNAQELBQADggEBAJJPwz6Xm22QSb+vYWwneRDXvNKb/lkSMduFNhZb&#xa;rq57CU8CVpEZVAQP/MNlkC/rqdKFhZ1AQJPunX7pII/peW8rcghM4Vh8+9+Vqy9B&#xa;tEM1dsFtQf41NnXoMJh+PtMMV1W3HC7GnJh1HEQcYgltbPI9n12M/BZgckDlfCUo&#xa;30Yjdpx2TXBGvznCVGHH0rD8YGJp7NRAJMOMTlb9CoAs6E+oBPg1V1SY4aEQF9+2&#xa;ThpjVz452dP7rWgWSj8+MMwB92FiGHeWb2AmPYwA3fmXSwNIZEhQ9JpPMGCkf/hB&#xa;eDYrox+VCjjMWd4kdM2f9qveMu6hbS4M+1bi/5VV5hJSgWw=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+</ports>
+<times srtt="6398" rttvar="2184" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730738413"/>
+<taskend task="NSE" time="1730738413"/>
+<taskbegin task="NSE" time="1730738413"/>
+<taskend task="NSE" time="1730738413"/>
+<taskbegin task="NSE" time="1730738413"/>
+<taskend task="NSE" time="1730738413"/>
+<runstats><finished time="1730738413" timestr="Mon Nov  4 16:40:13 2024" elapsed="23.42" summary="Nmap done at Mon Nov  4 16:40:13 2024; 1 IP address (1 host up) scanned in 23.42 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
