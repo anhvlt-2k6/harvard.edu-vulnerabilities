@@ -21,3 +21,115 @@
 <taskbegin task="Service scan" time="1730742150"/>
 <taskend task="Service scan" time="1730742163" extrainfo="3 services on 1 host"/>
 <taskbegin task="NSE" time="1730742163"/>
+<taskend task="NSE" time="1730742193"/>
+<taskbegin task="NSE" time="1730742193"/>
+<taskend task="NSE" time="1730742194"/>
+<taskbegin task="NSE" time="1730742194"/>
+<taskend task="NSE" time="1730742194"/>
+<host starttime="1730742145" endtime="1730742194"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="34.238.11.122" addrtype="ipv4"/>
+<hostnames>
+<hostname name="long19.radcliffe.harvard.edu" type="user"/>
+<hostname name="ec2-34-238-11-122.compute-1.amazonaws.com" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="997">
+<extrareasons reason="no-responses" count="997"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" extrainfo="protocol 2.0" servicefp="SF-Port22-TCP:V=7.80%I=7%D=11/4%Time=6729078C%P=x86_64-pc-linux-gnu%r(NULL,15,&quot;SSH-2\.0-Platform\.sh\r\n&quot;);" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  NULL: &#xa;    SSH-2.0-Platform.sh"><elem key="NULL">&#xa;    SSH-2.0-Platform.sh</elem>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http-proxy" extrainfo="bad gateway" servicefp="SF-Port80-TCP:V=7.80%I=7%D=11/4%Time=6729078C%P=x86_64-pc-linux-gnu%r(GetRequest,C7,&quot;HTTP/1\.0\x20502\x20Bad\x20Gateway\r\nCache-Control:\x20private,\x20max-age=0\r\nContent-Type:\x20application/json\r\nDate:\x20Mon,\x2004\x20Nov\x202024\x2017:42:36\x20GMT\r\nContent-Length:\x2047\r\n\r\n{\&quot;status\&quot;:502,\&quot;message\&quot;:\&quot;No\x20route\x20known\x20for\x20\&quot;}\n&quot;)%r(HTTPOptions,C7,&quot;HTTP/1\.0\x20502\x20Bad\x20Gateway\r\nCache-Control:\x20private,\x20max-age=0\r\nContent-Type:\x20application/json\r\nDate:\x20Mon,\x2004\x20Nov\x202024\x2017:42:36\x20GMT\r\nContent-Length:\x2047\r\n\r\n{\&quot;status\&quot;:502,\&quot;message\&quot;:\&quot;No\x20route\x20known\x20for\x20\&quot;}\n&quot;)%r(RTSPRequest,67,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request&quot;)%r(FourOhFourRequest,C7,&quot;HTTP/1\.0\x20502\x20Bad\x20Gateway\r\nCache-Control:\x20private,\x20max-age=0\r\nContent-Type:\x20application/json\r\nDate:\x20Mon,\x2004\x20Nov\x202024\x2017:42:36\x20GMT\r\nContent-Length:\x2047\r\n\r\n{\&quot;status\&quot;:502,\&quot;message\&quot;:\&quot;No\x20route\x20known\x20for\x20\&quot;}\n&quot;)%r(GenericLines,67,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request&quot;)%r(Help,67,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request&quot;)%r(SSLSessionReq,67,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request&quot;)%r(NessusTPv10,67,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request&quot;)%r(Socks5,67,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request&quot;);" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  FourOhFourRequest, GetRequest, HTTPOptions: &#xa;    HTTP/1.0 502 Bad Gateway&#xa;    Cache-Control: private, max-age=0&#xa;    Content-Type: application/json&#xa;    Date: Mon, 04 Nov 2024 17:42:36 GMT&#xa;    Content-Length: 47&#xa;    {&quot;status&quot;:502,&quot;message&quot;:&quot;No route known for &quot;}&#xa;  GenericLines, Help, NessusTPv10, RTSPRequest, SSLSessionReq, Socks5: &#xa;    HTTP/1.1 400 Bad Request&#xa;    Content-Type: text/plain; charset=utf-8&#xa;    Connection: close&#xa;    Request"><elem key="FourOhFourRequest, GetRequest, HTTPOptions">&#xa;    HTTP/1.0 502 Bad Gateway&#xa;    Cache-Control: private, max-age=0&#xa;    Content-Type: application/json&#xa;    Date: Mon, 04 Nov 2024 17:42:36 GMT&#xa;    Content-Length: 47&#xa;    {&quot;status&quot;:502,&quot;message&quot;:&quot;No route known for &quot;}</elem>
+<elem key="GenericLines, Help, NessusTPv10, RTSPRequest, SSLSessionReq, Socks5">&#xa;    HTTP/1.1 400 Bad Request&#xa;    Content-Type: text/plain; charset=utf-8&#xa;    Connection: close&#xa;    Request</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Did not follow redirect to https://long19.radcliffe.harvard.edu/"><elem key="redirect_url">https://long19.radcliffe.harvard.edu/</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http-proxy" extrainfo="bad gateway" servicefp="SF-Port443-TCP:V=7.80%T=SSL%I=7%D=11/4%Time=67290792%P=x86_64-pc-linux-gnu%r(GetRequest,C7,&quot;HTTP/1\.0\x20502\x20Bad\x20Gateway\r\nCache-Control:\x20private,\x20max-age=0\r\nContent-Type:\x20application/json\r\nDate:\x20Mon,\x2004\x20Nov\x202024\x2017:42:42\x20GMT\r\nContent-Length:\x2047\r\n\r\n{\&quot;status\&quot;:502,\&quot;message\&quot;:\&quot;No\x20route\x20known\x20for\x20\&quot;}\n&quot;)%r(HTTPOptions,C7,&quot;HTTP/1\.0\x20502\x20Bad\x20Gateway\r\nCache-Control:\x20private,\x20max-age=0\r\nContent-Type:\x20application/json\r\nDate:\x20Mon,\x2004\x20Nov\x202024\x2017:42:42\x20GMT\r\nContent-Length:\x2047\r\n\r\n{\&quot;status\&quot;:502,\&quot;message\&quot;:\&quot;No\x20route\x20known\x20for\x20\&quot;}\n&quot;)%r(FourOhFourRequest,C7,&quot;HTTP/1\.0\x20502\x20Bad\x20Gateway\r\nCache-Control:\x20private,\x20max-age=0\r\nContent-Type:\x20application/json\r\nDate:\x20Mon,\x2004\x20Nov\x202024\x2017:42:42\x20GMT\r\nContent-Length:\x2047\r\n\r\n{\&quot;status\&quot;:502,\&quot;message\&quot;:\&quot;No\x20route\x20known\x20for\x20\&quot;}\n&quot;)%r(GenericLines,67,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request&quot;)%r(RTSPRequest,67,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request&quot;)%r(Help,67,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request&quot;)%r(SSLSessionReq,67,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request&quot;)%r(NessusTPv10,67,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request&quot;)%r(Socks5,67,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request&quot;);" tunnel="ssl" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  FourOhFourRequest, GetRequest, HTTPOptions: &#xa;    HTTP/1.0 502 Bad Gateway&#xa;    Cache-Control: private, max-age=0&#xa;    Content-Type: application/json&#xa;    Date: Mon, 04 Nov 2024 17:42:42 GMT&#xa;    Content-Length: 47&#xa;    {&quot;status&quot;:502,&quot;message&quot;:&quot;No route known for &quot;}&#xa;  GenericLines, Help, NessusTPv10, RTSPRequest, SSLSessionReq, Socks5: &#xa;    HTTP/1.1 400 Bad Request&#xa;    Content-Type: text/plain; charset=utf-8&#xa;    Connection: close&#xa;    Request"><elem key="FourOhFourRequest, GetRequest, HTTPOptions">&#xa;    HTTP/1.0 502 Bad Gateway&#xa;    Cache-Control: private, max-age=0&#xa;    Content-Type: application/json&#xa;    Date: Mon, 04 Nov 2024 17:42:42 GMT&#xa;    Content-Length: 47&#xa;    {&quot;status&quot;:502,&quot;message&quot;:&quot;No route known for &quot;}</elem>
+<elem key="GenericLines, Help, NessusTPv10, RTSPRequest, SSLSessionReq, Socks5">&#xa;    HTTP/1.1 400 Bad Request&#xa;    Content-Type: text/plain; charset=utf-8&#xa;    Connection: close&#xa;    Request</elem>
+</script><script id="http-generator" output="Hugo 0.107.0"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+</table>
+</script><script id="http-title" output="The Long 19th Amendment"><elem key="title">The Long 19th Amendment</elem>
+</script><script id="ssl-cert" output="Subject: commonName=long19.radcliffe.harvard.edu&#xa;Subject Alternative Name: DNS:long19.radcliffe.harvard.edu&#xa;Issuer: commonName=E6/organizationName=Let&apos;s Encrypt/countryName=US&#xa;Public Key type: ec&#xa;Public Key bits: 256&#xa;Signature Algorithm: ecdsa-with-SHA384&#xa;Not valid before: 2024-09-28T17:50:18&#xa;Not valid after:  2024-12-27T17:50:17&#xa;MD5:   2790 ea9c f3ac 8824 f759 24de 66be 129a&#xa;SHA-1: 781d 4bef 3eeb bcc4 166e 9ab8 23e3 8032 16a7 71d5"><table key="subject">
+<elem key="commonName">long19.radcliffe.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">US</elem>
+<elem key="commonName">E6</elem>
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+</table>
+<table key="pubkey">
+<elem key="type">ec</elem>
+<elem key="bits">256</elem>
+<table key="ecdhparams">
+<table key="curve_params">
+<elem key="curve">prime256v1</elem>
+<elem key="ec_curve_type">namedcurve</elem>
+</table>
+</table>
+</table>
+<table key="extensions">
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="value">FA:81:CE:68:BA:4A:09:79:47:11:25:F6:39:23:A8:8F:95:F4:A5:FE</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="value">93:27:46:98:03:A9:51:68:8E:98:D6:C4:42:48:DB:23:BF:58:94:D2</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">OCSP - URI:http://e6.o.lencr.org&#xa;CA Issuers - URI:http://e6.i.lencr.org/</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">DNS:long19.radcliffe.harvard.edu</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+<table>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 3F:17:4B:4F:D7:22:47:58:94:1D:65:1C:84:BE:0D:12:&#xa;                ED:90:37:7F:1F:85:6A:EB:C1:BF:28:85:EC:F8:64:6E&#xa;    Timestamp : Sep 28 18:48:49.099 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:A0:1E:0E:C8:71:91:DA:80:2C:E0:75:&#xa;                5D:8D:39:7E:37:8A:FB:D6:70:20:BC:63:56:8C:3F:13:&#xa;                AE:4E:F2:34:37:02:21:00:97:C2:F0:CC:69:71:8A:D5:&#xa;                15:EE:21:99:49:FA:A4:90:23:99:88:45:AC:29:08:C2:&#xa;                D4:53:B5:EC:80:AA:A4:8B&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 76:FF:88:3F:0A:B6:FB:95:51:C2:61:CC:F5:87:BA:34:&#xa;                B4:A4:CD:BB:29:DC:68:42:0A:9F:E6:67:4C:5A:3A:74&#xa;    Timestamp : Sep 28 18:48:49.109 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:62:CA:17:8B:96:F1:55:62:3F:70:E7:80:&#xa;                AF:74:AE:09:20:D5:F8:ED:22:E2:6E:A3:43:DE:B1:A1:&#xa;                05:25:D2:43:02:20:49:96:3F:EC:CE:8A:66:DD:52:A0:&#xa;                84:4E:5F:E3:78:78:79:B2:92:C8:1B:50:6E:73:BA:F1:&#xa;                4E:2A:D5:88:E9:15</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+</table>
+<elem key="sig_algo">ecdsa-with-SHA384</elem>
+<table key="validity">
+<elem key="notBefore">2024-09-28T17:50:18</elem>
+<elem key="notAfter">2024-12-27T17:50:17</elem>
+</table>
+<elem key="md5">2790ea9cf3ac8824f75924de66be129a</elem>
+<elem key="sha1">781d4bef3eebbcc4166e9ab823e3803216a771d5</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDmjCCAx+gAwIBAgISA4HMnY35XPNhjf9D/nPRMheNMAoGCCqGSM49BAMDMDIx&#xa;CzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJF&#xa;NjAeFw0yNDA5MjgxNzUwMThaFw0yNDEyMjcxNzUwMTdaMCcxJTAjBgNVBAMTHGxv&#xa;bmcxOS5yYWRjbGlmZmUuaGFydmFyZC5lZHUwWTATBgcqhkjOPQIBBggqhkjOPQMB&#xa;BwNCAASBkgfnBY491rvDwxMhX3Hs0LH14gll38YK68HOUC56u08xUGylTzLmoXTR&#xa;AAzQco+Jqg43Q+yPufXUZ1LlXN5/o4ICHjCCAhowDgYDVR0PAQH/BAQDAgeAMB0G&#xa;A1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAMBgNVHRMBAf8EAjAAMB0GA1Ud&#xa;DgQWBBT6gc5oukoJeUcRJfY5I6iPlfSl/jAfBgNVHSMEGDAWgBSTJ0aYA6lRaI6Y&#xa;1sRCSNsjv1iU0jBVBggrBgEFBQcBAQRJMEcwIQYIKwYBBQUHMAGGFWh0dHA6Ly9l&#xa;Ni5vLmxlbmNyLm9yZzAiBggrBgEFBQcwAoYWaHR0cDovL2U2LmkubGVuY3Iub3Jn&#xa;LzAnBgNVHREEIDAeghxsb25nMTkucmFkY2xpZmZlLmhhcnZhcmQuZWR1MBMGA1Ud&#xa;IAQMMAowCAYGZ4EMAQIBMIIBBAYKKwYBBAHWeQIEAgSB9QSB8gDwAHcAPxdLT9ci&#xa;R1iUHWUchL4NEu2QN38fhWrrwb8ohez4ZG4AAAGSOfbOywAABAMASDBGAiEAoB4O&#xa;yHGR2oAs4HVdjTl+N4r71nAgvGNWjD8Trk7yNDcCIQCXwvDMaXGK1RXuIZlJ+qSQ&#xa;I5mIRawpCMLUU7XsgKqkiwB1AHb/iD8KtvuVUcJhzPWHujS0pM27KdxoQgqf5mdM&#xa;Wjp0AAABkjn2ztUAAAQDAEYwRAIgYsoXi5bxVWI/cOeAr3SuCSDV+O0i4m6jQ96x&#xa;oQUl0kMCIEmWP+zOimbdUqCETl/jeHh5spLIG1Buc7rxTirViOkVMAoGCCqGSM49&#xa;BAMDA2kAMGYCMQC9+IwvCLmBko9/vOi5iM3Q5D/g7TSPKgl2jZDg7TdWChwyd2vz&#xa;E3tPd6iDlMGoIlICMQDRSJAPAjpLVv9blJWSGTtNANSfvDK8tBI3xuIWjvQ8Sa5A&#xa;oKaj/E7Zm1qwxxmpXW0=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+</ports>
+<times srtt="21140" rttvar="5099" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730742194"/>
+<taskend task="NSE" time="1730742194"/>
+<taskbegin task="NSE" time="1730742194"/>
+<taskend task="NSE" time="1730742194"/>
+<taskbegin task="NSE" time="1730742194"/>
+<taskend task="NSE" time="1730742194"/>
+<runstats><finished time="1730742194" timestr="Mon Nov  4 17:43:14 2024" elapsed="49.22" summary="Nmap done at Mon Nov  4 17:43:14 2024; 1 IP address (1 host up) scanned in 49.22 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
