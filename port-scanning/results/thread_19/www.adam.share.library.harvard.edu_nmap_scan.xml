@@ -21,3 +21,477 @@
 <taskbegin task="Service scan" time="1730747123"/>
 <taskend task="Service scan" time="1730747218" extrainfo="11 services on 1 host"/>
 <taskbegin task="NSE" time="1730747218"/>
+<taskend task="NSE" time="1730747245"/>
+<taskbegin task="NSE" time="1730747245"/>
+<taskend task="NSE" time="1730747275"/>
+<taskbegin task="NSE" time="1730747275"/>
+<taskend task="NSE" time="1730747275"/>
+<host starttime="1730747073" endtime="1730747275"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="147.135.81.23" addrtype="ipv4"/>
+<hostnames>
+<hostname name="www.adam.share.library.harvard.edu" type="user"/>
+<hostname name="ip23.ip-147-135-81.us" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="900">
+<extrareasons reason="no-responses" count="900"/>
+</extraports>
+<extraports state="closed" count="89">
+<extrareasons reason="conn-refused" count="89"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ftp" product="Pure-FTPd" method="probed" conf="10"><cpe>cpe:/a:pureftpd:pure-ftpd</cpe></service></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="7.4" extrainfo="protocol 2.0" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.4</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 cf:96:45:ec:91:01:b8:50:d7:ba:9a:3d:0e:27:db:ec (RSA)&#xa;  256 2f:bc:23:c3:2d:05:8c:60:52:14:ec:a7:e9:f0:33:46 (ECDSA)&#xa;  256 6c:67:37:03:23:eb:aa:97:12:e7:8e:a7:c2:57:87:bd (ED25519)"><table>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDMJEFTp5Upu7hOc8BDEApKnMSvcmqWva1nTTvmDhZ8anXKur2MB4M6IpZkPgPNq7GvAhQhw4t4foaXBMG+irmJG97/z+ukJ9zUyKq9lAyXwvnwhb9+/Yw71Q9Ky64repTdDKhpRt7KgInTSkM8tBPZ1zAjeKS8fSkRVN8BkOnmpj50iE7kngxbNhz/sKJtzDldu6zqr8vtnWyPau4yNnWimyO327S8+3Ouvlf+/6nDuD0DOPSDK6INTgomqcPUlCvpPgKspl+ftIs3GxOLcShG4bhZIVq0bknuIsiqvhzcKi3+L46HFOOekKiv19Uw36fnLNhascwfx5bO/FUd4Xo3</elem>
+<elem key="fingerprint">cf9645ec9101b850d7ba9a3d0e27dbec</elem>
+<elem key="bits">2048</elem>
+<elem key="type">ssh-rsa</elem>
+</table>
+<table>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBEVW79hYJiWVcNrVfWqdFcUWiDVyToVgwypxnjvfQ3m6I1GwE+IYoKD1MydXRTK6GOMzo6ZG6YIbkIuHYZ7nMxM=</elem>
+<elem key="fingerprint">2fbc23c32d058c605214eca7e9f03346</elem>
+<elem key="bits">256</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+</table>
+<table>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAILXoVNE2tFP2KDWOPVcnrW3Q3p+3GpzZBeLUEEuZUTku</elem>
+<elem key="fingerprint">6c67370323ebaa9712e78ea7c25787bd</elem>
+<elem key="bits">256</elem>
+<elem key="type">ssh-ed25519</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="25"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtp" method="table" conf="3"/><script id="smtp-commands" output="SMTP EHLO www.adam.share.library.harvard.edu: failed to receive data: connection closed"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" method="probed" conf="10"><cpe>cpe:/a:apache:http_server</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET POST"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>POST</elem>
+</table>
+</script><script id="http-title" output="Did not follow redirect to https://www.adam.share.library.harvard.edu/"><elem key="redirect_url">https://www.adam.share.library.harvard.edu/</elem>
+</script></port>
+<port protocol="tcp" portid="110"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="pop3" product="Dovecot pop3d" method="probed" conf="10"><cpe>cpe:/a:dovecot:dovecot</cpe></service></port>
+<port protocol="tcp" portid="143"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="imap" product="Dovecot imapd" method="probed" conf="10"><cpe>cpe:/a:dovecot:dovecot</cpe></service><script id="ssl-cert" output="Subject: commonName=adam.share.library.harvard.edu&#xa;Subject Alternative Name: DNS:adam.share.library.harvard.edu, DNS:cpanel.adam.share.library.harvard.edu, DNS:cpcalendars.adam.share.library.harvard.edu, DNS:cpcontacts.adam.share.library.harvard.edu, DNS:mail.adam.share.library.harvard.edu, DNS:webdisk.adam.share.library.harvard.edu, DNS:webmail.adam.share.library.harvard.edu, DNS:www.adam.share.library.harvard.edu&#xa;Issuer: commonName=cPanel, Inc. Certification Authority/organizationName=cPanel, Inc./stateOrProvinceName=TX/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-09-11T00:00:00&#xa;Not valid after:  2024-12-10T23:59:59&#xa;MD5:   f542 c4a5 8dd3 f352 a70f 3338 f89d e003&#xa;SHA-1: ba58 dd96 323b cf90 d0c7 ca9a 0b4f 8011 5f40 4ab9"><table key="subject">
+<elem key="commonName">adam.share.library.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="stateOrProvinceName">TX</elem>
+<elem key="commonName">cPanel, Inc. Certification Authority</elem>
+<elem key="organizationName">cPanel, Inc.</elem>
+<elem key="countryName">US</elem>
+<elem key="localityName">Houston</elem>
+</table>
+<table key="pubkey">
+<elem key="exponent">BIGNUM: 0x5649dea87908</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">BIGNUM: 0x5649dea88928</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">7E:03:5A:65:41:6B:A7:7E:0A:E1:B8:9D:08:EA:1D:8E:1D:6A:C7:65</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">7B:CD:F2:95:0E:C6:6C:97:45:C6:40:54:BA:DB:25:71:AA:1C:CF:F1</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="critical">true</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="critical">true</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 1.3.6.1.4.1.6449.1.2.2.52&#xa;  CPS: https://sectigo.com/CPS&#xa;Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://crl.comodoca.com/cPanelIncCertificationAuthority.crl</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:http://crt.comodoca.com/cPanelIncCertificationAuthority.crt&#xa;OCSP - URI:http://ocsp.comodoca.com</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 76:FF:88:3F:0A:B6:FB:95:51:C2:61:CC:F5:87:BA:34:&#xa;                B4:A4:CD:BB:29:DC:68:42:0A:9F:E6:67:4C:5A:3A:74&#xa;    Timestamp : Sep 11 00:00:43.797 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:04:21:22:95:8B:29:01:C2:CB:8A:8E:AB:&#xa;                69:FA:4A:D4:65:77:73:25:83:20:60:DC:FD:D6:62:A3:&#xa;                48:B1:AE:F1:02:21:00:96:49:2C:B4:82:67:A0:52:A0:&#xa;                42:FE:E4:CC:8F:1D:83:F5:4B:CE:C1:E7:00:E6:4C:27:&#xa;                16:AE:FC:AA:1A:49:A6&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 3F:17:4B:4F:D7:22:47:58:94:1D:65:1C:84:BE:0D:12:&#xa;                ED:90:37:7F:1F:85:6A:EB:C1:BF:28:85:EC:F8:64:6E&#xa;    Timestamp : Sep 11 00:00:43.764 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:3A:7F:11:B7:10:FC:7B:57:10:B7:4B:D1:&#xa;                B5:9B:46:97:78:15:AC:A9:31:51:98:5E:3A:27:F1:2F:&#xa;                B0:32:9F:3D:02:21:00:FD:88:17:C5:21:EF:F1:F7:AF:&#xa;                3D:72:77:3E:2F:C3:17:72:58:E8:B5:E7:E6:21:19:B1:&#xa;                FA:D0:07:B2:71:E7:9F</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:adam.share.library.harvard.edu, DNS:cpanel.adam.share.library.harvard.edu, DNS:cpcalendars.adam.share.library.harvard.edu, DNS:cpcontacts.adam.share.library.harvard.edu, DNS:mail.adam.share.library.harvard.edu, DNS:webdisk.adam.share.library.harvard.edu, DNS:webmail.adam.share.library.harvard.edu, DNS:www.adam.share.library.harvard.edu</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-09-11T00:00:00</elem>
+<elem key="notAfter">2024-12-10T23:59:59</elem>
+</table>
+<elem key="md5">f542c4a58dd3f352a70f3338f89de003</elem>
+<elem key="sha1">ba58dd96323bcf90d0c7ca9a0b4f80115f404ab9</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIHEDCCBfigAwIBAgIQD5qeDFSRt7deeWGzjJginjANBgkqhkiG9w0BAQsFADBy&#xa;MQswCQYDVQQGEwJVUzELMAkGA1UECBMCVFgxEDAOBgNVBAcTB0hvdXN0b24xFTAT&#xa;BgNVBAoTDGNQYW5lbCwgSW5jLjEtMCsGA1UEAxMkY1BhbmVsLCBJbmMuIENlcnRp&#xa;ZmljYXRpb24gQXV0aG9yaXR5MB4XDTI0MDkxMTAwMDAwMFoXDTI0MTIxMDIzNTk1&#xa;OVowKTEnMCUGA1UEAxMeYWRhbS5zaGFyZS5saWJyYXJ5LmhhcnZhcmQuZWR1MIIB&#xa;IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA6z+7Rnvg4PiCnD+WfS3lfoDy&#xa;sbIelOtVFn6E1pLU59Tk4KXm7goV+qNgleydduImDOM0Dh+JmPZ9DmIYjIRD6dgR&#xa;WuePf6pwyH8POItyw6kkI2GL0sCYJpuRDX4/gC4D7nzVgteDTUYy8S4JvIE1hWqN&#xa;xwTHD1Hfxr4nprr/K3nsSvTJRRFw0wiITAJwqVhO3qaFsVc3u7b0UjG6O+xPjUTp&#xa;ZKNYMuVWTv/D9U0bpyLs638m8hpBwI7b8QfGmWZvC3mNcoxyJd9zED06AhF1jjrz&#xa;1oQKUQctrY0y1BSEwN9Cx03qqGi1aeiMmTNuKYwnvUtksloDMmVbtcH3eHgNVQID&#xa;AQABo4ID6TCCA+UwHwYDVR0jBBgwFoAUfgNaZUFrp34K4bidCOodjh1qx2UwHQYD&#xa;VR0OBBYEFHvN8pUOxmyXRcZAVLrbJXGqHM/xMA4GA1UdDwEB/wQEAwIFoDAMBgNV&#xa;HRMBAf8EAjAAMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjBJBgNVHSAE&#xa;QjBAMDQGCysGAQQBsjEBAgI0MCUwIwYIKwYBBQUHAgEWF2h0dHBzOi8vc2VjdGln&#xa;by5jb20vQ1BTMAgGBmeBDAECATBMBgNVHR8ERTBDMEGgP6A9hjtodHRwOi8vY3Js&#xa;LmNvbW9kb2NhLmNvbS9jUGFuZWxJbmNDZXJ0aWZpY2F0aW9uQXV0aG9yaXR5LmNy&#xa;bDB9BggrBgEFBQcBAQRxMG8wRwYIKwYBBQUHMAKGO2h0dHA6Ly9jcnQuY29tb2Rv&#xa;Y2EuY29tL2NQYW5lbEluY0NlcnRpZmljYXRpb25BdXRob3JpdHkuY3J0MCQGCCsG&#xa;AQUFBzABhhhodHRwOi8vb2NzcC5jb21vZG9jYS5jb20wggEEBgorBgEEAdZ5AgQC&#xa;BIH1BIHyAPAAdgB2/4g/Crb7lVHCYcz1h7o0tKTNuyncaEIKn+ZnTFo6dAAAAZHe&#xa;YecVAAAEAwBHMEUCIAQhIpWLKQHCy4qOq2n6StRld3MlgyBg3P3WYqNIsa7xAiEA&#xa;lkkstIJnoFKgQv7kzI8dg/VLzsHnAOZMJxau/KoaSaYAdgA/F0tP1yJHWJQdZRyE&#xa;vg0S7ZA3fx+FauvBvyiF7PhkbgAAAZHeYeb0AAAEAwBHMEUCIDp/EbcQ/HtXELdL&#xa;0bWbRpd4FaypMVGYXjon8S+wMp89AiEA/YgXxSHv8fevPXJ3Pi/DF3JY6LXn5iEZ&#xa;sfrQB7Jx558wggFEBgNVHREEggE7MIIBN4IeYWRhbS5zaGFyZS5saWJyYXJ5Lmhh&#xa;cnZhcmQuZWR1giVjcGFuZWwuYWRhbS5zaGFyZS5saWJyYXJ5LmhhcnZhcmQuZWR1&#xa;gipjcGNhbGVuZGFycy5hZGFtLnNoYXJlLmxpYnJhcnkuaGFydmFyZC5lZHWCKWNw&#xa;Y29udGFjdHMuYWRhbS5zaGFyZS5saWJyYXJ5LmhhcnZhcmQuZWR1giNtYWlsLmFk&#xa;YW0uc2hhcmUubGlicmFyeS5oYXJ2YXJkLmVkdYImd2ViZGlzay5hZGFtLnNoYXJl&#xa;LmxpYnJhcnkuaGFydmFyZC5lZHWCJndlYm1haWwuYWRhbS5zaGFyZS5saWJyYXJ5&#xa;LmhhcnZhcmQuZWR1giJ3d3cuYWRhbS5zaGFyZS5saWJyYXJ5LmhhcnZhcmQuZWR1&#xa;MA0GCSqGSIb3DQEBCwUAA4IBAQCHV5emBiUgakRYhXyXPAdO2w3jXQnDSLoIhH3n&#xa;K6hcHhboyUksw+jcs/+XS1sLjopNwLuIUVxl01cDLuzBAPu4cKjnog3Ytlxz+r7+&#xa;0yWA1WOk3AdLMaC5nbswKtjEPbHldIYEmAfR1gCgNbMbrw3JJCsYqUCwXf2kPLaa&#xa;eGT4toZT2UXPAPiJ65/TvtJnAwPaAY9dU9bQRR+YHDd/Uw2YavVr3GquRQGvcBeH&#xa;Bx3pqQdr89mhGAi4aZpc7tK64uSANNgBcbPUocL78CI/Cjlon/sxtv3729BhCCRY&#xa;tX0+UukRO+7tBxN98gHZaD2NRPh7hE7L31cr5EvLhI2TkFcE&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:apache:http_server</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: POST"><table key="Supported Methods">
+<elem>POST</elem>
+</table>
+</script><script id="ssl-cert" output="Subject: commonName=adam.share.library.harvard.edu&#xa;Subject Alternative Name: DNS:adam.share.library.harvard.edu, DNS:cpanel.adam.share.library.harvard.edu, DNS:cpcalendars.adam.share.library.harvard.edu, DNS:cpcontacts.adam.share.library.harvard.edu, DNS:mail.adam.share.library.harvard.edu, DNS:webdisk.adam.share.library.harvard.edu, DNS:webmail.adam.share.library.harvard.edu, DNS:www.adam.share.library.harvard.edu&#xa;Issuer: commonName=cPanel, Inc. Certification Authority/organizationName=cPanel, Inc./stateOrProvinceName=TX/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-09-11T00:00:00&#xa;Not valid after:  2024-12-10T23:59:59&#xa;MD5:   f542 c4a5 8dd3 f352 a70f 3338 f89d e003&#xa;SHA-1: ba58 dd96 323b cf90 d0c7 ca9a 0b4f 8011 5f40 4ab9"><table key="subject">
+<elem key="commonName">adam.share.library.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="stateOrProvinceName">TX</elem>
+<elem key="commonName">cPanel, Inc. Certification Authority</elem>
+<elem key="organizationName">cPanel, Inc.</elem>
+<elem key="countryName">US</elem>
+<elem key="localityName">Houston</elem>
+</table>
+<table key="pubkey">
+<elem key="exponent">BIGNUM: 0x5649ddfe1038</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">BIGNUM: 0x5649ddfe1198</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">7E:03:5A:65:41:6B:A7:7E:0A:E1:B8:9D:08:EA:1D:8E:1D:6A:C7:65</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">7B:CD:F2:95:0E:C6:6C:97:45:C6:40:54:BA:DB:25:71:AA:1C:CF:F1</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="critical">true</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="critical">true</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 1.3.6.1.4.1.6449.1.2.2.52&#xa;  CPS: https://sectigo.com/CPS&#xa;Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://crl.comodoca.com/cPanelIncCertificationAuthority.crl</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:http://crt.comodoca.com/cPanelIncCertificationAuthority.crt&#xa;OCSP - URI:http://ocsp.comodoca.com</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 76:FF:88:3F:0A:B6:FB:95:51:C2:61:CC:F5:87:BA:34:&#xa;                B4:A4:CD:BB:29:DC:68:42:0A:9F:E6:67:4C:5A:3A:74&#xa;    Timestamp : Sep 11 00:00:43.797 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:04:21:22:95:8B:29:01:C2:CB:8A:8E:AB:&#xa;                69:FA:4A:D4:65:77:73:25:83:20:60:DC:FD:D6:62:A3:&#xa;                48:B1:AE:F1:02:21:00:96:49:2C:B4:82:67:A0:52:A0:&#xa;                42:FE:E4:CC:8F:1D:83:F5:4B:CE:C1:E7:00:E6:4C:27:&#xa;                16:AE:FC:AA:1A:49:A6&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 3F:17:4B:4F:D7:22:47:58:94:1D:65:1C:84:BE:0D:12:&#xa;                ED:90:37:7F:1F:85:6A:EB:C1:BF:28:85:EC:F8:64:6E&#xa;    Timestamp : Sep 11 00:00:43.764 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:3A:7F:11:B7:10:FC:7B:57:10:B7:4B:D1:&#xa;                B5:9B:46:97:78:15:AC:A9:31:51:98:5E:3A:27:F1:2F:&#xa;                B0:32:9F:3D:02:21:00:FD:88:17:C5:21:EF:F1:F7:AF:&#xa;                3D:72:77:3E:2F:C3:17:72:58:E8:B5:E7:E6:21:19:B1:&#xa;                FA:D0:07:B2:71:E7:9F</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:adam.share.library.harvard.edu, DNS:cpanel.adam.share.library.harvard.edu, DNS:cpcalendars.adam.share.library.harvard.edu, DNS:cpcontacts.adam.share.library.harvard.edu, DNS:mail.adam.share.library.harvard.edu, DNS:webdisk.adam.share.library.harvard.edu, DNS:webmail.adam.share.library.harvard.edu, DNS:www.adam.share.library.harvard.edu</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-09-11T00:00:00</elem>
+<elem key="notAfter">2024-12-10T23:59:59</elem>
+</table>
+<elem key="md5">f542c4a58dd3f352a70f3338f89de003</elem>
+<elem key="sha1">ba58dd96323bcf90d0c7ca9a0b4f80115f404ab9</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIHEDCCBfigAwIBAgIQD5qeDFSRt7deeWGzjJginjANBgkqhkiG9w0BAQsFADBy&#xa;MQswCQYDVQQGEwJVUzELMAkGA1UECBMCVFgxEDAOBgNVBAcTB0hvdXN0b24xFTAT&#xa;BgNVBAoTDGNQYW5lbCwgSW5jLjEtMCsGA1UEAxMkY1BhbmVsLCBJbmMuIENlcnRp&#xa;ZmljYXRpb24gQXV0aG9yaXR5MB4XDTI0MDkxMTAwMDAwMFoXDTI0MTIxMDIzNTk1&#xa;OVowKTEnMCUGA1UEAxMeYWRhbS5zaGFyZS5saWJyYXJ5LmhhcnZhcmQuZWR1MIIB&#xa;IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA6z+7Rnvg4PiCnD+WfS3lfoDy&#xa;sbIelOtVFn6E1pLU59Tk4KXm7goV+qNgleydduImDOM0Dh+JmPZ9DmIYjIRD6dgR&#xa;WuePf6pwyH8POItyw6kkI2GL0sCYJpuRDX4/gC4D7nzVgteDTUYy8S4JvIE1hWqN&#xa;xwTHD1Hfxr4nprr/K3nsSvTJRRFw0wiITAJwqVhO3qaFsVc3u7b0UjG6O+xPjUTp&#xa;ZKNYMuVWTv/D9U0bpyLs638m8hpBwI7b8QfGmWZvC3mNcoxyJd9zED06AhF1jjrz&#xa;1oQKUQctrY0y1BSEwN9Cx03qqGi1aeiMmTNuKYwnvUtksloDMmVbtcH3eHgNVQID&#xa;AQABo4ID6TCCA+UwHwYDVR0jBBgwFoAUfgNaZUFrp34K4bidCOodjh1qx2UwHQYD&#xa;VR0OBBYEFHvN8pUOxmyXRcZAVLrbJXGqHM/xMA4GA1UdDwEB/wQEAwIFoDAMBgNV&#xa;HRMBAf8EAjAAMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjBJBgNVHSAE&#xa;QjBAMDQGCysGAQQBsjEBAgI0MCUwIwYIKwYBBQUHAgEWF2h0dHBzOi8vc2VjdGln&#xa;by5jb20vQ1BTMAgGBmeBDAECATBMBgNVHR8ERTBDMEGgP6A9hjtodHRwOi8vY3Js&#xa;LmNvbW9kb2NhLmNvbS9jUGFuZWxJbmNDZXJ0aWZpY2F0aW9uQXV0aG9yaXR5LmNy&#xa;bDB9BggrBgEFBQcBAQRxMG8wRwYIKwYBBQUHMAKGO2h0dHA6Ly9jcnQuY29tb2Rv&#xa;Y2EuY29tL2NQYW5lbEluY0NlcnRpZmljYXRpb25BdXRob3JpdHkuY3J0MCQGCCsG&#xa;AQUFBzABhhhodHRwOi8vb2NzcC5jb21vZG9jYS5jb20wggEEBgorBgEEAdZ5AgQC&#xa;BIH1BIHyAPAAdgB2/4g/Crb7lVHCYcz1h7o0tKTNuyncaEIKn+ZnTFo6dAAAAZHe&#xa;YecVAAAEAwBHMEUCIAQhIpWLKQHCy4qOq2n6StRld3MlgyBg3P3WYqNIsa7xAiEA&#xa;lkkstIJnoFKgQv7kzI8dg/VLzsHnAOZMJxau/KoaSaYAdgA/F0tP1yJHWJQdZRyE&#xa;vg0S7ZA3fx+FauvBvyiF7PhkbgAAAZHeYeb0AAAEAwBHMEUCIDp/EbcQ/HtXELdL&#xa;0bWbRpd4FaypMVGYXjon8S+wMp89AiEA/YgXxSHv8fevPXJ3Pi/DF3JY6LXn5iEZ&#xa;sfrQB7Jx558wggFEBgNVHREEggE7MIIBN4IeYWRhbS5zaGFyZS5saWJyYXJ5Lmhh&#xa;cnZhcmQuZWR1giVjcGFuZWwuYWRhbS5zaGFyZS5saWJyYXJ5LmhhcnZhcmQuZWR1&#xa;gipjcGNhbGVuZGFycy5hZGFtLnNoYXJlLmxpYnJhcnkuaGFydmFyZC5lZHWCKWNw&#xa;Y29udGFjdHMuYWRhbS5zaGFyZS5saWJyYXJ5LmhhcnZhcmQuZWR1giNtYWlsLmFk&#xa;YW0uc2hhcmUubGlicmFyeS5oYXJ2YXJkLmVkdYImd2ViZGlzay5hZGFtLnNoYXJl&#xa;LmxpYnJhcnkuaGFydmFyZC5lZHWCJndlYm1haWwuYWRhbS5zaGFyZS5saWJyYXJ5&#xa;LmhhcnZhcmQuZWR1giJ3d3cuYWRhbS5zaGFyZS5saWJyYXJ5LmhhcnZhcmQuZWR1&#xa;MA0GCSqGSIb3DQEBCwUAA4IBAQCHV5emBiUgakRYhXyXPAdO2w3jXQnDSLoIhH3n&#xa;K6hcHhboyUksw+jcs/+XS1sLjopNwLuIUVxl01cDLuzBAPu4cKjnog3Ytlxz+r7+&#xa;0yWA1WOk3AdLMaC5nbswKtjEPbHldIYEmAfR1gCgNbMbrw3JJCsYqUCwXf2kPLaa&#xa;eGT4toZT2UXPAPiJ65/TvtJnAwPaAY9dU9bQRR+YHDd/Uw2YavVr3GquRQGvcBeH&#xa;Bx3pqQdr89mhGAi4aZpc7tK64uSANNgBcbPUocL78CI/Cjlon/sxtv3729BhCCRY&#xa;tX0+UukRO+7tBxN98gHZaD2NRPh7hE7L31cr5EvLhI2TkFcE&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="465"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtp" product="Exim smtpd" version="4.96.2" hostname="harvard1.reclaimhosting.com" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:exim:exim:4.96.2</cpe></service><script id="smtp-commands" output="SMTP EHLO www.adam.share.library.harvard.edu: failed to receive data: failed to receive data"/><script id="ssl-cert" output="Subject: commonName=adam.share.library.harvard.edu&#xa;Subject Alternative Name: DNS:adam.share.library.harvard.edu, DNS:cpanel.adam.share.library.harvard.edu, DNS:cpcalendars.adam.share.library.harvard.edu, DNS:cpcontacts.adam.share.library.harvard.edu, DNS:mail.adam.share.library.harvard.edu, DNS:webdisk.adam.share.library.harvard.edu, DNS:webmail.adam.share.library.harvard.edu, DNS:www.adam.share.library.harvard.edu&#xa;Issuer: commonName=cPanel, Inc. Certification Authority/organizationName=cPanel, Inc./stateOrProvinceName=TX/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-09-11T00:00:00&#xa;Not valid after:  2024-12-10T23:59:59&#xa;MD5:   f542 c4a5 8dd3 f352 a70f 3338 f89d e003&#xa;SHA-1: ba58 dd96 323b cf90 d0c7 ca9a 0b4f 8011 5f40 4ab9"><table key="subject">
+<elem key="commonName">adam.share.library.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="stateOrProvinceName">TX</elem>
+<elem key="commonName">cPanel, Inc. Certification Authority</elem>
+<elem key="organizationName">cPanel, Inc.</elem>
+<elem key="countryName">US</elem>
+<elem key="localityName">Houston</elem>
+</table>
+<table key="pubkey">
+<elem key="exponent">BIGNUM: 0x5649dea63968</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">BIGNUM: 0x5649dea71e78</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">7E:03:5A:65:41:6B:A7:7E:0A:E1:B8:9D:08:EA:1D:8E:1D:6A:C7:65</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">7B:CD:F2:95:0E:C6:6C:97:45:C6:40:54:BA:DB:25:71:AA:1C:CF:F1</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="critical">true</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="critical">true</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 1.3.6.1.4.1.6449.1.2.2.52&#xa;  CPS: https://sectigo.com/CPS&#xa;Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://crl.comodoca.com/cPanelIncCertificationAuthority.crl</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:http://crt.comodoca.com/cPanelIncCertificationAuthority.crt&#xa;OCSP - URI:http://ocsp.comodoca.com</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 76:FF:88:3F:0A:B6:FB:95:51:C2:61:CC:F5:87:BA:34:&#xa;                B4:A4:CD:BB:29:DC:68:42:0A:9F:E6:67:4C:5A:3A:74&#xa;    Timestamp : Sep 11 00:00:43.797 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:04:21:22:95:8B:29:01:C2:CB:8A:8E:AB:&#xa;                69:FA:4A:D4:65:77:73:25:83:20:60:DC:FD:D6:62:A3:&#xa;                48:B1:AE:F1:02:21:00:96:49:2C:B4:82:67:A0:52:A0:&#xa;                42:FE:E4:CC:8F:1D:83:F5:4B:CE:C1:E7:00:E6:4C:27:&#xa;                16:AE:FC:AA:1A:49:A6&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 3F:17:4B:4F:D7:22:47:58:94:1D:65:1C:84:BE:0D:12:&#xa;                ED:90:37:7F:1F:85:6A:EB:C1:BF:28:85:EC:F8:64:6E&#xa;    Timestamp : Sep 11 00:00:43.764 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:3A:7F:11:B7:10:FC:7B:57:10:B7:4B:D1:&#xa;                B5:9B:46:97:78:15:AC:A9:31:51:98:5E:3A:27:F1:2F:&#xa;                B0:32:9F:3D:02:21:00:FD:88:17:C5:21:EF:F1:F7:AF:&#xa;                3D:72:77:3E:2F:C3:17:72:58:E8:B5:E7:E6:21:19:B1:&#xa;                FA:D0:07:B2:71:E7:9F</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:adam.share.library.harvard.edu, DNS:cpanel.adam.share.library.harvard.edu, DNS:cpcalendars.adam.share.library.harvard.edu, DNS:cpcontacts.adam.share.library.harvard.edu, DNS:mail.adam.share.library.harvard.edu, DNS:webdisk.adam.share.library.harvard.edu, DNS:webmail.adam.share.library.harvard.edu, DNS:www.adam.share.library.harvard.edu</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-09-11T00:00:00</elem>
+<elem key="notAfter">2024-12-10T23:59:59</elem>
+</table>
+<elem key="md5">f542c4a58dd3f352a70f3338f89de003</elem>
+<elem key="sha1">ba58dd96323bcf90d0c7ca9a0b4f80115f404ab9</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIHEDCCBfigAwIBAgIQD5qeDFSRt7deeWGzjJginjANBgkqhkiG9w0BAQsFADBy&#xa;MQswCQYDVQQGEwJVUzELMAkGA1UECBMCVFgxEDAOBgNVBAcTB0hvdXN0b24xFTAT&#xa;BgNVBAoTDGNQYW5lbCwgSW5jLjEtMCsGA1UEAxMkY1BhbmVsLCBJbmMuIENlcnRp&#xa;ZmljYXRpb24gQXV0aG9yaXR5MB4XDTI0MDkxMTAwMDAwMFoXDTI0MTIxMDIzNTk1&#xa;OVowKTEnMCUGA1UEAxMeYWRhbS5zaGFyZS5saWJyYXJ5LmhhcnZhcmQuZWR1MIIB&#xa;IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA6z+7Rnvg4PiCnD+WfS3lfoDy&#xa;sbIelOtVFn6E1pLU59Tk4KXm7goV+qNgleydduImDOM0Dh+JmPZ9DmIYjIRD6dgR&#xa;WuePf6pwyH8POItyw6kkI2GL0sCYJpuRDX4/gC4D7nzVgteDTUYy8S4JvIE1hWqN&#xa;xwTHD1Hfxr4nprr/K3nsSvTJRRFw0wiITAJwqVhO3qaFsVc3u7b0UjG6O+xPjUTp&#xa;ZKNYMuVWTv/D9U0bpyLs638m8hpBwI7b8QfGmWZvC3mNcoxyJd9zED06AhF1jjrz&#xa;1oQKUQctrY0y1BSEwN9Cx03qqGi1aeiMmTNuKYwnvUtksloDMmVbtcH3eHgNVQID&#xa;AQABo4ID6TCCA+UwHwYDVR0jBBgwFoAUfgNaZUFrp34K4bidCOodjh1qx2UwHQYD&#xa;VR0OBBYEFHvN8pUOxmyXRcZAVLrbJXGqHM/xMA4GA1UdDwEB/wQEAwIFoDAMBgNV&#xa;HRMBAf8EAjAAMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjBJBgNVHSAE&#xa;QjBAMDQGCysGAQQBsjEBAgI0MCUwIwYIKwYBBQUHAgEWF2h0dHBzOi8vc2VjdGln&#xa;by5jb20vQ1BTMAgGBmeBDAECATBMBgNVHR8ERTBDMEGgP6A9hjtodHRwOi8vY3Js&#xa;LmNvbW9kb2NhLmNvbS9jUGFuZWxJbmNDZXJ0aWZpY2F0aW9uQXV0aG9yaXR5LmNy&#xa;bDB9BggrBgEFBQcBAQRxMG8wRwYIKwYBBQUHMAKGO2h0dHA6Ly9jcnQuY29tb2Rv&#xa;Y2EuY29tL2NQYW5lbEluY0NlcnRpZmljYXRpb25BdXRob3JpdHkuY3J0MCQGCCsG&#xa;AQUFBzABhhhodHRwOi8vb2NzcC5jb21vZG9jYS5jb20wggEEBgorBgEEAdZ5AgQC&#xa;BIH1BIHyAPAAdgB2/4g/Crb7lVHCYcz1h7o0tKTNuyncaEIKn+ZnTFo6dAAAAZHe&#xa;YecVAAAEAwBHMEUCIAQhIpWLKQHCy4qOq2n6StRld3MlgyBg3P3WYqNIsa7xAiEA&#xa;lkkstIJnoFKgQv7kzI8dg/VLzsHnAOZMJxau/KoaSaYAdgA/F0tP1yJHWJQdZRyE&#xa;vg0S7ZA3fx+FauvBvyiF7PhkbgAAAZHeYeb0AAAEAwBHMEUCIDp/EbcQ/HtXELdL&#xa;0bWbRpd4FaypMVGYXjon8S+wMp89AiEA/YgXxSHv8fevPXJ3Pi/DF3JY6LXn5iEZ&#xa;sfrQB7Jx558wggFEBgNVHREEggE7MIIBN4IeYWRhbS5zaGFyZS5saWJyYXJ5Lmhh&#xa;cnZhcmQuZWR1giVjcGFuZWwuYWRhbS5zaGFyZS5saWJyYXJ5LmhhcnZhcmQuZWR1&#xa;gipjcGNhbGVuZGFycy5hZGFtLnNoYXJlLmxpYnJhcnkuaGFydmFyZC5lZHWCKWNw&#xa;Y29udGFjdHMuYWRhbS5zaGFyZS5saWJyYXJ5LmhhcnZhcmQuZWR1giNtYWlsLmFk&#xa;YW0uc2hhcmUubGlicmFyeS5oYXJ2YXJkLmVkdYImd2ViZGlzay5hZGFtLnNoYXJl&#xa;LmxpYnJhcnkuaGFydmFyZC5lZHWCJndlYm1haWwuYWRhbS5zaGFyZS5saWJyYXJ5&#xa;LmhhcnZhcmQuZWR1giJ3d3cuYWRhbS5zaGFyZS5saWJyYXJ5LmhhcnZhcmQuZWR1&#xa;MA0GCSqGSIb3DQEBCwUAA4IBAQCHV5emBiUgakRYhXyXPAdO2w3jXQnDSLoIhH3n&#xa;K6hcHhboyUksw+jcs/+XS1sLjopNwLuIUVxl01cDLuzBAPu4cKjnog3Ytlxz+r7+&#xa;0yWA1WOk3AdLMaC5nbswKtjEPbHldIYEmAfR1gCgNbMbrw3JJCsYqUCwXf2kPLaa&#xa;eGT4toZT2UXPAPiJ65/TvtJnAwPaAY9dU9bQRR+YHDd/Uw2YavVr3GquRQGvcBeH&#xa;Bx3pqQdr89mhGAi4aZpc7tK64uSANNgBcbPUocL78CI/Cjlon/sxtv3729BhCCRY&#xa;tX0+UukRO+7tBxN98gHZaD2NRPh7hE7L31cr5EvLhI2TkFcE&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+<port protocol="tcp" portid="587"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtp" product="Exim smtpd" version="4.96.2" hostname="harvard1.reclaimhosting.com" method="probed" conf="10"><cpe>cpe:/a:exim:exim:4.96.2</cpe></service><script id="smtp-commands" output="harvard1.reclaimhosting.com Hello www.adam.share.library.harvard.edu [20.57.44.239], SIZE 52428800, 8BITMIME, PIPELINING, PIPECONNECT, STARTTLS, HELP, &#xa; Commands supported: AUTH STARTTLS HELO EHLO MAIL RCPT DATA BDAT NOOP QUIT RSET HELP "/><script id="ssl-cert" output="Subject: commonName=adam.share.library.harvard.edu&#xa;Subject Alternative Name: DNS:adam.share.library.harvard.edu, DNS:cpanel.adam.share.library.harvard.edu, DNS:cpcalendars.adam.share.library.harvard.edu, DNS:cpcontacts.adam.share.library.harvard.edu, DNS:mail.adam.share.library.harvard.edu, DNS:webdisk.adam.share.library.harvard.edu, DNS:webmail.adam.share.library.harvard.edu, DNS:www.adam.share.library.harvard.edu&#xa;Issuer: commonName=cPanel, Inc. Certification Authority/organizationName=cPanel, Inc./stateOrProvinceName=TX/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-09-11T00:00:00&#xa;Not valid after:  2024-12-10T23:59:59&#xa;MD5:   f542 c4a5 8dd3 f352 a70f 3338 f89d e003&#xa;SHA-1: ba58 dd96 323b cf90 d0c7 ca9a 0b4f 8011 5f40 4ab9"><table key="subject">
+<elem key="commonName">adam.share.library.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="stateOrProvinceName">TX</elem>
+<elem key="commonName">cPanel, Inc. Certification Authority</elem>
+<elem key="organizationName">cPanel, Inc.</elem>
+<elem key="countryName">US</elem>
+<elem key="localityName">Houston</elem>
+</table>
+<table key="pubkey">
+<elem key="exponent">BIGNUM: 0x5649dcea0f38</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">BIGNUM: 0x5649dcea1098</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">7E:03:5A:65:41:6B:A7:7E:0A:E1:B8:9D:08:EA:1D:8E:1D:6A:C7:65</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">7B:CD:F2:95:0E:C6:6C:97:45:C6:40:54:BA:DB:25:71:AA:1C:CF:F1</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="critical">true</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="critical">true</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 1.3.6.1.4.1.6449.1.2.2.52&#xa;  CPS: https://sectigo.com/CPS&#xa;Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://crl.comodoca.com/cPanelIncCertificationAuthority.crl</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:http://crt.comodoca.com/cPanelIncCertificationAuthority.crt&#xa;OCSP - URI:http://ocsp.comodoca.com</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 76:FF:88:3F:0A:B6:FB:95:51:C2:61:CC:F5:87:BA:34:&#xa;                B4:A4:CD:BB:29:DC:68:42:0A:9F:E6:67:4C:5A:3A:74&#xa;    Timestamp : Sep 11 00:00:43.797 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:04:21:22:95:8B:29:01:C2:CB:8A:8E:AB:&#xa;                69:FA:4A:D4:65:77:73:25:83:20:60:DC:FD:D6:62:A3:&#xa;                48:B1:AE:F1:02:21:00:96:49:2C:B4:82:67:A0:52:A0:&#xa;                42:FE:E4:CC:8F:1D:83:F5:4B:CE:C1:E7:00:E6:4C:27:&#xa;                16:AE:FC:AA:1A:49:A6&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 3F:17:4B:4F:D7:22:47:58:94:1D:65:1C:84:BE:0D:12:&#xa;                ED:90:37:7F:1F:85:6A:EB:C1:BF:28:85:EC:F8:64:6E&#xa;    Timestamp : Sep 11 00:00:43.764 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:3A:7F:11:B7:10:FC:7B:57:10:B7:4B:D1:&#xa;                B5:9B:46:97:78:15:AC:A9:31:51:98:5E:3A:27:F1:2F:&#xa;                B0:32:9F:3D:02:21:00:FD:88:17:C5:21:EF:F1:F7:AF:&#xa;                3D:72:77:3E:2F:C3:17:72:58:E8:B5:E7:E6:21:19:B1:&#xa;                FA:D0:07:B2:71:E7:9F</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:adam.share.library.harvard.edu, DNS:cpanel.adam.share.library.harvard.edu, DNS:cpcalendars.adam.share.library.harvard.edu, DNS:cpcontacts.adam.share.library.harvard.edu, DNS:mail.adam.share.library.harvard.edu, DNS:webdisk.adam.share.library.harvard.edu, DNS:webmail.adam.share.library.harvard.edu, DNS:www.adam.share.library.harvard.edu</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-09-11T00:00:00</elem>
+<elem key="notAfter">2024-12-10T23:59:59</elem>
+</table>
+<elem key="md5">f542c4a58dd3f352a70f3338f89de003</elem>
+<elem key="sha1">ba58dd96323bcf90d0c7ca9a0b4f80115f404ab9</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIHEDCCBfigAwIBAgIQD5qeDFSRt7deeWGzjJginjANBgkqhkiG9w0BAQsFADBy&#xa;MQswCQYDVQQGEwJVUzELMAkGA1UECBMCVFgxEDAOBgNVBAcTB0hvdXN0b24xFTAT&#xa;BgNVBAoTDGNQYW5lbCwgSW5jLjEtMCsGA1UEAxMkY1BhbmVsLCBJbmMuIENlcnRp&#xa;ZmljYXRpb24gQXV0aG9yaXR5MB4XDTI0MDkxMTAwMDAwMFoXDTI0MTIxMDIzNTk1&#xa;OVowKTEnMCUGA1UEAxMeYWRhbS5zaGFyZS5saWJyYXJ5LmhhcnZhcmQuZWR1MIIB&#xa;IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA6z+7Rnvg4PiCnD+WfS3lfoDy&#xa;sbIelOtVFn6E1pLU59Tk4KXm7goV+qNgleydduImDOM0Dh+JmPZ9DmIYjIRD6dgR&#xa;WuePf6pwyH8POItyw6kkI2GL0sCYJpuRDX4/gC4D7nzVgteDTUYy8S4JvIE1hWqN&#xa;xwTHD1Hfxr4nprr/K3nsSvTJRRFw0wiITAJwqVhO3qaFsVc3u7b0UjG6O+xPjUTp&#xa;ZKNYMuVWTv/D9U0bpyLs638m8hpBwI7b8QfGmWZvC3mNcoxyJd9zED06AhF1jjrz&#xa;1oQKUQctrY0y1BSEwN9Cx03qqGi1aeiMmTNuKYwnvUtksloDMmVbtcH3eHgNVQID&#xa;AQABo4ID6TCCA+UwHwYDVR0jBBgwFoAUfgNaZUFrp34K4bidCOodjh1qx2UwHQYD&#xa;VR0OBBYEFHvN8pUOxmyXRcZAVLrbJXGqHM/xMA4GA1UdDwEB/wQEAwIFoDAMBgNV&#xa;HRMBAf8EAjAAMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjBJBgNVHSAE&#xa;QjBAMDQGCysGAQQBsjEBAgI0MCUwIwYIKwYBBQUHAgEWF2h0dHBzOi8vc2VjdGln&#xa;by5jb20vQ1BTMAgGBmeBDAECATBMBgNVHR8ERTBDMEGgP6A9hjtodHRwOi8vY3Js&#xa;LmNvbW9kb2NhLmNvbS9jUGFuZWxJbmNDZXJ0aWZpY2F0aW9uQXV0aG9yaXR5LmNy&#xa;bDB9BggrBgEFBQcBAQRxMG8wRwYIKwYBBQUHMAKGO2h0dHA6Ly9jcnQuY29tb2Rv&#xa;Y2EuY29tL2NQYW5lbEluY0NlcnRpZmljYXRpb25BdXRob3JpdHkuY3J0MCQGCCsG&#xa;AQUFBzABhhhodHRwOi8vb2NzcC5jb21vZG9jYS5jb20wggEEBgorBgEEAdZ5AgQC&#xa;BIH1BIHyAPAAdgB2/4g/Crb7lVHCYcz1h7o0tKTNuyncaEIKn+ZnTFo6dAAAAZHe&#xa;YecVAAAEAwBHMEUCIAQhIpWLKQHCy4qOq2n6StRld3MlgyBg3P3WYqNIsa7xAiEA&#xa;lkkstIJnoFKgQv7kzI8dg/VLzsHnAOZMJxau/KoaSaYAdgA/F0tP1yJHWJQdZRyE&#xa;vg0S7ZA3fx+FauvBvyiF7PhkbgAAAZHeYeb0AAAEAwBHMEUCIDp/EbcQ/HtXELdL&#xa;0bWbRpd4FaypMVGYXjon8S+wMp89AiEA/YgXxSHv8fevPXJ3Pi/DF3JY6LXn5iEZ&#xa;sfrQB7Jx558wggFEBgNVHREEggE7MIIBN4IeYWRhbS5zaGFyZS5saWJyYXJ5Lmhh&#xa;cnZhcmQuZWR1giVjcGFuZWwuYWRhbS5zaGFyZS5saWJyYXJ5LmhhcnZhcmQuZWR1&#xa;gipjcGNhbGVuZGFycy5hZGFtLnNoYXJlLmxpYnJhcnkuaGFydmFyZC5lZHWCKWNw&#xa;Y29udGFjdHMuYWRhbS5zaGFyZS5saWJyYXJ5LmhhcnZhcmQuZWR1giNtYWlsLmFk&#xa;YW0uc2hhcmUubGlicmFyeS5oYXJ2YXJkLmVkdYImd2ViZGlzay5hZGFtLnNoYXJl&#xa;LmxpYnJhcnkuaGFydmFyZC5lZHWCJndlYm1haWwuYWRhbS5zaGFyZS5saWJyYXJ5&#xa;LmhhcnZhcmQuZWR1giJ3d3cuYWRhbS5zaGFyZS5saWJyYXJ5LmhhcnZhcmQuZWR1&#xa;MA0GCSqGSIb3DQEBCwUAA4IBAQCHV5emBiUgakRYhXyXPAdO2w3jXQnDSLoIhH3n&#xa;K6hcHhboyUksw+jcs/+XS1sLjopNwLuIUVxl01cDLuzBAPu4cKjnog3Ytlxz+r7+&#xa;0yWA1WOk3AdLMaC5nbswKtjEPbHldIYEmAfR1gCgNbMbrw3JJCsYqUCwXf2kPLaa&#xa;eGT4toZT2UXPAPiJ65/TvtJnAwPaAY9dU9bQRR+YHDd/Uw2YavVr3GquRQGvcBeH&#xa;Bx3pqQdr89mhGAi4aZpc7tK64uSANNgBcbPUocL78CI/Cjlon/sxtv3729BhCCRY&#xa;tX0+UukRO+7tBxN98gHZaD2NRPh7hE7L31cr5EvLhI2TkFcE&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="993"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="imaps" method="table" conf="3"/><script id="ssl-cert" output="Subject: commonName=adam.share.library.harvard.edu&#xa;Subject Alternative Name: DNS:adam.share.library.harvard.edu, DNS:cpanel.adam.share.library.harvard.edu, DNS:cpcalendars.adam.share.library.harvard.edu, DNS:cpcontacts.adam.share.library.harvard.edu, DNS:mail.adam.share.library.harvard.edu, DNS:webdisk.adam.share.library.harvard.edu, DNS:webmail.adam.share.library.harvard.edu, DNS:www.adam.share.library.harvard.edu&#xa;Issuer: commonName=cPanel, Inc. Certification Authority/organizationName=cPanel, Inc./stateOrProvinceName=TX/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-09-11T00:00:00&#xa;Not valid after:  2024-12-10T23:59:59&#xa;MD5:   f542 c4a5 8dd3 f352 a70f 3338 f89d e003&#xa;SHA-1: ba58 dd96 323b cf90 d0c7 ca9a 0b4f 8011 5f40 4ab9"><table key="subject">
+<elem key="commonName">adam.share.library.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="stateOrProvinceName">TX</elem>
+<elem key="commonName">cPanel, Inc. Certification Authority</elem>
+<elem key="organizationName">cPanel, Inc.</elem>
+<elem key="countryName">US</elem>
+<elem key="localityName">Houston</elem>
+</table>
+<table key="pubkey">
+<elem key="exponent">BIGNUM: 0x5649dd384c38</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">BIGNUM: 0x5649dd385cc8</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">7E:03:5A:65:41:6B:A7:7E:0A:E1:B8:9D:08:EA:1D:8E:1D:6A:C7:65</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">7B:CD:F2:95:0E:C6:6C:97:45:C6:40:54:BA:DB:25:71:AA:1C:CF:F1</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="critical">true</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="critical">true</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 1.3.6.1.4.1.6449.1.2.2.52&#xa;  CPS: https://sectigo.com/CPS&#xa;Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://crl.comodoca.com/cPanelIncCertificationAuthority.crl</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:http://crt.comodoca.com/cPanelIncCertificationAuthority.crt&#xa;OCSP - URI:http://ocsp.comodoca.com</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 76:FF:88:3F:0A:B6:FB:95:51:C2:61:CC:F5:87:BA:34:&#xa;                B4:A4:CD:BB:29:DC:68:42:0A:9F:E6:67:4C:5A:3A:74&#xa;    Timestamp : Sep 11 00:00:43.797 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:04:21:22:95:8B:29:01:C2:CB:8A:8E:AB:&#xa;                69:FA:4A:D4:65:77:73:25:83:20:60:DC:FD:D6:62:A3:&#xa;                48:B1:AE:F1:02:21:00:96:49:2C:B4:82:67:A0:52:A0:&#xa;                42:FE:E4:CC:8F:1D:83:F5:4B:CE:C1:E7:00:E6:4C:27:&#xa;                16:AE:FC:AA:1A:49:A6&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 3F:17:4B:4F:D7:22:47:58:94:1D:65:1C:84:BE:0D:12:&#xa;                ED:90:37:7F:1F:85:6A:EB:C1:BF:28:85:EC:F8:64:6E&#xa;    Timestamp : Sep 11 00:00:43.764 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:3A:7F:11:B7:10:FC:7B:57:10:B7:4B:D1:&#xa;                B5:9B:46:97:78:15:AC:A9:31:51:98:5E:3A:27:F1:2F:&#xa;                B0:32:9F:3D:02:21:00:FD:88:17:C5:21:EF:F1:F7:AF:&#xa;                3D:72:77:3E:2F:C3:17:72:58:E8:B5:E7:E6:21:19:B1:&#xa;                FA:D0:07:B2:71:E7:9F</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:adam.share.library.harvard.edu, DNS:cpanel.adam.share.library.harvard.edu, DNS:cpcalendars.adam.share.library.harvard.edu, DNS:cpcontacts.adam.share.library.harvard.edu, DNS:mail.adam.share.library.harvard.edu, DNS:webdisk.adam.share.library.harvard.edu, DNS:webmail.adam.share.library.harvard.edu, DNS:www.adam.share.library.harvard.edu</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-09-11T00:00:00</elem>
+<elem key="notAfter">2024-12-10T23:59:59</elem>
+</table>
+<elem key="md5">f542c4a58dd3f352a70f3338f89de003</elem>
+<elem key="sha1">ba58dd96323bcf90d0c7ca9a0b4f80115f404ab9</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIHEDCCBfigAwIBAgIQD5qeDFSRt7deeWGzjJginjANBgkqhkiG9w0BAQsFADBy&#xa;MQswCQYDVQQGEwJVUzELMAkGA1UECBMCVFgxEDAOBgNVBAcTB0hvdXN0b24xFTAT&#xa;BgNVBAoTDGNQYW5lbCwgSW5jLjEtMCsGA1UEAxMkY1BhbmVsLCBJbmMuIENlcnRp&#xa;ZmljYXRpb24gQXV0aG9yaXR5MB4XDTI0MDkxMTAwMDAwMFoXDTI0MTIxMDIzNTk1&#xa;OVowKTEnMCUGA1UEAxMeYWRhbS5zaGFyZS5saWJyYXJ5LmhhcnZhcmQuZWR1MIIB&#xa;IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA6z+7Rnvg4PiCnD+WfS3lfoDy&#xa;sbIelOtVFn6E1pLU59Tk4KXm7goV+qNgleydduImDOM0Dh+JmPZ9DmIYjIRD6dgR&#xa;WuePf6pwyH8POItyw6kkI2GL0sCYJpuRDX4/gC4D7nzVgteDTUYy8S4JvIE1hWqN&#xa;xwTHD1Hfxr4nprr/K3nsSvTJRRFw0wiITAJwqVhO3qaFsVc3u7b0UjG6O+xPjUTp&#xa;ZKNYMuVWTv/D9U0bpyLs638m8hpBwI7b8QfGmWZvC3mNcoxyJd9zED06AhF1jjrz&#xa;1oQKUQctrY0y1BSEwN9Cx03qqGi1aeiMmTNuKYwnvUtksloDMmVbtcH3eHgNVQID&#xa;AQABo4ID6TCCA+UwHwYDVR0jBBgwFoAUfgNaZUFrp34K4bidCOodjh1qx2UwHQYD&#xa;VR0OBBYEFHvN8pUOxmyXRcZAVLrbJXGqHM/xMA4GA1UdDwEB/wQEAwIFoDAMBgNV&#xa;HRMBAf8EAjAAMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjBJBgNVHSAE&#xa;QjBAMDQGCysGAQQBsjEBAgI0MCUwIwYIKwYBBQUHAgEWF2h0dHBzOi8vc2VjdGln&#xa;by5jb20vQ1BTMAgGBmeBDAECATBMBgNVHR8ERTBDMEGgP6A9hjtodHRwOi8vY3Js&#xa;LmNvbW9kb2NhLmNvbS9jUGFuZWxJbmNDZXJ0aWZpY2F0aW9uQXV0aG9yaXR5LmNy&#xa;bDB9BggrBgEFBQcBAQRxMG8wRwYIKwYBBQUHMAKGO2h0dHA6Ly9jcnQuY29tb2Rv&#xa;Y2EuY29tL2NQYW5lbEluY0NlcnRpZmljYXRpb25BdXRob3JpdHkuY3J0MCQGCCsG&#xa;AQUFBzABhhhodHRwOi8vb2NzcC5jb21vZG9jYS5jb20wggEEBgorBgEEAdZ5AgQC&#xa;BIH1BIHyAPAAdgB2/4g/Crb7lVHCYcz1h7o0tKTNuyncaEIKn+ZnTFo6dAAAAZHe&#xa;YecVAAAEAwBHMEUCIAQhIpWLKQHCy4qOq2n6StRld3MlgyBg3P3WYqNIsa7xAiEA&#xa;lkkstIJnoFKgQv7kzI8dg/VLzsHnAOZMJxau/KoaSaYAdgA/F0tP1yJHWJQdZRyE&#xa;vg0S7ZA3fx+FauvBvyiF7PhkbgAAAZHeYeb0AAAEAwBHMEUCIDp/EbcQ/HtXELdL&#xa;0bWbRpd4FaypMVGYXjon8S+wMp89AiEA/YgXxSHv8fevPXJ3Pi/DF3JY6LXn5iEZ&#xa;sfrQB7Jx558wggFEBgNVHREEggE7MIIBN4IeYWRhbS5zaGFyZS5saWJyYXJ5Lmhh&#xa;cnZhcmQuZWR1giVjcGFuZWwuYWRhbS5zaGFyZS5saWJyYXJ5LmhhcnZhcmQuZWR1&#xa;gipjcGNhbGVuZGFycy5hZGFtLnNoYXJlLmxpYnJhcnkuaGFydmFyZC5lZHWCKWNw&#xa;Y29udGFjdHMuYWRhbS5zaGFyZS5saWJyYXJ5LmhhcnZhcmQuZWR1giNtYWlsLmFk&#xa;YW0uc2hhcmUubGlicmFyeS5oYXJ2YXJkLmVkdYImd2ViZGlzay5hZGFtLnNoYXJl&#xa;LmxpYnJhcnkuaGFydmFyZC5lZHWCJndlYm1haWwuYWRhbS5zaGFyZS5saWJyYXJ5&#xa;LmhhcnZhcmQuZWR1giJ3d3cuYWRhbS5zaGFyZS5saWJyYXJ5LmhhcnZhcmQuZWR1&#xa;MA0GCSqGSIb3DQEBCwUAA4IBAQCHV5emBiUgakRYhXyXPAdO2w3jXQnDSLoIhH3n&#xa;K6hcHhboyUksw+jcs/+XS1sLjopNwLuIUVxl01cDLuzBAPu4cKjnog3Ytlxz+r7+&#xa;0yWA1WOk3AdLMaC5nbswKtjEPbHldIYEmAfR1gCgNbMbrw3JJCsYqUCwXf2kPLaa&#xa;eGT4toZT2UXPAPiJ65/TvtJnAwPaAY9dU9bQRR+YHDd/Uw2YavVr3GquRQGvcBeH&#xa;Bx3pqQdr89mhGAi4aZpc7tK64uSANNgBcbPUocL78CI/Cjlon/sxtv3729BhCCRY&#xa;tX0+UukRO+7tBxN98gHZaD2NRPh7hE7L31cr5EvLhI2TkFcE&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="995"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="pop3s" method="table" conf="3"/><script id="ssl-cert" output="Subject: commonName=adam.share.library.harvard.edu&#xa;Subject Alternative Name: DNS:adam.share.library.harvard.edu, DNS:cpanel.adam.share.library.harvard.edu, DNS:cpcalendars.adam.share.library.harvard.edu, DNS:cpcontacts.adam.share.library.harvard.edu, DNS:mail.adam.share.library.harvard.edu, DNS:webdisk.adam.share.library.harvard.edu, DNS:webmail.adam.share.library.harvard.edu, DNS:www.adam.share.library.harvard.edu&#xa;Issuer: commonName=cPanel, Inc. Certification Authority/organizationName=cPanel, Inc./stateOrProvinceName=TX/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-09-11T00:00:00&#xa;Not valid after:  2024-12-10T23:59:59&#xa;MD5:   f542 c4a5 8dd3 f352 a70f 3338 f89d e003&#xa;SHA-1: ba58 dd96 323b cf90 d0c7 ca9a 0b4f 8011 5f40 4ab9"><table key="subject">
+<elem key="commonName">adam.share.library.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="stateOrProvinceName">TX</elem>
+<elem key="commonName">cPanel, Inc. Certification Authority</elem>
+<elem key="organizationName">cPanel, Inc.</elem>
+<elem key="countryName">US</elem>
+<elem key="localityName">Houston</elem>
+</table>
+<table key="pubkey">
+<elem key="exponent">BIGNUM: 0x5649de36e888</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">BIGNUM: 0x5649de8fb538</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">7E:03:5A:65:41:6B:A7:7E:0A:E1:B8:9D:08:EA:1D:8E:1D:6A:C7:65</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">7B:CD:F2:95:0E:C6:6C:97:45:C6:40:54:BA:DB:25:71:AA:1C:CF:F1</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="critical">true</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="critical">true</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 1.3.6.1.4.1.6449.1.2.2.52&#xa;  CPS: https://sectigo.com/CPS&#xa;Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://crl.comodoca.com/cPanelIncCertificationAuthority.crl</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:http://crt.comodoca.com/cPanelIncCertificationAuthority.crt&#xa;OCSP - URI:http://ocsp.comodoca.com</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 76:FF:88:3F:0A:B6:FB:95:51:C2:61:CC:F5:87:BA:34:&#xa;                B4:A4:CD:BB:29:DC:68:42:0A:9F:E6:67:4C:5A:3A:74&#xa;    Timestamp : Sep 11 00:00:43.797 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:04:21:22:95:8B:29:01:C2:CB:8A:8E:AB:&#xa;                69:FA:4A:D4:65:77:73:25:83:20:60:DC:FD:D6:62:A3:&#xa;                48:B1:AE:F1:02:21:00:96:49:2C:B4:82:67:A0:52:A0:&#xa;                42:FE:E4:CC:8F:1D:83:F5:4B:CE:C1:E7:00:E6:4C:27:&#xa;                16:AE:FC:AA:1A:49:A6&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 3F:17:4B:4F:D7:22:47:58:94:1D:65:1C:84:BE:0D:12:&#xa;                ED:90:37:7F:1F:85:6A:EB:C1:BF:28:85:EC:F8:64:6E&#xa;    Timestamp : Sep 11 00:00:43.764 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:3A:7F:11:B7:10:FC:7B:57:10:B7:4B:D1:&#xa;                B5:9B:46:97:78:15:AC:A9:31:51:98:5E:3A:27:F1:2F:&#xa;                B0:32:9F:3D:02:21:00:FD:88:17:C5:21:EF:F1:F7:AF:&#xa;                3D:72:77:3E:2F:C3:17:72:58:E8:B5:E7:E6:21:19:B1:&#xa;                FA:D0:07:B2:71:E7:9F</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:adam.share.library.harvard.edu, DNS:cpanel.adam.share.library.harvard.edu, DNS:cpcalendars.adam.share.library.harvard.edu, DNS:cpcontacts.adam.share.library.harvard.edu, DNS:mail.adam.share.library.harvard.edu, DNS:webdisk.adam.share.library.harvard.edu, DNS:webmail.adam.share.library.harvard.edu, DNS:www.adam.share.library.harvard.edu</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-09-11T00:00:00</elem>
+<elem key="notAfter">2024-12-10T23:59:59</elem>
+</table>
+<elem key="md5">f542c4a58dd3f352a70f3338f89de003</elem>
+<elem key="sha1">ba58dd96323bcf90d0c7ca9a0b4f80115f404ab9</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIHEDCCBfigAwIBAgIQD5qeDFSRt7deeWGzjJginjANBgkqhkiG9w0BAQsFADBy&#xa;MQswCQYDVQQGEwJVUzELMAkGA1UECBMCVFgxEDAOBgNVBAcTB0hvdXN0b24xFTAT&#xa;BgNVBAoTDGNQYW5lbCwgSW5jLjEtMCsGA1UEAxMkY1BhbmVsLCBJbmMuIENlcnRp&#xa;ZmljYXRpb24gQXV0aG9yaXR5MB4XDTI0MDkxMTAwMDAwMFoXDTI0MTIxMDIzNTk1&#xa;OVowKTEnMCUGA1UEAxMeYWRhbS5zaGFyZS5saWJyYXJ5LmhhcnZhcmQuZWR1MIIB&#xa;IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA6z+7Rnvg4PiCnD+WfS3lfoDy&#xa;sbIelOtVFn6E1pLU59Tk4KXm7goV+qNgleydduImDOM0Dh+JmPZ9DmIYjIRD6dgR&#xa;WuePf6pwyH8POItyw6kkI2GL0sCYJpuRDX4/gC4D7nzVgteDTUYy8S4JvIE1hWqN&#xa;xwTHD1Hfxr4nprr/K3nsSvTJRRFw0wiITAJwqVhO3qaFsVc3u7b0UjG6O+xPjUTp&#xa;ZKNYMuVWTv/D9U0bpyLs638m8hpBwI7b8QfGmWZvC3mNcoxyJd9zED06AhF1jjrz&#xa;1oQKUQctrY0y1BSEwN9Cx03qqGi1aeiMmTNuKYwnvUtksloDMmVbtcH3eHgNVQID&#xa;AQABo4ID6TCCA+UwHwYDVR0jBBgwFoAUfgNaZUFrp34K4bidCOodjh1qx2UwHQYD&#xa;VR0OBBYEFHvN8pUOxmyXRcZAVLrbJXGqHM/xMA4GA1UdDwEB/wQEAwIFoDAMBgNV&#xa;HRMBAf8EAjAAMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjBJBgNVHSAE&#xa;QjBAMDQGCysGAQQBsjEBAgI0MCUwIwYIKwYBBQUHAgEWF2h0dHBzOi8vc2VjdGln&#xa;by5jb20vQ1BTMAgGBmeBDAECATBMBgNVHR8ERTBDMEGgP6A9hjtodHRwOi8vY3Js&#xa;LmNvbW9kb2NhLmNvbS9jUGFuZWxJbmNDZXJ0aWZpY2F0aW9uQXV0aG9yaXR5LmNy&#xa;bDB9BggrBgEFBQcBAQRxMG8wRwYIKwYBBQUHMAKGO2h0dHA6Ly9jcnQuY29tb2Rv&#xa;Y2EuY29tL2NQYW5lbEluY0NlcnRpZmljYXRpb25BdXRob3JpdHkuY3J0MCQGCCsG&#xa;AQUFBzABhhhodHRwOi8vb2NzcC5jb21vZG9jYS5jb20wggEEBgorBgEEAdZ5AgQC&#xa;BIH1BIHyAPAAdgB2/4g/Crb7lVHCYcz1h7o0tKTNuyncaEIKn+ZnTFo6dAAAAZHe&#xa;YecVAAAEAwBHMEUCIAQhIpWLKQHCy4qOq2n6StRld3MlgyBg3P3WYqNIsa7xAiEA&#xa;lkkstIJnoFKgQv7kzI8dg/VLzsHnAOZMJxau/KoaSaYAdgA/F0tP1yJHWJQdZRyE&#xa;vg0S7ZA3fx+FauvBvyiF7PhkbgAAAZHeYeb0AAAEAwBHMEUCIDp/EbcQ/HtXELdL&#xa;0bWbRpd4FaypMVGYXjon8S+wMp89AiEA/YgXxSHv8fevPXJ3Pi/DF3JY6LXn5iEZ&#xa;sfrQB7Jx558wggFEBgNVHREEggE7MIIBN4IeYWRhbS5zaGFyZS5saWJyYXJ5Lmhh&#xa;cnZhcmQuZWR1giVjcGFuZWwuYWRhbS5zaGFyZS5saWJyYXJ5LmhhcnZhcmQuZWR1&#xa;gipjcGNhbGVuZGFycy5hZGFtLnNoYXJlLmxpYnJhcnkuaGFydmFyZC5lZHWCKWNw&#xa;Y29udGFjdHMuYWRhbS5zaGFyZS5saWJyYXJ5LmhhcnZhcmQuZWR1giNtYWlsLmFk&#xa;YW0uc2hhcmUubGlicmFyeS5oYXJ2YXJkLmVkdYImd2ViZGlzay5hZGFtLnNoYXJl&#xa;LmxpYnJhcnkuaGFydmFyZC5lZHWCJndlYm1haWwuYWRhbS5zaGFyZS5saWJyYXJ5&#xa;LmhhcnZhcmQuZWR1giJ3d3cuYWRhbS5zaGFyZS5saWJyYXJ5LmhhcnZhcmQuZWR1&#xa;MA0GCSqGSIb3DQEBCwUAA4IBAQCHV5emBiUgakRYhXyXPAdO2w3jXQnDSLoIhH3n&#xa;K6hcHhboyUksw+jcs/+XS1sLjopNwLuIUVxl01cDLuzBAPu4cKjnog3Ytlxz+r7+&#xa;0yWA1WOk3AdLMaC5nbswKtjEPbHldIYEmAfR1gCgNbMbrw3JJCsYqUCwXf2kPLaa&#xa;eGT4toZT2UXPAPiJ65/TvtJnAwPaAY9dU9bQRR+YHDd/Uw2YavVr3GquRQGvcBeH&#xa;Bx3pqQdr89mhGAi4aZpc7tK64uSANNgBcbPUocL78CI/Cjlon/sxtv3729BhCCRY&#xa;tX0+UukRO+7tBxN98gHZaD2NRPh7hE7L31cr5EvLhI2TkFcE&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+</ports>
+<times srtt="7272" rttvar="874" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730747275"/>
+<taskend task="NSE" time="1730747275"/>
+<taskbegin task="NSE" time="1730747275"/>
+<taskend task="NSE" time="1730747275"/>
+<taskbegin task="NSE" time="1730747275"/>
+<taskend task="NSE" time="1730747275"/>
+<runstats><finished time="1730747275" timestr="Mon Nov  4 19:07:55 2024" elapsed="202.42" summary="Nmap done at Mon Nov  4 19:07:55 2024; 1 IP address (1 host up) scanned in 202.42 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
