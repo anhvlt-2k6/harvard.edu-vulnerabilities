@@ -17,3 +17,113 @@
 <taskbegin task="Parallel DNS resolution of 1 host." time="1730742057"/>
 <taskend task="Parallel DNS resolution of 1 host." time="1730742058"/>
 <taskbegin task="Connect Scan" time="1730742058"/>
+<taskend task="Connect Scan" time="1730742061" extrainfo="1000 total ports"/>
+<taskbegin task="Service scan" time="1730742061"/>
+<taskend task="Service scan" time="1730742074" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1730742074"/>
+<taskend task="NSE" time="1730742075"/>
+<taskbegin task="NSE" time="1730742075"/>
+<taskend task="NSE" time="1730742075"/>
+<taskbegin task="NSE" time="1730742075"/>
+<taskend task="NSE" time="1730742075"/>
+<host starttime="1730742057" endtime="1730742075"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="52.223.7.86" addrtype="ipv4"/>
+<hostnames>
+<hostname name="login.harvard.edu" type="user"/>
+<hostname name="aaa00e5cffb63d634.awsglobalaccelerator.com" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="998">
+<extrareasons reason="no-responses" count="998"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" method="probed" conf="10"><cpe>cpe:/a:apache:http_server</cpe></service><script id="http-auth" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-cookie-flags" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-favicon" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-generator" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-ls" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-ntlm-info" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-server-header" output="Apache"><elem>Apache</elem>
+</script><script id="http-title" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssl" product="Apache httpd" extrainfo="SSL-only mode" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:apache:http_server</cpe></service><script id="http-favicon" output="Unknown favicon MD5: 449C9DD651DB589388B721EB2496F5B0"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+</table>
+</script><script id="http-robots.txt" output="1 disallowed entry &#xa;/"/><script id="http-server-header" output="&#xa;  Apache&#xa;  nginx"><elem>Apache</elem>
+<elem>nginx</elem>
+</script><script id="http-title" output="Site doesn&apos;t have a title (text/html;charset=utf-8).&#xa;Requested resource was https://login.harvard.edu/app/UserHome?iss=https%3A%2F%2Flogin.harvard.edu&amp;session_hint=AUTHENTICATED"><elem key="redirect_url">https://login.harvard.edu/app/UserHome?iss=https%3A%2F%2Flogin.harvard.edu&amp;session_hint=AUTHENTICATED</elem>
+</script><script id="ssl-cert" output="Subject: commonName=login.harvard.edu&#xa;Subject Alternative Name: DNS:login.harvard.edu&#xa;Issuer: commonName=R11/organizationName=Let&apos;s Encrypt/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-10-20T23:57:45&#xa;Not valid after:  2025-01-18T23:57:44&#xa;MD5:   ca2b 7cd9 1336 387e fdc7 64a4 8bcb 1685&#xa;SHA-1: 32a2 3438 0e7c 09c6 a7d5 f936 8e01 6054 d645 3549"><table key="subject">
+<elem key="commonName">login.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+<elem key="countryName">US</elem>
+<elem key="commonName">R11</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="exponent">BIGNUM: 0x5620ca4c6758</elem>
+<elem key="modulus">BIGNUM: 0x5620cab73ae8</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+</table>
+<table>
+<elem key="value">DE:1D:61:E0:7D:AD:EA:27:C0:B8:27:02:F6:AB:7D:CC:4F:8F:BD:7B</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="value">C5:CF:46:A4:EA:F4:C3:C0:7A:6C:95:C4:2D:B0:5E:92:2F:26:E3:B9</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">OCSP - URI:http://r11.o.lencr.org&#xa;CA Issuers - URI:http://r11.i.lencr.org/</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">DNS:login.harvard.edu</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+<table>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : A2:E3:0A:E4:45:EF:BD:AD:9B:7E:38:ED:47:67:77:53:&#xa;                D7:82:5B:84:94:D7:2B:5E:1B:2C:C4:B9:50:A4:47:E7&#xa;    Timestamp : Oct 21 00:56:16.019 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:A9:AD:81:39:E4:CF:21:5C:19:EE:CA:&#xa;                1A:52:09:45:D7:15:2F:D1:00:66:B1:51:04:3F:81:5E:&#xa;                28:00:F6:83:27:02:20:60:C4:F0:8F:CA:02:3D:C1:FB:&#xa;                BF:69:FB:0C:F6:2A:D1:4B:AB:18:A9:4B:F3:0A:EC:D0:&#xa;                52:E3:64:62:17:2B:58&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : CF:11:56:EE:D5:2E:7C:AF:F3:87:5B:D9:69:2E:9B:E9:&#xa;                1A:71:67:4A:B0:17:EC:AC:01:D2:5B:77:CE:CC:3B:08&#xa;    Timestamp : Oct 21 00:56:16.093 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:BB:B1:45:35:F6:3A:8E:BC:11:09:9B:&#xa;                42:8F:B5:7C:B1:8C:C0:02:23:B3:B1:DD:F0:8E:F8:53:&#xa;                47:B4:EC:70:91:02:20:69:5D:BD:AC:CE:CD:D2:AF:EA:&#xa;                27:AA:2F:8D:25:B7:8F:56:6C:55:7C:A2:03:29:9E:11:&#xa;                8D:E7:E9:3B:95:91:F6</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-10-20T23:57:45</elem>
+<elem key="notAfter">2025-01-18T23:57:44</elem>
+</table>
+<elem key="md5">ca2b7cd91336387efdc764a48bcb1685</elem>
+<elem key="sha1">32a234380e7c09c6a7d5f9368e016054d6453549</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIE8jCCA9qgAwIBAgISA9rj2KP/eyWP9/LylDE0azi/MA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNSMTEwHhcNMjQxMDIwMjM1NzQ1WhcNMjUwMTE4MjM1NzQ0WjAcMRowGAYDVQQD&#xa;ExFsb2dpbi5oYXJ2YXJkLmVkdTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoC&#xa;ggEBAJ1fkZf+P6PvP2REuxhkoOrBnR59oj6DRZL3/jKCyqIEy7Sj7cc20Oze9m0v&#xa;9tNPXO3DXjBWQ5ZXeiJVPo+PrCh9XJqFLe5vkk3XKQzJ8TTvx0t08x3a89dVFYIP&#xa;kelUCjOY8eBWA+mWqd5g3b+kE8yBaycsxP0V2jGHcliLeNWVIn46gCbGC5ySUzjs&#xa;qPekx+ipPhRjfuV6d/5MPt4HH93juCDDkiki1NuFo4RjHQvP6VL9kuaCHIKVueeR&#xa;H05xQHWM3gwWh8eO/Aoy7M5TrcfZWoYNZ2aSRUbvHfsr6VIm3tglLdjtWrAh9+mn&#xa;/X9sB0cQRpC0uHerNpj/HP2IDv8CAwEAAaOCAhUwggIRMA4GA1UdDwEB/wQEAwIF&#xa;oDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADAd&#xa;BgNVHQ4EFgQU3h1h4H2t6ifAuCcC9qt9zE+PvXswHwYDVR0jBBgwFoAUxc9GpOr0&#xa;w8B6bJXELbBeki8m47kwVwYIKwYBBQUHAQEESzBJMCIGCCsGAQUFBzABhhZodHRw&#xa;Oi8vcjExLm8ubGVuY3Iub3JnMCMGCCsGAQUFBzAChhdodHRwOi8vcjExLmkubGVu&#xa;Y3Iub3JnLzAcBgNVHREEFTATghFsb2dpbi5oYXJ2YXJkLmVkdTATBgNVHSAEDDAK&#xa;MAgGBmeBDAECATCCAQQGCisGAQQB1nkCBAIEgfUEgfIA8AB2AKLjCuRF772tm344&#xa;7Udnd1PXgluElNcrXhssxLlQpEfnAAABkqyTH5MAAAQDAEcwRQIhAKmtgTnkzyFc&#xa;Ge7KGlIJRdcVL9EAZrFRBD+BXigA9oMnAiBgxPCPygI9wfu/afsM9irRS6sYqUvz&#xa;CuzQUuNkYhcrWAB2AM8RVu7VLnyv84db2Wkum+kacWdKsBfsrAHSW3fOzDsIAAAB&#xa;kqyTH90AAAQDAEcwRQIhALuxRTX2Oo68EQmbQo+1fLGMwAIjs7Hd8I74U0e07HCR&#xa;AiBpXb2szs3Sr+onqi+NJbePVmxVfKIDKZ4RjefpO5WR9jANBgkqhkiG9w0BAQsF&#xa;AAOCAQEAOTkKYoVG4NJsgo4sTw9xjlM7v8m2ERa2kJsU9xWHkukiE3fa3Fj68xl3&#xa;/FM0Dvw8bivVOC4bjuxlsYwfP5OFeVzhzoQq9zPwYGG4GqvQdlyZuoy12aYE3ha+&#xa;0RiETrEpHgsMuyFejmAWxsd3zdZEi+BltQJUhmzPJarpPvvtjd91P7s47IeL0Hsw&#xa;AgQwXPMjTholP5k1VHb+73HBv+/YOUG/93UfTmOBKPmzKuZM54awSoNSsDak7vOl&#xa;cLOCNb4jo1ue3qW/8TsmcgY1yv324U19hUsSHjctFgRURfgX+lGPl1x0pF3JzFy6&#xa;NwxFpVOWCxJouCc93JIZInJPDuMQpQ==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="tls-alpn" output="&#xa;  http/1.1"><elem>http/1.1</elem>
+</script></port>
+</ports>
+<times srtt="1833" rttvar="1367" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730742075"/>
+<taskend task="NSE" time="1730742075"/>
+<taskbegin task="NSE" time="1730742075"/>
+<taskend task="NSE" time="1730742075"/>
+<taskbegin task="NSE" time="1730742075"/>
+<taskend task="NSE" time="1730742075"/>
+<runstats><finished time="1730742075" timestr="Mon Nov  4 17:41:15 2024" elapsed="18.53" summary="Nmap done at Mon Nov  4 17:41:15 2024; 1 IP address (1 host up) scanned in 18.53 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
