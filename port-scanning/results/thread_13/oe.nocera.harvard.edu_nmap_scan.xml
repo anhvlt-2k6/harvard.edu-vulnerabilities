@@ -22,3 +22,148 @@
 <taskprogress task="Service scan" time="1730741017" percent="80.00" remaining="32" etc="1730741048"/>
 <taskend task="Service scan" time="1730741027" extrainfo="5 services on 1 host"/>
 <taskbegin task="NSE" time="1730741027"/>
+<taskend task="NSE" time="1730741055"/>
+<taskbegin task="NSE" time="1730741055"/>
+<taskend task="NSE" time="1730741056"/>
+<taskbegin task="NSE" time="1730741056"/>
+<taskend task="NSE" time="1730741056"/>
+<host starttime="1730740874" endtime="1730741056"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="199.94.60.218" addrtype="ipv4"/>
+<hostnames>
+<hostname name="oe.nocera.harvard.edu" type="user"/>
+</hostnames>
+<ports><extraports state="filtered" count="994">
+<extrareasons reason="no-responses" count="994"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="8.0" extrainfo="protocol 2.0" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:8.0</cpe></service><script id="ssh-hostkey" output="&#xa;  3072 39:3c:43:5d:5f:cc:ee:72:75:7d:05:37:d7:da:3d:f0 (RSA)&#xa;  256 d1:29:9b:cc:2f:fd:aa:fe:ee:ca:9c:27:41:c6:de:6b (ECDSA)&#xa;  256 22:46:9e:66:32:db:58:1b:0c:4f:e5:2c:4f:ac:8b:66 (ED25519)"><table>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABgQCll3g0Dxg45p91AXis1sK6QnfX+WD9/iG3pRGYpdwKDhtzEdRQc96hJ6Ihix3Zgo1nWHEGzjYaPIJNKMr2ELHmZVYcHf7qXde7rbk967HpENo0CxooF4+zdvI6fjmgsZ2jmcB9GuBKTmZzANnQboODCq7AczLRh2651zemdL/ENVY5OZoC7jzni2kKpOpo5iaK4yNF5EPU7RcObMi9sAzSw1Jwpe+nSPsI4Gz5cT2Jm74+HYJoLsUPcvGJlpIVwIk0zAHSvAjWZVFlN8oSNOlp5Itz2Nt9Ms+1HaYFZm0jU7xwgFob2oPgL8oOaGum5zY+8G0S4yD3hEpNGAeeeQXCoYkAopdZ1gGsQ6ZYzrrboX5YQYy0csffyej5VJkpIvWGE5YSMD0zhjdlSrfFWIRhDU0zBwKSBeV3YgVZeXzXmDubbFbCMFrJKEr45vG0AsForskicX8+XSMieu07r+A9oEPxVNegD9c9/ScPG4ipAumPbn5f/U9rQdbjY9iWUds=</elem>
+<elem key="fingerprint">393c435d5fccee72757d0537d7da3df0</elem>
+<elem key="bits">3072</elem>
+<elem key="type">ssh-rsa</elem>
+</table>
+<table>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBFVH+bCT5YDbK21dJ1/K4kSDdWeL6zEHndt6g++srmfatKqnPVQxn6KvfQCri1vUYNf3UtdcQn22XfP20sLIjlk=</elem>
+<elem key="fingerprint">d1299bcc2ffdaafeeeca9c2741c6de6b</elem>
+<elem key="bits">256</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+</table>
+<table>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIDaxgQL2UWbg/slW6e4+EpYVCcmuSaosvhR5h32sbWI8</elem>
+<elem key="fingerprint">22469e6632db581b0c4fe52c4fac8b66</elem>
+<elem key="bits">256</elem>
+<elem key="type">ssh-ed25519</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.37" extrainfo="(AlmaLinux) OpenSSL/1.1.1k mod_fcgid/2.3.9" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.37</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="Apache/2.4.37 (AlmaLinux) OpenSSL/1.1.1k mod_fcgid/2.3.9"><elem>Apache/2.4.37 (AlmaLinux) OpenSSL/1.1.1k mod_fcgid/2.3.9</elem>
+</script><script id="http-title" output="Did not follow redirect to https://oe.nocera.harvard.edu/"><elem key="redirect_url">https://oe.nocera.harvard.edu/</elem>
+</script></port>
+<port protocol="tcp" portid="113"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ident" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssl" product="Apache httpd" extrainfo="SSL-only mode" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:apache:http_server</cpe></service><script id="http-favicon" output="Unknown favicon MD5: 9F0C5C74EDCFFE92ADEC716F2BA3B132"/><script id="http-git" output="&#xa;  199.94.60.218:443/.git/&#xa;    Git repository found!&#xa;    .git/config matched patterns &apos;key&apos;&#xa;    Repository description: Unnamed repository; edit this file &apos;description&apos; to name the...&#xa;    Remotes:&#xa;      git@github.com:Milstein-Corp/open_enventory-modified_for_NERC.git&#xa;"><table key="199.94.60.218:443/.git/">
+<table key="interesting-matches">
+<table key=".git/config">
+<elem>key</elem>
+</table>
+</table>
+<table key="remotes">
+<elem>git@github.com:Milstein-Corp/open_enventory-modified_for_NERC.git</elem>
+</table>
+<table key="files-found">
+<elem key=".gitignore">true</elem>
+<elem key=".git/description">true</elem>
+<elem key=".git/COMMIT_EDITMSG">false</elem>
+<elem key=".git/config">true</elem>
+<elem key=".git/info/exclude">true</elem>
+</table>
+<elem key="repository-description">Unnamed repository; edit this file &apos;description&apos; to name the repository.&#xa;</elem>
+</table>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-robots.txt" output="1 disallowed entry &#xa;/"/><script id="http-server-header" output="Apache/2.4.37 (AlmaLinux) OpenSSL/1.1.1k mod_fcgid/2.3.9"><elem>Apache/2.4.37 (AlmaLinux) OpenSSL/1.1.1k mod_fcgid/2.3.9</elem>
+</script><script id="http-title" output="chemical database NOCERA LAB Harvard University, Department Of..."><elem key="title">chemical database NOCERA LAB Harvard University, Department Of Chemistry And Chemical Biology - Sign in</elem>
+</script><script id="ssl-cert" output="Subject: commonName=oe.nocera.harvard.edu&#xa;Subject Alternative Name: DNS:oe.nocera.harvard.edu, DNS:www.oe.nocera.harvard.edu&#xa;Issuer: commonName=R11/organizationName=Let&apos;s Encrypt/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-09-28T03:02:50&#xa;Not valid after:  2024-12-27T03:02:49&#xa;MD5:   65a5 9726 199f 8e58 57b4 9646 527f 15ea&#xa;SHA-1: 89fe c885 a91b ed06 de6d 2119 517d 509a 5e14 65e6"><table key="subject">
+<elem key="commonName">oe.nocera.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+<elem key="commonName">R11</elem>
+<elem key="countryName">US</elem>
+</table>
+<table key="pubkey">
+<elem key="exponent">BIGNUM: 0x555d95a03028</elem>
+<elem key="modulus">BIGNUM: 0x555d95a03068</elem>
+<elem key="bits">2048</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">59:B1:11:CA:FF:41:7A:97:48:D5:6F:93:F8:CE:B3:72:D6:3A:61:6D</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">C5:CF:46:A4:EA:F4:C3:C0:7A:6C:95:C4:2D:B0:5E:92:2F:26:E3:B9</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://r11.o.lencr.org&#xa;CA Issuers - URI:http://r11.i.lencr.org/</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:oe.nocera.harvard.edu, DNS:www.oe.nocera.harvard.edu</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 3F:17:4B:4F:D7:22:47:58:94:1D:65:1C:84:BE:0D:12:&#xa;                ED:90:37:7F:1F:85:6A:EB:C1:BF:28:85:EC:F8:64:6E&#xa;    Timestamp : Sep 28 04:01:20.980 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:A7:3C:BA:9B:F7:BD:28:26:EB:A3:45:&#xa;                EF:30:34:5D:0D:55:B3:68:F2:6A:13:67:AD:CB:A1:59:&#xa;                D8:5C:C5:70:F0:02:21:00:98:86:63:CD:60:B0:EE:7D:&#xa;                F8:DB:7E:BE:21:E2:A4:F7:11:E7:56:42:BA:6A:E2:B8:&#xa;                1C:A3:E3:84:97:AB:67:DD&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : DF:E1:56:EB:AA:05:AF:B5:9C:0F:86:71:8D:A8:C0:32:&#xa;                4E:AE:56:D9:6E:A7:F5:A5:6A:01:D1:C1:3B:BE:52:5C&#xa;    Timestamp : Sep 28 04:01:21.169 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:21:00:A9:29:92:C1:C5:00:B5:2C:B0:F6:A9:&#xa;                4B:B4:3F:1C:8F:00:E8:1C:38:70:2E:04:3A:51:44:0A:&#xa;                F4:26:06:C7:15:02:1F:71:44:45:88:C6:8A:2F:AA:D4:&#xa;                40:BD:46:A0:8A:EE:5D:38:0D:B6:DD:56:5A:42:9C:78:&#xa;                2E:6F:98:A0:9A:61</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-09-28T03:02:50</elem>
+<elem key="notAfter">2024-12-27T03:02:49</elem>
+</table>
+<elem key="md5">65a59726199f8e5857b49646527f15ea</elem>
+<elem key="sha1">89fec885a91bed06de6d2119517d509a5e1465e6</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFFTCCA/2gAwIBAgISA6/XoayBEhtJKSdNYyjZHXdmMA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNSMTEwHhcNMjQwOTI4MDMwMjUwWhcNMjQxMjI3MDMwMjQ5WjAgMR4wHAYDVQQD&#xa;ExVvZS5ub2NlcmEuaGFydmFyZC5lZHUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw&#xa;ggEKAoIBAQDWszZrV031S6fH5VkXFt0mgNnHS3t3QAc9ROEMZZb67GyGN31hSLL2&#xa;QEoeRqD8d90ubXE1Ejt/CyPMsEYohXPd+cE8bKuFVtyFc78qmUcefJ0TafZ14Ecn&#xa;pRI5RtEyFZ4DYE5qPZ2dSm30l8eEhrQvrmkRc98n/VsyWzF3+oMr21DGxB+WiLTp&#xa;2q4LouO13VtRFsdxRw1cpycFa1G9GQXJvVvCajW21u0nlNLv4zXEGSiOjZCHDXOz&#xa;zb/s6Cg4wU44xE15d27zajBrDbRtpYaEvD2BVQ3H8aFbmEM0YUu3QeCFaLr+W86g&#xa;B4+1sdIR4HaWR7CADDsZ/ok68Z9NzDAZAgMBAAGjggI0MIICMDAOBgNVHQ8BAf8E&#xa;BAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQC&#xa;MAAwHQYDVR0OBBYEFFmxEcr/QXqXSNVvk/jOs3LWOmFtMB8GA1UdIwQYMBaAFMXP&#xa;RqTq9MPAemyVxC2wXpIvJuO5MFcGCCsGAQUFBwEBBEswSTAiBggrBgEFBQcwAYYW&#xa;aHR0cDovL3IxMS5vLmxlbmNyLm9yZzAjBggrBgEFBQcwAoYXaHR0cDovL3IxMS5p&#xa;LmxlbmNyLm9yZy8wOwYDVR0RBDQwMoIVb2Uubm9jZXJhLmhhcnZhcmQuZWR1ghl3&#xa;d3cub2Uubm9jZXJhLmhhcnZhcmQuZWR1MBMGA1UdIAQMMAowCAYGZ4EMAQIBMIIB&#xa;BAYKKwYBBAHWeQIEAgSB9QSB8gDwAHcAPxdLT9ciR1iUHWUchL4NEu2QN38fhWrr&#xa;wb8ohez4ZG4AAAGSNspOVAAABAMASDBGAiEApzy6m/e9KCbro0XvMDRdDVWzaPJq&#xa;E2ety6FZ2FzFcPACIQCYhmPNYLDuffjbfr4h4qT3EedWQrpq4rgco+OEl6tn3QB1&#xa;AN/hVuuqBa+1nA+GcY2owDJOrlbZbqf1pWoB0cE7vlJcAAABkjbKTxEAAAQDAEYw&#xa;RAIhAKkpksHFALUssPapS7Q/HI8A6Bw4cC4EOlFECvQmBscVAh9xREWIxoovqtRA&#xa;vUagiu5dOA223VZaQpx4Lm+YoJphMA0GCSqGSIb3DQEBCwUAA4IBAQAYdHTrqnLA&#xa;p+FSv8AAVXPT73BIdcpkLjn9MhkzwajKxWhwOoEvPMN7JdP3r3dE5qKcOaL0VKek&#xa;h/1L19+ruW9ZsRcqcOwg9VH7OLTjHS0+hKDxuSLKNoBygBlbx9Fw7oi9ga7cqkfW&#xa;zYHWRmT0lb53I8TJnTnbzGDCNzIZZgr61qLhe12v3xQNVs1C0bWqsMo8caAQ3xqf&#xa;Zy+yhkxiQAkWDsPG0QBbIAFF3Ame9PSPtvNZ2H1erAKrnfuaDgahUk6P9HpIXrVZ&#xa;5c9smXDHAtUaK4VmPPAV3Hu2pOfa7P5RUZVKrdq1U/V31Y1ZI94NfkfTuP/frDfR&#xa;UkSnZ0dSiAzx&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="2000"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="cisco-sccp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5060"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="sip" method="table" conf="3"/></port>
+</ports>
+<times srtt="40385" rttvar="4562" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730741056"/>
+<taskend task="NSE" time="1730741056"/>
+<taskbegin task="NSE" time="1730741056"/>
+<taskend task="NSE" time="1730741056"/>
+<taskbegin task="NSE" time="1730741056"/>
+<taskend task="NSE" time="1730741056"/>
+<runstats><finished time="1730741056" timestr="Mon Nov  4 17:24:16 2024" elapsed="182.47" summary="Nmap done at Mon Nov  4 17:24:16 2024; 1 IP address (1 host up) scanned in 182.47 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
