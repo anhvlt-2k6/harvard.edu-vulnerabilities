@@ -27,17 +27,17 @@ jobs:
 
       - name: Wait for changes and Commit
         run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
           while true; do
-            # Check if there are changes before running git commands
             git pull
-            git config --local user.name "github-actions[bot]"
-            git config --local user.email "github-actions[bot]@users.noreply.github.com"
             git add .
             if ! git commit -m "GitHub Action Bot"; then
               echo "No changes to commit"
             else
-              git push
+              git push --force
             fi
+            git pull
             sleep 60
           done
         
