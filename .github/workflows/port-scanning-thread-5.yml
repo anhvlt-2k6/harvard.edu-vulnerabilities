@@ -1,0 +1,43 @@
+name: Port Scanning for Harvard University, thread 5
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  nmap-scan-single-linux:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install Nmap and Python3 for quick runs
+        run: |
+          sudo apt install -y python3 python3-pip nmap
+          sudo pip install psutil
+          mkdir port-scanning/results/thread_5
+
+      - name: Run the Python file
+        run: |
+          nohup python3 port-scanning/runner.py port-scanning/list_thread_5.txt port-scanning/results/thread_5 & # Run the script in the background
+
+      - name: Wait for changes and Commit
+        run: |
+          while true; do
+            # Check if there are changes before running git commands
+            git pull
+            git config --local user.name "github-actions[bot]"
+            git config --local user.email "github-actions[bot]@users.noreply.github.com"
+            git add .
+            if ! git commit -m "GitHub Action Bot"; then
+              echo "No changes to commit"
+            else
+              git push
+            fi
+            sleep 60
+          done
+        

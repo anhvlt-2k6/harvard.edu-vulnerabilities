@@ -29,10 +29,11 @@ jobs:
         run: |
           sudo apt install -y python3 python3-pip nmap
           sudo pip install psutil
+          mkdir port-scanning/results/thread_{str(i)}
 
       - name: Run the Python file
         run: |
-          nohup python3 port-scanning/runner.py port-scanning/{thread_file_prefix}_{str(i)}.txt & # Run the script in the background
+          nohup python3 port-scanning/runner.py port-scanning/{thread_file_prefix}_{str(i)}.txt port-scanning/results/thread_{str(i)} & # Run the script in the background
 
       - name: Wait for changes and Commit
         run: |
