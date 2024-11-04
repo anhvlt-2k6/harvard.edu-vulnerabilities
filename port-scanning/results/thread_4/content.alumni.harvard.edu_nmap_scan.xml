@@ -17,3 +17,123 @@
 <taskbegin task="Parallel DNS resolution of 1 host." time="1730734144"/>
 <taskend task="Parallel DNS resolution of 1 host." time="1730734144"/>
 <taskbegin task="Connect Scan" time="1730734144"/>
+<taskend task="Connect Scan" time="1730734149" extrainfo="1000 total ports"/>
+<taskbegin task="Service scan" time="1730734149"/>
+<taskend task="Service scan" time="1730734161" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1730734161"/>
+<taskend task="NSE" time="1730734163"/>
+<taskbegin task="NSE" time="1730734163"/>
+<taskend task="NSE" time="1730734163"/>
+<taskbegin task="NSE" time="1730734163"/>
+<taskend task="NSE" time="1730734163"/>
+<host starttime="1730734144" endtime="1730734163"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="151.101.202.133" addrtype="ipv4"/>
+<hostnames>
+<hostname name="content.alumni.harvard.edu" type="user"/>
+</hostnames>
+<ports><extraports state="filtered" count="998">
+<extrareasons reason="no-responses" count="998"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Varnish" servicefp="SF-Port80-TCP:V=7.80%I=7%D=11/4%Time=6728E84B%P=x86_64-pc-linux-gnu%r(GetRequest,210,&quot;HTTP/1\.1\x20500\x20Domain\x20Not\x20Found\r\nConnection:\x20close\r\nContent-Length:\x20246\r\nServer:\x20Varnish\r\nRetry-After:\x200\r\ncontent-type:\x20text/html\r\nCache-Control:\x20private,\x20no-cache\r\nX-Served-By:\x20cache-pao-kpao1770045-PAO\r\nAccept-Ranges:\x20bytes\r\nDate:\x20Mon,\x2004\x20Nov\x202024\x2015:29:15\x20GMT\r\nVia:\x201\.1\x20varnish\r\n\r\n\n&lt;html&gt;\n&lt;head&gt;\n&lt;title&gt;Fastly\x20error:\x20unknown\x20domain\x20&lt;/title&gt;\n&lt;/head&gt;\n&lt;body&gt;\n&lt;p&gt;Fastly\x20error:\x20unknown\x20domain:\x20\.\x20Please\x20check\x20that\x20this\x20domain\x20has\x20been\x20added\x20to\x20a\x20service\.&lt;/p&gt;\n&lt;p&gt;Details:\x20cache-pao-kpao1770045-PAO\x20\(151\.101\.202\.133\)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;&quot;)%r(HTTPOptions,210,&quot;HTTP/1\.1\x20500\x20Domain\x20Not\x20Found\r\nConnection:\x20close\r\nContent-Length:\x20246\r\nServer:\x20Varnish\r\nRetry-After:\x200\r\ncontent-type:\x20text/html\r\nCache-Control:\x20private,\x20no-cache\r\nX-Served-By:\x20cache-pao-kpao1770064-PAO\r\nAccept-Ranges:\x20bytes\r\nDate:\x20Mon,\x2004\x20Nov\x202024\x2015:29:15\x20GMT\r\nVia:\x201\.1\x20varnish\r\n\r\n\n&lt;html&gt;\n&lt;head&gt;\n&lt;title&gt;Fastly\x20error:\x20unknown\x20domain\x20&lt;/title&gt;\n&lt;/head&gt;\n&lt;body&gt;\n&lt;p&gt;Fastly\x20error:\x20unknown\x20domain:\x20\.\x20Please\x20check\x20that\x20this\x20domain\x20has\x20been\x20added\x20to\x20a\x20service\.&lt;/p&gt;\n&lt;p&gt;Details:\x20cache-pao-kpao1770064-PAO\x20\(151\.101\.202\.133\)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;&quot;)%r(RTSPRequest,9B,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\nContent-Length:\x2011\r\ncontent-type:\x20text/plain;\x20charset=utf-8\r\nx-served-by:\x20cache-pao-kpao1770057\r\n\r\nBad\x20Request&quot;)%r(X11Probe,9B,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\nContent-Length:\x2011\r\ncontent-type:\x20text/plain;\x20charset=utf-8\r\nx-served-by:\x20cache-pao-kpao1770052\r\n\r\nBad\x20Request&quot;)%r(FourOhFourRequest,210,&quot;HTTP/1\.1\x20500\x20Domain\x20Not\x20Found\r\nConnection:\x20close\r\nContent-Length:\x20246\r\nServer:\x20Varnish\r\nRetry-After:\x200\r\ncontent-type:\x20text/html\r\nCache-Control:\x20private,\x20no-cache\r\nX-Served-By:\x20cache-pao-kpao1770036-PAO\r\nAccept-Ranges:\x20bytes\r\nDate:\x20Mon,\x2004\x20Nov\x202024\x2015:29:15\x20GMT\r\nVia:\x201\.1\x20varnish\r\n\r\n\n&lt;html&gt;\n&lt;head&gt;\n&lt;title&gt;Fastly\x20error:\x20unknown\x20domain\x20&lt;/title&gt;\n&lt;/head&gt;\n&lt;body&gt;\n&lt;p&gt;Fastly\x20error:\x20unknown\x20domain:\x20\.\x20Please\x20check\x20that\x20this\x20domain\x20has\x20been\x20added\x20to\x20a\x20service\.&lt;/p&gt;\n&lt;p&gt;Details:\x20cache-pao-kpao1770036-PAO\x20\(151\.101\.202\.133\)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;&quot;);" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  FourOhFourRequest: &#xa;    HTTP/1.1 500 Domain Not Found&#xa;    Connection: close&#xa;    Content-Length: 246&#xa;    Server: Varnish&#xa;    Retry-After: 0&#xa;    content-type: text/html&#xa;    Cache-Control: private, no-cache&#xa;    X-Served-By: cache-pao-kpao1770036-PAO&#xa;    Accept-Ranges: bytes&#xa;    Date: Mon, 04 Nov 2024 15:29:15 GMT&#xa;    Via: 1.1 varnish&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&#xa;    &lt;title&gt;Fastly error: unknown domain &lt;/title&gt;&#xa;    &lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;p&gt;Fastly error: unknown domain: . Please check that this domain has been added to a service.&lt;/p&gt;&#xa;    &lt;p&gt;Details: cache-pao-kpao1770036-PAO (151.101.202.133)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;&#xa;  GetRequest: &#xa;    HTTP/1.1 500 Domain Not Found&#xa;    Connection: close&#xa;    Content-Length: 246&#xa;    Server: Varnish&#xa;    Retry-After: 0&#xa;    content-type: text/html&#xa;    Cache-Control: private, no-cache&#xa;    X-Served-By: cache-pao-kpao1770045-PAO&#xa;    Accept-Ranges: bytes&#xa;    Date: Mon, 04 Nov 2024 15:29:15 GMT&#xa;    Via: 1.1 varnish&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&#xa;    &lt;title&gt;Fastly error: unknown domain &lt;/title&gt;&#xa;    &lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;p&gt;Fastly error: unknown domain: . Please check that this domain has been added to a service.&lt;/p&gt;&#xa;    &lt;p&gt;Details: cache-pao-kpao1770045-PAO (151.101.202.133)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;&#xa;  HTTPOptions: &#xa;    HTTP/1.1 500 Domain Not Found&#xa;    Connection: close&#xa;    Content-Length: 246&#xa;    Server: Varnish&#xa;    Retry-After: 0&#xa;    content-type: text/html&#xa;    Cache-Control: private, no-cache&#xa;    X-Served-By: cache-pao-kpao1770064-PAO&#xa;    Accept-Ranges: bytes&#xa;    Date: Mon, 04 Nov 2024 15:29:15 GMT&#xa;    Via: 1.1 varnish&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&#xa;    &lt;title&gt;Fastly error: unknown domain &lt;/title&gt;&#xa;    &lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;p&gt;Fastly error: unknown domain: . Please check that this domain has been added to a service.&lt;/p&gt;&#xa;    &lt;p&gt;Details: cache-pao-kpao1770064-PAO (151.101.202.133)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;&#xa;  RTSPRequest: &#xa;    HTTP/1.1 400 Bad Request&#xa;    Connection: close&#xa;    Content-Length: 11&#xa;    content-type: text/plain; charset=utf-8&#xa;    x-served-by: cache-pao-kpao1770057&#xa;    Request&#xa;  X11Probe: &#xa;    HTTP/1.1 400 Bad Request&#xa;    Connection: close&#xa;    Content-Length: 11&#xa;    content-type: text/plain; charset=utf-8&#xa;    x-served-by: cache-pao-kpao1770052&#xa;    Request"><elem key="FourOhFourRequest">&#xa;    HTTP/1.1 500 Domain Not Found&#xa;    Connection: close&#xa;    Content-Length: 246&#xa;    Server: Varnish&#xa;    Retry-After: 0&#xa;    content-type: text/html&#xa;    Cache-Control: private, no-cache&#xa;    X-Served-By: cache-pao-kpao1770036-PAO&#xa;    Accept-Ranges: bytes&#xa;    Date: Mon, 04 Nov 2024 15:29:15 GMT&#xa;    Via: 1.1 varnish&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&#xa;    &lt;title&gt;Fastly error: unknown domain &lt;/title&gt;&#xa;    &lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;p&gt;Fastly error: unknown domain: . Please check that this domain has been added to a service.&lt;/p&gt;&#xa;    &lt;p&gt;Details: cache-pao-kpao1770036-PAO (151.101.202.133)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</elem>
+<elem key="GetRequest">&#xa;    HTTP/1.1 500 Domain Not Found&#xa;    Connection: close&#xa;    Content-Length: 246&#xa;    Server: Varnish&#xa;    Retry-After: 0&#xa;    content-type: text/html&#xa;    Cache-Control: private, no-cache&#xa;    X-Served-By: cache-pao-kpao1770045-PAO&#xa;    Accept-Ranges: bytes&#xa;    Date: Mon, 04 Nov 2024 15:29:15 GMT&#xa;    Via: 1.1 varnish&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&#xa;    &lt;title&gt;Fastly error: unknown domain &lt;/title&gt;&#xa;    &lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;p&gt;Fastly error: unknown domain: . Please check that this domain has been added to a service.&lt;/p&gt;&#xa;    &lt;p&gt;Details: cache-pao-kpao1770045-PAO (151.101.202.133)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</elem>
+<elem key="HTTPOptions">&#xa;    HTTP/1.1 500 Domain Not Found&#xa;    Connection: close&#xa;    Content-Length: 246&#xa;    Server: Varnish&#xa;    Retry-After: 0&#xa;    content-type: text/html&#xa;    Cache-Control: private, no-cache&#xa;    X-Served-By: cache-pao-kpao1770064-PAO&#xa;    Accept-Ranges: bytes&#xa;    Date: Mon, 04 Nov 2024 15:29:15 GMT&#xa;    Via: 1.1 varnish&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&#xa;    &lt;title&gt;Fastly error: unknown domain &lt;/title&gt;&#xa;    &lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;p&gt;Fastly error: unknown domain: . Please check that this domain has been added to a service.&lt;/p&gt;&#xa;    &lt;p&gt;Details: cache-pao-kpao1770064-PAO (151.101.202.133)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</elem>
+<elem key="RTSPRequest">&#xa;    HTTP/1.1 400 Bad Request&#xa;    Connection: close&#xa;    Content-Length: 11&#xa;    content-type: text/plain; charset=utf-8&#xa;    x-served-by: cache-pao-kpao1770057&#xa;    Request</elem>
+<elem key="X11Probe">&#xa;    HTTP/1.1 400 Bad Request&#xa;    Connection: close&#xa;    Content-Length: 11&#xa;    content-type: text/plain; charset=utf-8&#xa;    x-served-by: cache-pao-kpao1770052&#xa;    Request</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="Varnish"><elem>Varnish</elem>
+</script><script id="http-title" output="Did not follow redirect to https://content.alumni.harvard.edu/"><elem key="redirect_url">https://content.alumni.harvard.edu/</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" product="Varnish" servicefp="SF-Port443-TCP:V=7.80%T=SSL%I=7%D=11/4%Time=6728E851%P=x86_64-pc-linux-gnu%r(GetRequest,210,&quot;HTTP/1\.1\x20500\x20Domain\x20Not\x20Found\r\nConnection:\x20close\r\nContent-Length:\x20246\r\nServer:\x20Varnish\r\nRetry-After:\x200\r\ncontent-type:\x20text/html\r\nCache-Control:\x20private,\x20no-cache\r\nX-Served-By:\x20cache-pao-kpao1770052-PAO\r\nAccept-Ranges:\x20bytes\r\nDate:\x20Mon,\x2004\x20Nov\x202024\x2015:29:21\x20GMT\r\nVia:\x201\.1\x20varnish\r\n\r\n\n&lt;html&gt;\n&lt;head&gt;\n&lt;title&gt;Fastly\x20error:\x20unknown\x20domain\x20&lt;/title&gt;\n&lt;/head&gt;\n&lt;body&gt;\n&lt;p&gt;Fastly\x20error:\x20unknown\x20domain:\x20\.\x20Please\x20check\x20that\x20this\x20domain\x20has\x20been\x20added\x20to\x20a\x20service\.&lt;/p&gt;\n&lt;p&gt;Details:\x20cache-pao-kpao1770052-PAO\x20\(151\.101\.202\.133\)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;&quot;)%r(HTTPOptions,210,&quot;HTTP/1\.1\x20500\x20Domain\x20Not\x20Found\r\nConnection:\x20close\r\nContent-Length:\x20246\r\nServer:\x20Varnish\r\nRetry-After:\x200\r\ncontent-type:\x20text/html\r\nCache-Control:\x20private,\x20no-cache\r\nX-Served-By:\x20cache-pao-kpao1770054-PAO\r\nAccept-Ranges:\x20bytes\r\nDate:\x20Mon,\x2004\x20Nov\x202024\x2015:29:21\x20GMT\r\nVia:\x201\.1\x20varnish\r\n\r\n\n&lt;html&gt;\n&lt;head&gt;\n&lt;title&gt;Fastly\x20error:\x20unknown\x20domain\x20&lt;/title&gt;\n&lt;/head&gt;\n&lt;body&gt;\n&lt;p&gt;Fastly\x20error:\x20unknown\x20domain:\x20\.\x20Please\x20check\x20that\x20this\x20domain\x20has\x20been\x20added\x20to\x20a\x20service\.&lt;/p&gt;\n&lt;p&gt;Details:\x20cache-pao-kpao1770054-PAO\x20\(151\.101\.202\.133\)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;&quot;)%r(FourOhFourRequest,210,&quot;HTTP/1\.1\x20500\x20Domain\x20Not\x20Found\r\nConnection:\x20close\r\nContent-Length:\x20246\r\nServer:\x20Varnish\r\nRetry-After:\x200\r\ncontent-type:\x20text/html\r\nCache-Control:\x20private,\x20no-cache\r\nX-Served-By:\x20cache-pao-kpao1770043-PAO\r\nAccept-Ranges:\x20bytes\r\nDate:\x20Mon,\x2004\x20Nov\x202024\x2015:29:21\x20GMT\r\nVia:\x201\.1\x20varnish\r\n\r\n\n&lt;html&gt;\n&lt;head&gt;\n&lt;title&gt;Fastly\x20error:\x20unknown\x20domain\x20&lt;/title&gt;\n&lt;/head&gt;\n&lt;body&gt;\n&lt;p&gt;Fastly\x20error:\x20unknown\x20domain:\x20\.\x20Please\x20check\x20that\x20this\x20domain\x20has\x20been\x20added\x20to\x20a\x20service\.&lt;/p&gt;\n&lt;p&gt;Details:\x20cache-pao-kpao1770043-PAO\x20\(151\.101\.202\.133\)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;&quot;);" tunnel="ssl" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  FourOhFourRequest: &#xa;    HTTP/1.1 500 Domain Not Found&#xa;    Connection: close&#xa;    Content-Length: 246&#xa;    Server: Varnish&#xa;    Retry-After: 0&#xa;    content-type: text/html&#xa;    Cache-Control: private, no-cache&#xa;    X-Served-By: cache-pao-kpao1770043-PAO&#xa;    Accept-Ranges: bytes&#xa;    Date: Mon, 04 Nov 2024 15:29:21 GMT&#xa;    Via: 1.1 varnish&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&#xa;    &lt;title&gt;Fastly error: unknown domain &lt;/title&gt;&#xa;    &lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;p&gt;Fastly error: unknown domain: . Please check that this domain has been added to a service.&lt;/p&gt;&#xa;    &lt;p&gt;Details: cache-pao-kpao1770043-PAO (151.101.202.133)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;&#xa;  GetRequest: &#xa;    HTTP/1.1 500 Domain Not Found&#xa;    Connection: close&#xa;    Content-Length: 246&#xa;    Server: Varnish&#xa;    Retry-After: 0&#xa;    content-type: text/html&#xa;    Cache-Control: private, no-cache&#xa;    X-Served-By: cache-pao-kpao1770052-PAO&#xa;    Accept-Ranges: bytes&#xa;    Date: Mon, 04 Nov 2024 15:29:21 GMT&#xa;    Via: 1.1 varnish&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&#xa;    &lt;title&gt;Fastly error: unknown domain &lt;/title&gt;&#xa;    &lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;p&gt;Fastly error: unknown domain: . Please check that this domain has been added to a service.&lt;/p&gt;&#xa;    &lt;p&gt;Details: cache-pao-kpao1770052-PAO (151.101.202.133)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;&#xa;  HTTPOptions: &#xa;    HTTP/1.1 500 Domain Not Found&#xa;    Connection: close&#xa;    Content-Length: 246&#xa;    Server: Varnish&#xa;    Retry-After: 0&#xa;    content-type: text/html&#xa;    Cache-Control: private, no-cache&#xa;    X-Served-By: cache-pao-kpao1770054-PAO&#xa;    Accept-Ranges: bytes&#xa;    Date: Mon, 04 Nov 2024 15:29:21 GMT&#xa;    Via: 1.1 varnish&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&#xa;    &lt;title&gt;Fastly error: unknown domain &lt;/title&gt;&#xa;    &lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;p&gt;Fastly error: unknown domain: . Please check that this domain has been added to a service.&lt;/p&gt;&#xa;    &lt;p&gt;Details: cache-pao-kpao1770054-PAO (151.101.202.133)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"><elem key="FourOhFourRequest">&#xa;    HTTP/1.1 500 Domain Not Found&#xa;    Connection: close&#xa;    Content-Length: 246&#xa;    Server: Varnish&#xa;    Retry-After: 0&#xa;    content-type: text/html&#xa;    Cache-Control: private, no-cache&#xa;    X-Served-By: cache-pao-kpao1770043-PAO&#xa;    Accept-Ranges: bytes&#xa;    Date: Mon, 04 Nov 2024 15:29:21 GMT&#xa;    Via: 1.1 varnish&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&#xa;    &lt;title&gt;Fastly error: unknown domain &lt;/title&gt;&#xa;    &lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;p&gt;Fastly error: unknown domain: . Please check that this domain has been added to a service.&lt;/p&gt;&#xa;    &lt;p&gt;Details: cache-pao-kpao1770043-PAO (151.101.202.133)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</elem>
+<elem key="GetRequest">&#xa;    HTTP/1.1 500 Domain Not Found&#xa;    Connection: close&#xa;    Content-Length: 246&#xa;    Server: Varnish&#xa;    Retry-After: 0&#xa;    content-type: text/html&#xa;    Cache-Control: private, no-cache&#xa;    X-Served-By: cache-pao-kpao1770052-PAO&#xa;    Accept-Ranges: bytes&#xa;    Date: Mon, 04 Nov 2024 15:29:21 GMT&#xa;    Via: 1.1 varnish&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&#xa;    &lt;title&gt;Fastly error: unknown domain &lt;/title&gt;&#xa;    &lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;p&gt;Fastly error: unknown domain: . Please check that this domain has been added to a service.&lt;/p&gt;&#xa;    &lt;p&gt;Details: cache-pao-kpao1770052-PAO (151.101.202.133)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</elem>
+<elem key="HTTPOptions">&#xa;    HTTP/1.1 500 Domain Not Found&#xa;    Connection: close&#xa;    Content-Length: 246&#xa;    Server: Varnish&#xa;    Retry-After: 0&#xa;    content-type: text/html&#xa;    Cache-Control: private, no-cache&#xa;    X-Served-By: cache-pao-kpao1770054-PAO&#xa;    Accept-Ranges: bytes&#xa;    Date: Mon, 04 Nov 2024 15:29:21 GMT&#xa;    Via: 1.1 varnish&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&#xa;    &lt;title&gt;Fastly error: unknown domain &lt;/title&gt;&#xa;    &lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;p&gt;Fastly error: unknown domain: . Please check that this domain has been added to a service.&lt;/p&gt;&#xa;    &lt;p&gt;Details: cache-pao-kpao1770054-PAO (151.101.202.133)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+</table>
+</script><script id="http-robots.txt" output="1 disallowed entry &#xa;/"/><script id="http-server-header" output="&#xa;  Varnish&#xa;  nginx"><elem>Varnish</elem>
+<elem>nginx</elem>
+</script><script id="http-title" output="Site doesn&apos;t have a title (text/html; charset=UTF-8)."></script><script id="ssl-cert" output="Subject: commonName=content.alumni.harvard.edu&#xa;Subject Alternative Name: DNS:content.alumni.harvard.edu&#xa;Issuer: commonName=Certainly Intermediate R1/organizationName=Certainly/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-11-03T05:56:47&#xa;Not valid after:  2024-12-03T05:56:46&#xa;MD5:   4ca4 24fd fab1 8839 de21 2258 23a5 8266&#xa;SHA-1: 8af4 8524 9f0b 9a20 fc74 2d34 827f eaff beae e246"><table key="subject">
+<elem key="commonName">content.alumni.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="organizationName">Certainly</elem>
+<elem key="countryName">US</elem>
+<elem key="commonName">Certainly Intermediate R1</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="exponent">BIGNUM: 0x564f19236628</elem>
+<elem key="modulus">BIGNUM: 0x564f19236668</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">62:E4:4F:15:A3:68:00:62:21:8D:91:EC:4D:68:DC:94:5B:B1:0B:43</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">BD:97:9D:DF:A1:D8:1B:25:99:E3:0C:04:06:89:64:12:D7:65:24:C7</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://ocsp.int-r1.certainly.com&#xa;CA Issuers - URI:http://int-r1.certainly.com</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:content.alumni.harvard.edu</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : EE:CD:D0:64:D5:DB:1A:CE:C5:5C:B7:9D:B4:CD:13:A2:&#xa;                32:87:46:7C:BC:EC:DE:C3:51:48:59:46:71:1F:B5:9B&#xa;    Timestamp : Nov  3 06:55:17.308 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:B1:3E:71:87:C2:81:23:62:DC:EB:8C:&#xa;                E8:A1:32:92:4A:9F:EC:86:ED:A1:01:6B:89:CC:95:30:&#xa;                82:5B:86:CC:5D:02:20:56:5F:D3:C7:1A:51:32:CC:1E:&#xa;                79:26:A3:F6:12:05:92:AF:1A:F8:EB:39:E4:A6:C5:9D:&#xa;                F8:E0:7D:C2:DA:D3:77&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 3F:17:4B:4F:D7:22:47:58:94:1D:65:1C:84:BE:0D:12:&#xa;                ED:90:37:7F:1F:85:6A:EB:C1:BF:28:85:EC:F8:64:6E&#xa;    Timestamp : Nov  3 06:55:17.653 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:BB:5F:B9:C2:B9:5F:1B:64:16:AC:3A:&#xa;                4C:41:1D:BE:4C:E3:96:C0:6F:83:82:F5:F8:1A:A7:20:&#xa;                D1:FF:48:A7:D4:02:20:1F:08:EC:EE:59:6E:05:65:B0:&#xa;                05:60:3B:6F:38:EF:E1:84:87:5C:03:F7:CB:EA:23:3E:&#xa;                01:61:1D:53:E5:14:A4</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-11-03T05:56:47</elem>
+<elem key="notAfter">2024-12-03T05:56:46</elem>
+</table>
+<elem key="md5">4ca424fdfab18839de21225823a58266</elem>
+<elem key="sha1">8af485249f0b9a20fc742d34827feaffbeaee246</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFJDCCBAygAwIBAgISdlUDHUZH60DGQk6eH3Rb4GUEMA0GCSqGSIb3DQEBCwUA&#xa;MEUxCzAJBgNVBAYTAlVTMRIwEAYDVQQKEwlDZXJ0YWlubHkxIjAgBgNVBAMTGUNl&#xa;cnRhaW5seSBJbnRlcm1lZGlhdGUgUjEwHhcNMjQxMTAzMDU1NjQ3WhcNMjQxMjAz&#xa;MDU1NjQ2WjAlMSMwIQYDVQQDExpjb250ZW50LmFsdW1uaS5oYXJ2YXJkLmVkdTCC&#xa;ASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAK5TMDWaDd/9obaFZx7b9Lzq&#xa;P06+KBbPRvhkBYph+Gh+wPIGdISMTbn6TyOs1XBmylHEKCs+rZ8A8Bu3MjbUbHr8&#xa;McvA0LkUOwIYoTMkDRImm1LItHwjYLgkm1UbLnrSUNpnTh1NWqEqDgjVGtglx0MR&#xa;C+k/KYB70Hr0FVSaSSf6se9D8CkY5W+S7z+zs+GefVm/hSOIH0Sr04x5INJbXeZj&#xa;IqJKeyO20LcQe1vWCQKV0R7oFHwC63hQMF7Iy++IynRL8DAbDUsuSGLjjZAvDUHU&#xa;iQ7H/AH6Yh8APDedrKyMAirD2AcKGsVtmW0lT8BW6FsLTViVsDDiKqHeZp4hQeEC&#xa;AwEAAaOCAiwwggIoMA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcD&#xa;AQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQUYuRPFaNoAGIhjZHs&#xa;TWjclFuxC0MwHwYDVR0jBBgwFoAUvZed36HYGyWZ4wwEBolkEtdlJMcwZQYIKwYB&#xa;BQUHAQEEWTBXMCwGCCsGAQUFBzABhiBodHRwOi8vb2NzcC5pbnQtcjEuY2VydGFp&#xa;bmx5LmNvbTAnBggrBgEFBQcwAoYbaHR0cDovL2ludC1yMS5jZXJ0YWlubHkuY29t&#xa;MCUGA1UdEQQeMByCGmNvbnRlbnQuYWx1bW5pLmhhcnZhcmQuZWR1MBMGA1UdIAQM&#xa;MAowCAYGZ4EMAQIBMIIBBAYKKwYBBAHWeQIEAgSB9QSB8gDwAHYA7s3QZNXbGs7F&#xa;XLedtM0TojKHRny87N7DUUhZRnEftZsAAAGS8M59PAAABAMARzBFAiEAsT5xh8KB&#xa;I2Lc64zooTKSSp/shu2hAWuJzJUwgluGzF0CIFZf08caUTLMHnkmo/YSBZKvGvjr&#xa;OeSmxZ344H3C2tN3AHYAPxdLT9ciR1iUHWUchL4NEu2QN38fhWrrwb8ohez4ZG4A&#xa;AAGS8M5+lQAABAMARzBFAiEAu1+5wrlfG2QWrDpMQR2+TOOWwG+DgvX4Gqcg0f9I&#xa;p9QCIB8I7O5ZbgVlsAVgO2847+GEh1wD98vqIz4BYR1T5RSkMA0GCSqGSIb3DQEB&#xa;CwUAA4IBAQAoAaF3BusmdAgNX4aQdOxWYNq4FFpbaMNh3uu6t1PNsP9vl7djJYb/&#xa;tLUCIrC2ybH5kLV7lCmI/M7j8s3MSTmWme2sI52D0dBxzV/dJ+1tfNcrQk79z0z3&#xa;ay8/a4vbAhn+ak3g1hAHUk6kdkBzYgLCZyBfQsfPsozVTiCFjTFaBbm2h8DuEoqP&#xa;QdJi+iH1S2tpIUAr7u72moBG/YgWB6n8J1pQNWV/iL/XceGtIFj0SjqH8w9Rh595&#xa;5vhiTJg9YoH3Xbn6xSg+Zc4758Vp9JsYR10dFxNIfP1gsB+ooRI2eYon8g0bBqZi&#xa;wiMA/crOlcsdBTtbsWUCzPFVLqxZ4O+J&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="2024-11-04T15:29:23+00:00; 0s from scanner time."><elem key="delta">0.0</elem>
+<elem key="date">2024-11-04T15:29:23+00:00</elem>
+</script><script id="tls-alpn" output="&#xa;  h2&#xa;  http/1.1"><elem>h2</elem>
+<elem>http/1.1</elem>
+</script></port>
+</ports>
+<times srtt="1134" rttvar="1726" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730734163"/>
+<taskend task="NSE" time="1730734163"/>
+<taskbegin task="NSE" time="1730734163"/>
+<taskend task="NSE" time="1730734163"/>
+<taskbegin task="NSE" time="1730734163"/>
+<taskend task="NSE" time="1730734163"/>
+<runstats><finished time="1730734163" timestr="Mon Nov  4 15:29:23 2024" elapsed="19.49" summary="Nmap done at Mon Nov  4 15:29:23 2024; 1 IP address (1 host up) scanned in 19.49 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
