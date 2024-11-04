@@ -17,3 +17,122 @@
 <taskbegin task="Parallel DNS resolution of 1 host." time="1730748622"/>
 <taskend task="Parallel DNS resolution of 1 host." time="1730748622"/>
 <taskbegin task="Connect Scan" time="1730748622"/>
+<taskend task="Connect Scan" time="1730748627" extrainfo="1000 total ports"/>
+<taskbegin task="Service scan" time="1730748627"/>
+<taskend task="Service scan" time="1730748639" extrainfo="3 services on 1 host"/>
+<taskbegin task="NSE" time="1730748639"/>
+<taskend task="NSE" time="1730748640"/>
+<taskbegin task="NSE" time="1730748640"/>
+<taskend task="NSE" time="1730748641"/>
+<taskbegin task="NSE" time="1730748641"/>
+<taskend task="NSE" time="1730748641"/>
+<host starttime="1730748622" endtime="1730748641"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="18.220.34.155" addrtype="ipv4"/>
+<hostnames>
+<hostname name="calr.bwh.harvard.edu" type="user"/>
+<hostname name="ec2-18-220-34-155.us-east-2.compute.amazonaws.com" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="997">
+<extrareasons reason="no-responses" count="997"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="8.9p1 Ubuntu 3" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:8.9p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" version="1.18.0" extrainfo="Ubuntu" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.18.0</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="http-server-header" output="nginx/1.18.0 (Ubuntu)"><elem>nginx/1.18.0 (Ubuntu)</elem>
+</script><script id="http-title" output="404 Not Found"><elem key="title">404 Not Found</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" version="1.18.0" extrainfo="Ubuntu" ostype="Linux" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.18.0</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="nginx/1.18.0 (Ubuntu)"><elem>nginx/1.18.0 (Ubuntu)</elem>
+</script><script id="http-title" output="Did not follow redirect to https://calrapp.org/"><elem key="redirect_url">https://calrapp.org/</elem>
+</script><script id="ssl-cert" output="Subject: commonName=calr.bwh.harvard.edu/organizationName=Harvard College/stateOrProvinceName=MA/countryName=US&#xa;Subject Alternative Name: DNS:calr.bwh.harvard.edu&#xa;Issuer: commonName=InCommon RSA Server CA/organizationName=Internet2/stateOrProvinceName=MI/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 4096&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2017-10-18T00:00:00&#xa;Not valid after:  2018-10-18T23:59:59&#xa;MD5:   de72 c928 719e 4843 7118 64eb 43fc b17a&#xa;SHA-1: a885 6c75 1369 fcab 7675 523d 3e8f bebb 08cd a4e0"><table key="subject">
+<elem key="countryName">US</elem>
+<elem key="commonName">calr.bwh.harvard.edu</elem>
+<elem key="postalCode">02199</elem>
+<elem key="streetAddress">800 Boylston Street</elem>
+<elem key="organizationName">Harvard College</elem>
+<elem key="localityName">Boston</elem>
+<elem key="organizationalUnitName">Partners Healthcare System</elem>
+<elem key="stateOrProvinceName">MA</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">InCommon RSA Server CA</elem>
+<elem key="countryName">US</elem>
+<elem key="localityName">Ann Arbor</elem>
+<elem key="organizationName">Internet2</elem>
+<elem key="organizationalUnitName">InCommon</elem>
+<elem key="stateOrProvinceName">MI</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">4096</elem>
+<elem key="exponent">BIGNUM: 0x5563569c4d58</elem>
+<elem key="type">rsa</elem>
+<elem key="modulus">BIGNUM: 0x5563569c4e98</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">1E:05:A3:77:8F:6C:96:E2:5B:87:4B:A6:B4:86:AC:71:00:0C:E7:38</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">27:2C:57:B5:7A:BF:BA:5E:95:11:4E:AA:94:EB:E3:C7:CD:71:33:30</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 1.3.6.1.4.1.5923.1.4.3.1.1&#xa;  CPS: https://www.incommon.org/cert/repository/cps_ssl.pdf&#xa;Policy: 2.23.140.1.2.2</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://crl.incommon-rsa.org/InCommonRSAServerCA.crl</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:http://crt.usertrust.com/InCommonRSAServerCA_2.crt&#xa;OCSP - URI:http://ocsp.usertrust.com</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:calr.bwh.harvard.edu</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2017-10-18T00:00:00</elem>
+<elem key="notAfter">2018-10-18T23:59:59</elem>
+</table>
+<elem key="md5">de72c928719e4843711864eb43fcb17a</elem>
+<elem key="sha1">a8856c751369fcab7675523d3e8fbebb08cda4e0</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIGgjCCBWqgAwIBAgIQJ6FcMLPSarsoCMee/5hwrDANBgkqhkiG9w0BAQsFADB2&#xa;MQswCQYDVQQGEwJVUzELMAkGA1UECBMCTUkxEjAQBgNVBAcTCUFubiBBcmJvcjES&#xa;MBAGA1UEChMJSW50ZXJuZXQyMREwDwYDVQQLEwhJbkNvbW1vbjEfMB0GA1UEAxMW&#xa;SW5Db21tb24gUlNBIFNlcnZlciBDQTAeFw0xNzEwMTgwMDAwMDBaFw0xODEwMTgy&#xa;MzU5NTlaMIG3MQswCQYDVQQGEwJVUzEOMAwGA1UEERMFMDIxOTkxCzAJBgNVBAgT&#xa;Ak1BMQ8wDQYDVQQHEwZCb3N0b24xHDAaBgNVBAkTEzgwMCBCb3lsc3RvbiBTdHJl&#xa;ZXQxGDAWBgNVBAoTD0hhcnZhcmQgQ29sbGVnZTEjMCEGA1UECxMaUGFydG5lcnMg&#xa;SGVhbHRoY2FyZSBTeXN0ZW0xHTAbBgNVBAMTFGNhbHIuYndoLmhhcnZhcmQuZWR1&#xa;MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAtzud+SsQKVuwFhaPVJkm&#xa;RlVctKlbpNZ9tnLa3OJ7S3HXzXIED5HDjI1AS1r7XmF/iqlxtcoVqRTbwafkAExJ&#xa;CMpbuBoZlzDZZTiFEkB3yXlg/R9RzegYhQQO9gX1NhfZp080jpHMffPehRZWZ+e7&#xa;p4dxN1I8ipX+zFcOy1nl1fUh1RSRP/HG5Q1JhRvX15M8xrr52X22ZJPzFU62xlkK&#xa;RbMsnaIPo5BHY3znbWBzkWG5qxZXlIPUvz3HVrTc1trdeyhDWaYqpC62EpbAtFRy&#xa;xrlNjU6P1rRhTp8yHnnlBMkX6pMDSqaCHoZln81KBuTMmfHfwa8L7v4Fg3JXVWkE&#xa;hMYSJf3UpTQeyfuKwUQIN3i5XrfLT9Fj1GtRZskBslHDFoxsvQ2BDvYImg5wRzHt&#xa;wr18QbHEU9UWck+5iaGO3pwecAGzO+/wmJrNdQJ+4A7UcZPYLJ/r1iBrHTbhRou9&#xa;6SbXg0hhCa7Ywh4Ut4viBhcG8NVRXvOmiUO0CNzeO+hu1PZITMt3e6aWZTBBr8Il&#xa;mvD2IfLF3nTSVW3kqYsrAuOXM2ihTUYixzDpYs7XzBLECnMEa1J2DYLjoXbm0WiP&#xa;YPjThUTArzH6xR8TbsI+bosCBKHFNCh2sO85FpTvqV9juL0Hvbbtam6YPnGqJmEU&#xa;V/5tPglnlSjp6l2LBryetkECAwEAAaOCAcgwggHEMB8GA1UdIwQYMBaAFB4Fo3eP&#xa;bJbiW4dLprSGrHEADOc4MB0GA1UdDgQWBBQnLFe1er+6XpURTqqU6+PHzXEzMDAO&#xa;BgNVHQ8BAf8EBAMCBaAwDAYDVR0TAQH/BAIwADAdBgNVHSUEFjAUBggrBgEFBQcD&#xa;AQYIKwYBBQUHAwIwZwYDVR0gBGAwXjBSBgwrBgEEAa4jAQQDAQEwQjBABggrBgEF&#xa;BQcCARY0aHR0cHM6Ly93d3cuaW5jb21tb24ub3JnL2NlcnQvcmVwb3NpdG9yeS9j&#xa;cHNfc3NsLnBkZjAIBgZngQwBAgIwRAYDVR0fBD0wOzA5oDegNYYzaHR0cDovL2Ny&#xa;bC5pbmNvbW1vbi1yc2Eub3JnL0luQ29tbW9uUlNBU2VydmVyQ0EuY3JsMHUGCCsG&#xa;AQUFBwEBBGkwZzA+BggrBgEFBQcwAoYyaHR0cDovL2NydC51c2VydHJ1c3QuY29t&#xa;L0luQ29tbW9uUlNBU2VydmVyQ0FfMi5jcnQwJQYIKwYBBQUHMAGGGWh0dHA6Ly9v&#xa;Y3NwLnVzZXJ0cnVzdC5jb20wHwYDVR0RBBgwFoIUY2Fsci5id2guaGFydmFyZC5l&#xa;ZHUwDQYJKoZIhvcNAQELBQADggEBAD9TJ0k13k4wfFnn8dEk9QO+k+DCTESZpie9&#xa;xW4G8gpHT8b3zZTsoj4ZOMANUcl6biunZ4W2MlvOWEo2sPfPs31jrEoZRcNFHk6j&#xa;+fVS4w5/5W/DL2VUvWIUVXzvlEhk5Hixvy3SG0DbBI7LhfAUZgmT3+TmNQpYQpAM&#xa;4MSniqAD//+UrsJyesai/abyF7xwARk94Fj/3WE3Uiub4a+wFYLyAIBXWz3r8ivB&#xa;Sgd640wWRn0yHC7U4LrvdPA695exN0zC0+OuC8Aworcf7WF+TfXjQ1KxGVQZaMiv&#xa;6hNrV9DIftaiAdBKtImyckPhAjmbC8YeDKUbztfgWdkYFH45JWE=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="tls-alpn" output="&#xa;  h2&#xa;  http/1.1"><elem>h2</elem>
+<elem>http/1.1</elem>
+</script><script id="tls-nextprotoneg" output="&#xa;  h2&#xa;  http/1.1"><elem>h2</elem>
+<elem>http/1.1</elem>
+</script></port>
+</ports>
+<times srtt="12610" rttvar="3646" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730748641"/>
+<taskend task="NSE" time="1730748641"/>
+<taskbegin task="NSE" time="1730748641"/>
+<taskend task="NSE" time="1730748641"/>
+<taskbegin task="NSE" time="1730748641"/>
+<taskend task="NSE" time="1730748641"/>
+<runstats><finished time="1730748641" timestr="Mon Nov  4 19:30:41 2024" elapsed="19.14" summary="Nmap done at Mon Nov  4 19:30:41 2024; 1 IP address (1 host up) scanned in 19.14 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
