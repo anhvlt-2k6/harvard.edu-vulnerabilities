@@ -21,3 +21,115 @@
 <taskbegin task="Service scan" time="1730737280"/>
 <taskend task="Service scan" time="1730737292" extrainfo="2 services on 1 host"/>
 <taskbegin task="NSE" time="1730737292"/>
+<taskend task="NSE" time="1730737304"/>
+<taskbegin task="NSE" time="1730737304"/>
+<taskend task="NSE" time="1730737305"/>
+<taskbegin task="NSE" time="1730737305"/>
+<taskend task="NSE" time="1730737305"/>
+<host starttime="1730737273" endtime="1730737305"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="34.250.200.223" addrtype="ipv4"/>
+<hostnames>
+<hostname name="atlas.itatti.harvard.edu" type="user"/>
+<hostname name="ec2-34-250-200-223.eu-west-1.compute.amazonaws.com" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="998">
+<extrareasons reason="no-responses" count="998"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Did not follow redirect to https://atlas.itatti.harvard.edu/"><elem key="redirect_url">https://atlas.itatti.harvard.edu/</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service><script id="http-favicon" output="Unknown favicon MD5: 4443CB72DE428756475BF6B6C3E7E2AF"/><script id="http-generator" output="Drupal 7 (http://drupal.org)"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-robots.txt" output="36 disallowed entries (15 shown)&#xa;/includes/ /misc/ /modules/ /profiles/ /scripts/ &#xa;/themes/ /CHANGELOG.txt /cron.php /INSTALL.mysql.txt &#xa;/INSTALL.pgsql.txt /INSTALL.sqlite.txt /install.php /INSTALL.txt &#xa;/LICENSE.txt /MAINTAINERS.txt"/><script id="http-title" output="User account | atlas.itatti.harvard.edu&#xa;Requested resource was https://atlas.itatti.harvard.edu/user"><elem key="title">User account | atlas.itatti.harvard.edu</elem>
+<elem key="redirect_url">https://atlas.itatti.harvard.edu/user</elem>
+</script><script id="http-trane-info" output="Problem with XML parsing of /evox/about"/><script id="ssl-cert" output="Subject: commonName=itatti.harvard.edu/organizationName=President and Fellows of Harvard College/stateOrProvinceName=Massachusetts/countryName=US&#xa;Subject Alternative Name: DNS:itatti.harvard.edu, DNS:*.atlas.itatti.harvard.edu, DNS:*.community.itatti.harvard.edu, DNS:*.dev.itatti.harvard.edu, DNS:*.itatti.harvard.edu, DNS:*.minos.itatti.harvard.edu, DNS:*.profile.itatti.harvard.edu, DNS:*.sites.itatti.harvard.edu, DNS:*.stage.itatti.harvard.edu&#xa;Issuer: commonName=InCommon RSA Server CA 2/organizationName=Internet2/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha384WithRSAEncryption&#xa;Not valid before: 2023-11-23T00:00:00&#xa;Not valid after:  2024-12-23T23:59:59&#xa;MD5:   af17 5ad1 c97b c045 eff9 e97d 63fe 8348&#xa;SHA-1: 5243 56ae 2ff2 dd25 504e 6ef6 62a1 6294 8e48 e1de"><table key="subject">
+<elem key="countryName">US</elem>
+<elem key="organizationName">President and Fellows of Harvard College</elem>
+<elem key="stateOrProvinceName">Massachusetts</elem>
+<elem key="commonName">itatti.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">US</elem>
+<elem key="organizationName">Internet2</elem>
+<elem key="commonName">InCommon RSA Server CA 2</elem>
+</table>
+<table key="pubkey">
+<elem key="exponent">BIGNUM: 0x558a7aa7a838</elem>
+<elem key="modulus">BIGNUM: 0x558a7aa6b7b8</elem>
+<elem key="bits">2048</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">EF:4C:00:92:A6:FB:76:2E:5E:95:E2:C9:5F:87:1B:19:D5:4D:E2:D9</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">E5:C2:DE:59:90:73:60:EE:4F:3C:25:27:80:5C:4A:AA:BD:03:3A:63</elem>
+</table>
+<table>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="value">CA:FALSE</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 1.3.6.1.4.1.6449.1.2.2.103&#xa;  CPS: https://sectigo.com/CPS&#xa;Policy: 2.23.140.1.2.2</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://crl.sectigo.com/InCommonRSAServerCA2.crl</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:http://crt.sectigo.com/InCommonRSAServerCA2.crt&#xa;OCSP - URI:http://ocsp.sectigo.com</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 76:FF:88:3F:0A:B6:FB:95:51:C2:61:CC:F5:87:BA:34:&#xa;                B4:A4:CD:BB:29:DC:68:42:0A:9F:E6:67:4C:5A:3A:74&#xa;    Timestamp : Nov 23 09:20:53.297 2023 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:20:EC:B6:6B:C8:0B:90:11:8E:A9:61:89:&#xa;                A0:0B:28:39:5C:0F:0B:43:82:96:2D:2E:AB:F4:C5:37:&#xa;                87:73:09:19:02:20:34:48:25:AF:FA:71:5D:D4:49:9F:&#xa;                9D:46:93:83:D0:96:CB:68:B1:92:B7:00:DE:1E:AA:9E:&#xa;                E3:8B:A3:BA:8F:CD&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 3F:17:4B:4F:D7:22:47:58:94:1D:65:1C:84:BE:0D:12:&#xa;                ED:90:37:7F:1F:85:6A:EB:C1:BF:28:85:EC:F8:64:6E&#xa;    Timestamp : Nov 23 09:20:53.510 2023 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:38:BF:5C:88:2E:05:BE:EA:09:63:96:BB:&#xa;                40:BA:E0:0C:21:95:DA:2F:E9:08:D6:D0:B9:22:AD:FC:&#xa;                82:EF:8E:39:02:20:24:71:87:39:55:CA:37:31:29:99:&#xa;                C9:ED:24:8D:C6:3C:1F:4E:F5:86:79:43:33:F7:25:74:&#xa;                03:0E:04:CD:44:D7&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : EE:CD:D0:64:D5:DB:1A:CE:C5:5C:B7:9D:B4:CD:13:A2:&#xa;                32:87:46:7C:BC:EC:DE:C3:51:48:59:46:71:1F:B5:9B&#xa;    Timestamp : Nov 23 09:20:53.338 2023 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:52:6B:7E:C2:6D:60:F5:4B:D7:25:39:06:&#xa;                B6:65:C4:AA:94:AB:55:19:99:A2:BF:33:41:AE:44:69:&#xa;                A1:60:81:94:02:21:00:DA:31:5B:AE:C8:32:60:61:7C:&#xa;                44:78:83:CD:8D:03:97:66:52:93:DC:AE:1C:19:50:BC:&#xa;                8B:64:6C:E4:37:02:D0</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:itatti.harvard.edu, DNS:*.atlas.itatti.harvard.edu, DNS:*.community.itatti.harvard.edu, DNS:*.dev.itatti.harvard.edu, DNS:*.itatti.harvard.edu, DNS:*.minos.itatti.harvard.edu, DNS:*.profile.itatti.harvard.edu, DNS:*.sites.itatti.harvard.edu, DNS:*.stage.itatti.harvard.edu</elem>
+</table>
+</table>
+<elem key="sig_algo">sha384WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2023-11-23T00:00:00</elem>
+<elem key="notAfter">2024-12-23T23:59:59</elem>
+</table>
+<elem key="md5">af175ad1c97bc045eff9e97d63fe8348</elem>
+<elem key="sha1">524356ae2ff2dd25504e6ef662a162948e48e1de</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIHxjCCBi6gAwIBAgIRAK5nU/hk6PsEefWTNifPecEwDQYJKoZIhvcNAQEMBQAw&#xa;RDELMAkGA1UEBhMCVVMxEjAQBgNVBAoTCUludGVybmV0MjEhMB8GA1UEAxMYSW5D&#xa;b21tb24gUlNBIFNlcnZlciBDQSAyMB4XDTIzMTEyMzAwMDAwMFoXDTI0MTIyMzIz&#xa;NTk1OVowdTELMAkGA1UEBhMCVVMxFjAUBgNVBAgTDU1hc3NhY2h1c2V0dHMxMTAv&#xa;BgNVBAoTKFByZXNpZGVudCBhbmQgRmVsbG93cyBvZiBIYXJ2YXJkIENvbGxlZ2Ux&#xa;GzAZBgNVBAMTEml0YXR0aS5oYXJ2YXJkLmVkdTCCASIwDQYJKoZIhvcNAQEBBQAD&#xa;ggEPADCCAQoCggEBAMCplCL03N3JIFkNKIVrdQqeofcmh5o9jfgtc+pn/sKb0h+f&#xa;IhxgYtABG36n9PBnYkLmc72hTDXSyD2iweAFycH49pI4v4ilqA8PqROzdsHlNJX1&#xa;bzgHpOnM0Oe4JpWOZNdqMXhVu2vfdGoidfspv5SnMHh9yE88eUEv7qh9YsckAarh&#xa;SSyt2Ohs0jL13SbRvlyqemrID/NhKFIcHNsoF3ni6dH+JAQ2IT5ZnJnuQhuNOj5o&#xa;4YBkjx4ylmumQAKefMgF137rpEntJesu00sZU5uV88/2Kii2sZ/XnkxGjogZoEEL&#xa;pXkkLI3hT+vuGOHk/33OCR6j6JVfvbhUVu7VlfUCAwEAAaOCBAAwggP8MB8GA1Ud&#xa;IwQYMBaAFO9MAJKm+3YuXpXiyV+HGxnVTeLZMB0GA1UdDgQWBBTlwt5ZkHNg7k88&#xa;JSeAXEqqvQM6YzAOBgNVHQ8BAf8EBAMCBaAwDAYDVR0TAQH/BAIwADAdBgNVHSUE&#xa;FjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwSQYDVR0gBEIwQDA0BgsrBgEEAbIxAQIC&#xa;ZzAlMCMGCCsGAQUFBwIBFhdodHRwczovL3NlY3RpZ28uY29tL0NQUzAIBgZngQwB&#xa;AgIwQAYDVR0fBDkwNzA1oDOgMYYvaHR0cDovL2NybC5zZWN0aWdvLmNvbS9JbkNv&#xa;bW1vblJTQVNlcnZlckNBMi5jcmwwcAYIKwYBBQUHAQEEZDBiMDsGCCsGAQUFBzAC&#xa;hi9odHRwOi8vY3J0LnNlY3RpZ28uY29tL0luQ29tbW9uUlNBU2VydmVyQ0EyLmNy&#xa;dDAjBggrBgEFBQcwAYYXaHR0cDovL29jc3Auc2VjdGlnby5jb20wggF8BgorBgEE&#xa;AdZ5AgQCBIIBbASCAWgBZgB1AHb/iD8KtvuVUcJhzPWHujS0pM27KdxoQgqf5mdM&#xa;Wjp0AAABi/t7cjEAAAQDAEYwRAIgIOy2a8gLkBGOqWGJoAsoOVwPC0OCli0uq/TF&#xa;N4dzCRkCIDRIJa/6cV3USZ+dRpOD0JbLaLGStwDeHqqe44ujuo/NAHUAPxdLT9ci&#xa;R1iUHWUchL4NEu2QN38fhWrrwb8ohez4ZG4AAAGL+3tzBgAABAMARjBEAiA4v1yI&#xa;LgW+6gljlrtAuuAMIZXaL+kI1tC5Iq38gu+OOQIgJHGHOVXKNzEpmcntJI3GPB9O&#xa;9YZ5QzP3JXQDDgTNRNcAdgDuzdBk1dsazsVct520zROiModGfLzs3sNRSFlGcR+1&#xa;mwAAAYv7e3JaAAAEAwBHMEUCIFJrfsJtYPVL1yU5BrZlxKqUq1UZmaK/M0GuRGmh&#xa;YIGUAiEA2jFbrsgyYGF8RHiDzY0Dl2ZSk9yuHBlQvItkbOQ3AtAwgf0GA1UdEQSB&#xa;9TCB8oISaXRhdHRpLmhhcnZhcmQuZWR1ghoqLmF0bGFzLml0YXR0aS5oYXJ2YXJk&#xa;LmVkdYIeKi5jb21tdW5pdHkuaXRhdHRpLmhhcnZhcmQuZWR1ghgqLmRldi5pdGF0&#xa;dGkuaGFydmFyZC5lZHWCFCouaXRhdHRpLmhhcnZhcmQuZWR1ghoqLm1pbm9zLml0&#xa;YXR0aS5oYXJ2YXJkLmVkdYIcKi5wcm9maWxlLml0YXR0aS5oYXJ2YXJkLmVkdYIa&#xa;Ki5zaXRlcy5pdGF0dGkuaGFydmFyZC5lZHWCGiouc3RhZ2UuaXRhdHRpLmhhcnZh&#xa;cmQuZWR1MA0GCSqGSIb3DQEBDAUAA4IBgQA7qbUAJRsk8J0zkFvn5EPvMP0+ehZN&#xa;w+J6k+LzxdRAcmBDao4Ky1ybGiqzqrhDlvTUBz/k4ElncS4xXadaVum+oiCW6l4+&#xa;EYwdHJF4ViIGC5csiQa2I/hMFOS5FSRQ+j+4yHrWsgW5hcYqBsrMtMrJfa/89geW&#xa;njGK48Ogmn3cbkbVhHkDrA87vwhYY9RX2Q4LUnCN4Zylldn8r3xzLMUezYwVWYVS&#xa;uEJjYzn0r1xfU/ehiwBkHVpx9srNNvnU+A8ZEV66pQqdBZRZuJUb7wUfq22L4eOF&#xa;3Lgd5xBo18wexe7PeiQXb7o/6MC1Fl7tm8xlYd14C+yhdFaX9pxuu6yOXNarS2lw&#xa;Fq9tV1yxH5tlNYjUZ0FD5nuPtdt/ZV4josOHdW3MUlCF//Iq5mIzG7pX5fAsMTcn&#xa;H6GEs2UW78ZNDJEKdYJgskIJZwTTQ0Lgjhc+9o85xUgnqAoPay3LHTvcc0uwLqtv&#xa;CA0FKkGSiaM4XMn5QMSHk2tUcLUovRHKURI=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+</ports>
+<times srtt="71648" rttvar="12899" to="123244"/>
+</host>
+<taskbegin task="NSE" time="1730737305"/>
+<taskend task="NSE" time="1730737305"/>
+<taskbegin task="NSE" time="1730737305"/>
+<taskend task="NSE" time="1730737305"/>
+<taskbegin task="NSE" time="1730737305"/>
+<taskend task="NSE" time="1730737305"/>
+<runstats><finished time="1730737305" timestr="Mon Nov  4 16:21:45 2024" elapsed="32.08" summary="Nmap done at Mon Nov  4 16:21:45 2024; 1 IP address (1 host up) scanned in 32.08 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
