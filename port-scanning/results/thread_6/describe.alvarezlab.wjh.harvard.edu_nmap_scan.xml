@@ -19,3 +19,108 @@
 <taskbegin task="Connect Scan" time="1730739801"/>
 <taskend task="Connect Scan" time="1730739805" extrainfo="1000 total ports"/>
 <taskbegin task="Service scan" time="1730739805"/>
+<taskend task="Service scan" time="1730739817" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1730739817"/>
+<taskend task="NSE" time="1730739818"/>
+<taskbegin task="NSE" time="1730739818"/>
+<taskend task="NSE" time="1730739818"/>
+<taskbegin task="NSE" time="1730739818"/>
+<taskend task="NSE" time="1730739818"/>
+<host starttime="1730739801" endtime="1730739818"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="140.247.95.116" addrtype="ipv4"/>
+<hostnames>
+<hostname name="describe.alvarezlab.wjh.harvard.edu" type="user"/>
+<hostname name="alvarezlab.wjh.harvard.edu" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="997">
+<extrareasons reason="no-responses" count="997"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" version="1.18.0" extrainfo="Ubuntu" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.18.0</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="nginx/1.18.0 (Ubuntu)"><elem>nginx/1.18.0 (Ubuntu)</elem>
+</script><script id="http-title" output="Did not follow redirect to https://describe.alvarezlab.wjh.harvard.edu/"><elem key="redirect_url">https://describe.alvarezlab.wjh.harvard.edu/</elem>
+</script></port>
+<port protocol="tcp" portid="113"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ident" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" version="1.18.0" extrainfo="Ubuntu" ostype="Linux" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.18.0</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="http-server-header" output="nginx/1.18.0 (Ubuntu)"><elem>nginx/1.18.0 (Ubuntu)</elem>
+</script><script id="http-title" output="502 Bad Gateway"><elem key="title">502 Bad Gateway</elem>
+</script><script id="ssl-cert" output="Subject: commonName=describe.alvarezlab.wjh.harvard.edu&#xa;Subject Alternative Name: DNS:describe.alvarezlab.wjh.harvard.edu, DNS:www.describe.alvarezlab.wjh.harvard.edu&#xa;Issuer: commonName=R10/organizationName=Let&apos;s Encrypt/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-10-18T05:34:48&#xa;Not valid after:  2025-01-16T05:34:47&#xa;MD5:   14a0 72ef d1f9 424b 6839 eb8b fc07 5ac3&#xa;SHA-1: e387 f90c 54a1 5463 6184 8d52 ba4f 3e88 2fe7 373f"><table key="subject">
+<elem key="commonName">describe.alvarezlab.wjh.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">R10</elem>
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+<elem key="countryName">US</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">2048</elem>
+<elem key="exponent">BIGNUM: 0x55857a455d18</elem>
+<elem key="modulus">BIGNUM: 0x55857a457298</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">6A:30:EF:BE:B3:58:EE:EC:40:32:F8:9C:89:5F:B7:B8:56:69:44:F4</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">BB:BC:C3:47:A5:E4:BC:A9:C6:C3:A4:72:0C:10:8D:A2:35:E1:C8:E8</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://r10.o.lencr.org&#xa;CA Issuers - URI:http://r10.i.lencr.org/</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:describe.alvarezlab.wjh.harvard.edu, DNS:www.describe.alvarezlab.wjh.harvard.edu</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : CF:11:56:EE:D5:2E:7C:AF:F3:87:5B:D9:69:2E:9B:E9:&#xa;                1A:71:67:4A:B0:17:EC:AC:01:D2:5B:77:CE:CC:3B:08&#xa;    Timestamp : Oct 18 06:33:18.435 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:54:2F:8A:A1:7D:B4:12:E9:0E:1C:A6:F9:&#xa;                7C:0C:DD:1E:5F:40:9F:2B:70:5E:60:B0:76:7E:B7:F7:&#xa;                52:3A:8D:6F:02:20:3A:13:20:FF:3F:28:12:20:E2:DD:&#xa;                BF:1B:CD:88:98:00:AA:09:34:CA:22:05:1E:7F:54:50:&#xa;                2E:10:38:C9:F9:9B&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 13:4A:DF:1A:B5:98:42:09:78:0C:6F:EF:4C:7A:91:A4:&#xa;                16:B7:23:49:CE:58:57:6A:DF:AE:DA:A7:C2:AB:E0:22&#xa;    Timestamp : Oct 18 06:33:18.656 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:FC:0E:6D:69:F9:25:97:F3:53:71:65:&#xa;                9B:DE:FE:BF:C0:54:8F:12:E3:33:70:85:93:D8:E5:A3:&#xa;                3B:1F:E1:62:27:02:20:7D:17:20:D3:73:B5:62:92:01:&#xa;                E3:2B:3E:3A:0F:9C:71:A7:36:84:DC:07:CD:5B:A2:36:&#xa;                80:A7:F3:AD:C1:DC:3E</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notAfter">2025-01-16T05:34:47</elem>
+<elem key="notBefore">2024-10-18T05:34:48</elem>
+</table>
+<elem key="md5">14a072efd1f9424b6839eb8bfc075ac3</elem>
+<elem key="sha1">e387f90c54a1546361848d52ba4f3e882fe7373f</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFPjCCBCagAwIBAgISBKj+ruHSjSGJ0jN4n8tNo6pfMA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNSMTAwHhcNMjQxMDE4MDUzNDQ4WhcNMjUwMTE2MDUzNDQ3WjAuMSwwKgYDVQQD&#xa;EyNkZXNjcmliZS5hbHZhcmV6bGFiLndqaC5oYXJ2YXJkLmVkdTCCASIwDQYJKoZI&#xa;hvcNAQEBBQADggEPADCCAQoCggEBAJIyvsl9R44VaQWusGubEHm/5wlvZbaDacmL&#xa;fex0KtEOjMXOtrptiGgYqBpR3l9WqhMqnCKt3dCraig9BO1dn81kGW9J76IoCGxK&#xa;O1aP0tHkAUC4gJSmp90VVlos1uwkyfDmmAVs3n2MPUn2VIUOdPGjyHsd/6CI32FS&#xa;HRnyOA+gwFVJMbCXsp2i3BHfRsKeaTtUrcFpodU/3ZTjkTNFwfQsBnzRtkS7ht7v&#xa;iTzB8cpp7i/u8DBKvSBY0NkaU4I7Y9jMsQdktH9tUoSFM7DgwPgS8jwE+Z0wH4Q4&#xa;aavhIzF/WD+D+3vu9vCEJjcz+d37ttCJQ8dQrkk9bN7F06SiSx0CAwEAAaOCAk8w&#xa;ggJLMA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUH&#xa;AwIwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQUajDvvrNY7uxAMviciV+3uFZpRPQw&#xa;HwYDVR0jBBgwFoAUu7zDR6XkvKnGw6RyDBCNojXhyOgwVwYIKwYBBQUHAQEESzBJ&#xa;MCIGCCsGAQUFBzABhhZodHRwOi8vcjEwLm8ubGVuY3Iub3JnMCMGCCsGAQUFBzAC&#xa;hhdodHRwOi8vcjEwLmkubGVuY3Iub3JnLzBXBgNVHREEUDBOgiNkZXNjcmliZS5h&#xa;bHZhcmV6bGFiLndqaC5oYXJ2YXJkLmVkdYInd3d3LmRlc2NyaWJlLmFsdmFyZXps&#xa;YWIud2poLmhhcnZhcmQuZWR1MBMGA1UdIAQMMAowCAYGZ4EMAQIBMIIBAwYKKwYB&#xa;BAHWeQIEAgSB9ASB8QDvAHUAzxFW7tUufK/zh1vZaS6b6RpxZ0qwF+ysAdJbd87M&#xa;OwgAAAGSnlSdYwAABAMARjBEAiBUL4qhfbQS6Q4cpvl8DN0eX0CfK3BeYLB2frf3&#xa;UjqNbwIgOhMg/z8oEiDi3b8bzYiYAKoJNMoiBR5/VFAuEDjJ+ZsAdgATSt8atZhC&#xa;CXgMb+9MepGkFrcjSc5YV2rfrtqnwqvgIgAAAZKeVJ5AAAAEAwBHMEUCIQD8Dm1p&#xa;+SWX81NxZZve/r/AVI8S4zNwhZPY5aM7H+FiJwIgfRcg03O1YpIB4ys+Og+ccac2&#xa;hNwHzVuiNoCn863B3D4wDQYJKoZIhvcNAQELBQADggEBAJkDJrSBIDXUY4gZV4KY&#xa;7wwjdJSYFBo38UOeyIV2jUiRCnizEuDTrHVtPlhUzPGm0s78IhUjXJ0CvknTA8Yv&#xa;k2N/jxyWuy8/Lf4lc50dwVJIdbY2cmlZU+WonNSPF9zbXvTlaI5qWVYIDz1AaqLD&#xa;P1xaBOU7peGzkRbnBQ/pFiDp0nRmeKAFtumJluHldZEK2c0vK3wQqDNHQWXRnKYG&#xa;BWW3f7NBPFtkuVqtwdYfKriBkR/nbM3wAeuOZbji2RfD05CcyyBkJq/3v0L0hThf&#xa;4eLiIbvBFduqYTyUufQulcPuEcLaV4EfBSvRjXk5/PLp48/PxB4+wRtPG57I6OHj&#xa;A5g=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="tls-alpn" output="&#xa;  http/1.1"><elem>http/1.1</elem>
+</script><script id="tls-nextprotoneg" output="&#xa;  http/1.1"><elem>http/1.1</elem>
+</script></port>
+</ports>
+<times srtt="12290" rttvar="3116" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730739818"/>
+<taskend task="NSE" time="1730739818"/>
+<taskbegin task="NSE" time="1730739818"/>
+<taskend task="NSE" time="1730739818"/>
+<taskbegin task="NSE" time="1730739818"/>
+<taskend task="NSE" time="1730739818"/>
+<runstats><finished time="1730739818" timestr="Mon Nov  4 17:03:38 2024" elapsed="18.14" summary="Nmap done at Mon Nov  4 17:03:38 2024; 1 IP address (1 host up) scanned in 18.14 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
