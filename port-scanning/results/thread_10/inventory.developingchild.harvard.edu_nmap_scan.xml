@@ -19,3 +19,108 @@
 <taskbegin task="Connect Scan" time="1730740941"/>
 <taskend task="Connect Scan" time="1730740947" extrainfo="1000 total ports"/>
 <taskbegin task="Service scan" time="1730740948"/>
+<taskend task="Service scan" time="1730740960" extrainfo="3 services on 1 host"/>
+<taskbegin task="NSE" time="1730740960"/>
+<taskend task="NSE" time="1730740971"/>
+<taskbegin task="NSE" time="1730740971"/>
+<taskend task="NSE" time="1730740972"/>
+<taskbegin task="NSE" time="1730740972"/>
+<taskend task="NSE" time="1730740972"/>
+<host starttime="1730740941" endtime="1730740972"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="104.199.127.254" addrtype="ipv4"/>
+<hostnames>
+<hostname name="inventory.developingchild.harvard.edu" type="user"/>
+<hostname name="254.127.199.104.bc.googleusercontent.com" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="997">
+<extrareasons reason="no-responses" count="997"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service><script id="http-title" output="400 The plain HTTP request was sent to HTTPS port"><elem key="title">400 The plain HTTP request was sent to HTTPS port</elem>
+</script><script id="ssl-cert" output="Subject: commonName=inventory.developingchild.harvard.edu/organizationName=Harvard College/stateOrProvinceName=MA/countryName=US&#xa;Subject Alternative Name: DNS:inventory.developingchild.harvard.edu&#xa;Issuer: commonName=InCommon RSA Server CA/organizationName=Internet2/stateOrProvinceName=MI/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2017-12-07T00:00:00&#xa;Not valid after:  2018-12-07T23:59:59&#xa;MD5:   2612 4487 ca50 d13e fb17 8191 e114 30aa&#xa;SHA-1: 6a6f ad63 8491 9477 a725 0e68 5526 b325 003d a786"><table key="subject">
+<elem key="organizationName">Harvard College</elem>
+<elem key="countryName">US</elem>
+<elem key="commonName">inventory.developingchild.harvard.edu</elem>
+<elem key="stateOrProvinceName">MA</elem>
+<elem key="streetAddress">13 Appian Way</elem>
+<elem key="organizationalUnitName">Graduate School of Education</elem>
+<elem key="postalCode">02138</elem>
+<elem key="localityName">Cambridge</elem>
+</table>
+<table key="issuer">
+<elem key="organizationName">Internet2</elem>
+<elem key="countryName">US</elem>
+<elem key="localityName">Ann Arbor</elem>
+<elem key="organizationalUnitName">InCommon</elem>
+<elem key="stateOrProvinceName">MI</elem>
+<elem key="commonName">InCommon RSA Server CA</elem>
+</table>
+<table key="pubkey">
+<elem key="exponent">BIGNUM: 0x559caf9b8038</elem>
+<elem key="bits">2048</elem>
+<elem key="type">rsa</elem>
+<elem key="modulus">BIGNUM: 0x559caf9b8198</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">1E:05:A3:77:8F:6C:96:E2:5B:87:4B:A6:B4:86:AC:71:00:0C:E7:38</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">DF:50:71:DA:94:8A:0C:4A:67:62:F9:30:A5:3E:59:32:59:18:97:DE</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+</table>
+<table>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">Policy: 1.3.6.1.4.1.5923.1.4.3.1.1&#xa;  CPS: https://www.incommon.org/cert/repository/cps_ssl.pdf&#xa;Policy: 2.23.140.1.2.2</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Full Name:&#xa;  URI:http://crl.incommon-rsa.org/InCommonRSAServerCA.crl</elem>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+</table>
+<table>
+<elem key="value">CA Issuers - URI:http://crt.usertrust.com/InCommonRSAServerCA_2.crt&#xa;OCSP - URI:http://ocsp.usertrust.com</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">DNS:inventory.developingchild.harvard.edu</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2017-12-07T00:00:00</elem>
+<elem key="notAfter">2018-12-07T23:59:59</elem>
+</table>
+<elem key="md5">26124487ca50d13efb178191e11430aa</elem>
+<elem key="sha1">6a6fad6384919477a7250e685526b325003da786</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFozCCBIugAwIBAgIQH3ENPwD5RKhpn/im7O5SPTANBgkqhkiG9w0BAQsFADB2&#xa;MQswCQYDVQQGEwJVUzELMAkGA1UECBMCTUkxEjAQBgNVBAcTCUFubiBBcmJvcjES&#xa;MBAGA1UEChMJSW50ZXJuZXQyMREwDwYDVQQLEwhJbkNvbW1vbjEfMB0GA1UEAxMW&#xa;SW5Db21tb24gUlNBIFNlcnZlciBDQTAeFw0xNzEyMDcwMDAwMDBaFw0xODEyMDcy&#xa;MzU5NTlaMIHHMQswCQYDVQQGEwJVUzEOMAwGA1UEERMFMDIxMzgxCzAJBgNVBAgT&#xa;Ak1BMRIwEAYDVQQHEwlDYW1icmlkZ2UxFjAUBgNVBAkTDTEzIEFwcGlhbiBXYXkx&#xa;GDAWBgNVBAoTD0hhcnZhcmQgQ29sbGVnZTElMCMGA1UECxMcR3JhZHVhdGUgU2No&#xa;b29sIG9mIEVkdWNhdGlvbjEuMCwGA1UEAxMlaW52ZW50b3J5LmRldmVsb3Bpbmdj&#xa;aGlsZC5oYXJ2YXJkLmVkdTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEB&#xa;AMh70e/+1Hn/poFFVnFLvUdqzjGUOk6BFYjDpfZpLcHqEGNZXtjbKojesSEE5OmT&#xa;iPhvIVtSbqCRtCpzBhcagphsV0/E8uwgHY77B0ivMT8+o2tXCXi8FBVeihsXXFPH&#xa;MAAEYhQwYn0thjv4EgRD3M/hCzHM+pGhtpkjtk8MUGJdHodTl1M5KImdHZdgil7Y&#xa;QjjxXiUwG7WGEQHL+kdGZ+ZfiaK1ex2gDIY5e3r2bkgWFvoDqOIwDezqUr7ghXRd&#xa;Wt1HA8FO5Lgd6fgUXnkQMAO7e360g0AnIPn1J9audwi6FDijUPIg5cTh+sVkRuUP&#xa;q9yT6+Kqb/V8Cq1Lx0zSpNECAwEAAaOCAdkwggHVMB8GA1UdIwQYMBaAFB4Fo3eP&#xa;bJbiW4dLprSGrHEADOc4MB0GA1UdDgQWBBTfUHHalIoMSmdi+TClPlkyWRiX3jAO&#xa;BgNVHQ8BAf8EBAMCBaAwDAYDVR0TAQH/BAIwADAdBgNVHSUEFjAUBggrBgEFBQcD&#xa;AQYIKwYBBQUHAwIwZwYDVR0gBGAwXjBSBgwrBgEEAa4jAQQDAQEwQjBABggrBgEF&#xa;BQcCARY0aHR0cHM6Ly93d3cuaW5jb21tb24ub3JnL2NlcnQvcmVwb3NpdG9yeS9j&#xa;cHNfc3NsLnBkZjAIBgZngQwBAgIwRAYDVR0fBD0wOzA5oDegNYYzaHR0cDovL2Ny&#xa;bC5pbmNvbW1vbi1yc2Eub3JnL0luQ29tbW9uUlNBU2VydmVyQ0EuY3JsMHUGCCsG&#xa;AQUFBwEBBGkwZzA+BggrBgEFBQcwAoYyaHR0cDovL2NydC51c2VydHJ1c3QuY29t&#xa;L0luQ29tbW9uUlNBU2VydmVyQ0FfMi5jcnQwJQYIKwYBBQUHMAGGGWh0dHA6Ly9v&#xa;Y3NwLnVzZXJ0cnVzdC5jb20wMAYDVR0RBCkwJ4IlaW52ZW50b3J5LmRldmVsb3Bp&#xa;bmdjaGlsZC5oYXJ2YXJkLmVkdTANBgkqhkiG9w0BAQsFAAOCAQEAHdNtyY+BVtfn&#xa;SRarcI98IsX1cBr1DbKYGW+gLe6/fWQj+z+CcicXvBpe6u8U/5aUxFHVDDGdtaH/&#xa;YDxPBv1joKQPnbSINkK+NMenGqRqbEERpdn2x4gFjOfO8qbR77ajpn3AFn4Utfrv&#xa;34RnvBu8Nxq3bS4Om+wUDXvY2NpC/LsJwg1VmQicspyE2FG1v6/VM71c8MgR1vjV&#xa;VoKNva4l5/8by2edHR3TO80V/HAAkiwX0swvoo5ZJUSj/vGUK8ZoCsaPr7AVuyod&#xa;+VIVxefcHzg7X558NO4VZk3Nnbj6DZiVygLdw2X5QJwhrjVjZW5KefusI/veDSGU&#xa;/9gKDf+avA==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="2222"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" extrainfo="protocol 2.0" servicefp="SF-Port2222-TCP:V=7.80%I=7%D=11/4%Time=672902DA%P=x86_64-pc-linux-gnu%r(NULL,292,&quot;SSH-2\.0-mod_sftp\r\n\0\0\x02\|\x08\x14\xcd\x1d\x204\xac\xf1\xce\xc2\xf7\xcd\xdc\xc8\xaa\xe4\xf6\xa8\0\0\x01jcurve448-sha512,curve25519-sha256,curve25519-sha256@libssh\.org,ecdh-sha2-nistp521,ecdh-sha2-nistp384,ecdh-sha2-nistp256,diffie-hellman-group18-sha512,diffie-hellman-group16-sha512,diffie-hellman-group14-sha256,diffie-hellman-group-exchange-sha256,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1,rsa1024-sha1,ext-info-s,kex-strict-s-v00@openssh\.com\0\0\0!rsa-sha2-512,rsa-sha2-256,ssh-rsa\0\0\0\x20aes128-ctr,aes192-ctr,aes256-ctr\0\0\0\x20aes128-ctr,aes192-ctr,aes256-ctr\0\0\0\x1bhmac-sha2-256,hmac-sha2-512\0\0\0\x1bhmac-sha2-256,hmac-sha2-512\0\0\0\x1azlib@openssh\.com,zlib,none\0\0\0\x1azlib@openssh\.com,zlib,none\0\0\0\0\0\0\0\0\0\0\0\0\0F\x14\x8a\x1a\xf5\xd8\x06\x1f&quot;);" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  NULL: &#xa;    SSH-2.0-mod_sftp&#xa;    jcurve448-sha512,curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp521,ecdh-sha2-nistp384,ecdh-sha2-nistp256,diffie-hellman-group18-sha512,diffie-hellman-group16-sha512,diffie-hellman-group14-sha256,diffie-hellman-group-exchange-sha256,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1,rsa1024-sha1,ext-info-s,kex-strict-s-v00@openssh.com&#xa;    !rsa-sha2-512,rsa-sha2-256,ssh-rsa&#xa;    aes128-ctr,aes192-ctr,aes256-ctr&#xa;    aes128-ctr,aes192-ctr,aes256-ctr&#xa;    hmac-sha2-256,hmac-sha2-512&#xa;    hmac-sha2-256,hmac-sha2-512&#xa;    zlib@openssh.com,zlib,none&#xa;    zlib@openssh.com,zlib,none"><elem key="NULL">&#xa;    SSH-2.0-mod_sftp&#xa;    jcurve448-sha512,curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp521,ecdh-sha2-nistp384,ecdh-sha2-nistp256,diffie-hellman-group18-sha512,diffie-hellman-group16-sha512,diffie-hellman-group14-sha256,diffie-hellman-group-exchange-sha256,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1,rsa1024-sha1,ext-info-s,kex-strict-s-v00@openssh.com&#xa;    !rsa-sha2-512,rsa-sha2-256,ssh-rsa&#xa;    aes128-ctr,aes192-ctr,aes256-ctr&#xa;    aes128-ctr,aes192-ctr,aes256-ctr&#xa;    hmac-sha2-256,hmac-sha2-512&#xa;    hmac-sha2-256,hmac-sha2-512&#xa;    zlib@openssh.com,zlib,none&#xa;    zlib@openssh.com,zlib,none</elem>
+</script></port>
+</ports>
+<times srtt="68372" rttvar="11233" to="113304"/>
+</host>
+<taskbegin task="NSE" time="1730740972"/>
+<taskend task="NSE" time="1730740972"/>
+<taskbegin task="NSE" time="1730740972"/>
+<taskend task="NSE" time="1730740972"/>
+<taskbegin task="NSE" time="1730740972"/>
+<taskend task="NSE" time="1730740972"/>
+<runstats><finished time="1730740972" timestr="Mon Nov  4 17:22:52 2024" elapsed="30.78" summary="Nmap done at Mon Nov  4 17:22:52 2024; 1 IP address (1 host up) scanned in 30.78 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
