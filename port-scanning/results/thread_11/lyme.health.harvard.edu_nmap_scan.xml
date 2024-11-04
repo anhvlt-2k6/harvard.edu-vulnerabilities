@@ -21,3 +21,112 @@
 <taskbegin task="Service scan" time="1730743584"/>
 <taskend task="Service scan" time="1730743596" extrainfo="2 services on 1 host"/>
 <taskbegin task="NSE" time="1730743596"/>
+<taskend task="NSE" time="1730743645"/>
+<taskbegin task="NSE" time="1730743645"/>
+<taskend task="NSE" time="1730743645"/>
+<taskbegin task="NSE" time="1730743645"/>
+<taskend task="NSE" time="1730743645"/>
+<host starttime="1730743579" endtime="1730743645"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="13.226.22.38" addrtype="ipv4"/>
+<hostnames>
+<hostname name="lyme.health.harvard.edu" type="user"/>
+<hostname name="server-13-226-22-38.ord51.r.cloudfront.net" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="998">
+<extrareasons reason="no-responses" count="998"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Amazon CloudFront httpd" method="probed" conf="10"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="CloudFront"><elem>CloudFront</elem>
+</script><script id="http-title" output="Did not follow redirect to https://lyme.health.harvard.edu/"><elem key="redirect_url">https://lyme.health.harvard.edu/</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Amazon CloudFront httpd" tunnel="ssl" method="probed" conf="10"/><script id="http-favicon" output="Unknown favicon MD5: C30C7D42707A47A3F4591831641E50DC"/><script id="http-methods" output="&#xa;  Supported Methods: HEAD OPTIONS"><table key="Supported Methods">
+<elem>HEAD</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-robots.txt" output="1 disallowed entry &#xa;/api"/><script id="http-server-header" output="&#xa;  AmazonS3&#xa;  CloudFront"><elem>AmazonS3</elem>
+<elem>CloudFront</elem>
+</script><script id="http-title" output="ERROR: The request could not be satisfied"><elem key="title">ERROR: The request could not be satisfied</elem>
+</script><script id="ssl-cert" output="Subject: commonName=*.lyme.health.harvard.edu&#xa;Subject Alternative Name: DNS:*.lyme.health.harvard.edu, DNS:lyme.health.harvard.edu&#xa;Issuer: commonName=Amazon RSA 2048 M02/organizationName=Amazon/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-03-19T00:00:00&#xa;Not valid after:  2025-04-17T23:59:59&#xa;MD5:   3da5 2e7a cd7c 39f9 ca68 03c9 6ea8 395e&#xa;SHA-1: 62ba 6905 4f08 56e3 dbb3 c5a3 1181 0f73 8e9a a417"><table key="subject">
+<elem key="commonName">*.lyme.health.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="organizationName">Amazon</elem>
+<elem key="countryName">US</elem>
+<elem key="commonName">Amazon RSA 2048 M02</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">2048</elem>
+<elem key="modulus">BIGNUM: 0x557dbfea8878</elem>
+<elem key="exponent">BIGNUM: 0x557dbee80358</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">C0:31:52:CD:5A:50:C3:82:7C:74:71:CE:CB:E9:9C:F9:7A:EB:82:E2</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">4F:21:6B:54:CD:70:47:F5:87:DB:34:7D:BA:C0:87:A3:33:4E:65:90</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:*.lyme.health.harvard.edu, DNS:lyme.health.harvard.edu</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://crl.r2m02.amazontrust.com/r2m02.crl</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://ocsp.r2m02.amazontrust.com&#xa;CA Issuers - URI:http://crt.r2m02.amazontrust.com/r2m02.cer</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : CF:11:56:EE:D5:2E:7C:AF:F3:87:5B:D9:69:2E:9B:E9:&#xa;                1A:71:67:4A:B0:17:EC:AC:01:D2:5B:77:CE:CC:3B:08&#xa;    Timestamp : Mar 19 10:34:24.713 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:45:8B:1E:76:54:2C:AE:0A:02:39:82:0E:&#xa;                AF:9B:79:4C:17:95:49:EB:6B:CB:F9:5D:D2:3A:BD:38:&#xa;                41:80:72:1A:02:20:7B:56:A9:D0:D3:74:2E:02:EA:D0:&#xa;                4B:6E:BE:66:59:E6:3C:8F:EF:EB:52:3A:32:18:DC:0A:&#xa;                95:7A:66:21:2F:BF&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 7D:59:1E:12:E1:78:2A:7B:1C:61:67:7C:5E:FD:F8:D0:&#xa;                87:5C:14:A0:4E:95:9E:B9:03:2F:D9:0E:8C:2E:79:B8&#xa;    Timestamp : Mar 19 10:34:24.719 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:01:8B:AC:6F:49:4E:76:45:1F:DC:8E:41:&#xa;                C4:B0:3E:A1:E8:61:14:25:82:6B:19:47:74:1B:3E:27:&#xa;                8A:80:13:93:02:20:2E:D2:D1:31:F3:FC:C4:49:AB:E9:&#xa;                34:EF:71:3E:8C:1C:0E:E7:8D:2D:E7:46:5B:52:99:27:&#xa;                5A:28:4E:CC:06:38&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : E6:D2:31:63:40:77:8C:C1:10:41:06:D7:71:B9:CE:C1:&#xa;                D2:40:F6:96:84:86:FB:BA:87:32:1D:FD:1E:37:8E:50&#xa;    Timestamp : Mar 19 10:34:24.729 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:32:62:66:BB:FE:23:77:CD:F0:A3:84:48:&#xa;                9E:DB:19:B3:D6:3C:85:B8:25:6C:6B:F9:E7:80:62:6D:&#xa;                F2:90:06:49:02:20:7B:0F:87:AA:9A:7B:E1:62:5B:D2:&#xa;                AC:CA:7A:B5:E4:DA:A5:1E:FB:84:F8:14:AA:75:E6:F7:&#xa;                63:98:F4:AC:84:74</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-03-19T00:00:00</elem>
+<elem key="notAfter">2025-04-17T23:59:59</elem>
+</table>
+<elem key="md5">3da52e7acd7c39f9ca6803c96ea8395e</elem>
+<elem key="sha1">62ba69054f0856e3dbb3c5a311810f738e9aa417</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIF9DCCBNygAwIBAgIQCISBgYUsPjIq1kFBwh+z4zANBgkqhkiG9w0BAQsFADA8&#xa;MQswCQYDVQQGEwJVUzEPMA0GA1UEChMGQW1hem9uMRwwGgYDVQQDExNBbWF6b24g&#xa;UlNBIDIwNDggTTAyMB4XDTI0MDMxOTAwMDAwMFoXDTI1MDQxNzIzNTk1OVowJDEi&#xa;MCAGA1UEAwwZKi5seW1lLmhlYWx0aC5oYXJ2YXJkLmVkdTCCASIwDQYJKoZIhvcN&#xa;AQEBBQADggEPADCCAQoCggEBANqF1UqxDLirAH6Wsnr68vwS4ip01JeykzFu3Oxs&#xa;Cf0OzlQK8P3V+PtXHKWHVJAka/s3tLMDUfIftVoKLOPpywynZM1uIwqfEhHYle4C&#xa;wRPj04f1DHvU7wCSpxNHCtnxJA/ZAd0fKFIfYGOR6s5ED6jC8aNNsnW75FFs4x4u&#xa;UH2pC9GUxecQmMFBtwT1IC2rgZjk3OIjUjcVutbV1DiT1TTih4fxXXTFG0L6Obgi&#xa;Lk7hDz1j+LP5MPHTAciiqD4s03Pw/7MRzqcobHY3tdaI1XjUG9U5i7aMJS+oBR3r&#xa;uAIaLfc8w2ga/LeMb9eazfCn/WJOwkBEH2Oe9gryVnarO+sCAwEAAaOCAwgwggME&#xa;MB8GA1UdIwQYMBaAFMAxUs1aUMOCfHRxzsvpnPl664LiMB0GA1UdDgQWBBRPIWtU&#xa;zXBH9YfbNH26wIejM05lkDA9BgNVHREENjA0ghkqLmx5bWUuaGVhbHRoLmhhcnZh&#xa;cmQuZWR1ghdseW1lLmhlYWx0aC5oYXJ2YXJkLmVkdTATBgNVHSAEDDAKMAgGBmeB&#xa;DAECATAOBgNVHQ8BAf8EBAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUF&#xa;BwMCMDsGA1UdHwQ0MDIwMKAuoCyGKmh0dHA6Ly9jcmwucjJtMDIuYW1hem9udHJ1&#xa;c3QuY29tL3IybTAyLmNybDB1BggrBgEFBQcBAQRpMGcwLQYIKwYBBQUHMAGGIWh0&#xa;dHA6Ly9vY3NwLnIybTAyLmFtYXpvbnRydXN0LmNvbTA2BggrBgEFBQcwAoYqaHR0&#xa;cDovL2NydC5yMm0wMi5hbWF6b250cnVzdC5jb20vcjJtMDIuY2VyMAwGA1UdEwEB&#xa;/wQCMAAwggF7BgorBgEEAdZ5AgQCBIIBawSCAWcBZQB1AM8RVu7VLnyv84db2Wku&#xa;m+kacWdKsBfsrAHSW3fOzDsIAAABjlZGzkkAAAQDAEYwRAIgRYsedlQsrgoCOYIO&#xa;r5t5TBeVSetry/ld0jq9OEGAchoCIHtWqdDTdC4C6tBLbr5mWeY8j+/rUjoyGNwK&#xa;lXpmIS+/AHUAfVkeEuF4KnscYWd8Xv340IdcFKBOlZ65Ay/ZDowuebgAAAGOVkbO&#xa;TwAABAMARjBEAiABi6xvSU52RR/cjkHEsD6h6GEUJYJrGUd0Gz4nioATkwIgLtLR&#xa;MfP8xEmr6TTvcT6MHA7njS3nRltSmSdaKE7MBjgAdQDm0jFjQHeMwRBBBtdxuc7B&#xa;0kD2loSG+7qHMh39HjeOUAAAAY5WRs5ZAAAEAwBGMEQCIDJiZrv+I3fN8KOESJ7b&#xa;GbPWPIW4JWxr+eeAYm3ykAZJAiB7D4eqmnvhYlvSrMp6teTapR77hPgUqnXm92OY&#xa;9KyEdDANBgkqhkiG9w0BAQsFAAOCAQEAmX2umdbrGjyXWxy3CRyexZX3zw6sDG9Q&#xa;3ByboNzm+a99AcmyU2GwkT3AsP8bjY5sKhIPMKTGLUFBF2YsOH+qGwpUBVqjf7Yt&#xa;EW1tgLI4QfAKWZlZTiEeE1nREW1n14GCpE7LEX2GtvtLt+A1Ew5exMJZqiQsXTw/&#xa;Fi2CH9X+iGMUrgzRX68gJetAVHh3rgcyacsOcnFuv+xzjyNtGVUYYzH8zzthuzyd&#xa;7sewyl94RDwz7YE+QDEH6+BatS0xCfNkbYHZg7AaZ7MSYxAYOVAoR7/w+CWuixMp&#xa;ZZOviQ4sIL5zbw8Z1yyh4ciZT8O/ixQVlbli3ejYy/66+6mAtQyV1A==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+</ports>
+<times srtt="1728" rttvar="1747" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730743645"/>
+<taskend task="NSE" time="1730743645"/>
+<taskbegin task="NSE" time="1730743645"/>
+<taskend task="NSE" time="1730743645"/>
+<taskbegin task="NSE" time="1730743645"/>
+<taskend task="NSE" time="1730743645"/>
+<runstats><finished time="1730743645" timestr="Mon Nov  4 18:07:25 2024" elapsed="66.78" summary="Nmap done at Mon Nov  4 18:07:25 2024; 1 IP address (1 host up) scanned in 66.78 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
