@@ -19,3 +19,123 @@
 <taskbegin task="Connect Scan" time="1730738623"/>
 <taskend task="Connect Scan" time="1730738624" extrainfo="1000 total ports"/>
 <taskbegin task="Service scan" time="1730738624"/>
+<taskend task="Service scan" time="1730738636" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1730738636"/>
+<taskend task="NSE" time="1730738637"/>
+<taskbegin task="NSE" time="1730738637"/>
+<taskend task="NSE" time="1730738637"/>
+<taskbegin task="NSE" time="1730738637"/>
+<taskend task="NSE" time="1730738637"/>
+<host starttime="1730738622" endtime="1730738637"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="131.142.105.153" addrtype="ipv4"/>
+<hostnames>
+<hostname name="acisway.cfa.harvard.edu" type="user"/>
+<hostname name="acisway.cfa.harvard.edu" type="PTR"/>
+</hostnames>
+<ports><extraports state="closed" count="990">
+<extrareasons reason="conn-refused" count="990"/>
+</extraports>
+<port protocol="tcp" portid="111"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="rpcbind" method="table" conf="3"/></port>
+<port protocol="tcp" portid="135"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="msrpc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="139"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssl" product="Apache httpd" extrainfo="SSL-only mode" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:apache:http_server</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: POST OPTIONS HEAD GET TRACE&#xa;  Potentially risky methods: TRACE"><table key="Supported Methods">
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+<elem>HEAD</elem>
+<elem>GET</elem>
+<elem>TRACE</elem>
+</table>
+<table key="Potentially risky methods">
+<elem>TRACE</elem>
+</table>
+</script><script id="http-server-header" output="Apache/2.4.37 (Red Hat Enterprise Linux) OpenSSL/1.1.1k"><elem>Apache/2.4.37 (Red Hat Enterprise Linux) OpenSSL/1.1.1k</elem>
+</script><script id="http-title" output="Test Page for the HTTP Server on Red Hat Enterprise Linux"><elem key="title">Test Page for the HTTP Server on Red Hat Enterprise Linux</elem>
+</script><script id="ssl-cert" output="Subject: commonName=acisway.cfa.harvard.edu/organizationName=President and Fellows of Harvard College/stateOrProvinceName=Massachusetts/countryName=US&#xa;Subject Alternative Name: DNS:acisway.cfa.harvard.edu&#xa;Issuer: commonName=InCommon RSA Server CA 2/organizationName=Internet2/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha384WithRSAEncryption&#xa;Not valid before: 2023-12-27T00:00:00&#xa;Not valid after:  2024-12-26T23:59:59&#xa;MD5:   8ad1 6c2d fe20 2537 0ab4 2490 bb6e 2662&#xa;SHA-1: 8a79 08ad d323 affe 06ba f8ad 6145 c3d3 a86f cd28"><table key="subject">
+<elem key="countryName">US</elem>
+<elem key="organizationName">President and Fellows of Harvard College</elem>
+<elem key="stateOrProvinceName">Massachusetts</elem>
+<elem key="commonName">acisway.cfa.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">US</elem>
+<elem key="organizationName">Internet2</elem>
+<elem key="commonName">InCommon RSA Server CA 2</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">2048</elem>
+<elem key="modulus">BIGNUM: 0x561be4391fe8</elem>
+<elem key="type">rsa</elem>
+<elem key="exponent">BIGNUM: 0x561be434a6d8</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">EF:4C:00:92:A6:FB:76:2E:5E:95:E2:C9:5F:87:1B:19:D5:4D:E2:D9</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">DF:EF:8A:2B:CA:C9:A8:82:26:D2:64:BD:40:0E:3C:2D:8E:4E:10:2A</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="critical">true</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="critical">true</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 1.3.6.1.4.1.6449.1.2.2.103&#xa;  CPS: https://sectigo.com/CPS&#xa;Policy: 2.23.140.1.2.2</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://crl.sectigo.com/InCommonRSAServerCA2.crl</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:http://crt.sectigo.com/InCommonRSAServerCA2.crt&#xa;OCSP - URI:http://ocsp.sectigo.com</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:acisway.cfa.harvard.edu</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 76:FF:88:3F:0A:B6:FB:95:51:C2:61:CC:F5:87:BA:34:&#xa;                B4:A4:CD:BB:29:DC:68:42:0A:9F:E6:67:4C:5A:3A:74&#xa;    Timestamp : Dec 27 00:13:58.270 2023 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:1B:5D:DD:FD:41:6B:5D:DF:7C:D6:E2:5C:&#xa;                A7:B4:1D:32:82:AB:BD:17:FF:1A:88:5D:E7:FF:07:2B:&#xa;                0A:21:AF:36:02:21:00:F5:16:B3:4B:E4:28:BB:7E:65:&#xa;                46:A4:A5:A1:D9:AF:A7:75:9E:A2:EF:CB:BC:B1:C6:7D:&#xa;                4C:CB:DE:39:03:A1:C2&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 3F:17:4B:4F:D7:22:47:58:94:1D:65:1C:84:BE:0D:12:&#xa;                ED:90:37:7F:1F:85:6A:EB:C1:BF:28:85:EC:F8:64:6E&#xa;    Timestamp : Dec 27 00:13:58.177 2023 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:B1:CA:38:F4:69:B0:53:DD:1D:98:CD:&#xa;                D1:03:E5:C9:35:81:7B:2E:7C:7D:F9:B4:7D:12:58:C5:&#xa;                E0:4D:18:73:64:02:20:02:A1:04:4D:CD:30:40:85:2F:&#xa;                AE:3E:88:91:72:3B:B4:47:2A:49:BF:E2:59:AC:45:3F:&#xa;                79:FC:E3:E4:40:44:64&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : EE:CD:D0:64:D5:DB:1A:CE:C5:5C:B7:9D:B4:CD:13:A2:&#xa;                32:87:46:7C:BC:EC:DE:C3:51:48:59:46:71:1F:B5:9B&#xa;    Timestamp : Dec 27 00:13:58.154 2023 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:16:BD:31:D2:F9:F1:7D:6A:39:4C:A0:C6:&#xa;                7B:35:42:BC:2F:3B:51:B4:43:65:0A:F8:8B:BE:AB:6F:&#xa;                01:10:D0:05:02:21:00:AD:91:C6:B1:E0:1D:4F:9B:18:&#xa;                B0:FB:79:1A:35:66:43:2B:EF:D8:F8:95:E9:B8:9D:52:&#xa;                70:56:77:2E:1B:11:38</elem>
+</table>
+</table>
+<elem key="sig_algo">sha384WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2023-12-27T00:00:00</elem>
+<elem key="notAfter">2024-12-26T23:59:59</elem>
+</table>
+<elem key="md5">8ad16c2dfe2025370ab42490bb6e2662</elem>
+<elem key="sha1">8a7908add323affe06baf8ad6145c3d3a86fcd28</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIG8DCCBVigAwIBAgIQH/RqHL6aQMfbqmJWJBsWtTANBgkqhkiG9w0BAQwFADBE&#xa;MQswCQYDVQQGEwJVUzESMBAGA1UEChMJSW50ZXJuZXQyMSEwHwYDVQQDExhJbkNv&#xa;bW1vbiBSU0EgU2VydmVyIENBIDIwHhcNMjMxMjI3MDAwMDAwWhcNMjQxMjI2MjM1&#xa;OTU5WjB6MQswCQYDVQQGEwJVUzEWMBQGA1UECBMNTWFzc2FjaHVzZXR0czExMC8G&#xa;A1UEChMoUHJlc2lkZW50IGFuZCBGZWxsb3dzIG9mIEhhcnZhcmQgQ29sbGVnZTEg&#xa;MB4GA1UEAxMXYWNpc3dheS5jZmEuaGFydmFyZC5lZHUwggEiMA0GCSqGSIb3DQEB&#xa;AQUAA4IBDwAwggEKAoIBAQD6MQgwcSC5neHviNjA+CMuIUVbnbtg9m9u6EVfZgpI&#xa;VZeE49XxbLEshm/UQrpX0YyxREs0Cj6jBYQvSe+m5v6nCK8Zr4VOEdXwYqoFWRiv&#xa;rWQKKmoch1dEL/Bem1qgyUfuiahhYI8Pu3WI4aOXfIyX0Y+kDs6GGDofjFxpao1+&#xa;V8rYuzquO3nVCABthHCmb5UYx7fjrm7hLsZoxqSWbEkya9204BRu9h7SAM/3Hy74&#xa;N8/ulKfqsK5wN7Xkp6uSv1byCTutfSbqKg8aegZ0E69pv6I3EKS1L7TXCxaWu//1&#xa;vVgHKZot+l29Xj5X3mXXWE1zZ58ZtpZDmhhM1FLspH6FAgMBAAGjggMmMIIDIjAf&#xa;BgNVHSMEGDAWgBTvTACSpvt2Ll6V4slfhxsZ1U3i2TAdBgNVHQ4EFgQU3++KK8rJ&#xa;qIIm0mS9QA48LY5OECowDgYDVR0PAQH/BAQDAgWgMAwGA1UdEwEB/wQCMAAwHQYD&#xa;VR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMEkGA1UdIARCMEAwNAYLKwYBBAGy&#xa;MQECAmcwJTAjBggrBgEFBQcCARYXaHR0cHM6Ly9zZWN0aWdvLmNvbS9DUFMwCAYG&#xa;Z4EMAQICMEAGA1UdHwQ5MDcwNaAzoDGGL2h0dHA6Ly9jcmwuc2VjdGlnby5jb20v&#xa;SW5Db21tb25SU0FTZXJ2ZXJDQTIuY3JsMHAGCCsGAQUFBwEBBGQwYjA7BggrBgEF&#xa;BQcwAoYvaHR0cDovL2NydC5zZWN0aWdvLmNvbS9JbkNvbW1vblJTQVNlcnZlckNB&#xa;Mi5jcnQwIwYIKwYBBQUHMAGGF2h0dHA6Ly9vY3NwLnNlY3RpZ28uY29tMCIGA1Ud&#xa;EQQbMBmCF2FjaXN3YXkuY2ZhLmhhcnZhcmQuZWR1MIIBfgYKKwYBBAHWeQIEAgSC&#xa;AW4EggFqAWgAdgB2/4g/Crb7lVHCYcz1h7o0tKTNuyncaEIKn+ZnTFo6dAAAAYyo&#xa;nvJ+AAAEAwBHMEUCIBtd3f1Ba13ffNbiXKe0HTKCq70X/xqIXef/BysKIa82AiEA&#xa;9RazS+Qou35lRqSlodmvp3Weou/LvLHGfUzL3jkDocIAdgA/F0tP1yJHWJQdZRyE&#xa;vg0S7ZA3fx+FauvBvyiF7PhkbgAAAYyonvIhAAAEAwBHMEUCIQCxyjj0abBT3R2Y&#xa;zdED5ck1gXsufH35tH0SWMXgTRhzZAIgAqEETc0wQIUvrj6IkXI7tEcqSb/iWaxF&#xa;P3n84+RARGQAdgDuzdBk1dsazsVct520zROiModGfLzs3sNRSFlGcR+1mwAAAYyo&#xa;nvIKAAAEAwBHMEUCIBa9MdL58X1qOUygxns1QrwvO1G0Q2UK+Iu+q28BENAFAiEA&#xa;rZHGseAdT5sYsPt5GjVmQyvv2PiV6bidUnBWdy4bETgwDQYJKoZIhvcNAQEMBQAD&#xa;ggGBAGXazCC8RPTrhN+F5yn/zPo3XXmWK4vecrg1vNSB8kULAtGQSlOA6REDuEE3&#xa;35DhuPSSevKiMrp+pAKBn/GVhEEagr9DR6BDT7cAIGMoib+DuOHKoX6JXeh6smyi&#xa;iWR8sPv9wEsXWSIpK09vh4W78zJE9RpWMQ4iIwjQAqlEP5bLOgysiH1Ytle1tx7K&#xa;O49NPCK77IgMRiChUDiy1qEw+xn+RXHNGFOxHeuPkjlPKRxmXRUXSLQGJ0jT4WOF&#xa;7zTxgVdQ7RhqTpiA0JXRn80Twu4lwdIUGtpGjO8xCAJ8CPfxe9ShQqq74TOGQ8i9&#xa;AMBUawr0g4g2omE4GgO4nyxs820IS7parICP+0ttpz61yuiJRO5yizdTttMsOTE/&#xa;sH2O/Ea4xMLquu54vVf+vOMbHT2CaSKbZqqYABBjvzZff096fF9JbBY4ZeL/oFtr&#xa;XMnABR5BagM2ce4pO6QrRR7hkZ/7o9iT1dADKoMgb8Lvjrv7iOoIpYOBpUIC3NxD&#xa;xolyWg==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="tls-alpn" output="&#xa;  http/1.1"><elem>http/1.1</elem>
+</script></port>
+<port protocol="tcp" portid="445"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="554"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="rtsp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="593"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="http-rpc-epmap" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1720"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="h323q931" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2000"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="cisco-sccp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5060"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="sip" method="table" conf="3"/></port>
+</ports>
+<times srtt="17126" rttvar="361" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730738637"/>
+<taskend task="NSE" time="1730738637"/>
+<taskbegin task="NSE" time="1730738637"/>
+<taskend task="NSE" time="1730738637"/>
+<taskbegin task="NSE" time="1730738637"/>
+<taskend task="NSE" time="1730738637"/>
+<runstats><finished time="1730738637" timestr="Mon Nov  4 16:43:57 2024" elapsed="15.00" summary="Nmap done at Mon Nov  4 16:43:57 2024; 1 IP address (1 host up) scanned in 15.00 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
