@@ -17,3 +17,107 @@
 <taskbegin task="Parallel DNS resolution of 1 host." time="1730749242"/>
 <taskend task="Parallel DNS resolution of 1 host." time="1730749243"/>
 <taskbegin task="Connect Scan" time="1730749243"/>
+<taskend task="Connect Scan" time="1730749247" extrainfo="1000 total ports"/>
+<taskbegin task="Service scan" time="1730749247"/>
+<taskend task="Service scan" time="1730749259" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1730749259"/>
+<taskend task="NSE" time="1730749261"/>
+<taskbegin task="NSE" time="1730749261"/>
+<taskend task="NSE" time="1730749261"/>
+<taskbegin task="NSE" time="1730749261"/>
+<taskend task="NSE" time="1730749261"/>
+<host starttime="1730749242" endtime="1730749261"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="3.215.150.64" addrtype="ipv4"/>
+<hostnames>
+<hostname name="www.ai4science.seas.harvard.edu" type="user"/>
+<hostname name="ec2-3-215-150-64.compute-1.amazonaws.com" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="998">
+<extrareasons reason="no-responses" count="998"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="OpenResty web app server" method="probed" conf="10"><cpe>cpe:/a:openresty:ngx_openresty</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="openresty"><elem>openresty</elem>
+</script><script id="http-title" output="Did not follow redirect to https://www.ai4science.seas.harvard.edu/"><elem key="redirect_url">https://www.ai4science.seas.harvard.edu/</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="OpenResty web app server" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:openresty:ngx_openresty</cpe></service><script id="http-server-header" output="openresty"><elem>openresty</elem>
+</script><script id="http-title" output="Forbidden"><elem key="title">Forbidden</elem>
+</script><script id="ssl-cert" output="Subject: commonName=www.ai4science.seas.harvard.edu&#xa;Subject Alternative Name: DNS:www.ai4science.seas.harvard.edu&#xa;Issuer: commonName=R11/organizationName=Let&apos;s Encrypt/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-10-12T09:28:46&#xa;Not valid after:  2025-01-10T09:28:45&#xa;MD5:   0a3d 4ce0 e16f df7c 67b6 8a09 a92b 86e3&#xa;SHA-1: 4671 71c7 568b f2c9 3944 cf0a 8b87 fbd3 371c 7916"><table key="subject">
+<elem key="commonName">www.ai4science.seas.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">R11</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+</table>
+<table key="pubkey">
+<elem key="modulus">BIGNUM: 0x5567d855ac78</elem>
+<elem key="bits">2048</elem>
+<elem key="exponent">BIGNUM: 0x5567d7921f28</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">BA:D6:55:90:FF:26:67:C5:86:18:86:08:10:56:6B:3B:C6:08:99:15</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">C5:CF:46:A4:EA:F4:C3:C0:7A:6C:95:C4:2D:B0:5E:92:2F:26:E3:B9</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://r11.o.lencr.org&#xa;CA Issuers - URI:http://r11.i.lencr.org/</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:www.ai4science.seas.harvard.edu</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 3F:17:4B:4F:D7:22:47:58:94:1D:65:1C:84:BE:0D:12:&#xa;                ED:90:37:7F:1F:85:6A:EB:C1:BF:28:85:EC:F8:64:6E&#xa;    Timestamp : Oct 12 10:27:16.147 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:79:DB:A3:7B:3E:B0:9D:3F:16:82:D5:2D:&#xa;                36:07:32:C8:D1:3A:8A:EC:FB:A8:90:62:C1:75:6D:3F:&#xa;                96:AE:FF:C7:02:21:00:F0:59:1E:F6:5A:26:07:B5:19:&#xa;                13:67:6F:CD:DB:67:2C:D0:1B:5A:1D:33:9A:DD:8F:A3:&#xa;                7D:77:D4:D4:53:FB:79&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 13:4A:DF:1A:B5:98:42:09:78:0C:6F:EF:4C:7A:91:A4:&#xa;                16:B7:23:49:CE:58:57:6A:DF:AE:DA:A7:C2:AB:E0:22&#xa;    Timestamp : Oct 12 10:27:16.355 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:A3:0C:3E:63:DB:1D:B4:ED:37:30:7D:&#xa;                C7:1B:65:E4:CD:0B:D3:A6:61:27:1D:38:BD:94:79:A2:&#xa;                8B:47:85:A6:0E:02:20:6C:D2:15:F7:91:59:B1:58:30:&#xa;                E4:1F:41:55:89:4F:55:21:A9:2D:C2:22:2E:35:15:AF:&#xa;                17:58:DF:31:CE:2B:C4</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-10-12T09:28:46</elem>
+<elem key="notAfter">2025-01-10T09:28:45</elem>
+</table>
+<elem key="md5">0a3d4ce0e16fdf7c67b68a09a92b86e3</elem>
+<elem key="sha1">467171c7568bf2c93944cf0a8b87fbd3371c7916</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFDjCCA/agAwIBAgISA0zBGG0lfhVolcGUSp48zNcaMA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNSMTEwHhcNMjQxMDEyMDkyODQ2WhcNMjUwMTEwMDkyODQ1WjAqMSgwJgYDVQQD&#xa;Ex93d3cuYWk0c2NpZW5jZS5zZWFzLmhhcnZhcmQuZWR1MIIBIjANBgkqhkiG9w0B&#xa;AQEFAAOCAQ8AMIIBCgKCAQEAozEe/EIzXgPPrFCK7vVaxIsLqI8w9amk16PQLJHL&#xa;mZDk7W0lilRuXbq+jsUBKNLe2JT6zYqHd31PnEZG9HoR3b2StI92uJxM+ubGbrIu&#xa;QDO23u63pgF15NoAURMPvEKOpd4KQvkbWMQsHllgrtMX0OqnTpVewKZoAMt5k9+/&#xa;YlwFv0m7OJ6khQQIjjBbTff83aBNkEWVlq+M1p5ZH1Sbr7aPrgHq7lSGfNnoL3as&#xa;0AHBQVISNfzTWPrlY/1ep0AWt6S7qsHp/IwbacYcnXsgE+okTutvq7qK0lo0hUos&#xa;CWMghel3web3eMNjB41MSsoyHIHhX6zqSvlsexT2IuBPKQIDAQABo4ICIzCCAh8w&#xa;DgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAM&#xa;BgNVHRMBAf8EAjAAMB0GA1UdDgQWBBS61lWQ/yZnxYYYhggQVms7xgiZFTAfBgNV&#xa;HSMEGDAWgBTFz0ak6vTDwHpslcQtsF6SLybjuTBXBggrBgEFBQcBAQRLMEkwIgYI&#xa;KwYBBQUHMAGGFmh0dHA6Ly9yMTEuby5sZW5jci5vcmcwIwYIKwYBBQUHMAKGF2h0&#xa;dHA6Ly9yMTEuaS5sZW5jci5vcmcvMCoGA1UdEQQjMCGCH3d3dy5haTRzY2llbmNl&#xa;LnNlYXMuaGFydmFyZC5lZHUwEwYDVR0gBAwwCjAIBgZngQwBAgEwggEEBgorBgEE&#xa;AdZ5AgQCBIH1BIHyAPAAdgA/F0tP1yJHWJQdZRyEvg0S7ZA3fx+FauvBvyiF7Phk&#xa;bgAAAZKARKgzAAAEAwBHMEUCIHnbo3s+sJ0/FoLVLTYHMsjROors+6iQYsF1bT+W&#xa;rv/HAiEA8Fke9lomB7UZE2dvzdtnLNAbWh0zmt2Po3131NRT+3kAdgATSt8atZhC&#xa;CXgMb+9MepGkFrcjSc5YV2rfrtqnwqvgIgAAAZKARKkDAAAEAwBHMEUCIQCjDD5j&#xa;2x207TcwfccbZeTNC9OmYScdOL2UeaKLR4WmDgIgbNIV95FZsVgw5B9BVYlPVSGp&#xa;LcIiLjUVrxdY3zHOK8QwDQYJKoZIhvcNAQELBQADggEBAEqqskzdRMHGqGPLbBKK&#xa;RQPzcVmSV2XIQcdlO6wOL/9rQKu1ZcQP/FGlp3WfeEQ2ZImAI7Wg+aKtHoqC6SPt&#xa;2+Kq37aN4FtubbKKEZw5YLrRk3sNA2Q1jm4KJbT6uj+WNv3rPHDNNX+hYkFjjc3R&#xa;HHnVhYbqZy0qRDaIC8wDmMsFuViNR8l8td49ZrvJ3fOtvN2aYM0+WuuwgCAx1pIy&#xa;QE2yXOoFmgGyvCXDbOAcZynnzQbfz4y6fRNMC9feMABK6P346O8RT3CEfoC2+7qm&#xa;cybtNfNDeyV0IGtwoIcPK3eoK7m2j7VoxXzo5M9wLU7bWy202fgyZwvxe6/SX8I8&#xa;fq4=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+</ports>
+<times srtt="7115" rttvar="2667" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730749261"/>
+<taskend task="NSE" time="1730749261"/>
+<taskbegin task="NSE" time="1730749261"/>
+<taskend task="NSE" time="1730749261"/>
+<taskbegin task="NSE" time="1730749261"/>
+<taskend task="NSE" time="1730749261"/>
+<runstats><finished time="1730749261" timestr="Mon Nov  4 19:41:01 2024" elapsed="19.02" summary="Nmap done at Mon Nov  4 19:41:01 2024; 1 IP address (1 host up) scanned in 19.02 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
