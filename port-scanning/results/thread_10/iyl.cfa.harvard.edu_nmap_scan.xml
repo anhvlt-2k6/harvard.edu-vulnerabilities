@@ -19,3 +19,124 @@
 <taskbegin task="Connect Scan" time="1730742695"/>
 <taskend task="Connect Scan" time="1730742700" extrainfo="1000 total ports"/>
 <taskbegin task="Service scan" time="1730742700"/>
+<taskend task="Service scan" time="1730742720" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1730742720"/>
+<taskend task="NSE" time="1730742721"/>
+<taskbegin task="NSE" time="1730742721"/>
+<taskend task="NSE" time="1730742721"/>
+<taskbegin task="NSE" time="1730742721"/>
+<taskend task="NSE" time="1730742721"/>
+<host starttime="1730742695" endtime="1730742721"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="131.142.198.86" addrtype="ipv4"/>
+<hostnames>
+<hostname name="iyl.cfa.harvard.edu" type="user"/>
+<hostname name="iyl.cfa.harvard.edu" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="997">
+<extrareasons reason="no-responses" count="997"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" servicefp="SF-Port80-TCP:V=7.80%I=7%D=11/4%Time=672909B2%P=x86_64-pc-linux-gnu%r(GetRequest,77,&quot;HTTP/1\.1\x20307\x20Temporary\x20Redirect\r\ncontent-length:\x200\r\nlocation:\x20https:///\r\ncache-control:\x20no-cache\r\nconnection:\x20close\r\n\r\n&quot;)%r(HTTPOptions,77,&quot;HTTP/1\.1\x20307\x20Temporary\x20Redirect\r\ncontent-length:\x200\r\nlocation:\x20https:///\r\ncache-control:\x20no-cache\r\nconnection:\x20close\r\n\r\n&quot;)%r(RTSPRequest,CF,&quot;HTTP/1\.1\x20400\x20Bad\x20request\r\nContent-length:\x2090\r\nCache-Control:\x20no-cache\r\nConnection:\x20close\r\nContent-Type:\x20text/html\r\n\r\n&lt;html&gt;&lt;body&gt;&lt;h1&gt;400\x20Bad\x20request&lt;/h1&gt;\nYour\x20browser\x20sent\x20an\x20invalid\x20request\.\n&lt;/body&gt;&lt;/html&gt;\n&quot;)%r(X11Probe,CF,&quot;HTTP/1\.1\x20400\x20Bad\x20request\r\nContent-length:\x2090\r\nCache-Control:\x20no-cache\r\nConnection:\x20close\r\nContent-Type:\x20text/html\r\n\r\n&lt;html&gt;&lt;body&gt;&lt;h1&gt;400\x20Bad\x20request&lt;/h1&gt;\nYour\x20browser\x20sent\x20an\x20invalid\x20request\.\n&lt;/body&gt;&lt;/html&gt;\n&quot;)%r(FourOhFourRequest,9A,&quot;HTTP/1\.1\x20307\x20Temporary\x20Redirect\r\ncontent-length:\x200\r\nlocation:\x20https:///nice%20ports%2C/Tri%6Eity\.txt%2ebak\r\ncache-control:\x20no-cache\r\nconnection:\x20close\r\n\r\n&quot;)%r(RPCCheck,CF,&quot;HTTP/1\.1\x20400\x20Bad\x20request\r\nContent-length:\x2090\r\nCache-Control:\x20no-cache\r\nConnection:\x20close\r\nContent-Type:\x20text/html\r\n\r\n&lt;html&gt;&lt;body&gt;&lt;h1&gt;400\x20Bad\x20request&lt;/h1&gt;\nYour\x20browser\x20sent\x20an\x20invalid\x20request\.\n&lt;/body&gt;&lt;/html&gt;\n&quot;)%r(DNSVersionBindReqTCP,CF,&quot;HTTP/1\.1\x20400\x20Bad\x20request\r\nContent-length:\x2090\r\nCache-Control:\x20no-cache\r\nConnection:\x20close\r\nContent-Type:\x20text/html\r\n\r\n&lt;html&gt;&lt;body&gt;&lt;h1&gt;400\x20Bad\x20request&lt;/h1&gt;\nYour\x20browser\x20sent\x20an\x20invalid\x20request\.\n&lt;/body&gt;&lt;/html&gt;\n&quot;)%r(DNSStatusRequestTCP,CF,&quot;HTTP/1\.1\x20400\x20Bad\x20request\r\nContent-length:\x2090\r\nCache-Control:\x20no-cache\r\nConnection:\x20close\r\nContent-Type:\x20text/html\r\n\r\n&lt;html&gt;&lt;body&gt;&lt;h1&gt;400\x20Bad\x20request&lt;/h1&gt;\nYour\x20browser\x20sent\x20an\x20invalid\x20request\.\n&lt;/body&gt;&lt;/html&gt;\n&quot;)%r(Help,CF,&quot;HTTP/1\.1\x20400\x20Bad\x20request\r\nContent-length:\x2090\r\nCache-Control:\x20no-cache\r\nConnection:\x20close\r\nContent-Type:\x20text/html\r\n\r\n&lt;html&gt;&lt;body&gt;&lt;h1&gt;400\x20Bad\x20request&lt;/h1&gt;\nYour\x20browser\x20sent\x20an\x20invalid\x20request\.\n&lt;/body&gt;&lt;/html&gt;\n&quot;);" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  DNSStatusRequestTCP, DNSVersionBindReqTCP, Help, RPCCheck, RTSPRequest, X11Probe: &#xa;    HTTP/1.1 400 Bad request&#xa;    Content-length: 90&#xa;    Cache-Control: no-cache&#xa;    Connection: close&#xa;    Content-Type: text/html&#xa;    &lt;html&gt;&lt;body&gt;&lt;h1&gt;400 Bad request&lt;/h1&gt;&#xa;    Your browser sent an invalid request.&#xa;    &lt;/body&gt;&lt;/html&gt;&#xa;  FourOhFourRequest: &#xa;    HTTP/1.1 307 Temporary Redirect&#xa;    content-length: 0&#xa;    location: https:///nice%20ports%2C/Tri%6Eity.txt%2ebak&#xa;    cache-control: no-cache&#xa;    connection: close&#xa;  GetRequest, HTTPOptions: &#xa;    HTTP/1.1 307 Temporary Redirect&#xa;    content-length: 0&#xa;    location: https:///&#xa;    cache-control: no-cache&#xa;    connection: close"><elem key="DNSStatusRequestTCP, DNSVersionBindReqTCP, Help, RPCCheck, RTSPRequest, X11Probe">&#xa;    HTTP/1.1 400 Bad request&#xa;    Content-length: 90&#xa;    Cache-Control: no-cache&#xa;    Connection: close&#xa;    Content-Type: text/html&#xa;    &lt;html&gt;&lt;body&gt;&lt;h1&gt;400 Bad request&lt;/h1&gt;&#xa;    Your browser sent an invalid request.&#xa;    &lt;/body&gt;&lt;/html&gt;</elem>
+<elem key="FourOhFourRequest">&#xa;    HTTP/1.1 307 Temporary Redirect&#xa;    content-length: 0&#xa;    location: https:///nice%20ports%2C/Tri%6Eity.txt%2ebak&#xa;    cache-control: no-cache&#xa;    connection: close</elem>
+<elem key="GetRequest, HTTPOptions">&#xa;    HTTP/1.1 307 Temporary Redirect&#xa;    content-length: 0&#xa;    location: https:///&#xa;    cache-control: no-cache&#xa;    connection: close</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Did not follow redirect to https://iyl.cfa.harvard.edu/"><elem key="redirect_url">https://iyl.cfa.harvard.edu/</elem>
+</script><script id="https-redirect" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="tcp" portid="113"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ident" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" product="Apache" servicefp="SF-Port443-TCP:V=7.80%T=SSL%I=7%D=11/4%Time=672909B8%P=x86_64-pc-linux-gnu%r(GetRequest,2580,&quot;HTTP/1\.1\x20200\x20OK\r\ndate:\x20Mon,\x2004\x20Nov\x202024\x2017:51:52\x20GMT\r\nserver:\x20Apache\r\ncontent-type:\x20text/html;\x20charset=UTF-8\r\nset-cookie:\x20SERVERID=cxcweb48;\x20path=/\r\nconnection:\x20close\r\n\r\n&lt;!DOCTYPE\x20html&gt;\n&lt;!-&#45;\[if\x20lt\x20IE\x207\x20\]&gt;&lt;html\x20class=\&quot;ie\x20ie6\&quot;\x20lang=\&quot;en\&quot;&gt;\x20&lt;!\[endif\]-&#45;&gt;\n&lt;!-&#45;\[if\x20IE\x207\x20\]&gt;&lt;html\x20class=\&quot;ie\x20ie7\&quot;\x20lang=\&quot;en\&quot;&gt;\x20&lt;!\[endif\]-&#45;&gt;\n&lt;!-&#45;\[if\x20IE\x208\x20\]&gt;&lt;html\x20class=\&quot;ie\x20ie8\&quot;\x20lang=\&quot;en\&quot;&gt;\x20&lt;!\[endif\]-&#45;&gt;\n&lt;!-&#45;\[if\x20\(gte\x20IE\x209\)\|!\(IE\)\]&gt;&lt;!-&#45;&gt;\n&lt;html\x20lang=\&quot;en\&quot;&gt;\n&lt;!-&#45;&lt;!\[endif\]-&#45;&gt;\n&lt;head&gt;\n\n&lt;!-&#45;\x20Basic\x20Page\x20Needs\n\x20\x20==================================================\x20-&#45;&gt;\n&lt;meta\x20charset=\&quot;utf-8\&quot;&gt;\n&lt;title&gt;LIGHT:\x20Beyond\x20the\x20Bulb&lt;/title&gt;\n&lt;meta\x20name=\&quot;description\&quot;\x20content=\&quot;\&quot;&gt;\n&lt;meta\x20name=\&quot;author\&quot;\x20content=\&quot;\&quot;&gt;\n\n&lt;!-&#45;\x20Mobile\x20Specific\x20Metas\n\x20\x20==================================================\x20-&#45;&gt;\n&lt;meta\x20name=\&quot;viewport\&quot;\x20content=\&quot;width=device-width,\x20initial-scale=1,\x20maximum-scale=1\&quot;&gt;\n\n&lt;!-&#45;\x20CSS\n\x20\x20==================================================\x20-&#45;&gt;\n\n&lt;link\x20rel&quot;)%r(HTTPOptions,2580,&quot;HTTP/1\.1\x20200\x20OK\r\ndate:\x20Mon,\x2004\x20Nov\x202024\x2017:51:52\x20GMT\r\nserver:\x20Apache\r\ncontent-type:\x20text/html;\x20charset=UTF-8\r\nset-cookie:\x20SERVERID=cxcweb48;\x20path=/\r\nconnection:\x20close\r\n\r\n&lt;!DOCTYPE\x20html&gt;\n&lt;!-&#45;\[if\x20lt\x20IE\x207\x20\]&gt;&lt;html\x20class=\&quot;ie\x20ie6\&quot;\x20lang=\&quot;en\&quot;&gt;\x20&lt;!\[endif\]-&#45;&gt;\n&lt;!-&#45;\[if\x20IE\x207\x20\]&gt;&lt;html\x20class=\&quot;ie\x20ie7\&quot;\x20lang=\&quot;en\&quot;&gt;\x20&lt;!\[endif\]-&#45;&gt;\n&lt;!-&#45;\[if\x20IE\x208\x20\]&gt;&lt;html\x20class=\&quot;ie\x20ie8\&quot;\x20lang=\&quot;en\&quot;&gt;\x20&lt;!\[endif\]-&#45;&gt;\n&lt;!-&#45;\[if\x20\(gte\x20IE\x209\)\|!\(IE\)\]&gt;&lt;!-&#45;&gt;\n&lt;html\x20lang=\&quot;en\&quot;&gt;\n&lt;!-&#45;&lt;!\[endif\]-&#45;&gt;\n&lt;head&gt;\n\n&lt;!-&#45;\x20Basic\x20Page\x20Needs\n\x20\x20==================================================\x20-&#45;&gt;\n&lt;meta\x20charset=\&quot;utf-8\&quot;&gt;\n&lt;title&gt;LIGHT:\x20Beyond\x20the\x20Bulb&lt;/title&gt;\n&lt;meta\x20name=\&quot;description\&quot;\x20content=\&quot;\&quot;&gt;\n&lt;meta\x20name=\&quot;author\&quot;\x20content=\&quot;\&quot;&gt;\n\n&lt;!-&#45;\x20Mobile\x20Specific\x20Metas\n\x20\x20==================================================\x20-&#45;&gt;\n&lt;meta\x20name=\&quot;viewport\&quot;\x20content=\&quot;width=device-width,\x20initial-scale=1,\x20maximum-scale=1\&quot;&gt;\n\n&lt;!-&#45;\x20CSS\n\x20\x20==================================================\x20-&#45;&gt;\n\n&lt;link\x20rel&quot;);" tunnel="ssl" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  GetRequest, HTTPOptions: &#xa;    HTTP/1.1 200 OK&#xa;    date: Mon, 04 Nov 2024 17:51:52 GMT&#xa;    server: Apache&#xa;    content-type: text/html; charset=UTF-8&#xa;    set-cookie: SERVERID=cxcweb48; path=/&#xa;    connection: close&#xa;    &lt;!DOCTYPE html&gt;&#xa;    &lt;!-&#45;[if lt IE 7 ]&gt;&lt;html class=&quot;ie ie6&quot; lang=&quot;en&quot;&gt; &lt;![endif]-&#45;&gt;&#xa;    &lt;!-&#45;[if IE 7 ]&gt;&lt;html class=&quot;ie ie7&quot; lang=&quot;en&quot;&gt; &lt;![endif]-&#45;&gt;&#xa;    &lt;!-&#45;[if IE 8 ]&gt;&lt;html class=&quot;ie ie8&quot; lang=&quot;en&quot;&gt; &lt;![endif]-&#45;&gt;&#xa;    &lt;!-&#45;[if (gte IE 9)|!(IE)]&gt;&lt;!-&#45;&gt;&#xa;    &lt;html lang=&quot;en&quot;&gt;&#xa;    &lt;!-&#45;&lt;![endif]-&#45;&gt;&#xa;    &lt;head&gt;&#xa;    &lt;!-&#45; Basic Page Needs&#xa;    ================================================== -&#45;&gt;&#xa;    &lt;meta charset=&quot;utf-8&quot;&gt;&#xa;    &lt;title&gt;LIGHT: Beyond the Bulb&lt;/title&gt;&#xa;    &lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;&#xa;    &lt;meta name=&quot;author&quot; content=&quot;&quot;&gt;&#xa;    &lt;!-&#45; Mobile Specific Metas&#xa;    ================================================== -&#45;&gt;&#xa;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, maximum-scale=1&quot;&gt;&#xa;    &lt;!-&#45; CSS&#xa;    ================================================== -&#45;&gt;&#xa;    &lt;link rel"><elem key="GetRequest, HTTPOptions">&#xa;    HTTP/1.1 200 OK&#xa;    date: Mon, 04 Nov 2024 17:51:52 GMT&#xa;    server: Apache&#xa;    content-type: text/html; charset=UTF-8&#xa;    set-cookie: SERVERID=cxcweb48; path=/&#xa;    connection: close&#xa;    &lt;!DOCTYPE html&gt;&#xa;    &lt;!-&#45;[if lt IE 7 ]&gt;&lt;html class=&quot;ie ie6&quot; lang=&quot;en&quot;&gt; &lt;![endif]-&#45;&gt;&#xa;    &lt;!-&#45;[if IE 7 ]&gt;&lt;html class=&quot;ie ie7&quot; lang=&quot;en&quot;&gt; &lt;![endif]-&#45;&gt;&#xa;    &lt;!-&#45;[if IE 8 ]&gt;&lt;html class=&quot;ie ie8&quot; lang=&quot;en&quot;&gt; &lt;![endif]-&#45;&gt;&#xa;    &lt;!-&#45;[if (gte IE 9)|!(IE)]&gt;&lt;!-&#45;&gt;&#xa;    &lt;html lang=&quot;en&quot;&gt;&#xa;    &lt;!-&#45;&lt;![endif]-&#45;&gt;&#xa;    &lt;head&gt;&#xa;    &lt;!-&#45; Basic Page Needs&#xa;    ================================================== -&#45;&gt;&#xa;    &lt;meta charset=&quot;utf-8&quot;&gt;&#xa;    &lt;title&gt;LIGHT: Beyond the Bulb&lt;/title&gt;&#xa;    &lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;&#xa;    &lt;meta name=&quot;author&quot; content=&quot;&quot;&gt;&#xa;    &lt;!-&#45; Mobile Specific Metas&#xa;    ================================================== -&#45;&gt;&#xa;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, maximum-scale=1&quot;&gt;&#xa;    &lt;!-&#45; CSS&#xa;    ================================================== -&#45;&gt;&#xa;    &lt;link rel</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="Apache"><elem>Apache</elem>
+</script><script id="http-title" output="LIGHT: Beyond the Bulb"><elem key="title">LIGHT: Beyond the Bulb</elem>
+</script><script id="ssl-cert" output="Subject: commonName=iyl.cfa.harvard.edu/organizationName=President and Fellows of Harvard College/stateOrProvinceName=Massachusetts/countryName=US&#xa;Subject Alternative Name: DNS:iyl.cfa.harvard.edu&#xa;Issuer: commonName=InCommon RSA Server CA 2/organizationName=Internet2/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha384WithRSAEncryption&#xa;Not valid before: 2024-01-11T00:00:00&#xa;Not valid after:  2025-01-10T23:59:59&#xa;MD5:   b44a 1e93 01af a089 3110 9944 2a7b 9e19&#xa;SHA-1: 45dc 9020 693f 3ebe db74 9a45 067f 3e30 e6ef 7386"><table key="subject">
+<elem key="countryName">US</elem>
+<elem key="organizationName">President and Fellows of Harvard College</elem>
+<elem key="commonName">iyl.cfa.harvard.edu</elem>
+<elem key="stateOrProvinceName">Massachusetts</elem>
+</table>
+<table key="issuer">
+<elem key="organizationName">Internet2</elem>
+<elem key="commonName">InCommon RSA Server CA 2</elem>
+<elem key="countryName">US</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="exponent">BIGNUM: 0x559bc9b15038</elem>
+<elem key="modulus">BIGNUM: 0x559bc9a9c118</elem>
+<elem key="bits">2048</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">EF:4C:00:92:A6:FB:76:2E:5E:95:E2:C9:5F:87:1B:19:D5:4D:E2:D9</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">51:28:E4:CD:31:8F:F5:CD:BD:56:26:03:1B:91:06:09:17:C1:F6:99</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="name">X509v3 Key Usage</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">Policy: 1.3.6.1.4.1.6449.1.2.2.103&#xa;  CPS: https://sectigo.com/CPS&#xa;Policy: 2.23.140.1.2.2</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Full Name:&#xa;  URI:http://crl.sectigo.com/InCommonRSAServerCA2.crl</elem>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+</table>
+<table>
+<elem key="value">CA Issuers - URI:http://crt.sectigo.com/InCommonRSAServerCA2.crt&#xa;OCSP - URI:http://ocsp.sectigo.com</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">DNS:iyl.cfa.harvard.edu</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : CF:11:56:EE:D5:2E:7C:AF:F3:87:5B:D9:69:2E:9B:E9:&#xa;                1A:71:67:4A:B0:17:EC:AC:01:D2:5B:77:CE:CC:3B:08&#xa;    Timestamp : Jan 11 04:39:08.205 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:DB:B1:4B:BF:36:12:A7:CD:6E:CB:F7:&#xa;                8F:A4:AE:7D:D7:43:75:C4:81:49:F3:86:F4:4F:1A:DA:&#xa;                CC:F3:1F:8A:EE:02:21:00:C5:9A:7E:C8:48:84:91:70:&#xa;                A0:73:B8:EC:7D:C8:0D:87:C3:AF:12:2C:4C:F0:4C:7F:&#xa;                26:76:56:27:7A:65:65:5F&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : A2:E3:0A:E4:45:EF:BD:AD:9B:7E:38:ED:47:67:77:53:&#xa;                D7:82:5B:84:94:D7:2B:5E:1B:2C:C4:B9:50:A4:47:E7&#xa;    Timestamp : Jan 11 04:39:08.127 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:29:C2:96:29:04:54:5F:08:51:2D:17:22:&#xa;                BE:15:7F:41:16:89:3C:40:2E:BC:3E:73:26:CF:B7:66:&#xa;                C7:31:B2:11:02:21:00:A3:67:AB:3C:8B:25:6D:8C:4E:&#xa;                35:DD:F9:CD:3D:C5:66:B8:AF:83:ED:1F:30:48:1D:81:&#xa;                10:2C:F0:1B:56:9E:89&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 4E:75:A3:27:5C:9A:10:C3:38:5B:6C:D4:DF:3F:52:EB:&#xa;                1D:F0:E0:8E:1B:8D:69:C0:B1:FA:64:B1:62:9A:39:DF&#xa;    Timestamp : Jan 11 04:39:08.142 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:0E:DC:A7:D7:7F:1C:E0:10:0D:00:25:EF:&#xa;                78:2D:CA:C2:45:C8:FF:C4:FF:EB:A8:04:CF:6B:04:E1:&#xa;                EF:3D:7E:2B:02:20:6B:52:D4:22:FA:8F:24:0B:5D:F5:&#xa;                86:8D:77:30:38:ED:18:4C:91:8E:2B:EE:C8:90:70:F3:&#xa;                EB:0A:89:6E:24:51</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+</table>
+<elem key="sig_algo">sha384WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-01-11T00:00:00</elem>
+<elem key="notAfter">2025-01-10T23:59:59</elem>
+</table>
+<elem key="md5">b44a1e9301afa089311099442a7b9e19</elem>
+<elem key="sha1">45dc9020693f3ebedb749a45067f3e30e6ef7386</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIG6DCCBVCgAwIBAgIQYykkGGHh8R6p4GrQdrgGuDANBgkqhkiG9w0BAQwFADBE&#xa;MQswCQYDVQQGEwJVUzESMBAGA1UEChMJSW50ZXJuZXQyMSEwHwYDVQQDExhJbkNv&#xa;bW1vbiBSU0EgU2VydmVyIENBIDIwHhcNMjQwMTExMDAwMDAwWhcNMjUwMTEwMjM1&#xa;OTU5WjB2MQswCQYDVQQGEwJVUzEWMBQGA1UECBMNTWFzc2FjaHVzZXR0czExMC8G&#xa;A1UEChMoUHJlc2lkZW50IGFuZCBGZWxsb3dzIG9mIEhhcnZhcmQgQ29sbGVnZTEc&#xa;MBoGA1UEAxMTaXlsLmNmYS5oYXJ2YXJkLmVkdTCCASIwDQYJKoZIhvcNAQEBBQAD&#xa;ggEPADCCAQoCggEBALomekuUmPJ8sfiBkGGi7JuMliBlCYyUy0q6Dip+L24kYo7Y&#xa;qDk0/MXnR6Lq3jegUFZCq336wGydqcKYnpXSqH+yPwiDxf8L+wA2nTs2bqyeSuiC&#xa;pywgrTzgEESgOAc/U8BPtAoeGOOkWAo7eTjBEbPudeFHDMgG17ZO+fuSrzjanlgR&#xa;w5v8xmdfbE0Mm6d1hNHz05zT+zL6R559aws1KfVwFAGiXOVV1b12LnNlj4jppKrs&#xa;A9SoAAIyBnkcX68m2g7U4ULah2WktyRW1cvbFowkv0hyfSj1U/NaiQvEJJVDmsyS&#xa;7O3BXP2Z5LqW9qW2eqnhr7DCgUfZfgxYMKZqpA8CAwEAAaOCAyIwggMeMB8GA1Ud&#xa;IwQYMBaAFO9MAJKm+3YuXpXiyV+HGxnVTeLZMB0GA1UdDgQWBBRRKOTNMY/1zb1W&#xa;JgMbkQYJF8H2mTAOBgNVHQ8BAf8EBAMCBaAwDAYDVR0TAQH/BAIwADAdBgNVHSUE&#xa;FjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwSQYDVR0gBEIwQDA0BgsrBgEEAbIxAQIC&#xa;ZzAlMCMGCCsGAQUFBwIBFhdodHRwczovL3NlY3RpZ28uY29tL0NQUzAIBgZngQwB&#xa;AgIwQAYDVR0fBDkwNzA1oDOgMYYvaHR0cDovL2NybC5zZWN0aWdvLmNvbS9JbkNv&#xa;bW1vblJTQVNlcnZlckNBMi5jcmwwcAYIKwYBBQUHAQEEZDBiMDsGCCsGAQUFBzAC&#xa;hi9odHRwOi8vY3J0LnNlY3RpZ28uY29tL0luQ29tbW9uUlNBU2VydmVyQ0EyLmNy&#xa;dDAjBggrBgEFBQcwAYYXaHR0cDovL29jc3Auc2VjdGlnby5jb20wHgYDVR0RBBcw&#xa;FYITaXlsLmNmYS5oYXJ2YXJkLmVkdTCCAX4GCisGAQQB1nkCBAIEggFuBIIBagFo&#xa;AHcAzxFW7tUufK/zh1vZaS6b6RpxZ0qwF+ysAdJbd87MOwgAAAGM9tEarQAABAMA&#xa;SDBGAiEA27FLvzYSp81uy/ePpK5910N1xIFJ84b0TxrazPMfiu4CIQDFmn7ISISR&#xa;cKBzuOx9yA2Hw68SLEzwTH8mdlYnemVlXwB2AKLjCuRF772tm3447Udnd1PXgluE&#xa;lNcrXhssxLlQpEfnAAABjPbRGl8AAAQDAEcwRQIgKcKWKQRUXwhRLRcivhV/QRaJ&#xa;PEAuvD5zJs+3ZscxshECIQCjZ6s8iyVtjE413fnNPcVmuK+D7R8wSB2BECzwG1ae&#xa;iQB1AE51oydcmhDDOFts1N8/Uusd8OCOG41pwLH6ZLFimjnfAAABjPbRGm4AAAQD&#xa;AEYwRAIgDtyn138c4BANACXveC3KwkXI/8T/66gEz2sE4e89fisCIGtS1CL6jyQL&#xa;XfWGjXcwOO0YTJGOK+7IkHDz6wqJbiRRMA0GCSqGSIb3DQEBDAUAA4IBgQCFEdTq&#xa;M5ACsJ+E0BWoPjr+Chc9OqSn0ZlkQ03EVSBV5nPiJ8bWqxU/Ix3Qky9g96xVcxM8&#xa;VGCtCFFNzckV3XlV7xI+0V2n1jVoBmrXvzLnGAFONTtICOoxnDGZa9b7OBD9/F0v&#xa;m6qVGBjxVbGrPTcPqsOQcD7kl1stiDmBhgjKSNx46PCK300luwtXAGdRPx/qalbG&#xa;+klP/7ulICTUs1jMnY8FqlEaTy+2WM7KplA89Vi6AvgdIk842YsAkG7vBvtXEpNh&#xa;jgRZosQG8hJXYvuOn2ON0XeuIxq3S8H812Q1DnvMHmPuN21rH6fRwd5hruQOTWBt&#xa;oe6jXAMcT6iO0+yyrJA6dr7qK10q14cvGclqQaFJETktb1BHNLPYZGyRn3pMnV85&#xa;VBl0Tuj8e4zJRw8K+J0yeGIrU6aE151ZL8boaN4YDaQNdeeEAyyrxcJg0TgSwaHQ&#xa;ZuJMHdB7L1+tR6JECcI0uyCl/MShE3RhtPn5V032G8gglBYAg7NMJQiGdt4=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="tls-alpn" output="&#xa;  h2&#xa;  http/1.1"><elem>h2</elem>
+<elem>http/1.1</elem>
+</script></port>
+</ports>
+<times srtt="16702" rttvar="4241" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730742721"/>
+<taskend task="NSE" time="1730742721"/>
+<taskbegin task="NSE" time="1730742721"/>
+<taskend task="NSE" time="1730742721"/>
+<taskbegin task="NSE" time="1730742721"/>
+<taskend task="NSE" time="1730742721"/>
+<runstats><finished time="1730742721" timestr="Mon Nov  4 17:52:01 2024" elapsed="26.67" summary="Nmap done at Mon Nov  4 17:52:01 2024; 1 IP address (1 host up) scanned in 26.67 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
