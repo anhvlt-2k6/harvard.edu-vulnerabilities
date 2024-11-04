@@ -29,7 +29,7 @@ jobs:
         run: |
           sudo apt install -y python3 python3-pip nmap
           sudo pip install psutil
-          mkdir port-scanning/results/thread_{str(i)}
+          mkdir -p port-scanning/results/thread_{str(i)}
 
       - name: Run the Python file
         run: |
