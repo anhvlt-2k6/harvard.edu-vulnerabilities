@@ -19,3 +19,117 @@
 <taskbegin task="Connect Scan" time="1730733501"/>
 <taskend task="Connect Scan" time="1730733508" extrainfo="1000 total ports"/>
 <taskbegin task="Service scan" time="1730733508"/>
+<taskend task="Service scan" time="1730733533" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1730733533"/>
+<taskend task="NSE" time="1730733536"/>
+<taskbegin task="NSE" time="1730733536"/>
+<taskend task="NSE" time="1730733537"/>
+<taskbegin task="NSE" time="1730733537"/>
+<taskend task="NSE" time="1730733537"/>
+<host starttime="1730733501" endtime="1730733537"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="52.54.96.194" addrtype="ipv4"/>
+<hostnames>
+<hostname name="connect.execed.gsd.harvard.edu" type="user"/>
+<hostname name="ec2-52-54-96-194.compute-1.amazonaws.com" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="998">
+<extrareasons reason="no-responses" count="998"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" servicefp="SF-Port80-TCP:V=7.80%I=7%D=11/4%Time=6728E5CA%P=x86_64-pc-linux-gnu%r(GetRequest,99,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nDate:\x20Mon,\x2004\x20Nov\x202024\x2015:18:34\x20GMT\r\nContent-Length:\x200\r\nConnection:\x20close\r\nX-Pardot-Route:\x20e8229a0ff18ebffc83a98010d2521dd5\r\n\r\n&quot;)%r(HTTPOptions,99,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nDate:\x20Mon,\x2004\x20Nov\x202024\x2015:18:34\x20GMT\r\nContent-Length:\x200\r\nConnection:\x20close\r\nX-Pardot-Route:\x20e8229a0ff18ebffc83a98010d2521dd5\r\n\r\n&quot;)%r(RTSPRequest,11C,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nDate:\x20Mon,\x2004\x20Nov\x202024\x2015:18:34\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20154\r\nConnection:\x20close\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;openresty&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(X11Probe,11C,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nDate:\x20Mon,\x2004\x20Nov\x202024\x2015:18:34\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20154\r\nConnection:\x20close\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;openresty&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(FourOhFourRequest,99,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nDate:\x20Mon,\x2004\x20Nov\x202024\x2015:18:34\x20GMT\r\nContent-Length:\x200\r\nConnection:\x20close\r\nX-Pardot-Route:\x20e8229a0ff18ebffc83a98010d2521dd5\r\n\r\n&quot;)%r(RPCCheck,11C,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nDate:\x20Mon,\x2004\x20Nov\x202024\x2015:18:40\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20154\r\nConnection:\x20close\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;openresty&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(DNSVersionBindReqTCP,11C,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nDate:\x20Mon,\x2004\x20Nov\x202024\x2015:18:40\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20154\r\nConnection:\x20close\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;openresty&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;);" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  DNSVersionBindReqTCP, RPCCheck: &#xa;    HTTP/1.1 400 Bad Request&#xa;    Date: Mon, 04 Nov 2024 15:18:40 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 154&#xa;    Connection: close&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;hr&gt;&lt;center&gt;openresty&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;&#xa;  FourOhFourRequest, GetRequest, HTTPOptions: &#xa;    HTTP/1.1 400 Bad Request&#xa;    Date: Mon, 04 Nov 2024 15:18:34 GMT&#xa;    Content-Length: 0&#xa;    Connection: close&#xa;    X-Pardot-Route: e8229a0ff18ebffc83a98010d2521dd5&#xa;  RTSPRequest, X11Probe: &#xa;    HTTP/1.1 400 Bad Request&#xa;    Date: Mon, 04 Nov 2024 15:18:34 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 154&#xa;    Connection: close&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;hr&gt;&lt;center&gt;openresty&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;"><elem key="DNSVersionBindReqTCP, RPCCheck">&#xa;    HTTP/1.1 400 Bad Request&#xa;    Date: Mon, 04 Nov 2024 15:18:40 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 154&#xa;    Connection: close&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;hr&gt;&lt;center&gt;openresty&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;</elem>
+<elem key="FourOhFourRequest, GetRequest, HTTPOptions">&#xa;    HTTP/1.1 400 Bad Request&#xa;    Date: Mon, 04 Nov 2024 15:18:34 GMT&#xa;    Content-Length: 0&#xa;    Connection: close&#xa;    X-Pardot-Route: e8229a0ff18ebffc83a98010d2521dd5</elem>
+<elem key="RTSPRequest, X11Probe">&#xa;    HTTP/1.1 400 Bad Request&#xa;    Date: Mon, 04 Nov 2024 15:18:34 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 154&#xa;    Connection: close&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;hr&gt;&lt;center&gt;openresty&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;</elem>
+</script><script id="http-favicon" output="Unknown favicon MD5: D41D8CD98F00B204E9800998ECF8427E"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-robots.txt" output="2 disallowed entries &#xa;/webmail/ /shared/webmail/"/><script id="http-title" output="Did not follow redirect to http://execed.gsd.harvard.edu"><elem key="redirect_url">http://execed.gsd.harvard.edu</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" servicefp="SF-Port443-TCP:V=7.80%T=SSL%I=7%D=11/4%Time=6728E5D0%P=x86_64-pc-linux-gnu%r(GetRequest,BF,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nDate:\x20Mon,\x2004\x20Nov\x202024\x2015:18:40\x20GMT\r\nContent-Type:\x20text/plain\r\nContent-Length:\x2011\r\nConnection:\x20close\r\nX-Pardot-Route:\x20e8229a0ff18ebffc83a98010d2521dd5\r\n\r\nBad\x20Request&quot;)%r(HTTPOptions,BF,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nDate:\x20Mon,\x2004\x20Nov\x202024\x2015:18:40\x20GMT\r\nContent-Type:\x20text/plain\r\nContent-Length:\x2011\r\nConnection:\x20close\r\nX-Pardot-Route:\x20e8229a0ff18ebffc83a98010d2521dd5\r\n\r\nBad\x20Request&quot;)%r(FourOhFourRequest,BF,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nDate:\x20Mon,\x2004\x20Nov\x202024\x2015:18:41\x20GMT\r\nContent-Type:\x20text/plain\r\nContent-Length:\x2011\r\nConnection:\x20close\r\nX-Pardot-Route:\x20e8229a0ff18ebffc83a98010d2521dd5\r\n\r\nBad\x20Request&quot;)%r(tor-versions,11C,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nDate:\x20Mon,\x2004\x20Nov\x202024\x2015:18:41\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20154\r\nConnection:\x20close\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;openresty&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(RTSPRequest,11C,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nDate:\x20Mon,\x2004\x20Nov\x202024\x2015:18:46\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20154\r\nConnection:\x20close\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;openresty&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(RPCCheck,11C,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nDate:\x20Mon,\x2004\x20Nov\x202024\x2015:18:47\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20154\r\nConnection:\x20close\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;openresty&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(DNSVersionBindReqTCP,11C,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nDate:\x20Mon,\x2004\x20Nov\x202024\x2015:18:47\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20154\r\nConnection:\x20close\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;hr&gt;&lt;center&gt;openresty&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;);" tunnel="ssl" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  DNSVersionBindReqTCP, RPCCheck: &#xa;    HTTP/1.1 400 Bad Request&#xa;    Date: Mon, 04 Nov 2024 15:18:47 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 154&#xa;    Connection: close&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;hr&gt;&lt;center&gt;openresty&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;&#xa;  FourOhFourRequest: &#xa;    HTTP/1.1 400 Bad Request&#xa;    Date: Mon, 04 Nov 2024 15:18:41 GMT&#xa;    Content-Type: text/plain&#xa;    Content-Length: 11&#xa;    Connection: close&#xa;    X-Pardot-Route: e8229a0ff18ebffc83a98010d2521dd5&#xa;    Request&#xa;  GetRequest, HTTPOptions: &#xa;    HTTP/1.1 400 Bad Request&#xa;    Date: Mon, 04 Nov 2024 15:18:40 GMT&#xa;    Content-Type: text/plain&#xa;    Content-Length: 11&#xa;    Connection: close&#xa;    X-Pardot-Route: e8229a0ff18ebffc83a98010d2521dd5&#xa;    Request&#xa;  RTSPRequest: &#xa;    HTTP/1.1 400 Bad Request&#xa;    Date: Mon, 04 Nov 2024 15:18:46 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 154&#xa;    Connection: close&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;hr&gt;&lt;center&gt;openresty&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;&#xa;  tor-versions: &#xa;    HTTP/1.1 400 Bad Request&#xa;    Date: Mon, 04 Nov 2024 15:18:41 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 154&#xa;    Connection: close&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;hr&gt;&lt;center&gt;openresty&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;"><elem key="DNSVersionBindReqTCP, RPCCheck">&#xa;    HTTP/1.1 400 Bad Request&#xa;    Date: Mon, 04 Nov 2024 15:18:47 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 154&#xa;    Connection: close&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;hr&gt;&lt;center&gt;openresty&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;</elem>
+<elem key="FourOhFourRequest">&#xa;    HTTP/1.1 400 Bad Request&#xa;    Date: Mon, 04 Nov 2024 15:18:41 GMT&#xa;    Content-Type: text/plain&#xa;    Content-Length: 11&#xa;    Connection: close&#xa;    X-Pardot-Route: e8229a0ff18ebffc83a98010d2521dd5&#xa;    Request</elem>
+<elem key="GetRequest, HTTPOptions">&#xa;    HTTP/1.1 400 Bad Request&#xa;    Date: Mon, 04 Nov 2024 15:18:40 GMT&#xa;    Content-Type: text/plain&#xa;    Content-Length: 11&#xa;    Connection: close&#xa;    X-Pardot-Route: e8229a0ff18ebffc83a98010d2521dd5&#xa;    Request</elem>
+<elem key="RTSPRequest">&#xa;    HTTP/1.1 400 Bad Request&#xa;    Date: Mon, 04 Nov 2024 15:18:46 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 154&#xa;    Connection: close&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;hr&gt;&lt;center&gt;openresty&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;</elem>
+<elem key="tor-versions">&#xa;    HTTP/1.1 400 Bad Request&#xa;    Date: Mon, 04 Nov 2024 15:18:41 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 154&#xa;    Connection: close&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;hr&gt;&lt;center&gt;openresty&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;</elem>
+</script><script id="http-favicon" output="Unknown favicon MD5: D41D8CD98F00B204E9800998ECF8427E"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-robots.txt" output="2 disallowed entries &#xa;/webmail/ /shared/webmail/"/><script id="http-title" output="Did not follow redirect to http://execed.gsd.harvard.edu"><elem key="redirect_url">http://execed.gsd.harvard.edu</elem>
+</script><script id="ssl-cert" output="Subject: commonName=connect.execed.gsd.harvard.edu&#xa;Subject Alternative Name: DNS:connect.execed.gsd.harvard.edu&#xa;Issuer: commonName=R10/organizationName=Let&apos;s Encrypt/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-10-27T12:43:49&#xa;Not valid after:  2025-01-25T12:43:48&#xa;MD5:   04de fc21 73f0 5a63 78e5 1591 5db7 5b45&#xa;SHA-1: 4c25 d84f a926 0d96 07df df76 0e48 9f28 38b3 e691"><table key="subject">
+<elem key="commonName">connect.execed.gsd.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">US</elem>
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+<elem key="commonName">R10</elem>
+</table>
+<table key="pubkey">
+<elem key="modulus">BIGNUM: 0x55dde7d2adb8</elem>
+<elem key="bits">2048</elem>
+<elem key="exponent">BIGNUM: 0x55dde8c46a98</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="critical">true</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="name">X509v3 Key Usage</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+</table>
+<table>
+<elem key="value">38:B3:97:00:52:B2:00:B3:87:35:55:CD:AC:78:01:A4:B9:88:58:B4</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="value">BB:BC:C3:47:A5:E4:BC:A9:C6:C3:A4:72:0C:10:8D:A2:35:E1:C8:E8</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">OCSP - URI:http://r10.o.lencr.org&#xa;CA Issuers - URI:http://r10.i.lencr.org/</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">DNS:connect.execed.gsd.harvard.edu</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+<table>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : E6:D2:31:63:40:77:8C:C1:10:41:06:D7:71:B9:CE:C1:&#xa;                D2:40:F6:96:84:86:FB:BA:87:32:1D:FD:1E:37:8E:50&#xa;    Timestamp : Oct 27 13:42:19.725 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:EC:95:BA:BC:AC:4B:D1:F5:40:08:50:&#xa;                EE:0B:94:1A:FD:71:88:59:7B:F8:54:A0:16:A9:B8:52:&#xa;                02:2F:A9:39:C1:02:21:00:D5:2C:DC:3A:A4:DB:03:07:&#xa;                F9:B4:CC:E8:9A:BB:DE:DB:35:27:CE:34:12:3E:1B:B6:&#xa;                F6:8C:0D:AE:20:C4:71:75&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : A2:E3:0A:E4:45:EF:BD:AD:9B:7E:38:ED:47:67:77:53:&#xa;                D7:82:5B:84:94:D7:2B:5E:1B:2C:C4:B9:50:A4:47:E7&#xa;    Timestamp : Oct 27 13:42:19.719 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:05:43:4F:5F:7F:30:37:36:24:43:39:E8:&#xa;                CA:22:93:5F:4E:FA:2A:E4:3A:D4:EB:6E:EF:44:7B:FE:&#xa;                8D:EF:15:59:02:20:65:CC:55:00:62:F8:E1:EB:73:A7:&#xa;                55:6B:4A:1F:A0:57:72:6F:0B:CB:70:4E:42:6B:86:5B:&#xa;                78:CF:34:0D:D4:A0</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-10-27T12:43:49</elem>
+<elem key="notAfter">2025-01-25T12:43:48</elem>
+</table>
+<elem key="md5">04defc2173f05a6378e515915db75b45</elem>
+<elem key="sha1">4c25d84fa9260d9607dfdf760e489f2838b3e691</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFDDCCA/SgAwIBAgISBLNnWXHd0Dp7iKGAAp0ckU6fMA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNSMTAwHhcNMjQxMDI3MTI0MzQ5WhcNMjUwMTI1MTI0MzQ4WjApMScwJQYDVQQD&#xa;Ex5jb25uZWN0LmV4ZWNlZC5nc2QuaGFydmFyZC5lZHUwggEiMA0GCSqGSIb3DQEB&#xa;AQUAA4IBDwAwggEKAoIBAQDaU28XO96jXqExgcolx2GWtC9EQhhxm86K8R3afndv&#xa;Z9nVBhfVAeQT4UKmVCDEoXGDQffRoWZXhpEzTxfariDwfsnMt63lmGSpBSwuCBVo&#xa;hdmwAse5Ye5Bcqa46z6+09ZHXTFotgdA8mQ1+tbR47vrBlxxULdGL8EED+sVep32&#xa;CEse/vipUfEqnAMOfYCLSSFgnxbsga1KIMIkqbeD7aXyO33NoR+Jg4a7C/MXxaDx&#xa;aIhuwKiOx9G5zpwDDUxdg4Hn/kORyWXmahmAQkHnSfiKD/VNfq7nieAhfv6Y/BK0&#xa;scxd0XCRtyUtXlPyNcYdf8q2JIrjgX1wJiopJkObnlmtAgMBAAGjggIiMIICHjAO&#xa;BgNVHQ8BAf8EBAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwG&#xa;A1UdEwEB/wQCMAAwHQYDVR0OBBYEFDizlwBSsgCzhzVVzax4AaS5iFi0MB8GA1Ud&#xa;IwQYMBaAFLu8w0el5LypxsOkcgwQjaI14cjoMFcGCCsGAQUFBwEBBEswSTAiBggr&#xa;BgEFBQcwAYYWaHR0cDovL3IxMC5vLmxlbmNyLm9yZzAjBggrBgEFBQcwAoYXaHR0&#xa;cDovL3IxMC5pLmxlbmNyLm9yZy8wKQYDVR0RBCIwIIIeY29ubmVjdC5leGVjZWQu&#xa;Z3NkLmhhcnZhcmQuZWR1MBMGA1UdIAQMMAowCAYGZ4EMAQIBMIIBBAYKKwYBBAHW&#xa;eQIEAgSB9QSB8gDwAHcA5tIxY0B3jMEQQQbXcbnOwdJA9paEhvu6hzId/R43jlAA&#xa;AAGSzjahTQAABAMASDBGAiEA7JW6vKxL0fVACFDuC5Qa/XGIWXv4VKAWqbhSAi+p&#xa;OcECIQDVLNw6pNsDB/m0zOiau97bNSfONBI+G7b2jA2uIMRxdQB1AKLjCuRF772t&#xa;m3447Udnd1PXgluElNcrXhssxLlQpEfnAAABks42oUcAAAQDAEYwRAIgBUNPX38w&#xa;NzYkQznoyiKTX076KuQ61Otu70R7/o3vFVkCIGXMVQBi+OHrc6dVa0ofoFdybwvL&#xa;cE5Ca4ZbeM80DdSgMA0GCSqGSIb3DQEBCwUAA4IBAQCpcGMd5tea4PpW8SnRqUDA&#xa;I8OzGpJjJliTi6wd+/REcreVH3zBh64OOcdQZdreTK9GkrEjTgyOMll6Db1JhsL5&#xa;BCe5z/sLitEaqmCOPV6sdkrIz836ctLcAhc6ApAXBxKEghE6H/zENI077pNcwpR6&#xa;U5HDHVv+hrDu74qTmROsePMg1Xon+HvcAMcJiCfeqRZRvGVexQZPYb4FCWLJxJKP&#xa;Csv2mbg+61FuR3l/a+2+yITE73uHqY5QEQh78COkEyqnWDJ62OG+sgdnySohvn+H&#xa;oo5mEjUVUp6SnlyxMBIKbxjYeWfO56vQa2GflWTeZNSj6G779g0131ZjEkTRGsdH&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+</ports>
+<times srtt="71826" rttvar="13032" to="123954"/>
+</host>
+<taskbegin task="NSE" time="1730733537"/>
+<taskend task="NSE" time="1730733537"/>
+<taskbegin task="NSE" time="1730733537"/>
+<taskend task="NSE" time="1730733537"/>
+<taskbegin task="NSE" time="1730733537"/>
+<taskend task="NSE" time="1730733537"/>
+<runstats><finished time="1730733537" timestr="Mon Nov  4 15:18:57 2024" elapsed="35.58" summary="Nmap done at Mon Nov  4 15:18:57 2024; 1 IP address (1 host up) scanned in 35.58 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
