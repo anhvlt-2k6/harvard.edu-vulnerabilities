@@ -17,3 +17,129 @@
 <taskbegin task="Parallel DNS resolution of 1 host." time="1730738472"/>
 <taskend task="Parallel DNS resolution of 1 host." time="1730738472"/>
 <taskbegin task="Connect Scan" time="1730738472"/>
+<taskend task="Connect Scan" time="1730738477" extrainfo="1000 total ports"/>
+<taskbegin task="Service scan" time="1730738477"/>
+<taskend task="Service scan" time="1730738494" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1730738494"/>
+<taskend task="NSE" time="1730738500"/>
+<taskbegin task="NSE" time="1730738500"/>
+<taskend task="NSE" time="1730738500"/>
+<taskbegin task="NSE" time="1730738500"/>
+<taskend task="NSE" time="1730738500"/>
+<host starttime="1730738472" endtime="1730738500"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="52.206.149.19" addrtype="ipv4"/>
+<hostnames>
+<hostname name="dceweb-prod.dce.harvard.edu" type="user"/>
+<hostname name="ec2-52-206-149-19.compute-1.amazonaws.com" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="998">
+<extrareasons reason="no-responses" count="998"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="awselb/2.0" servicefp="SF-Port80-TCP:V=7.80%I=7%D=11/4%Time=6728F933%P=x86_64-pc-linux-gnu%r(GetRequest,174,&quot;HTTP/1\.1\x20301\x20Moved\x20Permanently\r\nServer:\x20awselb/2\.0\r\nDate:\x20Mon,\x2004\x20Nov\x202024\x2016:41:23\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20134\r\nConnection:\x20close\r\nLocation:\x20https://dceweb-prod-pub-lb-1465034775\.us-east-1\.elb\.amazonaws\.com:443/\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;301\x20Moved\x20Permanently&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;301\x20Moved\x20Permanently&lt;/h1&gt;&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(HTTPOptions,174,&quot;HTTP/1\.1\x20301\x20Moved\x20Permanently\r\nServer:\x20awselb/2\.0\r\nDate:\x20Mon,\x2004\x20Nov\x202024\x2016:41:23\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20134\r\nConnection:\x20close\r\nLocation:\x20https://dceweb-prod-pub-lb-1465034775\.us-east-1\.elb\.amazonaws\.com:443/\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;301\x20Moved\x20Permanently&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;301\x20Moved\x20Permanently&lt;/h1&gt;&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(RTSPRequest,7A,&quot;&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(X11Probe,110,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nServer:\x20awselb/2\.0\r\nDate:\x20Mon,\x2004\x20Nov\x202024\x2016:41:23\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20122\r\nConnection:\x20close\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(FourOhFourRequest,197,&quot;HTTP/1\.1\x20301\x20Moved\x20Permanently\r\nServer:\x20awselb/2\.0\r\nDate:\x20Mon,\x2004\x20Nov\x202024\x2016:41:23\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20134\r\nConnection:\x20close\r\nLocation:\x20https://dceweb-prod-pub-lb-1465034775\.us-east-1\.elb\.amazonaws\.com:443/nice%20ports%2C/Tri%6Eity\.txt%2ebak\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;301\x20Moved\x20Permanently&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;301\x20Moved\x20Permanently&lt;/h1&gt;&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;);" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  FourOhFourRequest: &#xa;    HTTP/1.1 301 Moved Permanently&#xa;    Server: awselb/2.0&#xa;    Date: Mon, 04 Nov 2024 16:41:23 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 134&#xa;    Connection: close&#xa;    Location: https://dceweb-prod-pub-lb-1465034775.us-east-1.elb.amazonaws.com:443/nice%20ports%2C/Tri%6Eity.txt%2ebak&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;301 Moved Permanently&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;301 Moved Permanently&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;&#xa;  GetRequest, HTTPOptions: &#xa;    HTTP/1.1 301 Moved Permanently&#xa;    Server: awselb/2.0&#xa;    Date: Mon, 04 Nov 2024 16:41:23 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 134&#xa;    Connection: close&#xa;    Location: https://dceweb-prod-pub-lb-1465034775.us-east-1.elb.amazonaws.com:443/&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;301 Moved Permanently&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;301 Moved Permanently&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;&#xa;  RTSPRequest: &#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;&#xa;  X11Probe: &#xa;    HTTP/1.1 400 Bad Request&#xa;    Server: awselb/2.0&#xa;    Date: Mon, 04 Nov 2024 16:41:23 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 122&#xa;    Connection: close&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;"><elem key="FourOhFourRequest">&#xa;    HTTP/1.1 301 Moved Permanently&#xa;    Server: awselb/2.0&#xa;    Date: Mon, 04 Nov 2024 16:41:23 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 134&#xa;    Connection: close&#xa;    Location: https://dceweb-prod-pub-lb-1465034775.us-east-1.elb.amazonaws.com:443/nice%20ports%2C/Tri%6Eity.txt%2ebak&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;301 Moved Permanently&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;301 Moved Permanently&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;</elem>
+<elem key="GetRequest, HTTPOptions">&#xa;    HTTP/1.1 301 Moved Permanently&#xa;    Server: awselb/2.0&#xa;    Date: Mon, 04 Nov 2024 16:41:23 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 134&#xa;    Connection: close&#xa;    Location: https://dceweb-prod-pub-lb-1465034775.us-east-1.elb.amazonaws.com:443/&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;301 Moved Permanently&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;301 Moved Permanently&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;</elem>
+<elem key="RTSPRequest">&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;</elem>
+<elem key="X11Probe">&#xa;    HTTP/1.1 400 Bad Request&#xa;    Server: awselb/2.0&#xa;    Date: Mon, 04 Nov 2024 16:41:23 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 122&#xa;    Connection: close&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="awselb/2.0"><elem>awselb/2.0</elem>
+</script><script id="http-title" output="Did not follow redirect to https://dceweb-prod.dce.harvard.edu:443/"><elem key="redirect_url">https://dceweb-prod.dce.harvard.edu:443/</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" product="" servicefp="SF-Port443-TCP:V=7.80%T=SSL%I=7%D=11/4%Time=6728F939%P=x86_64-pc-linux-gnu%r(GetRequest,28A,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nDate:\x20Mon,\x2004\x20Nov\x202024\x2016:41:29\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x2011\r\nConnection:\x20close\r\nSet-Cookie:\x20AWSALB=tUJLlVUURyCx2zjC2Ne867gDSuRof/rfPn4ua4060jhGg\+/93C4Sm\+pM9K9weoHoNG7d4nVMo2bJAuUenSW3ZhLwZNsj22OxFpd5GJWlGsvCioCyjaxyQhLkliPh;\x20Expires=Mon,\x2011\x20Nov\x202024\x2016:41:29\x20GMT;\x20Path=/\r\nSet-Cookie:\x20AWSALBCORS=tUJLlVUURyCx2zjC2Ne867gDSuRof/rfPn4ua4060jhGg\+/93C4Sm\+pM9K9weoHoNG7d4nVMo2bJAuUenSW3ZhLwZNsj22OxFpd5GJWlGsvCioCyjaxyQhLkliPh;\x20Expires=Mon,\x2011\x20Nov\x202024\x2016:41:29\x20GMT;\x20Path=/;\x20SameSite=None;\x20Secure\r\nServer:\x20\r\nStrict-Transport-Security:\x20max-age=31536000;\x20includeSubDomains;\x20preload\r\nX-POWERED-BY:\x20\r\n\r\nBad\x20Request&quot;)%r(HTTPOptions,28A,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nDate:\x20Mon,\x2004\x20Nov\x202024\x2016:41:29\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x2011\r\nConnection:\x20close\r\nSet-Cookie:\x20AWSALB=eYbKzK0EGCWaVS0ZDPxzyBoIgYDoNV5gSqn0df4CxpcxRcrlRqLC2HrJfMUWAKvIYbREXVd1ZuCC3v19PdyObF25g5bRftZONt1JvTo0hPK2UHVIgNKY1lJwt1xp;\x20Expires=Mon,\x2011\x20Nov\x202024\x2016:41:29\x20GMT;\x20Path=/\r\nSet-Cookie:\x20AWSALBCORS=eYbKzK0EGCWaVS0ZDPxzyBoIgYDoNV5gSqn0df4CxpcxRcrlRqLC2HrJfMUWAKvIYbREXVd1ZuCC3v19PdyObF25g5bRftZONt1JvTo0hPK2UHVIgNKY1lJwt1xp;\x20Expires=Mon,\x2011\x20Nov\x202024\x2016:41:29\x20GMT;\x20Path=/;\x20SameSite=None;\x20Secure\r\nServer:\x20\r\nStrict-Transport-Security:\x20max-age=31536000;\x20includeSubDomains;\x20preload\r\nX-POWERED-BY:\x20\r\n\r\nBad\x20Request&quot;)%r(FourOhFourRequest,A2,&quot;HTTP/1\.1\x20403\x20Forbidden\r\nServer:\x20awselb/2\.0\r\nDate:\x20Mon,\x2004\x20Nov\x202024\x2016:41:29\x20GMT\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nContent-Length:\x200\r\nConnection:\x20close\r\n\r\n&quot;)%r(LANDesk-RC,110,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nServer:\x20awselb/2\.0\r\nDate:\x20Mon,\x2004\x20Nov\x202024\x2016:41:34\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20122\r\nConnection:\x20close\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;);" tunnel="ssl" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  FourOhFourRequest: &#xa;    HTTP/1.1 403 Forbidden&#xa;    Server: awselb/2.0&#xa;    Date: Mon, 04 Nov 2024 16:41:29 GMT&#xa;    Content-Type: text/plain; charset=utf-8&#xa;    Content-Length: 0&#xa;    Connection: close&#xa;  GetRequest: &#xa;    HTTP/1.1 400 Bad Request&#xa;    Date: Mon, 04 Nov 2024 16:41:29 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 11&#xa;    Connection: close&#xa;    Set-Cookie: AWSALB=tUJLlVUURyCx2zjC2Ne867gDSuRof/rfPn4ua4060jhGg+/93C4Sm+pM9K9weoHoNG7d4nVMo2bJAuUenSW3ZhLwZNsj22OxFpd5GJWlGsvCioCyjaxyQhLkliPh; Expires=Mon, 11 Nov 2024 16:41:29 GMT; Path=/&#xa;    Set-Cookie: AWSALBCORS=tUJLlVUURyCx2zjC2Ne867gDSuRof/rfPn4ua4060jhGg+/93C4Sm+pM9K9weoHoNG7d4nVMo2bJAuUenSW3ZhLwZNsj22OxFpd5GJWlGsvCioCyjaxyQhLkliPh; Expires=Mon, 11 Nov 2024 16:41:29 GMT; Path=/; SameSite=None; Secure&#xa;    Server: &#xa;    Strict-Transport-Security: max-age=31536000; includeSubDomains; preload&#xa;    X-POWERED-BY: &#xa;    Request&#xa;  HTTPOptions: &#xa;    HTTP/1.1 400 Bad Request&#xa;    Date: Mon, 04 Nov 2024 16:41:29 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 11&#xa;    Connection: close&#xa;    Set-Cookie: AWSALB=eYbKzK0EGCWaVS0ZDPxzyBoIgYDoNV5gSqn0df4CxpcxRcrlRqLC2HrJfMUWAKvIYbREXVd1ZuCC3v19PdyObF25g5bRftZONt1JvTo0hPK2UHVIgNKY1lJwt1xp; Expires=Mon, 11 Nov 2024 16:41:29 GMT; Path=/&#xa;    Set-Cookie: AWSALBCORS=eYbKzK0EGCWaVS0ZDPxzyBoIgYDoNV5gSqn0df4CxpcxRcrlRqLC2HrJfMUWAKvIYbREXVd1ZuCC3v19PdyObF25g5bRftZONt1JvTo0hPK2UHVIgNKY1lJwt1xp; Expires=Mon, 11 Nov 2024 16:41:29 GMT; Path=/; SameSite=None; Secure&#xa;    Server: &#xa;    Strict-Transport-Security: max-age=31536000; includeSubDomains; preload&#xa;    X-POWERED-BY: &#xa;    Request&#xa;  LANDesk-RC: &#xa;    HTTP/1.1 400 Bad Request&#xa;    Server: awselb/2.0&#xa;    Date: Mon, 04 Nov 2024 16:41:34 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 122&#xa;    Connection: close&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;"><elem key="FourOhFourRequest">&#xa;    HTTP/1.1 403 Forbidden&#xa;    Server: awselb/2.0&#xa;    Date: Mon, 04 Nov 2024 16:41:29 GMT&#xa;    Content-Type: text/plain; charset=utf-8&#xa;    Content-Length: 0&#xa;    Connection: close</elem>
+<elem key="GetRequest">&#xa;    HTTP/1.1 400 Bad Request&#xa;    Date: Mon, 04 Nov 2024 16:41:29 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 11&#xa;    Connection: close&#xa;    Set-Cookie: AWSALB=tUJLlVUURyCx2zjC2Ne867gDSuRof/rfPn4ua4060jhGg+/93C4Sm+pM9K9weoHoNG7d4nVMo2bJAuUenSW3ZhLwZNsj22OxFpd5GJWlGsvCioCyjaxyQhLkliPh; Expires=Mon, 11 Nov 2024 16:41:29 GMT; Path=/&#xa;    Set-Cookie: AWSALBCORS=tUJLlVUURyCx2zjC2Ne867gDSuRof/rfPn4ua4060jhGg+/93C4Sm+pM9K9weoHoNG7d4nVMo2bJAuUenSW3ZhLwZNsj22OxFpd5GJWlGsvCioCyjaxyQhLkliPh; Expires=Mon, 11 Nov 2024 16:41:29 GMT; Path=/; SameSite=None; Secure&#xa;    Server: &#xa;    Strict-Transport-Security: max-age=31536000; includeSubDomains; preload&#xa;    X-POWERED-BY: &#xa;    Request</elem>
+<elem key="HTTPOptions">&#xa;    HTTP/1.1 400 Bad Request&#xa;    Date: Mon, 04 Nov 2024 16:41:29 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 11&#xa;    Connection: close&#xa;    Set-Cookie: AWSALB=eYbKzK0EGCWaVS0ZDPxzyBoIgYDoNV5gSqn0df4CxpcxRcrlRqLC2HrJfMUWAKvIYbREXVd1ZuCC3v19PdyObF25g5bRftZONt1JvTo0hPK2UHVIgNKY1lJwt1xp; Expires=Mon, 11 Nov 2024 16:41:29 GMT; Path=/&#xa;    Set-Cookie: AWSALBCORS=eYbKzK0EGCWaVS0ZDPxzyBoIgYDoNV5gSqn0df4CxpcxRcrlRqLC2HrJfMUWAKvIYbREXVd1ZuCC3v19PdyObF25g5bRftZONt1JvTo0hPK2UHVIgNKY1lJwt1xp; Expires=Mon, 11 Nov 2024 16:41:29 GMT; Path=/; SameSite=None; Secure&#xa;    Server: &#xa;    Strict-Transport-Security: max-age=31536000; includeSubDomains; preload&#xa;    X-POWERED-BY: &#xa;    Request</elem>
+<elem key="LANDesk-RC">&#xa;    HTTP/1.1 400 Bad Request&#xa;    Server: awselb/2.0&#xa;    Date: Mon, 04 Nov 2024 16:41:34 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 122&#xa;    Connection: close&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="&#xa;  &lt;empty&gt;&#xa;  awselb/2.0"><elem></elem>
+<elem>awselb/2.0</elem>
+</script><script id="http-title" output="400 The plain HTTP request was sent to HTTPS port"><elem key="title">400 The plain HTTP request was sent to HTTPS port</elem>
+</script><script id="ssl-cert" output="Subject: commonName=dceweb.harvard.edu/organizationName=President and Fellows of Harvard College/stateOrProvinceName=Massachusetts/countryName=US&#xa;Subject Alternative Name: DNS:dceweb.harvard.edu, DNS:dceweb-prod.dce.harvard.edu, DNS:dceweb30-prod.university.harvard.edu, DNS:dceweb31-prod.university.harvard.edu, DNS:dceweb32-prod.university.harvard.edu&#xa;Issuer: commonName=InCommon RSA Server CA 2/organizationName=Internet2/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha384WithRSAEncryption&#xa;Not valid before: 2024-08-14T00:00:00&#xa;Not valid after:  2025-08-14T23:59:59&#xa;MD5:   941c 9ec9 17e0 8a3c 04b5 932e da27 655b&#xa;SHA-1: ee9b df8b 1a6c 1040 104f 7fb5 a703 e50a fde6 0ff6"><table key="subject">
+<elem key="stateOrProvinceName">Massachusetts</elem>
+<elem key="organizationName">President and Fellows of Harvard College</elem>
+<elem key="countryName">US</elem>
+<elem key="commonName">dceweb.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="organizationName">Internet2</elem>
+<elem key="countryName">US</elem>
+<elem key="commonName">InCommon RSA Server CA 2</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">2048</elem>
+<elem key="exponent">BIGNUM: 0x558ebd2392a8</elem>
+<elem key="type">rsa</elem>
+<elem key="modulus">BIGNUM: 0x558ebd65a028</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">EF:4C:00:92:A6:FB:76:2E:5E:95:E2:C9:5F:87:1B:19:D5:4D:E2:D9</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">B7:D7:5D:45:A9:5D:7E:1A:79:8A:56:FD:A8:08:0F:8E:C6:3C:FE:10</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">Policy: 1.3.6.1.4.1.6449.1.2.2.103&#xa;  CPS: https://sectigo.com/CPS&#xa;Policy: 2.23.140.1.2.2</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Full Name:&#xa;  URI:http://crl.sectigo.com/InCommonRSAServerCA2.crl</elem>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+</table>
+<table>
+<elem key="value">CA Issuers - URI:http://crt.sectigo.com/InCommonRSAServerCA2.crt&#xa;OCSP - URI:http://ocsp.sectigo.com</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : DD:DC:CA:34:95:D7:E1:16:05:E7:95:32:FA:C7:9F:F8:&#xa;                3D:1C:50:DF:DB:00:3A:14:12:76:0A:2C:AC:BB:C8:2A&#xa;    Timestamp : Aug 14 00:38:45.648 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:56:91:BF:65:C7:A1:20:38:F7:7C:99:26:&#xa;                7F:F5:01:7B:ED:B0:67:47:63:EB:F6:90:5B:BB:F4:BD:&#xa;                30:7F:68:2C:02:21:00:D3:46:23:AE:83:B0:2A:99:E0:&#xa;                F4:91:B2:9E:A2:0F:BE:5E:59:C5:F6:E7:67:59:BF:ED:&#xa;                F7:F6:E8:67:73:D3:32&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 0D:E1:F2:30:2B:D3:0D:C1:40:62:12:09:EA:55:2E:FC:&#xa;                47:74:7C:B1:D7:E9:30:EF:0E:42:1E:B4:7E:4E:AA:34&#xa;    Timestamp : Aug 14 00:38:45.544 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:EF:12:A4:8D:8A:D5:2D:91:CF:27:BC:&#xa;                A2:AE:BE:97:5E:39:1E:CA:FE:C0:7E:D7:32:7A:E2:FC:&#xa;                A5:3A:B9:FB:C2:02:20:30:89:FA:A4:FE:E5:56:57:1E:&#xa;                A5:E9:2B:02:84:41:63:5D:1C:7A:20:4C:98:C9:C4:EE:&#xa;                A4:44:B6:C5:08:F8:B8&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 12:F1:4E:34:BD:53:72:4C:84:06:19:C3:8F:3F:7A:13:&#xa;                F8:E7:B5:62:87:88:9C:6D:30:05:84:EB:E5:86:26:3A&#xa;    Timestamp : Aug 14 00:38:45.544 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:FB:3C:6C:E2:AE:56:0D:35:28:8D:F9:&#xa;                7B:88:8C:4C:9E:FC:E5:F5:24:BB:F2:26:1C:D0:21:98:&#xa;                FE:44:E0:14:26:02:20:28:FF:81:82:E0:D2:B0:20:29:&#xa;                87:3D:BD:BD:C8:D1:3E:F8:1A:67:2A:79:47:71:F0:41:&#xa;                8A:E5:15:DD:DC:1B:FE</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+<table>
+<elem key="value">DNS:dceweb.harvard.edu, DNS:dceweb-prod.dce.harvard.edu, DNS:dceweb30-prod.university.harvard.edu, DNS:dceweb31-prod.university.harvard.edu, DNS:dceweb32-prod.university.harvard.edu</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+</table>
+<elem key="sig_algo">sha384WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notAfter">2025-08-14T23:59:59</elem>
+<elem key="notBefore">2024-08-14T00:00:00</elem>
+</table>
+<elem key="md5">941c9ec917e08a3c04b5932eda27655b</elem>
+<elem key="sha1">ee9bdf8b1a6c1040104f7fb5a703e50afde60ff6</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIHeDCCBeCgAwIBAgIQSsBY6+G7fdi8oW6B+/OgyjANBgkqhkiG9w0BAQwFADBE&#xa;MQswCQYDVQQGEwJVUzESMBAGA1UEChMJSW50ZXJuZXQyMSEwHwYDVQQDExhJbkNv&#xa;bW1vbiBSU0EgU2VydmVyIENBIDIwHhcNMjQwODE0MDAwMDAwWhcNMjUwODE0MjM1&#xa;OTU5WjB1MQswCQYDVQQGEwJVUzEWMBQGA1UECBMNTWFzc2FjaHVzZXR0czExMC8G&#xa;A1UEChMoUHJlc2lkZW50IGFuZCBGZWxsb3dzIG9mIEhhcnZhcmQgQ29sbGVnZTEb&#xa;MBkGA1UEAxMSZGNld2ViLmhhcnZhcmQuZWR1MIIBIjANBgkqhkiG9w0BAQEFAAOC&#xa;AQ8AMIIBCgKCAQEAySc+2SyHYUC2awSNlGPk1iEftWCHcYmpFJe5/zXc0bXBvP3p&#xa;PoQP8cSISiQoZjGVDz2ZrrQfiEmx2Y0DuvNCfXZrArKGol/fLjxmmAPjdDAqUVTI&#xa;budJpH7zsWyRDN4tgJ+7u6EDaB2Tj1FnBaWIAzC4TyTPNrokSq47YzupWDJ6BqDK&#xa;T4iuH5WjMFAikWXoxdBMhQOt5PbNvAhn0EEn8dvkUBKubp/Kt/+5FnkXB5KvSTU6&#xa;JHbs8uNX82ib3rAQds4Y0hnQabLi9INdOaEkXFBAZZp2DwpW8b4J8vZmP0ysUGBz&#xa;mN8/cD2LgdnzgbY5jundjojB+SaZeoj71/7uWQIDAQABo4IDszCCA68wHwYDVR0j&#xa;BBgwFoAU70wAkqb7di5eleLJX4cbGdVN4tkwHQYDVR0OBBYEFLfXXUWpXX4aeYpW&#xa;/agID47GPP4QMA4GA1UdDwEB/wQEAwIFoDAMBgNVHRMBAf8EAjAAMB0GA1UdJQQW&#xa;MBQGCCsGAQUFBwMBBggrBgEFBQcDAjBJBgNVHSAEQjBAMDQGCysGAQQBsjEBAgJn&#xa;MCUwIwYIKwYBBQUHAgEWF2h0dHBzOi8vc2VjdGlnby5jb20vQ1BTMAgGBmeBDAEC&#xa;AjBABgNVHR8EOTA3MDWgM6Axhi9odHRwOi8vY3JsLnNlY3RpZ28uY29tL0luQ29t&#xa;bW9uUlNBU2VydmVyQ0EyLmNybDBwBggrBgEFBQcBAQRkMGIwOwYIKwYBBQUHMAKG&#xa;L2h0dHA6Ly9jcnQuc2VjdGlnby5jb20vSW5Db21tb25SU0FTZXJ2ZXJDQTIuY3J0&#xa;MCMGCCsGAQUFBzABhhdodHRwOi8vb2NzcC5zZWN0aWdvLmNvbTCCAX4GCisGAQQB&#xa;1nkCBAIEggFuBIIBagFoAHYA3dzKNJXX4RYF55Uy+sef+D0cUN/bADoUEnYKLKy7&#xa;yCoAAAGRTlKokAAABAMARzBFAiBWkb9lx6EgOPd8mSZ/9QF77bBnR2Pr9pBbu/S9&#xa;MH9oLAIhANNGI66DsCqZ4PSRsp6iD75eWcX252dZv+339uhnc9MyAHYADeHyMCvT&#xa;DcFAYhIJ6lUu/Ed0fLHX6TDvDkIetH5OqjQAAAGRTlKoKAAABAMARzBFAiEA7xKk&#xa;jYrVLZHPJ7yirr6XXjkeyv7AftcyeuL8pTq5+8ICIDCJ+qT+5VZXHqXpKwKEQWNd&#xa;HHogTJjJxO6kRLbFCPi4AHYAEvFONL1TckyEBhnDjz96E/jntWKHiJxtMAWE6+WG&#xa;JjoAAAGRTlKoKAAABAMARzBFAiEA+zxs4q5WDTUojfl7iIxMnvzl9SS78iYc0CGY&#xa;/kTgFCYCICj/gYLg0rAgKYc9vb3I0T74GmcqeUdx8EGK5RXd3Bv+MIGuBgNVHREE&#xa;gaYwgaOCEmRjZXdlYi5oYXJ2YXJkLmVkdYIbZGNld2ViLXByb2QuZGNlLmhhcnZh&#xa;cmQuZWR1giRkY2V3ZWIzMC1wcm9kLnVuaXZlcnNpdHkuaGFydmFyZC5lZHWCJGRj&#xa;ZXdlYjMxLXByb2QudW5pdmVyc2l0eS5oYXJ2YXJkLmVkdYIkZGNld2ViMzItcHJv&#xa;ZC51bml2ZXJzaXR5LmhhcnZhcmQuZWR1MA0GCSqGSIb3DQEBDAUAA4IBgQAZ8fNl&#xa;hlq3FMvAtxdkgFTjEMPbe4us/9ukzdz1vI5Caqa/97HsrvmplVnMBMTC4dzFycbv&#xa;sGeNxBrFzOnGmd8u9/zmf/BUu2j7DvfuwVDIJV2/xYMT2dqttKgUYFj1HPTb2l1f&#xa;HJznsO0FHpfODQfTwisH+kO99S4RL3sOdUpVazsjo7n3iP2tLHSd6hHVcwm0CG8h&#xa;kWKOnkdJSAcskGG80EnO1jeKgIMks6/Fzi59CLOy6jLaoCNBaVzPVcNujl6vGedG&#xa;s+j4iLZJ5PwKigG40mT7hwo5mTmsBADIIqfutHfCVu7I6jfEfupz0k0uo/J82lmf&#xa;4wvqJ6a7Q8edtkhlHHwjLK+tvbZu2bfVKpTyEfCzkOEwxvdOzACZTtJo4hxN1abc&#xa;beze5duMU/vOFVbCoj2+8Nj78vG15A36ivSSEHNCwODnfZtyHRUpNkkxo/LENCp7&#xa;/vegfWiOP3cBXeAj5lyIPfsAkFiL/uiKDAdMbDF1MJ1QM2D3rpfotPYnZ1s=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+</ports>
+<times srtt="2331" rttvar="1879" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730738500"/>
+<taskend task="NSE" time="1730738500"/>
+<taskbegin task="NSE" time="1730738500"/>
+<taskend task="NSE" time="1730738500"/>
+<taskbegin task="NSE" time="1730738500"/>
+<taskend task="NSE" time="1730738500"/>
+<runstats><finished time="1730738500" timestr="Mon Nov  4 16:41:40 2024" elapsed="28.87" summary="Nmap done at Mon Nov  4 16:41:40 2024; 1 IP address (1 host up) scanned in 28.87 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
