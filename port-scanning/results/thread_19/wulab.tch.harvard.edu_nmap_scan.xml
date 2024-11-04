@@ -19,3 +19,106 @@
 <taskbegin task="Connect Scan" time="1730745846"/>
 <taskend task="Connect Scan" time="1730745851" extrainfo="1000 total ports"/>
 <taskbegin task="Service scan" time="1730745851"/>
+<taskprogress task="Service scan" time="1730745909" percent="50.00" remaining="58" etc="1730745967"/>
+<taskend task="Service scan" time="1730745915" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1730745915"/>
+<taskend task="NSE" time="1730745918"/>
+<taskbegin task="NSE" time="1730745918"/>
+<taskend task="NSE" time="1730745919"/>
+<taskbegin task="NSE" time="1730745919"/>
+<taskend task="NSE" time="1730745919"/>
+<host starttime="1730745846" endtime="1730745919"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="34.149.87.45" addrtype="ipv4"/>
+<hostnames>
+<hostname name="wulab.tch.harvard.edu" type="user"/>
+<hostname name="45.87.149.34.bc.googleusercontent.com" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="998">
+<extrareasons reason="no-responses" count="998"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" servicefp="SF-Port80-TCP:V=7.80%I=7%D=11/4%Time=67291601%P=x86_64-pc-linux-gnu%r(GetRequest,13F,&quot;HTTP/1\.0\x20403\x20Forbidden\r\nContent-Length:\x20134\r\nContent-Type:\x20text/html;\x20charset=UTF-8\r\nDate:\x20Mon,\x2004\x20Nov\x202024\x2018:44:17\x20GMT\r\nglb-x-seen-by:\x20bS8wRlGzu0Hc\+WrYuHB8QIg44yfcdCMJRkBoQ1h6Vjc=\r\n\r\n&lt;!doctype\x20html&gt;&lt;meta\x20charset=\&quot;utf-8\&quot;&gt;&lt;meta\x20name=viewport\x20content=\&quot;width=device-width,\x20initial-scale=1\&quot;&gt;&lt;title&gt;403&lt;/title&gt;403\x20Forbidden&quot;)%r(HTTPOptions,13F,&quot;HTTP/1\.0\x20403\x20Forbidden\r\nContent-Length:\x20134\r\nContent-Type:\x20text/html;\x20charset=UTF-8\r\nDate:\x20Mon,\x2004\x20Nov\x202024\x2018:44:17\x20GMT\r\nglb-x-seen-by:\x20bS8wRlGzu0Hc\+WrYuHB8QIg44yfcdCMJRkBoQ1h6Vjc=\r\n\r\n&lt;!doctype\x20html&gt;&lt;meta\x20charset=\&quot;utf-8\&quot;&gt;&lt;meta\x20name=viewport\x20content=\&quot;width=device-width,\x20initial-scale=1\&quot;&gt;&lt;title&gt;403&lt;/title&gt;403\x20Forbidden&quot;)%r(RTSPRequest,1AD,&quot;HTTP/1\.0\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/html;\x20charset=UTF-8\r\nReferrer-Policy:\x20no-referrer\r\nContent-Length:\x20273\r\nDate:\x20Mon,\x2004\x20Nov\x202024\x2018:44:17\x20GMT\r\n\r\n\n&lt;html&gt;&lt;head&gt;\n&lt;meta\x20http-equiv=\&quot;content-type\&quot;\x20content=\&quot;text/html;charset=utf-8\&quot;&gt;\n&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;\n&lt;/head&gt;\n&lt;body\x20text=#000000\x20bgcolor=#ffffff&gt;\n&lt;h1&gt;Error:\x20Bad\x20Request&lt;/h1&gt;\n&lt;h2&gt;Your\x20client\x20has\x20issued\x20a\x20malformed\x20or\x20illegal\x20request\.&lt;/h2&gt;\n&lt;h2&gt;&lt;/h2&gt;\n&lt;/body&gt;&lt;/html&gt;\n&quot;)%r(FourOhFourRequest,13F,&quot;HTTP/1\.0\x20403\x20Forbidden\r\nContent-Length:\x20134\r\nContent-Type:\x20text/html;\x20charset=UTF-8\r\nDate:\x20Mon,\x2004\x20Nov\x202024\x2018:44:22\x20GMT\r\nglb-x-seen-by:\x20bS8wRlGzu0Hc\+WrYuHB8QIg44yfcdCMJRkBoQ1h6Vjc=\r\n\r\n&lt;!doctype\x20html&gt;&lt;meta\x20charset=\&quot;utf-8\&quot;&gt;&lt;meta\x20name=viewport\x20content=\&quot;width=device-width,\x20initial-scale=1\&quot;&gt;&lt;title&gt;403&lt;/title&gt;403\x20Forbidden&quot;)%r(DNSVersionBindReqTCP,B3,&quot;HTTP/1\.0\x20400\x20Bad\x20Request\r\nContent-Length:\x2054\r\nContent-Type:\x20text/html;\x20charset=UTF-8\r\nDate:\x20Mon,\x2004\x20Nov\x202024\x2018:44:32\x20GMT\r\n\r\n&lt;html&gt;&lt;title&gt;Error\x20400\x20\(Bad\x20Request\)!!1&lt;/title&gt;&lt;/html&gt;&quot;);" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  DNSVersionBindReqTCP: &#xa;    HTTP/1.0 400 Bad Request&#xa;    Content-Length: 54&#xa;    Content-Type: text/html; charset=UTF-8&#xa;    Date: Mon, 04 Nov 2024 18:44:32 GMT&#xa;    &lt;html&gt;&lt;title&gt;Error 400 (Bad Request)!!1&lt;/title&gt;&lt;/html&gt;&#xa;  FourOhFourRequest: &#xa;    HTTP/1.0 403 Forbidden&#xa;    Content-Length: 134&#xa;    Content-Type: text/html; charset=UTF-8&#xa;    Date: Mon, 04 Nov 2024 18:44:22 GMT&#xa;    glb-x-seen-by: bS8wRlGzu0Hc+WrYuHB8QIg44yfcdCMJRkBoQ1h6Vjc=&#xa;    &lt;!doctype html&gt;&lt;meta charset=&quot;utf-8&quot;&gt;&lt;meta name=viewport content=&quot;width=device-width, initial-scale=1&quot;&gt;&lt;title&gt;403&lt;/title&gt;403 Forbidden&#xa;  GetRequest, HTTPOptions: &#xa;    HTTP/1.0 403 Forbidden&#xa;    Content-Length: 134&#xa;    Content-Type: text/html; charset=UTF-8&#xa;    Date: Mon, 04 Nov 2024 18:44:17 GMT&#xa;    glb-x-seen-by: bS8wRlGzu0Hc+WrYuHB8QIg44yfcdCMJRkBoQ1h6Vjc=&#xa;    &lt;!doctype html&gt;&lt;meta charset=&quot;utf-8&quot;&gt;&lt;meta name=viewport content=&quot;width=device-width, initial-scale=1&quot;&gt;&lt;title&gt;403&lt;/title&gt;403 Forbidden&#xa;  RTSPRequest: &#xa;    HTTP/1.0 400 Bad Request&#xa;    Content-Type: text/html; charset=UTF-8&#xa;    Referrer-Policy: no-referrer&#xa;    Content-Length: 273&#xa;    Date: Mon, 04 Nov 2024 18:44:17 GMT&#xa;    &lt;html&gt;&lt;head&gt;&#xa;    &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html;charset=utf-8&quot;&gt;&#xa;    &lt;title&gt;400 Bad Request&lt;/title&gt;&#xa;    &lt;/head&gt;&#xa;    &lt;body text=#000000 bgcolor=#ffffff&gt;&#xa;    &lt;h1&gt;Error: Bad Request&lt;/h1&gt;&#xa;    &lt;h2&gt;Your client has issued a malformed or illegal request.&lt;/h2&gt;&#xa;    &lt;h2&gt;&lt;/h2&gt;&#xa;    &lt;/body&gt;&lt;/html&gt;"><elem key="DNSVersionBindReqTCP">&#xa;    HTTP/1.0 400 Bad Request&#xa;    Content-Length: 54&#xa;    Content-Type: text/html; charset=UTF-8&#xa;    Date: Mon, 04 Nov 2024 18:44:32 GMT&#xa;    &lt;html&gt;&lt;title&gt;Error 400 (Bad Request)!!1&lt;/title&gt;&lt;/html&gt;</elem>
+<elem key="FourOhFourRequest">&#xa;    HTTP/1.0 403 Forbidden&#xa;    Content-Length: 134&#xa;    Content-Type: text/html; charset=UTF-8&#xa;    Date: Mon, 04 Nov 2024 18:44:22 GMT&#xa;    glb-x-seen-by: bS8wRlGzu0Hc+WrYuHB8QIg44yfcdCMJRkBoQ1h6Vjc=&#xa;    &lt;!doctype html&gt;&lt;meta charset=&quot;utf-8&quot;&gt;&lt;meta name=viewport content=&quot;width=device-width, initial-scale=1&quot;&gt;&lt;title&gt;403&lt;/title&gt;403 Forbidden</elem>
+<elem key="GetRequest, HTTPOptions">&#xa;    HTTP/1.0 403 Forbidden&#xa;    Content-Length: 134&#xa;    Content-Type: text/html; charset=UTF-8&#xa;    Date: Mon, 04 Nov 2024 18:44:17 GMT&#xa;    glb-x-seen-by: bS8wRlGzu0Hc+WrYuHB8QIg44yfcdCMJRkBoQ1h6Vjc=&#xa;    &lt;!doctype html&gt;&lt;meta charset=&quot;utf-8&quot;&gt;&lt;meta name=viewport content=&quot;width=device-width, initial-scale=1&quot;&gt;&lt;title&gt;403&lt;/title&gt;403 Forbidden</elem>
+<elem key="RTSPRequest">&#xa;    HTTP/1.0 400 Bad Request&#xa;    Content-Type: text/html; charset=UTF-8&#xa;    Referrer-Policy: no-referrer&#xa;    Content-Length: 273&#xa;    Date: Mon, 04 Nov 2024 18:44:17 GMT&#xa;    &lt;html&gt;&lt;head&gt;&#xa;    &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html;charset=utf-8&quot;&gt;&#xa;    &lt;title&gt;400 Bad Request&lt;/title&gt;&#xa;    &lt;/head&gt;&#xa;    &lt;body text=#000000 bgcolor=#ffffff&gt;&#xa;    &lt;h1&gt;Error: Bad Request&lt;/h1&gt;&#xa;    &lt;h2&gt;Your client has issued a malformed or illegal request.&lt;/h2&gt;&#xa;    &lt;h2&gt;&lt;/h2&gt;&#xa;    &lt;/body&gt;&lt;/html&gt;</elem>
+</script><script id="http-title" output="403"><elem key="title">403</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" product="Pepyaka" servicefp="SF-Port443-TCP:V=7.80%T=SSL%I=7%D=11/4%Time=6729160C%P=x86_64-pc-linux-gnu%r(RTSPRequest,1AD,&quot;HTTP/1\.0\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/html;\x20charset=UTF-8\r\nReferrer-Policy:\x20no-referrer\r\nContent-Length:\x20273\r\nDate:\x20Mon,\x2004\x20Nov\x202024\x2018:44:28\x20GMT\r\n\r\n\n&lt;html&gt;&lt;head&gt;\n&lt;meta\x20http-equiv=\&quot;content-type\&quot;\x20content=\&quot;text/html;charset=utf-8\&quot;&gt;\n&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;\n&lt;/head&gt;\n&lt;body\x20text=#000000\x20bgcolor=#ffffff&gt;\n&lt;h1&gt;Error:\x20Bad\x20Request&lt;/h1&gt;\n&lt;h2&gt;Your\x20client\x20has\x20issued\x20a\x20malformed\x20or\x20illegal\x20request\.&lt;/h2&gt;\n&lt;h2&gt;&lt;/h2&gt;\n&lt;/body&gt;&lt;/html&gt;\n&quot;)%r(TLSSessionReq,B3,&quot;HTTP/1\.0\x20400\x20Bad\x20Request\r\nContent-Length:\x2054\r\nContent-Type:\x20text/html;\x20charset=UTF-8\r\nDate:\x20Mon,\x2004\x20Nov\x202024\x2018:44:34\x20GMT\r\n\r\n&lt;html&gt;&lt;title&gt;Error\x20400\x20\(Bad\x20Request\)!!1&lt;/title&gt;&lt;/html&gt;&quot;)%r(SMBProgNeg,B3,&quot;HTTP/1\.0\x20400\x20Bad\x20Request\r\nContent-Length:\x2054\r\nContent-Type:\x20text/html;\x20charset=UTF-8\r\nDate:\x20Mon,\x2004\x20Nov\x202024\x2018:44:34\x20GMT\r\n\r\n&lt;html&gt;&lt;title&gt;Error\x20400\x20\(Bad\x20Request\)!!1&lt;/title&gt;&lt;/html&gt;&quot;)%r(SIPOptions,1AD,&quot;HTTP/1\.0\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/html;\x20charset=UTF-8\r\nReferrer-Policy:\x20no-referrer\r\nContent-Length:\x20273\r\nDate:\x20Mon,\x2004\x20Nov\x202024\x2018:44:50\x20GMT\r\n\r\n\n&lt;html&gt;&lt;head&gt;\n&lt;meta\x20http-equiv=\&quot;content-type\&quot;\x20content=\&quot;text/html;charset=utf-8\&quot;&gt;\n&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;\n&lt;/head&gt;\n&lt;body\x20text=#000000\x20bgcolor=#ffffff&gt;\n&lt;h1&gt;Error:\x20Bad\x20Request&lt;/h1&gt;\n&lt;h2&gt;Your\x20client\x20has\x20issued\x20a\x20malformed\x20or\x20illegal\x20request\.&lt;/h2&gt;\n&lt;h2&gt;&lt;/h2&gt;\n&lt;/body&gt;&lt;/html&gt;\n&quot;);" tunnel="ssl" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  RTSPRequest: &#xa;    HTTP/1.0 400 Bad Request&#xa;    Content-Type: text/html; charset=UTF-8&#xa;    Referrer-Policy: no-referrer&#xa;    Content-Length: 273&#xa;    Date: Mon, 04 Nov 2024 18:44:28 GMT&#xa;    &lt;html&gt;&lt;head&gt;&#xa;    &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html;charset=utf-8&quot;&gt;&#xa;    &lt;title&gt;400 Bad Request&lt;/title&gt;&#xa;    &lt;/head&gt;&#xa;    &lt;body text=#000000 bgcolor=#ffffff&gt;&#xa;    &lt;h1&gt;Error: Bad Request&lt;/h1&gt;&#xa;    &lt;h2&gt;Your client has issued a malformed or illegal request.&lt;/h2&gt;&#xa;    &lt;h2&gt;&lt;/h2&gt;&#xa;    &lt;/body&gt;&lt;/html&gt;&#xa;  SIPOptions: &#xa;    HTTP/1.0 400 Bad Request&#xa;    Content-Type: text/html; charset=UTF-8&#xa;    Referrer-Policy: no-referrer&#xa;    Content-Length: 273&#xa;    Date: Mon, 04 Nov 2024 18:44:50 GMT&#xa;    &lt;html&gt;&lt;head&gt;&#xa;    &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html;charset=utf-8&quot;&gt;&#xa;    &lt;title&gt;400 Bad Request&lt;/title&gt;&#xa;    &lt;/head&gt;&#xa;    &lt;body text=#000000 bgcolor=#ffffff&gt;&#xa;    &lt;h1&gt;Error: Bad Request&lt;/h1&gt;&#xa;    &lt;h2&gt;Your client has issued a malformed or illegal request.&lt;/h2&gt;&#xa;    &lt;h2&gt;&lt;/h2&gt;&#xa;    &lt;/body&gt;&lt;/html&gt;&#xa;  SMBProgNeg, TLSSessionReq: &#xa;    HTTP/1.0 400 Bad Request&#xa;    Content-Length: 54&#xa;    Content-Type: text/html; charset=UTF-8&#xa;    Date: Mon, 04 Nov 2024 18:44:34 GMT&#xa;    &lt;html&gt;&lt;title&gt;Error 400 (Bad Request)!!1&lt;/title&gt;&lt;/html&gt;"><elem key="RTSPRequest">&#xa;    HTTP/1.0 400 Bad Request&#xa;    Content-Type: text/html; charset=UTF-8&#xa;    Referrer-Policy: no-referrer&#xa;    Content-Length: 273&#xa;    Date: Mon, 04 Nov 2024 18:44:28 GMT&#xa;    &lt;html&gt;&lt;head&gt;&#xa;    &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html;charset=utf-8&quot;&gt;&#xa;    &lt;title&gt;400 Bad Request&lt;/title&gt;&#xa;    &lt;/head&gt;&#xa;    &lt;body text=#000000 bgcolor=#ffffff&gt;&#xa;    &lt;h1&gt;Error: Bad Request&lt;/h1&gt;&#xa;    &lt;h2&gt;Your client has issued a malformed or illegal request.&lt;/h2&gt;&#xa;    &lt;h2&gt;&lt;/h2&gt;&#xa;    &lt;/body&gt;&lt;/html&gt;</elem>
+<elem key="SIPOptions">&#xa;    HTTP/1.0 400 Bad Request&#xa;    Content-Type: text/html; charset=UTF-8&#xa;    Referrer-Policy: no-referrer&#xa;    Content-Length: 273&#xa;    Date: Mon, 04 Nov 2024 18:44:50 GMT&#xa;    &lt;html&gt;&lt;head&gt;&#xa;    &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html;charset=utf-8&quot;&gt;&#xa;    &lt;title&gt;400 Bad Request&lt;/title&gt;&#xa;    &lt;/head&gt;&#xa;    &lt;body text=#000000 bgcolor=#ffffff&gt;&#xa;    &lt;h1&gt;Error: Bad Request&lt;/h1&gt;&#xa;    &lt;h2&gt;Your client has issued a malformed or illegal request.&lt;/h2&gt;&#xa;    &lt;h2&gt;&lt;/h2&gt;&#xa;    &lt;/body&gt;&lt;/html&gt;</elem>
+<elem key="SMBProgNeg, TLSSessionReq">&#xa;    HTTP/1.0 400 Bad Request&#xa;    Content-Length: 54&#xa;    Content-Type: text/html; charset=UTF-8&#xa;    Date: Mon, 04 Nov 2024 18:44:34 GMT&#xa;    &lt;html&gt;&lt;title&gt;Error 400 (Bad Request)!!1&lt;/title&gt;&lt;/html&gt;</elem>
+</script><script id="http-server-header" output="Pepyaka"><elem>Pepyaka</elem>
+</script><script id="http-title" output="403"><elem key="title">403</elem>
+</script><script id="ssl-cert" output="Subject: commonName=wulab.tch.harvard.edu&#xa;Subject Alternative Name: DNS:wulab.tch.harvard.edu, DNS:www.wulab.tch.harvard.edu&#xa;Issuer: commonName=R10/organizationName=Let&apos;s Encrypt/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-09-14T01:22:40&#xa;Not valid after:  2024-12-13T01:22:39&#xa;MD5:   3088 60c6 a356 3fb3 a39f eec7 cc39 6cd4&#xa;SHA-1: cf1e 937e 0c81 7ef4 9ffb d590 7346 a680 ac55 cfc2"><table key="subject">
+<elem key="commonName">wulab.tch.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">US</elem>
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+<elem key="commonName">R10</elem>
+</table>
+<table key="pubkey">
+<elem key="exponent">BIGNUM: 0x55f1f581c708</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">BIGNUM: 0x55f1f6fa05b8</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">CA:FALSE</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="value">3E:E3:88:25:75:95:27:A5:51:C3:6D:7A:8C:1D:1C:A3:A9:25:A3:C5</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="value">BB:BC:C3:47:A5:E4:BC:A9:C6:C3:A4:72:0C:10:8D:A2:35:E1:C8:E8</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">OCSP - URI:http://r10.o.lencr.org&#xa;CA Issuers - URI:http://r10.i.lencr.org/</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">DNS:wulab.tch.harvard.edu, DNS:www.wulab.tch.harvard.edu</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+<table>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 3F:17:4B:4F:D7:22:47:58:94:1D:65:1C:84:BE:0D:12:&#xa;                ED:90:37:7F:1F:85:6A:EB:C1:BF:28:85:EC:F8:64:6E&#xa;    Timestamp : Sep 14 02:21:10.688 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:7D:95:85:28:3C:F9:C4:8D:2B:0D:72:B8:&#xa;                62:18:5E:F6:DE:69:67:C2:C6:BE:24:68:11:A0:8B:26:&#xa;                E9:E8:29:06:02:20:1D:07:F0:34:47:7E:42:72:AE:48:&#xa;                AD:60:94:80:59:52:4A:E7:95:42:FB:D0:A7:AA:D6:CA:&#xa;                F0:1D:24:0A:09:72&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 76:FF:88:3F:0A:B6:FB:95:51:C2:61:CC:F5:87:BA:34:&#xa;                B4:A4:CD:BB:29:DC:68:42:0A:9F:E6:67:4C:5A:3A:74&#xa;    Timestamp : Sep 14 02:21:10.752 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:D1:4E:93:03:07:38:49:AC:28:16:F1:&#xa;                89:47:AE:EC:FF:F4:23:4A:9D:84:2F:41:E2:D6:7D:CD:&#xa;                AC:EC:63:CE:8A:02:20:49:F1:51:3E:A4:A4:04:82:40:&#xa;                D7:99:FA:EA:3C:10:27:CD:EE:81:96:48:0C:BD:6E:64:&#xa;                9B:C8:8A:90:2A:77:43</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-09-14T01:22:40</elem>
+<elem key="notAfter">2024-12-13T01:22:39</elem>
+</table>
+<elem key="md5">308860c6a3563fb3a39feec7cc396cd4</elem>
+<elem key="sha1">cf1e937e0c817ef49ffbd5907346a680ac55cfc2</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFFDCCA/ygAwIBAgISA5DYnKcn4rmwNfOY+YcRHOl4MA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNSMTAwHhcNMjQwOTE0MDEyMjQwWhcNMjQxMjEzMDEyMjM5WjAgMR4wHAYDVQQD&#xa;ExV3dWxhYi50Y2guaGFydmFyZC5lZHUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw&#xa;ggEKAoIBAQCusQx0DRNC74WoZ7iIy1V16pdFagq//xe2ZN6aGyhIXwwsq7Qeq5Z9&#xa;ybX883IEqhbaH3Sbb4lmQvY7nS2s0XnFkL2OxHERaWAAeWmtPBuqOirSRNmHFAU6&#xa;MICLfn8A+p/mSoWVn9BD4TjNPSiBpVe7LQCm2h1/6qrGG5yA++PPKscdCl6Yln4w&#xa;9WUPcyATmtiQAURJL4Y4IYzqVKSv8ccU8FYY6so4Hi5FcvcSyCpByveKiBazz7l1&#xa;Om6qO1EiPqSej6K/YMdx6nooVU+AeTdOD+h/pn6CTDxkJX3TkX8d0nGn2bsedVSt&#xa;AyAGB4s6Xnw7uibf0v1pA7xyBhxfxscvAgMBAAGjggIzMIICLzAOBgNVHQ8BAf8E&#xa;BAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQC&#xa;MAAwHQYDVR0OBBYEFD7jiCV1lSelUcNteowdHKOpJaPFMB8GA1UdIwQYMBaAFLu8&#xa;w0el5LypxsOkcgwQjaI14cjoMFcGCCsGAQUFBwEBBEswSTAiBggrBgEFBQcwAYYW&#xa;aHR0cDovL3IxMC5vLmxlbmNyLm9yZzAjBggrBgEFBQcwAoYXaHR0cDovL3IxMC5p&#xa;LmxlbmNyLm9yZy8wOwYDVR0RBDQwMoIVd3VsYWIudGNoLmhhcnZhcmQuZWR1ghl3&#xa;d3cud3VsYWIudGNoLmhhcnZhcmQuZWR1MBMGA1UdIAQMMAowCAYGZ4EMAQIBMIIB&#xa;AwYKKwYBBAHWeQIEAgSB9ASB8QDvAHUAPxdLT9ciR1iUHWUchL4NEu2QN38fhWrr&#xa;wb8ohez4ZG4AAAGR7lWQoAAABAMARjBEAiB9lYUoPPnEjSsNcrhiGF723mlnwsa+&#xa;JGgRoIsm6egpBgIgHQfwNEd+QnKuSK1glIBZUkrnlUL70Keq1srwHSQKCXIAdgB2&#xa;/4g/Crb7lVHCYcz1h7o0tKTNuyncaEIKn+ZnTFo6dAAAAZHuVZDgAAAEAwBHMEUC&#xa;IQDRTpMDBzhJrCgW8YlHruz/9CNKnYQvQeLWfc2s7GPOigIgSfFRPqSkBIJA15n6&#xa;6jwQJ83ugZZIDL1uZJvIipAqd0MwDQYJKoZIhvcNAQELBQADggEBAKSwmgYTSlH4&#xa;YGIu+dRg2oKA+Gvg5T0zLyssaSbBRRfeEqzxdj0Mhv61r44nMXGixwG27qKrBfRV&#xa;XCHakoVOcRGXSyk9XwEZzFvvw0hHepT+2L8MSd/u86FqjwTG2IKfUFsHfaPnTsjk&#xa;HBGlqFNDq31+CKajdJmTKRPfkL5P9BZkFffkjoj3pmJmsEzIjGdJUSe6VPQpTOo6&#xa;9a9eFYjw0BiTkePNOsUlJ5k/D2wNiSBjLzUnKVHtEf1AI/oRB00GMWq7rYTVfUj4&#xa;ScOaoMzVrsXHOY037FLW6mnSCW60GBRxYNhG1PW+Y7wSDzEdVxBJ1em/w3uYoqvN&#xa;1mce5gDdPmY=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+</ports>
+<times srtt="6713" rttvar="2473" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730745919"/>
+<taskend task="NSE" time="1730745919"/>
+<taskbegin task="NSE" time="1730745919"/>
+<taskend task="NSE" time="1730745919"/>
+<taskbegin task="NSE" time="1730745919"/>
+<taskend task="NSE" time="1730745919"/>
+<runstats><finished time="1730745919" timestr="Mon Nov  4 18:45:19 2024" elapsed="73.35" summary="Nmap done at Mon Nov  4 18:45:19 2024; 1 IP address (1 host up) scanned in 73.35 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
