@@ -19,3 +19,116 @@
 <taskbegin task="Connect Scan" time="1730741983"/>
 <taskend task="Connect Scan" time="1730741988" extrainfo="1000 total ports"/>
 <taskbegin task="Service scan" time="1730741988"/>
+<taskend task="Service scan" time="1730742000" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1730742000"/>
+<taskend task="NSE" time="1730742001"/>
+<taskbegin task="NSE" time="1730742001"/>
+<taskend task="NSE" time="1730742002"/>
+<taskbegin task="NSE" time="1730742002"/>
+<taskend task="NSE" time="1730742002"/>
+<host starttime="1730741983" endtime="1730742002"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="104.96.221.72" addrtype="ipv4"/>
+<hostnames>
+<hostname name="islamicstudies.harvard.edu" type="user"/>
+<hostname name="a104-96-221-72.deploy.static.akamaitechnologies.com" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="998">
+<extrareasons reason="no-responses" count="998"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="AkamaiGHost" extrainfo="Akamai&apos;s HTTP Acceleration/Mirror service" method="probed" conf="10"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Access Denied"><elem key="title">Access Denied</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="AkamaiGHost" extrainfo="Akamai&apos;s HTTP Acceleration/Mirror service" tunnel="ssl" method="probed" conf="10"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Access Denied"><elem key="title">Access Denied</elem>
+</script><script id="ssl-cert" output="Subject: commonName=islamicstudies.harvard.edu&#xa;Subject Alternative Name: DNS:islamicstudies.harvard.edu&#xa;Issuer: commonName=E6/organizationName=Let&apos;s Encrypt/countryName=US&#xa;Public Key type: ec&#xa;Public Key bits: 256&#xa;Signature Algorithm: ecdsa-with-SHA384&#xa;Not valid before: 2024-09-23T07:21:38&#xa;Not valid after:  2024-12-22T07:21:37&#xa;MD5:   c437 d2a5 4e70 fb69 5621 8915 b45d 2346&#xa;SHA-1: fce7 85a6 e5e9 bc32 55d5 90e5 242d 3457 b3ec 690a"><table key="subject">
+<elem key="commonName">islamicstudies.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">E6</elem>
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+<elem key="countryName">US</elem>
+</table>
+<table key="pubkey">
+<elem key="type">ec</elem>
+<elem key="bits">256</elem>
+<table key="ecdhparams">
+<table key="curve_params">
+<elem key="curve">prime256v1</elem>
+<elem key="ec_curve_type">namedcurve</elem>
+</table>
+</table>
+</table>
+<table key="extensions">
+<table>
+<elem key="critical">true</elem>
+<elem key="value">Digital Signature</elem>
+<elem key="name">X509v3 Key Usage</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+</table>
+<table>
+<elem key="value">A6:53:B9:E6:46:82:F2:8C:2E:A9:5E:24:3A:5C:41:A2:D7:77:FE:3A</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="value">93:27:46:98:03:A9:51:68:8E:98:D6:C4:42:48:DB:23:BF:58:94:D2</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">OCSP - URI:http://e6.o.lencr.org&#xa;CA Issuers - URI:http://e6.i.lencr.org/</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">DNS:islamicstudies.harvard.edu</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+<table>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 48:B0:E3:6B:DA:A6:47:34:0F:E5:6A:02:FA:9D:30:EB:&#xa;                1C:52:01:CB:56:DD:2C:81:D9:BB:BF:AB:39:D8:84:73&#xa;    Timestamp : Sep 23 08:20:09.087 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:9D:12:65:6A:53:06:FC:AB:F8:66:78:&#xa;                6A:9F:07:F7:1F:51:79:8B:BC:C9:C3:1A:D9:07:45:9E:&#xa;                99:98:2F:3D:C0:02:21:00:84:BB:EB:70:D6:56:98:9F:&#xa;                EF:82:1D:29:FF:8B:F0:66:3C:1F:33:B8:E4:54:30:1A:&#xa;                F5:F0:DA:B5:7B:58:53:A5&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 19:98:10:71:09:F0:D6:52:2E:30:80:D2:9E:3F:64:BB:&#xa;                83:6E:28:CC:F9:0F:52:8E:EE:DF:CE:4A:3F:16:B4:CA&#xa;    Timestamp : Sep 23 08:20:09.078 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:58:59:F8:B5:8D:82:80:16:C9:C0:EB:52:&#xa;                D7:FB:EA:34:C1:16:70:E3:F0:07:BB:7C:D0:2B:E7:53:&#xa;                B0:8A:E6:B9:02:20:39:0E:7A:0A:EE:24:DB:00:E1:D3:&#xa;                28:1B:09:6B:C6:90:29:A6:21:14:DE:CB:DB:6B:9D:9F:&#xa;                05:78:43:7A:9A:E5</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+</table>
+<elem key="sig_algo">ecdsa-with-SHA384</elem>
+<table key="validity">
+<elem key="notAfter">2024-12-22T07:21:37</elem>
+<elem key="notBefore">2024-09-23T07:21:38</elem>
+</table>
+<elem key="md5">c437d2a54e70fb6956218915b45d2346</elem>
+<elem key="sha1">fce785a6e5e9bc3255d590e5242d3457b3ec690a</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDlTCCAxugAwIBAgISBH56cOtQrYOw7CJ6GVx0kzqPMAoGCCqGSM49BAMDMDIx&#xa;CzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJF&#xa;NjAeFw0yNDA5MjMwNzIxMzhaFw0yNDEyMjIwNzIxMzdaMCUxIzAhBgNVBAMTGmlz&#xa;bGFtaWNzdHVkaWVzLmhhcnZhcmQuZWR1MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcD&#xa;QgAEX8U9umM8VdkGIa3dvyG/bWSdwEgWdj4k8GX0hg03hnmcbMVdHYUz+q8K60/6&#xa;fhhWwjHJB2RRcmmAzDygwqLL16OCAhwwggIYMA4GA1UdDwEB/wQEAwIHgDAdBgNV&#xa;HSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADAdBgNVHQ4E&#xa;FgQUplO55kaC8owuqV4kOlxBotd3/jowHwYDVR0jBBgwFoAUkydGmAOpUWiOmNbE&#xa;QkjbI79YlNIwVQYIKwYBBQUHAQEESTBHMCEGCCsGAQUFBzABhhVodHRwOi8vZTYu&#xa;by5sZW5jci5vcmcwIgYIKwYBBQUHMAKGFmh0dHA6Ly9lNi5pLmxlbmNyLm9yZy8w&#xa;JQYDVR0RBB4wHIIaaXNsYW1pY3N0dWRpZXMuaGFydmFyZC5lZHUwEwYDVR0gBAww&#xa;CjAIBgZngQwBAgEwggEEBgorBgEEAdZ5AgQCBIH1BIHyAPAAdwBIsONr2qZHNA/l&#xa;agL6nTDrHFIBy1bdLIHZu7+rOdiEcwAAAZId93L/AAAEAwBIMEYCIQCdEmVqUwb8&#xa;q/hmeGqfB/cfUXmLvMnDGtkHRZ6ZmC89wAIhAIS763DWVpif74IdKf+L8GY8HzO4&#xa;5FQwGvXw2rV7WFOlAHUAGZgQcQnw1lIuMIDSnj9ku4NuKMz5D1KO7t/OSj8WtMoA&#xa;AAGSHfdy9gAABAMARjBEAiBYWfi1jYKAFsnA61LX++o0wRZw4/AHu3zQK+dTsIrm&#xa;uQIgOQ56Cu4k2wDh0ygbCWvGkCmmIRTey9trnZ8FeEN6muUwCgYIKoZIzj0EAwMD&#xa;aAAwZQIwBTVHv9Q6tlKsSNvuKs019/ZMGhCYeKiUCCglr90+z0Q4QoSJntSe6tiM&#xa;hImp5/vIAjEAjoFQFoDFvGt2FbNWTMAyNbp/UDIBh/O/MIDDB2k8l8QSDSaF0muw&#xa;Ds60otdT8NRK&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="tls-alpn" output="&#xa;  http/1.1"><elem>http/1.1</elem>
+</script><script id="tls-nextprotoneg" output="&#xa;  http/1.1&#xa;  http/1.0"><elem>http/1.1</elem>
+<elem>http/1.0</elem>
+</script></port>
+</ports>
+<times srtt="6025" rttvar="2049" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730742002"/>
+<taskend task="NSE" time="1730742002"/>
+<taskbegin task="NSE" time="1730742002"/>
+<taskend task="NSE" time="1730742002"/>
+<taskbegin task="NSE" time="1730742002"/>
+<taskend task="NSE" time="1730742002"/>
+<runstats><finished time="1730742002" timestr="Mon Nov  4 17:40:02 2024" elapsed="18.94" summary="Nmap done at Mon Nov  4 17:40:02 2024; 1 IP address (1 host up) scanned in 18.94 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
