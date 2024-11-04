@@ -23,3 +23,38 @@
 <taskbegin task="NSE" time="1730740048"/>
 <taskend task="NSE" time="1730740059"/>
 <taskbegin task="NSE" time="1730740059"/>
+<taskend task="NSE" time="1730740119"/>
+<taskbegin task="NSE" time="1730740119"/>
+<taskend task="NSE" time="1730740119"/>
+<host starttime="1730739985" endtime="1730740119"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="134.174.104.240" addrtype="ipv4"/>
+<hostnames>
+<hostname name="adfs.bidmc.harvard.edu" type="user"/>
+<hostname name="hrms91.bidmc.org" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="998">
+<extrareasons reason="no-responses" count="998"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" servicefp="SF-Port80-TCP:V=7.80%I=7%D=11/4%Time=6728FF1B%P=x86_64-pc-linux-gnu%r(GetRequest,7D,&quot;HTTP/1\.0\x20302\x20Found\x20:\x20Moved\x20Temporarily\r\nLocation:\x20https:///\r\nConnection:\x20close\r\nCache-Control:\x20no-cache\r\nPragma:\x20no-cache\r\n\r\n&quot;)%r(HTTPOptions,7D,&quot;HTTP/1\.0\x20302\x20Found\x20:\x20Moved\x20Temporarily\r\nLocation:\x20https:///\r\nConnection:\x20close\r\nCache-Control:\x20no-cache\r\nPragma:\x20no-cache\r\n\r\n&quot;)%r(FourOhFourRequest,A0,&quot;HTTP/1\.0\x20302\x20Found\x20:\x20Moved\x20Temporarily\r\nLocation:\x20https:///nice%20ports%2C/Tri%6Eity\.txt%2ebak\r\nConnection:\x20close\r\nCache-Control:\x20no-cache\r\nPragma:\x20no-cache\r\n\r\n&quot;);" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  FourOhFourRequest: &#xa;    HTTP/1.0 302 Found : Moved Temporarily&#xa;    Location: https:///nice%20ports%2C/Tri%6Eity.txt%2ebak&#xa;    Connection: close&#xa;    Cache-Control: no-cache&#xa;    Pragma: no-cache&#xa;  GetRequest, HTTPOptions: &#xa;    HTTP/1.0 302 Found : Moved Temporarily&#xa;    Location: https:///&#xa;    Connection: close&#xa;    Cache-Control: no-cache&#xa;    Pragma: no-cache"><elem key="FourOhFourRequest">&#xa;    HTTP/1.0 302 Found : Moved Temporarily&#xa;    Location: https:///nice%20ports%2C/Tri%6Eity.txt%2ebak&#xa;    Connection: close&#xa;    Cache-Control: no-cache&#xa;    Pragma: no-cache</elem>
+<elem key="GetRequest, HTTPOptions">&#xa;    HTTP/1.0 302 Found : Moved Temporarily&#xa;    Location: https:///&#xa;    Connection: close&#xa;    Cache-Control: no-cache&#xa;    Pragma: no-cache</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Did not follow redirect to https://adfs.bidmc.harvard.edu/"><elem key="redirect_url">https://adfs.bidmc.harvard.edu/</elem>
+</script><script id="https-redirect" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" tunnel="ssl" method="table" conf="3"/></port>
+</ports>
+<times srtt="16600" rttvar="5586" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730740119"/>
+<taskend task="NSE" time="1730740119"/>
+<taskbegin task="NSE" time="1730740119"/>
+<taskend task="NSE" time="1730740119"/>
+<taskbegin task="NSE" time="1730740119"/>
+<taskend task="NSE" time="1730740119"/>
+<runstats><finished time="1730740119" timestr="Mon Nov  4 17:08:39 2024" elapsed="134.41" summary="Nmap done at Mon Nov  4 17:08:39 2024; 1 IP address (1 host up) scanned in 134.41 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
