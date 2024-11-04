@@ -17,3 +17,369 @@
 <taskbegin task="Parallel DNS resolution of 1 host." time="1730750926"/>
 <taskend task="Parallel DNS resolution of 1 host." time="1730750927"/>
 <taskbegin task="Connect Scan" time="1730750927"/>
+<taskend task="Connect Scan" time="1730750931" extrainfo="1000 total ports"/>
+<taskbegin task="Service scan" time="1730750932"/>
+<taskend task="Service scan" time="1730750954" extrainfo="6 services on 1 host"/>
+<taskbegin task="NSE" time="1730750954"/>
+<taskend task="NSE" time="1730750957"/>
+<taskbegin task="NSE" time="1730750957"/>
+<taskend task="NSE" time="1730750957"/>
+<taskbegin task="NSE" time="1730750957"/>
+<taskend task="NSE" time="1730750957"/>
+<host starttime="1730750926" endtime="1730750957"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="134.174.150.222" addrtype="ipv4"/>
+<hostnames>
+<hostname name="carlisle.med.harvard.edu" type="user"/>
+<hostname name="carlisle.med.harvard.edu" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="994">
+<extrareasons reason="no-responses" count="994"/>
+</extraports>
+<port protocol="tcp" portid="25"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtp" product="Postfix smtpd" hostname="carlisle.med.harvard.edu" method="probed" conf="10"><cpe>cpe:/a:postfix:postfix</cpe></service><script id="smtp-commands" output="carlisle.med.harvard.edu, PIPELINING, SIZE 157286400, VRFY, ETRN, STARTTLS, ENHANCEDSTATUSCODES, 8BITMIME, DSN, CHUNKING, "/><script id="ssl-cert" output="Subject: commonName=carlisle.med.harvard.edu&#xa;Subject Alternative Name: DNS:carlisle.med.harvard.edu&#xa;Issuer: commonName=R11/organizationName=Let&apos;s Encrypt/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-10-10T13:55:24&#xa;Not valid after:  2025-01-08T13:55:23&#xa;MD5:   740b 129d abee 39f7 6632 af91 12a7 e83c&#xa;SHA-1: f68a e242 bc51 8df1 d275 2b4e f5a7 708e 482c 0e50"><table key="subject">
+<elem key="commonName">carlisle.med.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+<elem key="countryName">US</elem>
+<elem key="commonName">R11</elem>
+</table>
+<table key="pubkey">
+<elem key="modulus">BIGNUM: 0x562d5df9bb18</elem>
+<elem key="type">rsa</elem>
+<elem key="exponent">BIGNUM: 0x562d5e1dcd98</elem>
+<elem key="bits">2048</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">59:23:99:D9:33:0D:73:E4:21:30:54:81:0E:0B:1D:21:E6:44:08:75</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">C5:CF:46:A4:EA:F4:C3:C0:7A:6C:95:C4:2D:B0:5E:92:2F:26:E3:B9</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://r11.o.lencr.org&#xa;CA Issuers - URI:http://r11.i.lencr.org/</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:carlisle.med.harvard.edu</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 3F:17:4B:4F:D7:22:47:58:94:1D:65:1C:84:BE:0D:12:&#xa;                ED:90:37:7F:1F:85:6A:EB:C1:BF:28:85:EC:F8:64:6E&#xa;    Timestamp : Oct 10 14:53:54.772 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:6F:2C:1F:32:01:F9:35:6D:FA:AE:3C:6A:&#xa;                B4:52:5B:A3:38:97:88:20:D3:04:E6:00:CF:C6:0D:78:&#xa;                CA:AE:53:90:02:21:00:A4:14:E5:38:A1:64:05:FB:19:&#xa;                8C:FE:28:B2:97:09:D7:7A:CA:1D:37:88:60:1A:72:98:&#xa;                09:8B:AC:53:CE:B1:28&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : E0:92:B3:FC:0C:1D:C8:E7:68:36:1F:DE:61:B9:96:4D:&#xa;                0A:52:78:19:8A:72:D6:72:C4:B0:4D:A5:6D:6F:54:04&#xa;    Timestamp : Oct 10 14:53:54.869 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:1E:21:73:A2:00:86:49:10:BB:65:CC:16:&#xa;                21:34:1C:50:CE:6F:6C:0C:B1:BC:82:68:33:A9:E5:FC:&#xa;                57:4F:85:11:02:20:6E:92:0B:0A:DE:AE:CE:DE:8F:4D:&#xa;                5E:4E:EC:B0:9B:CB:6E:B6:1D:79:D6:F1:AC:10:19:5B:&#xa;                7A:CB:10:6B:AE:FA</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-10-10T13:55:24</elem>
+<elem key="notAfter">2025-01-08T13:55:23</elem>
+</table>
+<elem key="md5">740b129dabee39f76632af9112a7e83c</elem>
+<elem key="sha1">f68ae242bc518df1d2752b4ef5a7708e482c0e50</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIE/zCCA+egAwIBAgISBIkLA1DijlI+sncYALKzDIxsMA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNSMTEwHhcNMjQxMDEwMTM1NTI0WhcNMjUwMTA4MTM1NTIzWjAjMSEwHwYDVQQD&#xa;ExhjYXJsaXNsZS5tZWQuaGFydmFyZC5lZHUwggEiMA0GCSqGSIb3DQEBAQUAA4IB&#xa;DwAwggEKAoIBAQDHOvK5bZPpctsEhsMtHFXXmn5PEPNJnPJ7H4tOvZ6cCuwEQl4F&#xa;qdjTtFTdoCl89q9jXCKS6WJ8MeJqsiXDQUcg4tYSULwPGOqQMGyXvo7LVjeHPeGX&#xa;rM6/xlaooobHqHzgd4Z3C1Vg/FP43lQh8G2oOj182SnnYB6YM9V95F0bM5QJwrgS&#xa;ZaenRVVGkVYKAp8++8/0TR0kWJqmGbbN+cVOsKv5ozuH6NeFIFUjxjJY3lJNcxZY&#xa;NI9oWW1Ag6uYbDXaTABi4Ht2cqaDz4f3pklqGNitQqg5EmH9eZb+HCzQs/TfDsi0&#xa;gQtpz+zFNwTnenTKM5EJgU/9YignfPSKNYO/AgMBAAGjggIbMIICFzAOBgNVHQ8B&#xa;Af8EBAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB&#xa;/wQCMAAwHQYDVR0OBBYEFFkjmdkzDXPkITBUgQ4LHSHmRAh1MB8GA1UdIwQYMBaA&#xa;FMXPRqTq9MPAemyVxC2wXpIvJuO5MFcGCCsGAQUFBwEBBEswSTAiBggrBgEFBQcw&#xa;AYYWaHR0cDovL3IxMS5vLmxlbmNyLm9yZzAjBggrBgEFBQcwAoYXaHR0cDovL3Ix&#xa;MS5pLmxlbmNyLm9yZy8wIwYDVR0RBBwwGoIYY2FybGlzbGUubWVkLmhhcnZhcmQu&#xa;ZWR1MBMGA1UdIAQMMAowCAYGZ4EMAQIBMIIBAwYKKwYBBAHWeQIEAgSB9ASB8QDv&#xa;AHYAPxdLT9ciR1iUHWUchL4NEu2QN38fhWrrwb8ohez4ZG4AAAGSduwO1AAABAMA&#xa;RzBFAiBvLB8yAfk1bfquPGq0UlujOJeIINME5gDPxg14yq5TkAIhAKQU5TihZAX7&#xa;GYz+KLKXCdd6yh03iGAacpgJi6xTzrEoAHUA4JKz/AwdyOdoNh/eYbmWTQpSeBmK&#xa;ctZyxLBNpW1vVAQAAAGSduwPNQAABAMARjBEAiAeIXOiAIZJELtlzBYhNBxQzm9s&#xa;DLG8gmgzqeX8V0+FEQIgbpILCt6uzt6PTV5O7LCby262HXnW8awQGVt6yxBrrvow&#xa;DQYJKoZIhvcNAQELBQADggEBAEfu+5Uo3JkCLogtbi0h5YdCZIHMTOPPvrzp+SNR&#xa;Gz5rBflCsVW5GoomnFV5nFXzixLeA6SNawBEnBC7sykXYDsI3yrsQUfA8tKlwAgk&#xa;KvAHPx2NAE7F5m1F4rJUjJRHFUktuCo6PbVxnT9Dxb64R/3AB9yqQ4yTfXKUOM/H&#xa;IBZqITgRP0CJ5lVmo80kvips/S/isV5aIc6nMy7cARQ2UH74qvzYP+J/SuytgTkp&#xa;0lgPvJrVGUvYtsMQ3+OlBn9sxh+QAs2UdJ392fNo8TO4FWiJ2xiR5v1cRGzpSe+S&#xa;Wbu87AWY73203Pve3LF2DSvh5rR26DBr7SlvZJBVzySXXiM=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.41" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.41</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: POST OPTIONS HEAD GET"><table key="Supported Methods">
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+<elem>HEAD</elem>
+<elem>GET</elem>
+</table>
+</script><script id="http-server-header" output="Apache/2.4.41 (Ubuntu)"><elem>Apache/2.4.41 (Ubuntu)</elem>
+</script><script id="http-title" output="Apache2 Ubuntu Default Page: It works"><elem key="title">Apache2 Ubuntu Default Page: It works</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssl" product="Apache httpd" extrainfo="SSL-only mode" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:apache:http_server</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: POST OPTIONS HEAD GET"><table key="Supported Methods">
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+<elem>HEAD</elem>
+<elem>GET</elem>
+</table>
+</script><script id="http-server-header" output="Apache/2.4.41 (Ubuntu)"><elem>Apache/2.4.41 (Ubuntu)</elem>
+</script><script id="http-title" output="Apache2 Ubuntu Default Page: It works"><elem key="title">Apache2 Ubuntu Default Page: It works</elem>
+</script><script id="ssl-cert" output="Subject: commonName=carlisle.med.harvard.edu&#xa;Subject Alternative Name: DNS:carlisle.med.harvard.edu&#xa;Issuer: commonName=R11/organizationName=Let&apos;s Encrypt/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-10-10T13:55:24&#xa;Not valid after:  2025-01-08T13:55:23&#xa;MD5:   740b 129d abee 39f7 6632 af91 12a7 e83c&#xa;SHA-1: f68a e242 bc51 8df1 d275 2b4e f5a7 708e 482c 0e50"><table key="subject">
+<elem key="commonName">carlisle.med.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+<elem key="countryName">US</elem>
+<elem key="commonName">R11</elem>
+</table>
+<table key="pubkey">
+<elem key="modulus">BIGNUM: 0x562d5dbf88c8</elem>
+<elem key="type">rsa</elem>
+<elem key="exponent">BIGNUM: 0x562d5e151d08</elem>
+<elem key="bits">2048</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">59:23:99:D9:33:0D:73:E4:21:30:54:81:0E:0B:1D:21:E6:44:08:75</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">C5:CF:46:A4:EA:F4:C3:C0:7A:6C:95:C4:2D:B0:5E:92:2F:26:E3:B9</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://r11.o.lencr.org&#xa;CA Issuers - URI:http://r11.i.lencr.org/</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:carlisle.med.harvard.edu</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 3F:17:4B:4F:D7:22:47:58:94:1D:65:1C:84:BE:0D:12:&#xa;                ED:90:37:7F:1F:85:6A:EB:C1:BF:28:85:EC:F8:64:6E&#xa;    Timestamp : Oct 10 14:53:54.772 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:6F:2C:1F:32:01:F9:35:6D:FA:AE:3C:6A:&#xa;                B4:52:5B:A3:38:97:88:20:D3:04:E6:00:CF:C6:0D:78:&#xa;                CA:AE:53:90:02:21:00:A4:14:E5:38:A1:64:05:FB:19:&#xa;                8C:FE:28:B2:97:09:D7:7A:CA:1D:37:88:60:1A:72:98:&#xa;                09:8B:AC:53:CE:B1:28&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : E0:92:B3:FC:0C:1D:C8:E7:68:36:1F:DE:61:B9:96:4D:&#xa;                0A:52:78:19:8A:72:D6:72:C4:B0:4D:A5:6D:6F:54:04&#xa;    Timestamp : Oct 10 14:53:54.869 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:1E:21:73:A2:00:86:49:10:BB:65:CC:16:&#xa;                21:34:1C:50:CE:6F:6C:0C:B1:BC:82:68:33:A9:E5:FC:&#xa;                57:4F:85:11:02:20:6E:92:0B:0A:DE:AE:CE:DE:8F:4D:&#xa;                5E:4E:EC:B0:9B:CB:6E:B6:1D:79:D6:F1:AC:10:19:5B:&#xa;                7A:CB:10:6B:AE:FA</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-10-10T13:55:24</elem>
+<elem key="notAfter">2025-01-08T13:55:23</elem>
+</table>
+<elem key="md5">740b129dabee39f76632af9112a7e83c</elem>
+<elem key="sha1">f68ae242bc518df1d2752b4ef5a7708e482c0e50</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIE/zCCA+egAwIBAgISBIkLA1DijlI+sncYALKzDIxsMA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNSMTEwHhcNMjQxMDEwMTM1NTI0WhcNMjUwMTA4MTM1NTIzWjAjMSEwHwYDVQQD&#xa;ExhjYXJsaXNsZS5tZWQuaGFydmFyZC5lZHUwggEiMA0GCSqGSIb3DQEBAQUAA4IB&#xa;DwAwggEKAoIBAQDHOvK5bZPpctsEhsMtHFXXmn5PEPNJnPJ7H4tOvZ6cCuwEQl4F&#xa;qdjTtFTdoCl89q9jXCKS6WJ8MeJqsiXDQUcg4tYSULwPGOqQMGyXvo7LVjeHPeGX&#xa;rM6/xlaooobHqHzgd4Z3C1Vg/FP43lQh8G2oOj182SnnYB6YM9V95F0bM5QJwrgS&#xa;ZaenRVVGkVYKAp8++8/0TR0kWJqmGbbN+cVOsKv5ozuH6NeFIFUjxjJY3lJNcxZY&#xa;NI9oWW1Ag6uYbDXaTABi4Ht2cqaDz4f3pklqGNitQqg5EmH9eZb+HCzQs/TfDsi0&#xa;gQtpz+zFNwTnenTKM5EJgU/9YignfPSKNYO/AgMBAAGjggIbMIICFzAOBgNVHQ8B&#xa;Af8EBAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB&#xa;/wQCMAAwHQYDVR0OBBYEFFkjmdkzDXPkITBUgQ4LHSHmRAh1MB8GA1UdIwQYMBaA&#xa;FMXPRqTq9MPAemyVxC2wXpIvJuO5MFcGCCsGAQUFBwEBBEswSTAiBggrBgEFBQcw&#xa;AYYWaHR0cDovL3IxMS5vLmxlbmNyLm9yZzAjBggrBgEFBQcwAoYXaHR0cDovL3Ix&#xa;MS5pLmxlbmNyLm9yZy8wIwYDVR0RBBwwGoIYY2FybGlzbGUubWVkLmhhcnZhcmQu&#xa;ZWR1MBMGA1UdIAQMMAowCAYGZ4EMAQIBMIIBAwYKKwYBBAHWeQIEAgSB9ASB8QDv&#xa;AHYAPxdLT9ciR1iUHWUchL4NEu2QN38fhWrrwb8ohez4ZG4AAAGSduwO1AAABAMA&#xa;RzBFAiBvLB8yAfk1bfquPGq0UlujOJeIINME5gDPxg14yq5TkAIhAKQU5TihZAX7&#xa;GYz+KLKXCdd6yh03iGAacpgJi6xTzrEoAHUA4JKz/AwdyOdoNh/eYbmWTQpSeBmK&#xa;ctZyxLBNpW1vVAQAAAGSduwPNQAABAMARjBEAiAeIXOiAIZJELtlzBYhNBxQzm9s&#xa;DLG8gmgzqeX8V0+FEQIgbpILCt6uzt6PTV5O7LCby262HXnW8awQGVt6yxBrrvow&#xa;DQYJKoZIhvcNAQELBQADggEBAEfu+5Uo3JkCLogtbi0h5YdCZIHMTOPPvrzp+SNR&#xa;Gz5rBflCsVW5GoomnFV5nFXzixLeA6SNawBEnBC7sykXYDsI3yrsQUfA8tKlwAgk&#xa;KvAHPx2NAE7F5m1F4rJUjJRHFUktuCo6PbVxnT9Dxb64R/3AB9yqQ4yTfXKUOM/H&#xa;IBZqITgRP0CJ5lVmo80kvips/S/isV5aIc6nMy7cARQ2UH74qvzYP+J/SuytgTkp&#xa;0lgPvJrVGUvYtsMQ3+OlBn9sxh+QAs2UdJ392fNo8TO4FWiJ2xiR5v1cRGzpSe+S&#xa;Wbu87AWY73203Pve3LF2DSvh5rR26DBr7SlvZJBVzySXXiM=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="tls-alpn" output="&#xa;  http/1.1"><elem>http/1.1</elem>
+</script></port>
+<port protocol="tcp" portid="587"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtp" product="Postfix smtpd" hostname="carlisle.med.harvard.edu" method="probed" conf="10"><cpe>cpe:/a:postfix:postfix</cpe></service><script id="smtp-commands" output="carlisle.med.harvard.edu, PIPELINING, SIZE 157286400, VRFY, ETRN, STARTTLS, ENHANCEDSTATUSCODES, 8BITMIME, DSN, CHUNKING, "/><script id="ssl-cert" output="Subject: commonName=carlisle.med.harvard.edu&#xa;Subject Alternative Name: DNS:carlisle.med.harvard.edu&#xa;Issuer: commonName=R11/organizationName=Let&apos;s Encrypt/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-10-10T13:55:24&#xa;Not valid after:  2025-01-08T13:55:23&#xa;MD5:   740b 129d abee 39f7 6632 af91 12a7 e83c&#xa;SHA-1: f68a e242 bc51 8df1 d275 2b4e f5a7 708e 482c 0e50"><table key="subject">
+<elem key="commonName">carlisle.med.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+<elem key="countryName">US</elem>
+<elem key="commonName">R11</elem>
+</table>
+<table key="pubkey">
+<elem key="modulus">BIGNUM: 0x562d5e1a4a38</elem>
+<elem key="type">rsa</elem>
+<elem key="exponent">BIGNUM: 0x562d5e1a40a8</elem>
+<elem key="bits">2048</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">59:23:99:D9:33:0D:73:E4:21:30:54:81:0E:0B:1D:21:E6:44:08:75</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">C5:CF:46:A4:EA:F4:C3:C0:7A:6C:95:C4:2D:B0:5E:92:2F:26:E3:B9</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://r11.o.lencr.org&#xa;CA Issuers - URI:http://r11.i.lencr.org/</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:carlisle.med.harvard.edu</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 3F:17:4B:4F:D7:22:47:58:94:1D:65:1C:84:BE:0D:12:&#xa;                ED:90:37:7F:1F:85:6A:EB:C1:BF:28:85:EC:F8:64:6E&#xa;    Timestamp : Oct 10 14:53:54.772 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:6F:2C:1F:32:01:F9:35:6D:FA:AE:3C:6A:&#xa;                B4:52:5B:A3:38:97:88:20:D3:04:E6:00:CF:C6:0D:78:&#xa;                CA:AE:53:90:02:21:00:A4:14:E5:38:A1:64:05:FB:19:&#xa;                8C:FE:28:B2:97:09:D7:7A:CA:1D:37:88:60:1A:72:98:&#xa;                09:8B:AC:53:CE:B1:28&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : E0:92:B3:FC:0C:1D:C8:E7:68:36:1F:DE:61:B9:96:4D:&#xa;                0A:52:78:19:8A:72:D6:72:C4:B0:4D:A5:6D:6F:54:04&#xa;    Timestamp : Oct 10 14:53:54.869 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:1E:21:73:A2:00:86:49:10:BB:65:CC:16:&#xa;                21:34:1C:50:CE:6F:6C:0C:B1:BC:82:68:33:A9:E5:FC:&#xa;                57:4F:85:11:02:20:6E:92:0B:0A:DE:AE:CE:DE:8F:4D:&#xa;                5E:4E:EC:B0:9B:CB:6E:B6:1D:79:D6:F1:AC:10:19:5B:&#xa;                7A:CB:10:6B:AE:FA</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-10-10T13:55:24</elem>
+<elem key="notAfter">2025-01-08T13:55:23</elem>
+</table>
+<elem key="md5">740b129dabee39f76632af9112a7e83c</elem>
+<elem key="sha1">f68ae242bc518df1d2752b4ef5a7708e482c0e50</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIE/zCCA+egAwIBAgISBIkLA1DijlI+sncYALKzDIxsMA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNSMTEwHhcNMjQxMDEwMTM1NTI0WhcNMjUwMTA4MTM1NTIzWjAjMSEwHwYDVQQD&#xa;ExhjYXJsaXNsZS5tZWQuaGFydmFyZC5lZHUwggEiMA0GCSqGSIb3DQEBAQUAA4IB&#xa;DwAwggEKAoIBAQDHOvK5bZPpctsEhsMtHFXXmn5PEPNJnPJ7H4tOvZ6cCuwEQl4F&#xa;qdjTtFTdoCl89q9jXCKS6WJ8MeJqsiXDQUcg4tYSULwPGOqQMGyXvo7LVjeHPeGX&#xa;rM6/xlaooobHqHzgd4Z3C1Vg/FP43lQh8G2oOj182SnnYB6YM9V95F0bM5QJwrgS&#xa;ZaenRVVGkVYKAp8++8/0TR0kWJqmGbbN+cVOsKv5ozuH6NeFIFUjxjJY3lJNcxZY&#xa;NI9oWW1Ag6uYbDXaTABi4Ht2cqaDz4f3pklqGNitQqg5EmH9eZb+HCzQs/TfDsi0&#xa;gQtpz+zFNwTnenTKM5EJgU/9YignfPSKNYO/AgMBAAGjggIbMIICFzAOBgNVHQ8B&#xa;Af8EBAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB&#xa;/wQCMAAwHQYDVR0OBBYEFFkjmdkzDXPkITBUgQ4LHSHmRAh1MB8GA1UdIwQYMBaA&#xa;FMXPRqTq9MPAemyVxC2wXpIvJuO5MFcGCCsGAQUFBwEBBEswSTAiBggrBgEFBQcw&#xa;AYYWaHR0cDovL3IxMS5vLmxlbmNyLm9yZzAjBggrBgEFBQcwAoYXaHR0cDovL3Ix&#xa;MS5pLmxlbmNyLm9yZy8wIwYDVR0RBBwwGoIYY2FybGlzbGUubWVkLmhhcnZhcmQu&#xa;ZWR1MBMGA1UdIAQMMAowCAYGZ4EMAQIBMIIBAwYKKwYBBAHWeQIEAgSB9ASB8QDv&#xa;AHYAPxdLT9ciR1iUHWUchL4NEu2QN38fhWrrwb8ohez4ZG4AAAGSduwO1AAABAMA&#xa;RzBFAiBvLB8yAfk1bfquPGq0UlujOJeIINME5gDPxg14yq5TkAIhAKQU5TihZAX7&#xa;GYz+KLKXCdd6yh03iGAacpgJi6xTzrEoAHUA4JKz/AwdyOdoNh/eYbmWTQpSeBmK&#xa;ctZyxLBNpW1vVAQAAAGSduwPNQAABAMARjBEAiAeIXOiAIZJELtlzBYhNBxQzm9s&#xa;DLG8gmgzqeX8V0+FEQIgbpILCt6uzt6PTV5O7LCby262HXnW8awQGVt6yxBrrvow&#xa;DQYJKoZIhvcNAQELBQADggEBAEfu+5Uo3JkCLogtbi0h5YdCZIHMTOPPvrzp+SNR&#xa;Gz5rBflCsVW5GoomnFV5nFXzixLeA6SNawBEnBC7sykXYDsI3yrsQUfA8tKlwAgk&#xa;KvAHPx2NAE7F5m1F4rJUjJRHFUktuCo6PbVxnT9Dxb64R/3AB9yqQ4yTfXKUOM/H&#xa;IBZqITgRP0CJ5lVmo80kvips/S/isV5aIc6nMy7cARQ2UH74qvzYP+J/SuytgTkp&#xa;0lgPvJrVGUvYtsMQ3+OlBn9sxh+QAs2UdJ392fNo8TO4FWiJ2xiR5v1cRGzpSe+S&#xa;Wbu87AWY73203Pve3LF2DSvh5rR26DBr7SlvZJBVzySXXiM=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+<port protocol="tcp" portid="993"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="imap" product="Cyrus imapd" version="3.0.13-Debian-3.0.13-5" hostname="carlisle.med.harvard.edu" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:cmu:cyrus_imap_server:3.0.13-debian-3.0.13-5</cpe></service><script id="imap-capabilities" output="NO URLAUTH=BINARY ANNOTATE-EXPERIMENT-1 MAILBOX-REFERRALS SORT=DISPLAY CONDSTORE QRESYNC Completed OK ANNOTATEMORE X-REPLICATION THREAD=REFERENCES RIGHTS=kxten X-QUOTA=X-NUM-FOLDERS X-QUOTA=X-ANNOTATION-STORAGE ENABLE X-QUOTA=MESSAGE IMAP4rev1 SPECIAL-USE XLIST CHILDREN SCAN COMPRESS=DEFLATE ATOMIC METADATA ID SASL-IR BINARY AUTH=LOGIN XMOVE AUTH=PLAIN URLAUTH SORT=MODSEQ SORT WITHIN CATENATE MOVE X-QUOTA=STORAGE CREATE-SPECIAL-USE UNSELECT SEARCH=FUZZY ESEARCH MULTIAPPEND LIST-METADATA LITERAL+ LIST-MYRIGHTS ACL UIDPLUS LIST-STATUS QUOTA LIST-EXTENDED THREAD=ORDEREDSUBJECT IDLEA0001 THREAD=REFS RENAME SORT=UID NAMESPACE DIGEST=SHA1"/><script id="ssl-cert" output="Subject: commonName=carlisle.med.harvard.edu&#xa;Subject Alternative Name: DNS:carlisle.med.harvard.edu&#xa;Issuer: commonName=R11/organizationName=Let&apos;s Encrypt/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-10-10T13:55:24&#xa;Not valid after:  2025-01-08T13:55:23&#xa;MD5:   740b 129d abee 39f7 6632 af91 12a7 e83c&#xa;SHA-1: f68a e242 bc51 8df1 d275 2b4e f5a7 708e 482c 0e50"><table key="subject">
+<elem key="commonName">carlisle.med.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+<elem key="countryName">US</elem>
+<elem key="commonName">R11</elem>
+</table>
+<table key="pubkey">
+<elem key="modulus">BIGNUM: 0x562d5ee26588</elem>
+<elem key="type">rsa</elem>
+<elem key="exponent">BIGNUM: 0x562d5ee243e8</elem>
+<elem key="bits">2048</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">59:23:99:D9:33:0D:73:E4:21:30:54:81:0E:0B:1D:21:E6:44:08:75</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">C5:CF:46:A4:EA:F4:C3:C0:7A:6C:95:C4:2D:B0:5E:92:2F:26:E3:B9</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://r11.o.lencr.org&#xa;CA Issuers - URI:http://r11.i.lencr.org/</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:carlisle.med.harvard.edu</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 3F:17:4B:4F:D7:22:47:58:94:1D:65:1C:84:BE:0D:12:&#xa;                ED:90:37:7F:1F:85:6A:EB:C1:BF:28:85:EC:F8:64:6E&#xa;    Timestamp : Oct 10 14:53:54.772 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:6F:2C:1F:32:01:F9:35:6D:FA:AE:3C:6A:&#xa;                B4:52:5B:A3:38:97:88:20:D3:04:E6:00:CF:C6:0D:78:&#xa;                CA:AE:53:90:02:21:00:A4:14:E5:38:A1:64:05:FB:19:&#xa;                8C:FE:28:B2:97:09:D7:7A:CA:1D:37:88:60:1A:72:98:&#xa;                09:8B:AC:53:CE:B1:28&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : E0:92:B3:FC:0C:1D:C8:E7:68:36:1F:DE:61:B9:96:4D:&#xa;                0A:52:78:19:8A:72:D6:72:C4:B0:4D:A5:6D:6F:54:04&#xa;    Timestamp : Oct 10 14:53:54.869 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:1E:21:73:A2:00:86:49:10:BB:65:CC:16:&#xa;                21:34:1C:50:CE:6F:6C:0C:B1:BC:82:68:33:A9:E5:FC:&#xa;                57:4F:85:11:02:20:6E:92:0B:0A:DE:AE:CE:DE:8F:4D:&#xa;                5E:4E:EC:B0:9B:CB:6E:B6:1D:79:D6:F1:AC:10:19:5B:&#xa;                7A:CB:10:6B:AE:FA</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-10-10T13:55:24</elem>
+<elem key="notAfter">2025-01-08T13:55:23</elem>
+</table>
+<elem key="md5">740b129dabee39f76632af9112a7e83c</elem>
+<elem key="sha1">f68ae242bc518df1d2752b4ef5a7708e482c0e50</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIE/zCCA+egAwIBAgISBIkLA1DijlI+sncYALKzDIxsMA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNSMTEwHhcNMjQxMDEwMTM1NTI0WhcNMjUwMTA4MTM1NTIzWjAjMSEwHwYDVQQD&#xa;ExhjYXJsaXNsZS5tZWQuaGFydmFyZC5lZHUwggEiMA0GCSqGSIb3DQEBAQUAA4IB&#xa;DwAwggEKAoIBAQDHOvK5bZPpctsEhsMtHFXXmn5PEPNJnPJ7H4tOvZ6cCuwEQl4F&#xa;qdjTtFTdoCl89q9jXCKS6WJ8MeJqsiXDQUcg4tYSULwPGOqQMGyXvo7LVjeHPeGX&#xa;rM6/xlaooobHqHzgd4Z3C1Vg/FP43lQh8G2oOj182SnnYB6YM9V95F0bM5QJwrgS&#xa;ZaenRVVGkVYKAp8++8/0TR0kWJqmGbbN+cVOsKv5ozuH6NeFIFUjxjJY3lJNcxZY&#xa;NI9oWW1Ag6uYbDXaTABi4Ht2cqaDz4f3pklqGNitQqg5EmH9eZb+HCzQs/TfDsi0&#xa;gQtpz+zFNwTnenTKM5EJgU/9YignfPSKNYO/AgMBAAGjggIbMIICFzAOBgNVHQ8B&#xa;Af8EBAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB&#xa;/wQCMAAwHQYDVR0OBBYEFFkjmdkzDXPkITBUgQ4LHSHmRAh1MB8GA1UdIwQYMBaA&#xa;FMXPRqTq9MPAemyVxC2wXpIvJuO5MFcGCCsGAQUFBwEBBEswSTAiBggrBgEFBQcw&#xa;AYYWaHR0cDovL3IxMS5vLmxlbmNyLm9yZzAjBggrBgEFBQcwAoYXaHR0cDovL3Ix&#xa;MS5pLmxlbmNyLm9yZy8wIwYDVR0RBBwwGoIYY2FybGlzbGUubWVkLmhhcnZhcmQu&#xa;ZWR1MBMGA1UdIAQMMAowCAYGZ4EMAQIBMIIBAwYKKwYBBAHWeQIEAgSB9ASB8QDv&#xa;AHYAPxdLT9ciR1iUHWUchL4NEu2QN38fhWrrwb8ohez4ZG4AAAGSduwO1AAABAMA&#xa;RzBFAiBvLB8yAfk1bfquPGq0UlujOJeIINME5gDPxg14yq5TkAIhAKQU5TihZAX7&#xa;GYz+KLKXCdd6yh03iGAacpgJi6xTzrEoAHUA4JKz/AwdyOdoNh/eYbmWTQpSeBmK&#xa;ctZyxLBNpW1vVAQAAAGSduwPNQAABAMARjBEAiAeIXOiAIZJELtlzBYhNBxQzm9s&#xa;DLG8gmgzqeX8V0+FEQIgbpILCt6uzt6PTV5O7LCby262HXnW8awQGVt6yxBrrvow&#xa;DQYJKoZIhvcNAQELBQADggEBAEfu+5Uo3JkCLogtbi0h5YdCZIHMTOPPvrzp+SNR&#xa;Gz5rBflCsVW5GoomnFV5nFXzixLeA6SNawBEnBC7sykXYDsI3yrsQUfA8tKlwAgk&#xa;KvAHPx2NAE7F5m1F4rJUjJRHFUktuCo6PbVxnT9Dxb64R/3AB9yqQ4yTfXKUOM/H&#xa;IBZqITgRP0CJ5lVmo80kvips/S/isV5aIc6nMy7cARQ2UH74qvzYP+J/SuytgTkp&#xa;0lgPvJrVGUvYtsMQ3+OlBn9sxh+QAs2UdJ392fNo8TO4FWiJ2xiR5v1cRGzpSe+S&#xa;Wbu87AWY73203Pve3LF2DSvh5rR26DBr7SlvZJBVzySXXiM=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="995"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="pop3" hostname="carlisle.med.harvard.edu" servicefp="SF-Port995-TCP:V=7.80%T=SSL%I=7%D=11/4%Time=672929E0%P=x86_64-pc-linux-gnu%r(NULL,87,&quot;\+OK\x20carlisle\.med\.harvard\.edu\x20Cyrus\x20POP3\x203\.0\.13-Debian-3\.0\.13-5\x20server\x20ready\x20&lt;1228660206080375894\.1730750938@carlisle\.med\.harvard\.edu&gt;\r\n&quot;)%r(GenericLines,BD,&quot;\+OK\x20carlisle\.med\.harvard\.edu\x20Cyrus\x20POP3\x203\.0\.13-Debian-3\.0\.13-5\x20server\x20ready\x20&lt;1228660206080375894\.1730750938@carlisle\.med\.harvard\.edu&gt;\r\n-ERR\x20Unrecognized\x20command\r\n-ERR\x20Unrecognized\x20command\r\n&quot;)%r(HTTPOptions,BD,&quot;\+OK\x20carlisle\.med\.harvard\.edu\x20Cyrus\x20POP3\x203\.0\.13-Debian-3\.0\.13-5\x20server\x20ready\x20&lt;4815225214178085814\.1730750949@carlisle\.med\.harvard\.edu&gt;\r\n-ERR\x20Unrecognized\x20command\r\n-ERR\x20Unrecognized\x20command\r\n&quot;);" tunnel="ssl" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  GenericLines: &#xa;    +OK carlisle.med.harvard.edu Cyrus POP3 3.0.13-Debian-3.0.13-5 server ready &lt;1228660206080375894.1730750938@carlisle.med.harvard.edu&gt;&#xa;    -ERR Unrecognized command&#xa;    -ERR Unrecognized command&#xa;  HTTPOptions: &#xa;    +OK carlisle.med.harvard.edu Cyrus POP3 3.0.13-Debian-3.0.13-5 server ready &lt;4815225214178085814.1730750949@carlisle.med.harvard.edu&gt;&#xa;    -ERR Unrecognized command&#xa;    -ERR Unrecognized command&#xa;  NULL: &#xa;    +OK carlisle.med.harvard.edu Cyrus POP3 3.0.13-Debian-3.0.13-5 server ready &lt;1228660206080375894.1730750938@carlisle.med.harvard.edu&gt;"><elem key="GenericLines">&#xa;    +OK carlisle.med.harvard.edu Cyrus POP3 3.0.13-Debian-3.0.13-5 server ready &lt;1228660206080375894.1730750938@carlisle.med.harvard.edu&gt;&#xa;    -ERR Unrecognized command&#xa;    -ERR Unrecognized command</elem>
+<elem key="HTTPOptions">&#xa;    +OK carlisle.med.harvard.edu Cyrus POP3 3.0.13-Debian-3.0.13-5 server ready &lt;4815225214178085814.1730750949@carlisle.med.harvard.edu&gt;&#xa;    -ERR Unrecognized command&#xa;    -ERR Unrecognized command</elem>
+<elem key="NULL">&#xa;    +OK carlisle.med.harvard.edu Cyrus POP3 3.0.13-Debian-3.0.13-5 server ready &lt;1228660206080375894.1730750938@carlisle.med.harvard.edu&gt;</elem>
+</script><script id="pop3-capabilities" output="PIPELINING UIDL LOGIN-DELAY(60) TOP APOP SASL(PLAIN LOGIN) USER RESP-CODES AUTH-RESP-CODE IMPLEMENTATION(Cyrus POP3 3) EXPIRE(NEVER)"/><script id="ssl-cert" output="Subject: commonName=carlisle.med.harvard.edu&#xa;Subject Alternative Name: DNS:carlisle.med.harvard.edu&#xa;Issuer: commonName=R11/organizationName=Let&apos;s Encrypt/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-10-10T13:55:24&#xa;Not valid after:  2025-01-08T13:55:23&#xa;MD5:   740b 129d abee 39f7 6632 af91 12a7 e83c&#xa;SHA-1: f68a e242 bc51 8df1 d275 2b4e f5a7 708e 482c 0e50"><table key="subject">
+<elem key="commonName">carlisle.med.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+<elem key="countryName">US</elem>
+<elem key="commonName">R11</elem>
+</table>
+<table key="pubkey">
+<elem key="modulus">BIGNUM: 0x562d5e14cf28</elem>
+<elem key="type">rsa</elem>
+<elem key="exponent">BIGNUM: 0x562d5e1f5298</elem>
+<elem key="bits">2048</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">59:23:99:D9:33:0D:73:E4:21:30:54:81:0E:0B:1D:21:E6:44:08:75</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">C5:CF:46:A4:EA:F4:C3:C0:7A:6C:95:C4:2D:B0:5E:92:2F:26:E3:B9</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://r11.o.lencr.org&#xa;CA Issuers - URI:http://r11.i.lencr.org/</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:carlisle.med.harvard.edu</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 3F:17:4B:4F:D7:22:47:58:94:1D:65:1C:84:BE:0D:12:&#xa;                ED:90:37:7F:1F:85:6A:EB:C1:BF:28:85:EC:F8:64:6E&#xa;    Timestamp : Oct 10 14:53:54.772 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:6F:2C:1F:32:01:F9:35:6D:FA:AE:3C:6A:&#xa;                B4:52:5B:A3:38:97:88:20:D3:04:E6:00:CF:C6:0D:78:&#xa;                CA:AE:53:90:02:21:00:A4:14:E5:38:A1:64:05:FB:19:&#xa;                8C:FE:28:B2:97:09:D7:7A:CA:1D:37:88:60:1A:72:98:&#xa;                09:8B:AC:53:CE:B1:28&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : E0:92:B3:FC:0C:1D:C8:E7:68:36:1F:DE:61:B9:96:4D:&#xa;                0A:52:78:19:8A:72:D6:72:C4:B0:4D:A5:6D:6F:54:04&#xa;    Timestamp : Oct 10 14:53:54.869 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:1E:21:73:A2:00:86:49:10:BB:65:CC:16:&#xa;                21:34:1C:50:CE:6F:6C:0C:B1:BC:82:68:33:A9:E5:FC:&#xa;                57:4F:85:11:02:20:6E:92:0B:0A:DE:AE:CE:DE:8F:4D:&#xa;                5E:4E:EC:B0:9B:CB:6E:B6:1D:79:D6:F1:AC:10:19:5B:&#xa;                7A:CB:10:6B:AE:FA</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-10-10T13:55:24</elem>
+<elem key="notAfter">2025-01-08T13:55:23</elem>
+</table>
+<elem key="md5">740b129dabee39f76632af9112a7e83c</elem>
+<elem key="sha1">f68ae242bc518df1d2752b4ef5a7708e482c0e50</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIE/zCCA+egAwIBAgISBIkLA1DijlI+sncYALKzDIxsMA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNSMTEwHhcNMjQxMDEwMTM1NTI0WhcNMjUwMTA4MTM1NTIzWjAjMSEwHwYDVQQD&#xa;ExhjYXJsaXNsZS5tZWQuaGFydmFyZC5lZHUwggEiMA0GCSqGSIb3DQEBAQUAA4IB&#xa;DwAwggEKAoIBAQDHOvK5bZPpctsEhsMtHFXXmn5PEPNJnPJ7H4tOvZ6cCuwEQl4F&#xa;qdjTtFTdoCl89q9jXCKS6WJ8MeJqsiXDQUcg4tYSULwPGOqQMGyXvo7LVjeHPeGX&#xa;rM6/xlaooobHqHzgd4Z3C1Vg/FP43lQh8G2oOj182SnnYB6YM9V95F0bM5QJwrgS&#xa;ZaenRVVGkVYKAp8++8/0TR0kWJqmGbbN+cVOsKv5ozuH6NeFIFUjxjJY3lJNcxZY&#xa;NI9oWW1Ag6uYbDXaTABi4Ht2cqaDz4f3pklqGNitQqg5EmH9eZb+HCzQs/TfDsi0&#xa;gQtpz+zFNwTnenTKM5EJgU/9YignfPSKNYO/AgMBAAGjggIbMIICFzAOBgNVHQ8B&#xa;Af8EBAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB&#xa;/wQCMAAwHQYDVR0OBBYEFFkjmdkzDXPkITBUgQ4LHSHmRAh1MB8GA1UdIwQYMBaA&#xa;FMXPRqTq9MPAemyVxC2wXpIvJuO5MFcGCCsGAQUFBwEBBEswSTAiBggrBgEFBQcw&#xa;AYYWaHR0cDovL3IxMS5vLmxlbmNyLm9yZzAjBggrBgEFBQcwAoYXaHR0cDovL3Ix&#xa;MS5pLmxlbmNyLm9yZy8wIwYDVR0RBBwwGoIYY2FybGlzbGUubWVkLmhhcnZhcmQu&#xa;ZWR1MBMGA1UdIAQMMAowCAYGZ4EMAQIBMIIBAwYKKwYBBAHWeQIEAgSB9ASB8QDv&#xa;AHYAPxdLT9ciR1iUHWUchL4NEu2QN38fhWrrwb8ohez4ZG4AAAGSduwO1AAABAMA&#xa;RzBFAiBvLB8yAfk1bfquPGq0UlujOJeIINME5gDPxg14yq5TkAIhAKQU5TihZAX7&#xa;GYz+KLKXCdd6yh03iGAacpgJi6xTzrEoAHUA4JKz/AwdyOdoNh/eYbmWTQpSeBmK&#xa;ctZyxLBNpW1vVAQAAAGSduwPNQAABAMARjBEAiAeIXOiAIZJELtlzBYhNBxQzm9s&#xa;DLG8gmgzqeX8V0+FEQIgbpILCt6uzt6PTV5O7LCby262HXnW8awQGVt6yxBrrvow&#xa;DQYJKoZIhvcNAQELBQADggEBAEfu+5Uo3JkCLogtbi0h5YdCZIHMTOPPvrzp+SNR&#xa;Gz5rBflCsVW5GoomnFV5nFXzixLeA6SNawBEnBC7sykXYDsI3yrsQUfA8tKlwAgk&#xa;KvAHPx2NAE7F5m1F4rJUjJRHFUktuCo6PbVxnT9Dxb64R/3AB9yqQ4yTfXKUOM/H&#xa;IBZqITgRP0CJ5lVmo80kvips/S/isV5aIc6nMy7cARQ2UH74qvzYP+J/SuytgTkp&#xa;0lgPvJrVGUvYtsMQ3+OlBn9sxh+QAs2UdJ392fNo8TO4FWiJ2xiR5v1cRGzpSe+S&#xa;Wbu87AWY73203Pve3LF2DSvh5rR26DBr7SlvZJBVzySXXiM=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+</ports>
+<times srtt="12641" rttvar="1343" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730750958"/>
+<taskend task="NSE" time="1730750958"/>
+<taskbegin task="NSE" time="1730750958"/>
+<taskend task="NSE" time="1730750958"/>
+<taskbegin task="NSE" time="1730750958"/>
+<taskend task="NSE" time="1730750958"/>
+<runstats><finished time="1730750958" timestr="Mon Nov  4 20:09:18 2024" elapsed="31.49" summary="Nmap done at Mon Nov  4 20:09:18 2024; 1 IP address (1 host up) scanned in 31.49 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
