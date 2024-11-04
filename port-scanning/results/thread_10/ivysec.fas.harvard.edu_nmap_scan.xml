@@ -19,3 +19,107 @@
 <taskbegin task="Connect Scan" time="1730742649"/>
 <taskend task="Connect Scan" time="1730742653" extrainfo="1000 total ports"/>
 <taskbegin task="Service scan" time="1730742653"/>
+<taskend task="Service scan" time="1730742665" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1730742665"/>
+<taskend task="NSE" time="1730742666"/>
+<taskbegin task="NSE" time="1730742666"/>
+<taskend task="NSE" time="1730742666"/>
+<taskbegin task="NSE" time="1730742666"/>
+<taskend task="NSE" time="1730742666"/>
+<host starttime="1730742649" endtime="1730742666"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="18.233.30.180" addrtype="ipv4"/>
+<hostnames>
+<hostname name="ivysec.fas.harvard.edu" type="user"/>
+<hostname name="ec2-18-233-30-180.compute-1.amazonaws.com" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="998">
+<extrareasons reason="no-responses" count="998"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="awselb/2.0" servicefp="SF-Port80-TCP:V=7.80%I=7%D=11/4%Time=67290983%P=x86_64-pc-linux-gnu%r(GetRequest,176,&quot;HTTP/1\.1\x20301\x20Moved\x20Permanently\r\nServer:\x20awselb/2\.0\r\nDate:\x20Mon,\x2004\x20Nov\x202024\x2017:50:59\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20134\r\nConnection:\x20close\r\nLocation:\x20https://ivyords-prod-app-elb-2119910298\.us-east-1\.elb\.amazonaws\.com:443/\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;301\x20Moved\x20Permanently&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;301\x20Moved\x20Permanently&lt;/h1&gt;&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(HTTPOptions,176,&quot;HTTP/1\.1\x20301\x20Moved\x20Permanently\r\nServer:\x20awselb/2\.0\r\nDate:\x20Mon,\x2004\x20Nov\x202024\x2017:50:59\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20134\r\nConnection:\x20close\r\nLocation:\x20https://ivyords-prod-app-elb-2119910298\.us-east-1\.elb\.amazonaws\.com:443/\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;301\x20Moved\x20Permanently&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;301\x20Moved\x20Permanently&lt;/h1&gt;&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(RTSPRequest,7A,&quot;&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(X11Probe,110,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nServer:\x20awselb/2\.0\r\nDate:\x20Mon,\x2004\x20Nov\x202024\x2017:50:59\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20122\r\nConnection:\x20close\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(FourOhFourRequest,199,&quot;HTTP/1\.1\x20301\x20Moved\x20Permanently\r\nServer:\x20awselb/2\.0\r\nDate:\x20Mon,\x2004\x20Nov\x202024\x2017:50:59\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20134\r\nConnection:\x20close\r\nLocation:\x20https://ivyords-prod-app-elb-2119910298\.us-east-1\.elb\.amazonaws\.com:443/nice%20ports%2C/Tri%6Eity\.txt%2ebak\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;301\x20Moved\x20Permanently&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;301\x20Moved\x20Permanently&lt;/h1&gt;&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;);" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  FourOhFourRequest: &#xa;    HTTP/1.1 301 Moved Permanently&#xa;    Server: awselb/2.0&#xa;    Date: Mon, 04 Nov 2024 17:50:59 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 134&#xa;    Connection: close&#xa;    Location: https://ivyords-prod-app-elb-2119910298.us-east-1.elb.amazonaws.com:443/nice%20ports%2C/Tri%6Eity.txt%2ebak&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;301 Moved Permanently&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;301 Moved Permanently&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;&#xa;  GetRequest, HTTPOptions: &#xa;    HTTP/1.1 301 Moved Permanently&#xa;    Server: awselb/2.0&#xa;    Date: Mon, 04 Nov 2024 17:50:59 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 134&#xa;    Connection: close&#xa;    Location: https://ivyords-prod-app-elb-2119910298.us-east-1.elb.amazonaws.com:443/&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;301 Moved Permanently&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;301 Moved Permanently&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;&#xa;  RTSPRequest: &#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;&#xa;  X11Probe: &#xa;    HTTP/1.1 400 Bad Request&#xa;    Server: awselb/2.0&#xa;    Date: Mon, 04 Nov 2024 17:50:59 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 122&#xa;    Connection: close&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;"><elem key="FourOhFourRequest">&#xa;    HTTP/1.1 301 Moved Permanently&#xa;    Server: awselb/2.0&#xa;    Date: Mon, 04 Nov 2024 17:50:59 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 134&#xa;    Connection: close&#xa;    Location: https://ivyords-prod-app-elb-2119910298.us-east-1.elb.amazonaws.com:443/nice%20ports%2C/Tri%6Eity.txt%2ebak&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;301 Moved Permanently&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;301 Moved Permanently&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;</elem>
+<elem key="GetRequest, HTTPOptions">&#xa;    HTTP/1.1 301 Moved Permanently&#xa;    Server: awselb/2.0&#xa;    Date: Mon, 04 Nov 2024 17:50:59 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 134&#xa;    Connection: close&#xa;    Location: https://ivyords-prod-app-elb-2119910298.us-east-1.elb.amazonaws.com:443/&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;301 Moved Permanently&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;301 Moved Permanently&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;</elem>
+<elem key="RTSPRequest">&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;</elem>
+<elem key="X11Probe">&#xa;    HTTP/1.1 400 Bad Request&#xa;    Server: awselb/2.0&#xa;    Date: Mon, 04 Nov 2024 17:50:59 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 122&#xa;    Connection: close&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;</elem>
+</script><script id="http-server-header" output="awselb/2.0"><elem>awselb/2.0</elem>
+</script><script id="http-title" output="403 Forbidden"><elem key="title">403 Forbidden</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.37" extrainfo="(Red Hat Enterprise Linux) OpenSSL/1.1.1k" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.37</cpe></service><script id="http-server-header" output="Apache/2.4.37 (Red Hat Enterprise Linux) OpenSSL/1.1.1k"><elem>Apache/2.4.37 (Red Hat Enterprise Linux) OpenSSL/1.1.1k</elem>
+</script><script id="http-title" output="403 Forbidden"><elem key="title">403 Forbidden</elem>
+</script><script id="ssl-cert" output="Subject: commonName=ivyprd-apex.fas.harvard.edu&#xa;Subject Alternative Name: DNS:ivyprd-apex.fas.harvard.edu, DNS:ccreport.fas.harvard.edu, DNS:sst.fas.harvard.edu, DNS:qni.fas.harvard.edu, DNS:nearme.fas.harvard.edu, DNS:finreport.fas.harvard.edu, DNS:ivysec.fas.harvard.edu&#xa;Issuer: commonName=Amazon RSA 2048 M03/organizationName=Amazon/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-04-03T00:00:00&#xa;Not valid after:  2025-05-03T23:59:59&#xa;MD5:   9c26 6cb7 6f4c b872 d570 dcfb ddda 1f69&#xa;SHA-1: 9625 8834 88b2 6285 386a 6aa9 9fe9 a5be 30fe 4d44"><table key="subject">
+<elem key="commonName">ivyprd-apex.fas.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="organizationName">Amazon</elem>
+<elem key="countryName">US</elem>
+<elem key="commonName">Amazon RSA 2048 M03</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="modulus">BIGNUM: 0x558972933f48</elem>
+<elem key="bits">2048</elem>
+<elem key="exponent">BIGNUM: 0x558972962a28</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">55:D9:18:5F:D2:1C:CC:01:E1:58:B4:BE:AB:D9:55:42:01:D7:2E:02</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">2D:91:D5:A7:D6:94:56:35:F9:6C:C1:03:74:DC:75:2B:F6:1C:7A:66</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:ivyprd-apex.fas.harvard.edu, DNS:ccreport.fas.harvard.edu, DNS:sst.fas.harvard.edu, DNS:qni.fas.harvard.edu, DNS:nearme.fas.harvard.edu, DNS:finreport.fas.harvard.edu, DNS:ivysec.fas.harvard.edu</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://crl.r2m03.amazontrust.com/r2m03.crl</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://ocsp.r2m03.amazontrust.com&#xa;CA Issuers - URI:http://crt.r2m03.amazontrust.com/r2m03.cer</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 4E:75:A3:27:5C:9A:10:C3:38:5B:6C:D4:DF:3F:52:EB:&#xa;                1D:F0:E0:8E:1B:8D:69:C0:B1:FA:64:B1:62:9A:39:DF&#xa;    Timestamp : Apr  3 03:09:47.558 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:10:1E:22:E9:51:68:10:07:0A:3C:FD:07:&#xa;                AD:60:48:5A:45:F9:1A:C2:9C:55:08:68:B4:A4:68:91:&#xa;                5C:06:36:1A:02:21:00:D4:81:30:33:4A:41:92:63:03:&#xa;                CA:16:B3:74:07:D5:A8:CF:EE:72:8E:6A:23:1A:9A:6C:&#xa;                DE:93:B7:AF:C1:8E:33&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 55:81:D4:C2:16:90:36:01:4A:EA:0B:9B:57:3C:53:F0:&#xa;                C0:E4:38:78:70:25:08:17:2F:A3:AA:1D:07:13:D3:0C&#xa;    Timestamp : Apr  3 03:09:47.607 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:2F:58:C7:B2:F5:3B:17:6C:25:65:1D:09:&#xa;                E4:A3:B7:6A:6C:1C:39:F4:49:5A:81:CE:7A:18:54:4E:&#xa;                66:EB:1E:B5:02:21:00:F2:2C:B6:9E:7C:0F:AE:24:B4:&#xa;                73:A3:89:F5:B5:9D:03:0D:25:3B:57:95:5C:DA:CE:26:&#xa;                37:64:F6:AD:F2:EB:9A&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 7D:59:1E:12:E1:78:2A:7B:1C:61:67:7C:5E:FD:F8:D0:&#xa;                87:5C:14:A0:4E:95:9E:B9:03:2F:D9:0E:8C:2E:79:B8&#xa;    Timestamp : Apr  3 03:09:47.446 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:64:4B:0F:EC:61:0C:2C:98:56:C3:C2:07:&#xa;                72:79:36:2E:84:70:B9:21:67:DD:F9:76:C2:9E:4E:E0:&#xa;                E1:71:58:EC:02:21:00:F6:26:25:33:C1:14:BD:03:BA:&#xa;                AA:6E:AF:42:88:42:CF:25:F7:8C:15:46:F2:DC:E7:6E:&#xa;                05:29:03:FB:B7:BE:C7</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notAfter">2025-05-03T23:59:59</elem>
+<elem key="notBefore">2024-04-03T00:00:00</elem>
+</table>
+<elem key="md5">9c266cb76f4cb872d570dcfbddda1f69</elem>
+<elem key="sha1">9625883488b26285386a6aa99fe9a5be30fe4d44</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIGdDCCBVygAwIBAgIQA1NLkg/8vEBB4egcwwq90TANBgkqhkiG9w0BAQsFADA8&#xa;MQswCQYDVQQGEwJVUzEPMA0GA1UEChMGQW1hem9uMRwwGgYDVQQDExNBbWF6b24g&#xa;UlNBIDIwNDggTTAzMB4XDTI0MDQwMzAwMDAwMFoXDTI1MDUwMzIzNTk1OVowJjEk&#xa;MCIGA1UEAxMbaXZ5cHJkLWFwZXguZmFzLmhhcnZhcmQuZWR1MIIBIjANBgkqhkiG&#xa;9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwS+fXu4K8+27I1KBYiHW0t8nZgmAPQnWrqFy&#xa;vzdohcnsM4P9rgV7N9BocU4OStuMWa7YYoP3JyntWNu+Rz0jFsA8F+dPhBUQN050&#xa;ysp7gL2v0u0O06/5nZMrdPNKVoqxAsB4fIC23GULmuu9yxtR7AdVSmvPz+s6M5uR&#xa;iST6l94qmWfXUZHbPAxMtk8nGHEyq+RH4Piwm9CKt57ifaaUCR9iKjGRV1WUT0a3&#xa;o70ljWlW1VepLdq9w74X6jl5CP5AsIFU7yw+dpy5xLBf19LId2wVrzsQyjWnUfi9&#xa;IuXRK8GDu5HbHTDBIDVfIrDhw0LY7/YmBUd8uUgAtBOYxP9BSQIDAQABo4IDhjCC&#xa;A4IwHwYDVR0jBBgwFoAUVdkYX9IczAHhWLS+q9lVQgHXLgIwHQYDVR0OBBYEFC2R&#xa;1afWlFY1+WzBA3TcdSv2HHpmMIG3BgNVHREEga8wgayCG2l2eXByZC1hcGV4LmZh&#xa;cy5oYXJ2YXJkLmVkdYIYY2NyZXBvcnQuZmFzLmhhcnZhcmQuZWR1ghNzc3QuZmFz&#xa;LmhhcnZhcmQuZWR1ghNxbmkuZmFzLmhhcnZhcmQuZWR1ghZuZWFybWUuZmFzLmhh&#xa;cnZhcmQuZWR1ghlmaW5yZXBvcnQuZmFzLmhhcnZhcmQuZWR1ghZpdnlzZWMuZmFz&#xa;LmhhcnZhcmQuZWR1MBMGA1UdIAQMMAowCAYGZ4EMAQIBMA4GA1UdDwEB/wQEAwIF&#xa;oDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwOwYDVR0fBDQwMjAwoC6g&#xa;LIYqaHR0cDovL2NybC5yMm0wMy5hbWF6b250cnVzdC5jb20vcjJtMDMuY3JsMHUG&#xa;CCsGAQUFBwEBBGkwZzAtBggrBgEFBQcwAYYhaHR0cDovL29jc3AucjJtMDMuYW1h&#xa;em9udHJ1c3QuY29tMDYGCCsGAQUFBzAChipodHRwOi8vY3J0LnIybTAzLmFtYXpv&#xa;bnRydXN0LmNvbS9yMm0wMy5jZXIwDAYDVR0TAQH/BAIwADCCAX4GCisGAQQB1nkC&#xa;BAIEggFuBIIBagFoAHYATnWjJ1yaEMM4W2zU3z9S6x3w4I4bjWnAsfpksWKaOd8A&#xa;AAGOoe8ipgAABAMARzBFAiAQHiLpUWgQBwo8/QetYEhaRfkawpxVCGi0pGiRXAY2&#xa;GgIhANSBMDNKQZJjA8oWs3QH1ajP7nKOaiMammzek7evwY4zAHYAVYHUwhaQNgFK&#xa;6gubVzxT8MDkOHhwJQgXL6OqHQcT0wwAAAGOoe8i1wAABAMARzBFAiAvWMey9TsX&#xa;bCVlHQnko7dqbBw59Elagc56GFROZusetQIhAPIstp58D64ktHOjifW1nQMNJTtX&#xa;lVzaziY3ZPat8uuaAHYAfVkeEuF4KnscYWd8Xv340IdcFKBOlZ65Ay/ZDowuebgA&#xa;AAGOoe8iNgAABAMARzBFAiBkSw/sYQwsmFbDwgdyeTYuhHC5IWfd+XbCnk7g4XFY&#xa;7AIhAPYmJTPBFL0Duqpur0KIQs8l94wVRvLc524FKQP7t77HMA0GCSqGSIb3DQEB&#xa;CwUAA4IBAQCbUyHIwz7dDS7DhFwbnOIImCrlrEFimIahN0OQLjJI2Duko4BZKrNg&#xa;SfI7/lRo4NgjJedN4J7xU2GqmS/WOVOheQKKL8yIXT1+8Sq+ivuAgevc5DHefsSD&#xa;4YPXusfqVsIH7WaBzCbDiYMfEoZFHEN6p25yh0rKlbmEML90JtnCrYtz1yPq7zlr&#xa;WwUWTxWSD7HkfX0QdKXiGwnT3tCGGnG6ypIP9/U2bKJ35sAY1wwSPI3kGqA1z9aU&#xa;EmbLLhre1Y3ZJqbQncjAQAZNePPVEYAYZoFw/9G+RRAWxPrwwO1fcdoYRFYsQZXk&#xa;BRflqreyzeoCUkrKS3VV/lpM7gVfeZUc&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+</ports>
+<times srtt="6975" rttvar="2856" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730742666"/>
+<taskend task="NSE" time="1730742666"/>
+<taskbegin task="NSE" time="1730742666"/>
+<taskend task="NSE" time="1730742666"/>
+<taskbegin task="NSE" time="1730742666"/>
+<taskend task="NSE" time="1730742666"/>
+<runstats><finished time="1730742666" timestr="Mon Nov  4 17:51:06 2024" elapsed="17.69" summary="Nmap done at Mon Nov  4 17:51:06 2024; 1 IP address (1 host up) scanned in 17.69 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
