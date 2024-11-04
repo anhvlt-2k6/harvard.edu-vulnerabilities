@@ -37,17 +37,19 @@ jobs:
 
       - name: Wait for changes and Commit
         run: |
-          git config --local user.name \"github-actions[bot]\"
-          git config --local user.email \"github-actions[bot]@users.noreply.github.com\"
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+
           while true; do
-            git pull
+            git pull --rebase || git pull  # First try rebase, fallback to merge if it fails
             git add .
-            if ! git commit -m \"GitHub Action Bot\"; then
-              echo \"No changes to commit\"
+            
+            if ! git commit -m "GitHub Action Bot"; then
+              echo "No changes to commit"
             else
-              git push --force
+              git push --force  # Force push to avoid errors due to non-fast-forward
             fi
-            git pull
+            
             sleep 60
           done
         """)
