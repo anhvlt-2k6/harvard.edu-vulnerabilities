@@ -23,3 +23,120 @@
 <taskbegin task="NSE" time="1730735432"/>
 <taskend task="NSE" time="1730735462"/>
 <taskbegin task="NSE" time="1730735462"/>
+<taskend task="NSE" time="1730735649"/>
+<taskbegin task="NSE" time="1730735649"/>
+<taskend task="NSE" time="1730735649"/>
+<host starttime="1730735416" endtime="1730735649"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="185.132.6.184" addrtype="ipv4"/>
+<hostnames>
+<hostname name="calendar.commonspaces.harvard.edu" type="user"/>
+<hostname name="185.132.6.184.static.a2webhosting.com" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="917">
+<extrareasons reason="no-responses" count="917"/>
+</extraports>
+<extraports state="closed" count="72">
+<extrareasons reason="conn-refused" count="72"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ftp" product="Pure-FTPd" method="probed" conf="10"><cpe>cpe:/a:pureftpd:pure-ftpd</cpe></service></port>
+<port protocol="tcp" portid="25"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtp" product="Exim smtpd" version="4.96.2" hostname="mi3-ss50.a2hosting.com" method="probed" conf="10"><cpe>cpe:/a:exim:exim:4.96.2</cpe></service><script id="smtp-commands" output="Couldn&apos;t establish connection on port 25"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" method="probed" conf="10"><cpe>cpe:/a:apache:http_server</cpe></service><script id="http-favicon" output="Unknown favicon MD5: 1FBC04D9687134E4B7C9012DC6E5849E"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="imunify360-webshield/1.21"><elem>imunify360-webshield/1.21</elem>
+</script><script id="https-redirect" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="tcp" portid="110"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="pop3" product="Dovecot pop3d" method="probed" conf="10"><cpe>cpe:/a:dovecot:dovecot</cpe></service></port>
+<port protocol="tcp" portid="143"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="imap" product="Dovecot imapd" method="probed" conf="10"><cpe>cpe:/a:dovecot:dovecot</cpe></service></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssl" product="Apache httpd" extrainfo="SSL-only mode" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:apache:http_server</cpe></service><script id="http-favicon" output="Unknown favicon MD5: BD906CAB19B205E85C45E9A46698C48D"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="imunify360-webshield/1.21"><elem>imunify360-webshield/1.21</elem>
+</script><script id="http-title" output="403 Forbidden"><elem key="title">403 Forbidden</elem>
+</script><script id="ssl-cert" output="Subject: commonName=cpcalendars.harvardcscalendar.a2hosted.com&#xa;Subject Alternative Name: DNS:autodiscover.harvardcscalendar.a2hosted.com, DNS:calendar.commonspaces.harvard.edu, DNS:cpanel.harvardcscalendar.a2hosted.com, DNS:cpcalendars.harvardcscalendar.a2hosted.com, DNS:cpcontacts.harvardcscalendar.a2hosted.com, DNS:harvardcscalendar.a2hosted.com, DNS:mail.harvardcscalendar.a2hosted.com, DNS:webdisk.harvardcscalendar.a2hosted.com, DNS:webmail.harvardcscalendar.a2hosted.com, DNS:www.harvardcscalendar.a2hosted.com&#xa;Issuer: commonName=R11/organizationName=Let&apos;s Encrypt/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-09-09T03:43:36&#xa;Not valid after:  2024-12-08T03:43:35&#xa;MD5:   6872 54cd c1a8 a64d 0a92 c4e2 9451 aa03&#xa;SHA-1: 9aca 3f51 8ecb de55 2c4a 8937 b6f1 8f8a 20a0 c1d8"><table key="subject">
+<elem key="commonName">cpcalendars.harvardcscalendar.a2hosted.com</elem>
+</table>
+<table key="issuer">
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+<elem key="countryName">US</elem>
+<elem key="commonName">R11</elem>
+</table>
+<table key="pubkey">
+<elem key="exponent">BIGNUM: 0x55c6bab59a38</elem>
+<elem key="modulus">BIGNUM: 0x55c6bacd3f88</elem>
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">CA:FALSE</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="value">AC:E3:4A:84:2D:70:6A:8E:00:CC:B5:41:2D:5A:5C:77:A4:B9:63:18</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="value">C5:CF:46:A4:EA:F4:C3:C0:7A:6C:95:C4:2D:B0:5E:92:2F:26:E3:B9</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">OCSP - URI:http://r11.o.lencr.org&#xa;CA Issuers - URI:http://r11.i.lencr.org/</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">DNS:autodiscover.harvardcscalendar.a2hosted.com, DNS:calendar.commonspaces.harvard.edu, DNS:cpanel.harvardcscalendar.a2hosted.com, DNS:cpcalendars.harvardcscalendar.a2hosted.com, DNS:cpcontacts.harvardcscalendar.a2hosted.com, DNS:harvardcscalendar.a2hosted.com, DNS:mail.harvardcscalendar.a2hosted.com, DNS:webdisk.harvardcscalendar.a2hosted.com, DNS:webmail.harvardcscalendar.a2hosted.com, DNS:www.harvardcscalendar.a2hosted.com</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+<table>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 76:FF:88:3F:0A:B6:FB:95:51:C2:61:CC:F5:87:BA:34:&#xa;                B4:A4:CD:BB:29:DC:68:42:0A:9F:E6:67:4C:5A:3A:74&#xa;    Timestamp : Sep  9 04:42:06.647 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:9C:C2:9B:B6:AA:D0:64:3F:FE:40:E3:&#xa;                F2:EE:C6:9C:FB:25:86:22:AB:D5:AF:E8:25:77:FB:29:&#xa;                09:3C:47:07:76:02:21:00:DD:81:7E:2F:07:95:BC:65:&#xa;                F0:6C:12:B3:1D:B0:CE:ED:77:2C:21:8F:A9:33:05:BF:&#xa;                BF:17:E6:81:A8:56:E8:33&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 48:B0:E3:6B:DA:A6:47:34:0F:E5:6A:02:FA:9D:30:EB:&#xa;                1C:52:01:CB:56:DD:2C:81:D9:BB:BF:AB:39:D8:84:73&#xa;    Timestamp : Sep  9 04:42:06.788 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:6F:41:F2:13:6F:24:8B:85:20:C3:A8:57:&#xa;                1C:CD:E7:BA:FA:4E:0E:03:D9:12:F3:C7:7B:A5:D2:EE:&#xa;                76:AA:CA:23:02:21:00:B3:A1:46:7C:E3:C2:7A:E5:C3:&#xa;                5B:AD:B4:91:15:B2:26:52:12:F9:57:89:7E:C5:28:E0:&#xa;                60:39:BB:FB:36:31:5C</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notAfter">2024-12-08T03:43:35</elem>
+<elem key="notBefore">2024-09-09T03:43:36</elem>
+</table>
+<elem key="md5">687254cdc1a8a64d0a92c4e29451aa03</elem>
+<elem key="sha1">9aca3f518ecbde552c4a8937b6f18f8a20a0c1d8</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIGhjCCBW6gAwIBAgISBDWSzVoGrbPjbmB2iL0AVkvmMA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNSMTEwHhcNMjQwOTA5MDM0MzM2WhcNMjQxMjA4MDM0MzM1WjA1MTMwMQYDVQQD&#xa;EypjcGNhbGVuZGFycy5oYXJ2YXJkY3NjYWxlbmRhci5hMmhvc3RlZC5jb20wggEi&#xa;MA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDb5yH2oxvSAoweqwD9C3RcsUBB&#xa;OOr/ePSG+O3st39mJiCJXyFzJK/a+eyVLXFHUWxn/IhBCcSjxFkOfW3ZsjXq8uoP&#xa;r+p3vmOchFjup5Wll0CAvVe7zISpGhk0QoAyIopspdn6yCiCcfaT/QA1ms8kQCnc&#xa;YLo93FoocqGdDD65082QusM4KKBiNzePOa0sw7nJNzuV7Ba5UWlDMauFSbfvT4mv&#xa;fizWuJgmq8hYuQTEngpJ/3qBNy03oHdJSh0lwQtcVaXKBbDyyUeLWdrG9OCAgAGu&#xa;TE9Jfb4nY8daeYcgYCvybuhpYd/N93KoQekXcp+f4MkBaA9AK1PRESjKjZqHAgMB&#xa;AAGjggOQMIIDjDAOBgNVHQ8BAf8EBAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEG&#xa;CCsGAQUFBwMCMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYEFKzjSoQtcGqOAMy1QS1a&#xa;XHekuWMYMB8GA1UdIwQYMBaAFMXPRqTq9MPAemyVxC2wXpIvJuO5MFcGCCsGAQUF&#xa;BwEBBEswSTAiBggrBgEFBQcwAYYWaHR0cDovL3IxMS5vLmxlbmNyLm9yZzAjBggr&#xa;BgEFBQcwAoYXaHR0cDovL3IxMS5pLmxlbmNyLm9yZy8wggGUBgNVHREEggGLMIIB&#xa;h4IrYXV0b2Rpc2NvdmVyLmhhcnZhcmRjc2NhbGVuZGFyLmEyaG9zdGVkLmNvbYIh&#xa;Y2FsZW5kYXIuY29tbW9uc3BhY2VzLmhhcnZhcmQuZWR1giVjcGFuZWwuaGFydmFy&#xa;ZGNzY2FsZW5kYXIuYTJob3N0ZWQuY29tgipjcGNhbGVuZGFycy5oYXJ2YXJkY3Nj&#xa;YWxlbmRhci5hMmhvc3RlZC5jb22CKWNwY29udGFjdHMuaGFydmFyZGNzY2FsZW5k&#xa;YXIuYTJob3N0ZWQuY29tgh5oYXJ2YXJkY3NjYWxlbmRhci5hMmhvc3RlZC5jb22C&#xa;I21haWwuaGFydmFyZGNzY2FsZW5kYXIuYTJob3N0ZWQuY29tgiZ3ZWJkaXNrLmhh&#xa;cnZhcmRjc2NhbGVuZGFyLmEyaG9zdGVkLmNvbYImd2VibWFpbC5oYXJ2YXJkY3Nj&#xa;YWxlbmRhci5hMmhvc3RlZC5jb22CInd3dy5oYXJ2YXJkY3NjYWxlbmRhci5hMmhv&#xa;c3RlZC5jb20wEwYDVR0gBAwwCjAIBgZngQwBAgEwggEFBgorBgEEAdZ5AgQCBIH2&#xa;BIHzAPEAdwB2/4g/Crb7lVHCYcz1h7o0tKTNuyncaEIKn+ZnTFo6dAAAAZHVFsu3&#xa;AAAEAwBIMEYCIQCcwpu2qtBkP/5A4/Luxpz7JYYiq9Wv6CV3+ykJPEcHdgIhAN2B&#xa;fi8Hlbxl8GwSsx2wzu13LCGPqTMFv78X5oGoVugzAHYASLDja9qmRzQP5WoC+p0w&#xa;6xxSActW3SyB2bu/qznYhHMAAAGR1RbMRAAABAMARzBFAiBvQfITbySLhSDDqFcc&#xa;zee6+k4OA9kS88d7pdLudqrKIwIhALOhRnzjwnrlw1uttJEVsiZSEvlXiX7FKOBg&#xa;Obv7NjFcMA0GCSqGSIb3DQEBCwUAA4IBAQAcb6yyY5NmRCAmxu1+fZO+wcD+TBPK&#xa;P97TKerWK8d+yjTtlXcseb7CrJHzQSzfuHUgdQbhspXCinb+cu8Hhy2gtMJ+pnOi&#xa;P/8UQbzmucxeOwx+LsdP3P2kHEvmqaD5dsNbAMuWXI10RDG8WUli14/27FmP+YiL&#xa;J+M4jfHrSxPELSTLd6jbVpZWBmugwBslxBvY1AIh6/+nsdHeQiFXt5MuafJvvYZ1&#xa;Uye5BFmdUyrfT2BThv1xmIwyzUEoO//yLWv7PY756GrEjTMJ++LQyIcRB5DS3szQ&#xa;7gjkWdYKRCDDGS/yvioAZ3vnYilFm7DVGWG7HUKq9DnGeNlu1jPVljWh&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="tls-alpn" output="&#xa;  h2&#xa;  http/1.1"><elem>h2</elem>
+<elem>http/1.1</elem>
+</script></port>
+<port protocol="tcp" portid="465"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtp" product="Exim smtpd" version="4.96.2" hostname="mi3-ss50.a2hosting.com" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:exim:exim:4.96.2</cpe></service><script id="smtp-commands" output="Couldn&apos;t establish connection on port 465"/></port>
+<port protocol="tcp" portid="587"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtp" product="Exim smtpd" version="4.96.2" hostname="mi3-ss50.a2hosting.com" method="probed" conf="10"><cpe>cpe:/a:exim:exim:4.96.2</cpe></service><script id="smtp-commands" output="Couldn&apos;t establish connection on port 587"/><script id="smtp-ntlm-info" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="tcp" portid="993"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="imap" product="Dovecot imapd" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:dovecot:dovecot</cpe></service></port>
+<port protocol="tcp" portid="995"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="pop3" product="Dovecot pop3d" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:dovecot:dovecot</cpe></service><script id="pop3-capabilities" output="AUTH-RESP-CODE USER PIPELINING UIDL CAPA SASL(PLAIN LOGIN) TOP RESP-CODES"/></port>
+<port protocol="tcp" portid="2525"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtp" product="Exim smtpd" version="4.96.2" hostname="mi3-ss50.a2hosting.com" method="probed" conf="10"><cpe>cpe:/a:exim:exim:4.96.2</cpe></service><script id="smtp-commands" output="Couldn&apos;t establish connection on port 2525"/></port>
+</ports>
+<times srtt="20681" rttvar="1633" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730735649"/>
+<taskend task="NSE" time="1730735649"/>
+<taskbegin task="NSE" time="1730735649"/>
+<taskend task="NSE" time="1730735649"/>
+<taskbegin task="NSE" time="1730735649"/>
+<taskend task="NSE" time="1730735649"/>
+<runstats><finished time="1730735649" timestr="Mon Nov  4 15:54:09 2024" elapsed="233.58" summary="Nmap done at Mon Nov  4 15:54:09 2024; 1 IP address (1 host up) scanned in 233.58 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
