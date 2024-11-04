@@ -17,3 +17,114 @@
 <taskbegin task="Parallel DNS resolution of 1 host." time="1730745781"/>
 <taskend task="Parallel DNS resolution of 1 host." time="1730745781"/>
 <taskbegin task="Connect Scan" time="1730745781"/>
+<taskend task="Connect Scan" time="1730745786" extrainfo="1000 total ports"/>
+<taskbegin task="Service scan" time="1730745786"/>
+<taskend task="Service scan" time="1730745798" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1730745798"/>
+<taskend task="NSE" time="1730745800"/>
+<taskbegin task="NSE" time="1730745800"/>
+<taskend task="NSE" time="1730745800"/>
+<taskbegin task="NSE" time="1730745800"/>
+<taskend task="NSE" time="1730745800"/>
+<host starttime="1730745781" endtime="1730745800"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="192.0.78.12" addrtype="ipv4"/>
+<hostnames>
+<hostname name="wto20.law.harvard.edu" type="user"/>
+</hostnames>
+<ports><extraports state="filtered" count="998">
+<extrareasons reason="no-responses" count="998"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Did not follow redirect to https://wto20.law.harvard.edu/"><elem key="redirect_url">https://wto20.law.harvard.edu/</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service><script id="http-generator" output="WordPress.com"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-robots.txt" output="10 disallowed entries &#xa;/wp-admin/ /wp-login.php /wp-signup.php &#xa;/press-this.php /remote-login.php /activate/ /cgi-bin/ /mshots/v1/ &#xa;/next/ /public.api/"/><script id="http-title" output="WTO@20 Conference - Harvard"><elem key="title">WTO@20 Conference - Harvard</elem>
+</script><script id="http-trane-info" output="Problem with XML parsing of /evox/about"/><script id="ssl-cert" output="Subject: commonName=tls.automattic.com&#xa;Subject Alternative Name: DNS:albuquerqueautocreditrepair.car.blog, DNS:andrewhittgop.com, DNS:bluestallionhealthblog.fitness.blog, DNS:classroom-confessions.com, DNS:definesober.com, DNS:discountppgeneralhub.com, DNS:dyhpitasari.code.blog, DNS:ecologiesofcare.com, DNS:feemdeus.family.blog, DNS:fisioqrimini.com, DNS:gamehub.car.blog, DNS:gssdance.co.za, DNS:harperselected.com, DNS:infofusionautomative.car.blog, DNS:johndeerepartscatalog.game.blog, DNS:leaderlawltd.com, DNS:lifemotive.code.blog, DNS:momsdaughterssisterswivesexes.blog, DNS:mspmedical.co.za, DNS:pauline.family.blog, DNS:systemicjustice.law.harvard.edu, DNS:tls.automattic.com, DNS:tokopediacare.code.blog, DNS:undissolvedsolids.com, DNS:wto20.law.harvard.edu, DNS:www.aeonware.com, DNS:www.albuquerqueautocreditrepair.car.blog, DNS:www.andrewhittgop.com, DNS:www.bluestallionhealthblog.fitness.blog, DNS:www.car.family.blog, DNS:www.carbon.game.blog, DNS:www.caryelaneninjapan.car.blog, DNS:www.classroom-confessions.com, DNS:www.definesober.com, DNS:www.discountppgeneralhub.com, DNS:www.dyhpitasari.code.blog, DNS:www.ecologiesofcare.com, DNS:www.elokollo.fitness.blog, DNS:www.hannahbarling.com, DNS:www.harperselected.com, DNS:www.hersheyforlegislature.com, DNS:www.infofusionautomative.car.blog, DNS:www.johndeerepartscatalog.game.blog, DNS:www.klemmensensweeney4kids.family.blog, DNS:www.leaderlawltd.com, DNS:www.lifemotive.code.blog, DNS:www.momsdaughterssisterswivesexes.blog, DNS:www.mspmedical.co.za, DNS:www.pauline.family.blog, DNS:www.tokopediacare.code.blog, DNS:www.victual.fashion.blog&#xa;Issuer: commonName=E5/organizationName=Let&apos;s Encrypt/countryName=US&#xa;Public Key type: ec&#xa;Public Key bits: 256&#xa;Signature Algorithm: ecdsa-with-SHA384&#xa;Not valid before: 2024-10-24T23:23:59&#xa;Not valid after:  2025-01-22T23:23:58&#xa;MD5:   7916 24c5 0e72 def2 74e6 dd75 2fbd 308f&#xa;SHA-1: d606 9851 5475 64eb 958b 6bc5 ce30 7ce5 fafd c25b"><table key="subject">
+<elem key="commonName">tls.automattic.com</elem>
+</table>
+<table key="issuer">
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+<elem key="countryName">US</elem>
+<elem key="commonName">E5</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">256</elem>
+<table key="ecdhparams">
+<table key="curve_params">
+<elem key="curve">prime256v1</elem>
+<elem key="ec_curve_type">namedcurve</elem>
+</table>
+</table>
+<elem key="type">ec</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">1D:38:31:17:C2:64:14:CB:88:38:EF:C3:2D:EF:BD:7B:78:A3:EC:EB</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">9F:2B:5F:CF:3C:21:4F:9D:04:B7:ED:2B:2C:C4:C6:70:8B:D2:D7:0D</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://e5.o.lencr.org&#xa;CA Issuers - URI:http://e5.i.lencr.org/</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:albuquerqueautocreditrepair.car.blog, DNS:andrewhittgop.com, DNS:bluestallionhealthblog.fitness.blog, DNS:classroom-confessions.com, DNS:definesober.com, DNS:discountppgeneralhub.com, DNS:dyhpitasari.code.blog, DNS:ecologiesofcare.com, DNS:feemdeus.family.blog, DNS:fisioqrimini.com, DNS:gamehub.car.blog, DNS:gssdance.co.za, DNS:harperselected.com, DNS:infofusionautomative.car.blog, DNS:johndeerepartscatalog.game.blog, DNS:leaderlawltd.com, DNS:lifemotive.code.blog, DNS:momsdaughterssisterswivesexes.blog, DNS:mspmedical.co.za, DNS:pauline.family.blog, DNS:systemicjustice.law.harvard.edu, DNS:tls.automattic.com, DNS:tokopediacare.code.blog, DNS:undissolvedsolids.com, DNS:wto20.law.harvard.edu, DNS:www.aeonware.com, DNS:www.albuquerqueautocreditrepair.car.blog, DNS:www.andrewhittgop.com, DNS:www.bluestallionhealthblog.fitness.blog, DNS:www.car.family.blog, DNS:www.carbon.game.blog, DNS:www.caryelaneninjapan.car.blog, DNS:www.classroom-confessions.com, DNS:www.definesober.com, DNS:www.discountppgeneralhub.com, DNS:www.dyhpitasari.code.blog, DNS:www.ecologiesofcare.com, DNS:www.elokollo.fitness.blog, DNS:www.hannahbarling.com, DNS:www.harperselected.com, DNS:www.hersheyforlegislature.com, DNS:www.infofusionautomative.car.blog, DNS:www.johndeerepartscatalog.game.blog, DNS:www.klemmensensweeney4kids.family.blog, DNS:www.leaderlawltd.com, DNS:www.lifemotive.code.blog, DNS:www.momsdaughterssisterswivesexes.blog, DNS:www.mspmedical.co.za, DNS:www.pauline.family.blog, DNS:www.tokopediacare.code.blog, DNS:www.victual.fashion.blog</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : A2:E3:0A:E4:45:EF:BD:AD:9B:7E:38:ED:47:67:77:53:&#xa;                D7:82:5B:84:94:D7:2B:5E:1B:2C:C4:B9:50:A4:47:E7&#xa;    Timestamp : Oct 25 00:22:30.008 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:4F:64:F9:50:CE:62:94:00:2D:3F:8B:E2:&#xa;                33:D8:9A:45:0E:38:FE:BC:1F:F9:03:63:75:72:31:E7:&#xa;                82:D6:DA:2E:02:21:00:A6:C4:13:59:85:7A:31:46:66:&#xa;                CE:18:25:DD:B5:D8:9F:99:47:09:92:9A:C7:34:1D:FF:&#xa;                D8:E4:44:52:99:9F:36&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : CF:11:56:EE:D5:2E:7C:AF:F3:87:5B:D9:69:2E:9B:E9:&#xa;                1A:71:67:4A:B0:17:EC:AC:01:D2:5B:77:CE:CC:3B:08&#xa;    Timestamp : Oct 25 00:22:30.087 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:C5:42:4D:B9:EB:67:40:D2:82:FB:7F:&#xa;                1F:B3:F6:66:80:B8:C6:41:36:23:D5:D4:6E:92:A3:53:&#xa;                11:E6:D2:6D:74:02:21:00:84:C3:39:00:F1:B6:87:4B:&#xa;                33:EE:1E:86:5E:B9:49:37:CD:85:95:53:66:08:6B:E5:&#xa;                09:18:6E:F6:46:A7:DA:D7</elem>
+</table>
+</table>
+<elem key="sig_algo">ecdsa-with-SHA384</elem>
+<table key="validity">
+<elem key="notBefore">2024-10-24T23:23:59</elem>
+<elem key="notAfter">2025-01-22T23:23:58</elem>
+</table>
+<elem key="md5">791624c50e72def274e6dd752fbd308f</elem>
+<elem key="sha1">d6069851547564eb958b6bc5ce307ce5fafdc25b</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIIuDCCCD+gAwIBAgISA9A+WymLXbRM3PQKglOixWCiMAoGCCqGSM49BAMDMDIx&#xa;CzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJF&#xa;NTAeFw0yNDEwMjQyMzIzNTlaFw0yNTAxMjIyMzIzNThaMB0xGzAZBgNVBAMTEnRs&#xa;cy5hdXRvbWF0dGljLmNvbTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABHgzJU2o&#xa;Xii77opViDHb5Uac7tPgS7XnoroahftnF35Uk2iXpymvmsBp6E103ZLRHRS2z7T7&#xa;MLWC2n6kDcvGpNijggdIMIIHRDAOBgNVHQ8BAf8EBAMCB4AwHQYDVR0lBBYwFAYI&#xa;KwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYEFB04MRfC&#xa;ZBTLiDjvwy3vvXt4o+zrMB8GA1UdIwQYMBaAFJ8rX888IU+dBLftKyzExnCL0tcN&#xa;MFUGCCsGAQUFBwEBBEkwRzAhBggrBgEFBQcwAYYVaHR0cDovL2U1Lm8ubGVuY3Iu&#xa;b3JnMCIGCCsGAQUFBzAChhZodHRwOi8vZTUuaS5sZW5jci5vcmcvMIIFTgYDVR0R&#xa;BIIFRTCCBUGCJGFsYnVxdWVycXVlYXV0b2NyZWRpdHJlcGFpci5jYXIuYmxvZ4IR&#xa;YW5kcmV3aGl0dGdvcC5jb22CI2JsdWVzdGFsbGlvbmhlYWx0aGJsb2cuZml0bmVz&#xa;cy5ibG9nghljbGFzc3Jvb20tY29uZmVzc2lvbnMuY29tgg9kZWZpbmVzb2Jlci5j&#xa;b22CGGRpc2NvdW50cHBnZW5lcmFsaHViLmNvbYIVZHlocGl0YXNhcmkuY29kZS5i&#xa;bG9nghNlY29sb2dpZXNvZmNhcmUuY29tghRmZWVtZGV1cy5mYW1pbHkuYmxvZ4IQ&#xa;ZmlzaW9xcmltaW5pLmNvbYIQZ2FtZWh1Yi5jYXIuYmxvZ4IOZ3NzZGFuY2UuY28u&#xa;emGCEmhhcnBlcnNlbGVjdGVkLmNvbYIdaW5mb2Z1c2lvbmF1dG9tYXRpdmUuY2Fy&#xa;LmJsb2eCH2pvaG5kZWVyZXBhcnRzY2F0YWxvZy5nYW1lLmJsb2eCEGxlYWRlcmxh&#xa;d2x0ZC5jb22CFGxpZmVtb3RpdmUuY29kZS5ibG9ngiJtb21zZGF1Z2h0ZXJzc2lz&#xa;dGVyc3dpdmVzZXhlcy5ibG9nghBtc3BtZWRpY2FsLmNvLnphghNwYXVsaW5lLmZh&#xa;bWlseS5ibG9ngh9zeXN0ZW1pY2p1c3RpY2UubGF3LmhhcnZhcmQuZWR1ghJ0bHMu&#xa;YXV0b21hdHRpYy5jb22CF3Rva29wZWRpYWNhcmUuY29kZS5ibG9nghV1bmRpc3Nv&#xa;bHZlZHNvbGlkcy5jb22CFXd0bzIwLmxhdy5oYXJ2YXJkLmVkdYIQd3d3LmFlb253&#xa;YXJlLmNvbYIod3d3LmFsYnVxdWVycXVlYXV0b2NyZWRpdHJlcGFpci5jYXIuYmxv&#xa;Z4IVd3d3LmFuZHJld2hpdHRnb3AuY29tgid3d3cuYmx1ZXN0YWxsaW9uaGVhbHRo&#xa;YmxvZy5maXRuZXNzLmJsb2eCE3d3dy5jYXIuZmFtaWx5LmJsb2eCFHd3dy5jYXJi&#xa;b24uZ2FtZS5ibG9ngh53d3cuY2FyeWVsYW5lbmluamFwYW4uY2FyLmJsb2eCHXd3&#xa;dy5jbGFzc3Jvb20tY29uZmVzc2lvbnMuY29tghN3d3cuZGVmaW5lc29iZXIuY29t&#xa;ghx3d3cuZGlzY291bnRwcGdlbmVyYWxodWIuY29tghl3d3cuZHlocGl0YXNhcmku&#xa;Y29kZS5ibG9nghd3d3cuZWNvbG9naWVzb2ZjYXJlLmNvbYIZd3d3LmVsb2tvbGxv&#xa;LmZpdG5lc3MuYmxvZ4IVd3d3Lmhhbm5haGJhcmxpbmcuY29tghZ3d3cuaGFycGVy&#xa;c2VsZWN0ZWQuY29tgh13d3cuaGVyc2hleWZvcmxlZ2lzbGF0dXJlLmNvbYIhd3d3&#xa;LmluZm9mdXNpb25hdXRvbWF0aXZlLmNhci5ibG9ngiN3d3cuam9obmRlZXJlcGFy&#xa;dHNjYXRhbG9nLmdhbWUuYmxvZ4Imd3d3LmtsZW1tZW5zZW5zd2VlbmV5NGtpZHMu&#xa;ZmFtaWx5LmJsb2eCFHd3dy5sZWFkZXJsYXdsdGQuY29tghh3d3cubGlmZW1vdGl2&#xa;ZS5jb2RlLmJsb2eCJnd3dy5tb21zZGF1Z2h0ZXJzc2lzdGVyc3dpdmVzZXhlcy5i&#xa;bG9nghR3d3cubXNwbWVkaWNhbC5jby56YYIXd3d3LnBhdWxpbmUuZmFtaWx5LmJs&#xa;b2eCG3d3dy50b2tvcGVkaWFjYXJlLmNvZGUuYmxvZ4IYd3d3LnZpY3R1YWwuZmFz&#xa;aGlvbi5ibG9nMBMGA1UdIAQMMAowCAYGZ4EMAQIBMIIBBQYKKwYBBAHWeQIEAgSB&#xa;9gSB8wDxAHYAouMK5EXvva2bfjjtR2d3U9eCW4SU1yteGyzEuVCkR+cAAAGSwQ2l&#xa;eAAABAMARzBFAiBPZPlQzmKUAC0/i+Iz2JpFDjj+vB/5A2N1cjHngtbaLgIhAKbE&#xa;E1mFejFGZs4YJd212J+ZRwmSmsc0Hf/Y5ERSmZ82AHcAzxFW7tUufK/zh1vZaS6b&#xa;6RpxZ0qwF+ysAdJbd87MOwgAAAGSwQ2lxwAABAMASDBGAiEAxUJNuetnQNKC+38f&#xa;s/ZmgLjGQTYj1dRukqNTEebSbXQCIQCEwzkA8baHSzPuHoZeuUk3zYWVU2YIa+UJ&#xa;GG72Rqfa1zAKBggqhkjOPQQDAwNnADBkAjAWE2Ll8OUaCpHsWU2pR0l7WHPEC5f5&#xa;K59ejN4T3R7T4Grq+PEh3nezTRLzDZDfIi0CMAq0VyUUF0EqDc3Cfm3ov0lWQrRv&#xa;o+0Awxi/8bTLgSU44QI/n+gBOfehV4GQUlgZlQ==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+</ports>
+<times srtt="5449" rttvar="1906" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730745800"/>
+<taskend task="NSE" time="1730745800"/>
+<taskbegin task="NSE" time="1730745800"/>
+<taskend task="NSE" time="1730745800"/>
+<taskbegin task="NSE" time="1730745800"/>
+<taskend task="NSE" time="1730745800"/>
+<runstats><finished time="1730745800" timestr="Mon Nov  4 18:43:20 2024" elapsed="19.23" summary="Nmap done at Mon Nov  4 18:43:20 2024; 1 IP address (1 host up) scanned in 19.23 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
