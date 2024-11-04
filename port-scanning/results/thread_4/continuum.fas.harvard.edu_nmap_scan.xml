@@ -17,3 +17,138 @@
 <taskbegin task="Parallel DNS resolution of 1 host." time="1730735542"/>
 <taskend task="Parallel DNS resolution of 1 host." time="1730735542"/>
 <taskbegin task="Connect Scan" time="1730735542"/>
+<taskend task="Connect Scan" time="1730735550" extrainfo="1000 total ports"/>
+<taskbegin task="Service scan" time="1730735550"/>
+<taskend task="Service scan" time="1730735557" extrainfo="5 services on 1 host"/>
+<taskbegin task="NSE" time="1730735557"/>
+<taskend task="NSE" time="1730735562"/>
+<taskbegin task="NSE" time="1730735562"/>
+<taskend task="NSE" time="1730735562"/>
+<taskbegin task="NSE" time="1730735562"/>
+<taskend task="NSE" time="1730735562"/>
+<host starttime="1730735542" endtime="1730735562"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="23.81.206.207" addrtype="ipv4"/>
+<hostnames>
+<hostname name="continuum.fas.harvard.edu" type="user"/>
+<hostname name="opal13.opalstack.com" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="995">
+<extrareasons reason="no-responses" count="995"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="7.4" extrainfo="protocol 2.0" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.4</cpe></service></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Did not follow redirect to https://continuum.fas.harvard.edu/"><elem key="redirect_url">https://continuum.fas.harvard.edu/</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="tcpwrapped" method="probed" conf="8"/><script id="http-server-header" output="nginx"><elem>nginx</elem>
+</script><script id="http-title" output="400 The plain HTTP request was sent to HTTPS port"><elem key="title">400 The plain HTTP request was sent to HTTPS port</elem>
+</script><script id="ssl-cert" output="Subject: commonName=continuum.fas.harvard.edu&#xa;Subject Alternative Name: DNS:continuum.fas.harvard.edu&#xa;Issuer: commonName=R10/organizationName=Let&apos;s Encrypt/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-09-10T18:31:48&#xa;Not valid after:  2024-12-09T18:31:47&#xa;MD5:   ee58 44ea 4fb0 8f22 eb54 ac54 2143 753c&#xa;SHA-1: b839 fe42 46c1 731f f994 30f4 b845 be74 dffd eee0"><table key="subject">
+<elem key="commonName">continuum.fas.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+<elem key="countryName">US</elem>
+<elem key="commonName">R10</elem>
+</table>
+<table key="pubkey">
+<elem key="modulus">BIGNUM: 0x55f8685d15b8</elem>
+<elem key="exponent">BIGNUM: 0x55f867d608e8</elem>
+<elem key="bits">2048</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+</table>
+<table>
+<elem key="value">B4:91:6E:05:A8:96:15:EB:6D:DD:58:93:14:C6:6B:C4:FD:9D:E4:75</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="value">BB:BC:C3:47:A5:E4:BC:A9:C6:C3:A4:72:0C:10:8D:A2:35:E1:C8:E8</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">OCSP - URI:http://r10.o.lencr.org&#xa;CA Issuers - URI:http://r10.i.lencr.org/</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">DNS:continuum.fas.harvard.edu</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+<table>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 76:FF:88:3F:0A:B6:FB:95:51:C2:61:CC:F5:87:BA:34:&#xa;                B4:A4:CD:BB:29:DC:68:42:0A:9F:E6:67:4C:5A:3A:74&#xa;    Timestamp : Sep 10 19:30:19.024 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:7E:29:BD:5E:D6:75:D6:84:09:B7:36:17:&#xa;                B2:FC:AD:CF:3C:1B:67:12:67:99:4F:6F:D3:4F:BE:12:&#xa;                2C:6D:15:67:02:20:65:FE:8B:FD:70:02:F3:D0:05:72:&#xa;                48:8B:29:68:50:59:6A:7C:8F:D3:4B:B3:75:F4:C8:4F:&#xa;                30:43:D8:AD:84:92&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : DF:E1:56:EB:AA:05:AF:B5:9C:0F:86:71:8D:A8:C0:32:&#xa;                4E:AE:56:D9:6E:A7:F5:A5:6A:01:D1:C1:3B:BE:52:5C&#xa;    Timestamp : Sep 10 19:30:19.173 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:E2:26:02:E1:27:42:78:38:56:F7:9E:&#xa;                29:5B:7F:83:96:6C:09:4A:B4:37:D0:35:5C:D1:9E:78:&#xa;                69:EC:2C:75:7C:02:20:66:CD:29:11:E4:22:F8:88:B1:&#xa;                11:B4:17:A6:11:CE:88:EC:28:20:A0:92:5D:40:7C:FF:&#xa;                59:52:9D:35:6F:15:BC</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-09-10T18:31:48</elem>
+<elem key="notAfter">2024-12-09T18:31:47</elem>
+</table>
+<elem key="md5">ee5844ea4fb08f22eb54ac542143753c</elem>
+<elem key="sha1">b839fe4246c1731ff99430f4b845be74dffdeee0</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFATCCA+mgAwIBAgISBOoRaG0ZFS7TKetXIh+UfKU+MA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNSMTAwHhcNMjQwOTEwMTgzMTQ4WhcNMjQxMjA5MTgzMTQ3WjAkMSIwIAYDVQQD&#xa;Exljb250aW51dW0uZmFzLmhhcnZhcmQuZWR1MIIBIjANBgkqhkiG9w0BAQEFAAOC&#xa;AQ8AMIIBCgKCAQEA+VReMxVZKREk9zCDfdYkpKhdpxi69vEGe1Q2UGQmDak3L4e1&#xa;xUgDdG2nGuZ05iEy/wR9RfjgXBNvTFxTioJXDr5lqWtOjr7dPwI7n7ZngPxFRxC+&#xa;h2nqwTbu1BD0CN8Fu4Orvkfnu2iFiSIszLpESVIURj/tDtLafFJH9nnWdReLLved&#xa;mSXSvW2DMFQ43Sqy/lxixwYneNMtILCgTaKZOJ8KwTx+FqZwGID6SnY4392Z7Qr5&#xa;x7mfY4pMX0pOQWhw+L2v8XSSfMfT/vRiKPaKV+RlOWux3lY5WZNp2ikVB5onw1wm&#xa;6Vd7DJL5syxd6x4Z2UPrVZeGdBDxV3AIZPOvLQIDAQABo4ICHDCCAhgwDgYDVR0P&#xa;AQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAMBgNVHRMB&#xa;Af8EAjAAMB0GA1UdDgQWBBS0kW4FqJYV623dWJMUxmvE/Z3kdTAfBgNVHSMEGDAW&#xa;gBS7vMNHpeS8qcbDpHIMEI2iNeHI6DBXBggrBgEFBQcBAQRLMEkwIgYIKwYBBQUH&#xa;MAGGFmh0dHA6Ly9yMTAuby5sZW5jci5vcmcwIwYIKwYBBQUHMAKGF2h0dHA6Ly9y&#xa;MTAuaS5sZW5jci5vcmcvMCQGA1UdEQQdMBuCGWNvbnRpbnV1bS5mYXMuaGFydmFy&#xa;ZC5lZHUwEwYDVR0gBAwwCjAIBgZngQwBAgEwggEDBgorBgEEAdZ5AgQCBIH0BIHx&#xa;AO8AdQB2/4g/Crb7lVHCYcz1h7o0tKTNuyncaEIKn+ZnTFo6dAAAAZHdalUQAAAE&#xa;AwBGMEQCIH4pvV7WddaECbc2F7L8rc88G2cSZ5lPb9NPvhIsbRVnAiBl/ov9cALz&#xa;0AVySIspaFBZanyP00uzdfTITzBD2K2EkgB2AN/hVuuqBa+1nA+GcY2owDJOrlbZ&#xa;bqf1pWoB0cE7vlJcAAABkd1qVaUAAAQDAEcwRQIhAOImAuEnQng4VveeKVt/g5Zs&#xa;CUq0N9A1XNGeeGnsLHV8AiBmzSkR5CL4iLERtBemEc6I7CggoJJdQHz/WVKdNW8V&#xa;vDANBgkqhkiG9w0BAQsFAAOCAQEAP9G1pOe/2iVwJnsBZmG6yriRKYIm2rQIbsoa&#xa;MpxlSR2YwJb0uDjE1+Tatui5k5YSxU6I37d0qrwWq8vB8DOjh97t0+KEdhY9ELC6&#xa;3ydCZqjtHsQoiWH9MmZW3agJAGdPVnJwzoe6h5HhQpAlT6bTCJ+vDjukz6BwqQAj&#xa;MYQ43e8hKvYyLP73btsKRFTWUq7VixnqshKen8mRYs3PzgBNE8vYsb8egqWzy+zY&#xa;Vc/ghemsIxx+s4d5/8/8ErGVCkDeXaYfccKUvRI6w7bo9E/KNoKUX+Z0rEgdFLOS&#xa;Q+nJw2LW8jeeEskYn9BOQCULznqsm5YlZun/7U79mYfoVJyfCQ==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="tls-alpn" output="&#xa;  h2&#xa;  http/1.1"><elem>h2</elem>
+<elem>http/1.1</elem>
+</script></port>
+<port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="tcpwrapped" method="probed" conf="8"/><script id="mysql-info" output="&#xa;  Protocol: 10&#xa;  Version: 5.5.5-10.6.19-MariaDB&#xa;  Thread ID: 194004096&#xa;  Capabilities flags: 63486&#xa;  Some Capabilities: Support41Auth, SupportsTransactions, InteractiveClient, LongColumnFlag, Speaks41ProtocolOld, SupportsLoadDataLocal, IgnoreSigpipes, SupportsCompression, ConnectWithDatabase, DontAllowDatabaseTableColumn, FoundRows, IgnoreSpaceBeforeParenthesis, Speaks41ProtocolNew, ODBCClient, SupportsMultipleStatments, SupportsMultipleResults, SupportsAuthPlugins&#xa;  Status: Autocommit&#xa;  Salt: =G,DTX?n/=&amp;FkhHox,l`&#xa;  Auth Plugin Name: mysql_native_password"><elem key="Protocol">10</elem>
+<elem key="Version">5.5.5-10.6.19-MariaDB</elem>
+<elem key="Thread ID">194004096</elem>
+<elem key="Capabilities flags">63486</elem>
+<table key="Some Capabilities">
+<elem>Support41Auth</elem>
+<elem>SupportsTransactions</elem>
+<elem>InteractiveClient</elem>
+<elem>LongColumnFlag</elem>
+<elem>Speaks41ProtocolOld</elem>
+<elem>SupportsLoadDataLocal</elem>
+<elem>IgnoreSigpipes</elem>
+<elem>SupportsCompression</elem>
+<elem>ConnectWithDatabase</elem>
+<elem>DontAllowDatabaseTableColumn</elem>
+<elem>FoundRows</elem>
+<elem>IgnoreSpaceBeforeParenthesis</elem>
+<elem>Speaks41ProtocolNew</elem>
+<elem>ODBCClient</elem>
+<elem>SupportsMultipleStatments</elem>
+<elem>SupportsMultipleResults</elem>
+<elem>SupportsAuthPlugins</elem>
+</table>
+<elem key="Status">Autocommit</elem>
+<elem key="Salt">=G,DTX?n/=&amp;FkhHox,l`</elem>
+<elem key="Auth Plugin Name">mysql_native_password</elem>
+</script></port>
+<port protocol="tcp" portid="5432"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="postgresql" product="PostgreSQL DB" version="9.6.0 or later" servicefp="SF-Port5432-TCP:V=7.80%I=7%D=11/4%Time=6728EDC5%P=x86_64-pc-linux-gnu%r(SMBProgNeg,8C,&quot;E\0\0\0\x8bSFATAL\0VFATAL\0C0A000\0Munsupported\x20frontend\x20protocol\x2065363\.19778:\x20server\x20supports\x203\.0\x20to\x203\.0\0Fpostmaster\.c\0L2148\0RProcessStartupPacket\0\0&quot;);" method="probed" conf="10"><cpe>cpe:/a:postgresql:postgresql</cpe></service><script id="fingerprint-strings" output="&#xa;  SMBProgNeg: &#xa;    SFATAL&#xa;    VFATAL&#xa;    C0A000&#xa;    Munsupported frontend protocol 65363.19778: server supports 3.0 to 3.0&#xa;    Fpostmaster.c&#xa;    L2148&#xa;    RProcessStartupPacket"><elem key="SMBProgNeg">&#xa;    SFATAL&#xa;    VFATAL&#xa;    C0A000&#xa;    Munsupported frontend protocol 65363.19778: server supports 3.0 to 3.0&#xa;    Fpostmaster.c&#xa;    L2148&#xa;    RProcessStartupPacket</elem>
+</script></port>
+</ports>
+<times srtt="57867" rttvar="3545" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730735562"/>
+<taskend task="NSE" time="1730735562"/>
+<taskbegin task="NSE" time="1730735562"/>
+<taskend task="NSE" time="1730735562"/>
+<taskbegin task="NSE" time="1730735562"/>
+<taskend task="NSE" time="1730735562"/>
+<runstats><finished time="1730735562" timestr="Mon Nov  4 15:52:42 2024" elapsed="20.32" summary="Nmap done at Mon Nov  4 15:52:42 2024; 1 IP address (1 host up) scanned in 20.32 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
