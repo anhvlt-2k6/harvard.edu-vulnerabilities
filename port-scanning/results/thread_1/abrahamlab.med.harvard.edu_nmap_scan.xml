@@ -21,3 +21,618 @@
 <taskbegin task="Service scan" time="1730737110"/>
 <taskend task="Service scan" time="1730737275" extrainfo="13 services on 1 host"/>
 <taskbegin task="NSE" time="1730737275"/>
+<taskend task="NSE" time="1730737302"/>
+<taskbegin task="NSE" time="1730737302"/>
+<taskend task="NSE" time="1730737311"/>
+<taskbegin task="NSE" time="1730737311"/>
+<taskend task="NSE" time="1730737311"/>
+<host starttime="1730737106" endtime="1730737311"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="107.180.41.87" addrtype="ipv4"/>
+<hostnames>
+<hostname name="abrahamlab.med.harvard.edu" type="user"/>
+<hostname name="87.41.180.107.host.secureserver.net" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="974">
+<extrareasons reason="no-responses" count="974"/>
+</extraports>
+<port protocol="tcp" portid="20"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ftp-data" method="table" conf="3"/></port>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ftp" product="Pure-FTPd" method="probed" conf="10"><cpe>cpe:/a:pureftpd:pure-ftpd</cpe></service><script id="ssl-cert" output="Subject: commonName=*.prod.phx3.secureserver.net&#xa;Subject Alternative Name: DNS:*.prod.phx3.secureserver.net, DNS:prod.phx3.secureserver.net&#xa;Issuer: commonName=Starfield Secure Certificate Authority - G2/organizationName=Starfield Technologies, Inc./stateOrProvinceName=Arizona/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-02-15T21:45:33&#xa;Not valid after:  2025-03-18T21:45:33&#xa;MD5:   8f2c 6fb9 5415 9534 174d 537c a1bd 989d&#xa;SHA-1: 6b61 301c f7cc e6a6 3cfb e37a 4cff 59d4 a77c de5d"><table key="subject">
+<elem key="commonName">*.prod.phx3.secureserver.net</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">US</elem>
+<elem key="stateOrProvinceName">Arizona</elem>
+<elem key="localityName">Scottsdale</elem>
+<elem key="commonName">Starfield Secure Certificate Authority - G2</elem>
+<elem key="organizationName">Starfield Technologies, Inc.</elem>
+<elem key="organizationalUnitName">http://certs.starfieldtech.com/repository/</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">2048</elem>
+<elem key="type">rsa</elem>
+<elem key="modulus">BIGNUM: 0x55bdc7818df8</elem>
+<elem key="exponent">BIGNUM: 0x55bdc7a17608</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://crl.starfieldtech.com/sfig2s1-676.crl</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.16.840.1.114414.1.7.23.1&#xa;  CPS: http://certificates.starfieldtech.com/repository/&#xa;Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://ocsp.starfieldtech.com/&#xa;CA Issuers - URI:http://certificates.starfieldtech.com/repository/sfig2.crt</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">25:45:81:68:50:26:38:3D:3B:2D:2C:BE:CD:6A:D9:B6:3D:B3:66:63</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:*.prod.phx3.secureserver.net, DNS:prod.phx3.secureserver.net</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">E3:6A:A4:88:DA:00:95:F4:40:9F:1E:14:BA:5D:3C:48:C5:E9:01:E0</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 4E:75:A3:27:5C:9A:10:C3:38:5B:6C:D4:DF:3F:52:EB:&#xa;                1D:F0:E0:8E:1B:8D:69:C0:B1:FA:64:B1:62:9A:39:DF&#xa;    Timestamp : Feb 15 21:45:34.154 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:72:96:96:7F:6B:97:2A:E9:77:86:F6:5C:&#xa;                30:77:E3:43:FD:22:AB:E5:A3:53:8D:48:1A:F1:67:A9:&#xa;                85:D9:D7:AA:02:21:00:9E:17:CB:61:0E:CB:9F:E5:D0:&#xa;                00:8F:B7:CF:19:FD:0B:EE:B5:42:1B:12:80:E9:CB:66:&#xa;                9E:16:9C:E8:22:C7:F3&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 7D:59:1E:12:E1:78:2A:7B:1C:61:67:7C:5E:FD:F8:D0:&#xa;                87:5C:14:A0:4E:95:9E:B9:03:2F:D9:0E:8C:2E:79:B8&#xa;    Timestamp : Feb 15 21:45:34.425 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:18:A3:61:2F:FE:EB:65:A5:DB:E3:B1:E8:&#xa;                63:D6:8B:07:1C:68:E0:AE:AD:19:35:44:32:CA:4C:42:&#xa;                F3:B8:6E:B3:02:21:00:CC:1A:7E:D3:2F:01:66:14:7F:&#xa;                14:AB:4D:3B:BF:37:DA:25:3D:E6:BA:7E:97:81:16:8D:&#xa;                14:59:DB:4C:D0:17:E5&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : CC:FB:0F:6A:85:71:09:65:FE:95:9B:53:CE:E9:B2:7C:&#xa;                22:E9:85:5C:0D:97:8D:B6:A9:7E:54:C0:FE:4C:0D:B0&#xa;    Timestamp : Feb 15 21:45:34.638 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:D3:BA:C7:A2:8D:69:45:CC:66:1A:E2:&#xa;                CF:5B:E3:77:B0:35:69:CE:CF:DC:74:CA:34:FA:20:C7:&#xa;                F7:32:B3:1F:B9:02:21:00:93:05:A3:42:2C:9A:4A:B5:&#xa;                FE:4E:F2:33:7C:60:1C:EF:94:3E:24:51:5B:68:9F:66:&#xa;                EB:45:26:23:58:16:FE:E1</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-02-15T21:45:33</elem>
+<elem key="notAfter">2025-03-18T21:45:33</elem>
+</table>
+<elem key="md5">8f2c6fb954159534174d537ca1bd989d</elem>
+<elem key="sha1">6b61301cf7cce6a63cfbe37a4cff59d4a77cde5d</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIG5DCCBcygAwIBAgIICWOwc9Zwue8wDQYJKoZIhvcNAQELBQAwgcYxCzAJBgNV&#xa;BAYTAlVTMRAwDgYDVQQIEwdBcml6b25hMRMwEQYDVQQHEwpTY290dHNkYWxlMSUw&#xa;IwYDVQQKExxTdGFyZmllbGQgVGVjaG5vbG9naWVzLCBJbmMuMTMwMQYDVQQLEypo&#xa;dHRwOi8vY2VydHMuc3RhcmZpZWxkdGVjaC5jb20vcmVwb3NpdG9yeS8xNDAyBgNV&#xa;BAMTK1N0YXJmaWVsZCBTZWN1cmUgQ2VydGlmaWNhdGUgQXV0aG9yaXR5IC0gRzIw&#xa;HhcNMjQwMjE1MjE0NTMzWhcNMjUwMzE4MjE0NTMzWjAnMSUwIwYDVQQDDBwqLnBy&#xa;b2QucGh4My5zZWN1cmVzZXJ2ZXIubmV0MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8A&#xa;MIIBCgKCAQEAxYWwdkyGOxHYiSzdOqhi/FEtxbVZQVIvUVvPP9kogKTDaxjfvDqb&#xa;KR9anSZwNWNldXejBUNWkl6Mvu/NVV3GahUnFFbsWyfhE4F6u3fVmQy0nvkx7jZ7&#xa;mM5d81dQVY/rs7/9C2+hA2vWqBe81KlvfDZbm6UYPLoq0bkGGUY4rqy2nVf7DK9Z&#xa;/cg0p6YTnSwYi5N89DtSrRESCNErZQIxQZ7uBo42vdxsg8B0irgPvoLRk9pevQGu&#xa;yqhh6kXNrQV2PlrHk9e3x/c454isGprN5ArbagcU1ajJyRlrg0yi/VFcgJTqa5Lo&#xa;HuePeZYYVupYspg2m5kt7sZiQMRfDWEIqQIDAQABo4IDcjCCA24wDAYDVR0TAQH/&#xa;BAIwADAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDgYDVR0PAQH/BAQD&#xa;AgWgMD0GA1UdHwQ2MDQwMqAwoC6GLGh0dHA6Ly9jcmwuc3RhcmZpZWxkdGVjaC5j&#xa;b20vc2ZpZzJzMS02NzYuY3JsMGMGA1UdIARcMFowTgYLYIZIAYb9bgEHFwEwPzA9&#xa;BggrBgEFBQcCARYxaHR0cDovL2NlcnRpZmljYXRlcy5zdGFyZmllbGR0ZWNoLmNv&#xa;bS9yZXBvc2l0b3J5LzAIBgZngQwBAgEwgYIGCCsGAQUFBwEBBHYwdDAqBggrBgEF&#xa;BQcwAYYeaHR0cDovL29jc3Auc3RhcmZpZWxkdGVjaC5jb20vMEYGCCsGAQUFBzAC&#xa;hjpodHRwOi8vY2VydGlmaWNhdGVzLnN0YXJmaWVsZHRlY2guY29tL3JlcG9zaXRv&#xa;cnkvc2ZpZzIuY3J0MB8GA1UdIwQYMBaAFCVFgWhQJjg9Oy0svs1q2bY9s2ZjMEMG&#xa;A1UdEQQ8MDqCHCoucHJvZC5waHgzLnNlY3VyZXNlcnZlci5uZXSCGnByb2QucGh4&#xa;My5zZWN1cmVzZXJ2ZXIubmV0MB0GA1UdDgQWBBTjaqSI2gCV9ECfHhS6XTxIxekB&#xa;4DCCAX8GCisGAQQB1nkCBAIEggFvBIIBawFpAHYATnWjJ1yaEMM4W2zU3z9S6x3w&#xa;4I4bjWnAsfpksWKaOd8AAAGNrrtoygAABAMARzBFAiBylpZ/a5cq6XeG9lwwd+ND&#xa;/SKr5aNTjUga8WephdnXqgIhAJ4Xy2EOy5/l0ACPt88Z/QvutUIbEoDpy2aeFpzo&#xa;IsfzAHYAfVkeEuF4KnscYWd8Xv340IdcFKBOlZ65Ay/ZDowuebgAAAGNrrtp2QAA&#xa;BAMARzBFAiAYo2Ev/utlpdvjsehj1osHHGjgrq0ZNUQyykxC87huswIhAMwaftMv&#xa;AWYUfxSrTTu/N9olPea6fpeBFo0UWdtM0BflAHcAzPsPaoVxCWX+lZtTzumyfCLp&#xa;hVwNl422qX5UwP5MDbAAAAGNrrtqrgAABAMASDBGAiEA07rHoo1pRcxmGuLPW+N3&#xa;sDVpzs/cdMo0+iDH9zKzH7kCIQCTBaNCLJpKtf5O8jN8YBzvlD4kUVton2brRSYj&#xa;WBb+4TANBgkqhkiG9w0BAQsFAAOCAQEAIqxuZl61bLJm5k5Op1zYYm0Y3xEhMzgQ&#xa;nFgbI8MOTaWOOkU4gWfXYUQcq7Yv7kQM7iGBmW7gDrPKSgq0PGY2WynJq9yhfHHj&#xa;O6VWrqJhiaAP5GJslPI6p/SQKBxStwkDwPcni/x5z6A8jdOEW3lWy/xglyTllf9N&#xa;eSd9Nsz/MoXs6x/rOkVKZhkB+fohMrR0DBK/0wXecQ4uBWoEqa+CpAtzv+0+Z69f&#xa;rDkj3Hn7v2vTKVAAymklW4ptDrIHQBY9iBT79Q3mM0SdqGhcJ/5AhXBUu0aVCE15&#xa;BxHIgpoSnGNcZ49AP7rhtH6m9/mow8zUDGI8GEqDve8y705hcfnB6Q==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="8.0" extrainfo="protocol 2.0" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:8.0</cpe></service><script id="ssh-hostkey" output="&#xa;  3072 ea:10:26:7e:ab:c1:e9:c1:43:45:41:16:45:73:dd:a7 (RSA)&#xa;  256 f7:0e:fe:f1:92:b7:74:07:22:9f:7a:b8:23:12:94:81 (ECDSA)&#xa;  256 dd:6d:07:8f:52:ee:64:32:82:b5:15:59:39:85:9f:8d (ED25519)"><table>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABgQDPR8rPQppwannJxYwcwEfz69L8/Vgje9YbK8957VIntk/mFIz2qt+2EiWb9Nbl1BSKUG+1Ay1HNpQDzAkswl75r6mpE6wYO1uiMV/cIboeAU3G5zIcUWWDzseJ2BWj7JqpcGRm8bcWwXXW19CXP1HOAmmP1dBkvGVSa8JT6TZQ1ByaXgsfn4k3UBjxB3CKNKWgj2iKsRnHQXDkkBCuhMfkGIL06Qm4TqghZaB6jLH0kl6vn8LAHVFF0M3sz3rWKa39scKxZI0fk3z9dBzkeUzxEmpg1ogbSLXYlMDqZYIQOSYis5bQpgGHcfUVsAkngFpld/hl9zlZA+ubDpXY4zZ5OkZiLAwpVGx1biaCguAkLKFEPuAtQaEByHHWyccxZUmtGlTslyaWW/4oNHJBkE643Fa6qbmO/YqpdK61Q5Nx6zGDzL1N+IjjGncs0+HliCs+LdLltWbBrTJbPsTlPVcmeyiB7pDAtfWHxxJqy9Xs5J9GcLlfji7/0uOHDOuvLE8=</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="fingerprint">ea10267eabc1e9c1434541164573dda7</elem>
+<elem key="bits">3072</elem>
+</table>
+<table>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBDtCXg7Owy11O/cFlUhTGhSQXT8SaG1+N2xI64s9gAHBGN/aM12eseJEQkqLXSSyb8UNxFWbBhpwsENFrYBBi+Y=</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="fingerprint">f70efef192b77407229f7ab823129481</elem>
+<elem key="bits">256</elem>
+</table>
+<table>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIJdcxa2e89r20JuLTesDBHVp7QfLUGUoiNhku3xAL9Ch</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="fingerprint">dd6d078f52ee643282b5155939859f8d</elem>
+<elem key="bits">256</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="25"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtp" method="table" conf="3"/><script id="smtp-commands" output="SMTP EHLO abrahamlab.med.harvard.edu: failed to receive data: connection closed"/></port>
+<port protocol="tcp" portid="70"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="8.0" extrainfo="protocol 2.0" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:8.0</cpe></service><script id="gopher-ls" output="&#xa;"/><script id="ssh-hostkey" output="&#xa;  3072 ea:10:26:7e:ab:c1:e9:c1:43:45:41:16:45:73:dd:a7 (RSA)&#xa;  256 f7:0e:fe:f1:92:b7:74:07:22:9f:7a:b8:23:12:94:81 (ECDSA)&#xa;  256 dd:6d:07:8f:52:ee:64:32:82:b5:15:59:39:85:9f:8d (ED25519)"><table>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABgQDPR8rPQppwannJxYwcwEfz69L8/Vgje9YbK8957VIntk/mFIz2qt+2EiWb9Nbl1BSKUG+1Ay1HNpQDzAkswl75r6mpE6wYO1uiMV/cIboeAU3G5zIcUWWDzseJ2BWj7JqpcGRm8bcWwXXW19CXP1HOAmmP1dBkvGVSa8JT6TZQ1ByaXgsfn4k3UBjxB3CKNKWgj2iKsRnHQXDkkBCuhMfkGIL06Qm4TqghZaB6jLH0kl6vn8LAHVFF0M3sz3rWKa39scKxZI0fk3z9dBzkeUzxEmpg1ogbSLXYlMDqZYIQOSYis5bQpgGHcfUVsAkngFpld/hl9zlZA+ubDpXY4zZ5OkZiLAwpVGx1biaCguAkLKFEPuAtQaEByHHWyccxZUmtGlTslyaWW/4oNHJBkE643Fa6qbmO/YqpdK61Q5Nx6zGDzL1N+IjjGncs0+HliCs+LdLltWbBrTJbPsTlPVcmeyiB7pDAtfWHxxJqy9Xs5J9GcLlfji7/0uOHDOuvLE8=</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="fingerprint">ea10267eabc1e9c1434541164573dda7</elem>
+<elem key="bits">3072</elem>
+</table>
+<table>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBDtCXg7Owy11O/cFlUhTGhSQXT8SaG1+N2xI64s9gAHBGN/aM12eseJEQkqLXSSyb8UNxFWbBhpwsENFrYBBi+Y=</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="fingerprint">f70efef192b77407229f7ab823129481</elem>
+<elem key="bits">256</elem>
+</table>
+<table>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIJdcxa2e89r20JuLTesDBHVp7QfLUGUoiNhku3xAL9Ch</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="fingerprint">dd6d078f52ee643282b5155939859f8d</elem>
+<elem key="bits">256</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" method="probed" conf="10"><cpe>cpe:/a:apache:http_server</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="Apache"><elem>Apache</elem>
+</script><script id="http-title" output="Did not follow redirect to https://abrahamlab.med.harvard.edu/403.shtml"><elem key="redirect_url">https://abrahamlab.med.harvard.edu/403.shtml</elem>
+</script></port>
+<port protocol="tcp" portid="110"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="pop3" product="Dovecot pop3d" method="probed" conf="10"><cpe>cpe:/a:dovecot:dovecot</cpe></service><script id="pop3-capabilities" output="AUTH-RESP-CODE CAPA TOP RESP-CODES PIPELINING USER SASL(PLAIN LOGIN) UIDL STLS"/><script id="ssl-cert" output="Subject: commonName=abrahamlab.med.harvard.edu&#xa;Subject Alternative Name: DNS:abrahamlab.med.harvard.edu&#xa;Issuer: commonName=Go Daddy Secure Certificate Authority - G2/organizationName=GoDaddy.com, Inc./stateOrProvinceName=Arizona/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-03-06T15:20:21&#xa;Not valid after:  2025-04-07T15:20:21&#xa;MD5:   7726 8685 6690 ccd3 7c2e da9b deb1 0d98&#xa;SHA-1: 2b0f 9a2b 1ee9 eaa3 1512 7e96 3d8d 23bb 6d0c 4545"><table key="subject">
+<elem key="commonName">abrahamlab.med.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">US</elem>
+<elem key="stateOrProvinceName">Arizona</elem>
+<elem key="localityName">Scottsdale</elem>
+<elem key="commonName">Go Daddy Secure Certificate Authority - G2</elem>
+<elem key="organizationName">GoDaddy.com, Inc.</elem>
+<elem key="organizationalUnitName">http://certs.godaddy.com/repository/</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">2048</elem>
+<elem key="type">rsa</elem>
+<elem key="modulus">BIGNUM: 0x55bdc7f88fc8</elem>
+<elem key="exponent">BIGNUM: 0x55bdc719f348</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://crl.godaddy.com/gdig2s1-18309.crl</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.16.840.1.114413.1.7.23.1&#xa;  CPS: http://certificates.godaddy.com/repository/&#xa;Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://ocsp.godaddy.com/&#xa;CA Issuers - URI:http://certificates.godaddy.com/repository/gdig2.crt</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">40:C2:BD:27:8E:CC:34:83:30:A2:33:D7:FB:6C:B3:F0:B4:2C:80:CE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:abrahamlab.med.harvard.edu</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">9C:B2:B4:CD:F9:36:98:9A:71:6D:5F:3C:AE:C2:E5:15:02:5D:DB:04</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 4E:75:A3:27:5C:9A:10:C3:38:5B:6C:D4:DF:3F:52:EB:&#xa;                1D:F0:E0:8E:1B:8D:69:C0:B1:FA:64:B1:62:9A:39:DF&#xa;    Timestamp : Mar  6 15:20:22.556 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:21:00:B3:A6:19:92:51:9E:0A:A0:53:6C:37:&#xa;                53:37:97:1C:AF:94:3A:63:E9:9F:AD:72:70:F4:4D:76:&#xa;                A6:C2:85:20:B5:02:1F:47:6C:B0:FD:BC:A8:74:2B:19:&#xa;                C0:DC:51:56:42:12:03:26:32:33:3A:F5:93:84:03:03:&#xa;                91:E9:30:2A:C7:D5&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 7D:59:1E:12:E1:78:2A:7B:1C:61:67:7C:5E:FD:F8:D0:&#xa;                87:5C:14:A0:4E:95:9E:B9:03:2F:D9:0E:8C:2E:79:B8&#xa;    Timestamp : Mar  6 15:20:22.809 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:C3:93:26:B8:6F:67:65:9A:4F:19:77:&#xa;                A4:F7:11:6E:DF:94:CC:B9:E5:71:0A:6F:60:D9:3B:3F:&#xa;                F1:B0:EC:A9:28:02:21:00:EE:2C:71:C6:77:D2:2D:A1:&#xa;                BC:65:07:63:0E:C9:F4:4D:C0:BB:5A:BD:8E:A5:8F:CA:&#xa;                05:21:82:2A:DB:AD:3A:5C&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : CC:FB:0F:6A:85:71:09:65:FE:95:9B:53:CE:E9:B2:7C:&#xa;                22:E9:85:5C:0D:97:8D:B6:A9:7E:54:C0:FE:4C:0D:B0&#xa;    Timestamp : Mar  6 15:20:22.933 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:EF:AD:80:2B:34:F7:CB:49:40:BB:59:&#xa;                27:3F:F1:21:05:E1:BF:30:11:F9:91:83:C7:02:97:83:&#xa;                8E:CE:C5:9C:71:02:20:15:DC:11:AC:29:06:7E:7E:22:&#xa;                F6:88:BB:8C:95:A7:6A:FD:BD:05:31:A3:38:40:6E:AB:&#xa;                45:50:FB:65:39:FC:49</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-03-06T15:20:21</elem>
+<elem key="notAfter">2025-04-07T15:20:21</elem>
+</table>
+<elem key="md5">772686856690ccd37c2eda9bdeb10d98</elem>
+<elem key="sha1">2b0f9a2b1ee9eaa315127e963d8d23bb6d0c4545</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIGmjCCBYKgAwIBAgIIDojosh+tkAowDQYJKoZIhvcNAQELBQAwgbQxCzAJBgNV&#xa;BAYTAlVTMRAwDgYDVQQIEwdBcml6b25hMRMwEQYDVQQHEwpTY290dHNkYWxlMRow&#xa;GAYDVQQKExFHb0RhZGR5LmNvbSwgSW5jLjEtMCsGA1UECxMkaHR0cDovL2NlcnRz&#xa;LmdvZGFkZHkuY29tL3JlcG9zaXRvcnkvMTMwMQYDVQQDEypHbyBEYWRkeSBTZWN1&#xa;cmUgQ2VydGlmaWNhdGUgQXV0aG9yaXR5IC0gRzIwHhcNMjQwMzA2MTUyMDIxWhcN&#xa;MjUwNDA3MTUyMDIxWjAlMSMwIQYDVQQDExphYnJhaGFtbGFiLm1lZC5oYXJ2YXJk&#xa;LmVkdTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKFkFnRs+rlILEjo&#xa;qHDEltCNYbIVkRGudodaklLhRjmoqRTgOkFKWw57JAj21LYTLSc3YWUzMvy/G6Wd&#xa;NYcodwDQJiaaaizqekYbMb/v1XsN6YOyjvHljGfrn4YofdKC02UsltDChqAEjuSY&#xa;3lV1ppaPQc7hTqffIShal9c6fBeHjGZChR9aQ2hgLL1bIgTxA0IdaqBw58XfZDBn&#xa;YdPsI4BuXBz993F8X8bDe9xjNZZR9ZBn56O+x4Kj07asrJQD3goHcS5C9eEMSmDB&#xa;lGuHb00Zuk796RloKy+CTskz+MHgtVsP5OQEqImZRW4dK5BinESj3RnooyhCJVgI&#xa;S2KuOKMCAwEAAaOCAzwwggM4MAwGA1UdEwEB/wQCMAAwHQYDVR0lBBYwFAYIKwYB&#xa;BQUHAwEGCCsGAQUFBwMCMA4GA1UdDwEB/wQEAwIFoDA5BgNVHR8EMjAwMC6gLKAq&#xa;hihodHRwOi8vY3JsLmdvZGFkZHkuY29tL2dkaWcyczEtMTgzMDkuY3JsMF0GA1Ud&#xa;IARWMFQwSAYLYIZIAYb9bQEHFwEwOTA3BggrBgEFBQcCARYraHR0cDovL2NlcnRp&#xa;ZmljYXRlcy5nb2RhZGR5LmNvbS9yZXBvc2l0b3J5LzAIBgZngQwBAgEwdgYIKwYB&#xa;BQUHAQEEajBoMCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5nb2RhZGR5LmNvbS8w&#xa;QAYIKwYBBQUHMAKGNGh0dHA6Ly9jZXJ0aWZpY2F0ZXMuZ29kYWRkeS5jb20vcmVw&#xa;b3NpdG9yeS9nZGlnMi5jcnQwHwYDVR0jBBgwFoAUQMK9J47MNIMwojPX+2yz8LQs&#xa;gM4wJQYDVR0RBB4wHIIaYWJyYWhhbWxhYi5tZWQuaGFydmFyZC5lZHUwHQYDVR0O&#xa;BBYEFJyytM35NpiacW1fPK7C5RUCXdsEMIIBfgYKKwYBBAHWeQIEAgSCAW4EggFq&#xa;AWgAdQBOdaMnXJoQwzhbbNTfP1LrHfDgjhuNacCx+mSxYpo53wAAAY4UWfEcAAAE&#xa;AwBGMEQCIQCzphmSUZ4KoFNsN1M3lxyvlDpj6Z+tcnD0TXamwoUgtQIfR2yw/byo&#xa;dCsZwNxRVkISAyYyMzr1k4QDA5HpMCrH1QB3AH1ZHhLheCp7HGFnfF79+NCHXBSg&#xa;TpWeuQMv2Q6MLnm4AAABjhRZ8hkAAAQDAEgwRgIhAMOTJrhvZ2WaTxl3pPcRbt+U&#xa;zLnlcQpvYNk7P/Gw7KkoAiEA7ixxxnfSLaG8ZQdjDsn0TcC7Wr2OpY/KBSGCKtut&#xa;OlwAdgDM+w9qhXEJZf6Vm1PO6bJ8IumFXA2XjbapflTA/kwNsAAAAY4UWfKVAAAE&#xa;AwBHMEUCIQDvrYArNPfLSUC7WSc/8SEF4b8wEfmRg8cCl4OOzsWccQIgFdwRrCkG&#xa;fn4i9oi7jJWnav29BTGjOEBuq0VQ+2U5/EkwDQYJKoZIhvcNAQELBQADggEBAAiS&#xa;Z3l9pdXc+xVa6WtZy/SuhRPxJpUHpbMe14KROWTDU/ZKSFNHDsv63O+9e+TmakEY&#xa;kOM6vmptIiu79B+QSZ3jesn6AAHfXkDr7saUHElgkTSeQv5kBcemGgrfh7v0Ozw8&#xa;1oKoYJCpC4rb5LSE1yfjwaOWTmVtkG/f8bSbbS8rAPc8UVBtbycCVKrC/sSV6DHz&#xa;aflgosJ/+LbnO8cfWifssYm1aaQd6kbQfnn+zllnEzyYGrkm5Xud6r7cXdPwbwoo&#xa;1PLb7a8OECBJRIBsJnnBXDW+e8BQc/aOcsfsCNK3VP7cKtiPMuPe+6X4NvsonwYS&#xa;9FttGxDgJq/Rsvevi5o=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="143"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="imap" product="Dovecot imapd" method="probed" conf="10"><cpe>cpe:/a:dovecot:dovecot</cpe></service><script id="imap-capabilities" output="LOGIN-REFERRALS listed have IDLE ENABLE capabilities LITERAL+ Pre-login post-login NAMESPACE IMAP4rev1 SASL-IR OK AUTH=PLAIN AUTH=LOGINA0001 more ID STARTTLS"/><script id="ssl-cert" output="Subject: commonName=abrahamlab.med.harvard.edu&#xa;Subject Alternative Name: DNS:abrahamlab.med.harvard.edu&#xa;Issuer: commonName=Go Daddy Secure Certificate Authority - G2/organizationName=GoDaddy.com, Inc./stateOrProvinceName=Arizona/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-03-06T15:20:21&#xa;Not valid after:  2025-04-07T15:20:21&#xa;MD5:   7726 8685 6690 ccd3 7c2e da9b deb1 0d98&#xa;SHA-1: 2b0f 9a2b 1ee9 eaa3 1512 7e96 3d8d 23bb 6d0c 4545"><table key="subject">
+<elem key="commonName">abrahamlab.med.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">US</elem>
+<elem key="stateOrProvinceName">Arizona</elem>
+<elem key="localityName">Scottsdale</elem>
+<elem key="commonName">Go Daddy Secure Certificate Authority - G2</elem>
+<elem key="organizationName">GoDaddy.com, Inc.</elem>
+<elem key="organizationalUnitName">http://certs.godaddy.com/repository/</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">2048</elem>
+<elem key="type">rsa</elem>
+<elem key="modulus">BIGNUM: 0x55bdc7c2e3e8</elem>
+<elem key="exponent">BIGNUM: 0x55bdc7597be8</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://crl.godaddy.com/gdig2s1-18309.crl</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.16.840.1.114413.1.7.23.1&#xa;  CPS: http://certificates.godaddy.com/repository/&#xa;Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://ocsp.godaddy.com/&#xa;CA Issuers - URI:http://certificates.godaddy.com/repository/gdig2.crt</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">40:C2:BD:27:8E:CC:34:83:30:A2:33:D7:FB:6C:B3:F0:B4:2C:80:CE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:abrahamlab.med.harvard.edu</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">9C:B2:B4:CD:F9:36:98:9A:71:6D:5F:3C:AE:C2:E5:15:02:5D:DB:04</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 4E:75:A3:27:5C:9A:10:C3:38:5B:6C:D4:DF:3F:52:EB:&#xa;                1D:F0:E0:8E:1B:8D:69:C0:B1:FA:64:B1:62:9A:39:DF&#xa;    Timestamp : Mar  6 15:20:22.556 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:21:00:B3:A6:19:92:51:9E:0A:A0:53:6C:37:&#xa;                53:37:97:1C:AF:94:3A:63:E9:9F:AD:72:70:F4:4D:76:&#xa;                A6:C2:85:20:B5:02:1F:47:6C:B0:FD:BC:A8:74:2B:19:&#xa;                C0:DC:51:56:42:12:03:26:32:33:3A:F5:93:84:03:03:&#xa;                91:E9:30:2A:C7:D5&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 7D:59:1E:12:E1:78:2A:7B:1C:61:67:7C:5E:FD:F8:D0:&#xa;                87:5C:14:A0:4E:95:9E:B9:03:2F:D9:0E:8C:2E:79:B8&#xa;    Timestamp : Mar  6 15:20:22.809 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:C3:93:26:B8:6F:67:65:9A:4F:19:77:&#xa;                A4:F7:11:6E:DF:94:CC:B9:E5:71:0A:6F:60:D9:3B:3F:&#xa;                F1:B0:EC:A9:28:02:21:00:EE:2C:71:C6:77:D2:2D:A1:&#xa;                BC:65:07:63:0E:C9:F4:4D:C0:BB:5A:BD:8E:A5:8F:CA:&#xa;                05:21:82:2A:DB:AD:3A:5C&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : CC:FB:0F:6A:85:71:09:65:FE:95:9B:53:CE:E9:B2:7C:&#xa;                22:E9:85:5C:0D:97:8D:B6:A9:7E:54:C0:FE:4C:0D:B0&#xa;    Timestamp : Mar  6 15:20:22.933 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:EF:AD:80:2B:34:F7:CB:49:40:BB:59:&#xa;                27:3F:F1:21:05:E1:BF:30:11:F9:91:83:C7:02:97:83:&#xa;                8E:CE:C5:9C:71:02:20:15:DC:11:AC:29:06:7E:7E:22:&#xa;                F6:88:BB:8C:95:A7:6A:FD:BD:05:31:A3:38:40:6E:AB:&#xa;                45:50:FB:65:39:FC:49</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-03-06T15:20:21</elem>
+<elem key="notAfter">2025-04-07T15:20:21</elem>
+</table>
+<elem key="md5">772686856690ccd37c2eda9bdeb10d98</elem>
+<elem key="sha1">2b0f9a2b1ee9eaa315127e963d8d23bb6d0c4545</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIGmjCCBYKgAwIBAgIIDojosh+tkAowDQYJKoZIhvcNAQELBQAwgbQxCzAJBgNV&#xa;BAYTAlVTMRAwDgYDVQQIEwdBcml6b25hMRMwEQYDVQQHEwpTY290dHNkYWxlMRow&#xa;GAYDVQQKExFHb0RhZGR5LmNvbSwgSW5jLjEtMCsGA1UECxMkaHR0cDovL2NlcnRz&#xa;LmdvZGFkZHkuY29tL3JlcG9zaXRvcnkvMTMwMQYDVQQDEypHbyBEYWRkeSBTZWN1&#xa;cmUgQ2VydGlmaWNhdGUgQXV0aG9yaXR5IC0gRzIwHhcNMjQwMzA2MTUyMDIxWhcN&#xa;MjUwNDA3MTUyMDIxWjAlMSMwIQYDVQQDExphYnJhaGFtbGFiLm1lZC5oYXJ2YXJk&#xa;LmVkdTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKFkFnRs+rlILEjo&#xa;qHDEltCNYbIVkRGudodaklLhRjmoqRTgOkFKWw57JAj21LYTLSc3YWUzMvy/G6Wd&#xa;NYcodwDQJiaaaizqekYbMb/v1XsN6YOyjvHljGfrn4YofdKC02UsltDChqAEjuSY&#xa;3lV1ppaPQc7hTqffIShal9c6fBeHjGZChR9aQ2hgLL1bIgTxA0IdaqBw58XfZDBn&#xa;YdPsI4BuXBz993F8X8bDe9xjNZZR9ZBn56O+x4Kj07asrJQD3goHcS5C9eEMSmDB&#xa;lGuHb00Zuk796RloKy+CTskz+MHgtVsP5OQEqImZRW4dK5BinESj3RnooyhCJVgI&#xa;S2KuOKMCAwEAAaOCAzwwggM4MAwGA1UdEwEB/wQCMAAwHQYDVR0lBBYwFAYIKwYB&#xa;BQUHAwEGCCsGAQUFBwMCMA4GA1UdDwEB/wQEAwIFoDA5BgNVHR8EMjAwMC6gLKAq&#xa;hihodHRwOi8vY3JsLmdvZGFkZHkuY29tL2dkaWcyczEtMTgzMDkuY3JsMF0GA1Ud&#xa;IARWMFQwSAYLYIZIAYb9bQEHFwEwOTA3BggrBgEFBQcCARYraHR0cDovL2NlcnRp&#xa;ZmljYXRlcy5nb2RhZGR5LmNvbS9yZXBvc2l0b3J5LzAIBgZngQwBAgEwdgYIKwYB&#xa;BQUHAQEEajBoMCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5nb2RhZGR5LmNvbS8w&#xa;QAYIKwYBBQUHMAKGNGh0dHA6Ly9jZXJ0aWZpY2F0ZXMuZ29kYWRkeS5jb20vcmVw&#xa;b3NpdG9yeS9nZGlnMi5jcnQwHwYDVR0jBBgwFoAUQMK9J47MNIMwojPX+2yz8LQs&#xa;gM4wJQYDVR0RBB4wHIIaYWJyYWhhbWxhYi5tZWQuaGFydmFyZC5lZHUwHQYDVR0O&#xa;BBYEFJyytM35NpiacW1fPK7C5RUCXdsEMIIBfgYKKwYBBAHWeQIEAgSCAW4EggFq&#xa;AWgAdQBOdaMnXJoQwzhbbNTfP1LrHfDgjhuNacCx+mSxYpo53wAAAY4UWfEcAAAE&#xa;AwBGMEQCIQCzphmSUZ4KoFNsN1M3lxyvlDpj6Z+tcnD0TXamwoUgtQIfR2yw/byo&#xa;dCsZwNxRVkISAyYyMzr1k4QDA5HpMCrH1QB3AH1ZHhLheCp7HGFnfF79+NCHXBSg&#xa;TpWeuQMv2Q6MLnm4AAABjhRZ8hkAAAQDAEgwRgIhAMOTJrhvZ2WaTxl3pPcRbt+U&#xa;zLnlcQpvYNk7P/Gw7KkoAiEA7ixxxnfSLaG8ZQdjDsn0TcC7Wr2OpY/KBSGCKtut&#xa;OlwAdgDM+w9qhXEJZf6Vm1PO6bJ8IumFXA2XjbapflTA/kwNsAAAAY4UWfKVAAAE&#xa;AwBHMEUCIQDvrYArNPfLSUC7WSc/8SEF4b8wEfmRg8cCl4OOzsWccQIgFdwRrCkG&#xa;fn4i9oi7jJWnav29BTGjOEBuq0VQ+2U5/EkwDQYJKoZIhvcNAQELBQADggEBAAiS&#xa;Z3l9pdXc+xVa6WtZy/SuhRPxJpUHpbMe14KROWTDU/ZKSFNHDsv63O+9e+TmakEY&#xa;kOM6vmptIiu79B+QSZ3jesn6AAHfXkDr7saUHElgkTSeQv5kBcemGgrfh7v0Ozw8&#xa;1oKoYJCpC4rb5LSE1yfjwaOWTmVtkG/f8bSbbS8rAPc8UVBtbycCVKrC/sSV6DHz&#xa;aflgosJ/+LbnO8cfWifssYm1aaQd6kbQfnn+zllnEzyYGrkm5Xud6r7cXdPwbwoo&#xa;1PLb7a8OECBJRIBsJnnBXDW+e8BQc/aOcsfsCNK3VP7cKtiPMuPe+6X4NvsonwYS&#xa;9FttGxDgJq/Rsvevi5o=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssl" product="Apache httpd" extrainfo="SSL-only mode" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:apache:http_server</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: HEAD POST"><table key="Supported Methods">
+<elem>HEAD</elem>
+<elem>POST</elem>
+</table>
+</script><script id="http-server-header" output="Apache"><elem>Apache</elem>
+</script><script id="http-title" output="400 Bad Request"><elem key="title">400 Bad Request</elem>
+</script><script id="ssl-cert" output="Subject: commonName=abrahamlab.med.harvard.edu&#xa;Subject Alternative Name: DNS:abrahamlab.med.harvard.edu&#xa;Issuer: commonName=Go Daddy Secure Certificate Authority - G2/organizationName=GoDaddy.com, Inc./stateOrProvinceName=Arizona/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-03-06T15:20:21&#xa;Not valid after:  2025-04-07T15:20:21&#xa;MD5:   7726 8685 6690 ccd3 7c2e da9b deb1 0d98&#xa;SHA-1: 2b0f 9a2b 1ee9 eaa3 1512 7e96 3d8d 23bb 6d0c 4545"><table key="subject">
+<elem key="commonName">abrahamlab.med.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">US</elem>
+<elem key="stateOrProvinceName">Arizona</elem>
+<elem key="localityName">Scottsdale</elem>
+<elem key="commonName">Go Daddy Secure Certificate Authority - G2</elem>
+<elem key="organizationName">GoDaddy.com, Inc.</elem>
+<elem key="organizationalUnitName">http://certs.godaddy.com/repository/</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">2048</elem>
+<elem key="type">rsa</elem>
+<elem key="modulus">BIGNUM: 0x55bdc67eaf68</elem>
+<elem key="exponent">BIGNUM: 0x55bdc6b6ef98</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://crl.godaddy.com/gdig2s1-18309.crl</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.16.840.1.114413.1.7.23.1&#xa;  CPS: http://certificates.godaddy.com/repository/&#xa;Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://ocsp.godaddy.com/&#xa;CA Issuers - URI:http://certificates.godaddy.com/repository/gdig2.crt</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">40:C2:BD:27:8E:CC:34:83:30:A2:33:D7:FB:6C:B3:F0:B4:2C:80:CE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:abrahamlab.med.harvard.edu</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">9C:B2:B4:CD:F9:36:98:9A:71:6D:5F:3C:AE:C2:E5:15:02:5D:DB:04</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 4E:75:A3:27:5C:9A:10:C3:38:5B:6C:D4:DF:3F:52:EB:&#xa;                1D:F0:E0:8E:1B:8D:69:C0:B1:FA:64:B1:62:9A:39:DF&#xa;    Timestamp : Mar  6 15:20:22.556 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:21:00:B3:A6:19:92:51:9E:0A:A0:53:6C:37:&#xa;                53:37:97:1C:AF:94:3A:63:E9:9F:AD:72:70:F4:4D:76:&#xa;                A6:C2:85:20:B5:02:1F:47:6C:B0:FD:BC:A8:74:2B:19:&#xa;                C0:DC:51:56:42:12:03:26:32:33:3A:F5:93:84:03:03:&#xa;                91:E9:30:2A:C7:D5&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 7D:59:1E:12:E1:78:2A:7B:1C:61:67:7C:5E:FD:F8:D0:&#xa;                87:5C:14:A0:4E:95:9E:B9:03:2F:D9:0E:8C:2E:79:B8&#xa;    Timestamp : Mar  6 15:20:22.809 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:C3:93:26:B8:6F:67:65:9A:4F:19:77:&#xa;                A4:F7:11:6E:DF:94:CC:B9:E5:71:0A:6F:60:D9:3B:3F:&#xa;                F1:B0:EC:A9:28:02:21:00:EE:2C:71:C6:77:D2:2D:A1:&#xa;                BC:65:07:63:0E:C9:F4:4D:C0:BB:5A:BD:8E:A5:8F:CA:&#xa;                05:21:82:2A:DB:AD:3A:5C&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : CC:FB:0F:6A:85:71:09:65:FE:95:9B:53:CE:E9:B2:7C:&#xa;                22:E9:85:5C:0D:97:8D:B6:A9:7E:54:C0:FE:4C:0D:B0&#xa;    Timestamp : Mar  6 15:20:22.933 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:EF:AD:80:2B:34:F7:CB:49:40:BB:59:&#xa;                27:3F:F1:21:05:E1:BF:30:11:F9:91:83:C7:02:97:83:&#xa;                8E:CE:C5:9C:71:02:20:15:DC:11:AC:29:06:7E:7E:22:&#xa;                F6:88:BB:8C:95:A7:6A:FD:BD:05:31:A3:38:40:6E:AB:&#xa;                45:50:FB:65:39:FC:49</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-03-06T15:20:21</elem>
+<elem key="notAfter">2025-04-07T15:20:21</elem>
+</table>
+<elem key="md5">772686856690ccd37c2eda9bdeb10d98</elem>
+<elem key="sha1">2b0f9a2b1ee9eaa315127e963d8d23bb6d0c4545</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIGmjCCBYKgAwIBAgIIDojosh+tkAowDQYJKoZIhvcNAQELBQAwgbQxCzAJBgNV&#xa;BAYTAlVTMRAwDgYDVQQIEwdBcml6b25hMRMwEQYDVQQHEwpTY290dHNkYWxlMRow&#xa;GAYDVQQKExFHb0RhZGR5LmNvbSwgSW5jLjEtMCsGA1UECxMkaHR0cDovL2NlcnRz&#xa;LmdvZGFkZHkuY29tL3JlcG9zaXRvcnkvMTMwMQYDVQQDEypHbyBEYWRkeSBTZWN1&#xa;cmUgQ2VydGlmaWNhdGUgQXV0aG9yaXR5IC0gRzIwHhcNMjQwMzA2MTUyMDIxWhcN&#xa;MjUwNDA3MTUyMDIxWjAlMSMwIQYDVQQDExphYnJhaGFtbGFiLm1lZC5oYXJ2YXJk&#xa;LmVkdTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKFkFnRs+rlILEjo&#xa;qHDEltCNYbIVkRGudodaklLhRjmoqRTgOkFKWw57JAj21LYTLSc3YWUzMvy/G6Wd&#xa;NYcodwDQJiaaaizqekYbMb/v1XsN6YOyjvHljGfrn4YofdKC02UsltDChqAEjuSY&#xa;3lV1ppaPQc7hTqffIShal9c6fBeHjGZChR9aQ2hgLL1bIgTxA0IdaqBw58XfZDBn&#xa;YdPsI4BuXBz993F8X8bDe9xjNZZR9ZBn56O+x4Kj07asrJQD3goHcS5C9eEMSmDB&#xa;lGuHb00Zuk796RloKy+CTskz+MHgtVsP5OQEqImZRW4dK5BinESj3RnooyhCJVgI&#xa;S2KuOKMCAwEAAaOCAzwwggM4MAwGA1UdEwEB/wQCMAAwHQYDVR0lBBYwFAYIKwYB&#xa;BQUHAwEGCCsGAQUFBwMCMA4GA1UdDwEB/wQEAwIFoDA5BgNVHR8EMjAwMC6gLKAq&#xa;hihodHRwOi8vY3JsLmdvZGFkZHkuY29tL2dkaWcyczEtMTgzMDkuY3JsMF0GA1Ud&#xa;IARWMFQwSAYLYIZIAYb9bQEHFwEwOTA3BggrBgEFBQcCARYraHR0cDovL2NlcnRp&#xa;ZmljYXRlcy5nb2RhZGR5LmNvbS9yZXBvc2l0b3J5LzAIBgZngQwBAgEwdgYIKwYB&#xa;BQUHAQEEajBoMCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5nb2RhZGR5LmNvbS8w&#xa;QAYIKwYBBQUHMAKGNGh0dHA6Ly9jZXJ0aWZpY2F0ZXMuZ29kYWRkeS5jb20vcmVw&#xa;b3NpdG9yeS9nZGlnMi5jcnQwHwYDVR0jBBgwFoAUQMK9J47MNIMwojPX+2yz8LQs&#xa;gM4wJQYDVR0RBB4wHIIaYWJyYWhhbWxhYi5tZWQuaGFydmFyZC5lZHUwHQYDVR0O&#xa;BBYEFJyytM35NpiacW1fPK7C5RUCXdsEMIIBfgYKKwYBBAHWeQIEAgSCAW4EggFq&#xa;AWgAdQBOdaMnXJoQwzhbbNTfP1LrHfDgjhuNacCx+mSxYpo53wAAAY4UWfEcAAAE&#xa;AwBGMEQCIQCzphmSUZ4KoFNsN1M3lxyvlDpj6Z+tcnD0TXamwoUgtQIfR2yw/byo&#xa;dCsZwNxRVkISAyYyMzr1k4QDA5HpMCrH1QB3AH1ZHhLheCp7HGFnfF79+NCHXBSg&#xa;TpWeuQMv2Q6MLnm4AAABjhRZ8hkAAAQDAEgwRgIhAMOTJrhvZ2WaTxl3pPcRbt+U&#xa;zLnlcQpvYNk7P/Gw7KkoAiEA7ixxxnfSLaG8ZQdjDsn0TcC7Wr2OpY/KBSGCKtut&#xa;OlwAdgDM+w9qhXEJZf6Vm1PO6bJ8IumFXA2XjbapflTA/kwNsAAAAY4UWfKVAAAE&#xa;AwBHMEUCIQDvrYArNPfLSUC7WSc/8SEF4b8wEfmRg8cCl4OOzsWccQIgFdwRrCkG&#xa;fn4i9oi7jJWnav29BTGjOEBuq0VQ+2U5/EkwDQYJKoZIhvcNAQELBQADggEBAAiS&#xa;Z3l9pdXc+xVa6WtZy/SuhRPxJpUHpbMe14KROWTDU/ZKSFNHDsv63O+9e+TmakEY&#xa;kOM6vmptIiu79B+QSZ3jesn6AAHfXkDr7saUHElgkTSeQv5kBcemGgrfh7v0Ozw8&#xa;1oKoYJCpC4rb5LSE1yfjwaOWTmVtkG/f8bSbbS8rAPc8UVBtbycCVKrC/sSV6DHz&#xa;aflgosJ/+LbnO8cfWifssYm1aaQd6kbQfnn+zllnEzyYGrkm5Xud6r7cXdPwbwoo&#xa;1PLb7a8OECBJRIBsJnnBXDW+e8BQc/aOcsfsCNK3VP7cKtiPMuPe+6X4NvsonwYS&#xa;9FttGxDgJq/Rsvevi5o=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="tls-alpn" output="&#xa;  h2&#xa;  http/1.1"><elem>h2</elem>
+<elem>http/1.1</elem>
+</script></port>
+<port protocol="tcp" portid="465"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtps" servicefp="SF-Port465-TCP:V=7.80%I=7%D=11/4%Time=6728F3D6%P=x86_64-pc-linux-gnu%r(NULL,58,&quot;421\x20Too\x20many\x20concurrent\x20SMTP\x20connections\x20from\x20this\x20IP\x20address;\x20please\x20try\x20again\x20later\.\r\n&quot;);" method="table" conf="3"/><script id="fingerprint-strings" output="&#xa;  NULL: &#xa;    421 Too many concurrent SMTP connections from this IP address; please try again later."><elem key="NULL">&#xa;    421 Too many concurrent SMTP connections from this IP address; please try again later.</elem>
+</script><script id="smtp-commands" output="SMTP EHLO abrahamlab.med.harvard.edu: failed to receive data: connection closed"/><script id="ssl-cert" output="Subject: commonName=abrahamlab.med.harvard.edu&#xa;Subject Alternative Name: DNS:abrahamlab.med.harvard.edu&#xa;Issuer: commonName=Go Daddy Secure Certificate Authority - G2/organizationName=GoDaddy.com, Inc./stateOrProvinceName=Arizona/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-03-06T15:20:21&#xa;Not valid after:  2025-04-07T15:20:21&#xa;MD5:   7726 8685 6690 ccd3 7c2e da9b deb1 0d98&#xa;SHA-1: 2b0f 9a2b 1ee9 eaa3 1512 7e96 3d8d 23bb 6d0c 4545"><table key="subject">
+<elem key="commonName">abrahamlab.med.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">US</elem>
+<elem key="stateOrProvinceName">Arizona</elem>
+<elem key="localityName">Scottsdale</elem>
+<elem key="commonName">Go Daddy Secure Certificate Authority - G2</elem>
+<elem key="organizationName">GoDaddy.com, Inc.</elem>
+<elem key="organizationalUnitName">http://certs.godaddy.com/repository/</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">2048</elem>
+<elem key="type">rsa</elem>
+<elem key="modulus">BIGNUM: 0x55bdc717b328</elem>
+<elem key="exponent">BIGNUM: 0x55bdc717b2a8</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://crl.godaddy.com/gdig2s1-18309.crl</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.16.840.1.114413.1.7.23.1&#xa;  CPS: http://certificates.godaddy.com/repository/&#xa;Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://ocsp.godaddy.com/&#xa;CA Issuers - URI:http://certificates.godaddy.com/repository/gdig2.crt</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">40:C2:BD:27:8E:CC:34:83:30:A2:33:D7:FB:6C:B3:F0:B4:2C:80:CE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:abrahamlab.med.harvard.edu</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">9C:B2:B4:CD:F9:36:98:9A:71:6D:5F:3C:AE:C2:E5:15:02:5D:DB:04</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 4E:75:A3:27:5C:9A:10:C3:38:5B:6C:D4:DF:3F:52:EB:&#xa;                1D:F0:E0:8E:1B:8D:69:C0:B1:FA:64:B1:62:9A:39:DF&#xa;    Timestamp : Mar  6 15:20:22.556 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:21:00:B3:A6:19:92:51:9E:0A:A0:53:6C:37:&#xa;                53:37:97:1C:AF:94:3A:63:E9:9F:AD:72:70:F4:4D:76:&#xa;                A6:C2:85:20:B5:02:1F:47:6C:B0:FD:BC:A8:74:2B:19:&#xa;                C0:DC:51:56:42:12:03:26:32:33:3A:F5:93:84:03:03:&#xa;                91:E9:30:2A:C7:D5&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 7D:59:1E:12:E1:78:2A:7B:1C:61:67:7C:5E:FD:F8:D0:&#xa;                87:5C:14:A0:4E:95:9E:B9:03:2F:D9:0E:8C:2E:79:B8&#xa;    Timestamp : Mar  6 15:20:22.809 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:C3:93:26:B8:6F:67:65:9A:4F:19:77:&#xa;                A4:F7:11:6E:DF:94:CC:B9:E5:71:0A:6F:60:D9:3B:3F:&#xa;                F1:B0:EC:A9:28:02:21:00:EE:2C:71:C6:77:D2:2D:A1:&#xa;                BC:65:07:63:0E:C9:F4:4D:C0:BB:5A:BD:8E:A5:8F:CA:&#xa;                05:21:82:2A:DB:AD:3A:5C&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : CC:FB:0F:6A:85:71:09:65:FE:95:9B:53:CE:E9:B2:7C:&#xa;                22:E9:85:5C:0D:97:8D:B6:A9:7E:54:C0:FE:4C:0D:B0&#xa;    Timestamp : Mar  6 15:20:22.933 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:EF:AD:80:2B:34:F7:CB:49:40:BB:59:&#xa;                27:3F:F1:21:05:E1:BF:30:11:F9:91:83:C7:02:97:83:&#xa;                8E:CE:C5:9C:71:02:20:15:DC:11:AC:29:06:7E:7E:22:&#xa;                F6:88:BB:8C:95:A7:6A:FD:BD:05:31:A3:38:40:6E:AB:&#xa;                45:50:FB:65:39:FC:49</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-03-06T15:20:21</elem>
+<elem key="notAfter">2025-04-07T15:20:21</elem>
+</table>
+<elem key="md5">772686856690ccd37c2eda9bdeb10d98</elem>
+<elem key="sha1">2b0f9a2b1ee9eaa315127e963d8d23bb6d0c4545</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIGmjCCBYKgAwIBAgIIDojosh+tkAowDQYJKoZIhvcNAQELBQAwgbQxCzAJBgNV&#xa;BAYTAlVTMRAwDgYDVQQIEwdBcml6b25hMRMwEQYDVQQHEwpTY290dHNkYWxlMRow&#xa;GAYDVQQKExFHb0RhZGR5LmNvbSwgSW5jLjEtMCsGA1UECxMkaHR0cDovL2NlcnRz&#xa;LmdvZGFkZHkuY29tL3JlcG9zaXRvcnkvMTMwMQYDVQQDEypHbyBEYWRkeSBTZWN1&#xa;cmUgQ2VydGlmaWNhdGUgQXV0aG9yaXR5IC0gRzIwHhcNMjQwMzA2MTUyMDIxWhcN&#xa;MjUwNDA3MTUyMDIxWjAlMSMwIQYDVQQDExphYnJhaGFtbGFiLm1lZC5oYXJ2YXJk&#xa;LmVkdTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKFkFnRs+rlILEjo&#xa;qHDEltCNYbIVkRGudodaklLhRjmoqRTgOkFKWw57JAj21LYTLSc3YWUzMvy/G6Wd&#xa;NYcodwDQJiaaaizqekYbMb/v1XsN6YOyjvHljGfrn4YofdKC02UsltDChqAEjuSY&#xa;3lV1ppaPQc7hTqffIShal9c6fBeHjGZChR9aQ2hgLL1bIgTxA0IdaqBw58XfZDBn&#xa;YdPsI4BuXBz993F8X8bDe9xjNZZR9ZBn56O+x4Kj07asrJQD3goHcS5C9eEMSmDB&#xa;lGuHb00Zuk796RloKy+CTskz+MHgtVsP5OQEqImZRW4dK5BinESj3RnooyhCJVgI&#xa;S2KuOKMCAwEAAaOCAzwwggM4MAwGA1UdEwEB/wQCMAAwHQYDVR0lBBYwFAYIKwYB&#xa;BQUHAwEGCCsGAQUFBwMCMA4GA1UdDwEB/wQEAwIFoDA5BgNVHR8EMjAwMC6gLKAq&#xa;hihodHRwOi8vY3JsLmdvZGFkZHkuY29tL2dkaWcyczEtMTgzMDkuY3JsMF0GA1Ud&#xa;IARWMFQwSAYLYIZIAYb9bQEHFwEwOTA3BggrBgEFBQcCARYraHR0cDovL2NlcnRp&#xa;ZmljYXRlcy5nb2RhZGR5LmNvbS9yZXBvc2l0b3J5LzAIBgZngQwBAgEwdgYIKwYB&#xa;BQUHAQEEajBoMCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5nb2RhZGR5LmNvbS8w&#xa;QAYIKwYBBQUHMAKGNGh0dHA6Ly9jZXJ0aWZpY2F0ZXMuZ29kYWRkeS5jb20vcmVw&#xa;b3NpdG9yeS9nZGlnMi5jcnQwHwYDVR0jBBgwFoAUQMK9J47MNIMwojPX+2yz8LQs&#xa;gM4wJQYDVR0RBB4wHIIaYWJyYWhhbWxhYi5tZWQuaGFydmFyZC5lZHUwHQYDVR0O&#xa;BBYEFJyytM35NpiacW1fPK7C5RUCXdsEMIIBfgYKKwYBBAHWeQIEAgSCAW4EggFq&#xa;AWgAdQBOdaMnXJoQwzhbbNTfP1LrHfDgjhuNacCx+mSxYpo53wAAAY4UWfEcAAAE&#xa;AwBGMEQCIQCzphmSUZ4KoFNsN1M3lxyvlDpj6Z+tcnD0TXamwoUgtQIfR2yw/byo&#xa;dCsZwNxRVkISAyYyMzr1k4QDA5HpMCrH1QB3AH1ZHhLheCp7HGFnfF79+NCHXBSg&#xa;TpWeuQMv2Q6MLnm4AAABjhRZ8hkAAAQDAEgwRgIhAMOTJrhvZ2WaTxl3pPcRbt+U&#xa;zLnlcQpvYNk7P/Gw7KkoAiEA7ixxxnfSLaG8ZQdjDsn0TcC7Wr2OpY/KBSGCKtut&#xa;OlwAdgDM+w9qhXEJZf6Vm1PO6bJ8IumFXA2XjbapflTA/kwNsAAAAY4UWfKVAAAE&#xa;AwBHMEUCIQDvrYArNPfLSUC7WSc/8SEF4b8wEfmRg8cCl4OOzsWccQIgFdwRrCkG&#xa;fn4i9oi7jJWnav29BTGjOEBuq0VQ+2U5/EkwDQYJKoZIhvcNAQELBQADggEBAAiS&#xa;Z3l9pdXc+xVa6WtZy/SuhRPxJpUHpbMe14KROWTDU/ZKSFNHDsv63O+9e+TmakEY&#xa;kOM6vmptIiu79B+QSZ3jesn6AAHfXkDr7saUHElgkTSeQv5kBcemGgrfh7v0Ozw8&#xa;1oKoYJCpC4rb5LSE1yfjwaOWTmVtkG/f8bSbbS8rAPc8UVBtbycCVKrC/sSV6DHz&#xa;aflgosJ/+LbnO8cfWifssYm1aaQd6kbQfnn+zllnEzyYGrkm5Xud6r7cXdPwbwoo&#xa;1PLb7a8OECBJRIBsJnnBXDW+e8BQc/aOcsfsCNK3VP7cKtiPMuPe+6X4NvsonwYS&#xa;9FttGxDgJq/Rsvevi5o=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="587"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="submission" servicefp="SF-Port587-TCP:V=7.80%I=7%D=11/4%Time=6728F3D6%P=x86_64-pc-linux-gnu%r(NULL,58,&quot;421\x20Too\x20many\x20concurrent\x20SMTP\x20connections\x20from\x20this\x20IP\x20address;\x20please\x20try\x20again\x20later\.\r\n&quot;);" method="table" conf="3"/><script id="fingerprint-strings" output="&#xa;  NULL: &#xa;    421 Too many concurrent SMTP connections from this IP address; please try again later."><elem key="NULL">&#xa;    421 Too many concurrent SMTP connections from this IP address; please try again later.</elem>
+</script><script id="smtp-commands" output="SMTP EHLO abrahamlab.med.harvard.edu: failed to receive data: connection closed"/></port>
+<port protocol="tcp" portid="990"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ftps" method="table" conf="3"/></port>
+<port protocol="tcp" portid="993"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="imaps" method="table" conf="3"/><script id="imap-capabilities" output="LOGIN-REFERRALS listed have IDLE ENABLE capabilities LITERAL+ Pre-login post-login NAMESPACE IMAP4rev1 SASL-IR OK AUTH=PLAIN AUTH=LOGINA0001 ID more"/><script id="ssl-cert" output="Subject: commonName=abrahamlab.med.harvard.edu&#xa;Subject Alternative Name: DNS:abrahamlab.med.harvard.edu&#xa;Issuer: commonName=Go Daddy Secure Certificate Authority - G2/organizationName=GoDaddy.com, Inc./stateOrProvinceName=Arizona/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-03-06T15:20:21&#xa;Not valid after:  2025-04-07T15:20:21&#xa;MD5:   7726 8685 6690 ccd3 7c2e da9b deb1 0d98&#xa;SHA-1: 2b0f 9a2b 1ee9 eaa3 1512 7e96 3d8d 23bb 6d0c 4545"><table key="subject">
+<elem key="commonName">abrahamlab.med.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">US</elem>
+<elem key="stateOrProvinceName">Arizona</elem>
+<elem key="localityName">Scottsdale</elem>
+<elem key="commonName">Go Daddy Secure Certificate Authority - G2</elem>
+<elem key="organizationName">GoDaddy.com, Inc.</elem>
+<elem key="organizationalUnitName">http://certs.godaddy.com/repository/</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">2048</elem>
+<elem key="type">rsa</elem>
+<elem key="modulus">BIGNUM: 0x55bdc6275c48</elem>
+<elem key="exponent">BIGNUM: 0x55bdc5f02388</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://crl.godaddy.com/gdig2s1-18309.crl</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.16.840.1.114413.1.7.23.1&#xa;  CPS: http://certificates.godaddy.com/repository/&#xa;Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://ocsp.godaddy.com/&#xa;CA Issuers - URI:http://certificates.godaddy.com/repository/gdig2.crt</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">40:C2:BD:27:8E:CC:34:83:30:A2:33:D7:FB:6C:B3:F0:B4:2C:80:CE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:abrahamlab.med.harvard.edu</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">9C:B2:B4:CD:F9:36:98:9A:71:6D:5F:3C:AE:C2:E5:15:02:5D:DB:04</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 4E:75:A3:27:5C:9A:10:C3:38:5B:6C:D4:DF:3F:52:EB:&#xa;                1D:F0:E0:8E:1B:8D:69:C0:B1:FA:64:B1:62:9A:39:DF&#xa;    Timestamp : Mar  6 15:20:22.556 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:21:00:B3:A6:19:92:51:9E:0A:A0:53:6C:37:&#xa;                53:37:97:1C:AF:94:3A:63:E9:9F:AD:72:70:F4:4D:76:&#xa;                A6:C2:85:20:B5:02:1F:47:6C:B0:FD:BC:A8:74:2B:19:&#xa;                C0:DC:51:56:42:12:03:26:32:33:3A:F5:93:84:03:03:&#xa;                91:E9:30:2A:C7:D5&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 7D:59:1E:12:E1:78:2A:7B:1C:61:67:7C:5E:FD:F8:D0:&#xa;                87:5C:14:A0:4E:95:9E:B9:03:2F:D9:0E:8C:2E:79:B8&#xa;    Timestamp : Mar  6 15:20:22.809 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:C3:93:26:B8:6F:67:65:9A:4F:19:77:&#xa;                A4:F7:11:6E:DF:94:CC:B9:E5:71:0A:6F:60:D9:3B:3F:&#xa;                F1:B0:EC:A9:28:02:21:00:EE:2C:71:C6:77:D2:2D:A1:&#xa;                BC:65:07:63:0E:C9:F4:4D:C0:BB:5A:BD:8E:A5:8F:CA:&#xa;                05:21:82:2A:DB:AD:3A:5C&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : CC:FB:0F:6A:85:71:09:65:FE:95:9B:53:CE:E9:B2:7C:&#xa;                22:E9:85:5C:0D:97:8D:B6:A9:7E:54:C0:FE:4C:0D:B0&#xa;    Timestamp : Mar  6 15:20:22.933 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:EF:AD:80:2B:34:F7:CB:49:40:BB:59:&#xa;                27:3F:F1:21:05:E1:BF:30:11:F9:91:83:C7:02:97:83:&#xa;                8E:CE:C5:9C:71:02:20:15:DC:11:AC:29:06:7E:7E:22:&#xa;                F6:88:BB:8C:95:A7:6A:FD:BD:05:31:A3:38:40:6E:AB:&#xa;                45:50:FB:65:39:FC:49</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-03-06T15:20:21</elem>
+<elem key="notAfter">2025-04-07T15:20:21</elem>
+</table>
+<elem key="md5">772686856690ccd37c2eda9bdeb10d98</elem>
+<elem key="sha1">2b0f9a2b1ee9eaa315127e963d8d23bb6d0c4545</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIGmjCCBYKgAwIBAgIIDojosh+tkAowDQYJKoZIhvcNAQELBQAwgbQxCzAJBgNV&#xa;BAYTAlVTMRAwDgYDVQQIEwdBcml6b25hMRMwEQYDVQQHEwpTY290dHNkYWxlMRow&#xa;GAYDVQQKExFHb0RhZGR5LmNvbSwgSW5jLjEtMCsGA1UECxMkaHR0cDovL2NlcnRz&#xa;LmdvZGFkZHkuY29tL3JlcG9zaXRvcnkvMTMwMQYDVQQDEypHbyBEYWRkeSBTZWN1&#xa;cmUgQ2VydGlmaWNhdGUgQXV0aG9yaXR5IC0gRzIwHhcNMjQwMzA2MTUyMDIxWhcN&#xa;MjUwNDA3MTUyMDIxWjAlMSMwIQYDVQQDExphYnJhaGFtbGFiLm1lZC5oYXJ2YXJk&#xa;LmVkdTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKFkFnRs+rlILEjo&#xa;qHDEltCNYbIVkRGudodaklLhRjmoqRTgOkFKWw57JAj21LYTLSc3YWUzMvy/G6Wd&#xa;NYcodwDQJiaaaizqekYbMb/v1XsN6YOyjvHljGfrn4YofdKC02UsltDChqAEjuSY&#xa;3lV1ppaPQc7hTqffIShal9c6fBeHjGZChR9aQ2hgLL1bIgTxA0IdaqBw58XfZDBn&#xa;YdPsI4BuXBz993F8X8bDe9xjNZZR9ZBn56O+x4Kj07asrJQD3goHcS5C9eEMSmDB&#xa;lGuHb00Zuk796RloKy+CTskz+MHgtVsP5OQEqImZRW4dK5BinESj3RnooyhCJVgI&#xa;S2KuOKMCAwEAAaOCAzwwggM4MAwGA1UdEwEB/wQCMAAwHQYDVR0lBBYwFAYIKwYB&#xa;BQUHAwEGCCsGAQUFBwMCMA4GA1UdDwEB/wQEAwIFoDA5BgNVHR8EMjAwMC6gLKAq&#xa;hihodHRwOi8vY3JsLmdvZGFkZHkuY29tL2dkaWcyczEtMTgzMDkuY3JsMF0GA1Ud&#xa;IARWMFQwSAYLYIZIAYb9bQEHFwEwOTA3BggrBgEFBQcCARYraHR0cDovL2NlcnRp&#xa;ZmljYXRlcy5nb2RhZGR5LmNvbS9yZXBvc2l0b3J5LzAIBgZngQwBAgEwdgYIKwYB&#xa;BQUHAQEEajBoMCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5nb2RhZGR5LmNvbS8w&#xa;QAYIKwYBBQUHMAKGNGh0dHA6Ly9jZXJ0aWZpY2F0ZXMuZ29kYWRkeS5jb20vcmVw&#xa;b3NpdG9yeS9nZGlnMi5jcnQwHwYDVR0jBBgwFoAUQMK9J47MNIMwojPX+2yz8LQs&#xa;gM4wJQYDVR0RBB4wHIIaYWJyYWhhbWxhYi5tZWQuaGFydmFyZC5lZHUwHQYDVR0O&#xa;BBYEFJyytM35NpiacW1fPK7C5RUCXdsEMIIBfgYKKwYBBAHWeQIEAgSCAW4EggFq&#xa;AWgAdQBOdaMnXJoQwzhbbNTfP1LrHfDgjhuNacCx+mSxYpo53wAAAY4UWfEcAAAE&#xa;AwBGMEQCIQCzphmSUZ4KoFNsN1M3lxyvlDpj6Z+tcnD0TXamwoUgtQIfR2yw/byo&#xa;dCsZwNxRVkISAyYyMzr1k4QDA5HpMCrH1QB3AH1ZHhLheCp7HGFnfF79+NCHXBSg&#xa;TpWeuQMv2Q6MLnm4AAABjhRZ8hkAAAQDAEgwRgIhAMOTJrhvZ2WaTxl3pPcRbt+U&#xa;zLnlcQpvYNk7P/Gw7KkoAiEA7ixxxnfSLaG8ZQdjDsn0TcC7Wr2OpY/KBSGCKtut&#xa;OlwAdgDM+w9qhXEJZf6Vm1PO6bJ8IumFXA2XjbapflTA/kwNsAAAAY4UWfKVAAAE&#xa;AwBHMEUCIQDvrYArNPfLSUC7WSc/8SEF4b8wEfmRg8cCl4OOzsWccQIgFdwRrCkG&#xa;fn4i9oi7jJWnav29BTGjOEBuq0VQ+2U5/EkwDQYJKoZIhvcNAQELBQADggEBAAiS&#xa;Z3l9pdXc+xVa6WtZy/SuhRPxJpUHpbMe14KROWTDU/ZKSFNHDsv63O+9e+TmakEY&#xa;kOM6vmptIiu79B+QSZ3jesn6AAHfXkDr7saUHElgkTSeQv5kBcemGgrfh7v0Ozw8&#xa;1oKoYJCpC4rb5LSE1yfjwaOWTmVtkG/f8bSbbS8rAPc8UVBtbycCVKrC/sSV6DHz&#xa;aflgosJ/+LbnO8cfWifssYm1aaQd6kbQfnn+zllnEzyYGrkm5Xud6r7cXdPwbwoo&#xa;1PLb7a8OECBJRIBsJnnBXDW+e8BQc/aOcsfsCNK3VP7cKtiPMuPe+6X4NvsonwYS&#xa;9FttGxDgJq/Rsvevi5o=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="995"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="pop3s" method="table" conf="3"/><script id="pop3-capabilities" output="PIPELINING SASL(PLAIN LOGIN) AUTH-RESP-CODE CAPA UIDL USER RESP-CODES TOP"/><script id="ssl-cert" output="Subject: commonName=abrahamlab.med.harvard.edu&#xa;Subject Alternative Name: DNS:abrahamlab.med.harvard.edu&#xa;Issuer: commonName=Go Daddy Secure Certificate Authority - G2/organizationName=GoDaddy.com, Inc./stateOrProvinceName=Arizona/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-03-06T15:20:21&#xa;Not valid after:  2025-04-07T15:20:21&#xa;MD5:   7726 8685 6690 ccd3 7c2e da9b deb1 0d98&#xa;SHA-1: 2b0f 9a2b 1ee9 eaa3 1512 7e96 3d8d 23bb 6d0c 4545"><table key="subject">
+<elem key="commonName">abrahamlab.med.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">US</elem>
+<elem key="stateOrProvinceName">Arizona</elem>
+<elem key="localityName">Scottsdale</elem>
+<elem key="commonName">Go Daddy Secure Certificate Authority - G2</elem>
+<elem key="organizationName">GoDaddy.com, Inc.</elem>
+<elem key="organizationalUnitName">http://certs.godaddy.com/repository/</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">2048</elem>
+<elem key="type">rsa</elem>
+<elem key="modulus">BIGNUM: 0x55bdc6966168</elem>
+<elem key="exponent">BIGNUM: 0x55bdc69660e8</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://crl.godaddy.com/gdig2s1-18309.crl</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.16.840.1.114413.1.7.23.1&#xa;  CPS: http://certificates.godaddy.com/repository/&#xa;Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://ocsp.godaddy.com/&#xa;CA Issuers - URI:http://certificates.godaddy.com/repository/gdig2.crt</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">40:C2:BD:27:8E:CC:34:83:30:A2:33:D7:FB:6C:B3:F0:B4:2C:80:CE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:abrahamlab.med.harvard.edu</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">9C:B2:B4:CD:F9:36:98:9A:71:6D:5F:3C:AE:C2:E5:15:02:5D:DB:04</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 4E:75:A3:27:5C:9A:10:C3:38:5B:6C:D4:DF:3F:52:EB:&#xa;                1D:F0:E0:8E:1B:8D:69:C0:B1:FA:64:B1:62:9A:39:DF&#xa;    Timestamp : Mar  6 15:20:22.556 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:21:00:B3:A6:19:92:51:9E:0A:A0:53:6C:37:&#xa;                53:37:97:1C:AF:94:3A:63:E9:9F:AD:72:70:F4:4D:76:&#xa;                A6:C2:85:20:B5:02:1F:47:6C:B0:FD:BC:A8:74:2B:19:&#xa;                C0:DC:51:56:42:12:03:26:32:33:3A:F5:93:84:03:03:&#xa;                91:E9:30:2A:C7:D5&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 7D:59:1E:12:E1:78:2A:7B:1C:61:67:7C:5E:FD:F8:D0:&#xa;                87:5C:14:A0:4E:95:9E:B9:03:2F:D9:0E:8C:2E:79:B8&#xa;    Timestamp : Mar  6 15:20:22.809 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:C3:93:26:B8:6F:67:65:9A:4F:19:77:&#xa;                A4:F7:11:6E:DF:94:CC:B9:E5:71:0A:6F:60:D9:3B:3F:&#xa;                F1:B0:EC:A9:28:02:21:00:EE:2C:71:C6:77:D2:2D:A1:&#xa;                BC:65:07:63:0E:C9:F4:4D:C0:BB:5A:BD:8E:A5:8F:CA:&#xa;                05:21:82:2A:DB:AD:3A:5C&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : CC:FB:0F:6A:85:71:09:65:FE:95:9B:53:CE:E9:B2:7C:&#xa;                22:E9:85:5C:0D:97:8D:B6:A9:7E:54:C0:FE:4C:0D:B0&#xa;    Timestamp : Mar  6 15:20:22.933 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:EF:AD:80:2B:34:F7:CB:49:40:BB:59:&#xa;                27:3F:F1:21:05:E1:BF:30:11:F9:91:83:C7:02:97:83:&#xa;                8E:CE:C5:9C:71:02:20:15:DC:11:AC:29:06:7E:7E:22:&#xa;                F6:88:BB:8C:95:A7:6A:FD:BD:05:31:A3:38:40:6E:AB:&#xa;                45:50:FB:65:39:FC:49</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-03-06T15:20:21</elem>
+<elem key="notAfter">2025-04-07T15:20:21</elem>
+</table>
+<elem key="md5">772686856690ccd37c2eda9bdeb10d98</elem>
+<elem key="sha1">2b0f9a2b1ee9eaa315127e963d8d23bb6d0c4545</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIGmjCCBYKgAwIBAgIIDojosh+tkAowDQYJKoZIhvcNAQELBQAwgbQxCzAJBgNV&#xa;BAYTAlVTMRAwDgYDVQQIEwdBcml6b25hMRMwEQYDVQQHEwpTY290dHNkYWxlMRow&#xa;GAYDVQQKExFHb0RhZGR5LmNvbSwgSW5jLjEtMCsGA1UECxMkaHR0cDovL2NlcnRz&#xa;LmdvZGFkZHkuY29tL3JlcG9zaXRvcnkvMTMwMQYDVQQDEypHbyBEYWRkeSBTZWN1&#xa;cmUgQ2VydGlmaWNhdGUgQXV0aG9yaXR5IC0gRzIwHhcNMjQwMzA2MTUyMDIxWhcN&#xa;MjUwNDA3MTUyMDIxWjAlMSMwIQYDVQQDExphYnJhaGFtbGFiLm1lZC5oYXJ2YXJk&#xa;LmVkdTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKFkFnRs+rlILEjo&#xa;qHDEltCNYbIVkRGudodaklLhRjmoqRTgOkFKWw57JAj21LYTLSc3YWUzMvy/G6Wd&#xa;NYcodwDQJiaaaizqekYbMb/v1XsN6YOyjvHljGfrn4YofdKC02UsltDChqAEjuSY&#xa;3lV1ppaPQc7hTqffIShal9c6fBeHjGZChR9aQ2hgLL1bIgTxA0IdaqBw58XfZDBn&#xa;YdPsI4BuXBz993F8X8bDe9xjNZZR9ZBn56O+x4Kj07asrJQD3goHcS5C9eEMSmDB&#xa;lGuHb00Zuk796RloKy+CTskz+MHgtVsP5OQEqImZRW4dK5BinESj3RnooyhCJVgI&#xa;S2KuOKMCAwEAAaOCAzwwggM4MAwGA1UdEwEB/wQCMAAwHQYDVR0lBBYwFAYIKwYB&#xa;BQUHAwEGCCsGAQUFBwMCMA4GA1UdDwEB/wQEAwIFoDA5BgNVHR8EMjAwMC6gLKAq&#xa;hihodHRwOi8vY3JsLmdvZGFkZHkuY29tL2dkaWcyczEtMTgzMDkuY3JsMF0GA1Ud&#xa;IARWMFQwSAYLYIZIAYb9bQEHFwEwOTA3BggrBgEFBQcCARYraHR0cDovL2NlcnRp&#xa;ZmljYXRlcy5nb2RhZGR5LmNvbS9yZXBvc2l0b3J5LzAIBgZngQwBAgEwdgYIKwYB&#xa;BQUHAQEEajBoMCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5nb2RhZGR5LmNvbS8w&#xa;QAYIKwYBBQUHMAKGNGh0dHA6Ly9jZXJ0aWZpY2F0ZXMuZ29kYWRkeS5jb20vcmVw&#xa;b3NpdG9yeS9nZGlnMi5jcnQwHwYDVR0jBBgwFoAUQMK9J47MNIMwojPX+2yz8LQs&#xa;gM4wJQYDVR0RBB4wHIIaYWJyYWhhbWxhYi5tZWQuaGFydmFyZC5lZHUwHQYDVR0O&#xa;BBYEFJyytM35NpiacW1fPK7C5RUCXdsEMIIBfgYKKwYBBAHWeQIEAgSCAW4EggFq&#xa;AWgAdQBOdaMnXJoQwzhbbNTfP1LrHfDgjhuNacCx+mSxYpo53wAAAY4UWfEcAAAE&#xa;AwBGMEQCIQCzphmSUZ4KoFNsN1M3lxyvlDpj6Z+tcnD0TXamwoUgtQIfR2yw/byo&#xa;dCsZwNxRVkISAyYyMzr1k4QDA5HpMCrH1QB3AH1ZHhLheCp7HGFnfF79+NCHXBSg&#xa;TpWeuQMv2Q6MLnm4AAABjhRZ8hkAAAQDAEgwRgIhAMOTJrhvZ2WaTxl3pPcRbt+U&#xa;zLnlcQpvYNk7P/Gw7KkoAiEA7ixxxnfSLaG8ZQdjDsn0TcC7Wr2OpY/KBSGCKtut&#xa;OlwAdgDM+w9qhXEJZf6Vm1PO6bJ8IumFXA2XjbapflTA/kwNsAAAAY4UWfKVAAAE&#xa;AwBHMEUCIQDvrYArNPfLSUC7WSc/8SEF4b8wEfmRg8cCl4OOzsWccQIgFdwRrCkG&#xa;fn4i9oi7jJWnav29BTGjOEBuq0VQ+2U5/EkwDQYJKoZIhvcNAQELBQADggEBAAiS&#xa;Z3l9pdXc+xVa6WtZy/SuhRPxJpUHpbMe14KROWTDU/ZKSFNHDsv63O+9e+TmakEY&#xa;kOM6vmptIiu79B+QSZ3jesn6AAHfXkDr7saUHElgkTSeQv5kBcemGgrfh7v0Ozw8&#xa;1oKoYJCpC4rb5LSE1yfjwaOWTmVtkG/f8bSbbS8rAPc8UVBtbycCVKrC/sSV6DHz&#xa;aflgosJ/+LbnO8cfWifssYm1aaQd6kbQfnn+zllnEzyYGrkm5Xud6r7cXdPwbwoo&#xa;1PLb7a8OECBJRIBsJnnBXDW+e8BQc/aOcsfsCNK3VP7cKtiPMuPe+6X4NvsonwYS&#xa;9FttGxDgJq/Rsvevi5o=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="mysql" product="MySQL" version="5.5.5-10.6.19-MariaDB-cll-lve" method="probed" conf="10"><cpe>cpe:/a:mysql:mysql:5.5.5-10.6.19-mariadb-cll-lve</cpe></service><script id="mysql-info" output="&#xa;  Protocol: 10&#xa;  Version: 5.5.5-10.6.19-MariaDB-cll-lve&#xa;  Thread ID: 6645920&#xa;  Capabilities flags: 63486&#xa;  Some Capabilities: Speaks41ProtocolOld, IgnoreSigpipes, LongColumnFlag, InteractiveClient, IgnoreSpaceBeforeParenthesis, SupportsCompression, ConnectWithDatabase, SupportsTransactions, Speaks41ProtocolNew, SupportsLoadDataLocal, FoundRows, Support41Auth, ODBCClient, DontAllowDatabaseTableColumn, SupportsMultipleResults, SupportsAuthPlugins, SupportsMultipleStatments&#xa;  Status: Autocommit&#xa;  Salt: ^PV@zi!aI+9{%B^0qnQ,&#xa;  Auth Plugin Name: mysql_native_password"><elem key="Protocol">10</elem>
+<elem key="Version">5.5.5-10.6.19-MariaDB-cll-lve</elem>
+<elem key="Thread ID">6645920</elem>
+<elem key="Capabilities flags">63486</elem>
+<table key="Some Capabilities">
+<elem>Speaks41ProtocolOld</elem>
+<elem>IgnoreSigpipes</elem>
+<elem>LongColumnFlag</elem>
+<elem>InteractiveClient</elem>
+<elem>IgnoreSpaceBeforeParenthesis</elem>
+<elem>SupportsCompression</elem>
+<elem>ConnectWithDatabase</elem>
+<elem>SupportsTransactions</elem>
+<elem>Speaks41ProtocolNew</elem>
+<elem>SupportsLoadDataLocal</elem>
+<elem>FoundRows</elem>
+<elem>Support41Auth</elem>
+<elem>ODBCClient</elem>
+<elem>DontAllowDatabaseTableColumn</elem>
+<elem>SupportsMultipleResults</elem>
+<elem>SupportsAuthPlugins</elem>
+<elem>SupportsMultipleStatments</elem>
+</table>
+<elem key="Status">Autocommit</elem>
+<elem key="Salt">^PV@zi!aI+9{%B^0qnQ,</elem>
+<elem key="Auth Plugin Name">mysql_native_password</elem>
+</script></port>
+<port protocol="tcp" portid="8443"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="https-alt" method="table" conf="3"/></port>
+<port protocol="tcp" portid="50000"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ibm-db2" method="table" conf="3"/></port>
+<port protocol="tcp" portid="50001"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="50002"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="iiimsf" method="table" conf="3"/></port>
+<port protocol="tcp" portid="50003"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="50006"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="50300"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="50389"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="50500"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="50636"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="50800"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+</ports>
+<times srtt="58542" rttvar="1983" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730737311"/>
+<taskend task="NSE" time="1730737311"/>
+<taskbegin task="NSE" time="1730737311"/>
+<taskend task="NSE" time="1730737311"/>
+<taskbegin task="NSE" time="1730737311"/>
+<taskend task="NSE" time="1730737311"/>
+<runstats><finished time="1730737311" timestr="Mon Nov  4 16:21:51 2024" elapsed="204.99" summary="Nmap done at Mon Nov  4 16:21:51 2024; 1 IP address (1 host up) scanned in 204.99 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
