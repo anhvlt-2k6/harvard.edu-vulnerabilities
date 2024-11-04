@@ -21,3 +21,109 @@
 <taskbegin task="Service scan" time="1730734189"/>
 <taskend task="Service scan" time="1730734206" extrainfo="3 services on 1 host"/>
 <taskbegin task="NSE" time="1730734206"/>
+<taskend task="NSE" time="1730734218"/>
+<taskbegin task="NSE" time="1730734218"/>
+<taskend task="NSE" time="1730734219"/>
+<taskbegin task="NSE" time="1730734219"/>
+<taskend task="NSE" time="1730734219"/>
+<host starttime="1730734183" endtime="1730734219"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="52.54.128.0" addrtype="ipv4"/>
+<hostnames>
+<hostname name="content.health.harvard.edu" type="user"/>
+<hostname name="ec2-52-54-128-0.compute-1.amazonaws.com" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="997">
+<extrareasons reason="no-responses" count="997"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="9.6p1 Ubuntu 3ubuntu13.5" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:9.6p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="OpenResty web app server" method="probed" conf="10"><cpe>cpe:/a:openresty:ngx_openresty</cpe></service><script id="http-generator" output="WordPress 6.6.2"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-robots.txt" output="1 disallowed entry &#xa;/wp-admin/"/><script id="http-title" output="Harvard Health Content API"><elem key="title">Harvard Health Content API</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="OpenResty web app server" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:openresty:ngx_openresty</cpe></service><script id="http-generator" output="WordPress 6.6.2"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-robots.txt" output="1 disallowed entry &#xa;/wp-admin/"/><script id="http-server-header" output="openresty"><elem>openresty</elem>
+</script><script id="http-title" output="Harvard Health Content API"><elem key="title">Harvard Health Content API</elem>
+</script><script id="ssl-cert" output="Subject: commonName=content.health.harvard.edu&#xa;Subject Alternative Name: DNS:content.health.harvard.edu, DNS:www.content.health.harvard.edu&#xa;Issuer: commonName=R11/organizationName=Let&apos;s Encrypt/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 4096&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-10-03T08:17:33&#xa;Not valid after:  2025-01-01T08:17:32&#xa;MD5:   f036 46c3 9cdc 19a6 3e33 8279 3af4 8417&#xa;SHA-1: b65e 60ba e21e 6d87 83f6 70bc 3da4 5ffb e834 7b18"><table key="subject">
+<elem key="commonName">content.health.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">US</elem>
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+<elem key="commonName">R11</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">4096</elem>
+<elem key="type">rsa</elem>
+<elem key="exponent">BIGNUM: 0x55cbc6d8bba8</elem>
+<elem key="modulus">BIGNUM: 0x55cbc6e2d928</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">17:F5:51:76:B8:A1:A7:EA:1E:8A:23:A8:BD:DB:8C:0B:74:1D:C8:61</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">C5:CF:46:A4:EA:F4:C3:C0:7A:6C:95:C4:2D:B0:5E:92:2F:26:E3:B9</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://r11.o.lencr.org&#xa;CA Issuers - URI:http://r11.i.lencr.org/</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:content.health.harvard.edu, DNS:www.content.health.harvard.edu</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 3F:17:4B:4F:D7:22:47:58:94:1D:65:1C:84:BE:0D:12:&#xa;                ED:90:37:7F:1F:85:6A:EB:C1:BF:28:85:EC:F8:64:6E&#xa;    Timestamp : Oct  3 09:16:04.146 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:F0:40:F7:FC:65:4D:FD:F2:63:95:60:&#xa;                64:9F:DB:4E:5B:C1:70:3E:84:48:2A:B2:95:32:2F:D8:&#xa;                94:AC:EA:75:EC:02:20:23:53:34:3A:9B:8E:A1:62:91:&#xa;                4B:30:3F:BB:90:57:C0:18:C8:A4:CD:FF:E3:32:E7:78:&#xa;                D6:59:6D:B7:22:3C:4D&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : CF:11:56:EE:D5:2E:7C:AF:F3:87:5B:D9:69:2E:9B:E9:&#xa;                1A:71:67:4A:B0:17:EC:AC:01:D2:5B:77:CE:CC:3B:08&#xa;    Timestamp : Oct  3 09:16:04.209 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:23:18:CB:72:F5:7D:48:81:63:D7:CD:9A:&#xa;                AC:C5:9A:6A:A8:9D:BE:A5:86:59:51:58:4C:4C:B7:14:&#xa;                C7:2F:2B:E5:02:20:14:6C:DE:F8:37:36:D6:4D:66:84:&#xa;                E0:36:BE:09:29:CF:CE:0E:BE:98:6D:32:9E:AC:33:DC:&#xa;                FB:95:5E:A8:D6:00</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-10-03T08:17:33</elem>
+<elem key="notAfter">2025-01-01T08:17:32</elem>
+</table>
+<elem key="md5">f03646c39cdc19a63e3382793af48417</elem>
+<elem key="sha1">b65e60bae21e6d8783f670bc3da45ffbe8347b18</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIGIzCCBQugAwIBAgISBPcP8Kxem17doGJBJH3MQ+kUMA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNSMTEwHhcNMjQxMDAzMDgxNzMzWhcNMjUwMTAxMDgxNzMyWjAlMSMwIQYDVQQD&#xa;Expjb250ZW50LmhlYWx0aC5oYXJ2YXJkLmVkdTCCAiIwDQYJKoZIhvcNAQEBBQAD&#xa;ggIPADCCAgoCggIBAKd2HAsi6ru/OJI0DQ1+5cm5erRB2EhTG5qLHER7ZzAIgTel&#xa;vO9lpVsAs/2xTWRIFPywQuyDYPb9DBpwfGRO7vZFXVXXyVIBZsTXUn5ow6vEgqpg&#xa;xvcDPsOTSD32I20mM6IGm8BJblRgadVyBpqP//dPiqT8isA64yChrt3t9R1tWezY&#xa;0P1006kFulGwBdl+bSx9KFYWrhDyERkN9FfENKSlgwwYje9MCMa/1bhV3m8BTB1l&#xa;X7r+jVLALWnfnpx2yLbx9XJ/8XiGrKqXxfEW/O5SiRM2s708WK8Mt3kM3HM4wI18&#xa;rFns9BNN3Fac9no8qPdMXt0YgNtySUvpV9jjnvnt+fWeIMhW5JGG2sPchVbxTP6R&#xa;9b2Kx9NoK2ofDQxi1AjJdeJ067lTP8IZRk9LeDzorTAmYYNMbGMmPUI4PrZd5XrG&#xa;BNllPAIaTEuCr0QCK0SrWTIyaCudXdy7cbB2E/31+qfth7QigWgyHDiy2FMKuCwU&#xa;IGQaFNUq8WLXOU6TY/4b7/gjY1mtJNAAMeS45oytew4xDoGN4llf8tLBOHgcMBfC&#xa;uVdslWP3JHpDomGc9XGFb+z4xdw7jNzvhFL1hE8c/45ulN7iLxmRKC09dqybj6Du&#xa;HIQdLcFdTDHt7wrsV7BNUstf1BnWTIu0PYUk5akRXOaBigg9CbHf7syLQ4pdAgMB&#xa;AAGjggI9MIICOTAOBgNVHQ8BAf8EBAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEG&#xa;CCsGAQUFBwMCMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYEFBf1UXa4oafqHoojqL3b&#xa;jAt0HchhMB8GA1UdIwQYMBaAFMXPRqTq9MPAemyVxC2wXpIvJuO5MFcGCCsGAQUF&#xa;BwEBBEswSTAiBggrBgEFBQcwAYYWaHR0cDovL3IxMS5vLmxlbmNyLm9yZzAjBggr&#xa;BgEFBQcwAoYXaHR0cDovL3IxMS5pLmxlbmNyLm9yZy8wRQYDVR0RBD4wPIIaY29u&#xa;dGVudC5oZWFsdGguaGFydmFyZC5lZHWCHnd3dy5jb250ZW50LmhlYWx0aC5oYXJ2&#xa;YXJkLmVkdTATBgNVHSAEDDAKMAgGBmeBDAECATCCAQMGCisGAQQB1nkCBAIEgfQE&#xa;gfEA7wB2AD8XS0/XIkdYlB1lHIS+DRLtkDd/H4Vq68G/KIXs+GRuAAABklGqPLIA&#xa;AAQDAEcwRQIhAPBA9/xlTf3yY5VgZJ/bTlvBcD6ESCqylTIv2JSs6nXsAiAjUzQ6&#xa;m46hYpFLMD+7kFfAGMikzf/jMud41llttyI8TQB1AM8RVu7VLnyv84db2Wkum+ka&#xa;cWdKsBfsrAHSW3fOzDsIAAABklGqPPEAAAQDAEYwRAIgIxjLcvV9SIFj182arMWa&#xa;aqidvqWGWVFYTEy3FMcvK+UCIBRs3vg3NtZNZoTgNr4JKc/ODr6YbTKerDPc+5Ve&#xa;qNYAMA0GCSqGSIb3DQEBCwUAA4IBAQBxgKeX7dwOaCh3rMP5JPibpLNJmMGYRluj&#xa;yqQxUZFZc+/8HvENxGGxVpvkKxyLvIUqfUmTIozGxE4RlUysFvOH8iJsmKYvX8SD&#xa;I9jUjTrZFcQqGYLBDTPTbaz0f9zJw6XY3Bi5MIi1Fm/7su6X9xAJM9YEC8j2uqmb&#xa;FrSP62otgeHryZEVu2Han4OlMGRGKeJRnnitPhNi9eUjz7kxCAdpKfjSigU8fkS6&#xa;xVm2vPR81VrIAyHcyz8FAH4Ld0pyXpX8ZswLpz8o/epbxHUGUrsMx63wJlxseFQk&#xa;1eJM4gMDmVNV8jmNVxPN9ImllkIIl1MK6ciAhm2kBv1fQJw9R2/N&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+</ports>
+<times srtt="71039" rttvar="9898" to="110631"/>
+</host>
+<taskbegin task="NSE" time="1730734219"/>
+<taskend task="NSE" time="1730734219"/>
+<taskbegin task="NSE" time="1730734219"/>
+<taskend task="NSE" time="1730734219"/>
+<taskbegin task="NSE" time="1730734219"/>
+<taskend task="NSE" time="1730734219"/>
+<runstats><finished time="1730734219" timestr="Mon Nov  4 15:30:19 2024" elapsed="36.40" summary="Nmap done at Mon Nov  4 15:30:19 2024; 1 IP address (1 host up) scanned in 36.40 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
