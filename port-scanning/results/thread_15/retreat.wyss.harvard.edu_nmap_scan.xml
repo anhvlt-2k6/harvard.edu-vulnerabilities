@@ -19,3 +19,80 @@
 <taskbegin task="Connect Scan" time="1730746008"/>
 <taskend task="Connect Scan" time="1730746013" extrainfo="1000 total ports"/>
 <taskbegin task="Service scan" time="1730746013"/>
+<taskend task="Service scan" time="1730746060" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1730746060"/>
+<taskend task="NSE" time="1730746061"/>
+<taskbegin task="NSE" time="1730746061"/>
+<taskend task="NSE" time="1730746062"/>
+<taskbegin task="NSE" time="1730746062"/>
+<taskend task="NSE" time="1730746062"/>
+<host starttime="1730746008" endtime="1730746062"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="138.197.55.227" addrtype="ipv4"/>
+<hostnames>
+<hostname name="retreat.wyss.harvard.edu" type="user"/>
+</hostnames>
+<ports><extraports state="filtered" count="998">
+<extrareasons reason="no-responses" count="998"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" servicefp="SF-Port80-TCP:V=7.80%I=7%D=11/4%Time=672916A4%P=x86_64-pc-linux-gnu%r(GetRequest,67,&quot;HTTP/1\.0\x20400\x20Bad\x20Request\r\ndate:\x20Mon,\x2004\x20Nov\x202024\x2018:46:58\x20GMT\r\nconnection:\x20close\r\ncontent-length:\x200\r\n\r\n&quot;)%r(HTTPOptions,67,&quot;HTTP/1\.0\x20400\x20Bad\x20Request\r\ndate:\x20Mon,\x2004\x20Nov\x202024\x2018:46:59\x20GMT\r\nconnection:\x20close\r\ncontent-length:\x200\r\n\r\n&quot;)%r(RTSPRequest,8D,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\ncontent-length:\x2011\r\ncontent-type:\x20text/plain\r\ndate:\x20Mon,\x2004\x20Nov\x202024\x2018:47:00\x20GMT\r\nconnection:\x20close\r\n\r\nBad\x20Request&quot;)%r(X11Probe,8D,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\ncontent-length:\x2011\r\ncontent-type:\x20text/plain\r\ndate:\x20Mon,\x2004\x20Nov\x202024\x2018:47:01\x20GMT\r\nconnection:\x20close\r\n\r\nBad\x20Request&quot;)%r(FourOhFourRequest,67,&quot;HTTP/1\.0\x20400\x20Bad\x20Request\r\ndate:\x20Mon,\x2004\x20Nov\x202024\x2018:47:02\x20GMT\r\nconnection:\x20close\r\ncontent-length:\x200\r\n\r\n&quot;)%r(GenericLines,8D,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\ncontent-length:\x2011\r\ncontent-type:\x20text/plain\r\ndate:\x20Mon,\x2004\x20Nov\x202024\x2018:47:03\x20GMT\r\nconnection:\x20close\r\n\r\nBad\x20Request&quot;)%r(RPCCheck,8D,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\ncontent-length:\x2011\r\ncontent-type:\x20text/plain\r\ndate:\x20Mon,\x2004\x20Nov\x202024\x2018:47:04\x20GMT\r\nconnection:\x20close\r\n\r\nBad\x20Request&quot;)%r(DNSVersionBindReqTCP,8D,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\ncontent-length:\x2011\r\ncontent-type:\x20text/plain\r\ndate:\x20Mon,\x2004\x20Nov\x202024\x2018:47:06\x20GMT\r\nconnection:\x20close\r\n\r\nBad\x20Request&quot;)%r(DNSStatusRequestTCP,8D,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\ncontent-length:\x2011\r\ncontent-type:\x20text/plain\r\ndate:\x20Mon,\x2004\x20Nov\x202024\x2018:47:07\x20GMT\r\nconnection:\x20close\r\n\r\nBad\x20Request&quot;)%r(Help,8D,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\ncontent-length:\x2011\r\ncontent-type:\x20text/plain\r\ndate:\x20Mon,\x2004\x20Nov\x202024\x2018:47:08\x20GMT\r\nconnection:\x20close\r\n\r\nBad\x20Request&quot;)%r(SSLSessionReq,8D,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\ncontent-length:\x2011\r\ncontent-type:\x20text/plain\r\ndate:\x20Mon,\x2004\x20Nov\x202024\x2018:47:09\x20GMT\r\nconnection:\x20close\r\n\r\nBad\x20Request&quot;);" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  DNSStatusRequestTCP: &#xa;    HTTP/1.1 400 Bad Request&#xa;    content-length: 11&#xa;    content-type: text/plain&#xa;    date: Mon, 04 Nov 2024 18:47:07 GMT&#xa;    connection: close&#xa;    Request&#xa;  DNSVersionBindReqTCP: &#xa;    HTTP/1.1 400 Bad Request&#xa;    content-length: 11&#xa;    content-type: text/plain&#xa;    date: Mon, 04 Nov 2024 18:47:06 GMT&#xa;    connection: close&#xa;    Request&#xa;  FourOhFourRequest: &#xa;    HTTP/1.0 400 Bad Request&#xa;    date: Mon, 04 Nov 2024 18:47:02 GMT&#xa;    connection: close&#xa;    content-length: 0&#xa;  GenericLines: &#xa;    HTTP/1.1 400 Bad Request&#xa;    content-length: 11&#xa;    content-type: text/plain&#xa;    date: Mon, 04 Nov 2024 18:47:03 GMT&#xa;    connection: close&#xa;    Request&#xa;  GetRequest: &#xa;    HTTP/1.0 400 Bad Request&#xa;    date: Mon, 04 Nov 2024 18:46:58 GMT&#xa;    connection: close&#xa;    content-length: 0&#xa;  HTTPOptions: &#xa;    HTTP/1.0 400 Bad Request&#xa;    date: Mon, 04 Nov 2024 18:46:59 GMT&#xa;    connection: close&#xa;    content-length: 0&#xa;  Help: &#xa;    HTTP/1.1 400 Bad Request&#xa;    content-length: 11&#xa;    content-type: text/plain&#xa;    date: Mon, 04 Nov 2024 18:47:08 GMT&#xa;    connection: close&#xa;    Request&#xa;  RPCCheck: &#xa;    HTTP/1.1 400 Bad Request&#xa;    content-length: 11&#xa;    content-type: text/plain&#xa;    date: Mon, 04 Nov 2024 18:47:04 GMT&#xa;    connection: close&#xa;    Request&#xa;  RTSPRequest: &#xa;    HTTP/1.1 400 Bad Request&#xa;    content-length: 11&#xa;    content-type: text/plain&#xa;    date: Mon, 04 Nov 2024 18:47:00 GMT&#xa;    connection: close&#xa;    Request&#xa;  SSLSessionReq: &#xa;    HTTP/1.1 400 Bad Request&#xa;    content-length: 11&#xa;    content-type: text/plain&#xa;    date: Mon, 04 Nov 2024 18:47:09 GMT&#xa;    connection: close&#xa;    Request&#xa;  X11Probe: &#xa;    HTTP/1.1 400 Bad Request&#xa;    content-length: 11&#xa;    content-type: text/plain&#xa;    date: Mon, 04 Nov 2024 18:47:01 GMT&#xa;    connection: close&#xa;    Request"><elem key="DNSStatusRequestTCP">&#xa;    HTTP/1.1 400 Bad Request&#xa;    content-length: 11&#xa;    content-type: text/plain&#xa;    date: Mon, 04 Nov 2024 18:47:07 GMT&#xa;    connection: close&#xa;    Request</elem>
+<elem key="DNSVersionBindReqTCP">&#xa;    HTTP/1.1 400 Bad Request&#xa;    content-length: 11&#xa;    content-type: text/plain&#xa;    date: Mon, 04 Nov 2024 18:47:06 GMT&#xa;    connection: close&#xa;    Request</elem>
+<elem key="FourOhFourRequest">&#xa;    HTTP/1.0 400 Bad Request&#xa;    date: Mon, 04 Nov 2024 18:47:02 GMT&#xa;    connection: close&#xa;    content-length: 0</elem>
+<elem key="GenericLines">&#xa;    HTTP/1.1 400 Bad Request&#xa;    content-length: 11&#xa;    content-type: text/plain&#xa;    date: Mon, 04 Nov 2024 18:47:03 GMT&#xa;    connection: close&#xa;    Request</elem>
+<elem key="GetRequest">&#xa;    HTTP/1.0 400 Bad Request&#xa;    date: Mon, 04 Nov 2024 18:46:58 GMT&#xa;    connection: close&#xa;    content-length: 0</elem>
+<elem key="HTTPOptions">&#xa;    HTTP/1.0 400 Bad Request&#xa;    date: Mon, 04 Nov 2024 18:46:59 GMT&#xa;    connection: close&#xa;    content-length: 0</elem>
+<elem key="Help">&#xa;    HTTP/1.1 400 Bad Request&#xa;    content-length: 11&#xa;    content-type: text/plain&#xa;    date: Mon, 04 Nov 2024 18:47:08 GMT&#xa;    connection: close&#xa;    Request</elem>
+<elem key="RPCCheck">&#xa;    HTTP/1.1 400 Bad Request&#xa;    content-length: 11&#xa;    content-type: text/plain&#xa;    date: Mon, 04 Nov 2024 18:47:04 GMT&#xa;    connection: close&#xa;    Request</elem>
+<elem key="RTSPRequest">&#xa;    HTTP/1.1 400 Bad Request&#xa;    content-length: 11&#xa;    content-type: text/plain&#xa;    date: Mon, 04 Nov 2024 18:47:00 GMT&#xa;    connection: close&#xa;    Request</elem>
+<elem key="SSLSessionReq">&#xa;    HTTP/1.1 400 Bad Request&#xa;    content-length: 11&#xa;    content-type: text/plain&#xa;    date: Mon, 04 Nov 2024 18:47:09 GMT&#xa;    connection: close&#xa;    Request</elem>
+<elem key="X11Probe">&#xa;    HTTP/1.1 400 Bad Request&#xa;    content-length: 11&#xa;    content-type: text/plain&#xa;    date: Mon, 04 Nov 2024 18:47:01 GMT&#xa;    connection: close&#xa;    Request</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Site doesn&apos;t have a title (text/html)."></script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service><script id="http-title" output="400 The plain HTTP request was sent to HTTPS port"><elem key="title">400 The plain HTTP request was sent to HTTPS port</elem>
+</script><script id="ssl-cert" output="Subject: commonName=example.com&#xa;Subject Alternative Name: DNS:example.comDNS:&#xa;Issuer: commonName=example.com&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2019-03-20T18:04:38&#xa;Not valid after:  2029-03-17T18:04:38&#xa;MD5:   a430 9ffa 42c0 f1c5 1c33 6420 5c6b 32c9&#xa;SHA-1: fd2d ba75 411b a2d8 3c5a efc8 91bf 8ee6 d6a8 e429"><table key="subject">
+<elem key="commonName">example.com</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">example.com</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">2048</elem>
+<elem key="modulus">BIGNUM: 0x5634e3ec8e68</elem>
+<elem key="type">rsa</elem>
+<elem key="exponent">BIGNUM: 0x5634e3ec8e28</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:example.comDNS:</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2019-03-20T18:04:38</elem>
+<elem key="notAfter">2029-03-17T18:04:38</elem>
+</table>
+<elem key="md5">a4309ffa42c0f1c51c3364205c6b32c9</elem>
+<elem key="sha1">fd2dba75411ba2d83c5aefc891bf8ee6d6a8e429</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIICzTCCAbWgAwIBAgIJAKhaTwD2FSwiMA0GCSqGSIb3DQEBCwUAMBYxFDASBgNV&#xa;BAMMC2V4YW1wbGUuY29tMB4XDTE5MDMyMDE4MDQzOFoXDTI5MDMxNzE4MDQzOFow&#xa;FjEUMBIGA1UEAwwLZXhhbXBsZS5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw&#xa;ggEKAoIBAQC9xz/FQohne9+rdTHsfswAW12uhJie90hUBQQRGSSB+M+JqART5T2d&#xa;nJ0c0lNAxGVewGawJOp3nPpww356x2z0o/12hmCGaSg5cB1HxzBdo0vYq2qKzXYP&#xa;QOPFl9YrbWhWyKrOfxn40Z8z1OCR3+5WuBct9D0eBxk/0+sM+VTNkxhBXwNH2iO3&#xa;psmzfoFGTavnLY03RdVkOl5sFsPmIZJm1QpZIlp3CcJ/sUvDD3ZA7VTBRCZxJ3iK&#xa;IaAreIuG2BiPO4xI86cY2PMn/JXGZxIW7PkxzdxI3kAJHkIhQ0lxUJIn6yF4bqD1&#xa;1FvTH6RHH0F2o5hIuClfpWCyRVc2oECFAgMBAAGjHjAcMBoGA1UdEQQTMBGCD2V4&#xa;YW1wbGUuY29tRE5TOjANBgkqhkiG9w0BAQsFAAOCAQEAAUfr3r2VoQafEall4v0j&#xa;I5/6sMEEt14G8esEnx4+4PQJ1YP/827FwXLn3OxO2Z0wQQa+ibCdkk/bB/B7vjXW&#xa;wL2hSyJAt1sanRYQ8ZainbHadeifLQ+P4FKQ77ZsOK112oQ/+GRKhvAQxoFRQojo&#xa;eOp7N2GPlM3ssMM84YwI/7LLsF1N9ClHd5Hn97eZwpNyiLhefFlo9ejPnQW2br6x&#xa;92MgaSno0OS0GHOwky98JEGSwYlUBFlE6XyISb80hxjbYYNXfoE6IvTST3O16pk9&#xa;yJZzsckEnwaKVS4uC3tszpe2FKF7SR6CdTxHvz546ufZ/jiK1CVX8qrvtu5NdmCe&#xa;fg==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="tls-alpn" output="&#xa;  h2&#xa;  http/1.1"><elem>h2</elem>
+<elem>http/1.1</elem>
+</script><script id="tls-nextprotoneg" output="&#xa;  h2&#xa;  http/1.1"><elem>h2</elem>
+<elem>http/1.1</elem>
+</script></port>
+</ports>
+<times srtt="8109" rttvar="3123" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730746062"/>
+<taskend task="NSE" time="1730746062"/>
+<taskbegin task="NSE" time="1730746062"/>
+<taskend task="NSE" time="1730746062"/>
+<taskbegin task="NSE" time="1730746062"/>
+<taskend task="NSE" time="1730746062"/>
+<runstats><finished time="1730746062" timestr="Mon Nov  4 18:47:42 2024" elapsed="54.66" summary="Nmap done at Mon Nov  4 18:47:42 2024; 1 IP address (1 host up) scanned in 54.66 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
