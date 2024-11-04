@@ -21,3 +21,117 @@
 <taskbegin task="Service scan" time="1730742256"/>
 <taskend task="Service scan" time="1730742269" extrainfo="3 services on 1 host"/>
 <taskbegin task="NSE" time="1730742269"/>
+<taskend task="NSE" time="1730742282"/>
+<taskbegin task="NSE" time="1730742282"/>
+<taskend task="NSE" time="1730742283"/>
+<taskbegin task="NSE" time="1730742283"/>
+<taskend task="NSE" time="1730742283"/>
+<host starttime="1730742249" endtime="1730742283"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="18.203.212.168" addrtype="ipv4"/>
+<hostnames>
+<hostname name="omeka.itatti.harvard.edu" type="user"/>
+<hostname name="ec2-18-203-212-168.eu-west-1.compute.amazonaws.com" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="996">
+<extrareasons reason="no-responses" count="996"/>
+</extraports>
+<port protocol="tcp" portid="43"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="whois" method="table" conf="3"/></port>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="domain" product="PowerDNS Authoritative Server" version="4.9.1" method="probed" conf="10"><cpe>cpe:/a:powerdns:authoritative:4.9.1</cpe></service><script id="dns-nsid" output="&#xa;  NSID: scrooge.bbdigital.org (7363726f6f67652e62626469676974616c2e6f7267)&#xa;  id.server: scrooge.bbdigital.org&#xa;  bind.version: PowerDNS Authoritative Server 4.9.1 (built Sep  3 2024 16:15:48 by root@bh-centos-8.dev.cpanel.net)"><table key="NSID">
+<elem key="hex">7363726f6f67652e62626469676974616c2e6f7267</elem>
+<elem key="raw">scrooge.bbdigital.org</elem>
+</table>
+<elem key="id.server">scrooge.bbdigital.org</elem>
+<elem key="bind.version">PowerDNS Authoritative Server 4.9.1 (built Sep  3 2024 16:15:48 by root@bh-centos-8.dev.cpanel.net)</elem>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" method="probed" conf="10"><cpe>cpe:/a:apache:http_server</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="Apache"><elem>Apache</elem>
+</script><script id="http-title" output="Sites \xC2\xB7 Omeka S"><elem key="title">Sites \xC2\xB7 Omeka S</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssl" product="Apache httpd" extrainfo="SSL-only mode" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:apache:http_server</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="Apache"><elem>Apache</elem>
+</script><script id="http-title" output="Sites \xC2\xB7 Omeka S"><elem key="title">Sites \xC2\xB7 Omeka S</elem>
+</script><script id="ssl-cert" output="Subject: commonName=omeka.omekas.villaitatti.com&#xa;Subject Alternative Name: DNS:omeka.itatti.harvard.edu, DNS:omeka.omekas.villaitatti.com, DNS:www.omeka.omekas.villaitatti.com&#xa;Issuer: commonName=R10/organizationName=Let&apos;s Encrypt/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-10-13T23:55:16&#xa;Not valid after:  2025-01-11T23:55:15&#xa;MD5:   2002 e4a0 f2f4 064d 2ca5 48db 4a1f 56e1&#xa;SHA-1: 1507 2c5b 6f48 0795 8110 993d 78f2 b47d 73d8 a8d3"><table key="subject">
+<elem key="commonName">omeka.omekas.villaitatti.com</elem>
+</table>
+<table key="issuer">
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+<elem key="commonName">R10</elem>
+<elem key="countryName">US</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">2048</elem>
+<elem key="exponent">BIGNUM: 0x55c989477f88</elem>
+<elem key="type">rsa</elem>
+<elem key="modulus">BIGNUM: 0x55c989490938</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="critical">true</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="name">X509v3 Key Usage</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+</table>
+<table>
+<elem key="value">63:B9:72:FA:14:8D:8D:58:43:57:69:4C:6F:D1:0C:8E:8E:4B:BD:8F</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="value">BB:BC:C3:47:A5:E4:BC:A9:C6:C3:A4:72:0C:10:8D:A2:35:E1:C8:E8</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">OCSP - URI:http://r10.o.lencr.org&#xa;CA Issuers - URI:http://r10.i.lencr.org/</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">DNS:omeka.itatti.harvard.edu, DNS:omeka.omekas.villaitatti.com, DNS:www.omeka.omekas.villaitatti.com</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+<table>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : CF:11:56:EE:D5:2E:7C:AF:F3:87:5B:D9:69:2E:9B:E9:&#xa;                1A:71:67:4A:B0:17:EC:AC:01:D2:5B:77:CE:CC:3B:08&#xa;    Timestamp : Oct 14 00:53:47.123 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:AA:53:DD:7B:95:17:BF:C2:93:D4:1A:&#xa;                E8:72:83:C9:4D:0F:E6:B5:79:74:BE:7A:16:71:2F:3F:&#xa;                09:47:08:6B:BB:02:21:00:F5:21:42:95:CB:7C:8F:80:&#xa;                B8:7D:5F:DA:70:0D:6E:C9:E3:C3:16:73:56:DC:55:58:&#xa;                7D:78:E7:88:5E:1F:56:C6&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : A2:E3:0A:E4:45:EF:BD:AD:9B:7E:38:ED:47:67:77:53:&#xa;                D7:82:5B:84:94:D7:2B:5E:1B:2C:C4:B9:50:A4:47:E7&#xa;    Timestamp : Oct 14 00:53:49.048 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:75:F6:85:A5:C8:14:58:BB:8E:AC:33:CC:&#xa;                15:37:EC:A0:99:5E:47:D6:33:24:BF:8F:E0:C2:AE:C6:&#xa;                98:2A:01:15:02:21:00:F0:6E:0E:4E:38:CF:3F:A0:90:&#xa;                DD:33:8B:FA:92:ED:9C:A8:18:D1:10:B7:75:C9:7E:49:&#xa;                A4:A1:AE:EE:F2:97:8C</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-10-13T23:55:16</elem>
+<elem key="notAfter">2025-01-11T23:55:15</elem>
+</table>
+<elem key="md5">2002e4a0f2f4064d2ca548db4a1f56e1</elem>
+<elem key="sha1">15072c5b6f4807958110993d78f2b47d73d8a8d3</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFRTCCBC2gAwIBAgISA1fQr3JiGPVj1fB+FtQEYxheMA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNSMTAwHhcNMjQxMDEzMjM1NTE2WhcNMjUwMTExMjM1NTE1WjAnMSUwIwYDVQQD&#xa;ExxvbWVrYS5vbWVrYXMudmlsbGFpdGF0dGkuY29tMIIBIjANBgkqhkiG9w0BAQEF&#xa;AAOCAQ8AMIIBCgKCAQEAs7ncvfYWUWT6nG0yHVJZk2tWoiFDiTmrH0+N57tdWv0I&#xa;/DpXk+t/ubVVIDL8oIaTnCHvgjPGe/96thPVRqdUUFFjtrk28LXEkhww0koEVMh5&#xa;5/o3Adb2ALFcvA9B9jwGytZctQmdzWP/IjuuR9nBaAV/Y5xXEdKtUvqRw0NAlYWe&#xa;dyxhDUOPilWRpuRPF0f2l8YG1QmP7UqNKSKrrhSGlHWFeWq8f5HlWES9/fZf+P84&#xa;41qkmWz0nKwiC4J0Sn5c86diXJSoQifsIXsn8ivjYK0vUnUwmeExGUCdcm8oHFBn&#xa;dTMV2R9f9VDQgvgwGT6VhYWxtcjWPbct6SW+0I9PaQIDAQABo4ICXTCCAlkwDgYD&#xa;VR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAMBgNV&#xa;HRMBAf8EAjAAMB0GA1UdDgQWBBRjuXL6FI2NWENXaUxv0QyOjku9jzAfBgNVHSME&#xa;GDAWgBS7vMNHpeS8qcbDpHIMEI2iNeHI6DBXBggrBgEFBQcBAQRLMEkwIgYIKwYB&#xa;BQUHMAGGFmh0dHA6Ly9yMTAuby5sZW5jci5vcmcwIwYIKwYBBQUHMAKGF2h0dHA6&#xa;Ly9yMTAuaS5sZW5jci5vcmcvMGMGA1UdEQRcMFqCGG9tZWthLml0YXR0aS5oYXJ2&#xa;YXJkLmVkdYIcb21la2Eub21la2FzLnZpbGxhaXRhdHRpLmNvbYIgd3d3Lm9tZWth&#xa;Lm9tZWthcy52aWxsYWl0YXR0aS5jb20wEwYDVR0gBAwwCjAIBgZngQwBAgEwggEF&#xa;BgorBgEEAdZ5AgQCBIH2BIHzAPEAdwDPEVbu1S58r/OHW9lpLpvpGnFnSrAX7KwB&#xa;0lt3zsw7CAAAAZKIhFXzAAAEAwBIMEYCIQCqU917lRe/wpPUGuhyg8lND+a1eXS+&#xa;ehZxLz8JRwhruwIhAPUhQpXLfI+AuH1f2nANbsnjwxZzVtxVWH1454heH1bGAHYA&#xa;ouMK5EXvva2bfjjtR2d3U9eCW4SU1yteGyzEuVCkR+cAAAGSiIRdeAAABAMARzBF&#xa;AiB19oWlyBRYu46sM8wVN+ygmV5H1jMkv4/gwq7GmCoBFQIhAPBuDk44zz+gkN0z&#xa;i/qS7ZyoGNEQt3XJfkmkoa7u8peMMA0GCSqGSIb3DQEBCwUAA4IBAQAc2iXr3oDq&#xa;tZwEQU26WDPmIeyqMz3TNfmXQqxodo8XwIYBaxYafQMiKa8gkymcT8L1DGv0E5Y+&#xa;2WAWTen4JA6UBnfDfNz3u3bLsu6AUMJIgaQT+TR9FlU0LHvGreDnEvxbeOxANowX&#xa;iXEctHn5bGEcrpvJ0SXIzTCrZz2h4kE8+R82zLrkNEW2ao4A0Tado6S0tJFFoNU2&#xa;HPXXUh3WSMyH1ZQ8IWcBAOfd/ar8t/U5CRmL9IwUq+yIl5XVYaezyadbEdm50Wtv&#xa;RzKFu5BtGHWX+ZhNSNxEV0JCI9oelOPrjvKGBPQZ1w1NhNy2vYnq5bFW8tyjd4Kr&#xa;y/5VbUBAKRAM&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+</ports>
+<times srtt="98170" rttvar="11364" to="143626"/>
+</host>
+<taskbegin task="NSE" time="1730742283"/>
+<taskend task="NSE" time="1730742283"/>
+<taskbegin task="NSE" time="1730742283"/>
+<taskend task="NSE" time="1730742283"/>
+<taskbegin task="NSE" time="1730742283"/>
+<taskend task="NSE" time="1730742283"/>
+<runstats><finished time="1730742283" timestr="Mon Nov  4 17:44:43 2024" elapsed="34.71" summary="Nmap done at Mon Nov  4 17:44:43 2024; 1 IP address (1 host up) scanned in 34.71 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
