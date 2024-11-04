@@ -19,3 +19,123 @@
 <taskbegin task="Connect Scan" time="1730739979"/>
 <taskend task="Connect Scan" time="1730739983" extrainfo="1000 total ports"/>
 <taskbegin task="Service scan" time="1730739984"/>
+<taskend task="Service scan" time="1730739996" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1730739996"/>
+<taskend task="NSE" time="1730739996"/>
+<taskbegin task="NSE" time="1730739996"/>
+<taskend task="NSE" time="1730739996"/>
+<taskbegin task="NSE" time="1730739996"/>
+<taskend task="NSE" time="1730739996"/>
+<host starttime="1730739979" endtime="1730739996"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="34.193.185.57" addrtype="ipv4"/>
+<hostnames>
+<hostname name="gettingunstuck.gse.harvard.edu" type="user"/>
+<hostname name="ec2-34-193-185-57.compute-1.amazonaws.com" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="999">
+<extrareasons reason="no-responses" count="999"/>
+</extraports>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.41" extrainfo="(Ubuntu)" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.41</cpe></service><script id="http-git" output="&#xa;  34.193.185.57:443/.git/&#xa;    Git repository found!&#xa;    Repository description: Unnamed repository; edit this file &apos;description&apos; to name the...&#xa;    Last commit message: Added the .htaccess file &#xa;    Remotes:&#xa;      https://github.com/GSE-CCL/unstuck-curriculum-static.git&#xa;"><table key="34.193.185.57:443/.git/">
+<elem key="last-commit-message">Added the .htaccess file&#xa;</elem>
+<table key="remotes">
+<elem>https://github.com/GSE-CCL/unstuck-curriculum-static.git</elem>
+</table>
+<table key="files-found">
+<elem key=".git/description">true</elem>
+<elem key=".git/info/exclude">true</elem>
+<elem key=".gitignore">false</elem>
+<elem key=".git/COMMIT_EDITMSG">true</elem>
+<elem key=".git/config">true</elem>
+</table>
+<elem key="repository-description">Unnamed repository; edit this file &apos;description&apos; to name the repository.&#xa;</elem>
+</table>
+</script><script id="http-methods" output="&#xa;  Supported Methods: HEAD GET POST OPTIONS"><table key="Supported Methods">
+<elem>HEAD</elem>
+<elem>GET</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="Apache/2.4.41 (Ubuntu)"><elem>Apache/2.4.41 (Ubuntu)</elem>
+</script><script id="http-title" output="Getting Unstuck"><elem key="title">Getting Unstuck</elem>
+</script><script id="ssl-cert" output="Subject: commonName=gettingunstuck.gse.harvard.edu/organizationName=President and Fellows of Harvard College/stateOrProvinceName=Massachusetts/countryName=US&#xa;Subject Alternative Name: DNS:gettingunstuck.gse.harvard.edu&#xa;Issuer: commonName=InCommon RSA Server CA 2/organizationName=Internet2/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha384WithRSAEncryption&#xa;Not valid before: 2024-06-27T00:00:00&#xa;Not valid after:  2025-07-28T23:59:59&#xa;MD5:   25bb f715 c49b ac90 c797 a7c9 346c 204d&#xa;SHA-1: d004 c84c b121 ab4f f9ca dd11 9a9c a386 c410 4677"><table key="subject">
+<elem key="countryName">US</elem>
+<elem key="commonName">gettingunstuck.gse.harvard.edu</elem>
+<elem key="stateOrProvinceName">Massachusetts</elem>
+<elem key="organizationName">President and Fellows of Harvard College</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">InCommon RSA Server CA 2</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">Internet2</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="modulus">BIGNUM: 0x5620761f37b8</elem>
+<elem key="bits">2048</elem>
+<elem key="exponent">BIGNUM: 0x56207644e078</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">EF:4C:00:92:A6:FB:76:2E:5E:95:E2:C9:5F:87:1B:19:D5:4D:E2:D9</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">BA:7E:10:61:A3:59:C5:63:1B:94:1E:D2:4D:C1:F0:22:BA:34:76:C5</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="critical">true</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="critical">true</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 1.3.6.1.4.1.6449.1.2.2.103&#xa;  CPS: https://sectigo.com/CPS&#xa;Policy: 2.23.140.1.2.2</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://crl.sectigo.com/InCommonRSAServerCA2.crl</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:http://crt.sectigo.com/InCommonRSAServerCA2.crt&#xa;OCSP - URI:http://ocsp.sectigo.com</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:gettingunstuck.gse.harvard.edu</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : DD:DC:CA:34:95:D7:E1:16:05:E7:95:32:FA:C7:9F:F8:&#xa;                3D:1C:50:DF:DB:00:3A:14:12:76:0A:2C:AC:BB:C8:2A&#xa;    Timestamp : Jun 27 17:53:57.432 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:F1:CC:2C:76:A8:45:60:7B:0C:DC:AA:&#xa;                0A:AD:F5:3B:6B:88:F4:E0:A4:47:02:8C:55:16:33:01:&#xa;                1F:87:9F:5E:F0:02:21:00:C0:C6:CC:D5:BB:52:80:0F:&#xa;                7A:DA:AB:A5:B4:A5:9F:56:75:74:5F:DB:80:F6:76:CA:&#xa;                01:3B:85:35:24:40:AD:A8&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 0D:E1:F2:30:2B:D3:0D:C1:40:62:12:09:EA:55:2E:FC:&#xa;                47:74:7C:B1:D7:E9:30:EF:0E:42:1E:B4:7E:4E:AA:34&#xa;    Timestamp : Jun 27 17:53:57.387 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:75:F6:5D:32:45:1C:DE:C4:15:12:8D:4E:&#xa;                41:D9:AD:CB:35:9D:9E:07:3E:38:34:51:98:1C:95:D7:&#xa;                2F:84:DC:34:02:21:00:B2:10:BD:33:51:70:BC:9A:CE:&#xa;                29:36:34:95:C8:61:0A:BD:D9:61:D6:AC:2C:9D:2D:E5:&#xa;                40:C7:51:B1:76:AD:89&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 12:F1:4E:34:BD:53:72:4C:84:06:19:C3:8F:3F:7A:13:&#xa;                F8:E7:B5:62:87:88:9C:6D:30:05:84:EB:E5:86:26:3A&#xa;    Timestamp : Jun 27 17:53:57.325 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:C7:60:A3:2F:C7:96:32:E0:83:73:D5:&#xa;                F5:58:85:92:D1:2C:47:03:DE:35:E6:2E:B8:1A:4D:88:&#xa;                E4:63:80:58:AE:02:20:27:47:9F:F0:56:84:0B:17:EA:&#xa;                E6:62:29:24:66:75:C3:C7:39:A3:B7:43:5C:89:76:AD:&#xa;                21:9E:D8:9C:16:CD:16</elem>
+</table>
+</table>
+<elem key="sig_algo">sha384WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notAfter">2025-07-28T23:59:59</elem>
+<elem key="notBefore">2024-06-27T00:00:00</elem>
+</table>
+<elem key="md5">25bbf715c49bac90c797a7c9346c204d</elem>
+<elem key="sha1">d004c84cb121ab4ff9cadd119a9ca386c4104677</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIHADCCBWigAwIBAgIQE4fq7uBWSYs1pjxGz2DYvzANBgkqhkiG9w0BAQwFADBE&#xa;MQswCQYDVQQGEwJVUzESMBAGA1UEChMJSW50ZXJuZXQyMSEwHwYDVQQDExhJbkNv&#xa;bW1vbiBSU0EgU2VydmVyIENBIDIwHhcNMjQwNjI3MDAwMDAwWhcNMjUwNzI4MjM1&#xa;OTU5WjCBgTELMAkGA1UEBhMCVVMxFjAUBgNVBAgTDU1hc3NhY2h1c2V0dHMxMTAv&#xa;BgNVBAoTKFByZXNpZGVudCBhbmQgRmVsbG93cyBvZiBIYXJ2YXJkIENvbGxlZ2Ux&#xa;JzAlBgNVBAMTHmdldHRpbmd1bnN0dWNrLmdzZS5oYXJ2YXJkLmVkdTCCASIwDQYJ&#xa;KoZIhvcNAQEBBQADggEPADCCAQoCggEBAOrUHC8OJPPGqb7MEoapSY00F9LyCaun&#xa;cOli06jJcU0667tSmsTI1pQJSZtHH1GGiAW2zUfP3Emtsnc/vORffH3l4SKrv2Us&#xa;hs4f37GtENMt56tPclxZQQ7ri6fjiVd1tjcB7iRyRXn/whiJ2QOEzyCqx9EekQkw&#xa;rCfdml4rD+YfHtSllAJXLGw4k7RqxhECFXnMK4X7ko4CZq0WVIU7JOPw4OYgbfA1&#xa;G7TQjAEGkjlY9fKBOpt15rEBG5jwv35E5pTigjujCt7+lN8dwmWA2+XRR6by3agz&#xa;X7X9Q83qgs5EF/B1AVI4Ek5xFHAMicYo9yRxpMTFhjj2CWQHrNjJsPECAwEAAaOC&#xa;Ay4wggMqMB8GA1UdIwQYMBaAFO9MAJKm+3YuXpXiyV+HGxnVTeLZMB0GA1UdDgQW&#xa;BBS6fhBho1nFYxuUHtJNwfAiujR2xTAOBgNVHQ8BAf8EBAMCBaAwDAYDVR0TAQH/&#xa;BAIwADAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwSQYDVR0gBEIwQDA0&#xa;BgsrBgEEAbIxAQICZzAlMCMGCCsGAQUFBwIBFhdodHRwczovL3NlY3RpZ28uY29t&#xa;L0NQUzAIBgZngQwBAgIwQAYDVR0fBDkwNzA1oDOgMYYvaHR0cDovL2NybC5zZWN0&#xa;aWdvLmNvbS9JbkNvbW1vblJTQVNlcnZlckNBMi5jcmwwcAYIKwYBBQUHAQEEZDBi&#xa;MDsGCCsGAQUFBzAChi9odHRwOi8vY3J0LnNlY3RpZ28uY29tL0luQ29tbW9uUlNB&#xa;U2VydmVyQ0EyLmNydDAjBggrBgEFBQcwAYYXaHR0cDovL29jc3Auc2VjdGlnby5j&#xa;b20wKQYDVR0RBCIwIIIeZ2V0dGluZ3Vuc3R1Y2suZ3NlLmhhcnZhcmQuZWR1MIIB&#xa;fwYKKwYBBAHWeQIEAgSCAW8EggFrAWkAdwDd3Mo0ldfhFgXnlTL6x5/4PRxQ39sA&#xa;OhQSdgosrLvIKgAAAZBa1Si4AAAEAwBIMEYCIQDxzCx2qEVgewzcqgqt9TtriPTg&#xa;pEcCjFUWMwEfh59e8AIhAMDGzNW7UoAPetqrpbSln1Z1dF/bgPZ2ygE7hTUkQK2o&#xa;AHYADeHyMCvTDcFAYhIJ6lUu/Ed0fLHX6TDvDkIetH5OqjQAAAGQWtUoiwAABAMA&#xa;RzBFAiB19l0yRRzexBUSjU5B2a3LNZ2eBz44NFGYHJXXL4TcNAIhALIQvTNRcLya&#xa;zik2NJXIYQq92WHWrCydLeVAx1Gxdq2JAHYAEvFONL1TckyEBhnDjz96E/jntWKH&#xa;iJxtMAWE6+WGJjoAAAGQWtUoTQAABAMARzBFAiEAx2CjL8eWMuCDc9X1WIWS0SxH&#xa;A9415i64Gk2I5GOAWK4CICdHn/BWhAsX6uZiKSRmdcPHOaO3Q1yJdq0hnticFs0W&#xa;MA0GCSqGSIb3DQEBDAUAA4IBgQBWmtEZgMHbXfpOhunMcA/fWufr4Cli9575OaAa&#xa;uzrmhzZsPHQObMOs4azZR8X54absbQwuec/1fiFLnHZWD8H1BvL8yWDQK4bihPhh&#xa;JbRm3o4VMb0+pAbn+uCSU065+buOXl4A2zMYjy8ZivajtgI6JCcWtheGgndKCkkk&#xa;rgwB54cZ+jjqb92+EYG/ugKBtyGGjCTZpfCGt1ZOlrNnJAWuZ6HLLjws1oPdHUaj&#xa;N+twPTE5oRx7biIu/NO/OvQEnHVNFNjbXWjLnqkDkrOZU9VI0giIPQczCDyzOSnB&#xa;fncPYND4BCpk60y9bdAl0zqbsoqG00hQemaBO3WbGQ+n1lWAaFTegegXdOvq3pZg&#xa;IF/8PSVyO0NGI2QdknPN5sakx96iU1HxZLqdNEbHCubrckXofwTKD0e5gTWEWp1s&#xa;EcIBehIKpTLFBXrWRVlwg5PTMYl4G/OHXt5jq1J2y8snSKnz1MIjw0reWzq0aDBF&#xa;QCnrrYYjmjYbIRKX+vBrxqdjLW4=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+</ports>
+<times srtt="6926" rttvar="3167" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730739996"/>
+<taskend task="NSE" time="1730739996"/>
+<taskbegin task="NSE" time="1730739996"/>
+<taskend task="NSE" time="1730739996"/>
+<taskbegin task="NSE" time="1730739996"/>
+<taskend task="NSE" time="1730739996"/>
+<runstats><finished time="1730739996" timestr="Mon Nov  4 17:06:36 2024" elapsed="17.68" summary="Nmap done at Mon Nov  4 17:06:36 2024; 1 IP address (1 host up) scanned in 17.68 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
