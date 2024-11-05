@@ -19,3 +19,96 @@
 <taskbegin task="Connect Scan" time="1730786382"/>
 <taskend task="Connect Scan" time="1730786384" extrainfo="1000 total ports"/>
 <taskbegin task="Service scan" time="1730786384"/>
+<taskend task="Service scan" time="1730786545" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1730786545"/>
+<taskend task="NSE" time="1730786559"/>
+<taskbegin task="NSE" time="1730786559"/>
+<taskend task="NSE" time="1730786560"/>
+<taskbegin task="NSE" time="1730786560"/>
+<taskend task="NSE" time="1730786560"/>
+<host starttime="1730786382" endtime="1730786560"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="140.247.236.19" addrtype="ipv4"/>
+<hostnames>
+<hostname name="globus.nese.rc.fas.harvard.edu" type="user"/>
+<hostname name="dtn05.nese.mghpcc.org" type="PTR"/>
+</hostnames>
+<ports><extraports state="closed" count="997">
+<extrareasons reason="conn-refused" count="997"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssl" product="Apache httpd" extrainfo="SSL-only mode" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:apache:http_server</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET POST OPTIONS HEAD TRACE&#xa;  Potentially risky methods: TRACE"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+<elem>HEAD</elem>
+<elem>TRACE</elem>
+</table>
+<table key="Potentially risky methods">
+<elem>TRACE</elem>
+</table>
+</script><script id="http-server-header" output="Apache/2.4.37 (Red Hat Enterprise Linux) OpenSSL/1.1.1k"><elem>Apache/2.4.37 (Red Hat Enterprise Linux) OpenSSL/1.1.1k</elem>
+</script><script id="http-title" output="Test Page for the HTTP Server on Red Hat Enterprise Linux"><elem key="title">Test Page for the HTTP Server on Red Hat Enterprise Linux</elem>
+</script><script id="ssl-cert" output="Subject: commonName=dtn05/organizationName=Unspecified/countryName=US&#xa;Subject Alternative Name: DNS:dtn05&#xa;Issuer: commonName=dtn05/organizationName=Unspecified/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2022-02-20T05:37:36&#xa;Not valid after:  2023-02-25T07:17:36&#xa;MD5:   e620 a937 74a0 3f4c 9e49 00bc 5597 00c1&#xa;SHA-1: 5a33 a781 2122 c38f 4127 0cbb 5a55 0145 1bcf 931a"><table key="subject">
+<elem key="commonName">dtn05</elem>
+<elem key="countryName">US</elem>
+<elem key="emailAddress">root@dtn05</elem>
+<elem key="organizationName">Unspecified</elem>
+</table>
+<table key="issuer">
+<elem key="organizationalUnitName">ca-3958626126039386111</elem>
+<elem key="emailAddress">root@dtn05</elem>
+<elem key="countryName">US</elem>
+<elem key="commonName">dtn05</elem>
+<elem key="organizationName">Unspecified</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">2048</elem>
+<elem key="modulus">BIGNUM: 0x55b37bd36598</elem>
+<elem key="exponent">BIGNUM: 0x55b37bd36518</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="critical">true</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:dtn05</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">21:63:33:EF:E2:DD:A6:13:01:D8:2C:72:63:F3:5A:90:43:6D:F4:CC</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2022-02-20T05:37:36</elem>
+<elem key="notAfter">2023-02-25T07:17:36</elem>
+</table>
+<elem key="md5">e620a93774a03f4c9e4900bc559700c1</elem>
+<elem key="sha1">5a33a7812122c38f41270cbb5a5501451bcf931a</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIEpDCCAoygAwIBAgIIdIVEaNy0G/owDQYJKoZIhvcNAQELBQAwbzELMAkGA1UE&#xa;BhMCVVMxFDASBgNVBAoMC1Vuc3BlY2lmaWVkMR8wHQYDVQQLDBZjYS0zOTU4NjI2&#xa;MTI2MDM5Mzg2MTExMQ4wDAYDVQQDDAVkdG4wNTEZMBcGCSqGSIb3DQEJARYKcm9v&#xa;dEBkdG4wNTAeFw0yMjAyMjAwNTM3MzZaFw0yMzAyMjUwNzE3MzZaME4xCzAJBgNV&#xa;BAYTAlVTMRQwEgYDVQQKDAtVbnNwZWNpZmllZDEOMAwGA1UEAwwFZHRuMDUxGTAX&#xa;BgkqhkiG9w0BCQEWCnJvb3RAZHRuMDUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw&#xa;ggEKAoIBAQDdSmp6M2JaAk+4JyLJEAY+D1ZaedV/ZKltq2KKgV4zV/+MVe70zN7P&#xa;kyMsx5pOjB8PqM0/01vbI9U+IEE1kouSg1wVTKYOfvrurtQXUiSnjcCTRwOrgUml&#xa;eGavcpkD0Kxx6qPdL0wlbth/B7bKBxj12TjdEjp2+I818UgD+QfsJ0LHQ31K5ulo&#xa;EKmzYnsyeDV4WSdry3KEAD1H2JVfcLsJ8Z7/7rB4m5qT1Lc6EptHbNw1Y12rXO2a&#xa;0m/OlD6e/i33XFdvgYChmUFZF9TUzDrl5lPy9mJtWaaCOCTf+L0D2LgOzOTpSxlC&#xa;kQN3oo2A3tTJdrb/bAfsgnNMT8vIumdjAgMBAAGjZTBjMA4GA1UdDwEB/wQEAwIF&#xa;oDATBgNVHSUEDDAKBggrBgEFBQcDATAJBgNVHRMEAjAAMBAGA1UdEQQJMAeCBWR0&#xa;bjA1MB8GA1UdIwQYMBaAFCFjM+/i3aYTAdgscmPzWpBDbfTMMA0GCSqGSIb3DQEB&#xa;CwUAA4ICAQDB3NEhhX8E39ZKK3X7BKJfVw1iziOHFQbuJ/7lK38wPCtSON6RaQY7&#xa;y7b1Zr2UL6dZPt91sF7uNfnboMptVnbFXII5FB+e6pFkMQEeDWDtu5bATDYMFe36&#xa;5ieOj9py/EWD/DFJW0tTgewTrBNHXYIKI2d8/3M7QBhCOZ0kzaURGJ0q1Ba5hgii&#xa;CewblSF8Q59az3RUAFPNQH+0Z01O73GDH8LzVAGzDnTKHCBGluWFVCiugGiA/aUD&#xa;tVD3fJ1lQCwpbemsx3mDiS07RbfOjE63YwWZ8L1ZztqRwqhE75b+mmkIrFYY1OIL&#xa;Eg0WYmmKAcMRgEVEDWXCU+hFsVbCeVN6lvIIM4A+wRvnEC9eC4B54RVdYflvoceV&#xa;DXtQU6arRtvAaM7TLY5HBL2+nBFR8fF3D5Oja77q58/ORi9sUpNABb3xD8vIMLzA&#xa;Kk5/TWWF/bxkhaNPA6a7Pj9OAM5CHcxJQE8O+hklBVpe+sgf65/mhS7hMuawAmS3&#xa;TqKn8GO719jLqN2ZxFZbJnD9rthgC/isRWWg9PrHgS3guVteOcRNUX43K7bOTp5d&#xa;l5UV1K9Wjowun7mGXWDxjP7FYCHc8cqPMBaFSuY/pfEAHPVUqQyIBmBMJlNNgaO3&#xa;y2WFtszuh2mU27TKWidw2bhhgiJxmcYIf5fL5859bIebgZUjBLsIcQ==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+<port protocol="tcp" portid="50003"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+</ports>
+<times srtt="17800" rttvar="562" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730786560"/>
+<taskend task="NSE" time="1730786560"/>
+<taskbegin task="NSE" time="1730786560"/>
+<taskend task="NSE" time="1730786560"/>
+<taskbegin task="NSE" time="1730786560"/>
+<taskend task="NSE" time="1730786560"/>
+<runstats><finished time="1730786560" timestr="Tue Nov  5 06:02:40 2024" elapsed="178.51" summary="Nmap done at Tue Nov  5 06:02:40 2024; 1 IP address (1 host up) scanned in 178.51 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
