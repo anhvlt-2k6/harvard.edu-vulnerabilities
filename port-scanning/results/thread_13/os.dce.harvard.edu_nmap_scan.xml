@@ -17,3 +17,117 @@
 <taskbegin task="Parallel DNS resolution of 1 host." time="1730792529"/>
 <taskend task="Parallel DNS resolution of 1 host." time="1730792529"/>
 <taskbegin task="Connect Scan" time="1730792529"/>
+<taskend task="Connect Scan" time="1730792533" extrainfo="1000 total ports"/>
+<taskbegin task="Service scan" time="1730792533"/>
+<taskend task="Service scan" time="1730792551" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1730792551"/>
+<taskend task="NSE" time="1730792552"/>
+<taskbegin task="NSE" time="1730792552"/>
+<taskend task="NSE" time="1730792552"/>
+<taskbegin task="NSE" time="1730792552"/>
+<taskend task="NSE" time="1730792552"/>
+<host starttime="1730792529" endtime="1730792552"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="140.247.198.17" addrtype="ipv4"/>
+<hostnames>
+<hostname name="os.dce.harvard.edu" type="user"/>
+<hostname name="os.dce.harvard.edu" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="997">
+<extrareasons reason="no-responses" count="997"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" servicefp="SF-Port80-TCP:V=7.80%I=7%D=11/5%Time=6729CC5B%P=x86_64-pc-linux-gnu%r(GetRequest,6A,&quot;HTTP/1\.1\x20302\x20Found\r\nCache-Control:\x20no-cache\r\nContent-length:\x200\r\nLocation:\x20https:///\r\nConnection:\x20close\r\n\r\n&quot;)%r(HTTPOptions,6A,&quot;HTTP/1\.1\x20302\x20Found\r\nCache-Control:\x20no-cache\r\nContent-length:\x200\r\nLocation:\x20https:///\r\nConnection:\x20close\r\n\r\n&quot;)%r(RTSPRequest,6A,&quot;HTTP/1\.1\x20302\x20Found\r\nCache-Control:\x20no-cache\r\nContent-length:\x200\r\nLocation:\x20https:///\r\nConnection:\x20close\r\n\r\n&quot;)%r(X11Probe,6A,&quot;HTTP/1\.1\x20302\x20Found\r\nCache-Control:\x20no-cache\r\nContent-length:\x200\r\nLocation:\x20https:///\r\nConnection:\x20close\r\n\r\n&quot;)%r(FourOhFourRequest,8D,&quot;HTTP/1\.1\x20302\x20Found\r\nCache-Control:\x20no-cache\r\nContent-length:\x200\r\nLocation:\x20https:///nice%20ports%2C/Tri%6Eity\.txt%2ebak\r\nConnection:\x20close\r\n\r\n&quot;)%r(GenericLines,6A,&quot;HTTP/1\.1\x20302\x20Found\r\nCache-Control:\x20no-cache\r\nContent-length:\x200\r\nLocation:\x20https:///\r\nConnection:\x20close\r\n\r\n&quot;)%r(RPCCheck,6A,&quot;HTTP/1\.1\x20302\x20Found\r\nCache-Control:\x20no-cache\r\nContent-length:\x200\r\nLocation:\x20https:///\r\nConnection:\x20close\r\n\r\n&quot;)%r(DNSVersionBindReqTCP,6A,&quot;HTTP/1\.1\x20302\x20Found\r\nCache-Control:\x20no-cache\r\nContent-length:\x200\r\nLocation:\x20https:///\r\nConnection:\x20close\r\n\r\n&quot;)%r(DNSStatusRequestTCP,6A,&quot;HTTP/1\.1\x20302\x20Found\r\nCache-Control:\x20no-cache\r\nContent-length:\x200\r\nLocation:\x20https:///\r\nConnection:\x20close\r\n\r\n&quot;)%r(Help,6A,&quot;HTTP/1\.1\x20302\x20Found\r\nCache-Control:\x20no-cache\r\nContent-length:\x200\r\nLocation:\x20https:///\r\nConnection:\x20close\r\n\r\n&quot;)%r(SSLSessionReq,6A,&quot;HTTP/1\.1\x20302\x20Found\r\nCache-Control:\x20no-cache\r\nContent-length:\x200\r\nLocation:\x20https:///\r\nConnection:\x20close\r\n\r\n&quot;)%r(TerminalServerCookie,6A,&quot;HTTP/1\.1\x20302\x20Found\r\nCache-Control:\x20no-cache\r\nContent-length:\x200\r\nLocation:\x20https:///\r\nConnection:\x20close\r\n\r\n&quot;)%r(TLSSessionReq,6A,&quot;HTTP/1\.1\x20302\x20Found\r\nCache-Control:\x20no-cache\r\nContent-length:\x200\r\nLocation:\x20https:///\r\nConnection:\x20close\r\n\r\n&quot;);" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  DNSStatusRequestTCP, DNSVersionBindReqTCP, GenericLines, GetRequest, HTTPOptions, Help, RPCCheck, RTSPRequest, SSLSessionReq, TLSSessionReq, TerminalServerCookie, X11Probe: &#xa;    HTTP/1.1 302 Found&#xa;    Cache-Control: no-cache&#xa;    Content-length: 0&#xa;    Location: https:///&#xa;    Connection: close&#xa;  FourOhFourRequest: &#xa;    HTTP/1.1 302 Found&#xa;    Cache-Control: no-cache&#xa;    Content-length: 0&#xa;    Location: https:///nice%20ports%2C/Tri%6Eity.txt%2ebak&#xa;    Connection: close"><elem key="DNSStatusRequestTCP, DNSVersionBindReqTCP, GenericLines, GetRequest, HTTPOptions, Help, RPCCheck, RTSPRequest, SSLSessionReq, TLSSessionReq, TerminalServerCookie, X11Probe">&#xa;    HTTP/1.1 302 Found&#xa;    Cache-Control: no-cache&#xa;    Content-length: 0&#xa;    Location: https:///&#xa;    Connection: close</elem>
+<elem key="FourOhFourRequest">&#xa;    HTTP/1.1 302 Found&#xa;    Cache-Control: no-cache&#xa;    Content-length: 0&#xa;    Location: https:///nice%20ports%2C/Tri%6Eity.txt%2ebak&#xa;    Connection: close</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Did not follow redirect to https://os.dce.harvard.edu/"><elem key="redirect_url">https://os.dce.harvard.edu/</elem>
+</script><script id="https-redirect" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="tcp" portid="113"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ident" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http-proxy" product="HAProxy http proxy" version="1.3.1 or later" devicetype="load balancer" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:haproxy:haproxy</cpe></service><script id="http-title" output="Site doesn&apos;t have a title (text/html)."></script><script id="ssl-cert" output="Subject: commonName=os.dce.harvard.edu/organizationName=President and Fellows of Harvard College/stateOrProvinceName=Massachusetts/countryName=US&#xa;Subject Alternative Name: DNS:os.dce.harvard.edu, DNS:dceweb.harvard.edu, DNS:os-aws.dce.harvard.edu&#xa;Issuer: commonName=InCommon RSA Server CA/organizationName=Internet2/stateOrProvinceName=MI/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2023-05-22T00:00:00&#xa;Not valid after:  2024-05-21T23:59:59&#xa;MD5:   422d 463f 8a69 b587 c8bb ec9b 8f67 618d&#xa;SHA-1: b940 d38a bc2e 5792 2737 2650 db31 d042 b8eb b471"><table key="subject">
+<elem key="commonName">os.dce.harvard.edu</elem>
+<elem key="countryName">US</elem>
+<elem key="stateOrProvinceName">Massachusetts</elem>
+<elem key="organizationName">President and Fellows of Harvard College</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">InCommon RSA Server CA</elem>
+<elem key="countryName">US</elem>
+<elem key="stateOrProvinceName">MI</elem>
+<elem key="organizationalUnitName">InCommon</elem>
+<elem key="localityName">Ann Arbor</elem>
+<elem key="organizationName">Internet2</elem>
+</table>
+<table key="pubkey">
+<elem key="exponent">BIGNUM: 0x558a9ffe3878</elem>
+<elem key="bits">2048</elem>
+<elem key="type">rsa</elem>
+<elem key="modulus">BIGNUM: 0x558a9ffe3838</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">1E:05:A3:77:8F:6C:96:E2:5B:87:4B:A6:B4:86:AC:71:00:0C:E7:38</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">B6:30:98:54:51:73:F7:01:57:1A:15:F1:05:80:49:B9:94:9E:ED:77</elem>
+</table>
+<table>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="value">CA:FALSE</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 1.3.6.1.4.1.5923.1.4.3.1.1&#xa;  CPS: https://www.incommon.org/cert/repository/cps_ssl.pdf&#xa;Policy: 2.23.140.1.2.2</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://crl.incommon-rsa.org/InCommonRSAServerCA.crl</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:http://crt.usertrust.com/InCommonRSAServerCA_2.crt&#xa;OCSP - URI:http://ocsp.usertrust.com</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 76:FF:88:3F:0A:B6:FB:95:51:C2:61:CC:F5:87:BA:34:&#xa;                B4:A4:CD:BB:29:DC:68:42:0A:9F:E6:67:4C:5A:3A:74&#xa;    Timestamp : May 22 13:24:40.889 2023 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:2C:D3:F6:E9:8F:04:50:E3:C6:49:A4:50:&#xa;                50:BF:72:C3:AA:2E:56:F7:E4:54:FB:AC:54:44:93:44:&#xa;                F9:7F:CA:08:02:21:00:E6:40:CE:EC:E7:52:9F:4A:7F:&#xa;                A8:25:DB:B6:36:F4:BE:1D:AA:E5:0E:86:E7:AC:C1:15:&#xa;                79:63:F5:95:91:CE:D9&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : DA:B6:BF:6B:3F:B5:B6:22:9F:9B:C2:BB:5C:6B:E8:70:&#xa;                91:71:6C:BB:51:84:85:34:BD:A4:3D:30:48:D7:FB:AB&#xa;    Timestamp : May 22 13:24:40.982 2023 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:4A:1F:F4:C1:43:F4:3B:01:37:DC:3E:47:&#xa;                12:77:A0:4A:90:4F:A8:92:88:7E:6A:F3:11:BD:82:8C:&#xa;                A7:BF:0A:6C:02:20:37:90:62:52:0C:87:F9:AE:7B:22:&#xa;                DA:97:AB:D6:6A:DC:D0:E7:83:DD:BB:F2:A2:2E:7F:A4:&#xa;                BF:FD:88:24:42:4B&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : EE:CD:D0:64:D5:DB:1A:CE:C5:5C:B7:9D:B4:CD:13:A2:&#xa;                32:87:46:7C:BC:EC:DE:C3:51:48:59:46:71:1F:B5:9B&#xa;    Timestamp : May 22 13:24:40.935 2023 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:32:4C:05:26:8E:EA:73:06:BB:E9:71:10:&#xa;                FF:7C:0D:05:11:9F:3D:A4:2E:53:92:FA:98:8E:1F:C0:&#xa;                DF:A0:97:BC:02:20:51:ED:74:8D:0B:58:07:E5:0D:93:&#xa;                23:E7:0D:48:0E:3F:76:B9:FD:EF:02:AC:7A:FE:C1:19:&#xa;                73:D0:FE:D6:E4:7E</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:os.dce.harvard.edu, DNS:dceweb.harvard.edu, DNS:os-aws.dce.harvard.edu</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2023-05-22T00:00:00</elem>
+<elem key="notAfter">2024-05-21T23:59:59</elem>
+</table>
+<elem key="md5">422d463f8a69b587c8bbec9b8f67618d</elem>
+<elem key="sha1">b940d38abc2e579227372650db31d042b8ebb471</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIG6jCCBdKgAwIBAgIRANNVnALs8bEwFT8jgmPozgcwDQYJKoZIhvcNAQELBQAw&#xa;djELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAk1JMRIwEAYDVQQHEwlBbm4gQXJib3Ix&#xa;EjAQBgNVBAoTCUludGVybmV0MjERMA8GA1UECxMISW5Db21tb24xHzAdBgNVBAMT&#xa;FkluQ29tbW9uIFJTQSBTZXJ2ZXIgQ0EwHhcNMjMwNTIyMDAwMDAwWhcNMjQwNTIx&#xa;MjM1OTU5WjB1MQswCQYDVQQGEwJVUzEWMBQGA1UECBMNTWFzc2FjaHVzZXR0czEx&#xa;MC8GA1UEChMoUHJlc2lkZW50IGFuZCBGZWxsb3dzIG9mIEhhcnZhcmQgQ29sbGVn&#xa;ZTEbMBkGA1UEAxMSb3MuZGNlLmhhcnZhcmQuZWR1MIIBIjANBgkqhkiG9w0BAQEF&#xa;AAOCAQ8AMIIBCgKCAQEAwu+wtL/hykrJm9jkEXfwReywG/W9YiSdTz7nT9dqypbN&#xa;s2UpEEbqOrI1uZfW3iMoMR6gh7RaXWn2MntOJ82jbFRkXdpzIio3eGyWzCcMJuCr&#xa;Z8XkzJ+Wsg8idk0J567LLo5MMdjPUH1TgTqQWPhVgQzHXwnSO+37p/vXrczC8YAr&#xa;XXJ8Y8yuMm/LOcwR9zlkOMKuv2z28cMftB7XeQT1PFBQUQ5rNyygtOYCl239ZvNt&#xa;tIWQPaoAHHOAUEvzl4inUQtbWiBeNr9jVz0PYkyZoP6+h2HXbPb+S07ZqqxA0Zrd&#xa;pHedxR4vKjs8UFJoTf6GfvDdX2i5UQRSTkm4/LgNYQIDAQABo4IDcjCCA24wHwYD&#xa;VR0jBBgwFoAUHgWjd49sluJbh0umtIascQAM5zgwHQYDVR0OBBYEFLYwmFRRc/cB&#xa;VxoV8QWASbmUnu13MA4GA1UdDwEB/wQEAwIFoDAMBgNVHRMBAf8EAjAAMB0GA1Ud&#xa;JQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjBnBgNVHSAEYDBeMFIGDCsGAQQBriMB&#xa;BAMBATBCMEAGCCsGAQUFBwIBFjRodHRwczovL3d3dy5pbmNvbW1vbi5vcmcvY2Vy&#xa;dC9yZXBvc2l0b3J5L2Nwc19zc2wucGRmMAgGBmeBDAECAjBEBgNVHR8EPTA7MDmg&#xa;N6A1hjNodHRwOi8vY3JsLmluY29tbW9uLXJzYS5vcmcvSW5Db21tb25SU0FTZXJ2&#xa;ZXJDQS5jcmwwdQYIKwYBBQUHAQEEaTBnMD4GCCsGAQUFBzAChjJodHRwOi8vY3J0&#xa;LnVzZXJ0cnVzdC5jb20vSW5Db21tb25SU0FTZXJ2ZXJDQV8yLmNydDAlBggrBgEF&#xa;BQcwAYYZaHR0cDovL29jc3AudXNlcnRydXN0LmNvbTCCAXwGCisGAQQB1nkCBAIE&#xa;ggFsBIIBaAFmAHYAdv+IPwq2+5VRwmHM9Ye6NLSkzbsp3GhCCp/mZ0xaOnQAAAGI&#xa;Q6IpOQAABAMARzBFAiAs0/bpjwRQ48ZJpFBQv3LDqi5W9+RU+6xURJNE+X/KCAIh&#xa;AOZAzuznUp9Kf6gl27Y29L4dquUOhueswRV5Y/WVkc7ZAHUA2ra/az+1tiKfm8K7&#xa;XGvocJFxbLtRhIU0vaQ9MEjX+6sAAAGIQ6IplgAABAMARjBEAiBKH/TBQ/Q7ATfc&#xa;PkcSd6BKkE+okoh+avMRvYKMp78KbAIgN5BiUgyH+a57ItqXq9Zq3NDng9278qIu&#xa;f6S//YgkQksAdQDuzdBk1dsazsVct520zROiModGfLzs3sNRSFlGcR+1mwAAAYhD&#xa;oilnAAAEAwBGMEQCIDJMBSaO6nMGu+lxEP98DQURnz2kLlOS+piOH8DfoJe8AiBR&#xa;7XSNC1gH5Q2TI+cNSA4/drn97wKsev7BGXPQ/tbkfjBJBgNVHREEQjBAghJvcy5k&#xa;Y2UuaGFydmFyZC5lZHWCEmRjZXdlYi5oYXJ2YXJkLmVkdYIWb3MtYXdzLmRjZS5o&#xa;YXJ2YXJkLmVkdTANBgkqhkiG9w0BAQsFAAOCAQEAPsp7vPDShp4rfjXGhikHeLwy&#xa;59JXM7O+GbY22D+E4SFs+3ciedGwbJnGWE66SINm3yoj74VQde957KFU7A6wVSjw&#xa;eDQ93cB8BFWIQ0gE9w8XFcuuqJmwa90ADzwdiqGwdVqDBVCL/9ndMrFL84Ae07NZ&#xa;OJpDprP1HL+VNkucaQWRGlWz1RYRbiZ2GjPKjMfT8q6kt5gA1h6mxfVnARZzulpP&#xa;xnuJa3EopM2m/n6BE+uUA3Si84q+9E3aDfjhHL3bfnt42lhwNBkj7sICai1tP8r9&#xa;YQ4blwztMz8GJ8CPisp8fZnG47KBVFoJVgXnYDdb6GwOTZKR7l4y1GcifVEL4g==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+</ports>
+<times srtt="16407" rttvar="4030" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730792552"/>
+<taskend task="NSE" time="1730792552"/>
+<taskbegin task="NSE" time="1730792552"/>
+<taskend task="NSE" time="1730792552"/>
+<taskbegin task="NSE" time="1730792552"/>
+<taskend task="NSE" time="1730792552"/>
+<runstats><finished time="1730792552" timestr="Tue Nov  5 07:42:32 2024" elapsed="23.79" summary="Nmap done at Tue Nov  5 07:42:32 2024; 1 IP address (1 host up) scanned in 23.79 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
