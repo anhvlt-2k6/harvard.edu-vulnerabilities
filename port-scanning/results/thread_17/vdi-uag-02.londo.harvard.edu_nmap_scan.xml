@@ -19,3 +19,185 @@
 <taskbegin task="Connect Scan" time="1730835504"/>
 <taskend task="Connect Scan" time="1730835508" extrainfo="1000 total ports"/>
 <taskbegin task="Service scan" time="1730835508"/>
+<taskend task="Service scan" time="1730835611" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1730835611"/>
+<taskend task="NSE" time="1730835619"/>
+<taskbegin task="NSE" time="1730835619"/>
+<taskend task="NSE" time="1730835619"/>
+<taskbegin task="NSE" time="1730835619"/>
+<taskend task="NSE" time="1730835619"/>
+<host starttime="1730835504" endtime="1730835619"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="134.174.174.101" addrtype="ipv4"/>
+<hostnames>
+<hostname name="vdi-uag-02.londo.harvard.edu" type="user"/>
+<hostname name="vdi-uag-02.londo.harvard.edu" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="997">
+<extrareasons reason="no-responses" count="997"/>
+</extraports>
+<port protocol="tcp" portid="113"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ident" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" product="Apache" servicefp="SF-Port443-TCP:V=7.80%T=SSL%I=7%D=11/5%Time=672A7440%P=x86_64-pc-linux-gnu%r(GetRequest,42,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\ncontent-length:\x200\r\nconnection:\x20close\r\n\r\n&quot;)%r(HTTPOptions,42,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\ncontent-length:\x200\r\nconnection:\x20close\r\n\r\n&quot;)%r(FourOhFourRequest,42,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\ncontent-length:\x200\r\nconnection:\x20close\r\n\r\n&quot;)%r(RTSPRequest,42,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\ncontent-length:\x200\r\nconnection:\x20close\r\n\r\n&quot;)%r(Help,42,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\ncontent-length:\x200\r\nconnection:\x20close\r\n\r\n&quot;)%r(SSLSessionReq,42,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\ncontent-length:\x200\r\nconnection:\x20close\r\n\r\n&quot;)%r(TerminalServerCookie,42,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\ncontent-length:\x200\r\nconnection:\x20close\r\n\r\n&quot;)%r(TLSSessionReq,42,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\ncontent-length:\x200\r\nconnection:\x20close\r\n\r\n&quot;)%r(Kerberos,42,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\ncontent-length:\x200\r\nconnection:\x20close\r\n\r\n&quot;)%r(LPDString,42,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\ncontent-length:\x200\r\nconnection:\x20close\r\n\r\n&quot;)%r(LDAPSearchReq,42,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\ncontent-length:\x200\r\nconnection:\x20close\r\n\r\n&quot;)%r(SIPOptions,42,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\ncontent-length:\x200\r\nconnection:\x20close\r\n\r\n&quot;);" tunnel="ssl" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  FourOhFourRequest, GetRequest, HTTPOptions, Help, Kerberos, LDAPSearchReq, LPDString, RTSPRequest, SIPOptions, SSLSessionReq, TLSSessionReq, TerminalServerCookie: &#xa;    HTTP/1.1 400 Bad Request&#xa;    content-length: 0&#xa;    connection: close"><elem key="FourOhFourRequest, GetRequest, HTTPOptions, Help, Kerberos, LDAPSearchReq, LPDString, RTSPRequest, SIPOptions, SSLSessionReq, TLSSessionReq, TerminalServerCookie">&#xa;    HTTP/1.1 400 Bad Request&#xa;    content-length: 0&#xa;    connection: close</elem>
+</script><script id="http-favicon" output="Unknown favicon MD5: C6ACEDAFF906029FC5455D9EC52C7F42"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+</table>
+</script><script id="http-server-header" output="Apache"><elem>Apache</elem>
+</script><script id="http-title" output="VMware Horizon"><elem key="title">VMware Horizon</elem>
+</script><script id="ssl-cert" output="Subject: commonName=desktop.londo.harvard.edu/organizationName=President and Fellows of Harvard College/stateOrProvinceName=Massachusetts/countryName=US&#xa;Subject Alternative Name: DNS:desktop.londo.harvard.edu, DNS:desktop-int.cbar.harvard.edu, DNS:desktop-int.londo.harvard.edu, DNS:desktop.cbar.harvard.edu, DNS:dr-desktop-int.cbar.harvard.edu, DNS:dr-desktop-int.londo.harvard.edu, DNS:dr-desktop.cbar.harvard.edu, DNS:dr-desktop.londo.harvard.edu, DNS:dr-vdi-icb-01.londo.harvard.edu, DNS:dr-vdi-uag-01.londo.harvard.edu, DNS:dr-vdi-uagcb-01.londo.harvard.edu, DNS:vdi-icb-01.londo.harvard.edu, DNS:vdi-icb-02.londo.harvard.edu, DNS:vdi-uag-01.londo.harvard.edu, DNS:vdi-uag-02.londo.harvard.edu, DNS:vdi-uagcb-01.londo.harvard.edu, DNS:vdi-uagcb-02.londo.harvard.edu&#xa;Issuer: commonName=InCommon RSA Server CA 2/organizationName=Internet2/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha384WithRSAEncryption&#xa;Not valid before: 2024-04-25T00:00:00&#xa;Not valid after:  2025-04-25T23:59:59&#xa;MD5:   5f24 9866 f232 1a2e 03af 9770 bfe0 bd87&#xa;SHA-1: 7b4b f7dd 4416 6cf0 2dc5 1a62 f851 cb57 839b 0132"><table key="subject">
+<elem key="countryName">US</elem>
+<elem key="commonName">desktop.londo.harvard.edu</elem>
+<elem key="stateOrProvinceName">Massachusetts</elem>
+<elem key="organizationName">President and Fellows of Harvard College</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">US</elem>
+<elem key="commonName">InCommon RSA Server CA 2</elem>
+<elem key="organizationName">Internet2</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">2048</elem>
+<elem key="type">rsa</elem>
+<elem key="exponent">BIGNUM: 0x557bd20780b8</elem>
+<elem key="modulus">BIGNUM: 0x557bd2338c68</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">EF:4C:00:92:A6:FB:76:2E:5E:95:E2:C9:5F:87:1B:19:D5:4D:E2:D9</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">F3:DA:06:CC:69:12:C3:86:AC:4B:D7:26:10:5E:94:64:13:F4:54:15</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="critical">true</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="critical">true</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 1.3.6.1.4.1.6449.1.2.2.103&#xa;  CPS: https://sectigo.com/CPS&#xa;Policy: 2.23.140.1.2.2</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://crl.sectigo.com/InCommonRSAServerCA2.crl</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:http://crt.sectigo.com/InCommonRSAServerCA2.crt&#xa;OCSP - URI:http://ocsp.sectigo.com</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : CF:11:56:EE:D5:2E:7C:AF:F3:87:5B:D9:69:2E:9B:E9:&#xa;                1A:71:67:4A:B0:17:EC:AC:01:D2:5B:77:CE:CC:3B:08&#xa;    Timestamp : Apr 25 16:10:20.580 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:85:F5:81:C1:D9:DE:84:77:7B:21:4B:&#xa;                56:6F:98:BB:98:FC:6E:75:20:15:0F:3A:86:13:E1:BB:&#xa;                23:3A:11:D1:63:02:20:19:E5:7B:B2:93:B7:35:51:4B:&#xa;                EC:B6:02:7B:88:D1:F1:A0:5B:C1:B0:17:BF:DA:B3:5E:&#xa;                44:45:F7:71:BF:A5:7D&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : A2:E3:0A:E4:45:EF:BD:AD:9B:7E:38:ED:47:67:77:53:&#xa;                D7:82:5B:84:94:D7:2B:5E:1B:2C:C4:B9:50:A4:47:E7&#xa;    Timestamp : Apr 25 16:10:20.508 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:8D:8E:6F:38:56:3C:81:6D:79:E1:AA:&#xa;                0A:05:73:D1:75:29:43:2A:8A:D6:AC:8A:88:AF:37:8D:&#xa;                8F:76:A5:99:1B:02:20:76:68:DE:4C:0B:34:30:15:66:&#xa;                A5:2D:98:35:A8:43:D3:B3:DC:9A:93:09:8E:6A:5F:C9:&#xa;                5A:4C:49:BA:ED:07:5E&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 4E:75:A3:27:5C:9A:10:C3:38:5B:6C:D4:DF:3F:52:EB:&#xa;                1D:F0:E0:8E:1B:8D:69:C0:B1:FA:64:B1:62:9A:39:DF&#xa;    Timestamp : Apr 25 16:10:20.546 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:6C:A7:6C:47:07:08:22:1E:21:2A:EE:52:&#xa;                2F:17:8A:CB:A3:C0:0D:42:79:5E:24:B5:96:03:EA:D6:&#xa;                66:03:BB:6E:02:21:00:E3:A2:DF:2A:40:70:A8:61:D1:&#xa;                AA:1A:F2:8B:D3:4E:4F:CC:9A:FE:51:E6:DE:E5:7B:8C:&#xa;                43:30:1C:E9:32:46:6C</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:desktop.londo.harvard.edu, DNS:desktop-int.cbar.harvard.edu, DNS:desktop-int.londo.harvard.edu, DNS:desktop.cbar.harvard.edu, DNS:dr-desktop-int.cbar.harvard.edu, DNS:dr-desktop-int.londo.harvard.edu, DNS:dr-desktop.cbar.harvard.edu, DNS:dr-desktop.londo.harvard.edu, DNS:dr-vdi-icb-01.londo.harvard.edu, DNS:dr-vdi-uag-01.londo.harvard.edu, DNS:dr-vdi-uagcb-01.londo.harvard.edu, DNS:vdi-icb-01.londo.harvard.edu, DNS:vdi-icb-02.londo.harvard.edu, DNS:vdi-uag-01.londo.harvard.edu, DNS:vdi-uag-02.londo.harvard.edu, DNS:vdi-uagcb-01.londo.harvard.edu, DNS:vdi-uagcb-02.londo.harvard.edu</elem>
+</table>
+</table>
+<elem key="sig_algo">sha384WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-04-25T00:00:00</elem>
+<elem key="notAfter">2025-04-25T23:59:59</elem>
+</table>
+<elem key="md5">5f249866f2321a2e03af9770bfe0bd87</elem>
+<elem key="sha1">7b4bf7dd44166cf02dc51a62f851cb57839b0132</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIII7TCCB1WgAwIBAgIRAIlIVITboJoySJqIIJmLdvYwDQYJKoZIhvcNAQEMBQAw&#xa;RDELMAkGA1UEBhMCVVMxEjAQBgNVBAoTCUludGVybmV0MjEhMB8GA1UEAxMYSW5D&#xa;b21tb24gUlNBIFNlcnZlciBDQSAyMB4XDTI0MDQyNTAwMDAwMFoXDTI1MDQyNTIz&#xa;NTk1OVowfDELMAkGA1UEBhMCVVMxFjAUBgNVBAgTDU1hc3NhY2h1c2V0dHMxMTAv&#xa;BgNVBAoTKFByZXNpZGVudCBhbmQgRmVsbG93cyBvZiBIYXJ2YXJkIENvbGxlZ2Ux&#xa;IjAgBgNVBAMTGWRlc2t0b3AubG9uZG8uaGFydmFyZC5lZHUwggEiMA0GCSqGSIb3&#xa;DQEBAQUAA4IBDwAwggEKAoIBAQDBt96Ho4po7L7oeTGgggwSIXizkRpk6CpJyrTY&#xa;7m/eGRJQWndMl33WnZZVxYwsevtoW94F/cqYx7NfGtQevRMBvmCEhsC9rXU0TSVa&#xa;VPjiK/4saRogZLbMEx5KcY/ueuk2k9HFpZfhgEifuq1MapORBk+woV6lH5z7sAH+&#xa;ud06MSlrlrHG7jpHUT5idVLwtw0DxksU5xmyfIE4BF+gCsKTK1b4MknwAFgucJ2s&#xa;ud+kOW2YEb6II/4OIyWgWiuTa8IOz6QSxjpQgcPQ1PQbGLSPsPNkzquTyrdvq6GY&#xa;Uzh/65p0Y617yHqqrgclm5FMmo2F4mSezfQ/cznfm9oJfYMxAgMBAAGjggUgMIIF&#xa;HDAfBgNVHSMEGDAWgBTvTACSpvt2Ll6V4slfhxsZ1U3i2TAdBgNVHQ4EFgQU89oG&#xa;zGkSw4asS9cmEF6UZBP0VBUwDgYDVR0PAQH/BAQDAgWgMAwGA1UdEwEB/wQCMAAw&#xa;HQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMEkGA1UdIARCMEAwNAYLKwYB&#xa;BAGyMQECAmcwJTAjBggrBgEFBQcCARYXaHR0cHM6Ly9zZWN0aWdvLmNvbS9DUFMw&#xa;CAYGZ4EMAQICMEAGA1UdHwQ5MDcwNaAzoDGGL2h0dHA6Ly9jcmwuc2VjdGlnby5j&#xa;b20vSW5Db21tb25SU0FTZXJ2ZXJDQTIuY3JsMHAGCCsGAQUFBwEBBGQwYjA7Bggr&#xa;BgEFBQcwAoYvaHR0cDovL2NydC5zZWN0aWdvLmNvbS9JbkNvbW1vblJTQVNlcnZl&#xa;ckNBMi5jcnQwIwYIKwYBBQUHMAGGF2h0dHA6Ly9vY3NwLnNlY3RpZ28uY29tMIIB&#xa;fgYKKwYBBAHWeQIEAgSCAW4EggFqAWgAdgDPEVbu1S58r/OHW9lpLpvpGnFnSrAX&#xa;7KwB0lt3zsw7CAAAAY8WBagkAAAEAwBHMEUCIQCF9YHB2d6Ed3shS1ZvmLuY/G51&#xa;IBUPOoYT4bsjOhHRYwIgGeV7spO3NVFL7LYCe4jR8aBbwbAXv9qzXkRF93G/pX0A&#xa;dgCi4wrkRe+9rZt+OO1HZ3dT14JbhJTXK14bLMS5UKRH5wAAAY8WBafcAAAEAwBH&#xa;MEUCIQCNjm84VjyBbXnhqgoFc9F1KUMqitasioivN42PdqWZGwIgdmjeTAs0MBVm&#xa;pS2YNahD07PcmpMJjmpfyVpMSbrtB14AdgBOdaMnXJoQwzhbbNTfP1LrHfDgjhuN&#xa;acCx+mSxYpo53wAAAY8WBagCAAAEAwBHMEUCIGynbEcHCCIeISruUi8XisujwA1C&#xa;eV4ktZYD6tZmA7tuAiEA46LfKkBwqGHRqhryi9NOT8ya/lHm3uV7jEMwHOkyRmww&#xa;ggIaBgNVHREEggIRMIICDYIZZGVza3RvcC5sb25kby5oYXJ2YXJkLmVkdYIcZGVz&#xa;a3RvcC1pbnQuY2Jhci5oYXJ2YXJkLmVkdYIdZGVza3RvcC1pbnQubG9uZG8uaGFy&#xa;dmFyZC5lZHWCGGRlc2t0b3AuY2Jhci5oYXJ2YXJkLmVkdYIfZHItZGVza3RvcC1p&#xa;bnQuY2Jhci5oYXJ2YXJkLmVkdYIgZHItZGVza3RvcC1pbnQubG9uZG8uaGFydmFy&#xa;ZC5lZHWCG2RyLWRlc2t0b3AuY2Jhci5oYXJ2YXJkLmVkdYIcZHItZGVza3RvcC5s&#xa;b25kby5oYXJ2YXJkLmVkdYIfZHItdmRpLWljYi0wMS5sb25kby5oYXJ2YXJkLmVk&#xa;dYIfZHItdmRpLXVhZy0wMS5sb25kby5oYXJ2YXJkLmVkdYIhZHItdmRpLXVhZ2Ni&#xa;LTAxLmxvbmRvLmhhcnZhcmQuZWR1ghx2ZGktaWNiLTAxLmxvbmRvLmhhcnZhcmQu&#xa;ZWR1ghx2ZGktaWNiLTAyLmxvbmRvLmhhcnZhcmQuZWR1ghx2ZGktdWFnLTAxLmxv&#xa;bmRvLmhhcnZhcmQuZWR1ghx2ZGktdWFnLTAyLmxvbmRvLmhhcnZhcmQuZWR1gh52&#xa;ZGktdWFnY2ItMDEubG9uZG8uaGFydmFyZC5lZHWCHnZkaS11YWdjYi0wMi5sb25k&#xa;by5oYXJ2YXJkLmVkdTANBgkqhkiG9w0BAQwFAAOCAYEAEykHC0e0CLb7OqOR2z/K&#xa;zL8eZSiHSpub8O9vsEHJoy8lLTIXNvdBeYCwTfD7LnAm/Vzugb/d7fmlkr2Ygax7&#xa;eNK9GJjxr66SepichMhLjeP+L1v28/XDdJN9u8VD5CqogTCzZU+b8dqbaJwAymrF&#xa;8GY4SJgX4l6P/CTzN1ii9hROO79LLNbfi2evhA3AXaQSUyKbRMlvt5iY1wu994sP&#xa;tkfOPyscjXeruR8YnS/8WlZHUCyqmCIQI1IpWAUJXWzvt92HKFaHz6qB4gDx2FKB&#xa;JQgW7iR9J+HO0qIE9kPZYlL+mct38B4srvQ1UHrCQ+HX/W8zsdf7IAZuEH5I3gB+&#xa;FHujcZ1FH6rAYcZz3wAnl6QkqhJIBZSzvAajJPFzfXifqEIenXBBSkuVKWVVEHnc&#xa;0xmPfWU8sgiFV4kwHGy5HgRfCZXT1iaTV6V9/PbPaVThbazl/HYcMTtlpcLfTllI&#xa;HUX7I38BQ9HPdD5KHihaMvNrLaa4L0VUhJ4CNzBfKccN&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="8443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="VMware Horizon View" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:vmware:horizon_view</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Site doesn&apos;t have a title."></script><script id="ssl-cert" output="Subject: commonName=desktop.londo.harvard.edu/organizationName=President and Fellows of Harvard College/stateOrProvinceName=Massachusetts/countryName=US&#xa;Subject Alternative Name: DNS:desktop.londo.harvard.edu, DNS:desktop-int.cbar.harvard.edu, DNS:desktop-int.londo.harvard.edu, DNS:desktop.cbar.harvard.edu, DNS:dr-desktop-int.cbar.harvard.edu, DNS:dr-desktop-int.londo.harvard.edu, DNS:dr-desktop.cbar.harvard.edu, DNS:dr-desktop.londo.harvard.edu, DNS:dr-vdi-icb-01.londo.harvard.edu, DNS:dr-vdi-uag-01.londo.harvard.edu, DNS:dr-vdi-uagcb-01.londo.harvard.edu, DNS:vdi-icb-01.londo.harvard.edu, DNS:vdi-icb-02.londo.harvard.edu, DNS:vdi-uag-01.londo.harvard.edu, DNS:vdi-uag-02.londo.harvard.edu, DNS:vdi-uagcb-01.londo.harvard.edu, DNS:vdi-uagcb-02.londo.harvard.edu&#xa;Issuer: commonName=InCommon RSA Server CA 2/organizationName=Internet2/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha384WithRSAEncryption&#xa;Not valid before: 2024-04-25T00:00:00&#xa;Not valid after:  2025-04-25T23:59:59&#xa;MD5:   5f24 9866 f232 1a2e 03af 9770 bfe0 bd87&#xa;SHA-1: 7b4b f7dd 4416 6cf0 2dc5 1a62 f851 cb57 839b 0132"><table key="subject">
+<elem key="countryName">US</elem>
+<elem key="commonName">desktop.londo.harvard.edu</elem>
+<elem key="stateOrProvinceName">Massachusetts</elem>
+<elem key="organizationName">President and Fellows of Harvard College</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">US</elem>
+<elem key="commonName">InCommon RSA Server CA 2</elem>
+<elem key="organizationName">Internet2</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">2048</elem>
+<elem key="type">rsa</elem>
+<elem key="exponent">BIGNUM: 0x557bd22f9618</elem>
+<elem key="modulus">BIGNUM: 0x557bd0d55ab8</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">EF:4C:00:92:A6:FB:76:2E:5E:95:E2:C9:5F:87:1B:19:D5:4D:E2:D9</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">F3:DA:06:CC:69:12:C3:86:AC:4B:D7:26:10:5E:94:64:13:F4:54:15</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="critical">true</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="critical">true</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 1.3.6.1.4.1.6449.1.2.2.103&#xa;  CPS: https://sectigo.com/CPS&#xa;Policy: 2.23.140.1.2.2</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://crl.sectigo.com/InCommonRSAServerCA2.crl</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:http://crt.sectigo.com/InCommonRSAServerCA2.crt&#xa;OCSP - URI:http://ocsp.sectigo.com</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : CF:11:56:EE:D5:2E:7C:AF:F3:87:5B:D9:69:2E:9B:E9:&#xa;                1A:71:67:4A:B0:17:EC:AC:01:D2:5B:77:CE:CC:3B:08&#xa;    Timestamp : Apr 25 16:10:20.580 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:85:F5:81:C1:D9:DE:84:77:7B:21:4B:&#xa;                56:6F:98:BB:98:FC:6E:75:20:15:0F:3A:86:13:E1:BB:&#xa;                23:3A:11:D1:63:02:20:19:E5:7B:B2:93:B7:35:51:4B:&#xa;                EC:B6:02:7B:88:D1:F1:A0:5B:C1:B0:17:BF:DA:B3:5E:&#xa;                44:45:F7:71:BF:A5:7D&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : A2:E3:0A:E4:45:EF:BD:AD:9B:7E:38:ED:47:67:77:53:&#xa;                D7:82:5B:84:94:D7:2B:5E:1B:2C:C4:B9:50:A4:47:E7&#xa;    Timestamp : Apr 25 16:10:20.508 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:8D:8E:6F:38:56:3C:81:6D:79:E1:AA:&#xa;                0A:05:73:D1:75:29:43:2A:8A:D6:AC:8A:88:AF:37:8D:&#xa;                8F:76:A5:99:1B:02:20:76:68:DE:4C:0B:34:30:15:66:&#xa;                A5:2D:98:35:A8:43:D3:B3:DC:9A:93:09:8E:6A:5F:C9:&#xa;                5A:4C:49:BA:ED:07:5E&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 4E:75:A3:27:5C:9A:10:C3:38:5B:6C:D4:DF:3F:52:EB:&#xa;                1D:F0:E0:8E:1B:8D:69:C0:B1:FA:64:B1:62:9A:39:DF&#xa;    Timestamp : Apr 25 16:10:20.546 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:6C:A7:6C:47:07:08:22:1E:21:2A:EE:52:&#xa;                2F:17:8A:CB:A3:C0:0D:42:79:5E:24:B5:96:03:EA:D6:&#xa;                66:03:BB:6E:02:21:00:E3:A2:DF:2A:40:70:A8:61:D1:&#xa;                AA:1A:F2:8B:D3:4E:4F:CC:9A:FE:51:E6:DE:E5:7B:8C:&#xa;                43:30:1C:E9:32:46:6C</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:desktop.londo.harvard.edu, DNS:desktop-int.cbar.harvard.edu, DNS:desktop-int.londo.harvard.edu, DNS:desktop.cbar.harvard.edu, DNS:dr-desktop-int.cbar.harvard.edu, DNS:dr-desktop-int.londo.harvard.edu, DNS:dr-desktop.cbar.harvard.edu, DNS:dr-desktop.londo.harvard.edu, DNS:dr-vdi-icb-01.londo.harvard.edu, DNS:dr-vdi-uag-01.londo.harvard.edu, DNS:dr-vdi-uagcb-01.londo.harvard.edu, DNS:vdi-icb-01.londo.harvard.edu, DNS:vdi-icb-02.londo.harvard.edu, DNS:vdi-uag-01.londo.harvard.edu, DNS:vdi-uag-02.londo.harvard.edu, DNS:vdi-uagcb-01.londo.harvard.edu, DNS:vdi-uagcb-02.londo.harvard.edu</elem>
+</table>
+</table>
+<elem key="sig_algo">sha384WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-04-25T00:00:00</elem>
+<elem key="notAfter">2025-04-25T23:59:59</elem>
+</table>
+<elem key="md5">5f249866f2321a2e03af9770bfe0bd87</elem>
+<elem key="sha1">7b4bf7dd44166cf02dc51a62f851cb57839b0132</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIII7TCCB1WgAwIBAgIRAIlIVITboJoySJqIIJmLdvYwDQYJKoZIhvcNAQEMBQAw&#xa;RDELMAkGA1UEBhMCVVMxEjAQBgNVBAoTCUludGVybmV0MjEhMB8GA1UEAxMYSW5D&#xa;b21tb24gUlNBIFNlcnZlciBDQSAyMB4XDTI0MDQyNTAwMDAwMFoXDTI1MDQyNTIz&#xa;NTk1OVowfDELMAkGA1UEBhMCVVMxFjAUBgNVBAgTDU1hc3NhY2h1c2V0dHMxMTAv&#xa;BgNVBAoTKFByZXNpZGVudCBhbmQgRmVsbG93cyBvZiBIYXJ2YXJkIENvbGxlZ2Ux&#xa;IjAgBgNVBAMTGWRlc2t0b3AubG9uZG8uaGFydmFyZC5lZHUwggEiMA0GCSqGSIb3&#xa;DQEBAQUAA4IBDwAwggEKAoIBAQDBt96Ho4po7L7oeTGgggwSIXizkRpk6CpJyrTY&#xa;7m/eGRJQWndMl33WnZZVxYwsevtoW94F/cqYx7NfGtQevRMBvmCEhsC9rXU0TSVa&#xa;VPjiK/4saRogZLbMEx5KcY/ueuk2k9HFpZfhgEifuq1MapORBk+woV6lH5z7sAH+&#xa;ud06MSlrlrHG7jpHUT5idVLwtw0DxksU5xmyfIE4BF+gCsKTK1b4MknwAFgucJ2s&#xa;ud+kOW2YEb6II/4OIyWgWiuTa8IOz6QSxjpQgcPQ1PQbGLSPsPNkzquTyrdvq6GY&#xa;Uzh/65p0Y617yHqqrgclm5FMmo2F4mSezfQ/cznfm9oJfYMxAgMBAAGjggUgMIIF&#xa;HDAfBgNVHSMEGDAWgBTvTACSpvt2Ll6V4slfhxsZ1U3i2TAdBgNVHQ4EFgQU89oG&#xa;zGkSw4asS9cmEF6UZBP0VBUwDgYDVR0PAQH/BAQDAgWgMAwGA1UdEwEB/wQCMAAw&#xa;HQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMEkGA1UdIARCMEAwNAYLKwYB&#xa;BAGyMQECAmcwJTAjBggrBgEFBQcCARYXaHR0cHM6Ly9zZWN0aWdvLmNvbS9DUFMw&#xa;CAYGZ4EMAQICMEAGA1UdHwQ5MDcwNaAzoDGGL2h0dHA6Ly9jcmwuc2VjdGlnby5j&#xa;b20vSW5Db21tb25SU0FTZXJ2ZXJDQTIuY3JsMHAGCCsGAQUFBwEBBGQwYjA7Bggr&#xa;BgEFBQcwAoYvaHR0cDovL2NydC5zZWN0aWdvLmNvbS9JbkNvbW1vblJTQVNlcnZl&#xa;ckNBMi5jcnQwIwYIKwYBBQUHMAGGF2h0dHA6Ly9vY3NwLnNlY3RpZ28uY29tMIIB&#xa;fgYKKwYBBAHWeQIEAgSCAW4EggFqAWgAdgDPEVbu1S58r/OHW9lpLpvpGnFnSrAX&#xa;7KwB0lt3zsw7CAAAAY8WBagkAAAEAwBHMEUCIQCF9YHB2d6Ed3shS1ZvmLuY/G51&#xa;IBUPOoYT4bsjOhHRYwIgGeV7spO3NVFL7LYCe4jR8aBbwbAXv9qzXkRF93G/pX0A&#xa;dgCi4wrkRe+9rZt+OO1HZ3dT14JbhJTXK14bLMS5UKRH5wAAAY8WBafcAAAEAwBH&#xa;MEUCIQCNjm84VjyBbXnhqgoFc9F1KUMqitasioivN42PdqWZGwIgdmjeTAs0MBVm&#xa;pS2YNahD07PcmpMJjmpfyVpMSbrtB14AdgBOdaMnXJoQwzhbbNTfP1LrHfDgjhuN&#xa;acCx+mSxYpo53wAAAY8WBagCAAAEAwBHMEUCIGynbEcHCCIeISruUi8XisujwA1C&#xa;eV4ktZYD6tZmA7tuAiEA46LfKkBwqGHRqhryi9NOT8ya/lHm3uV7jEMwHOkyRmww&#xa;ggIaBgNVHREEggIRMIICDYIZZGVza3RvcC5sb25kby5oYXJ2YXJkLmVkdYIcZGVz&#xa;a3RvcC1pbnQuY2Jhci5oYXJ2YXJkLmVkdYIdZGVza3RvcC1pbnQubG9uZG8uaGFy&#xa;dmFyZC5lZHWCGGRlc2t0b3AuY2Jhci5oYXJ2YXJkLmVkdYIfZHItZGVza3RvcC1p&#xa;bnQuY2Jhci5oYXJ2YXJkLmVkdYIgZHItZGVza3RvcC1pbnQubG9uZG8uaGFydmFy&#xa;ZC5lZHWCG2RyLWRlc2t0b3AuY2Jhci5oYXJ2YXJkLmVkdYIcZHItZGVza3RvcC5s&#xa;b25kby5oYXJ2YXJkLmVkdYIfZHItdmRpLWljYi0wMS5sb25kby5oYXJ2YXJkLmVk&#xa;dYIfZHItdmRpLXVhZy0wMS5sb25kby5oYXJ2YXJkLmVkdYIhZHItdmRpLXVhZ2Ni&#xa;LTAxLmxvbmRvLmhhcnZhcmQuZWR1ghx2ZGktaWNiLTAxLmxvbmRvLmhhcnZhcmQu&#xa;ZWR1ghx2ZGktaWNiLTAyLmxvbmRvLmhhcnZhcmQuZWR1ghx2ZGktdWFnLTAxLmxv&#xa;bmRvLmhhcnZhcmQuZWR1ghx2ZGktdWFnLTAyLmxvbmRvLmhhcnZhcmQuZWR1gh52&#xa;ZGktdWFnY2ItMDEubG9uZG8uaGFydmFyZC5lZHWCHnZkaS11YWdjYi0wMi5sb25k&#xa;by5oYXJ2YXJkLmVkdTANBgkqhkiG9w0BAQwFAAOCAYEAEykHC0e0CLb7OqOR2z/K&#xa;zL8eZSiHSpub8O9vsEHJoy8lLTIXNvdBeYCwTfD7LnAm/Vzugb/d7fmlkr2Ygax7&#xa;eNK9GJjxr66SepichMhLjeP+L1v28/XDdJN9u8VD5CqogTCzZU+b8dqbaJwAymrF&#xa;8GY4SJgX4l6P/CTzN1ii9hROO79LLNbfi2evhA3AXaQSUyKbRMlvt5iY1wu994sP&#xa;tkfOPyscjXeruR8YnS/8WlZHUCyqmCIQI1IpWAUJXWzvt92HKFaHz6qB4gDx2FKB&#xa;JQgW7iR9J+HO0qIE9kPZYlL+mct38B4srvQ1UHrCQ+HX/W8zsdf7IAZuEH5I3gB+&#xa;FHujcZ1FH6rAYcZz3wAnl6QkqhJIBZSzvAajJPFzfXifqEIenXBBSkuVKWVVEHnc&#xa;0xmPfWU8sgiFV4kwHGy5HgRfCZXT1iaTV6V9/PbPaVThbazl/HYcMTtlpcLfTllI&#xa;HUX7I38BQ9HPdD5KHihaMvNrLaa4L0VUhJ4CNzBfKccN&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+</ports>
+<times srtt="12120" rttvar="2943" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730835619"/>
+<taskend task="NSE" time="1730835619"/>
+<taskbegin task="NSE" time="1730835619"/>
+<taskend task="NSE" time="1730835619"/>
+<taskbegin task="NSE" time="1730835619"/>
+<taskend task="NSE" time="1730835619"/>
+<runstats><finished time="1730835619" timestr="Tue Nov  5 19:40:19 2024" elapsed="115.61" summary="Nmap done at Tue Nov  5 19:40:19 2024; 1 IP address (1 host up) scanned in 115.61 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
