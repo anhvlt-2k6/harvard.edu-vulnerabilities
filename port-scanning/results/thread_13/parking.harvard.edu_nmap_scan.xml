@@ -12,3 +12,123 @@
 <taskend task="NSE" time="1730793929"/>
 <taskbegin task="NSE" time="1730793929"/>
 <taskend task="NSE" time="1730793929"/>
+<taskbegin task="Ping Scan" time="1730793929"/>
+<taskend task="Ping Scan" time="1730793929" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1730793929"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1730793929"/>
+<taskbegin task="Connect Scan" time="1730793929"/>
+<taskend task="Connect Scan" time="1730793934" extrainfo="1000 total ports"/>
+<taskbegin task="Service scan" time="1730793934"/>
+<taskend task="Service scan" time="1730793946" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1730793946"/>
+<taskend task="NSE" time="1730793947"/>
+<taskbegin task="NSE" time="1730793947"/>
+<taskend task="NSE" time="1730793947"/>
+<taskbegin task="NSE" time="1730793947"/>
+<taskend task="NSE" time="1730793947"/>
+<host starttime="1730793929" endtime="1730793947"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="104.96.221.72" addrtype="ipv4"/>
+<hostnames>
+<hostname name="parking.harvard.edu" type="user"/>
+<hostname name="a104-96-221-72.deploy.static.akamaitechnologies.com" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="998">
+<extrareasons reason="no-responses" count="998"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="AkamaiGHost" extrainfo="Akamai&apos;s HTTP Acceleration/Mirror service" method="probed" conf="10"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Access Denied"><elem key="title">Access Denied</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="AkamaiGHost" extrainfo="Akamai&apos;s HTTP Acceleration/Mirror service" tunnel="ssl" method="probed" conf="10"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Access Denied"><elem key="title">Access Denied</elem>
+</script><script id="ssl-cert" output="Subject: commonName=parking.harvard.edu&#xa;Subject Alternative Name: DNS:parking.harvard.edu&#xa;Issuer: commonName=E5/organizationName=Let&apos;s Encrypt/countryName=US&#xa;Public Key type: ec&#xa;Public Key bits: 256&#xa;Signature Algorithm: ecdsa-with-SHA384&#xa;Not valid before: 2024-11-03T22:48:03&#xa;Not valid after:  2025-02-01T22:48:02&#xa;MD5:   481d 717b 5917 ed34 6dc9 e64c eee8 8f5a&#xa;SHA-1: 3b17 aaca d3ef ae37 597f aad6 ded2 b40c d7da 5119"><table key="subject">
+<elem key="commonName">parking.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+<elem key="countryName">US</elem>
+<elem key="commonName">E5</elem>
+</table>
+<table key="pubkey">
+<table key="ecdhparams">
+<table key="curve_params">
+<elem key="curve">prime256v1</elem>
+<elem key="ec_curve_type">namedcurve</elem>
+</table>
+</table>
+<elem key="bits">256</elem>
+<elem key="type">ec</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">Digital Signature</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+</table>
+<table>
+<elem key="value">DC:ED:3A:BC:6A:7B:B7:50:8E:77:E8:AB:44:E6:4C:4A:64:68:60:4C</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="value">9F:2B:5F:CF:3C:21:4F:9D:04:B7:ED:2B:2C:C4:C6:70:8B:D2:D7:0D</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">OCSP - URI:http://e5.o.lencr.org&#xa;CA Issuers - URI:http://e5.i.lencr.org/</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">DNS:parking.harvard.edu</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+<table>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 13:4A:DF:1A:B5:98:42:09:78:0C:6F:EF:4C:7A:91:A4:&#xa;                16:B7:23:49:CE:58:57:6A:DF:AE:DA:A7:C2:AB:E0:22&#xa;    Timestamp : Nov  3 23:46:34.283 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:CE:EA:EB:37:4D:CE:A4:5C:4A:02:F5:&#xa;                D4:E9:5D:F8:60:D9:D4:B6:A5:A9:1E:37:F3:F4:03:7E:&#xa;                18:30:02:90:C5:02:20:7B:04:00:EE:3C:B3:62:6B:46:&#xa;                C5:18:CF:22:EC:CB:8C:A6:AE:39:4E:29:DC:B3:34:33:&#xa;                22:89:22:5B:A1:48:A9&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 7D:59:1E:12:E1:78:2A:7B:1C:61:67:7C:5E:FD:F8:D0:&#xa;                87:5C:14:A0:4E:95:9E:B9:03:2F:D9:0E:8C:2E:79:B8&#xa;    Timestamp : Nov  3 23:46:35.103 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:F4:7F:AA:6B:51:F9:60:76:CC:2B:CD:&#xa;                51:BE:6B:92:16:12:5C:5C:74:B5:9D:91:54:91:88:B8:&#xa;                35:56:36:42:CA:02:20:65:81:52:B9:1B:14:3D:30:91:&#xa;                F0:86:9A:7A:FB:F2:74:01:A1:A6:B6:EF:99:A8:36:3A:&#xa;                F3:D3:13:8D:4A:B1:20</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+</table>
+<elem key="sig_algo">ecdsa-with-SHA384</elem>
+<table key="validity">
+<elem key="notBefore">2024-11-03T22:48:03</elem>
+<elem key="notAfter">2025-02-01T22:48:02</elem>
+</table>
+<elem key="md5">481d717b5917ed346dc9e64ceee88f5a</elem>
+<elem key="sha1">3b17aacad3efae37597faad6ded2b40cd7da5119</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDhjCCAw2gAwIBAgISBNt/a8XIRYyTXwj9prq4a5y9MAoGCCqGSM49BAMDMDIx&#xa;CzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJF&#xa;NTAeFw0yNDExMDMyMjQ4MDNaFw0yNTAyMDEyMjQ4MDJaMB4xHDAaBgNVBAMTE3Bh&#xa;cmtpbmcuaGFydmFyZC5lZHUwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAAR7BhWD&#xa;9thJnqtapjGbiAmm7m9/pGsDG09WHyLWsQuvkc3n7iYabcphs0Ok7WTKWlZGFOYL&#xa;nQjO3PBkeaYBaIfno4ICFTCCAhEwDgYDVR0PAQH/BAQDAgeAMB0GA1UdJQQWMBQG&#xa;CCsGAQUFBwMBBggrBgEFBQcDAjAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBTc7Tq8&#xa;anu3UI536KtE5kxKZGhgTDAfBgNVHSMEGDAWgBSfK1/PPCFPnQS37SssxMZwi9LX&#xa;DTBVBggrBgEFBQcBAQRJMEcwIQYIKwYBBQUHMAGGFWh0dHA6Ly9lNS5vLmxlbmNy&#xa;Lm9yZzAiBggrBgEFBQcwAoYWaHR0cDovL2U1LmkubGVuY3Iub3JnLzAeBgNVHREE&#xa;FzAVghNwYXJraW5nLmhhcnZhcmQuZWR1MBMGA1UdIAQMMAowCAYGZ4EMAQIBMIIB&#xa;BAYKKwYBBAHWeQIEAgSB9QSB8gDwAHYAE0rfGrWYQgl4DG/vTHqRpBa3I0nOWFdq&#xa;367ap8Kr4CIAAAGS9GxYqwAABAMARzBFAiEAzurrN03OpFxKAvXU6V34YNnUtqWp&#xa;Hjfz9AN+GDACkMUCIHsEAO48s2JrRsUYzyLsy4ymrjlOKdyzNDMiiSJboUipAHYA&#xa;fVkeEuF4KnscYWd8Xv340IdcFKBOlZ65Ay/ZDowuebgAAAGS9Gxb3wAABAMARzBF&#xa;AiEA9H+qa1H5YHbMK81RvmuSFhJcXHS1nZFUkYi4NVY2QsoCIGWBUrkbFD0wkfCG&#xa;mnr78nQBoaa275moNjrz0xONSrEgMAoGCCqGSM49BAMDA2cAMGQCMFqfbD4Hw/jo&#xa;pz7+d+Ii2G7j/7+fCiGJwTQkl8AluTgB03Kgz4HpVToRtOe5G0HmMgIwU5Ktp9N/&#xa;pLhT44LkZRi0uOUXnpaeevaqMZd62L8BknFmHqWMtr+ulB2W0m8a8Y6s&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="tls-alpn" output="&#xa;  http/1.1"><elem>http/1.1</elem>
+</script><script id="tls-nextprotoneg" output="&#xa;  http/1.1&#xa;  http/1.0"><elem>http/1.1</elem>
+<elem>http/1.0</elem>
+</script></port>
+</ports>
+<times srtt="5804" rttvar="1492" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730793947"/>
+<taskend task="NSE" time="1730793947"/>
+<taskbegin task="NSE" time="1730793947"/>
+<taskend task="NSE" time="1730793947"/>
+<taskbegin task="NSE" time="1730793947"/>
+<taskend task="NSE" time="1730793947"/>
+<runstats><finished time="1730793947" timestr="Tue Nov  5 08:05:47 2024" elapsed="18.82" summary="Nmap done at Tue Nov  5 08:05:47 2024; 1 IP address (1 host up) scanned in 18.82 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
