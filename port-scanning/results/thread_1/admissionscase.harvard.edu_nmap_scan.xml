@@ -19,3 +19,98 @@
 <taskbegin task="Connect Scan" time="1730788203"/>
 <taskend task="Connect Scan" time="1730788208" extrainfo="1000 total ports"/>
 <taskbegin task="Service scan" time="1730788208"/>
+<taskend task="Service scan" time="1730788218" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1730788218"/>
+<taskend task="NSE" time="1730788218"/>
+<taskbegin task="NSE" time="1730788218"/>
+<taskend task="NSE" time="1730788218"/>
+<taskbegin task="NSE" time="1730788218"/>
+<taskend task="NSE" time="1730788218"/>
+<host starttime="1730788203" endtime="1730788218"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="192.0.66.20" addrtype="ipv4"/>
+<hostnames>
+<hostname name="admissionscase.harvard.edu" type="user"/>
+</hostnames>
+<ports><extraports state="filtered" count="998">
+<extrareasons reason="no-responses" count="998"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service><script id="http-title" output="404 Not Found"><elem key="title">404 Not Found</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service><script id="http-title" output="404 Not Found"><elem key="title">404 Not Found</elem>
+</script><script id="ssl-cert" output="Subject: commonName=*.go-vip.co&#xa;Subject Alternative Name: DNS:*.go-vip.co, DNS:go-vip.co&#xa;Issuer: commonName=Sectigo RSA Domain Validation Secure Server CA/organizationName=Sectigo Limited/stateOrProvinceName=Greater Manchester/countryName=GB&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2023-11-08T00:00:00&#xa;Not valid after:  2024-12-08T23:59:59&#xa;MD5:   21c7 8aba 847b 390e adc7 a734 2128 8963&#xa;SHA-1: 8bce a7a0 5c47 a76a 897b 69d1 c838 5ac5 91a4 06e5"><table key="subject">
+<elem key="commonName">*.go-vip.co</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">Sectigo RSA Domain Validation Secure Server CA</elem>
+<elem key="stateOrProvinceName">Greater Manchester</elem>
+<elem key="localityName">Salford</elem>
+<elem key="countryName">GB</elem>
+<elem key="organizationName">Sectigo Limited</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">2048</elem>
+<elem key="modulus">BIGNUM: 0x55aee6d5cc38</elem>
+<elem key="type">rsa</elem>
+<elem key="exponent">BIGNUM: 0x55aee6d5cbb8</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">8D:8C:5E:C4:54:AD:8A:E1:77:E9:9B:F9:9B:05:E1:B8:01:8D:61:E1</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">E1:07:85:B7:42:A3:FF:8A:CD:2F:9F:28:3E:D0:96:B0:9A:7C:F9:3B</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 1.3.6.1.4.1.6449.1.2.2.7&#xa;  CPS: https://sectigo.com/CPS&#xa;Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:http://crt.sectigo.com/SectigoRSADomainValidationSecureServerCA.crt&#xa;OCSP - URI:http://ocsp.sectigo.com</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:*.go-vip.co, DNS:go-vip.co</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 76:FF:88:3F:0A:B6:FB:95:51:C2:61:CC:F5:87:BA:34:&#xa;                B4:A4:CD:BB:29:DC:68:42:0A:9F:E6:67:4C:5A:3A:74&#xa;    Timestamp : Nov  8 02:39:04.475 2023 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:DC:5A:8D:CF:B6:28:4A:52:72:A7:70:&#xa;                3E:B3:95:7A:C1:32:AC:E1:D3:F3:8C:94:4A:58:36:C5:&#xa;                3B:4A:D8:A2:65:02:21:00:A3:E2:F2:5C:F4:9E:A6:82:&#xa;                E4:C5:8F:0B:58:90:DD:DA:3E:9E:5E:11:E4:2F:A9:97:&#xa;                31:D3:C9:5E:BE:BB:D6:8D&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 3F:17:4B:4F:D7:22:47:58:94:1D:65:1C:84:BE:0D:12:&#xa;                ED:90:37:7F:1F:85:6A:EB:C1:BF:28:85:EC:F8:64:6E&#xa;    Timestamp : Nov  8 02:39:04.547 2023 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:06:48:42:08:1A:52:B7:AA:67:69:CB:E6:&#xa;                05:C3:D2:22:83:9A:91:84:ED:68:6E:B6:AC:DD:A7:E5:&#xa;                D5:67:28:E0:02:21:00:A8:99:67:9A:42:B0:23:9E:DE:&#xa;                B5:D0:92:B5:1A:AE:4D:17:AF:73:75:CB:A2:F8:00:CD:&#xa;                AE:32:14:52:9C:EA:B7&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : EE:CD:D0:64:D5:DB:1A:CE:C5:5C:B7:9D:B4:CD:13:A2:&#xa;                32:87:46:7C:BC:EC:DE:C3:51:48:59:46:71:1F:B5:9B&#xa;    Timestamp : Nov  8 02:39:04.521 2023 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:F1:B2:DC:31:D9:64:05:48:EA:31:10:&#xa;                A4:EB:46:14:2B:0D:28:66:CE:8A:C9:58:E0:3A:E1:3C:&#xa;                22:6F:55:7F:EC:02:21:00:D2:C4:25:E5:C2:85:F4:2D:&#xa;                0C:E1:45:1E:F4:03:66:E1:8B:09:DD:A9:D5:56:5A:4D:&#xa;                59:BA:D5:B8:14:B3:39:47</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2023-11-08T00:00:00</elem>
+<elem key="notAfter">2024-12-08T23:59:59</elem>
+</table>
+<elem key="md5">21c78aba847b390eadc7a73421288963</elem>
+<elem key="sha1">8bcea7a05c47a76a897b69d1c8385ac591a406e5</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIGLDCCBRSgAwIBAgIQOPCIZo8d/q/aJEAzFGZ+cTANBgkqhkiG9w0BAQsFADCB&#xa;jzELMAkGA1UEBhMCR0IxGzAZBgNVBAgTEkdyZWF0ZXIgTWFuY2hlc3RlcjEQMA4G&#xa;A1UEBxMHU2FsZm9yZDEYMBYGA1UEChMPU2VjdGlnbyBMaW1pdGVkMTcwNQYDVQQD&#xa;Ey5TZWN0aWdvIFJTQSBEb21haW4gVmFsaWRhdGlvbiBTZWN1cmUgU2VydmVyIENB&#xa;MB4XDTIzMTEwODAwMDAwMFoXDTI0MTIwODIzNTk1OVowFjEUMBIGA1UEAwwLKi5n&#xa;by12aXAuY28wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDZNzTohXnp&#xa;wDg/uYK8UyCfausx0XTZusgWWooiYxVHgAGVdo1lC/dXhbZqqae8wncaDC9i/A27&#xa;fMkMMVYmeVKIQCiBdxMv9KiEKcLzaheEooZQS9tsR/CkU9Imoo3R/VDtOHp7XdSp&#xa;8i7T+OG2YiTO/bugkhuNLw1OkG+7L9q45Q21rd+U6hoi9Cn1Bf4z7kS+RBnjwB7w&#xa;yzHNLoSJvrmY/nLtULjVncE3sd/N97/Gb94vclkraaqEmLWQBmwGlxW3gFdGzUf5&#xa;YM5YJ/aCaSc9JWp1r7asd00ezXu0igSnYbfuLMidh8ntjrYiLVj9T1UwDPaDCqwY&#xa;zxPaWa3Oquc9AgMBAAGjggL6MIIC9jAfBgNVHSMEGDAWgBSNjF7EVK2K4Xfpm/mb&#xa;BeG4AY1h4TAdBgNVHQ4EFgQU4QeFt0Kj/4rNL58oPtCWsJp8+TswDgYDVR0PAQH/&#xa;BAQDAgWgMAwGA1UdEwEB/wQCMAAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUF&#xa;BwMCMEkGA1UdIARCMEAwNAYLKwYBBAGyMQECAgcwJTAjBggrBgEFBQcCARYXaHR0&#xa;cHM6Ly9zZWN0aWdvLmNvbS9DUFMwCAYGZ4EMAQIBMIGEBggrBgEFBQcBAQR4MHYw&#xa;TwYIKwYBBQUHMAKGQ2h0dHA6Ly9jcnQuc2VjdGlnby5jb20vU2VjdGlnb1JTQURv&#xa;bWFpblZhbGlkYXRpb25TZWN1cmVTZXJ2ZXJDQS5jcnQwIwYIKwYBBQUHMAGGF2h0&#xa;dHA6Ly9vY3NwLnNlY3RpZ28uY29tMCEGA1UdEQQaMBiCCyouZ28tdmlwLmNvggln&#xa;by12aXAuY28wggGABgorBgEEAdZ5AgQCBIIBcASCAWwBagB3AHb/iD8KtvuVUcJh&#xa;zPWHujS0pM27KdxoQgqf5mdMWjp0AAABi6zMLxsAAAQDAEgwRgIhANxajc+2KEpS&#xa;cqdwPrOVesEyrOHT84yUSlg2xTtK2KJlAiEAo+LyXPSepoLkxY8LWJDd2j6eXhHk&#xa;L6mXMdPJXr671o0AdgA/F0tP1yJHWJQdZRyEvg0S7ZA3fx+FauvBvyiF7PhkbgAA&#xa;AYuszC9jAAAEAwBHMEUCIAZIQggaUreqZ2nL5gXD0iKDmpGE7Whutqzdp+XVZyjg&#xa;AiEAqJlnmkKwI57etdCStRquTRevc3XLovgAza4yFFKc6rcAdwDuzdBk1dsazsVc&#xa;t520zROiModGfLzs3sNRSFlGcR+1mwAAAYuszC9JAAAEAwBIMEYCIQDxstwx2WQF&#xa;SOoxEKTrRhQrDShmzorJWOA64Twib1V/7AIhANLEJeXChfQtDOFFHvQDZuGLCd2p&#xa;1VZaTVm61bgUszlHMA0GCSqGSIb3DQEBCwUAA4IBAQAz26oyYeFvdHNcxDuUFNAw&#xa;YAY9OUfPHX1FsHCP8q0ZJE0qZIFk4du6NehrOxC88MaJnNwFat8+dHL7T2HxTr5w&#xa;Ym191L9kkmCbw137SHKwoDOuVy4iavRi+TsAXTOSzYoeLISl8RfEfbHjWLENB8Cp&#xa;lW79LHQzpMg35wnNJlxVetjSRN1HXNWRzFYroea2EVw5v9KaJVhkpbslj0x96j08&#xa;RJdY9ad7mBJ37mtyN2Ke57cr25b/H3dIsPAiV3qvnmUmGzHuKjS7icwhdTeLnuoo&#xa;kcKLJadQPdCNXUqBZ0fCEFneJCM8M0rFoXv/Y3ICW9FoEuFUuVEWo73mfU1eJ34B&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+</ports>
+<times srtt="5269" rttvar="1701" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730788218"/>
+<taskend task="NSE" time="1730788218"/>
+<taskbegin task="NSE" time="1730788218"/>
+<taskend task="NSE" time="1730788218"/>
+<taskbegin task="NSE" time="1730788218"/>
+<taskend task="NSE" time="1730788218"/>
+<runstats><finished time="1730788218" timestr="Tue Nov  5 06:30:18 2024" elapsed="15.85" summary="Nmap done at Tue Nov  5 06:30:18 2024; 1 IP address (1 host up) scanned in 15.85 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
