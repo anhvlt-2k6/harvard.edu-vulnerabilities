@@ -19,3 +19,112 @@
 <taskbegin task="Connect Scan" time="1730793131"/>
 <taskend task="Connect Scan" time="1730793136" extrainfo="1000 total ports"/>
 <taskbegin task="Service scan" time="1730793136"/>
+<taskend task="Service scan" time="1730793149" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1730793149"/>
+<taskend task="NSE" time="1730793157"/>
+<taskbegin task="NSE" time="1730793157"/>
+<taskend task="NSE" time="1730793159"/>
+<taskbegin task="NSE" time="1730793159"/>
+<taskend task="NSE" time="1730793159"/>
+<host starttime="1730793131" endtime="1730793159"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="140.247.64.139" addrtype="ipv4"/>
+<hostnames>
+<hostname name="outsmarting-human-minds.rc.fas.harvard.edu" type="user"/>
+<hostname name="outsmarting-human-minds.rc.fas.harvard.edu" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="997">
+<extrareasons reason="no-responses" count="997"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.6" extrainfo="(CentOS) OpenSSL/1.0.2k-fips PHP/8.0.29" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.6</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips PHP/8.0.29"><elem>Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips PHP/8.0.29</elem>
+</script><script id="http-title" output="Did not follow redirect to https://outsmarting-human-minds.rc.fas.harvard.edu/"><elem key="redirect_url">https://outsmarting-human-minds.rc.fas.harvard.edu/</elem>
+</script><script id="https-redirect" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="tcp" portid="113"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ident" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.6" extrainfo="(CentOS) OpenSSL/1.0.2k-fips PHP/8.0.29" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.6</cpe></service><script id="http-generator" output="WordPress 6.6.2"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips PHP/8.0.29"><elem>Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips PHP/8.0.29</elem>
+</script><script id="http-title" output="Outsmarting Implicit Bias: A Project at Harvard University"><elem key="title">Outsmarting Implicit Bias: A Project at Harvard University</elem>
+</script><script id="ssl-cert" output="Subject: commonName=outsmartingimplicitbias.org&#xa;Subject Alternative Name: DNS:outsmartinghumanminds.org, DNS:outsmartingimplicitbias.org, DNS:www.outsmartinghumanminds.org, DNS:www.outsmartingimplicitbias.org&#xa;Issuer: commonName=R10/organizationName=Let&apos;s Encrypt/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-10-05T18:56:34&#xa;Not valid after:  2025-01-03T18:56:33&#xa;MD5:   f31d 8413 41d7 7ba9 32fe 13e2 b7c0 1bb7&#xa;SHA-1: 6696 b78d 9f75 7d38 e628 246b 830b 33b7 e8f9 ca8e"><table key="subject">
+<elem key="commonName">outsmartingimplicitbias.org</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">R10</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">2048</elem>
+<elem key="type">rsa</elem>
+<elem key="modulus">BIGNUM: 0x55948ec5b4e8</elem>
+<elem key="exponent">BIGNUM: 0x55948eea1488</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">D7:C2:7D:53:64:9F:E2:CB:2E:88:23:AF:2A:9E:8A:FD:9F:D2:31:AA</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">BB:BC:C3:47:A5:E4:BC:A9:C6:C3:A4:72:0C:10:8D:A2:35:E1:C8:E8</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://r10.o.lencr.org&#xa;CA Issuers - URI:http://r10.i.lencr.org/</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:outsmartinghumanminds.org, DNS:outsmartingimplicitbias.org, DNS:www.outsmartinghumanminds.org, DNS:www.outsmartingimplicitbias.org</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : CF:11:56:EE:D5:2E:7C:AF:F3:87:5B:D9:69:2E:9B:E9:&#xa;                1A:71:67:4A:B0:17:EC:AC:01:D2:5B:77:CE:CC:3B:08&#xa;    Timestamp : Oct  5 19:55:05.575 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:E7:AD:82:C1:D8:C1:82:8B:08:23:39:&#xa;                B1:28:CF:A5:58:ED:1D:4C:12:15:FB:D8:BC:80:48:BE:&#xa;                E7:2F:90:14:EF:02:21:00:F5:3D:5F:8B:EC:27:47:24:&#xa;                A8:7A:FB:61:6D:0C:B7:CF:85:9D:48:9F:90:BD:22:EF:&#xa;                7F:A9:4E:FF:A9:89:46:7A&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 13:4A:DF:1A:B5:98:42:09:78:0C:6F:EF:4C:7A:91:A4:&#xa;                16:B7:23:49:CE:58:57:6A:DF:AE:DA:A7:C2:AB:E0:22&#xa;    Timestamp : Oct  5 19:55:05.696 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:F0:5A:0B:96:7C:D9:08:DD:48:9A:2B:&#xa;                A1:B0:06:55:5E:7F:51:27:A3:B3:70:C5:F5:56:68:0E:&#xa;                A1:CA:B0:59:94:02:20:71:1D:8D:FC:C9:53:9E:9E:07:&#xa;                CB:25:5C:D6:84:CC:55:2D:A7:B6:AF:B9:29:CE:48:60:&#xa;                68:76:4D:A5:F1:BD:BD</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notAfter">2025-01-03T18:56:33</elem>
+<elem key="notBefore">2024-10-05T18:56:34</elem>
+</table>
+<elem key="md5">f31d841341d77ba932fe13e2b7c01bb7</elem>
+<elem key="sha1">6696b78d9f757d38e628246b830b33b7e8f9ca8e</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFYzCCBEugAwIBAgISBPtwrXjlrO4xsmyvtcYqb0FqMA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNSMTAwHhcNMjQxMDA1MTg1NjM0WhcNMjUwMTAzMTg1NjMzWjAmMSQwIgYDVQQD&#xa;ExtvdXRzbWFydGluZ2ltcGxpY2l0Ymlhcy5vcmcwggEiMA0GCSqGSIb3DQEBAQUA&#xa;A4IBDwAwggEKAoIBAQDJ+63RlV2aob8q3SuT127Hb9FBWQessSV21nZmnxAaZv0R&#xa;fFcF+JkswvKzsj6n7HUQSI7EoWrpk7qIAY9ov/cRyD9RHT9RLHV6m0O8CdElPaBb&#xa;PyEkRgwAkdN9LKmj6KFfUIQLuI6IYEbhSfpqszlUwgLt9Hr3mFWU0SA8hj4cJPoy&#xa;m/yJS4UsaPKsqVm19kS+w30VjpA1588+CLOuSh+XF5AUPkZ7eQGLw5I0k80sq2YP&#xa;XFzpXzU3cUbG1vdS2CDa7sg4FE4QPWgSyeF1KYRoS9fAUjzmEtV4ReUWn8uInTbW&#xa;1UCEOLV11rsVBSCCc3hqKhJPStSWf4KH0mktIydPAgMBAAGjggJ8MIICeDAOBgNV&#xa;HQ8BAf8EBAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1Ud&#xa;EwEB/wQCMAAwHQYDVR0OBBYEFNfCfVNkn+LLLogjryqeiv2f0jGqMB8GA1UdIwQY&#xa;MBaAFLu8w0el5LypxsOkcgwQjaI14cjoMFcGCCsGAQUFBwEBBEswSTAiBggrBgEF&#xa;BQcwAYYWaHR0cDovL3IxMC5vLmxlbmNyLm9yZzAjBggrBgEFBQcwAoYXaHR0cDov&#xa;L3IxMC5pLmxlbmNyLm9yZy8wgYEGA1UdEQR6MHiCGW91dHNtYXJ0aW5naHVtYW5t&#xa;aW5kcy5vcmeCG291dHNtYXJ0aW5naW1wbGljaXRiaWFzLm9yZ4Idd3d3Lm91dHNt&#xa;YXJ0aW5naHVtYW5taW5kcy5vcmeCH3d3dy5vdXRzbWFydGluZ2ltcGxpY2l0Ymlh&#xa;cy5vcmcwEwYDVR0gBAwwCjAIBgZngQwBAgEwggEFBgorBgEEAdZ5AgQCBIH2BIHz&#xa;APEAdwDPEVbu1S58r/OHW9lpLpvpGnFnSrAX7KwB0lt3zsw7CAAAAZJeP//nAAAE&#xa;AwBIMEYCIQDnrYLB2MGCiwgjObEoz6VY7R1MEhX72LyASL7nL5AU7wIhAPU9X4vs&#xa;J0ckqHr7YW0Mt8+FnUifkL0i73+pTv+piUZ6AHYAE0rfGrWYQgl4DG/vTHqRpBa3&#xa;I0nOWFdq367ap8Kr4CIAAAGSXkAAYAAABAMARzBFAiEA8FoLlnzZCN1ImiuhsAZV&#xa;Xn9RJ6OzcMX1VmgOocqwWZQCIHEdjfzJU56eB8slXNaEzFUtp7avuSnOSGBodk2l&#xa;8b29MA0GCSqGSIb3DQEBCwUAA4IBAQCJssU/3BvGlv3f3wNasaUk+j4tMa507seh&#xa;qVVgoXb5Ntqeji54NZ+6UaNcuADqB+MEkwg7RgJ8ACWXsS8EM+clfqsnffrT2Rnh&#xa;3R4M0BO8i3oeS5g/FWtC5UFM4Ep+MxpZTnzJge+/BBpxNK/KGxAW35m5QrEd7XDU&#xa;Ix3XLtJfYDQmdc/1RIxmltkOCsiBT/Au699dpyEavvAD5MDW2MPfH79LfTuYERRe&#xa;cMXQOWhzaP6w2MZWPhphrGP/32FuA7AhMjsXVtSm/0ITHnTkv1xqHqvOaCT5wkJN&#xa;bftVp+qWUYslPXg3nDqgmlhBpFaU8PyFFfz4LQG6RmeThqDtEYI/&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+</ports>
+<times srtt="16542" rttvar="4097" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730793159"/>
+<taskend task="NSE" time="1730793159"/>
+<taskbegin task="NSE" time="1730793159"/>
+<taskend task="NSE" time="1730793159"/>
+<taskbegin task="NSE" time="1730793159"/>
+<taskend task="NSE" time="1730793159"/>
+<runstats><finished time="1730793159" timestr="Tue Nov  5 07:52:39 2024" elapsed="28.57" summary="Nmap done at Tue Nov  5 07:52:39 2024; 1 IP address (1 host up) scanned in 28.57 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
