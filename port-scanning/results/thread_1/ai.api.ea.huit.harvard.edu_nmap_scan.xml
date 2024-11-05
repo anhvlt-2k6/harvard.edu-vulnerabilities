@@ -19,3 +19,106 @@
 <taskbegin task="Connect Scan" time="1730789706"/>
 <taskend task="Connect Scan" time="1730789711" extrainfo="1000 total ports"/>
 <taskbegin task="Service scan" time="1730789711"/>
+<taskend task="Service scan" time="1730789729" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1730789729"/>
+<taskend task="NSE" time="1730789732"/>
+<taskbegin task="NSE" time="1730789732"/>
+<taskend task="NSE" time="1730789732"/>
+<taskbegin task="NSE" time="1730789732"/>
+<taskend task="NSE" time="1730789732"/>
+<host starttime="1730789706" endtime="1730789732"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="18.233.178.119" addrtype="ipv4"/>
+<hostnames>
+<hostname name="ai.api.ea.huit.harvard.edu" type="user"/>
+<hostname name="ec2-18-233-178-119.compute-1.amazonaws.com" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="998">
+<extrareasons reason="no-responses" count="998"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" servicefp="SF-Port443-TCP:V=7.80%T=SSL%I=7%D=11/5%Time=6729C15B%P=x86_64-pc-linux-gnu%r(GetRequest,11D,&quot;HTTP/1\.1\x20403\x20Forbidden\r\nDate:\x20Tue,\x2005\x20Nov\x202024\x2006:55:23\x20GMT\r\nContent-Type:\x20application/json\r\nContent-Length:\x2023\r\nConnection:\x20close\r\nx-amzn-RequestId:\x2068b3fe7a-6369-493c-9542-589b671fddfd\r\nx-amzn-ErrorType:\x20ForbiddenException\r\nx-amz-apigw-id:\x20AwsmZFFeIAMFlsQ=\r\n\r\n{\&quot;message\&quot;:\&quot;Forbidden\&quot;}&quot;)%r(HTTPOptions,11D,&quot;HTTP/1\.1\x20403\x20Forbidden\r\nDate:\x20Tue,\x2005\x20Nov\x202024\x2006:55:23\x20GMT\r\nContent-Type:\x20application/json\r\nContent-Length:\x2023\r\nConnection:\x20close\r\nx-amzn-RequestId:\x20879ae6d3-8aff-4873-a915-07dc0728c13b\r\nx-amzn-ErrorType:\x20ForbiddenException\r\nx-amz-apigw-id:\x20AwsmaHKooAMF-EQ=\r\n\r\n{\&quot;message\&quot;:\&quot;Forbidden\&quot;}&quot;)%r(FourOhFourRequest,11D,&quot;HTTP/1\.1\x20403\x20Forbidden\r\nDate:\x20Tue,\x2005\x20Nov\x202024\x2006:55:23\x20GMT\r\nContent-Type:\x20application/json\r\nContent-Length:\x2023\r\nConnection:\x20close\r\nx-amzn-RequestId:\x2023ce78c1-6b16-45eb-8f3c-ab69c7787a42\r\nx-amzn-ErrorType:\x20ForbiddenException\r\nx-amz-apigw-id:\x20AwsmaHE6IAMFuhg=\r\n\r\n{\&quot;message\&quot;:\&quot;Forbidden\&quot;}&quot;);" tunnel="ssl" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  FourOhFourRequest: &#xa;    HTTP/1.1 403 Forbidden&#xa;    Date: Tue, 05 Nov 2024 06:55:23 GMT&#xa;    Content-Type: application/json&#xa;    Content-Length: 23&#xa;    Connection: close&#xa;    x-amzn-RequestId: 23ce78c1-6b16-45eb-8f3c-ab69c7787a42&#xa;    x-amzn-ErrorType: ForbiddenException&#xa;    x-amz-apigw-id: AwsmaHE6IAMFuhg=&#xa;    {&quot;message&quot;:&quot;Forbidden&quot;}&#xa;  GetRequest: &#xa;    HTTP/1.1 403 Forbidden&#xa;    Date: Tue, 05 Nov 2024 06:55:23 GMT&#xa;    Content-Type: application/json&#xa;    Content-Length: 23&#xa;    Connection: close&#xa;    x-amzn-RequestId: 68b3fe7a-6369-493c-9542-589b671fddfd&#xa;    x-amzn-ErrorType: ForbiddenException&#xa;    x-amz-apigw-id: AwsmZFFeIAMFlsQ=&#xa;    {&quot;message&quot;:&quot;Forbidden&quot;}&#xa;  HTTPOptions: &#xa;    HTTP/1.1 403 Forbidden&#xa;    Date: Tue, 05 Nov 2024 06:55:23 GMT&#xa;    Content-Type: application/json&#xa;    Content-Length: 23&#xa;    Connection: close&#xa;    x-amzn-RequestId: 879ae6d3-8aff-4873-a915-07dc0728c13b&#xa;    x-amzn-ErrorType: ForbiddenException&#xa;    x-amz-apigw-id: AwsmaHKooAMF-EQ=&#xa;    {&quot;message&quot;:&quot;Forbidden&quot;}"><elem key="FourOhFourRequest">&#xa;    HTTP/1.1 403 Forbidden&#xa;    Date: Tue, 05 Nov 2024 06:55:23 GMT&#xa;    Content-Type: application/json&#xa;    Content-Length: 23&#xa;    Connection: close&#xa;    x-amzn-RequestId: 23ce78c1-6b16-45eb-8f3c-ab69c7787a42&#xa;    x-amzn-ErrorType: ForbiddenException&#xa;    x-amz-apigw-id: AwsmaHE6IAMFuhg=&#xa;    {&quot;message&quot;:&quot;Forbidden&quot;}</elem>
+<elem key="GetRequest">&#xa;    HTTP/1.1 403 Forbidden&#xa;    Date: Tue, 05 Nov 2024 06:55:23 GMT&#xa;    Content-Type: application/json&#xa;    Content-Length: 23&#xa;    Connection: close&#xa;    x-amzn-RequestId: 68b3fe7a-6369-493c-9542-589b671fddfd&#xa;    x-amzn-ErrorType: ForbiddenException&#xa;    x-amz-apigw-id: AwsmZFFeIAMFlsQ=&#xa;    {&quot;message&quot;:&quot;Forbidden&quot;}</elem>
+<elem key="HTTPOptions">&#xa;    HTTP/1.1 403 Forbidden&#xa;    Date: Tue, 05 Nov 2024 06:55:23 GMT&#xa;    Content-Type: application/json&#xa;    Content-Length: 23&#xa;    Connection: close&#xa;    x-amzn-RequestId: 879ae6d3-8aff-4873-a915-07dc0728c13b&#xa;    x-amzn-ErrorType: ForbiddenException&#xa;    x-amz-apigw-id: AwsmaHKooAMF-EQ=&#xa;    {&quot;message&quot;:&quot;Forbidden&quot;}</elem>
+</script><script id="http-auth" output="&#xa;HTTP/1.1 401 Unauthorized&#xd;&#xa;  Server returned status 401 but no WWW-Authenticate header.&#xa;"/><script id="http-methods" output="&#xa;  Supported Methods: GET POST"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>POST</elem>
+</table>
+</script><script id="http-title" output="Site doesn&apos;t have a title (text/plain; charset=utf-8)."></script><script id="ssl-cert" output="Subject: commonName=ai.api.ea.huit.harvard.edu&#xa;Subject Alternative Name: DNS:ai.api.ea.huit.harvard.edu&#xa;Issuer: commonName=Amazon RSA 2048 M02/organizationName=Amazon/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-10-15T00:00:00&#xa;Not valid after:  2025-11-14T23:59:59&#xa;MD5:   b832 54ee feac b661 5fb5 0bb8 538f 6847&#xa;SHA-1: 618f 7b81 76e8 3fda 1b15 d3a6 5d7f b818 1296 7f43"><table key="subject">
+<elem key="commonName">ai.api.ea.huit.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="organizationName">Amazon</elem>
+<elem key="countryName">US</elem>
+<elem key="commonName">Amazon RSA 2048 M02</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">2048</elem>
+<elem key="exponent">BIGNUM: 0x555fe72b3908</elem>
+<elem key="type">rsa</elem>
+<elem key="modulus">BIGNUM: 0x555fe72b3988</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">C0:31:52:CD:5A:50:C3:82:7C:74:71:CE:CB:E9:9C:F9:7A:EB:82:E2</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">09:BB:3E:29:20:F7:5D:37:02:88:61:9E:3E:2B:5A:52:D2:F8:5A:A9</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:ai.api.ea.huit.harvard.edu</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://crl.r2m02.amazontrust.com/r2m02.crl</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://ocsp.r2m02.amazontrust.com&#xa;CA Issuers - URI:http://crt.r2m02.amazontrust.com/r2m02.cer</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 12:F1:4E:34:BD:53:72:4C:84:06:19:C3:8F:3F:7A:13:&#xa;                F8:E7:B5:62:87:88:9C:6D:30:05:84:EB:E5:86:26:3A&#xa;    Timestamp : Oct 15 05:21:02.844 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:F1:3D:88:35:26:63:4B:E1:FD:C1:F5:&#xa;                D2:7D:74:02:42:9A:EB:3B:CB:48:B9:4E:AD:94:2E:1A:&#xa;                EB:33:44:FF:D7:02:21:00:C2:14:2B:97:0A:E9:BC:BF:&#xa;                CD:A5:2A:26:4C:9E:F1:BD:1D:60:48:82:07:7A:A3:43:&#xa;                EA:73:07:29:5C:DD:6F:34&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : E6:D2:31:63:40:77:8C:C1:10:41:06:D7:71:B9:CE:C1:&#xa;                D2:40:F6:96:84:86:FB:BA:87:32:1D:FD:1E:37:8E:50&#xa;    Timestamp : Oct 15 05:21:02.922 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:7D:FA:0F:42:54:B8:FF:37:81:FF:E0:92:&#xa;                D8:42:A6:A9:80:D1:29:5F:91:FF:69:82:A7:82:B2:44:&#xa;                E6:42:88:88:02:21:00:FA:01:DB:B0:87:DF:6A:03:AC:&#xa;                85:EA:BD:BD:B0:93:F9:95:D1:1F:49:5F:58:59:AE:C5:&#xa;                15:07:B7:C5:76:A0:AA&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : CC:FB:0F:6A:85:71:09:65:FE:95:9B:53:CE:E9:B2:7C:&#xa;                22:E9:85:5C:0D:97:8D:B6:A9:7E:54:C0:FE:4C:0D:B0&#xa;    Timestamp : Oct 15 05:21:02.901 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:29:17:1C:2F:90:F3:32:CC:A2:CA:C5:A1:&#xa;                D1:DB:57:1A:20:5B:68:00:39:D5:C2:2C:6C:6F:1E:94:&#xa;                A3:26:0A:1B:02:21:00:E5:B7:E4:72:48:23:3A:11:2C:&#xa;                24:41:C4:90:E8:6F:4E:2A:02:BD:32:73:11:87:E0:FD:&#xa;                19:A2:EC:41:86:C0:92</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-10-15T00:00:00</elem>
+<elem key="notAfter">2025-11-14T23:59:59</elem>
+</table>
+<elem key="md5">b83254eefeacb6615fb50bb8538f6847</elem>
+<elem key="sha1">618f7b8176e83fda1b15d3a65d7fb81812967f43</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIF4TCCBMmgAwIBAgIQAY1eMpItOshf3oXoZrCbJDANBgkqhkiG9w0BAQsFADA8&#xa;MQswCQYDVQQGEwJVUzEPMA0GA1UEChMGQW1hem9uMRwwGgYDVQQDExNBbWF6b24g&#xa;UlNBIDIwNDggTTAyMB4XDTI0MTAxNTAwMDAwMFoXDTI1MTExNDIzNTk1OVowJTEj&#xa;MCEGA1UEAxMaYWkuYXBpLmVhLmh1aXQuaGFydmFyZC5lZHUwggEiMA0GCSqGSIb3&#xa;DQEBAQUAA4IBDwAwggEKAoIBAQDGEQUOLwVb++Dyk0ENKlA5SPFw8ZfBGpRehckZ&#xa;/93Y/8xPla5/1vsJVxNW0SKZpz5IRFaQlkyBu/UBrexL0lz+t1wvY2WuWhGSPvuV&#xa;TXLzMHqwj4Fq+W60KacKOWbmO3o3XHsfropmPriSaoHHTgAwLMQHoi5JvFbuAVld&#xa;Mo/KL22af41CR9HqvchsRslq8Jaemx1Lut0iRMdEcP0d6OskJR9GkbKx4I6vRmUy&#xa;ijkDZWwgzJ2MwVHCo2+qsBol1+89UAdl3jDEQY0XxyYmG78aTF/vfbX6WwcmjnkB&#xa;7rR+BaBse/Uire5WJMHQ3DK/Vi6XwIKMKmcL6MTxoh/uyVMLAgMBAAGjggL0MIIC&#xa;8DAfBgNVHSMEGDAWgBTAMVLNWlDDgnx0cc7L6Zz5euuC4jAdBgNVHQ4EFgQUCbs+&#xa;KSD3XTcCiGGePitaUtL4WqkwJQYDVR0RBB4wHIIaYWkuYXBpLmVhLmh1aXQuaGFy&#xa;dmFyZC5lZHUwEwYDVR0gBAwwCjAIBgZngQwBAgEwDgYDVR0PAQH/BAQDAgWgMB0G&#xa;A1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjA7BgNVHR8ENDAyMDCgLqAshipo&#xa;dHRwOi8vY3JsLnIybTAyLmFtYXpvbnRydXN0LmNvbS9yMm0wMi5jcmwwdQYIKwYB&#xa;BQUHAQEEaTBnMC0GCCsGAQUFBzABhiFodHRwOi8vb2NzcC5yMm0wMi5hbWF6b250&#xa;cnVzdC5jb20wNgYIKwYBBQUHMAKGKmh0dHA6Ly9jcnQucjJtMDIuYW1hem9udHJ1&#xa;c3QuY29tL3IybTAyLmNlcjAMBgNVHRMBAf8EAjAAMIIBfwYKKwYBBAHWeQIEAgSC&#xa;AW8EggFrAWkAdwAS8U40vVNyTIQGGcOPP3oT+Oe1YoeInG0wBYTr5YYmOgAAAZKO&#xa;n2F8AAAEAwBIMEYCIQDxPYg1JmNL4f3B9dJ9dAJCmus7y0i5Tq2ULhrrM0T/1wIh&#xa;AMIUK5cK6by/zaUqJkye8b0dYEiCB3qjQ+pzBylc3W80AHYA5tIxY0B3jMEQQQbX&#xa;cbnOwdJA9paEhvu6hzId/R43jlAAAAGSjp9hygAABAMARzBFAiB9+g9CVLj/N4H/&#xa;4JLYQqapgNEpX5H/aYKngrJE5kKIiAIhAPoB27CH32oDrIXqvb2wk/mV0R9JX1hZ&#xa;rsUVB7fFdqCqAHYAzPsPaoVxCWX+lZtTzumyfCLphVwNl422qX5UwP5MDbAAAAGS&#xa;jp9htQAABAMARzBFAiApFxwvkPMyzKLKxaHR21caIFtoADnVwixsbx6UoyYKGwIh&#xa;AOW35HJIIzoRLCRBxJDob04qAr0ycxGH4P0ZouxBhsCSMA0GCSqGSIb3DQEBCwUA&#xa;A4IBAQBomxJJL/p9fsI/ba+PcAvNei0wSCIucwPqosPp8aFXMRdTPSGJcXGMP4xm&#xa;+RMxoIyymYKOYkmRBGsXq+nzedDQHlY+RVWTq86M4xCsFUnxCfGpeRaXCV0cbOLG&#xa;r/q9VIT94mTtdDV5yDzSiUYDI9RZ25B5D01lvPG6AtCV8TM+UctpCTcrAAnf6IE3&#xa;tuIFjGmhj9hWwIUi6qlLX2OM4+CsM1K0sTG9O6TBZmA0LzqospkNtYpUruyReeJ1&#xa;DydnaoBXHE36Gv+6rF3TSPPKAm5X2vXBoj5Na00hJKiWDsOYhMFp0cwcD3Y/oSBA&#xa;eaF/yLiAwmlxv5tDzlbUQEiT2F/a&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+</ports>
+<times srtt="5524" rttvar="1800" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730789732"/>
+<taskend task="NSE" time="1730789732"/>
+<taskbegin task="NSE" time="1730789732"/>
+<taskend task="NSE" time="1730789732"/>
+<taskbegin task="NSE" time="1730789732"/>
+<taskend task="NSE" time="1730789732"/>
+<runstats><finished time="1730789732" timestr="Tue Nov  5 06:55:32 2024" elapsed="26.08" summary="Nmap done at Tue Nov  5 06:55:32 2024; 1 IP address (1 host up) scanned in 26.08 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
