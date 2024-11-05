@@ -19,3 +19,109 @@
 <taskbegin task="Connect Scan" time="1730795374"/>
 <taskend task="Connect Scan" time="1730795378" extrainfo="1000 total ports"/>
 <taskbegin task="Service scan" time="1730795378"/>
+<taskprogress task="Service scan" time="1730795465" percent="50.00" remaining="88" etc="1730795552"/>
+<taskend task="Service scan" time="1730795479" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1730795479"/>
+<taskend task="NSE" time="1730795480"/>
+<taskbegin task="NSE" time="1730795480"/>
+<taskend task="NSE" time="1730795481"/>
+<taskbegin task="NSE" time="1730795481"/>
+<taskend task="NSE" time="1730795481"/>
+<host starttime="1730795374" endtime="1730795481"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="76.76.21.93" addrtype="ipv4"/>
+<hostnames>
+<hostname name="statuspage.rc.fas.harvard.edu" type="user"/>
+</hostnames>
+<ports><extraports state="filtered" count="998">
+<extrareasons reason="no-responses" count="998"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Vercel" servicefp="SF-Port80-TCP:V=7.80%I=7%D=11/5%Time=6729D778%P=x86_64-pc-linux-gnu%r(GetRequest,8A,&quot;HTTP/1\.0\x20308\x20Permanent\x20Redirect\r\nContent-Type:\x20text/plain\r\nLocation:\x20https:///\r\nRefresh:\x200;url=https:///\r\nserver:\x20Vercel\r\n\r\nRedirecting\.\.\.&quot;)%r(HTTPOptions,8A,&quot;HTTP/1\.0\x20308\x20Permanent\x20Redirect\r\nContent-Type:\x20text/plain\r\nLocation:\x20https:///\r\nRefresh:\x200;url=https:///\r\nserver:\x20Vercel\r\n\r\nRedirecting\.\.\.&quot;)%r(FourOhFourRequest,D0,&quot;HTTP/1\.0\x20308\x20Permanent\x20Redirect\r\nContent-Type:\x20text/plain\r\nLocation:\x20https:///nice%20ports%2C/Tri%6Eity\.txt%2ebak\r\nRefresh:\x200;url=https:///nice%20ports%2C/Tri%6Eity\.txt%2ebak\r\nserver:\x20Vercel\r\n\r\nRedirecting\.\.\.&quot;);" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  FourOhFourRequest: &#xa;    HTTP/1.0 308 Permanent Redirect&#xa;    Content-Type: text/plain&#xa;    Location: https:///nice%20ports%2C/Tri%6Eity.txt%2ebak&#xa;    Refresh: 0;url=https:///nice%20ports%2C/Tri%6Eity.txt%2ebak&#xa;    server: Vercel&#xa;    Redirecting...&#xa;  GetRequest, HTTPOptions: &#xa;    HTTP/1.0 308 Permanent Redirect&#xa;    Content-Type: text/plain&#xa;    Location: https:///&#xa;    Refresh: 0;url=https:///&#xa;    server: Vercel&#xa;    Redirecting..."><elem key="FourOhFourRequest">&#xa;    HTTP/1.0 308 Permanent Redirect&#xa;    Content-Type: text/plain&#xa;    Location: https:///nice%20ports%2C/Tri%6Eity.txt%2ebak&#xa;    Refresh: 0;url=https:///nice%20ports%2C/Tri%6Eity.txt%2ebak&#xa;    server: Vercel&#xa;    Redirecting...</elem>
+<elem key="GetRequest, HTTPOptions">&#xa;    HTTP/1.0 308 Permanent Redirect&#xa;    Content-Type: text/plain&#xa;    Location: https:///&#xa;    Refresh: 0;url=https:///&#xa;    server: Vercel&#xa;    Redirecting...</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="Vercel"><elem>Vercel</elem>
+</script><script id="http-title" output="Site doesn&apos;t have a title (text/plain)."></script><script id="https-redirect" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" product="Vercel" servicefp="SF-Port443-TCP:V=7.80%T=SSL%I=7%D=11/5%Time=6729D77F%P=x86_64-pc-linux-gnu%r(GetRequest,18A,&quot;HTTP/1\.0\x20404\x20Not\x20Found\r\nCache-Control:\x20public,\x20max-age=0,\x20must-revalidate\r\nContent-Length:\x2067\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nDate:\x20Tue,\x2005\x20Nov\x202024\x2008:29:51\x20GMT\r\nServer:\x20Vercel\r\nStrict-Transport-Security:\x20max-age=63072000\r\nX-Vercel-Error:\x20DEPLOYMENT_NOT_FOUND\r\nX-Vercel-Id:\x20iad1::w5l9r-1730795391112-8bb0fed610e4\r\n\r\nThe\x20deployment\x20could\x20not\x20be\x20found\x20on\x20Vercel\.\n\nDEPLOYMENT_NOT_FOUND\n&quot;)%r(HTTPOptions,18A,&quot;HTTP/1\.0\x20404\x20Not\x20Found\r\nCache-Control:\x20public,\x20max-age=0,\x20must-revalidate\r\nContent-Length:\x2067\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nDate:\x20Tue,\x2005\x20Nov\x202024\x2008:29:51\x20GMT\r\nServer:\x20Vercel\r\nStrict-Transport-Security:\x20max-age=63072000\r\nX-Vercel-Error:\x20DEPLOYMENT_NOT_FOUND\r\nX-Vercel-Id:\x20iad1::qgcts-1730795391400-b76eb4fbcefc\r\n\r\nThe\x20deployment\x20could\x20not\x20be\x20found\x20on\x20Vercel\.\n\nDEPLOYMENT_NOT_FOUND\n&quot;)%r(FourOhFourRequest,18A,&quot;HTTP/1\.0\x20404\x20Not\x20Found\r\nCache-Control:\x20public,\x20max-age=0,\x20must-revalidate\r\nContent-Length:\x2067\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nDate:\x20Tue,\x2005\x20Nov\x202024\x2008:29:51\x20GMT\r\nServer:\x20Vercel\r\nStrict-Transport-Security:\x20max-age=63072000\r\nX-Vercel-Error:\x20DEPLOYMENT_NOT_FOUND\r\nX-Vercel-Id:\x20iad1::m9rbr-1730795391683-494a6781c060\r\n\r\nThe\x20deployment\x20could\x20not\x20be\x20found\x20on\x20Vercel\.\n\nDEPLOYMENT_NOT_FOUND\n&quot;)%r(GenericLines,67,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request&quot;)%r(RTSPRequest,67,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request&quot;)%r(Help,67,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request&quot;);" tunnel="ssl" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  FourOhFourRequest: &#xa;    HTTP/1.0 404 Not Found&#xa;    Cache-Control: public, max-age=0, must-revalidate&#xa;    Content-Length: 67&#xa;    Content-Type: text/plain; charset=utf-8&#xa;    Date: Tue, 05 Nov 2024 08:29:51 GMT&#xa;    Server: Vercel&#xa;    Strict-Transport-Security: max-age=63072000&#xa;    X-Vercel-Error: DEPLOYMENT_NOT_FOUND&#xa;    X-Vercel-Id: iad1::m9rbr-1730795391683-494a6781c060&#xa;    deployment could not be found on Vercel.&#xa;    DEPLOYMENT_NOT_FOUND&#xa;  GenericLines, Help, RTSPRequest: &#xa;    HTTP/1.1 400 Bad Request&#xa;    Content-Type: text/plain; charset=utf-8&#xa;    Connection: close&#xa;    Request&#xa;  GetRequest: &#xa;    HTTP/1.0 404 Not Found&#xa;    Cache-Control: public, max-age=0, must-revalidate&#xa;    Content-Length: 67&#xa;    Content-Type: text/plain; charset=utf-8&#xa;    Date: Tue, 05 Nov 2024 08:29:51 GMT&#xa;    Server: Vercel&#xa;    Strict-Transport-Security: max-age=63072000&#xa;    X-Vercel-Error: DEPLOYMENT_NOT_FOUND&#xa;    X-Vercel-Id: iad1::w5l9r-1730795391112-8bb0fed610e4&#xa;    deployment could not be found on Vercel.&#xa;    DEPLOYMENT_NOT_FOUND&#xa;  HTTPOptions: &#xa;    HTTP/1.0 404 Not Found&#xa;    Cache-Control: public, max-age=0, must-revalidate&#xa;    Content-Length: 67&#xa;    Content-Type: text/plain; charset=utf-8&#xa;    Date: Tue, 05 Nov 2024 08:29:51 GMT&#xa;    Server: Vercel&#xa;    Strict-Transport-Security: max-age=63072000&#xa;    X-Vercel-Error: DEPLOYMENT_NOT_FOUND&#xa;    X-Vercel-Id: iad1::qgcts-1730795391400-b76eb4fbcefc&#xa;    deployment could not be found on Vercel.&#xa;    DEPLOYMENT_NOT_FOUND"><elem key="FourOhFourRequest">&#xa;    HTTP/1.0 404 Not Found&#xa;    Cache-Control: public, max-age=0, must-revalidate&#xa;    Content-Length: 67&#xa;    Content-Type: text/plain; charset=utf-8&#xa;    Date: Tue, 05 Nov 2024 08:29:51 GMT&#xa;    Server: Vercel&#xa;    Strict-Transport-Security: max-age=63072000&#xa;    X-Vercel-Error: DEPLOYMENT_NOT_FOUND&#xa;    X-Vercel-Id: iad1::m9rbr-1730795391683-494a6781c060&#xa;    deployment could not be found on Vercel.&#xa;    DEPLOYMENT_NOT_FOUND</elem>
+<elem key="GenericLines, Help, RTSPRequest">&#xa;    HTTP/1.1 400 Bad Request&#xa;    Content-Type: text/plain; charset=utf-8&#xa;    Connection: close&#xa;    Request</elem>
+<elem key="GetRequest">&#xa;    HTTP/1.0 404 Not Found&#xa;    Cache-Control: public, max-age=0, must-revalidate&#xa;    Content-Length: 67&#xa;    Content-Type: text/plain; charset=utf-8&#xa;    Date: Tue, 05 Nov 2024 08:29:51 GMT&#xa;    Server: Vercel&#xa;    Strict-Transport-Security: max-age=63072000&#xa;    X-Vercel-Error: DEPLOYMENT_NOT_FOUND&#xa;    X-Vercel-Id: iad1::w5l9r-1730795391112-8bb0fed610e4&#xa;    deployment could not be found on Vercel.&#xa;    DEPLOYMENT_NOT_FOUND</elem>
+<elem key="HTTPOptions">&#xa;    HTTP/1.0 404 Not Found&#xa;    Cache-Control: public, max-age=0, must-revalidate&#xa;    Content-Length: 67&#xa;    Content-Type: text/plain; charset=utf-8&#xa;    Date: Tue, 05 Nov 2024 08:29:51 GMT&#xa;    Server: Vercel&#xa;    Strict-Transport-Security: max-age=63072000&#xa;    X-Vercel-Error: DEPLOYMENT_NOT_FOUND&#xa;    X-Vercel-Id: iad1::qgcts-1730795391400-b76eb4fbcefc&#xa;    deployment could not be found on Vercel.&#xa;    DEPLOYMENT_NOT_FOUND</elem>
+</script><script id="http-server-header" output="Vercel"><elem>Vercel</elem>
+</script><script id="http-title" output="Site doesn&apos;t have a title (text/plain; charset=utf-8)."></script><script id="ssl-cert" output="Subject: commonName=statuspage.rc.fas.harvard.edu&#xa;Subject Alternative Name: DNS:statuspage.rc.fas.harvard.edu&#xa;Issuer: commonName=R3/organizationName=Let&apos;s Encrypt/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2022-05-31T19:24:48&#xa;Not valid after:  2022-08-29T19:24:47&#xa;MD5:   a035 6065 8328 7653 7612 6e1d 36de 1db3&#xa;SHA-1: 631a 08c4 9082 d34d b44d d677 77a3 e84a 0770 ca8f"><table key="subject">
+<elem key="commonName">statuspage.rc.fas.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+<elem key="commonName">R3</elem>
+<elem key="countryName">US</elem>
+</table>
+<table key="pubkey">
+<elem key="modulus">BIGNUM: 0x556246ba4e08</elem>
+<elem key="bits">2048</elem>
+<elem key="type">rsa</elem>
+<elem key="exponent">BIGNUM: 0x556246ba56b8</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">CA:FALSE</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="value">ED:58:B0:47:EC:6E:3D:37:F0:E6:32:B2:4B:E1:B1:69:83:43:22:1C</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="value">14:2E:B3:17:B7:58:56:CB:AE:50:09:40:E6:1F:AF:9D:8B:14:C2:C6</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">OCSP - URI:http://r3.o.lencr.org&#xa;CA Issuers - URI:http://r3.i.lencr.org/</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">DNS:statuspage.rc.fas.harvard.edu</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+<table>
+<elem key="value">Policy: 2.23.140.1.2.1&#xa;Policy: 1.3.6.1.4.1.44947.1.1.1&#xa;  CPS: http://cps.letsencrypt.org</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : DF:A5:5E:AB:68:82:4F:1F:6C:AD:EE:B8:5F:4E:3E:5A:&#xa;                EA:CD:A2:12:A4:6A:5E:8E:3B:12:C0:20:44:5C:2A:73&#xa;    Timestamp : May 31 20:24:48.858 2022 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:FF:B0:88:7B:30:0E:43:B3:F0:6D:08:&#xa;                1F:91:34:D0:2A:62:73:46:BB:C7:43:B8:CB:EE:1D:C9:&#xa;                0C:DE:FB:26:87:02:21:00:81:0A:13:8F:56:1F:42:F6:&#xa;                2A:2D:87:86:CA:57:77:07:7A:D4:94:2E:5F:D0:1B:59:&#xa;                BE:D5:08:7B:B9:3C:0A:F9&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 29:79:BE:F0:9E:39:39:21:F0:56:73:9F:63:A5:77:E5:&#xa;                BE:57:7D:9C:60:0A:F8:F9:4D:5D:26:5C:25:5D:C7:84&#xa;    Timestamp : May 31 20:24:48.841 2022 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:8F:DF:40:80:54:60:95:EC:59:A7:6E:&#xa;                71:94:EA:B4:35:24:DD:7D:82:2F:0F:D5:DF:F9:72:B9:&#xa;                5D:CB:08:81:A9:02:21:00:A6:24:D2:15:28:4C:E1:00:&#xa;                5B:F3:D8:BA:E2:0A:16:1F:A8:41:F9:BC:26:4E:32:0B:&#xa;                1E:E9:5D:08:C7:C0:63:75</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2022-05-31T19:24:48</elem>
+<elem key="notAfter">2022-08-29T19:24:47</elem>
+</table>
+<elem key="md5">a03560658328765376126e1d36de1db3</elem>
+<elem key="sha1">631a08c49082d34db44dd67777a3e84a0770ca8f</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFQjCCBCqgAwIBAgISBE9v/2UtLURHNuv1arhaTVqyMA0GCSqGSIb3DQEBCwUA&#xa;MDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD&#xa;EwJSMzAeFw0yMjA1MzExOTI0NDhaFw0yMjA4MjkxOTI0NDdaMCgxJjAkBgNVBAMT&#xa;HXN0YXR1c3BhZ2UucmMuZmFzLmhhcnZhcmQuZWR1MIIBIjANBgkqhkiG9w0BAQEF&#xa;AAOCAQ8AMIIBCgKCAQEAw21xWH54T5uGs1G9SdJITLcv4cg2gSV8EgIc50xSeFYf&#xa;2FvQAvvZ7afRD+NrmE47FUMrLL7yUwazZV1pz05Ptu7++w1zyAYwtaFSBuNUud9p&#xa;dD83Bh8qpt3MaYp3oBpste+x6l0EIgWcj0Nn641u4d78O0FVEyCIL7NNWZOT+PUc&#xa;KZOFbkQ14i9CcrTX3XpA2bPGscrmQbwbCE8U+W5Ac+98t2jMmwvZkbeldjKQoRAD&#xa;w79qTo05zK3Vfu43jnDCxwVm/8M6oCv3tWNtSLzQrbDfMNLK9YU4trNATHNpjjN7&#xa;XATZpZm8Zjdnt+WX/0WRbFAMLAKmuNcSuc2Wwg0Z4QIDAQABo4ICWjCCAlYwDgYD&#xa;VR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAMBgNV&#xa;HRMBAf8EAjAAMB0GA1UdDgQWBBTtWLBH7G49N/DmMrJL4bFpg0MiHDAfBgNVHSME&#xa;GDAWgBQULrMXt1hWy65QCUDmH6+dixTCxjBVBggrBgEFBQcBAQRJMEcwIQYIKwYB&#xa;BQUHMAGGFWh0dHA6Ly9yMy5vLmxlbmNyLm9yZzAiBggrBgEFBQcwAoYWaHR0cDov&#xa;L3IzLmkubGVuY3Iub3JnLzAoBgNVHREEITAfgh1zdGF0dXNwYWdlLnJjLmZhcy5o&#xa;YXJ2YXJkLmVkdTBMBgNVHSAERTBDMAgGBmeBDAECATA3BgsrBgEEAYLfEwEBATAo&#xa;MCYGCCsGAQUFBwIBFhpodHRwOi8vY3BzLmxldHNlbmNyeXB0Lm9yZzCCAQYGCisG&#xa;AQQB1nkCBAIEgfcEgfQA8gB3AN+lXqtogk8fbK3uuF9OPlrqzaISpGpejjsSwCBE&#xa;XCpzAAABgRvK3doAAAQDAEgwRgIhAP+wiHswDkOz8G0IH5E00Cpic0a7x0O4y+4d&#xa;yQze+yaHAiEAgQoTj1YfQvYqLYeGyld3B3rUlC5f0BtZvtUIe7k8CvkAdwApeb7w&#xa;njk5IfBWc59jpXflvld9nGAK+PlNXSZcJV3HhAAAAYEbyt3JAAAEAwBIMEYCIQCP&#xa;30CAVGCV7FmnbnGU6rQ1JN19gi8P1d/5crldywiBqQIhAKYk0hUoTOEAW/PYuuIK&#xa;Fh+oQfm8Jk4yCx7pXQjHwGN1MA0GCSqGSIb3DQEBCwUAA4IBAQATHHjnEb2ZHpIx&#xa;pitdtHUbh+OCcahE5293ujM1j9XPbDQXSEmTreQ2L7bnFKi7i2pEI8MEpDawUNSb&#xa;icLcmA82zUOJuz5eEEEWYqhdgAzaaJsLAqy0WVrwbjZKiJ2G/4vFB5otZeQoHJzZ&#xa;/3RkM8edF913RxPu7vwakejeG0RhJ3J6ISKE/Uqn12RLCF7LQiVxUtQTsxTp3nLd&#xa;KeVXVwL5hzsjyJSgs5neMJPovxUzGKs83bc0y94AdLMVEEaNO5cshaH44aEokqSF&#xa;RCV+7TE5mD7oWNdq6SKxzxNAnhFEzWfjV7Z2Y3xWH1+AvN7TZ/gpOCjMnT/2hpXq&#xa;E2p6q4Bw&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+</ports>
+<times srtt="6181" rttvar="1669" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730795481"/>
+<taskend task="NSE" time="1730795481"/>
+<taskbegin task="NSE" time="1730795481"/>
+<taskend task="NSE" time="1730795481"/>
+<taskbegin task="NSE" time="1730795481"/>
+<taskend task="NSE" time="1730795481"/>
+<runstats><finished time="1730795481" timestr="Tue Nov  5 08:31:21 2024" elapsed="107.44" summary="Nmap done at Tue Nov  5 08:31:21 2024; 1 IP address (1 host up) scanned in 107.44 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
