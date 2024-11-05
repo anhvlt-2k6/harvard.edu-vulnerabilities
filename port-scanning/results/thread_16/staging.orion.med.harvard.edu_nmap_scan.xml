@@ -21,3 +21,104 @@
 <taskbegin task="Service scan" time="1730794788"/>
 <taskend task="Service scan" time="1730794800" extrainfo="2 services on 1 host"/>
 <taskbegin task="NSE" time="1730794800"/>
+<taskend task="NSE" time="1730794871"/>
+<taskbegin task="NSE" time="1730794871"/>
+<taskend task="NSE" time="1730794873"/>
+<taskbegin task="NSE" time="1730794873"/>
+<taskend task="NSE" time="1730794873"/>
+<host starttime="1730794783" endtime="1730794873"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="134.174.145.214" addrtype="ipv4"/>
+<hostnames>
+<hostname name="staging.orion.med.harvard.edu" type="user"/>
+</hostnames>
+<ports><extraports state="filtered" count="998">
+<extrareasons reason="no-responses" count="998"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Microsoft IIS httpd" version="10.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:iis:10.0</cpe><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-server-header" output="Microsoft-IIS/10.0"><elem>Microsoft-IIS/10.0</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Microsoft IIS httpd" version="10.0" ostype="Windows" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:microsoft:iis:10.0</cpe><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-server-header" output="Microsoft-IIS/10.0"><elem>Microsoft-IIS/10.0</elem>
+</script><script id="ssl-cert" output="Subject: commonName=staging.orion.med.harvard.edu/organizationName=President and Fellows of Harvard College/stateOrProvinceName=Massachusetts/countryName=US&#xa;Subject Alternative Name: DNS:staging.orion.med.harvard.edu, DNS:staging.webservice.orion.med.harvard.edu&#xa;Issuer: commonName=InCommon RSA Server CA 2/organizationName=Internet2/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha384WithRSAEncryption&#xa;Not valid before: 2024-09-09T00:00:00&#xa;Not valid after:  2025-09-09T23:59:59&#xa;MD5:   3414 80ba 1153 8a52 6cec f062 3a51 526c&#xa;SHA-1: f305 a5ef b603 aaa8 9042 145d 0e5c e8a9 3532 295f"><table key="subject">
+<elem key="countryName">US</elem>
+<elem key="commonName">staging.orion.med.harvard.edu</elem>
+<elem key="stateOrProvinceName">Massachusetts</elem>
+<elem key="organizationName">President and Fellows of Harvard College</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">US</elem>
+<elem key="commonName">InCommon RSA Server CA 2</elem>
+<elem key="organizationName">Internet2</elem>
+</table>
+<table key="pubkey">
+<elem key="modulus">BIGNUM: 0x564929446ce8</elem>
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="exponent">BIGNUM: 0x5649298ab138</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">EF:4C:00:92:A6:FB:76:2E:5E:95:E2:C9:5F:87:1B:19:D5:4D:E2:D9</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">86:D3:34:4E:C9:CE:63:35:8E:79:2D:D9:4C:A3:44:BB:F8:7E:DA:FA</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="critical">true</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="critical">true</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 1.3.6.1.4.1.6449.1.2.2.103&#xa;  CPS: https://sectigo.com/CPS&#xa;Policy: 2.23.140.1.2.2</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://crl.sectigo.com/InCommonRSAServerCA2.crl</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:http://crt.sectigo.com/InCommonRSAServerCA2.crt&#xa;OCSP - URI:http://ocsp.sectigo.com</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : DD:DC:CA:34:95:D7:E1:16:05:E7:95:32:FA:C7:9F:F8:&#xa;                3D:1C:50:DF:DB:00:3A:14:12:76:0A:2C:AC:BB:C8:2A&#xa;    Timestamp : Sep  9 19:29:04.766 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:5D:B9:54:E9:3F:56:7B:2C:05:4B:11:F8:&#xa;                5A:04:37:F2:98:7E:69:E1:BB:E8:72:09:74:F7:4B:C4:&#xa;                85:6E:CB:01:02:21:00:FC:AE:3C:BE:EA:7F:3C:08:66:&#xa;                E9:6F:FA:0A:82:41:8B:75:35:F0:04:5F:6A:52:09:60:&#xa;                CB:D6:E4:76:67:3E:FB&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 0D:E1:F2:30:2B:D3:0D:C1:40:62:12:09:EA:55:2E:FC:&#xa;                47:74:7C:B1:D7:E9:30:EF:0E:42:1E:B4:7E:4E:AA:34&#xa;    Timestamp : Sep  9 19:29:04.705 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:58:0C:5C:7B:9E:3F:22:71:C9:39:24:32:&#xa;                C1:4F:D5:DA:50:DE:38:9F:10:26:E7:74:AB:68:39:04:&#xa;                6C:27:49:51:02:20:19:B4:FD:38:E6:F2:0B:A3:FA:5B:&#xa;                18:22:8C:49:3C:75:77:55:C7:04:7D:48:9E:AE:D4:B8:&#xa;                9C:CA:86:00:00:5A&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 12:F1:4E:34:BD:53:72:4C:84:06:19:C3:8F:3F:7A:13:&#xa;                F8:E7:B5:62:87:88:9C:6D:30:05:84:EB:E5:86:26:3A&#xa;    Timestamp : Sep  9 19:29:04.657 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:AB:AA:75:48:D2:40:85:DD:1E:4C:AF:&#xa;                71:CE:99:E7:EE:52:A9:96:EC:D3:08:EC:CC:C8:93:7F:&#xa;                BB:E0:76:D3:26:02:21:00:B1:98:F5:8E:2B:BE:F0:EB:&#xa;                9B:7A:ED:FF:05:14:12:71:DE:04:4A:D7:EC:AD:72:67:&#xa;                FD:A1:9B:01:05:C6:62:E2</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:staging.orion.med.harvard.edu, DNS:staging.webservice.orion.med.harvard.edu</elem>
+</table>
+</table>
+<elem key="sig_algo">sha384WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-09-09T00:00:00</elem>
+<elem key="notAfter">2025-09-09T23:59:59</elem>
+</table>
+<elem key="md5">341480ba11538a526cecf0623a51526c</elem>
+<elem key="sha1">f305a5efb603aaa89042145d0e5ce8a93532295f</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIHKDCCBZCgAwIBAgIRAKEa78gD0znGA34E7GSTqnYwDQYJKoZIhvcNAQEMBQAw&#xa;RDELMAkGA1UEBhMCVVMxEjAQBgNVBAoTCUludGVybmV0MjEhMB8GA1UEAxMYSW5D&#xa;b21tb24gUlNBIFNlcnZlciBDQSAyMB4XDTI0MDkwOTAwMDAwMFoXDTI1MDkwOTIz&#xa;NTk1OVowgYAxCzAJBgNVBAYTAlVTMRYwFAYDVQQIEw1NYXNzYWNodXNldHRzMTEw&#xa;LwYDVQQKEyhQcmVzaWRlbnQgYW5kIEZlbGxvd3Mgb2YgSGFydmFyZCBDb2xsZWdl&#xa;MSYwJAYDVQQDEx1zdGFnaW5nLm9yaW9uLm1lZC5oYXJ2YXJkLmVkdTCCASIwDQYJ&#xa;KoZIhvcNAQEBBQADggEPADCCAQoCggEBANxltQ/znqhXu8FV1e8JsCiP5/H8av8y&#xa;QY4n8gZ0bNox0fenoabX7N7GedQfyNrYd9uE8eRCC05zT1ef/TZRBANQ7NlNdrq3&#xa;KKO7Vc3Koso1tPdSvSxX4t/Bygm3HRFstQVkO/fu+QUR8vWgbnVs7ZLDu4FIafzh&#xa;stpDhHBqFoeYPnqF7OzesZrz4TwNk3E60E6Y+h62dulPbvhEEqECgoiAwX8rEjO3&#xa;7zghQGqBQOVInntlqlSazrLNv+LMgyh6yWRMoOin+QkajVtKSRDeLdbRJb2F4EBD&#xa;QOdgK2+7M82eQpvRyTFCTuBvLnA7kZtMFqKSf6V+n4owM4zHoDihJLECAwEAAaOC&#xa;A1YwggNSMB8GA1UdIwQYMBaAFO9MAJKm+3YuXpXiyV+HGxnVTeLZMB0GA1UdDgQW&#xa;BBSG0zROyc5jNY55LdlMo0S7+H7a+jAOBgNVHQ8BAf8EBAMCBaAwDAYDVR0TAQH/&#xa;BAIwADAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwSQYDVR0gBEIwQDA0&#xa;BgsrBgEEAbIxAQICZzAlMCMGCCsGAQUFBwIBFhdodHRwczovL3NlY3RpZ28uY29t&#xa;L0NQUzAIBgZngQwBAgIwQAYDVR0fBDkwNzA1oDOgMYYvaHR0cDovL2NybC5zZWN0&#xa;aWdvLmNvbS9JbkNvbW1vblJTQVNlcnZlckNBMi5jcmwwcAYIKwYBBQUHAQEEZDBi&#xa;MDsGCCsGAQUFBzAChi9odHRwOi8vY3J0LnNlY3RpZ28uY29tL0luQ29tbW9uUlNB&#xa;U2VydmVyQ0EyLmNydDAjBggrBgEFBQcwAYYXaHR0cDovL29jc3Auc2VjdGlnby5j&#xa;b20wggF+BgorBgEEAdZ5AgQCBIIBbgSCAWoBaAB2AN3cyjSV1+EWBeeVMvrHn/g9&#xa;HFDf2wA6FBJ2Ciysu8gqAAABkdhC1v4AAAQDAEcwRQIgXblU6T9WeywFSxH4WgQ3&#xa;8ph+aeG76HIJdPdLxIVuywECIQD8rjy+6n88CGbpb/oKgkGLdTXwBF9qUglgy9bk&#xa;dmc++wB1AA3h8jAr0w3BQGISCepVLvxHdHyx1+kw7w5CHrR+Tqo0AAABkdhC1sEA&#xa;AAQDAEYwRAIgWAxce54/InHJOSQywU/V2lDeOJ8QJud0q2g5BGwnSVECIBm0/Tjm&#xa;8guj+lsYIoxJPHV3VccEfUiertS4nMqGAABaAHcAEvFONL1TckyEBhnDjz96E/jn&#xa;tWKHiJxtMAWE6+WGJjoAAAGR2ELWkQAABAMASDBGAiEAq6p1SNJAhd0eTK9xzpnn&#xa;7lKpluzTCOzMyJN/u+B20yYCIQCxmPWOK77w65t67f8FFBJx3gRK1+ytcmf9oZsB&#xa;BcZi4jBSBgNVHREESzBJgh1zdGFnaW5nLm9yaW9uLm1lZC5oYXJ2YXJkLmVkdYIo&#xa;c3RhZ2luZy53ZWJzZXJ2aWNlLm9yaW9uLm1lZC5oYXJ2YXJkLmVkdTANBgkqhkiG&#xa;9w0BAQwFAAOCAYEATmieIe4Uwy9TzmrKd5mjKzc2hLrlR9Z264MU2ZzgGNF8Xuka&#xa;b1vqVui43zzj1yotG5C5I7Gz3UQciz5JDeWQVOoOZ0GEIp2sAone9ac1ZFlsb64F&#xa;PdTkiswJZhNP81eHWFGrsmccyaB7PezcRAw0YjsUEvGfleox0XLiaz76+jctm0bT&#xa;LQqtfv6ON1POM90r9/eTA1zfR2GPLc3V0CKu9+dPDZ87M7AoslMZtP9qT1Fv3HHa&#xa;riSTMgwa05mrhmYCPp6bDY7DgQIOmEkLlWBstQoZPnIgovjA1qFmnRO4y3PYnjWX&#xa;JxOPi+mTEoIPQIQCAAYE+7gA0jEQmY8FlVUvnmpxHKOzm4UbRHY2OggnI1dE5sx7&#xa;fsFhMdgeobe64dbUxyWotvK2g+c7KbGsJpsD5HJr4N50a/8FVUNmkDu0CWN2LgrC&#xa;tZmWJECPqHRATm8a6yp6t/AmAJvAXRk/B3ig6DOWc+yByq7q48rLk+9sZVvwX4xE&#xa;NtAg/qAmYrm5e6q6&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="2024-11-05T08:21:11+00:00; 0s from scanner time."><elem key="date">2024-11-05T08:21:11+00:00</elem>
+<elem key="delta">0.0</elem>
+</script><script id="tls-alpn" output="&#xa;  http/1.1"><elem>http/1.1</elem>
+</script></port>
+</ports>
+<times srtt="17007" rttvar="5495" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730794873"/>
+<taskend task="NSE" time="1730794873"/>
+<taskbegin task="NSE" time="1730794873"/>
+<taskend task="NSE" time="1730794873"/>
+<taskbegin task="NSE" time="1730794873"/>
+<taskend task="NSE" time="1730794873"/>
+<runstats><finished time="1730794873" timestr="Tue Nov  5 08:21:13 2024" elapsed="90.32" summary="Nmap done at Tue Nov  5 08:21:13 2024; 1 IP address (1 host up) scanned in 90.32 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
