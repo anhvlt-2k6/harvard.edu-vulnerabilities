@@ -21,3 +21,190 @@
 <taskbegin task="Service scan" time="1730788990"/>
 <taskend task="Service scan" time="1730789010" extrainfo="3 services on 1 host"/>
 <taskbegin task="NSE" time="1730789010"/>
+<taskend task="NSE" time="1730789028"/>
+<taskbegin task="NSE" time="1730789028"/>
+<taskend task="NSE" time="1730789030"/>
+<taskbegin task="NSE" time="1730789030"/>
+<taskend task="NSE" time="1730789030"/>
+<host starttime="1730788986" endtime="1730789030"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="155.52.135.12" addrtype="ipv4"/>
+<hostnames>
+<hostname name="miyamoto-lab.mgh.harvard.edu" type="user"/>
+<hostname name="hepcsimulator.org" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="997">
+<extrareasons reason="no-responses" count="997"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" method="probed" conf="10"><cpe>cpe:/a:apache:http_server</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="Apache"><elem>Apache</elem>
+</script><script id="http-title" output="Did not follow redirect to https://miyamoto-lab.mgh.harvard.edu/"><elem key="redirect_url">https://miyamoto-lab.mgh.harvard.edu/</elem>
+</script><script id="https-redirect" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssl" product="Apache httpd" extrainfo="SSL-only mode" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:apache:http_server</cpe></service><script id="http-favicon" output="Unknown favicon MD5: 85686DE19D6B8F69E31773D63BD7F16A"/><script id="http-generator" output="WordPress 6.6.2"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-robots.txt" output="1 disallowed entry &#xa;/wp-admin/"/><script id="http-server-header" output="Apache"><elem>Apache</elem>
+</script><script id="http-title" output="Miyamoto Lab &amp;#8211; David Miyamoto, MD, PhD"><elem key="title">Miyamoto Lab &amp;#8211; David Miyamoto, MD, PhD</elem>
+</script><script id="ssl-cert" output="Subject: commonName=miyamoto-lab.mgh.harvard.edu&#xa;Subject Alternative Name: DNS:miyamoto-lab.mgh.harvard.edu&#xa;Issuer: commonName=R11/organizationName=Let&apos;s Encrypt/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 4096&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-10-15T18:59:02&#xa;Not valid after:  2025-01-13T18:59:01&#xa;MD5:   cbde 625f c9cf 7bbb dc50 a021 d387 837b&#xa;SHA-1: 258b 870f 6a8a 35e0 5fd2 4cb8 781c 0071 f917 4b3a"><table key="subject">
+<elem key="commonName">miyamoto-lab.mgh.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+<elem key="countryName">US</elem>
+<elem key="commonName">R11</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="exponent">BIGNUM: 0x559d228a0828</elem>
+<elem key="modulus">BIGNUM: 0x559d228a0868</elem>
+<elem key="bits">4096</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="critical">true</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="name">X509v3 Key Usage</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+</table>
+<table>
+<elem key="value">AD:36:05:2E:0F:9D:58:F5:97:72:BC:34:C9:A4:4C:57:B0:8A:71:E2</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="value">C5:CF:46:A4:EA:F4:C3:C0:7A:6C:95:C4:2D:B0:5E:92:2F:26:E3:B9</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">OCSP - URI:http://r11.o.lencr.org&#xa;CA Issuers - URI:http://r11.i.lencr.org/</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">DNS:miyamoto-lab.mgh.harvard.edu</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+<table>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 3F:17:4B:4F:D7:22:47:58:94:1D:65:1C:84:BE:0D:12:&#xa;                ED:90:37:7F:1F:85:6A:EB:C1:BF:28:85:EC:F8:64:6E&#xa;    Timestamp : Oct 15 19:57:32.813 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:84:65:A3:13:66:9D:5E:48:85:69:4B:&#xa;                B4:5E:27:AA:C7:F1:04:94:39:34:A1:D2:04:D2:C5:4F:&#xa;                37:FD:4B:83:EC:02:21:00:D7:19:87:07:4A:34:AC:8D:&#xa;                F3:BF:B5:FE:00:3A:2F:EA:47:8E:AC:B1:63:8B:36:F7:&#xa;                3C:30:2E:08:FF:B8:CF:1D&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : E0:92:B3:FC:0C:1D:C8:E7:68:36:1F:DE:61:B9:96:4D:&#xa;                0A:52:78:19:8A:72:D6:72:C4:B0:4D:A5:6D:6F:54:04&#xa;    Timestamp : Oct 15 19:57:32.822 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:F0:72:CA:CF:09:BE:79:E1:A2:D5:49:&#xa;                52:C2:90:A1:4B:C5:04:28:6E:39:03:40:9D:38:0B:84:&#xa;                D6:32:C8:B1:65:02:20:68:11:40:F5:E7:5C:F0:33:6C:&#xa;                04:AB:06:72:69:1E:00:D8:B0:19:A4:4A:4E:08:3D:A1:&#xa;                1B:94:9C:1D:86:6D:54</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-10-15T18:59:02</elem>
+<elem key="notAfter">2025-01-13T18:59:01</elem>
+</table>
+<elem key="md5">cbde625fc9cf7bbbdc50a021d387837b</elem>
+<elem key="sha1">258b870f6a8a35e05fd24cb8781c0071f9174b3a</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIGCTCCBPGgAwIBAgISA2e9ZiCq0ff7KF3lxXdtFfh4MA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNSMTEwHhcNMjQxMDE1MTg1OTAyWhcNMjUwMTEzMTg1OTAxWjAnMSUwIwYDVQQD&#xa;ExxtaXlhbW90by1sYWIubWdoLmhhcnZhcmQuZWR1MIICIjANBgkqhkiG9w0BAQEF&#xa;AAOCAg8AMIICCgKCAgEAtSHDlkzAJKCYRfFeDQhGtyb98XMT2e3lpAHDnp9s6dg0&#xa;JczMCYinzZ33f0uFIFtaQGCsEulB4XGpXT30WcQwg5JblJrqnRDwC/pLcP1Cx5ea&#xa;rRnu1L8UHLR1QGBNKCng5TKUjYPL4deOS0+pueYXB/bKZO9HPSV3PRqHc4c7AuIp&#xa;tqF0JJAcC4R3T+9TAeQEhLNFeSZ8KMj7RnF0mrMdxSRqeCPgxdVuEAEUxb5EMkbB&#xa;yTG2ssOkr8Rg7Nf5GCkgwy2TSnd7ekYrjlZhJjdVklRb/uF79BMTNCShmNckBT40&#xa;R6N6XGgk46e7SwJMSPvKvM4Kmm39fI2dq2TmY+hSNkDwYcC6x5prWRrEnfA4Z84v&#xa;SBGI5Kro1oM2++/Xfq+UuHra79s7LZSg3Wb9bi6SY1+DzwD6YkimMHeIKL1bUj0G&#xa;Odwo5g8/Y41aklCIsbBmquo4lmnSoVnyFgknBq0afawUlGzLtdkZejlq/e9Toxi9&#xa;gbFtewd3oO4XvZaFb39N+Js2eDzLthgJQSgJ9/iLs5zeMuEEMS56eDpHxkWA9Kyp&#xa;nAqmrUMN1v6Yyl1k3wzHGFFOizkZcd7q+dmb+Jg4pWzMEpG8dmlpVkLqtPM44x5v&#xa;1gGluawZRjwx16VQ83p/tMjE1h8u0PCRigXGo6zAXZqf1cSSF+KLXZNlGV4dafcC&#xa;AwEAAaOCAiEwggIdMA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcD&#xa;AQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQUrTYFLg+dWPWXcrw0&#xa;yaRMV7CKceIwHwYDVR0jBBgwFoAUxc9GpOr0w8B6bJXELbBeki8m47kwVwYIKwYB&#xa;BQUHAQEESzBJMCIGCCsGAQUFBzABhhZodHRwOi8vcjExLm8ubGVuY3Iub3JnMCMG&#xa;CCsGAQUFBzAChhdodHRwOi8vcjExLmkubGVuY3Iub3JnLzAnBgNVHREEIDAeghxt&#xa;aXlhbW90by1sYWIubWdoLmhhcnZhcmQuZWR1MBMGA1UdIAQMMAowCAYGZ4EMAQIB&#xa;MIIBBQYKKwYBBAHWeQIEAgSB9gSB8wDxAHcAPxdLT9ciR1iUHWUchL4NEu2QN38f&#xa;hWrrwb8ohez4ZG4AAAGSkcHXDQAABAMASDBGAiEAhGWjE2adXkiFaUu0Xieqx/EE&#xa;lDk0odIE0sVPN/1Lg+wCIQDXGYcHSjSsjfO/tf4AOi/qR46ssWOLNvc8MC4I/7jP&#xa;HQB2AOCSs/wMHcjnaDYf3mG5lk0KUngZinLWcsSwTaVtb1QEAAABkpHB1xYAAAQD&#xa;AEcwRQIhAPByys8JvnnhotVJUsKQoUvFBChuOQNAnTgLhNYyyLFlAiBoEUD151zw&#xa;M2wEqwZyaR4A2LAZpEpOCD2hG5ScHYZtVDANBgkqhkiG9w0BAQsFAAOCAQEAiZSq&#xa;5A5jgA+Pma9j1fDAdOKdrpuPjYRgEVZTJTobMyOjC2JdBp3hWhHBpaTVxBC5i7bV&#xa;OsjXT7o4b7zSgYobQY5Z/KZJ/W8tVMlRohmlWEEtyk5b1OLhq+wVs71FfeK1nja6&#xa;sn/jSqrCKdxbpKTwgQEnuaQg3MLYkjSGGBiBmyAjLFFf/DrSFrDiKuZrvP8jtTWi&#xa;m6Z1fqw5HfmUj3OHNIqA5bP33SX9q9lUUm6F2SIi6kE/UJWH6xKC2XtN53l+SHRJ&#xa;1EUAM+OM1t6eGhvw19CMH1IuFQhF5IRzgkwOICoPnyVNpkiw86sSj0ynsFlYRHRM&#xa;1J2syIyoYLcJIeArIg==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="8443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https-alt" product="sw-cp-server" servicefp="SF-Port8443-TCP:V=7.80%T=SSL%I=7%D=11/5%Time=6729BE8A%P=x86_64-pc-linux-gnu%r(GetRequest,216,&quot;HTTP/1\.1\x20303\x20See\x20Other\r\nServer:\x20sw-cp-server\r\nDate:\x20Tue,\x2005\x20Nov\x202024\x2006:43:10\x20GMT\r\nContent-Type:\x20text/html;\x20charset=UTF-8\r\nConnection:\x20close\r\nExpires:\x20Fri,\x2028\x20May\x201999\x2000:00:00\x20GMT\r\nLast-Modified:\x20Tue,\x2005\x20Nov\x202024\x2006:43:10\x20GMT\r\nCache-Control:\x20no-store,\x20no-cache,\x20must-revalidate\r\nCache-Control:\x20post-check=0,\x20pre-check=0\r\nPragma:\x20no-cache\r\nP3P:\x20CP=\&quot;NON\x20COR\x20CURa\x20ADMa\x20OUR\x20NOR\x20UNI\x20COM\x20NAV\x20STA\&quot;\r\nX-Frame-Options:\x20SAMEORIGIN\r\nX-XSS-Protection:\x201;\x20mode=block\r\nLocation:\x20https://localhost:8443/login\.php\r\nX-Content-Type-Options:\x20nosniff\r\n\r\n&quot;)%r(HTTPOptions,442,&quot;HTTP/1\.1\x20405\x20Not\x20Allowed\r\nServer:\x20sw-cp-server\r\nDate:\x20Tue,\x2005\x20Nov\x202024\x2006:43:10\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20916\r\nConnection:\x20close\r\nETag:\x20\&quot;6704fbf0-394\&quot;\r\n\r\n&lt;!DOCTYPE\x20html&gt;\n&lt;!-&#45;\x20Copyright\x201999-2024\.\x20WebPros\x20International\x20GmbH\.\x20All\x20rights\x20reserved\.\x20-&#45;&gt;\n&lt;html\x20lang=\&quot;en\&quot;\x20dir=\&quot;ltr\&quot;&gt;\n&lt;head&gt;\n\x20\x20\x20\x20&lt;meta\x20charset=\&quot;utf-8\&quot;&gt;\n\x20\x20\x20\x20&lt;meta\x20name=\&quot;viewport\&quot;\x20content=\&quot;width=device-width,\x20initial-scale=1,\x20shrink-to-fit=no\&quot;&gt;\n\x20\x20\x20\x20&lt;title&gt;405\x20Method\x20Not\x20Allowed&lt;/title&gt;\n\x20\x20\x20\x20&lt;link\x20rel=\&quot;shortcut\x20icon\&quot;\x20href=\&quot;/favicon\.ico\&quot;&gt;\n\x20\x20\x20\x20&lt;link\x20rel=\&quot;stylesheet\&quot;\x20href=\&quot;/ui-library/plesk-ui-library\.css\?3\.40\.3\&quot;&gt;\n\x20\x20\x20\x20&lt;script\x20src=\&quot;/ui-library/plesk-ui-library\.min\.js\?3\.40\.3\&quot;&gt;&lt;/script&gt;\n\x20\x20\x20\x20&lt;script\x20src=\&quot;/cp/javascript/vendors\.js\&quot;&gt;&lt;/script&gt;\n\x20\x20\x20\x20&lt;script\x20src=\&quot;/cp/javascript/main\.js\&quot;&gt;&lt;/script&gt;\n\x20\x20\x20\x20&lt;script\x20src=\&quot;/error_docs/uat\.js\?v4\&quot;&gt;&lt;/script&gt;\n&lt;link\x20href=\&quot;/error_docs/app\.css\?146fc5cf56f78198ded8\&quot;\x20rel=\&quot;stylesheet\&quot;&gt;&lt;/head&gt;\n&lt;body&gt;&quot;)%r(FourOhFourRequest,438,&quot;HTTP/1\.1\x20404\x20Not\x20Found\r\nServer:\x20sw-cp-server\r\nDate:\x20Tue,\x2005\x20Nov\x202024\x2006:43:10\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20908\r\nConnection:\x20close\r\nETag:\x20\&quot;6704fbf0-38c\&quot;\r\n\r\n&lt;!DOCTYPE\x20html&gt;\n&lt;!-&#45;\x20Copyright\x201999-2024\.\x20WebPros\x20International\x20GmbH\.\x20All\x20rights\x20reserved\.\x20-&#45;&gt;\n&lt;html\x20lang=\&quot;en\&quot;\x20dir=\&quot;ltr\&quot;&gt;\n&lt;head&gt;\n\x20\x20\x20\x20&lt;meta\x20charset=\&quot;utf-8\&quot;&gt;\n\x20\x20\x20\x20&lt;meta\x20name=\&quot;viewport\&quot;\x20content=\&quot;width=device-width,\x20initial-scale=1,\x20shrink-to-fit=no\&quot;&gt;\n\x20\x20\x20\x20&lt;title&gt;404\x20Page\x20Not\x20Found&lt;/title&gt;\n\x20\x20\x20\x20&lt;link\x20rel=\&quot;shortcut\x20icon\&quot;\x20href=\&quot;/favicon\.ico\&quot;&gt;\n\x20\x20\x20\x20&lt;link\x20rel=\&quot;stylesheet\&quot;\x20href=\&quot;/ui-library/plesk-ui-library\.css\?3\.40\.3\&quot;&gt;\n\x20\x20\x20\x20&lt;script\x20src=\&quot;/ui-library/plesk-ui-library\.min\.js\?3\.40\.3\&quot;&gt;&lt;/script&gt;\n\x20\x20\x20\x20&lt;script\x20src=\&quot;/cp/javascript/vendors\.js\&quot;&gt;&lt;/script&gt;\n\x20\x20\x20\x20&lt;script\x20src=\&quot;/cp/javascript/main\.js\&quot;&gt;&lt;/script&gt;\n\x20\x20\x20\x20&lt;script\x20src=\&quot;/error_docs/uat\.js\?v4\&quot;&gt;&lt;/script&gt;\n&lt;link\x20href=\&quot;/error_docs/app\.css\?146fc5cf56f78198ded8\&quot;\x20rel=\&quot;stylesheet\&quot;&gt;&lt;/head&gt;\n&lt;body&gt;\n&lt;div\x20&quot;);" tunnel="ssl" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  FourOhFourRequest: &#xa;    HTTP/1.1 404 Not Found&#xa;    Server: sw-cp-server&#xa;    Date: Tue, 05 Nov 2024 06:43:10 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 908&#xa;    Connection: close&#xa;    ETag: &quot;6704fbf0-38c&quot;&#xa;    &lt;!DOCTYPE html&gt;&#xa;    &lt;!-&#45; Copyright 1999-2024. WebPros International GmbH. All rights reserved. -&#45;&gt;&#xa;    &lt;html lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;&#xa;    &lt;head&gt;&#xa;    &lt;meta charset=&quot;utf-8&quot;&gt;&#xa;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot;&gt;&#xa;    &lt;title&gt;404 Page Not Found&lt;/title&gt;&#xa;    &lt;link rel=&quot;shortcut icon&quot; href=&quot;/favicon.ico&quot;&gt;&#xa;    &lt;link rel=&quot;stylesheet&quot; href=&quot;/ui-library/plesk-ui-library.css?3.40.3&quot;&gt;&#xa;    &lt;script src=&quot;/ui-library/plesk-ui-library.min.js?3.40.3&quot;&gt;&lt;/script&gt;&#xa;    &lt;script src=&quot;/cp/javascript/vendors.js&quot;&gt;&lt;/script&gt;&#xa;    &lt;script src=&quot;/cp/javascript/main.js&quot;&gt;&lt;/script&gt;&#xa;    &lt;script src=&quot;/error_docs/uat.js?v4&quot;&gt;&lt;/script&gt;&#xa;    &lt;link href=&quot;/error_docs/app.css?146fc5cf56f78198ded8&quot; rel=&quot;stylesheet&quot;&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;div&#xa;  GetRequest: &#xa;    HTTP/1.1 303 See Other&#xa;    Server: sw-cp-server&#xa;    Date: Tue, 05 Nov 2024 06:43:10 GMT&#xa;    Content-Type: text/html; charset=UTF-8&#xa;    Connection: close&#xa;    Expires: Fri, 28 May 1999 00:00:00 GMT&#xa;    Last-Modified: Tue, 05 Nov 2024 06:43:10 GMT&#xa;    Cache-Control: no-store, no-cache, must-revalidate&#xa;    Cache-Control: post-check=0, pre-check=0&#xa;    Pragma: no-cache&#xa;    P3P: CP=&quot;NON COR CURa ADMa OUR NOR UNI COM NAV STA&quot;&#xa;    X-Frame-Options: SAMEORIGIN&#xa;    X-XSS-Protection: 1; mode=block&#xa;    Location: https://localhost:8443/login.php&#xa;    X-Content-Type-Options: nosniff&#xa;  HTTPOptions: &#xa;    HTTP/1.1 405 Not Allowed&#xa;    Server: sw-cp-server&#xa;    Date: Tue, 05 Nov 2024 06:43:10 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 916&#xa;    Connection: close&#xa;    ETag: &quot;6704fbf0-394&quot;&#xa;    &lt;!DOCTYPE html&gt;&#xa;    &lt;!-&#45; Copyright 1999-2024. WebPros International GmbH. All rights reserved. -&#45;&gt;&#xa;    &lt;html lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;&#xa;    &lt;head&gt;&#xa;    &lt;meta charset=&quot;utf-8&quot;&gt;&#xa;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot;&gt;&#xa;    &lt;title&gt;405 Method Not Allowed&lt;/title&gt;&#xa;    &lt;link rel=&quot;shortcut icon&quot; href=&quot;/favicon.ico&quot;&gt;&#xa;    &lt;link rel=&quot;stylesheet&quot; href=&quot;/ui-library/plesk-ui-library.css?3.40.3&quot;&gt;&#xa;    &lt;script src=&quot;/ui-library/plesk-ui-library.min.js?3.40.3&quot;&gt;&lt;/script&gt;&#xa;    &lt;script src=&quot;/cp/javascript/vendors.js&quot;&gt;&lt;/script&gt;&#xa;    &lt;script src=&quot;/cp/javascript/main.js&quot;&gt;&lt;/script&gt;&#xa;    &lt;script src=&quot;/error_docs/uat.js?v4&quot;&gt;&lt;/script&gt;&#xa;    &lt;link href=&quot;/error_docs/app.css?146fc5cf56f78198ded8&quot; rel=&quot;stylesheet&quot;&gt;&lt;/head&gt;&#xa;    &lt;body&gt;"><elem key="FourOhFourRequest">&#xa;    HTTP/1.1 404 Not Found&#xa;    Server: sw-cp-server&#xa;    Date: Tue, 05 Nov 2024 06:43:10 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 908&#xa;    Connection: close&#xa;    ETag: &quot;6704fbf0-38c&quot;&#xa;    &lt;!DOCTYPE html&gt;&#xa;    &lt;!-&#45; Copyright 1999-2024. WebPros International GmbH. All rights reserved. -&#45;&gt;&#xa;    &lt;html lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;&#xa;    &lt;head&gt;&#xa;    &lt;meta charset=&quot;utf-8&quot;&gt;&#xa;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot;&gt;&#xa;    &lt;title&gt;404 Page Not Found&lt;/title&gt;&#xa;    &lt;link rel=&quot;shortcut icon&quot; href=&quot;/favicon.ico&quot;&gt;&#xa;    &lt;link rel=&quot;stylesheet&quot; href=&quot;/ui-library/plesk-ui-library.css?3.40.3&quot;&gt;&#xa;    &lt;script src=&quot;/ui-library/plesk-ui-library.min.js?3.40.3&quot;&gt;&lt;/script&gt;&#xa;    &lt;script src=&quot;/cp/javascript/vendors.js&quot;&gt;&lt;/script&gt;&#xa;    &lt;script src=&quot;/cp/javascript/main.js&quot;&gt;&lt;/script&gt;&#xa;    &lt;script src=&quot;/error_docs/uat.js?v4&quot;&gt;&lt;/script&gt;&#xa;    &lt;link href=&quot;/error_docs/app.css?146fc5cf56f78198ded8&quot; rel=&quot;stylesheet&quot;&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;div</elem>
+<elem key="GetRequest">&#xa;    HTTP/1.1 303 See Other&#xa;    Server: sw-cp-server&#xa;    Date: Tue, 05 Nov 2024 06:43:10 GMT&#xa;    Content-Type: text/html; charset=UTF-8&#xa;    Connection: close&#xa;    Expires: Fri, 28 May 1999 00:00:00 GMT&#xa;    Last-Modified: Tue, 05 Nov 2024 06:43:10 GMT&#xa;    Cache-Control: no-store, no-cache, must-revalidate&#xa;    Cache-Control: post-check=0, pre-check=0&#xa;    Pragma: no-cache&#xa;    P3P: CP=&quot;NON COR CURa ADMa OUR NOR UNI COM NAV STA&quot;&#xa;    X-Frame-Options: SAMEORIGIN&#xa;    X-XSS-Protection: 1; mode=block&#xa;    Location: https://localhost:8443/login.php&#xa;    X-Content-Type-Options: nosniff</elem>
+<elem key="HTTPOptions">&#xa;    HTTP/1.1 405 Not Allowed&#xa;    Server: sw-cp-server&#xa;    Date: Tue, 05 Nov 2024 06:43:10 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 916&#xa;    Connection: close&#xa;    ETag: &quot;6704fbf0-394&quot;&#xa;    &lt;!DOCTYPE html&gt;&#xa;    &lt;!-&#45; Copyright 1999-2024. WebPros International GmbH. All rights reserved. -&#45;&gt;&#xa;    &lt;html lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;&#xa;    &lt;head&gt;&#xa;    &lt;meta charset=&quot;utf-8&quot;&gt;&#xa;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot;&gt;&#xa;    &lt;title&gt;405 Method Not Allowed&lt;/title&gt;&#xa;    &lt;link rel=&quot;shortcut icon&quot; href=&quot;/favicon.ico&quot;&gt;&#xa;    &lt;link rel=&quot;stylesheet&quot; href=&quot;/ui-library/plesk-ui-library.css?3.40.3&quot;&gt;&#xa;    &lt;script src=&quot;/ui-library/plesk-ui-library.min.js?3.40.3&quot;&gt;&lt;/script&gt;&#xa;    &lt;script src=&quot;/cp/javascript/vendors.js&quot;&gt;&lt;/script&gt;&#xa;    &lt;script src=&quot;/cp/javascript/main.js&quot;&gt;&lt;/script&gt;&#xa;    &lt;script src=&quot;/error_docs/uat.js?v4&quot;&gt;&lt;/script&gt;&#xa;    &lt;link href=&quot;/error_docs/app.css?146fc5cf56f78198ded8&quot; rel=&quot;stylesheet&quot;&gt;&lt;/head&gt;&#xa;    &lt;body&gt;</elem>
+</script><script id="http-favicon" output="Unknown favicon MD5: 650B28C6CF1B473AED15BA26BAD1DA92"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+</table>
+</script><script id="http-robots.txt" output="1 disallowed entry &#xa;/"/><script id="http-server-header" output="sw-cp-server"><elem>sw-cp-server</elem>
+</script><script id="http-title" output="ERISweb2 Plesk Console&#xa;Requested resource was https://miyamoto-lab.mgh.harvard.edu:8443/login_up.php"><elem key="title">ERISweb2 Plesk Console</elem>
+<elem key="redirect_url">https://miyamoto-lab.mgh.harvard.edu:8443/login_up.php</elem>
+</script><script id="ssl-cert" output="Subject: commonName=*.partners.org/organizationName=President and Fellows of Harvard College/stateOrProvinceName=Massachusetts/countryName=US&#xa;Subject Alternative Name: DNS:*.partners.org&#xa;Issuer: commonName=InCommon RSA Server CA 2/organizationName=Internet2/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha384WithRSAEncryption&#xa;Not valid before: 2024-09-04T00:00:00&#xa;Not valid after:  2025-09-04T23:59:59&#xa;MD5:   a375 e9ec 5fc5 768f d1d6 6b76 d9e2 c601&#xa;SHA-1: 12ce 3176 b60b 20ba 8ae0 0561 607e 0b96 c1b1 7684"><table key="subject">
+<elem key="organizationName">President and Fellows of Harvard College</elem>
+<elem key="commonName">*.partners.org</elem>
+<elem key="countryName">US</elem>
+<elem key="stateOrProvinceName">Massachusetts</elem>
+</table>
+<table key="issuer">
+<elem key="organizationName">Internet2</elem>
+<elem key="countryName">US</elem>
+<elem key="commonName">InCommon RSA Server CA 2</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="exponent">BIGNUM: 0x559d22838448</elem>
+<elem key="modulus">BIGNUM: 0x559d228384c8</elem>
+<elem key="bits">2048</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">EF:4C:00:92:A6:FB:76:2E:5E:95:E2:C9:5F:87:1B:19:D5:4D:E2:D9</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">1D:70:C9:ED:DC:A7:E6:4B:02:3F:1A:BC:D2:59:97:65:0E:9B:F5:51</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="name">X509v3 Key Usage</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">Policy: 1.3.6.1.4.1.6449.1.2.2.103&#xa;  CPS: https://sectigo.com/CPS&#xa;Policy: 2.23.140.1.2.2</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Full Name:&#xa;  URI:http://crl.sectigo.com/InCommonRSAServerCA2.crl</elem>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+</table>
+<table>
+<elem key="value">CA Issuers - URI:http://crt.sectigo.com/InCommonRSAServerCA2.crt&#xa;OCSP - URI:http://ocsp.sectigo.com</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">DNS:*.partners.org</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : DD:DC:CA:34:95:D7:E1:16:05:E7:95:32:FA:C7:9F:F8:&#xa;                3D:1C:50:DF:DB:00:3A:14:12:76:0A:2C:AC:BB:C8:2A&#xa;    Timestamp : Sep  4 14:12:00.522 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:EF:E4:7E:E6:F5:01:64:C5:BC:31:06:&#xa;                59:B8:88:0B:88:73:28:D7:48:AE:5C:91:72:4A:29:CF:&#xa;                5E:C0:22:07:1A:02:20:2F:DC:6C:71:4E:5E:D9:D1:B7:&#xa;                9B:1A:F6:F0:61:5B:42:71:A1:42:0D:22:2A:6C:3A:1F:&#xa;                51:23:F6:2A:04:87:F2&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 0D:E1:F2:30:2B:D3:0D:C1:40:62:12:09:EA:55:2E:FC:&#xa;                47:74:7C:B1:D7:E9:30:EF:0E:42:1E:B4:7E:4E:AA:34&#xa;    Timestamp : Sep  4 14:12:00.447 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:FA:37:A0:0E:A4:AA:88:2F:E2:C7:AD:&#xa;                F2:AA:98:47:2F:53:57:4F:F9:C3:BA:FB:4C:14:AC:88:&#xa;                19:CE:41:53:75:02:20:48:B3:C9:79:8C:AB:6F:2F:9E:&#xa;                07:A4:AA:05:CE:61:39:7F:C8:7D:04:E4:8D:7E:1F:C9:&#xa;                E9:56:31:69:5C:4A:7B&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 12:F1:4E:34:BD:53:72:4C:84:06:19:C3:8F:3F:7A:13:&#xa;                F8:E7:B5:62:87:88:9C:6D:30:05:84:EB:E5:86:26:3A&#xa;    Timestamp : Sep  4 14:12:00.464 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:F3:CF:CE:67:2B:21:1C:F2:72:94:E4:&#xa;                46:A3:9C:2B:81:17:60:98:6B:FA:4B:3A:31:20:D8:68:&#xa;                85:44:9B:28:2C:02:21:00:A6:4E:E6:23:31:75:FD:EC:&#xa;                73:21:F2:2E:38:42:38:92:7B:4E:39:90:EF:45:A0:0E:&#xa;                C1:30:E1:BE:33:CC:B5:37</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+</table>
+<elem key="sig_algo">sha384WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-09-04T00:00:00</elem>
+<elem key="notAfter">2025-09-04T23:59:59</elem>
+</table>
+<elem key="md5">a375e9ec5fc5768fd1d66b76d9e2c601</elem>
+<elem key="sha1">12ce3176b60b20ba8ae00561607e0b96c1b17684</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIG3zCCBUegAwIBAgIQKP5hheeWQ1HTCZy6A52QwjANBgkqhkiG9w0BAQwFADBE&#xa;MQswCQYDVQQGEwJVUzESMBAGA1UEChMJSW50ZXJuZXQyMSEwHwYDVQQDExhJbkNv&#xa;bW1vbiBSU0EgU2VydmVyIENBIDIwHhcNMjQwOTA0MDAwMDAwWhcNMjUwOTA0MjM1&#xa;OTU5WjBxMQswCQYDVQQGEwJVUzEWMBQGA1UECBMNTWFzc2FjaHVzZXR0czExMC8G&#xa;A1UEChMoUHJlc2lkZW50IGFuZCBGZWxsb3dzIG9mIEhhcnZhcmQgQ29sbGVnZTEX&#xa;MBUGA1UEAwwOKi5wYXJ0bmVycy5vcmcwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw&#xa;ggEKAoIBAQCg0PhplsosK+P1rq6nq+7kq20LyocfLJf0vyzkvYRrQ9x3w0D07CFn&#xa;HD8FnQFZ2f00aCo3wQWv1LiI2JrlmBOxrlR3bCPEkHCbs/4knhQeRCg9S/zjW6tL&#xa;+aCqFbR6bgdMueBDsABYbbjiF1ZFWhKfQCtD+p1pFFNUILcOl9uJypwVuB2NYIGC&#xa;DQDbcFnoaij7XGjYi+xWIeFGOTdiUE5XRTTdhN8pIRyp0WqQy2G0kR96Y+sG2yZd&#xa;JE145qJ/wBc/B1ax+fe5maDxXComHCX01KnWS59T299do6W9ZANbdGh+j3UL6Kx5&#xa;2GSG1o0NChCGRYGVij4L4r82GMhYWXI3AgMBAAGjggMeMIIDGjAfBgNVHSMEGDAW&#xa;gBTvTACSpvt2Ll6V4slfhxsZ1U3i2TAdBgNVHQ4EFgQUHXDJ7dyn5ksCPxq80lmX&#xa;ZQ6b9VEwDgYDVR0PAQH/BAQDAgWgMAwGA1UdEwEB/wQCMAAwHQYDVR0lBBYwFAYI&#xa;KwYBBQUHAwEGCCsGAQUFBwMCMEkGA1UdIARCMEAwNAYLKwYBBAGyMQECAmcwJTAj&#xa;BggrBgEFBQcCARYXaHR0cHM6Ly9zZWN0aWdvLmNvbS9DUFMwCAYGZ4EMAQICMEAG&#xa;A1UdHwQ5MDcwNaAzoDGGL2h0dHA6Ly9jcmwuc2VjdGlnby5jb20vSW5Db21tb25S&#xa;U0FTZXJ2ZXJDQTIuY3JsMHAGCCsGAQUFBwEBBGQwYjA7BggrBgEFBQcwAoYvaHR0&#xa;cDovL2NydC5zZWN0aWdvLmNvbS9JbkNvbW1vblJTQVNlcnZlckNBMi5jcnQwIwYI&#xa;KwYBBQUHMAGGF2h0dHA6Ly9vY3NwLnNlY3RpZ28uY29tMBkGA1UdEQQSMBCCDiou&#xa;cGFydG5lcnMub3JnMIIBfwYKKwYBBAHWeQIEAgSCAW8EggFrAWkAdgDd3Mo0ldfh&#xa;FgXnlTL6x5/4PRxQ39sAOhQSdgosrLvIKgAAAZG9YMGKAAAEAwBHMEUCIQDv5H7m&#xa;9QFkxbwxBlm4iAuIcyjXSK5ckXJKKc9ewCIHGgIgL9xscU5e2dG3mxr28GFbQnGh&#xa;Qg0iKmw6H1Ej9ioEh/IAdgAN4fIwK9MNwUBiEgnqVS78R3R8sdfpMO8OQh60fk6q&#xa;NAAAAZG9YME/AAAEAwBHMEUCIQD6N6AOpKqIL+LHrfKqmEcvU1dP+cO6+0wUrIgZ&#xa;zkFTdQIgSLPJeYyrby+eB6SqBc5hOX/IfQTkjX4fyelWMWlcSnsAdwAS8U40vVNy&#xa;TIQGGcOPP3oT+Oe1YoeInG0wBYTr5YYmOgAAAZG9YMFQAAAEAwBIMEYCIQDzz85n&#xa;KyEc8nKU5EajnCuBF2CYa/pLOjEg2GiFRJsoLAIhAKZO5iMxdf3scyHyLjhCOJJ7&#xa;TjmQ70WgDsEw4b4zzLU3MA0GCSqGSIb3DQEBDAUAA4IBgQAN2brIbYJm4jjyUx1f&#xa;cUrXaqfsVJkBjBe3gBGIzwrcSTH8AVu4DZIZRvdh6i2CfVUHtCV5WfeHXLPIKLep&#xa;Jtdt8QPnFQ/uJGnqIuprxT9tZkYC21ZIrxPJ8MEqIauDVkYSSmqCaeCJwvoYUMiQ&#xa;ZblIewVVZV3TiA+2hZn45xXr3l0Nt8diP2L9jHRxSgxT1atNIp98GAMBoM5toqPG&#xa;GiFHsVHZjYuK+pEJW8SwVF6Tkq24mab6Tjj1qqE5Fl8myD3iaMktqavtZP4OPkVl&#xa;NUnJoczDm7OSXdfJIEE09U25mPVGpsm75NeF6WNXmiQ1YYuZmrsTLFR9MMT7aMlH&#xa;RxQavmOqjFVKS/iMLq4SkZXwstnzKzVa58COf0CyY/XDtDvwg55k8BBDhusqrq1b&#xa;tdofpPBVP7FtzMHRW8Y628hbrhqWHMLPUTJZxTe1/Grgj1VibSUShysSsvJerFtx&#xa;qAfYvmH9W4w8Yk920K14MM/WiBbPoHD+k0OX/559hYDQmrU=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+</ports>
+<times srtt="13146" rttvar="3302" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730789030"/>
+<taskend task="NSE" time="1730789030"/>
+<taskbegin task="NSE" time="1730789030"/>
+<taskend task="NSE" time="1730789030"/>
+<taskbegin task="NSE" time="1730789030"/>
+<taskend task="NSE" time="1730789030"/>
+<runstats><finished time="1730789030" timestr="Tue Nov  5 06:43:50 2024" elapsed="44.49" summary="Nmap done at Tue Nov  5 06:43:50 2024; 1 IP address (1 host up) scanned in 44.49 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
