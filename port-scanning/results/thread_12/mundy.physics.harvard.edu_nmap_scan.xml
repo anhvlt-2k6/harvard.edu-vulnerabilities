@@ -21,3 +21,107 @@
 <taskbegin task="Service scan" time="1730831574"/>
 <taskend task="Service scan" time="1730831593" extrainfo="4 services on 1 host"/>
 <taskbegin task="NSE" time="1730831593"/>
+<taskend task="NSE" time="1730831625"/>
+<taskbegin task="NSE" time="1730831625"/>
+<taskend task="NSE" time="1730831625"/>
+<taskbegin task="NSE" time="1730831625"/>
+<taskend task="NSE" time="1730831625"/>
+<host starttime="1730831572" endtime="1730831625"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="69.163.207.77" addrtype="ipv4"/>
+<hostnames>
+<hostname name="mundy.physics.harvard.edu" type="user"/>
+<hostname name="vps13326.dreamhostps.com" type="PTR"/>
+</hostnames>
+<ports><extraports state="closed" count="991">
+<extrareasons reason="conn-refused" count="991"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="8.2p1 Ubuntu 4ubuntu0.10" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:8.2p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  3072 c6:75:1a:92:dd:e7:77:cc:38:04:9b:0b:7b:96:90:b7 (RSA)"><table>
+<elem key="type">ssh-rsa</elem>
+<elem key="bits">3072</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABgQDGACN5b6ctgTCjb+ihKD6eb37+Hehpf1TsalfZwIcSdxz/898PAy6LWm6jmkXrHhrxwBLhpQfDia0hsViMoxPqfX0Q6n8TV89TidgZHqBGSmKM4WRgiTffXB8b+cPjMU7lGYWP2dx7gD8mB4/i+ko7Yf4wITKnjhMILwdzT2+zdqbIHqtxRRF/RR6IFGt2NKjRd1/SfNjpBypbtcH2TbPh+U1kltV5IyCKr88sT6DLUt3cbOLg5sdYRR2Q5o9IbmUDAtEuj5KUFG/kO9EHpQtUKqn2qBe7hxEZdLuP0uz8jq8gLQsDs97xWWx0eBOLSB2bKQqpyNUJ3StXUt6/34CN4RcI7Sjtlgh5quqq0D1B8Bp2zogs6ouFmIV/BMrHvLHWk+KwRPqxtsuz/n3ha5LbnJZbJKtW3QOHonQJm+o9F5KzMZbzFViS4PYGycEDK+Bz9kdKOPSivXREZL3+l5okj9tT/gIuoGsvQkC7aehij7eMEwr2ylBuRdUf/+8DRxM=</elem>
+<elem key="fingerprint">c6751a92dde777cc38049b0b7b9690b7</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="25"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="smtp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" method="probed" conf="10"><cpe>cpe:/a:apache:http_server</cpe></service><script id="http-favicon" output="Unknown favicon MD5: D41D8CD98F00B204E9800998ECF8427E"/><script id="http-methods" output="&#xa;  Supported Methods: GET POST OPTIONS HEAD"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+<elem>HEAD</elem>
+</table>
+</script><script id="http-server-header" output="Apache"><elem>Apache</elem>
+</script><script id="http-title" output="Mundy Group"><elem key="title">Mundy Group</elem>
+</script></port>
+<port protocol="tcp" portid="111"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="rpcbind" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssl" product="Apache httpd" extrainfo="SSL-only mode" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:apache:http_server</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET POST OPTIONS HEAD"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+<elem>HEAD</elem>
+</table>
+</script><script id="http-server-header" output="Apache"><elem>Apache</elem>
+</script><script id="http-title" output="Site not found &amp;middot; DreamHost"><elem key="title">Site not found &amp;middot; DreamHost</elem>
+</script><script id="ssl-cert" output="Subject: commonName=sni.dreamhost.com/organizationName=New Dream Network LLC dba Dreamhost/stateOrProvinceName=California/countryName=US&#xa;Issuer: commonName=sni.dreamhost.com/organizationName=New Dream Network LLC dba Dreamhost/stateOrProvinceName=California/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 4096&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2023-04-03T19:15:26&#xa;Not valid after:  2033-03-31T19:15:26&#xa;MD5:   8ef8 c390 d6bf 7724 588f aeb8 d058 1e48&#xa;SHA-1: ad99 92dc 5702 5bd8 c080 75ab ca80 9e0c b6ae 9643"><table key="subject">
+<elem key="emailAddress">ssl@dreamhost.com</elem>
+<elem key="stateOrProvinceName">California</elem>
+<elem key="organizationName">New Dream Network LLC dba Dreamhost</elem>
+<elem key="countryName">US</elem>
+<elem key="localityName">Brea</elem>
+<elem key="organizationalUnitName">System Engineering</elem>
+<elem key="commonName">sni.dreamhost.com</elem>
+</table>
+<table key="issuer">
+<elem key="emailAddress">ssl@dreamhost.com</elem>
+<elem key="stateOrProvinceName">California</elem>
+<elem key="organizationName">New Dream Network LLC dba Dreamhost</elem>
+<elem key="countryName">US</elem>
+<elem key="localityName">Brea</elem>
+<elem key="organizationalUnitName">System Engineering</elem>
+<elem key="commonName">sni.dreamhost.com</elem>
+</table>
+<table key="pubkey">
+<elem key="exponent">BIGNUM: 0x55db8fb71de8</elem>
+<elem key="modulus">BIGNUM: 0x55db8fb71d38</elem>
+<elem key="bits">4096</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">B8:22:6D:F3:59:C3:0F:2C:42:A6:87:7B:59:43:DF:BF:79:83:FD:7A</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="value">B8:22:6D:F3:59:C3:0F:2C:42:A6:87:7B:59:43:DF:BF:79:83:FD:7A</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">CA:TRUE</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="critical">true</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2023-04-03T19:15:26</elem>
+<elem key="notAfter">2033-03-31T19:15:26</elem>
+</table>
+<elem key="md5">8ef8c390d6bf7724588faeb8d0581e48</elem>
+<elem key="sha1">ad9992dc57025bd8c08075abca809e0cb6ae9643</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIGSDCCBDCgAwIBAgIFC63A/+4wDQYJKoZIhvcNAQELBQAwgboxCzAJBgNVBAYT&#xa;AlVTMRMwEQYDVQQIDApDYWxpZm9ybmlhMQ0wCwYDVQQHDARCcmVhMSwwKgYDVQQK&#xa;DCNOZXcgRHJlYW0gTmV0d29yayBMTEMgZGJhIERyZWFtaG9zdDEbMBkGA1UECwwS&#xa;U3lzdGVtIEVuZ2luZWVyaW5nMRowGAYDVQQDDBFzbmkuZHJlYW1ob3N0LmNvbTEg&#xa;MB4GCSqGSIb3DQEJARYRc3NsQGRyZWFtaG9zdC5jb20wHhcNMjMwNDAzMTkxNTI2&#xa;WhcNMzMwMzMxMTkxNTI2WjCBujELMAkGA1UEBhMCVVMxEzARBgNVBAgMCkNhbGlm&#xa;b3JuaWExDTALBgNVBAcMBEJyZWExLDAqBgNVBAoMI05ldyBEcmVhbSBOZXR3b3Jr&#xa;IExMQyBkYmEgRHJlYW1ob3N0MRswGQYDVQQLDBJTeXN0ZW0gRW5naW5lZXJpbmcx&#xa;GjAYBgNVBAMMEXNuaS5kcmVhbWhvc3QuY29tMSAwHgYJKoZIhvcNAQkBFhFzc2xA&#xa;ZHJlYW1ob3N0LmNvbTCCAiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIBALsq&#xa;LiEy9YxaQZnRe1+1u1TABVJFlhSkZX5n9+PxgcJVQMNwHal6hN9FUvC47Tn/ExmL&#xa;W/DsrGkq2wgeE+VJntkmjob1KOpns+JwJwHzmRvVZX4WRRzS2qdKDFy/BKQ1ijt/&#xa;ABVRdiEjV7e9fGWyPyZ88VzWtXBc7B7Ud9sF7Hhubi4/U4oU5HrR0D2Ko8+XNPBU&#xa;pE4jDK+RfzQDXKKjTH4vT15+e6Zn1Q5PsgaHX+PawdPbb6npwZtsMNzgfTmvAUYO&#xa;FjnnHSGlAushLlGDXMtSwbd8ghPQt7OaKUzobNceO9fq20idvUpaHRjoOQ688z/w&#xa;9FTRlkzBuxt7v/QGJImj9cE33x4Rzom1BxfgTzd4M6/01bsHhbZBE8QjlzY6MRNh&#xa;Y2ZxNYr78p3ytYgWWAZebXFaPDhX0owlk5rbyjKYr9jibkujuSYTCQk6PVPcKthC&#xa;rlOUiYe8w7G9YqV1CUvmjzl+S39wmuQKLwZKVwootgcAf9M1a4Pw2ziTjfbmMbND&#xa;ulOF3BrWVim1X4q0+hnPDXQx0siQVuDp3HmRRBBos8aaClQ0pIAMhujD2p8SbCkR&#xa;BF4kbHMf7p6i5nFmrt2iB5pQuORhnSA3puWwHj4CB72xg+R2oPmvMaI+ocGmAOvs&#xa;CalL77BTbOBcDoMEllliIva44//sSRG3cV3wmDSNAgMBAAGjUzBRMB0GA1UdDgQW&#xa;BBS4Im3zWcMPLEKmh3tZQ9+/eYP9ejAfBgNVHSMEGDAWgBS4Im3zWcMPLEKmh3tZ&#xa;Q9+/eYP9ejAPBgNVHRMBAf8EBTADAQH/MA0GCSqGSIb3DQEBCwUAA4ICAQBZ8UEP&#xa;Qx7ilgPQsCOutnaIsjnAOeW+MEonaFuN/kHsXjiojBBt6VhOcroIjHaS1OCQE4HF&#xa;fRJcv2cfbvFVNzUEFTQwjiLQmGgqy7KMkZ5RLDSS63nBwHcEwOBtYsWK2EPTbU9H&#xa;OEa77Zbh8E8DYuXBLo5R9Y7XWbGxloji3ihKsTZsOTVNVjiVlle6hdpGZF6Ld4ZX&#xa;Zpr2WVOel+vCKPcDOYKoorNPbyx2pOsmg+v6QDvDYDMjYh39YBG7HT+k7B/13cJX&#xa;iWwwTqA9+9wHzBak0yiF19K4kN7KvPZDVb92YGZIcKTAsmsIjkbnblz09Ah85knW&#xa;UJE5Pq+g/0AwE0TqI33Kk+Pr803K73ejzKIdU0YPWq42TjMoECSK47SwaFWPQdqM&#xa;cytzN65unI9Osa5BfqPCRbDgYyvl4e17p7CoiwcaI+BtQxll8NL6WBDLILC3XteO&#xa;5FOE31NGhhrd4uykUiGPq/7dyiz3VJIzvGb9cQW45QcEe9r3KoMGZqMwdNfky2s6&#xa;jQKGTagEuXzANQwrwOzKp9ncUFhPF/W5Y2EpGAP0qTj4trkeTk3krBrY9rIfi6cu&#xa;7MTcqPkoICmpwMxKIuRzRIds+YYLXUF0N4AgYXDD87fI7V/8AvBwaLpLHuH8c2L9&#xa;AgfjZTQt3FldirSBxSiysc5gKLqU60OUpKCk1g==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="587"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtp" product="Postfix smtpd" hostname="vps13326.dreamhostps.com" method="probed" conf="10"><cpe>cpe:/a:postfix:postfix</cpe></service><script id="smtp-commands" output="vps13326.dreamhostps.com, PIPELINING, SIZE 40960000, ETRN, ENHANCEDSTATUSCODES, 8BITMIME, CHUNKING, "/></port>
+<port protocol="tcp" portid="1030"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="iad1" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5666"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="nrpe" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9100"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="jetdirect" method="table" conf="3"/></port>
+</ports>
+<times srtt="51080" rttvar="183" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730831625"/>
+<taskend task="NSE" time="1730831625"/>
+<taskbegin task="NSE" time="1730831625"/>
+<taskend task="NSE" time="1730831625"/>
+<taskbegin task="NSE" time="1730831625"/>
+<taskend task="NSE" time="1730831625"/>
+<runstats><finished time="1730831625" timestr="Tue Nov  5 18:33:45 2024" elapsed="53.85" summary="Nmap done at Tue Nov  5 18:33:45 2024; 1 IP address (1 host up) scanned in 53.85 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
