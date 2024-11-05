@@ -19,3 +19,476 @@
 <taskbegin task="Connect Scan" time="1730798149"/>
 <taskend task="Connect Scan" time="1730798154" extrainfo="1000 total ports"/>
 <taskbegin task="Service scan" time="1730798154"/>
+<taskend task="Service scan" time="1730798171" extrainfo="7 services on 1 host"/>
+<taskbegin task="NSE" time="1730798171"/>
+<taskend task="NSE" time="1730798172"/>
+<taskbegin task="NSE" time="1730798172"/>
+<taskend task="NSE" time="1730798173"/>
+<taskbegin task="NSE" time="1730798173"/>
+<taskend task="NSE" time="1730798173"/>
+<host starttime="1730798149" endtime="1730798173"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="216.151.39.126" addrtype="ipv4"/>
+<hostnames>
+<hostname name="mail.chs.harvard.edu" type="user"/>
+<hostname name="mailsrv.chs.harvard.edu" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="992">
+<extrareasons reason="no-responses" count="992"/>
+</extraports>
+<port protocol="tcp" portid="25"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtp" product="Cisco PIX sanitized smtpd" devicetype="firewall" method="probed" conf="10"><cpe>cpe:/o:cisco:pix_firewall_software</cpe></service><script id="smtp-commands" output="mailsrv.chs.harvard.edu, PIPELINING, SIZE 208728640, ETRN, STARTTLS, ENHANCEDSTATUSCODES, 8BITMIME, DSN, XXXXXXXA, "/><script id="ssl-cert" output="Subject: commonName=mailsrv.chs.harvard.edu/organizationName=President and Fellows of Harvard College/stateOrProvinceName=Massachusetts/countryName=US&#xa;Subject Alternative Name: DNS:mailsrv.chs.harvard.edu&#xa;Issuer: commonName=COMODO RSA Organization Validation Secure Server CA/organizationName=COMODO CA Limited/stateOrProvinceName=Greater Manchester/countryName=GB&#xa;Public Key type: rsa&#xa;Public Key bits: 4096&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-07-09T00:00:00&#xa;Not valid after:  2025-07-09T23:59:59&#xa;MD5:   de5e cb8d 1e17 b3b1 878c e3a1 73a4 f77e&#xa;SHA-1: 3dba c85a f244 9af3 b24f 7b26 c329 80cc dd31 80eb"><table key="subject">
+<elem key="commonName">mailsrv.chs.harvard.edu</elem>
+<elem key="stateOrProvinceName">Massachusetts</elem>
+<elem key="organizationName">President and Fellows of Harvard College</elem>
+<elem key="countryName">US</elem>
+</table>
+<table key="issuer">
+<elem key="stateOrProvinceName">Greater Manchester</elem>
+<elem key="countryName">GB</elem>
+<elem key="commonName">COMODO RSA Organization Validation Secure Server CA</elem>
+<elem key="organizationName">COMODO CA Limited</elem>
+<elem key="localityName">Salford</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">4096</elem>
+<elem key="type">rsa</elem>
+<elem key="modulus">BIGNUM: 0x55f6329db8d8</elem>
+<elem key="exponent">BIGNUM: 0x55f6329db898</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">9A:F3:2B:DA:CF:AD:4F:B6:2F:BB:2A:48:48:2A:12:B7:1B:42:C1:24</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">A4:37:5A:4A:6C:A2:EC:DA:B6:E0:B9:4F:13:50:CE:38:E7:24:AC:E7</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">Policy: 1.3.6.1.4.1.6449.1.2.1.3.4&#xa;  CPS: https://sectigo.com/CPS&#xa;Policy: 2.23.140.1.2.2</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Full Name:&#xa;  URI:http://crl.comodoca.com/COMODORSAOrganizationValidationSecureServerCA.crl</elem>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+</table>
+<table>
+<elem key="value">CA Issuers - URI:http://crt.comodoca.com/COMODORSAOrganizationValidationSecureServerCA.crt&#xa;OCSP - URI:http://ocsp.comodoca.com</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">DNS:mailsrv.chs.harvard.edu</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : DD:DC:CA:34:95:D7:E1:16:05:E7:95:32:FA:C7:9F:F8:&#xa;                3D:1C:50:DF:DB:00:3A:14:12:76:0A:2C:AC:BB:C8:2A&#xa;    Timestamp : Jul  9 18:36:29.644 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:42:55:59:83:ED:7E:AD:A9:8C:82:E8:23:&#xa;                51:0E:96:FB:6F:E0:70:3C:A0:45:B5:0A:33:BB:E0:B0:&#xa;                CD:66:9B:41:02:20:79:DE:4C:48:BD:D6:D4:93:0C:DB:&#xa;                70:0E:85:EA:14:5C:DE:9C:43:EC:2D:7C:E1:77:37:09:&#xa;                42:7B:AB:84:20:09&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 0D:E1:F2:30:2B:D3:0D:C1:40:62:12:09:EA:55:2E:FC:&#xa;                47:74:7C:B1:D7:E9:30:EF:0E:42:1E:B4:7E:4E:AA:34&#xa;    Timestamp : Jul  9 18:36:29.614 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:41:A6:7B:D9:55:46:F7:A6:28:CB:6F:70:&#xa;                C0:2F:B8:3B:47:9B:A8:1A:91:38:18:ED:08:41:0C:B5:&#xa;                A6:59:19:98:02:21:00:B7:F0:34:D5:12:E7:4F:7D:22:&#xa;                37:A3:A6:2D:E1:41:9D:98:7A:C1:81:CD:C4:FA:5D:46:&#xa;                DC:35:24:45:32:33:76&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 12:F1:4E:34:BD:53:72:4C:84:06:19:C3:8F:3F:7A:13:&#xa;                F8:E7:B5:62:87:88:9C:6D:30:05:84:EB:E5:86:26:3A&#xa;    Timestamp : Jul  9 18:36:29.611 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:58:3B:3C:95:08:7E:B1:11:F4:86:11:F3:&#xa;                95:19:A9:22:30:4A:B4:B0:ED:50:DA:F1:D2:C1:C2:04:&#xa;                EF:AA:6D:7A:02:21:00:D1:15:15:3F:A0:33:B9:B1:32:&#xa;                CE:8D:1C:47:C5:5D:21:24:64:37:8F:C8:17:D5:85:73:&#xa;                15:E1:D7:D2:89:50:7F</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-07-09T00:00:00</elem>
+<elem key="notAfter">2025-07-09T23:59:59</elem>
+</table>
+<elem key="md5">de5ecb8d1e17b3b1878ce3a173a4f77e</elem>
+<elem key="sha1">3dbac85af2449af3b24f7b26c32980ccdd3180eb</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIH+jCCBuKgAwIBAgIRAMfhSHXT2Yk85lCsM1eBaCQwDQYJKoZIhvcNAQELBQAw&#xa;gZYxCzAJBgNVBAYTAkdCMRswGQYDVQQIExJHcmVhdGVyIE1hbmNoZXN0ZXIxEDAO&#xa;BgNVBAcTB1NhbGZvcmQxGjAYBgNVBAoTEUNPTU9ETyBDQSBMaW1pdGVkMTwwOgYD&#xa;VQQDEzNDT01PRE8gUlNBIE9yZ2FuaXphdGlvbiBWYWxpZGF0aW9uIFNlY3VyZSBT&#xa;ZXJ2ZXIgQ0EwHhcNMjQwNzA5MDAwMDAwWhcNMjUwNzA5MjM1OTU5WjB6MQswCQYD&#xa;VQQGEwJVUzEWMBQGA1UECBMNTWFzc2FjaHVzZXR0czExMC8GA1UEChMoUHJlc2lk&#xa;ZW50IGFuZCBGZWxsb3dzIG9mIEhhcnZhcmQgQ29sbGVnZTEgMB4GA1UEAxMXbWFp&#xa;bHNydi5jaHMuaGFydmFyZC5lZHUwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIK&#xa;AoICAQDHuFPOQdevYBkBA05SoPnw35T1O9nhPripLCnztFO89qo7AHyVnopGKpWV&#xa;tb5Z7uxq84vvc5TZ6b10n4QJSdiJjpCnoRTzPTjYaQQibe31WN+ReRnlfPrzzSLx&#xa;+VEEJczVxd/VcZF2ByxdXGD8TS9A7L/v4M3mGFg2U5svI22yfzN5I2Y9IfS9uXxE&#xa;ie7R8hTcWY3Kbdv4k/X+YqL+QVOCe/zJ5d0BEyW/Ez/QNOPhSIOTMUg0u6LSoKSJ&#xa;4Ce23jiYxijON95q96JqnD8NilOeTXLfwQiRhsr1lgBz+/vNNoneYx06Oc7aaAqD&#xa;TdJe6J3m0wNlFr0FZ095T3BvigKLoNUY+71ecT/+T34yMzjC8xjMjGOeaP6eIor0&#xa;wVOBH1+y0hsk7Svm3eQcDAO/HiOpkfXWzR6vkYj4fy9MjsGoxGzm6/62dY5X+0B9&#xa;QV6XO8GI5TRRNlIWdDymPEqIAOc63lSGUruTP8IuMeX0WLkIRtoGCg3fJ6CMR62u&#xa;PPyfF9alpRqqj5wFCJ7fkCgRF19RHoloEYgW7ZGnxPyNdswB6PCVJ1LmGyVJOxkM&#xa;IgrlP5nCgP8x50p8JphW2mAP/IDNugyeXG9avDJw8AO7ZNNVSXJgwlFPuR8nnIeU&#xa;SzRcbiNbCL6Mj1kR9fpm6JdPqo8khOD5wZKVqxK4LjDwmrJG0wIDAQABo4IDXDCC&#xa;A1gwHwYDVR0jBBgwFoAUmvMr2s+tT7YvuypISCoStxtCwSQwHQYDVR0OBBYEFKQ3&#xa;WkpsouzatuC5TxNQzjjnJKznMA4GA1UdDwEB/wQEAwIFoDAMBgNVHRMBAf8EAjAA&#xa;MB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjBKBgNVHSAEQzBBMDUGDCsG&#xa;AQQBsjEBAgEDBDAlMCMGCCsGAQUFBwIBFhdodHRwczovL3NlY3RpZ28uY29tL0NQ&#xa;UzAIBgZngQwBAgIwWgYDVR0fBFMwUTBPoE2gS4ZJaHR0cDovL2NybC5jb21vZG9j&#xa;YS5jb20vQ09NT0RPUlNBT3JnYW5pemF0aW9uVmFsaWRhdGlvblNlY3VyZVNlcnZl&#xa;ckNBLmNybDCBiwYIKwYBBQUHAQEEfzB9MFUGCCsGAQUFBzAChklodHRwOi8vY3J0&#xa;LmNvbW9kb2NhLmNvbS9DT01PRE9SU0FPcmdhbml6YXRpb25WYWxpZGF0aW9uU2Vj&#xa;dXJlU2VydmVyQ0EuY3J0MCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5jb21vZG9j&#xa;YS5jb20wIgYDVR0RBBswGYIXbWFpbHNydi5jaHMuaGFydmFyZC5lZHUwggF9Bgor&#xa;BgEEAdZ5AgQCBIIBbQSCAWkBZwB1AN3cyjSV1+EWBeeVMvrHn/g9HFDf2wA6FBJ2&#xa;Ciysu8gqAAABkJjIakwAAAQDAEYwRAIgQlVZg+1+ramMgugjUQ6W+2/gcDygRbUK&#xa;M7vgsM1mm0ECIHneTEi91tSTDNtwDoXqFFzenEPsLXzhdzcJQnurhCAJAHYADeHy&#xa;MCvTDcFAYhIJ6lUu/Ed0fLHX6TDvDkIetH5OqjQAAAGQmMhqLgAABAMARzBFAiBB&#xa;pnvZVUb3pijLb3DAL7g7R5uoGpE4GO0IQQy1plkZmAIhALfwNNUS5099Ijejpi3h&#xa;QZ2YesGBzcT6XUbcNSRFMjN2AHYAEvFONL1TckyEBhnDjz96E/jntWKHiJxtMAWE&#xa;6+WGJjoAAAGQmMhqKwAABAMARzBFAiBYOzyVCH6xEfSGEfOVGakiMEq0sO1Q2vHS&#xa;wcIE76ptegIhANEVFT+gM7mxMs6NHEfFXSEkZDePyBfVhXMV4dfSiVB/MA0GCSqG&#xa;SIb3DQEBCwUAA4IBAQBnGIFnmvEDTLMse9IKTE0heeHbm0rm9AXNLESLFU2ht3lu&#xa;K6AG9SmhTZ+/F0SpFCv8qx3i8/9RLVc9V4RL4qC3zzK3jRkX2pJ+kPGWP5VaMTQf&#xa;TF6uFXjVhOMt5G8Q5BklFICGP6iSOsySUGX9WyOa3bqzgn/48lIKlSPwcwavPI1v&#xa;s+PsB3X4Pn2OKLMVk2RqIl2j91Cj3qjb24t0IQ0cGSNNKrvRw182Q0xQ0hN0bD50&#xa;55fQAJmhysMEYuNk5up7uKDvV+bbFXAMZuSDrvAoR1vdbgQ04OQCmSQFGiVZCwBp&#xa;hEALRKWdBYZNsa3y55OT5gQh24wEyMKprcil1EHV&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Did not follow redirect to https://mail.chs.harvard.edu/"><elem key="redirect_url">https://mail.chs.harvard.edu/</elem>
+</script></port>
+<port protocol="tcp" portid="81"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="hosts2-ns" method="table" conf="3"/></port>
+<port protocol="tcp" portid="143"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="imap" product="Dovecot imapd" extrainfo="Ubuntu" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:dovecot:dovecot</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="imap-capabilities" output="ID LOGINDISABLEDA0001 more have capabilities IDLE listed post-login Pre-login LITERAL+ STARTTLS ENABLE IMAP4rev1 LOGIN-REFERRALS OK SASL-IR"/><script id="ssl-cert" output="Subject: commonName=mailsrv.chs.harvard.edu/organizationName=President and Fellows of Harvard College/stateOrProvinceName=Massachusetts/countryName=US&#xa;Subject Alternative Name: DNS:mailsrv.chs.harvard.edu&#xa;Issuer: commonName=COMODO RSA Organization Validation Secure Server CA/organizationName=COMODO CA Limited/stateOrProvinceName=Greater Manchester/countryName=GB&#xa;Public Key type: rsa&#xa;Public Key bits: 4096&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-07-09T00:00:00&#xa;Not valid after:  2025-07-09T23:59:59&#xa;MD5:   de5e cb8d 1e17 b3b1 878c e3a1 73a4 f77e&#xa;SHA-1: 3dba c85a f244 9af3 b24f 7b26 c329 80cc dd31 80eb"><table key="subject">
+<elem key="commonName">mailsrv.chs.harvard.edu</elem>
+<elem key="stateOrProvinceName">Massachusetts</elem>
+<elem key="organizationName">President and Fellows of Harvard College</elem>
+<elem key="countryName">US</elem>
+</table>
+<table key="issuer">
+<elem key="stateOrProvinceName">Greater Manchester</elem>
+<elem key="countryName">GB</elem>
+<elem key="commonName">COMODO RSA Organization Validation Secure Server CA</elem>
+<elem key="organizationName">COMODO CA Limited</elem>
+<elem key="localityName">Salford</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">4096</elem>
+<elem key="type">rsa</elem>
+<elem key="modulus">BIGNUM: 0x55f6329c91f8</elem>
+<elem key="exponent">BIGNUM: 0x55f6329828c8</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">9A:F3:2B:DA:CF:AD:4F:B6:2F:BB:2A:48:48:2A:12:B7:1B:42:C1:24</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">A4:37:5A:4A:6C:A2:EC:DA:B6:E0:B9:4F:13:50:CE:38:E7:24:AC:E7</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">Policy: 1.3.6.1.4.1.6449.1.2.1.3.4&#xa;  CPS: https://sectigo.com/CPS&#xa;Policy: 2.23.140.1.2.2</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Full Name:&#xa;  URI:http://crl.comodoca.com/COMODORSAOrganizationValidationSecureServerCA.crl</elem>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+</table>
+<table>
+<elem key="value">CA Issuers - URI:http://crt.comodoca.com/COMODORSAOrganizationValidationSecureServerCA.crt&#xa;OCSP - URI:http://ocsp.comodoca.com</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">DNS:mailsrv.chs.harvard.edu</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : DD:DC:CA:34:95:D7:E1:16:05:E7:95:32:FA:C7:9F:F8:&#xa;                3D:1C:50:DF:DB:00:3A:14:12:76:0A:2C:AC:BB:C8:2A&#xa;    Timestamp : Jul  9 18:36:29.644 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:42:55:59:83:ED:7E:AD:A9:8C:82:E8:23:&#xa;                51:0E:96:FB:6F:E0:70:3C:A0:45:B5:0A:33:BB:E0:B0:&#xa;                CD:66:9B:41:02:20:79:DE:4C:48:BD:D6:D4:93:0C:DB:&#xa;                70:0E:85:EA:14:5C:DE:9C:43:EC:2D:7C:E1:77:37:09:&#xa;                42:7B:AB:84:20:09&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 0D:E1:F2:30:2B:D3:0D:C1:40:62:12:09:EA:55:2E:FC:&#xa;                47:74:7C:B1:D7:E9:30:EF:0E:42:1E:B4:7E:4E:AA:34&#xa;    Timestamp : Jul  9 18:36:29.614 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:41:A6:7B:D9:55:46:F7:A6:28:CB:6F:70:&#xa;                C0:2F:B8:3B:47:9B:A8:1A:91:38:18:ED:08:41:0C:B5:&#xa;                A6:59:19:98:02:21:00:B7:F0:34:D5:12:E7:4F:7D:22:&#xa;                37:A3:A6:2D:E1:41:9D:98:7A:C1:81:CD:C4:FA:5D:46:&#xa;                DC:35:24:45:32:33:76&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 12:F1:4E:34:BD:53:72:4C:84:06:19:C3:8F:3F:7A:13:&#xa;                F8:E7:B5:62:87:88:9C:6D:30:05:84:EB:E5:86:26:3A&#xa;    Timestamp : Jul  9 18:36:29.611 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:58:3B:3C:95:08:7E:B1:11:F4:86:11:F3:&#xa;                95:19:A9:22:30:4A:B4:B0:ED:50:DA:F1:D2:C1:C2:04:&#xa;                EF:AA:6D:7A:02:21:00:D1:15:15:3F:A0:33:B9:B1:32:&#xa;                CE:8D:1C:47:C5:5D:21:24:64:37:8F:C8:17:D5:85:73:&#xa;                15:E1:D7:D2:89:50:7F</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-07-09T00:00:00</elem>
+<elem key="notAfter">2025-07-09T23:59:59</elem>
+</table>
+<elem key="md5">de5ecb8d1e17b3b1878ce3a173a4f77e</elem>
+<elem key="sha1">3dbac85af2449af3b24f7b26c32980ccdd3180eb</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIH+jCCBuKgAwIBAgIRAMfhSHXT2Yk85lCsM1eBaCQwDQYJKoZIhvcNAQELBQAw&#xa;gZYxCzAJBgNVBAYTAkdCMRswGQYDVQQIExJHcmVhdGVyIE1hbmNoZXN0ZXIxEDAO&#xa;BgNVBAcTB1NhbGZvcmQxGjAYBgNVBAoTEUNPTU9ETyBDQSBMaW1pdGVkMTwwOgYD&#xa;VQQDEzNDT01PRE8gUlNBIE9yZ2FuaXphdGlvbiBWYWxpZGF0aW9uIFNlY3VyZSBT&#xa;ZXJ2ZXIgQ0EwHhcNMjQwNzA5MDAwMDAwWhcNMjUwNzA5MjM1OTU5WjB6MQswCQYD&#xa;VQQGEwJVUzEWMBQGA1UECBMNTWFzc2FjaHVzZXR0czExMC8GA1UEChMoUHJlc2lk&#xa;ZW50IGFuZCBGZWxsb3dzIG9mIEhhcnZhcmQgQ29sbGVnZTEgMB4GA1UEAxMXbWFp&#xa;bHNydi5jaHMuaGFydmFyZC5lZHUwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIK&#xa;AoICAQDHuFPOQdevYBkBA05SoPnw35T1O9nhPripLCnztFO89qo7AHyVnopGKpWV&#xa;tb5Z7uxq84vvc5TZ6b10n4QJSdiJjpCnoRTzPTjYaQQibe31WN+ReRnlfPrzzSLx&#xa;+VEEJczVxd/VcZF2ByxdXGD8TS9A7L/v4M3mGFg2U5svI22yfzN5I2Y9IfS9uXxE&#xa;ie7R8hTcWY3Kbdv4k/X+YqL+QVOCe/zJ5d0BEyW/Ez/QNOPhSIOTMUg0u6LSoKSJ&#xa;4Ce23jiYxijON95q96JqnD8NilOeTXLfwQiRhsr1lgBz+/vNNoneYx06Oc7aaAqD&#xa;TdJe6J3m0wNlFr0FZ095T3BvigKLoNUY+71ecT/+T34yMzjC8xjMjGOeaP6eIor0&#xa;wVOBH1+y0hsk7Svm3eQcDAO/HiOpkfXWzR6vkYj4fy9MjsGoxGzm6/62dY5X+0B9&#xa;QV6XO8GI5TRRNlIWdDymPEqIAOc63lSGUruTP8IuMeX0WLkIRtoGCg3fJ6CMR62u&#xa;PPyfF9alpRqqj5wFCJ7fkCgRF19RHoloEYgW7ZGnxPyNdswB6PCVJ1LmGyVJOxkM&#xa;IgrlP5nCgP8x50p8JphW2mAP/IDNugyeXG9avDJw8AO7ZNNVSXJgwlFPuR8nnIeU&#xa;SzRcbiNbCL6Mj1kR9fpm6JdPqo8khOD5wZKVqxK4LjDwmrJG0wIDAQABo4IDXDCC&#xa;A1gwHwYDVR0jBBgwFoAUmvMr2s+tT7YvuypISCoStxtCwSQwHQYDVR0OBBYEFKQ3&#xa;WkpsouzatuC5TxNQzjjnJKznMA4GA1UdDwEB/wQEAwIFoDAMBgNVHRMBAf8EAjAA&#xa;MB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjBKBgNVHSAEQzBBMDUGDCsG&#xa;AQQBsjEBAgEDBDAlMCMGCCsGAQUFBwIBFhdodHRwczovL3NlY3RpZ28uY29tL0NQ&#xa;UzAIBgZngQwBAgIwWgYDVR0fBFMwUTBPoE2gS4ZJaHR0cDovL2NybC5jb21vZG9j&#xa;YS5jb20vQ09NT0RPUlNBT3JnYW5pemF0aW9uVmFsaWRhdGlvblNlY3VyZVNlcnZl&#xa;ckNBLmNybDCBiwYIKwYBBQUHAQEEfzB9MFUGCCsGAQUFBzAChklodHRwOi8vY3J0&#xa;LmNvbW9kb2NhLmNvbS9DT01PRE9SU0FPcmdhbml6YXRpb25WYWxpZGF0aW9uU2Vj&#xa;dXJlU2VydmVyQ0EuY3J0MCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5jb21vZG9j&#xa;YS5jb20wIgYDVR0RBBswGYIXbWFpbHNydi5jaHMuaGFydmFyZC5lZHUwggF9Bgor&#xa;BgEEAdZ5AgQCBIIBbQSCAWkBZwB1AN3cyjSV1+EWBeeVMvrHn/g9HFDf2wA6FBJ2&#xa;Ciysu8gqAAABkJjIakwAAAQDAEYwRAIgQlVZg+1+ramMgugjUQ6W+2/gcDygRbUK&#xa;M7vgsM1mm0ECIHneTEi91tSTDNtwDoXqFFzenEPsLXzhdzcJQnurhCAJAHYADeHy&#xa;MCvTDcFAYhIJ6lUu/Ed0fLHX6TDvDkIetH5OqjQAAAGQmMhqLgAABAMARzBFAiBB&#xa;pnvZVUb3pijLb3DAL7g7R5uoGpE4GO0IQQy1plkZmAIhALfwNNUS5099Ijejpi3h&#xa;QZ2YesGBzcT6XUbcNSRFMjN2AHYAEvFONL1TckyEBhnDjz96E/jntWKHiJxtMAWE&#xa;6+WGJjoAAAGQmMhqKwAABAMARzBFAiBYOzyVCH6xEfSGEfOVGakiMEq0sO1Q2vHS&#xa;wcIE76ptegIhANEVFT+gM7mxMs6NHEfFXSEkZDePyBfVhXMV4dfSiVB/MA0GCSqG&#xa;SIb3DQEBCwUAA4IBAQBnGIFnmvEDTLMse9IKTE0heeHbm0rm9AXNLESLFU2ht3lu&#xa;K6AG9SmhTZ+/F0SpFCv8qx3i8/9RLVc9V4RL4qC3zzK3jRkX2pJ+kPGWP5VaMTQf&#xa;TF6uFXjVhOMt5G8Q5BklFICGP6iSOsySUGX9WyOa3bqzgn/48lIKlSPwcwavPI1v&#xa;s+PsB3X4Pn2OKLMVk2RqIl2j91Cj3qjb24t0IQ0cGSNNKrvRw182Q0xQ0hN0bD50&#xa;55fQAJmhysMEYuNk5up7uKDvV+bbFXAMZuSDrvAoR1vdbgQ04OQCmSQFGiVZCwBp&#xa;hEALRKWdBYZNsa3y55OT5gQh24wEyMKprcil1EHV&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+</table>
+</script><script id="http-robots.txt" output="1 disallowed entry &#xa;/"/><script id="http-title" output="Site doesn&apos;t have a title (text/html)."></script><script id="ssl-cert" output="Subject: commonName=mailsrv.chs.harvard.edu/organizationName=President and Fellows of Harvard College/stateOrProvinceName=Massachusetts/countryName=US&#xa;Subject Alternative Name: DNS:mailsrv.chs.harvard.edu&#xa;Issuer: commonName=COMODO RSA Organization Validation Secure Server CA/organizationName=COMODO CA Limited/stateOrProvinceName=Greater Manchester/countryName=GB&#xa;Public Key type: rsa&#xa;Public Key bits: 4096&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-07-09T00:00:00&#xa;Not valid after:  2025-07-09T23:59:59&#xa;MD5:   de5e cb8d 1e17 b3b1 878c e3a1 73a4 f77e&#xa;SHA-1: 3dba c85a f244 9af3 b24f 7b26 c329 80cc dd31 80eb"><table key="subject">
+<elem key="commonName">mailsrv.chs.harvard.edu</elem>
+<elem key="stateOrProvinceName">Massachusetts</elem>
+<elem key="organizationName">President and Fellows of Harvard College</elem>
+<elem key="countryName">US</elem>
+</table>
+<table key="issuer">
+<elem key="stateOrProvinceName">Greater Manchester</elem>
+<elem key="countryName">GB</elem>
+<elem key="commonName">COMODO RSA Organization Validation Secure Server CA</elem>
+<elem key="organizationName">COMODO CA Limited</elem>
+<elem key="localityName">Salford</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">4096</elem>
+<elem key="type">rsa</elem>
+<elem key="modulus">BIGNUM: 0x55f6329804d8</elem>
+<elem key="exponent">BIGNUM: 0x55f63298dbc8</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">9A:F3:2B:DA:CF:AD:4F:B6:2F:BB:2A:48:48:2A:12:B7:1B:42:C1:24</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">A4:37:5A:4A:6C:A2:EC:DA:B6:E0:B9:4F:13:50:CE:38:E7:24:AC:E7</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">Policy: 1.3.6.1.4.1.6449.1.2.1.3.4&#xa;  CPS: https://sectigo.com/CPS&#xa;Policy: 2.23.140.1.2.2</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Full Name:&#xa;  URI:http://crl.comodoca.com/COMODORSAOrganizationValidationSecureServerCA.crl</elem>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+</table>
+<table>
+<elem key="value">CA Issuers - URI:http://crt.comodoca.com/COMODORSAOrganizationValidationSecureServerCA.crt&#xa;OCSP - URI:http://ocsp.comodoca.com</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">DNS:mailsrv.chs.harvard.edu</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : DD:DC:CA:34:95:D7:E1:16:05:E7:95:32:FA:C7:9F:F8:&#xa;                3D:1C:50:DF:DB:00:3A:14:12:76:0A:2C:AC:BB:C8:2A&#xa;    Timestamp : Jul  9 18:36:29.644 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:42:55:59:83:ED:7E:AD:A9:8C:82:E8:23:&#xa;                51:0E:96:FB:6F:E0:70:3C:A0:45:B5:0A:33:BB:E0:B0:&#xa;                CD:66:9B:41:02:20:79:DE:4C:48:BD:D6:D4:93:0C:DB:&#xa;                70:0E:85:EA:14:5C:DE:9C:43:EC:2D:7C:E1:77:37:09:&#xa;                42:7B:AB:84:20:09&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 0D:E1:F2:30:2B:D3:0D:C1:40:62:12:09:EA:55:2E:FC:&#xa;                47:74:7C:B1:D7:E9:30:EF:0E:42:1E:B4:7E:4E:AA:34&#xa;    Timestamp : Jul  9 18:36:29.614 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:41:A6:7B:D9:55:46:F7:A6:28:CB:6F:70:&#xa;                C0:2F:B8:3B:47:9B:A8:1A:91:38:18:ED:08:41:0C:B5:&#xa;                A6:59:19:98:02:21:00:B7:F0:34:D5:12:E7:4F:7D:22:&#xa;                37:A3:A6:2D:E1:41:9D:98:7A:C1:81:CD:C4:FA:5D:46:&#xa;                DC:35:24:45:32:33:76&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 12:F1:4E:34:BD:53:72:4C:84:06:19:C3:8F:3F:7A:13:&#xa;                F8:E7:B5:62:87:88:9C:6D:30:05:84:EB:E5:86:26:3A&#xa;    Timestamp : Jul  9 18:36:29.611 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:58:3B:3C:95:08:7E:B1:11:F4:86:11:F3:&#xa;                95:19:A9:22:30:4A:B4:B0:ED:50:DA:F1:D2:C1:C2:04:&#xa;                EF:AA:6D:7A:02:21:00:D1:15:15:3F:A0:33:B9:B1:32:&#xa;                CE:8D:1C:47:C5:5D:21:24:64:37:8F:C8:17:D5:85:73:&#xa;                15:E1:D7:D2:89:50:7F</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-07-09T00:00:00</elem>
+<elem key="notAfter">2025-07-09T23:59:59</elem>
+</table>
+<elem key="md5">de5ecb8d1e17b3b1878ce3a173a4f77e</elem>
+<elem key="sha1">3dbac85af2449af3b24f7b26c32980ccdd3180eb</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIH+jCCBuKgAwIBAgIRAMfhSHXT2Yk85lCsM1eBaCQwDQYJKoZIhvcNAQELBQAw&#xa;gZYxCzAJBgNVBAYTAkdCMRswGQYDVQQIExJHcmVhdGVyIE1hbmNoZXN0ZXIxEDAO&#xa;BgNVBAcTB1NhbGZvcmQxGjAYBgNVBAoTEUNPTU9ETyBDQSBMaW1pdGVkMTwwOgYD&#xa;VQQDEzNDT01PRE8gUlNBIE9yZ2FuaXphdGlvbiBWYWxpZGF0aW9uIFNlY3VyZSBT&#xa;ZXJ2ZXIgQ0EwHhcNMjQwNzA5MDAwMDAwWhcNMjUwNzA5MjM1OTU5WjB6MQswCQYD&#xa;VQQGEwJVUzEWMBQGA1UECBMNTWFzc2FjaHVzZXR0czExMC8GA1UEChMoUHJlc2lk&#xa;ZW50IGFuZCBGZWxsb3dzIG9mIEhhcnZhcmQgQ29sbGVnZTEgMB4GA1UEAxMXbWFp&#xa;bHNydi5jaHMuaGFydmFyZC5lZHUwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIK&#xa;AoICAQDHuFPOQdevYBkBA05SoPnw35T1O9nhPripLCnztFO89qo7AHyVnopGKpWV&#xa;tb5Z7uxq84vvc5TZ6b10n4QJSdiJjpCnoRTzPTjYaQQibe31WN+ReRnlfPrzzSLx&#xa;+VEEJczVxd/VcZF2ByxdXGD8TS9A7L/v4M3mGFg2U5svI22yfzN5I2Y9IfS9uXxE&#xa;ie7R8hTcWY3Kbdv4k/X+YqL+QVOCe/zJ5d0BEyW/Ez/QNOPhSIOTMUg0u6LSoKSJ&#xa;4Ce23jiYxijON95q96JqnD8NilOeTXLfwQiRhsr1lgBz+/vNNoneYx06Oc7aaAqD&#xa;TdJe6J3m0wNlFr0FZ095T3BvigKLoNUY+71ecT/+T34yMzjC8xjMjGOeaP6eIor0&#xa;wVOBH1+y0hsk7Svm3eQcDAO/HiOpkfXWzR6vkYj4fy9MjsGoxGzm6/62dY5X+0B9&#xa;QV6XO8GI5TRRNlIWdDymPEqIAOc63lSGUruTP8IuMeX0WLkIRtoGCg3fJ6CMR62u&#xa;PPyfF9alpRqqj5wFCJ7fkCgRF19RHoloEYgW7ZGnxPyNdswB6PCVJ1LmGyVJOxkM&#xa;IgrlP5nCgP8x50p8JphW2mAP/IDNugyeXG9avDJw8AO7ZNNVSXJgwlFPuR8nnIeU&#xa;SzRcbiNbCL6Mj1kR9fpm6JdPqo8khOD5wZKVqxK4LjDwmrJG0wIDAQABo4IDXDCC&#xa;A1gwHwYDVR0jBBgwFoAUmvMr2s+tT7YvuypISCoStxtCwSQwHQYDVR0OBBYEFKQ3&#xa;WkpsouzatuC5TxNQzjjnJKznMA4GA1UdDwEB/wQEAwIFoDAMBgNVHRMBAf8EAjAA&#xa;MB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjBKBgNVHSAEQzBBMDUGDCsG&#xa;AQQBsjEBAgEDBDAlMCMGCCsGAQUFBwIBFhdodHRwczovL3NlY3RpZ28uY29tL0NQ&#xa;UzAIBgZngQwBAgIwWgYDVR0fBFMwUTBPoE2gS4ZJaHR0cDovL2NybC5jb21vZG9j&#xa;YS5jb20vQ09NT0RPUlNBT3JnYW5pemF0aW9uVmFsaWRhdGlvblNlY3VyZVNlcnZl&#xa;ckNBLmNybDCBiwYIKwYBBQUHAQEEfzB9MFUGCCsGAQUFBzAChklodHRwOi8vY3J0&#xa;LmNvbW9kb2NhLmNvbS9DT01PRE9SU0FPcmdhbml6YXRpb25WYWxpZGF0aW9uU2Vj&#xa;dXJlU2VydmVyQ0EuY3J0MCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5jb21vZG9j&#xa;YS5jb20wIgYDVR0RBBswGYIXbWFpbHNydi5jaHMuaGFydmFyZC5lZHUwggF9Bgor&#xa;BgEEAdZ5AgQCBIIBbQSCAWkBZwB1AN3cyjSV1+EWBeeVMvrHn/g9HFDf2wA6FBJ2&#xa;Ciysu8gqAAABkJjIakwAAAQDAEYwRAIgQlVZg+1+ramMgugjUQ6W+2/gcDygRbUK&#xa;M7vgsM1mm0ECIHneTEi91tSTDNtwDoXqFFzenEPsLXzhdzcJQnurhCAJAHYADeHy&#xa;MCvTDcFAYhIJ6lUu/Ed0fLHX6TDvDkIetH5OqjQAAAGQmMhqLgAABAMARzBFAiBB&#xa;pnvZVUb3pijLb3DAL7g7R5uoGpE4GO0IQQy1plkZmAIhALfwNNUS5099Ijejpi3h&#xa;QZ2YesGBzcT6XUbcNSRFMjN2AHYAEvFONL1TckyEBhnDjz96E/jntWKHiJxtMAWE&#xa;6+WGJjoAAAGQmMhqKwAABAMARzBFAiBYOzyVCH6xEfSGEfOVGakiMEq0sO1Q2vHS&#xa;wcIE76ptegIhANEVFT+gM7mxMs6NHEfFXSEkZDePyBfVhXMV4dfSiVB/MA0GCSqG&#xa;SIb3DQEBCwUAA4IBAQBnGIFnmvEDTLMse9IKTE0heeHbm0rm9AXNLESLFU2ht3lu&#xa;K6AG9SmhTZ+/F0SpFCv8qx3i8/9RLVc9V4RL4qC3zzK3jRkX2pJ+kPGWP5VaMTQf&#xa;TF6uFXjVhOMt5G8Q5BklFICGP6iSOsySUGX9WyOa3bqzgn/48lIKlSPwcwavPI1v&#xa;s+PsB3X4Pn2OKLMVk2RqIl2j91Cj3qjb24t0IQ0cGSNNKrvRw182Q0xQ0hN0bD50&#xa;55fQAJmhysMEYuNk5up7uKDvV+bbFXAMZuSDrvAoR1vdbgQ04OQCmSQFGiVZCwBp&#xa;hEALRKWdBYZNsa3y55OT5gQh24wEyMKprcil1EHV&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="465"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtp" product="Postfix smtpd" hostname=" mailsrv.chs.harvard.edu" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:postfix:postfix</cpe></service><script id="smtp-commands" output="mailsrv.chs.harvard.edu, PIPELINING, SIZE 208728640, ETRN, AUTH PLAIN LOGIN, ENHANCEDSTATUSCODES, 8BITMIME, DSN, CHUNKING, "/><script id="ssl-cert" output="Subject: commonName=mailsrv.chs.harvard.edu/organizationName=President and Fellows of Harvard College/stateOrProvinceName=Massachusetts/countryName=US&#xa;Subject Alternative Name: DNS:mailsrv.chs.harvard.edu&#xa;Issuer: commonName=COMODO RSA Organization Validation Secure Server CA/organizationName=COMODO CA Limited/stateOrProvinceName=Greater Manchester/countryName=GB&#xa;Public Key type: rsa&#xa;Public Key bits: 4096&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-07-09T00:00:00&#xa;Not valid after:  2025-07-09T23:59:59&#xa;MD5:   de5e cb8d 1e17 b3b1 878c e3a1 73a4 f77e&#xa;SHA-1: 3dba c85a f244 9af3 b24f 7b26 c329 80cc dd31 80eb"><table key="subject">
+<elem key="commonName">mailsrv.chs.harvard.edu</elem>
+<elem key="stateOrProvinceName">Massachusetts</elem>
+<elem key="organizationName">President and Fellows of Harvard College</elem>
+<elem key="countryName">US</elem>
+</table>
+<table key="issuer">
+<elem key="stateOrProvinceName">Greater Manchester</elem>
+<elem key="countryName">GB</elem>
+<elem key="commonName">COMODO RSA Organization Validation Secure Server CA</elem>
+<elem key="organizationName">COMODO CA Limited</elem>
+<elem key="localityName">Salford</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">4096</elem>
+<elem key="type">rsa</elem>
+<elem key="modulus">BIGNUM: 0x55f6329cfc48</elem>
+<elem key="exponent">BIGNUM: 0x55f6329ead58</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">9A:F3:2B:DA:CF:AD:4F:B6:2F:BB:2A:48:48:2A:12:B7:1B:42:C1:24</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">A4:37:5A:4A:6C:A2:EC:DA:B6:E0:B9:4F:13:50:CE:38:E7:24:AC:E7</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">Policy: 1.3.6.1.4.1.6449.1.2.1.3.4&#xa;  CPS: https://sectigo.com/CPS&#xa;Policy: 2.23.140.1.2.2</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Full Name:&#xa;  URI:http://crl.comodoca.com/COMODORSAOrganizationValidationSecureServerCA.crl</elem>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+</table>
+<table>
+<elem key="value">CA Issuers - URI:http://crt.comodoca.com/COMODORSAOrganizationValidationSecureServerCA.crt&#xa;OCSP - URI:http://ocsp.comodoca.com</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">DNS:mailsrv.chs.harvard.edu</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : DD:DC:CA:34:95:D7:E1:16:05:E7:95:32:FA:C7:9F:F8:&#xa;                3D:1C:50:DF:DB:00:3A:14:12:76:0A:2C:AC:BB:C8:2A&#xa;    Timestamp : Jul  9 18:36:29.644 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:42:55:59:83:ED:7E:AD:A9:8C:82:E8:23:&#xa;                51:0E:96:FB:6F:E0:70:3C:A0:45:B5:0A:33:BB:E0:B0:&#xa;                CD:66:9B:41:02:20:79:DE:4C:48:BD:D6:D4:93:0C:DB:&#xa;                70:0E:85:EA:14:5C:DE:9C:43:EC:2D:7C:E1:77:37:09:&#xa;                42:7B:AB:84:20:09&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 0D:E1:F2:30:2B:D3:0D:C1:40:62:12:09:EA:55:2E:FC:&#xa;                47:74:7C:B1:D7:E9:30:EF:0E:42:1E:B4:7E:4E:AA:34&#xa;    Timestamp : Jul  9 18:36:29.614 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:41:A6:7B:D9:55:46:F7:A6:28:CB:6F:70:&#xa;                C0:2F:B8:3B:47:9B:A8:1A:91:38:18:ED:08:41:0C:B5:&#xa;                A6:59:19:98:02:21:00:B7:F0:34:D5:12:E7:4F:7D:22:&#xa;                37:A3:A6:2D:E1:41:9D:98:7A:C1:81:CD:C4:FA:5D:46:&#xa;                DC:35:24:45:32:33:76&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 12:F1:4E:34:BD:53:72:4C:84:06:19:C3:8F:3F:7A:13:&#xa;                F8:E7:B5:62:87:88:9C:6D:30:05:84:EB:E5:86:26:3A&#xa;    Timestamp : Jul  9 18:36:29.611 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:58:3B:3C:95:08:7E:B1:11:F4:86:11:F3:&#xa;                95:19:A9:22:30:4A:B4:B0:ED:50:DA:F1:D2:C1:C2:04:&#xa;                EF:AA:6D:7A:02:21:00:D1:15:15:3F:A0:33:B9:B1:32:&#xa;                CE:8D:1C:47:C5:5D:21:24:64:37:8F:C8:17:D5:85:73:&#xa;                15:E1:D7:D2:89:50:7F</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-07-09T00:00:00</elem>
+<elem key="notAfter">2025-07-09T23:59:59</elem>
+</table>
+<elem key="md5">de5ecb8d1e17b3b1878ce3a173a4f77e</elem>
+<elem key="sha1">3dbac85af2449af3b24f7b26c32980ccdd3180eb</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIH+jCCBuKgAwIBAgIRAMfhSHXT2Yk85lCsM1eBaCQwDQYJKoZIhvcNAQELBQAw&#xa;gZYxCzAJBgNVBAYTAkdCMRswGQYDVQQIExJHcmVhdGVyIE1hbmNoZXN0ZXIxEDAO&#xa;BgNVBAcTB1NhbGZvcmQxGjAYBgNVBAoTEUNPTU9ETyBDQSBMaW1pdGVkMTwwOgYD&#xa;VQQDEzNDT01PRE8gUlNBIE9yZ2FuaXphdGlvbiBWYWxpZGF0aW9uIFNlY3VyZSBT&#xa;ZXJ2ZXIgQ0EwHhcNMjQwNzA5MDAwMDAwWhcNMjUwNzA5MjM1OTU5WjB6MQswCQYD&#xa;VQQGEwJVUzEWMBQGA1UECBMNTWFzc2FjaHVzZXR0czExMC8GA1UEChMoUHJlc2lk&#xa;ZW50IGFuZCBGZWxsb3dzIG9mIEhhcnZhcmQgQ29sbGVnZTEgMB4GA1UEAxMXbWFp&#xa;bHNydi5jaHMuaGFydmFyZC5lZHUwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIK&#xa;AoICAQDHuFPOQdevYBkBA05SoPnw35T1O9nhPripLCnztFO89qo7AHyVnopGKpWV&#xa;tb5Z7uxq84vvc5TZ6b10n4QJSdiJjpCnoRTzPTjYaQQibe31WN+ReRnlfPrzzSLx&#xa;+VEEJczVxd/VcZF2ByxdXGD8TS9A7L/v4M3mGFg2U5svI22yfzN5I2Y9IfS9uXxE&#xa;ie7R8hTcWY3Kbdv4k/X+YqL+QVOCe/zJ5d0BEyW/Ez/QNOPhSIOTMUg0u6LSoKSJ&#xa;4Ce23jiYxijON95q96JqnD8NilOeTXLfwQiRhsr1lgBz+/vNNoneYx06Oc7aaAqD&#xa;TdJe6J3m0wNlFr0FZ095T3BvigKLoNUY+71ecT/+T34yMzjC8xjMjGOeaP6eIor0&#xa;wVOBH1+y0hsk7Svm3eQcDAO/HiOpkfXWzR6vkYj4fy9MjsGoxGzm6/62dY5X+0B9&#xa;QV6XO8GI5TRRNlIWdDymPEqIAOc63lSGUruTP8IuMeX0WLkIRtoGCg3fJ6CMR62u&#xa;PPyfF9alpRqqj5wFCJ7fkCgRF19RHoloEYgW7ZGnxPyNdswB6PCVJ1LmGyVJOxkM&#xa;IgrlP5nCgP8x50p8JphW2mAP/IDNugyeXG9avDJw8AO7ZNNVSXJgwlFPuR8nnIeU&#xa;SzRcbiNbCL6Mj1kR9fpm6JdPqo8khOD5wZKVqxK4LjDwmrJG0wIDAQABo4IDXDCC&#xa;A1gwHwYDVR0jBBgwFoAUmvMr2s+tT7YvuypISCoStxtCwSQwHQYDVR0OBBYEFKQ3&#xa;WkpsouzatuC5TxNQzjjnJKznMA4GA1UdDwEB/wQEAwIFoDAMBgNVHRMBAf8EAjAA&#xa;MB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjBKBgNVHSAEQzBBMDUGDCsG&#xa;AQQBsjEBAgEDBDAlMCMGCCsGAQUFBwIBFhdodHRwczovL3NlY3RpZ28uY29tL0NQ&#xa;UzAIBgZngQwBAgIwWgYDVR0fBFMwUTBPoE2gS4ZJaHR0cDovL2NybC5jb21vZG9j&#xa;YS5jb20vQ09NT0RPUlNBT3JnYW5pemF0aW9uVmFsaWRhdGlvblNlY3VyZVNlcnZl&#xa;ckNBLmNybDCBiwYIKwYBBQUHAQEEfzB9MFUGCCsGAQUFBzAChklodHRwOi8vY3J0&#xa;LmNvbW9kb2NhLmNvbS9DT01PRE9SU0FPcmdhbml6YXRpb25WYWxpZGF0aW9uU2Vj&#xa;dXJlU2VydmVyQ0EuY3J0MCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5jb21vZG9j&#xa;YS5jb20wIgYDVR0RBBswGYIXbWFpbHNydi5jaHMuaGFydmFyZC5lZHUwggF9Bgor&#xa;BgEEAdZ5AgQCBIIBbQSCAWkBZwB1AN3cyjSV1+EWBeeVMvrHn/g9HFDf2wA6FBJ2&#xa;Ciysu8gqAAABkJjIakwAAAQDAEYwRAIgQlVZg+1+ramMgugjUQ6W+2/gcDygRbUK&#xa;M7vgsM1mm0ECIHneTEi91tSTDNtwDoXqFFzenEPsLXzhdzcJQnurhCAJAHYADeHy&#xa;MCvTDcFAYhIJ6lUu/Ed0fLHX6TDvDkIetH5OqjQAAAGQmMhqLgAABAMARzBFAiBB&#xa;pnvZVUb3pijLb3DAL7g7R5uoGpE4GO0IQQy1plkZmAIhALfwNNUS5099Ijejpi3h&#xa;QZ2YesGBzcT6XUbcNSRFMjN2AHYAEvFONL1TckyEBhnDjz96E/jntWKHiJxtMAWE&#xa;6+WGJjoAAAGQmMhqKwAABAMARzBFAiBYOzyVCH6xEfSGEfOVGakiMEq0sO1Q2vHS&#xa;wcIE76ptegIhANEVFT+gM7mxMs6NHEfFXSEkZDePyBfVhXMV4dfSiVB/MA0GCSqG&#xa;SIb3DQEBCwUAA4IBAQBnGIFnmvEDTLMse9IKTE0heeHbm0rm9AXNLESLFU2ht3lu&#xa;K6AG9SmhTZ+/F0SpFCv8qx3i8/9RLVc9V4RL4qC3zzK3jRkX2pJ+kPGWP5VaMTQf&#xa;TF6uFXjVhOMt5G8Q5BklFICGP6iSOsySUGX9WyOa3bqzgn/48lIKlSPwcwavPI1v&#xa;s+PsB3X4Pn2OKLMVk2RqIl2j91Cj3qjb24t0IQ0cGSNNKrvRw182Q0xQ0hN0bD50&#xa;55fQAJmhysMEYuNk5up7uKDvV+bbFXAMZuSDrvAoR1vdbgQ04OQCmSQFGiVZCwBp&#xa;hEALRKWdBYZNsa3y55OT5gQh24wEyMKprcil1EHV&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+<port protocol="tcp" portid="587"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtp" product="Postfix smtpd" hostname=" mailsrv.chs.harvard.edu" method="probed" conf="10"><cpe>cpe:/a:postfix:postfix</cpe></service><script id="smtp-commands" output="mailsrv.chs.harvard.edu, PIPELINING, SIZE 208728640, ETRN, STARTTLS, ENHANCEDSTATUSCODES, 8BITMIME, DSN, CHUNKING, "/><script id="ssl-cert" output="Subject: commonName=mailsrv.chs.harvard.edu/organizationName=President and Fellows of Harvard College/stateOrProvinceName=Massachusetts/countryName=US&#xa;Subject Alternative Name: DNS:mailsrv.chs.harvard.edu&#xa;Issuer: commonName=COMODO RSA Organization Validation Secure Server CA/organizationName=COMODO CA Limited/stateOrProvinceName=Greater Manchester/countryName=GB&#xa;Public Key type: rsa&#xa;Public Key bits: 4096&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-07-09T00:00:00&#xa;Not valid after:  2025-07-09T23:59:59&#xa;MD5:   de5e cb8d 1e17 b3b1 878c e3a1 73a4 f77e&#xa;SHA-1: 3dba c85a f244 9af3 b24f 7b26 c329 80cc dd31 80eb"><table key="subject">
+<elem key="commonName">mailsrv.chs.harvard.edu</elem>
+<elem key="stateOrProvinceName">Massachusetts</elem>
+<elem key="organizationName">President and Fellows of Harvard College</elem>
+<elem key="countryName">US</elem>
+</table>
+<table key="issuer">
+<elem key="stateOrProvinceName">Greater Manchester</elem>
+<elem key="countryName">GB</elem>
+<elem key="commonName">COMODO RSA Organization Validation Secure Server CA</elem>
+<elem key="organizationName">COMODO CA Limited</elem>
+<elem key="localityName">Salford</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">4096</elem>
+<elem key="type">rsa</elem>
+<elem key="modulus">BIGNUM: 0x55f6329eb8c8</elem>
+<elem key="exponent">BIGNUM: 0x55f6329c1e88</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">9A:F3:2B:DA:CF:AD:4F:B6:2F:BB:2A:48:48:2A:12:B7:1B:42:C1:24</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">A4:37:5A:4A:6C:A2:EC:DA:B6:E0:B9:4F:13:50:CE:38:E7:24:AC:E7</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">Policy: 1.3.6.1.4.1.6449.1.2.1.3.4&#xa;  CPS: https://sectigo.com/CPS&#xa;Policy: 2.23.140.1.2.2</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Full Name:&#xa;  URI:http://crl.comodoca.com/COMODORSAOrganizationValidationSecureServerCA.crl</elem>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+</table>
+<table>
+<elem key="value">CA Issuers - URI:http://crt.comodoca.com/COMODORSAOrganizationValidationSecureServerCA.crt&#xa;OCSP - URI:http://ocsp.comodoca.com</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">DNS:mailsrv.chs.harvard.edu</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : DD:DC:CA:34:95:D7:E1:16:05:E7:95:32:FA:C7:9F:F8:&#xa;                3D:1C:50:DF:DB:00:3A:14:12:76:0A:2C:AC:BB:C8:2A&#xa;    Timestamp : Jul  9 18:36:29.644 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:42:55:59:83:ED:7E:AD:A9:8C:82:E8:23:&#xa;                51:0E:96:FB:6F:E0:70:3C:A0:45:B5:0A:33:BB:E0:B0:&#xa;                CD:66:9B:41:02:20:79:DE:4C:48:BD:D6:D4:93:0C:DB:&#xa;                70:0E:85:EA:14:5C:DE:9C:43:EC:2D:7C:E1:77:37:09:&#xa;                42:7B:AB:84:20:09&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 0D:E1:F2:30:2B:D3:0D:C1:40:62:12:09:EA:55:2E:FC:&#xa;                47:74:7C:B1:D7:E9:30:EF:0E:42:1E:B4:7E:4E:AA:34&#xa;    Timestamp : Jul  9 18:36:29.614 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:41:A6:7B:D9:55:46:F7:A6:28:CB:6F:70:&#xa;                C0:2F:B8:3B:47:9B:A8:1A:91:38:18:ED:08:41:0C:B5:&#xa;                A6:59:19:98:02:21:00:B7:F0:34:D5:12:E7:4F:7D:22:&#xa;                37:A3:A6:2D:E1:41:9D:98:7A:C1:81:CD:C4:FA:5D:46:&#xa;                DC:35:24:45:32:33:76&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 12:F1:4E:34:BD:53:72:4C:84:06:19:C3:8F:3F:7A:13:&#xa;                F8:E7:B5:62:87:88:9C:6D:30:05:84:EB:E5:86:26:3A&#xa;    Timestamp : Jul  9 18:36:29.611 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:58:3B:3C:95:08:7E:B1:11:F4:86:11:F3:&#xa;                95:19:A9:22:30:4A:B4:B0:ED:50:DA:F1:D2:C1:C2:04:&#xa;                EF:AA:6D:7A:02:21:00:D1:15:15:3F:A0:33:B9:B1:32:&#xa;                CE:8D:1C:47:C5:5D:21:24:64:37:8F:C8:17:D5:85:73:&#xa;                15:E1:D7:D2:89:50:7F</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-07-09T00:00:00</elem>
+<elem key="notAfter">2025-07-09T23:59:59</elem>
+</table>
+<elem key="md5">de5ecb8d1e17b3b1878ce3a173a4f77e</elem>
+<elem key="sha1">3dbac85af2449af3b24f7b26c32980ccdd3180eb</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIH+jCCBuKgAwIBAgIRAMfhSHXT2Yk85lCsM1eBaCQwDQYJKoZIhvcNAQELBQAw&#xa;gZYxCzAJBgNVBAYTAkdCMRswGQYDVQQIExJHcmVhdGVyIE1hbmNoZXN0ZXIxEDAO&#xa;BgNVBAcTB1NhbGZvcmQxGjAYBgNVBAoTEUNPTU9ETyBDQSBMaW1pdGVkMTwwOgYD&#xa;VQQDEzNDT01PRE8gUlNBIE9yZ2FuaXphdGlvbiBWYWxpZGF0aW9uIFNlY3VyZSBT&#xa;ZXJ2ZXIgQ0EwHhcNMjQwNzA5MDAwMDAwWhcNMjUwNzA5MjM1OTU5WjB6MQswCQYD&#xa;VQQGEwJVUzEWMBQGA1UECBMNTWFzc2FjaHVzZXR0czExMC8GA1UEChMoUHJlc2lk&#xa;ZW50IGFuZCBGZWxsb3dzIG9mIEhhcnZhcmQgQ29sbGVnZTEgMB4GA1UEAxMXbWFp&#xa;bHNydi5jaHMuaGFydmFyZC5lZHUwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIK&#xa;AoICAQDHuFPOQdevYBkBA05SoPnw35T1O9nhPripLCnztFO89qo7AHyVnopGKpWV&#xa;tb5Z7uxq84vvc5TZ6b10n4QJSdiJjpCnoRTzPTjYaQQibe31WN+ReRnlfPrzzSLx&#xa;+VEEJczVxd/VcZF2ByxdXGD8TS9A7L/v4M3mGFg2U5svI22yfzN5I2Y9IfS9uXxE&#xa;ie7R8hTcWY3Kbdv4k/X+YqL+QVOCe/zJ5d0BEyW/Ez/QNOPhSIOTMUg0u6LSoKSJ&#xa;4Ce23jiYxijON95q96JqnD8NilOeTXLfwQiRhsr1lgBz+/vNNoneYx06Oc7aaAqD&#xa;TdJe6J3m0wNlFr0FZ095T3BvigKLoNUY+71ecT/+T34yMzjC8xjMjGOeaP6eIor0&#xa;wVOBH1+y0hsk7Svm3eQcDAO/HiOpkfXWzR6vkYj4fy9MjsGoxGzm6/62dY5X+0B9&#xa;QV6XO8GI5TRRNlIWdDymPEqIAOc63lSGUruTP8IuMeX0WLkIRtoGCg3fJ6CMR62u&#xa;PPyfF9alpRqqj5wFCJ7fkCgRF19RHoloEYgW7ZGnxPyNdswB6PCVJ1LmGyVJOxkM&#xa;IgrlP5nCgP8x50p8JphW2mAP/IDNugyeXG9avDJw8AO7ZNNVSXJgwlFPuR8nnIeU&#xa;SzRcbiNbCL6Mj1kR9fpm6JdPqo8khOD5wZKVqxK4LjDwmrJG0wIDAQABo4IDXDCC&#xa;A1gwHwYDVR0jBBgwFoAUmvMr2s+tT7YvuypISCoStxtCwSQwHQYDVR0OBBYEFKQ3&#xa;WkpsouzatuC5TxNQzjjnJKznMA4GA1UdDwEB/wQEAwIFoDAMBgNVHRMBAf8EAjAA&#xa;MB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjBKBgNVHSAEQzBBMDUGDCsG&#xa;AQQBsjEBAgEDBDAlMCMGCCsGAQUFBwIBFhdodHRwczovL3NlY3RpZ28uY29tL0NQ&#xa;UzAIBgZngQwBAgIwWgYDVR0fBFMwUTBPoE2gS4ZJaHR0cDovL2NybC5jb21vZG9j&#xa;YS5jb20vQ09NT0RPUlNBT3JnYW5pemF0aW9uVmFsaWRhdGlvblNlY3VyZVNlcnZl&#xa;ckNBLmNybDCBiwYIKwYBBQUHAQEEfzB9MFUGCCsGAQUFBzAChklodHRwOi8vY3J0&#xa;LmNvbW9kb2NhLmNvbS9DT01PRE9SU0FPcmdhbml6YXRpb25WYWxpZGF0aW9uU2Vj&#xa;dXJlU2VydmVyQ0EuY3J0MCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5jb21vZG9j&#xa;YS5jb20wIgYDVR0RBBswGYIXbWFpbHNydi5jaHMuaGFydmFyZC5lZHUwggF9Bgor&#xa;BgEEAdZ5AgQCBIIBbQSCAWkBZwB1AN3cyjSV1+EWBeeVMvrHn/g9HFDf2wA6FBJ2&#xa;Ciysu8gqAAABkJjIakwAAAQDAEYwRAIgQlVZg+1+ramMgugjUQ6W+2/gcDygRbUK&#xa;M7vgsM1mm0ECIHneTEi91tSTDNtwDoXqFFzenEPsLXzhdzcJQnurhCAJAHYADeHy&#xa;MCvTDcFAYhIJ6lUu/Ed0fLHX6TDvDkIetH5OqjQAAAGQmMhqLgAABAMARzBFAiBB&#xa;pnvZVUb3pijLb3DAL7g7R5uoGpE4GO0IQQy1plkZmAIhALfwNNUS5099Ijejpi3h&#xa;QZ2YesGBzcT6XUbcNSRFMjN2AHYAEvFONL1TckyEBhnDjz96E/jntWKHiJxtMAWE&#xa;6+WGJjoAAAGQmMhqKwAABAMARzBFAiBYOzyVCH6xEfSGEfOVGakiMEq0sO1Q2vHS&#xa;wcIE76ptegIhANEVFT+gM7mxMs6NHEfFXSEkZDePyBfVhXMV4dfSiVB/MA0GCSqG&#xa;SIb3DQEBCwUAA4IBAQBnGIFnmvEDTLMse9IKTE0heeHbm0rm9AXNLESLFU2ht3lu&#xa;K6AG9SmhTZ+/F0SpFCv8qx3i8/9RLVc9V4RL4qC3zzK3jRkX2pJ+kPGWP5VaMTQf&#xa;TF6uFXjVhOMt5G8Q5BklFICGP6iSOsySUGX9WyOa3bqzgn/48lIKlSPwcwavPI1v&#xa;s+PsB3X4Pn2OKLMVk2RqIl2j91Cj3qjb24t0IQ0cGSNNKrvRw182Q0xQ0hN0bD50&#xa;55fQAJmhysMEYuNk5up7uKDvV+bbFXAMZuSDrvAoR1vdbgQ04OQCmSQFGiVZCwBp&#xa;hEALRKWdBYZNsa3y55OT5gQh24wEyMKprcil1EHV&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+<port protocol="tcp" portid="993"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="imaps" method="table" conf="3"/><script id="imap-capabilities" output="AUTH=PLAIN more have post-login capabilities IDLE listed Pre-login AUTH=LOGINA0001 LITERAL+ ID ENABLE IMAP4rev1 LOGIN-REFERRALS OK SASL-IR"/><script id="ssl-cert" output="Subject: commonName=mailsrv.chs.harvard.edu/organizationName=President and Fellows of Harvard College/stateOrProvinceName=Massachusetts/countryName=US&#xa;Subject Alternative Name: DNS:mailsrv.chs.harvard.edu&#xa;Issuer: commonName=COMODO RSA Organization Validation Secure Server CA/organizationName=COMODO CA Limited/stateOrProvinceName=Greater Manchester/countryName=GB&#xa;Public Key type: rsa&#xa;Public Key bits: 4096&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-07-09T00:00:00&#xa;Not valid after:  2025-07-09T23:59:59&#xa;MD5:   de5e cb8d 1e17 b3b1 878c e3a1 73a4 f77e&#xa;SHA-1: 3dba c85a f244 9af3 b24f 7b26 c329 80cc dd31 80eb"><table key="subject">
+<elem key="commonName">mailsrv.chs.harvard.edu</elem>
+<elem key="stateOrProvinceName">Massachusetts</elem>
+<elem key="organizationName">President and Fellows of Harvard College</elem>
+<elem key="countryName">US</elem>
+</table>
+<table key="issuer">
+<elem key="stateOrProvinceName">Greater Manchester</elem>
+<elem key="countryName">GB</elem>
+<elem key="commonName">COMODO RSA Organization Validation Secure Server CA</elem>
+<elem key="organizationName">COMODO CA Limited</elem>
+<elem key="localityName">Salford</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">4096</elem>
+<elem key="type">rsa</elem>
+<elem key="modulus">BIGNUM: 0x55f6329e32b8</elem>
+<elem key="exponent">BIGNUM: 0x55f6329e3958</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">9A:F3:2B:DA:CF:AD:4F:B6:2F:BB:2A:48:48:2A:12:B7:1B:42:C1:24</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">A4:37:5A:4A:6C:A2:EC:DA:B6:E0:B9:4F:13:50:CE:38:E7:24:AC:E7</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">Policy: 1.3.6.1.4.1.6449.1.2.1.3.4&#xa;  CPS: https://sectigo.com/CPS&#xa;Policy: 2.23.140.1.2.2</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Full Name:&#xa;  URI:http://crl.comodoca.com/COMODORSAOrganizationValidationSecureServerCA.crl</elem>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+</table>
+<table>
+<elem key="value">CA Issuers - URI:http://crt.comodoca.com/COMODORSAOrganizationValidationSecureServerCA.crt&#xa;OCSP - URI:http://ocsp.comodoca.com</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">DNS:mailsrv.chs.harvard.edu</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : DD:DC:CA:34:95:D7:E1:16:05:E7:95:32:FA:C7:9F:F8:&#xa;                3D:1C:50:DF:DB:00:3A:14:12:76:0A:2C:AC:BB:C8:2A&#xa;    Timestamp : Jul  9 18:36:29.644 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:42:55:59:83:ED:7E:AD:A9:8C:82:E8:23:&#xa;                51:0E:96:FB:6F:E0:70:3C:A0:45:B5:0A:33:BB:E0:B0:&#xa;                CD:66:9B:41:02:20:79:DE:4C:48:BD:D6:D4:93:0C:DB:&#xa;                70:0E:85:EA:14:5C:DE:9C:43:EC:2D:7C:E1:77:37:09:&#xa;                42:7B:AB:84:20:09&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 0D:E1:F2:30:2B:D3:0D:C1:40:62:12:09:EA:55:2E:FC:&#xa;                47:74:7C:B1:D7:E9:30:EF:0E:42:1E:B4:7E:4E:AA:34&#xa;    Timestamp : Jul  9 18:36:29.614 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:41:A6:7B:D9:55:46:F7:A6:28:CB:6F:70:&#xa;                C0:2F:B8:3B:47:9B:A8:1A:91:38:18:ED:08:41:0C:B5:&#xa;                A6:59:19:98:02:21:00:B7:F0:34:D5:12:E7:4F:7D:22:&#xa;                37:A3:A6:2D:E1:41:9D:98:7A:C1:81:CD:C4:FA:5D:46:&#xa;                DC:35:24:45:32:33:76&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 12:F1:4E:34:BD:53:72:4C:84:06:19:C3:8F:3F:7A:13:&#xa;                F8:E7:B5:62:87:88:9C:6D:30:05:84:EB:E5:86:26:3A&#xa;    Timestamp : Jul  9 18:36:29.611 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:58:3B:3C:95:08:7E:B1:11:F4:86:11:F3:&#xa;                95:19:A9:22:30:4A:B4:B0:ED:50:DA:F1:D2:C1:C2:04:&#xa;                EF:AA:6D:7A:02:21:00:D1:15:15:3F:A0:33:B9:B1:32:&#xa;                CE:8D:1C:47:C5:5D:21:24:64:37:8F:C8:17:D5:85:73:&#xa;                15:E1:D7:D2:89:50:7F</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-07-09T00:00:00</elem>
+<elem key="notAfter">2025-07-09T23:59:59</elem>
+</table>
+<elem key="md5">de5ecb8d1e17b3b1878ce3a173a4f77e</elem>
+<elem key="sha1">3dbac85af2449af3b24f7b26c32980ccdd3180eb</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIH+jCCBuKgAwIBAgIRAMfhSHXT2Yk85lCsM1eBaCQwDQYJKoZIhvcNAQELBQAw&#xa;gZYxCzAJBgNVBAYTAkdCMRswGQYDVQQIExJHcmVhdGVyIE1hbmNoZXN0ZXIxEDAO&#xa;BgNVBAcTB1NhbGZvcmQxGjAYBgNVBAoTEUNPTU9ETyBDQSBMaW1pdGVkMTwwOgYD&#xa;VQQDEzNDT01PRE8gUlNBIE9yZ2FuaXphdGlvbiBWYWxpZGF0aW9uIFNlY3VyZSBT&#xa;ZXJ2ZXIgQ0EwHhcNMjQwNzA5MDAwMDAwWhcNMjUwNzA5MjM1OTU5WjB6MQswCQYD&#xa;VQQGEwJVUzEWMBQGA1UECBMNTWFzc2FjaHVzZXR0czExMC8GA1UEChMoUHJlc2lk&#xa;ZW50IGFuZCBGZWxsb3dzIG9mIEhhcnZhcmQgQ29sbGVnZTEgMB4GA1UEAxMXbWFp&#xa;bHNydi5jaHMuaGFydmFyZC5lZHUwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIK&#xa;AoICAQDHuFPOQdevYBkBA05SoPnw35T1O9nhPripLCnztFO89qo7AHyVnopGKpWV&#xa;tb5Z7uxq84vvc5TZ6b10n4QJSdiJjpCnoRTzPTjYaQQibe31WN+ReRnlfPrzzSLx&#xa;+VEEJczVxd/VcZF2ByxdXGD8TS9A7L/v4M3mGFg2U5svI22yfzN5I2Y9IfS9uXxE&#xa;ie7R8hTcWY3Kbdv4k/X+YqL+QVOCe/zJ5d0BEyW/Ez/QNOPhSIOTMUg0u6LSoKSJ&#xa;4Ce23jiYxijON95q96JqnD8NilOeTXLfwQiRhsr1lgBz+/vNNoneYx06Oc7aaAqD&#xa;TdJe6J3m0wNlFr0FZ095T3BvigKLoNUY+71ecT/+T34yMzjC8xjMjGOeaP6eIor0&#xa;wVOBH1+y0hsk7Svm3eQcDAO/HiOpkfXWzR6vkYj4fy9MjsGoxGzm6/62dY5X+0B9&#xa;QV6XO8GI5TRRNlIWdDymPEqIAOc63lSGUruTP8IuMeX0WLkIRtoGCg3fJ6CMR62u&#xa;PPyfF9alpRqqj5wFCJ7fkCgRF19RHoloEYgW7ZGnxPyNdswB6PCVJ1LmGyVJOxkM&#xa;IgrlP5nCgP8x50p8JphW2mAP/IDNugyeXG9avDJw8AO7ZNNVSXJgwlFPuR8nnIeU&#xa;SzRcbiNbCL6Mj1kR9fpm6JdPqo8khOD5wZKVqxK4LjDwmrJG0wIDAQABo4IDXDCC&#xa;A1gwHwYDVR0jBBgwFoAUmvMr2s+tT7YvuypISCoStxtCwSQwHQYDVR0OBBYEFKQ3&#xa;WkpsouzatuC5TxNQzjjnJKznMA4GA1UdDwEB/wQEAwIFoDAMBgNVHRMBAf8EAjAA&#xa;MB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjBKBgNVHSAEQzBBMDUGDCsG&#xa;AQQBsjEBAgEDBDAlMCMGCCsGAQUFBwIBFhdodHRwczovL3NlY3RpZ28uY29tL0NQ&#xa;UzAIBgZngQwBAgIwWgYDVR0fBFMwUTBPoE2gS4ZJaHR0cDovL2NybC5jb21vZG9j&#xa;YS5jb20vQ09NT0RPUlNBT3JnYW5pemF0aW9uVmFsaWRhdGlvblNlY3VyZVNlcnZl&#xa;ckNBLmNybDCBiwYIKwYBBQUHAQEEfzB9MFUGCCsGAQUFBzAChklodHRwOi8vY3J0&#xa;LmNvbW9kb2NhLmNvbS9DT01PRE9SU0FPcmdhbml6YXRpb25WYWxpZGF0aW9uU2Vj&#xa;dXJlU2VydmVyQ0EuY3J0MCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5jb21vZG9j&#xa;YS5jb20wIgYDVR0RBBswGYIXbWFpbHNydi5jaHMuaGFydmFyZC5lZHUwggF9Bgor&#xa;BgEEAdZ5AgQCBIIBbQSCAWkBZwB1AN3cyjSV1+EWBeeVMvrHn/g9HFDf2wA6FBJ2&#xa;Ciysu8gqAAABkJjIakwAAAQDAEYwRAIgQlVZg+1+ramMgugjUQ6W+2/gcDygRbUK&#xa;M7vgsM1mm0ECIHneTEi91tSTDNtwDoXqFFzenEPsLXzhdzcJQnurhCAJAHYADeHy&#xa;MCvTDcFAYhIJ6lUu/Ed0fLHX6TDvDkIetH5OqjQAAAGQmMhqLgAABAMARzBFAiBB&#xa;pnvZVUb3pijLb3DAL7g7R5uoGpE4GO0IQQy1plkZmAIhALfwNNUS5099Ijejpi3h&#xa;QZ2YesGBzcT6XUbcNSRFMjN2AHYAEvFONL1TckyEBhnDjz96E/jntWKHiJxtMAWE&#xa;6+WGJjoAAAGQmMhqKwAABAMARzBFAiBYOzyVCH6xEfSGEfOVGakiMEq0sO1Q2vHS&#xa;wcIE76ptegIhANEVFT+gM7mxMs6NHEfFXSEkZDePyBfVhXMV4dfSiVB/MA0GCSqG&#xa;SIb3DQEBCwUAA4IBAQBnGIFnmvEDTLMse9IKTE0heeHbm0rm9AXNLESLFU2ht3lu&#xa;K6AG9SmhTZ+/F0SpFCv8qx3i8/9RLVc9V4RL4qC3zzK3jRkX2pJ+kPGWP5VaMTQf&#xa;TF6uFXjVhOMt5G8Q5BklFICGP6iSOsySUGX9WyOa3bqzgn/48lIKlSPwcwavPI1v&#xa;s+PsB3X4Pn2OKLMVk2RqIl2j91Cj3qjb24t0IQ0cGSNNKrvRw182Q0xQ0hN0bD50&#xa;55fQAJmhysMEYuNk5up7uKDvV+bbFXAMZuSDrvAoR1vdbgQ04OQCmSQFGiVZCwBp&#xa;hEALRKWdBYZNsa3y55OT5gQh24wEyMKprcil1EHV&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+</ports>
+<times srtt="23878" rttvar="4061" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730798173"/>
+<taskend task="NSE" time="1730798173"/>
+<taskbegin task="NSE" time="1730798173"/>
+<taskend task="NSE" time="1730798173"/>
+<taskbegin task="NSE" time="1730798173"/>
+<taskend task="NSE" time="1730798173"/>
+<runstats><finished time="1730798173" timestr="Tue Nov  5 09:16:13 2024" elapsed="24.86" summary="Nmap done at Tue Nov  5 09:16:13 2024; 1 IP address (1 host up) scanned in 24.86 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
