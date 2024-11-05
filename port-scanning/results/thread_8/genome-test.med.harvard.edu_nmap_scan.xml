@@ -19,3 +19,122 @@
 <taskbegin task="Connect Scan" time="1730784380"/>
 <taskend task="Connect Scan" time="1730784384" extrainfo="1000 total ports"/>
 <taskbegin task="Service scan" time="1730784384"/>
+<taskend task="Service scan" time="1730784396" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1730784396"/>
+<taskend task="NSE" time="1730784397"/>
+<taskbegin task="NSE" time="1730784397"/>
+<taskend task="NSE" time="1730784397"/>
+<taskbegin task="NSE" time="1730784397"/>
+<taskend task="NSE" time="1730784397"/>
+<host starttime="1730784380" endtime="1730784397"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="134.174.149.216" addrtype="ipv4"/>
+<hostnames>
+<hostname name="genome-test.med.harvard.edu" type="user"/>
+<hostname name="bpfwvwebd01.med.harvard.edu" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="996">
+<extrareasons reason="no-responses" count="996"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="&#xa;  Microsoft-HTTPAPI/2.0&#xa;  Microsoft-IIS/8.5"><elem>Microsoft-HTTPAPI/2.0</elem>
+<elem>Microsoft-IIS/8.5</elem>
+</script><script id="http-title" output="Did not follow redirect to https://genome-test.med.harvard.edu/"><elem key="redirect_url">https://genome-test.med.harvard.edu/</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP" ostype="Windows" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-favicon" output="Unknown favicon MD5: 526E7720BC9CC263EBDBE4FD42FFB175"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-robots.txt" output="14 disallowed entries &#xa;/services_reagents_inventory.jsp &#xa;/public/services/analysis.jsp /public/services/genotyping/pricing.jsp &#xa;/public/services/reagents_inventory.jsp /public/services/affymetrix.jsp &#xa;/public/services/luminex.jsp /public/about.jsp /bpfnews.jsp /logout.jsp &#xa;/about_news.jsp  /private/* /admin/* /ajax/* /json/*"/><script id="http-server-header" output="&#xa;  Microsoft-HTTPAPI/2.0&#xa;  Microsoft-IIS/8.5"><elem>Microsoft-HTTPAPI/2.0</elem>
+<elem>Microsoft-IIS/8.5</elem>
+</script><script id="http-title" output="Biopolymers Facility"><elem key="title">Biopolymers Facility</elem>
+</script><script id="ssl-cert" output="Subject: commonName=genome-test.med.harvard.edu/organizationName=President and Fellows of Harvard College/stateOrProvinceName=Massachusetts/countryName=US&#xa;Subject Alternative Name: DNS:genome-test.med.harvard.edu, DNS:bpfwvwebd01.med.harvard.edu&#xa;Issuer: commonName=InCommon RSA Server CA 2/organizationName=Internet2/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha384WithRSAEncryption&#xa;Not valid before: 2024-05-13T00:00:00&#xa;Not valid after:  2025-05-13T23:59:59&#xa;MD5:   90a0 bf28 48b6 2d57 c724 9964 82c2 5bec&#xa;SHA-1: eb72 b908 386d a0a5 beee 1bea 30b8 4660 640f 5cb0"><table key="subject">
+<elem key="commonName">genome-test.med.harvard.edu</elem>
+<elem key="stateOrProvinceName">Massachusetts</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">President and Fellows of Harvard College</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">InCommon RSA Server CA 2</elem>
+<elem key="organizationName">Internet2</elem>
+<elem key="countryName">US</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="exponent">BIGNUM: 0x558969b199a8</elem>
+<elem key="modulus">BIGNUM: 0x558969b19a28</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">EF:4C:00:92:A6:FB:76:2E:5E:95:E2:C9:5F:87:1B:19:D5:4D:E2:D9</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">3D:07:5E:CC:48:F8:3A:A0:0E:8B:FB:33:D4:9E:2D:FB:43:75:58:0D</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 1.3.6.1.4.1.6449.1.2.2.103&#xa;  CPS: https://sectigo.com/CPS&#xa;Policy: 2.23.140.1.2.2</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://crl.sectigo.com/InCommonRSAServerCA2.crl</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:http://crt.sectigo.com/InCommonRSAServerCA2.crt&#xa;OCSP - URI:http://ocsp.sectigo.com</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : CF:11:56:EE:D5:2E:7C:AF:F3:87:5B:D9:69:2E:9B:E9:&#xa;                1A:71:67:4A:B0:17:EC:AC:01:D2:5B:77:CE:CC:3B:08&#xa;    Timestamp : May 13 15:57:55.579 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:9F:56:AF:0D:5A:A2:85:83:2A:49:88:&#xa;                F2:FC:9E:A6:12:10:9B:39:22:78:FB:BE:19:02:87:71:&#xa;                B5:A6:FD:BD:A9:02:21:00:B9:FC:E5:6F:97:5E:FF:DD:&#xa;                53:AF:21:2B:EF:2C:B2:52:39:F1:F0:FE:7C:11:EB:BF:&#xa;                99:64:82:11:2A:8C:41:35&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : A2:E3:0A:E4:45:EF:BD:AD:9B:7E:38:ED:47:67:77:53:&#xa;                D7:82:5B:84:94:D7:2B:5E:1B:2C:C4:B9:50:A4:47:E7&#xa;    Timestamp : May 13 15:57:55.492 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:4A:DC:02:F3:F9:57:2A:A5:20:4C:6F:25:&#xa;                2E:01:2C:BB:DF:BA:15:2F:99:82:7E:83:67:E9:D1:58:&#xa;                65:96:B4:8B:02:20:11:D2:F9:AD:95:E4:BE:65:12:D5:&#xa;                2F:67:AF:18:01:BC:BD:CE:6B:EA:5A:28:4F:F8:8A:B5:&#xa;                0C:41:0E:6F:1E:2A&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 4E:75:A3:27:5C:9A:10:C3:38:5B:6C:D4:DF:3F:52:EB:&#xa;                1D:F0:E0:8E:1B:8D:69:C0:B1:FA:64:B1:62:9A:39:DF&#xa;    Timestamp : May 13 15:57:55.515 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:1F:0E:AE:4E:72:4B:08:DB:4C:03:E9:E3:A4:&#xa;                79:F8:2B:33:6B:5D:B0:66:D7:C3:2F:C9:FD:2E:43:73:&#xa;                AC:AF:11:02:21:00:8B:8C:31:0C:53:CB:A8:40:16:D1:&#xa;                FD:BC:A4:4D:48:9E:F7:C3:5F:57:80:51:A7:DC:BD:E5:&#xa;                8C:58:CF:29:5D:D1</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:genome-test.med.harvard.edu, DNS:bpfwvwebd01.med.harvard.edu</elem>
+</table>
+</table>
+<elem key="sig_algo">sha384WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-05-13T00:00:00</elem>
+<elem key="notAfter">2025-05-13T23:59:59</elem>
+</table>
+<elem key="md5">90a0bf2848b62d57c724996482c25bec</elem>
+<elem key="sha1">eb72b908386da0a5beee1bea30b84660640f5cb0</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIHFDCCBXygAwIBAgIQLu241ukM5Uu9K/Ac1Ug0mDANBgkqhkiG9w0BAQwFADBE&#xa;MQswCQYDVQQGEwJVUzESMBAGA1UEChMJSW50ZXJuZXQyMSEwHwYDVQQDExhJbkNv&#xa;bW1vbiBSU0EgU2VydmVyIENBIDIwHhcNMjQwNTEzMDAwMDAwWhcNMjUwNTEzMjM1&#xa;OTU5WjB+MQswCQYDVQQGEwJVUzEWMBQGA1UECBMNTWFzc2FjaHVzZXR0czExMC8G&#xa;A1UEChMoUHJlc2lkZW50IGFuZCBGZWxsb3dzIG9mIEhhcnZhcmQgQ29sbGVnZTEk&#xa;MCIGA1UEAxMbZ2Vub21lLXRlc3QubWVkLmhhcnZhcmQuZWR1MIIBIjANBgkqhkiG&#xa;9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkG52Tdj42107LRdtbAlQ8CEGpgzHjJlE1r7c&#xa;3DEWIdDv92Hw5sOFZhvhjQ/yFLT3C97OBA2/Y4r6JVsrQX0F3qBwCeIFi0USKH5l&#xa;AX1ihFK95zAyBGdXa6rWO5E2yB2KYACgio6ON70FJp8ht7UQ1QmZHnwzJFLxI0Qk&#xa;x0tTb0XbFlOMGdfitmN1Iy1GBUSh0wdXWtyfzBzPbY2HcbxUgvDxCgL0WxO2Ga+B&#xa;o8jdj5xRQICjAJLLdOVIre2FSvDm4HEsEz/Sq6ykai7TZFBiqK1VrKxPwHQ8VRna&#xa;GYHWmOYDsfvWGCPOUgf/vS8RGKdbvknfMH8CZaxR3qFBHrwKHQIDAQABo4IDRjCC&#xa;A0IwHwYDVR0jBBgwFoAU70wAkqb7di5eleLJX4cbGdVN4tkwHQYDVR0OBBYEFD0H&#xa;XsxI+DqgDov7M9SeLftDdVgNMA4GA1UdDwEB/wQEAwIFoDAMBgNVHRMBAf8EAjAA&#xa;MB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjBJBgNVHSAEQjBAMDQGCysG&#xa;AQQBsjEBAgJnMCUwIwYIKwYBBQUHAgEWF2h0dHBzOi8vc2VjdGlnby5jb20vQ1BT&#xa;MAgGBmeBDAECAjBABgNVHR8EOTA3MDWgM6Axhi9odHRwOi8vY3JsLnNlY3RpZ28u&#xa;Y29tL0luQ29tbW9uUlNBU2VydmVyQ0EyLmNybDBwBggrBgEFBQcBAQRkMGIwOwYI&#xa;KwYBBQUHMAKGL2h0dHA6Ly9jcnQuc2VjdGlnby5jb20vSW5Db21tb25SU0FTZXJ2&#xa;ZXJDQTIuY3J0MCMGCCsGAQUFBzABhhdodHRwOi8vb2NzcC5zZWN0aWdvLmNvbTCC&#xa;AX0GCisGAQQB1nkCBAIEggFtBIIBaQFnAHcAzxFW7tUufK/zh1vZaS6b6RpxZ0qw&#xa;F+ysAdJbd87MOwgAAAGPcqzB+wAABAMASDBGAiEAn1avDVqihYMqSYjy/J6mEhCb&#xa;OSJ4+74ZAodxtab9vakCIQC5/OVvl17/3VOvISvvLLJSOfHw/nwR67+ZZIIRKoxB&#xa;NQB1AKLjCuRF772tm3447Udnd1PXgluElNcrXhssxLlQpEfnAAABj3KswaQAAAQD&#xa;AEYwRAIgStwC8/lXKqUgTG8lLgEsu9+6FS+Zgn6DZ+nRWGWWtIsCIBHS+a2V5L5l&#xa;EtUvZ68YAby9zmvqWihP+Iq1DEEObx4qAHUATnWjJ1yaEMM4W2zU3z9S6x3w4I4b&#xa;jWnAsfpksWKaOd8AAAGPcqzBuwAABAMARjBEAh8Ork5ySwjbTAPp46R5+Csza12w&#xa;ZtfDL8n9LkNzrK8RAiEAi4wxDFPLqEAW0f28pE1InvfDX1eAUafcveWMWM8pXdEw&#xa;QwYDVR0RBDwwOoIbZ2Vub21lLXRlc3QubWVkLmhhcnZhcmQuZWR1ghticGZ3dndl&#xa;YmQwMS5tZWQuaGFydmFyZC5lZHUwDQYJKoZIhvcNAQEMBQADggGBAGBeeg5KqVUu&#xa;T1Krsmu2ys6wfF2plOKIcCbaLIIgJQwwCCUDAKVa2LIjwIQ9uBn9I40JzIdQsT7L&#xa;jkdVnhMxo/K++nGdUOvST5VQ1ya9u/KfEVN/k44R+NOGFDeiQus5Knu0oEXPESWB&#xa;rWLdbA7Qj6RvldjIHxuAEvWf+Bvns2IWPlKF/Jenrauvw7bHSAKCo37EtnAUSIC3&#xa;pMXgIkSHEy/Xnkc8Mc50dGJEtGqGjSJ0w8Net4FS4+ZIU2clyrD44b2SWniGHeK0&#xa;BSkgPLQ1WKAmJTohviDT0SDmY3iT4L683ZwH3Wce9ARcmjpo1YNcaLCf4tmyuDGJ&#xa;Rs6UoRVkePtQGRKJYziMfS7u72HsXnRiPpkITDaUWBzCYZc4gOUl+5flKZQ6g2eq&#xa;gbGx9TqObxxhMW+LHoRzaF+r0/RATkA22HNtO7Nonrolpj1YQrSyqhtKtM123kSb&#xa;n8Sw1xgppYrto6pxG1vp0/sBzkeHdrlhxwH65BGUu8H/vCmPm5RCQQ==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+</ports>
+<times srtt="12749" rttvar="2489" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730784397"/>
+<taskend task="NSE" time="1730784397"/>
+<taskbegin task="NSE" time="1730784397"/>
+<taskend task="NSE" time="1730784397"/>
+<taskbegin task="NSE" time="1730784397"/>
+<taskend task="NSE" time="1730784397"/>
+<runstats><finished time="1730784397" timestr="Tue Nov  5 05:26:37 2024" elapsed="18.19" summary="Nmap done at Tue Nov  5 05:26:37 2024; 1 IP address (1 host up) scanned in 18.19 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
