@@ -19,3 +19,92 @@
 <taskbegin task="Connect Scan" time="1730792732"/>
 <taskend task="Connect Scan" time="1730792737" extrainfo="1000 total ports"/>
 <taskbegin task="Service scan" time="1730792737"/>
+<taskend task="Service scan" time="1730792866" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1730792866"/>
+<taskend task="NSE" time="1730792881"/>
+<taskbegin task="NSE" time="1730792881"/>
+<taskend task="NSE" time="1730792882"/>
+<taskbegin task="NSE" time="1730792882"/>
+<taskend task="NSE" time="1730792882"/>
+<host starttime="1730792732" endtime="1730792882"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="170.223.156.229" addrtype="ipv4"/>
+<hostnames>
+<hostname name="stage-slavin-academy.mgh.harvard.edu" type="user"/>
+<hostname name="slavin-academy.mgh.harvard.edu" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="998">
+<extrareasons reason="no-responses" count="998"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" servicefp="SF-Port80-TCP:V=7.80%I=7%D=11/5%Time=6729CD27%P=x86_64-pc-linux-gnu%r(GetRequest,7D,&quot;HTTP/1\.0\x20302\x20Found\x20:\x20Moved\x20Temporarily\r\nLocation:\x20https:///\r\nConnection:\x20close\r\nCache-Control:\x20no-cache\r\nPragma:\x20no-cache\r\n\r\n&quot;)%r(HTTPOptions,7D,&quot;HTTP/1\.0\x20302\x20Found\x20:\x20Moved\x20Temporarily\r\nLocation:\x20https:///\r\nConnection:\x20close\r\nCache-Control:\x20no-cache\r\nPragma:\x20no-cache\r\n\r\n&quot;)%r(RTSPRequest,7D,&quot;HTTP/1\.0\x20302\x20Found\x20:\x20Moved\x20Temporarily\r\nLocation:\x20https:///\r\nConnection:\x20close\r\nCache-Control:\x20no-cache\r\nPragma:\x20no-cache\r\n\r\n&quot;)%r(FourOhFourRequest,A0,&quot;HTTP/1\.0\x20302\x20Found\x20:\x20Moved\x20Temporarily\r\nLocation:\x20https:///nice%20ports%2C/Tri%6Eity\.txt%2ebak\r\nConnection:\x20close\r\nCache-Control:\x20no-cache\r\nPragma:\x20no-cache\r\n\r\n&quot;)%r(SIPOptions,82,&quot;HTTP/1\.0\x20302\x20Found\x20:\x20Moved\x20Temporarily\r\nLocation:\x20https://sip:nm\r\nConnection:\x20close\r\nCache-Control:\x20no-cache\r\nPragma:\x20no-cache\r\n\r\n&quot;);" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  FourOhFourRequest: &#xa;    HTTP/1.0 302 Found : Moved Temporarily&#xa;    Location: https:///nice%20ports%2C/Tri%6Eity.txt%2ebak&#xa;    Connection: close&#xa;    Cache-Control: no-cache&#xa;    Pragma: no-cache&#xa;  GetRequest, HTTPOptions, RTSPRequest: &#xa;    HTTP/1.0 302 Found : Moved Temporarily&#xa;    Location: https:///&#xa;    Connection: close&#xa;    Cache-Control: no-cache&#xa;    Pragma: no-cache&#xa;  SIPOptions: &#xa;    HTTP/1.0 302 Found : Moved Temporarily&#xa;    Location: https://sip:nm&#xa;    Connection: close&#xa;    Cache-Control: no-cache&#xa;    Pragma: no-cache"><elem key="FourOhFourRequest">&#xa;    HTTP/1.0 302 Found : Moved Temporarily&#xa;    Location: https:///nice%20ports%2C/Tri%6Eity.txt%2ebak&#xa;    Connection: close&#xa;    Cache-Control: no-cache&#xa;    Pragma: no-cache</elem>
+<elem key="GetRequest, HTTPOptions, RTSPRequest">&#xa;    HTTP/1.0 302 Found : Moved Temporarily&#xa;    Location: https:///&#xa;    Connection: close&#xa;    Cache-Control: no-cache&#xa;    Pragma: no-cache</elem>
+<elem key="SIPOptions">&#xa;    HTTP/1.0 302 Found : Moved Temporarily&#xa;    Location: https://sip:nm&#xa;    Connection: close&#xa;    Cache-Control: no-cache&#xa;    Pragma: no-cache</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Did not follow redirect to https://stage-slavin-academy.mgh.harvard.edu/"><elem key="redirect_url">https://stage-slavin-academy.mgh.harvard.edu/</elem>
+</script><script id="https-redirect" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" servicefp="SF-Port443-TCP:V=7.80%T=SSL%I=7%D=11/5%Time=6729CD2D%P=x86_64-pc-linux-gnu%r(GetRequest,A4D,&quot;HTTP/1\.0\x20503\x20Service\x20Unavailable\r\npragma:\x20no-cache\r\ncache-control:\x20private,\x20max-age=0,\x20no-cache,\x20no-store\r\ncontent-type:\x20text/html\r\n\r\n&lt;html&gt;\r\n\x20\x20&lt;head&gt;\r\n\x20\x20\x20\x20&lt;meta\x20name=\&quot;viewport\&quot;\x20content=\&quot;width=device-width,\x20initial-scale=1\&quot;&gt;\r\n\r\n\x20\x20\x20\x20&lt;style\x20type=\&quot;text/css\&quot;&gt;\r\n\x20\x20\x20\x20\x20\x20body\x20{\r\n\x20\x20\x20\x20\x20\x20\x20\x20font-family:\x20\&quot;Helvetica\x20Neue\&quot;,\x20Helvetica,\x20Arial,\x20sans-serif;\r\n\x20\x20\x20\x20\x20\x20\x20\x20line-height:\x201\.66666667;\r\n\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2016px;\r\n\x20\x20\x20\x20\x20\x20\x20\x20color:\x20#333;\r\n\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#fff;\r\n\x20\x20\x20\x20\x20\x20\x20\x20margin:\x202em\x201em;\r\n\x20\x20\x20\x20\x20\x20}\r\n\x20\x20\x20\x20\x20\x20h1\x20{\r\n\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2028px;\r\n\x20\x20\x20\x20\x20\x20\x20\x20font-weight:\x20400;\r\n\x20\x20\x20\x20\x20\x20}\r\n\x20\x20\x20\x20\x20\x20p\x20{\r\n\x20\x20\x20\x20\x20\x20\x20\x20margin:\x200\x200\x2010px;\r\n\x20\x20\x20\x20\x20\x20}\r\n\x20\x20\x20\x20\x20\x20\.alert\.alert-info\x20{\r\n\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#F0F0F0;\r\n\x20\x20\x20\x20\x20\x20\x20\x20margin-top:\x2030px;\r\n\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2030px;\r\n\x20\x20\x20\x20\x20\x20}\r\n\x20\x20\x20\x20\x20\x20\.alert\x20p\x20{\r\n\x20\x20\x20\x20\x20\x20\x20\x20padding-left:\x2035px;\r\n\x20\x20\x20\x20\x20\x20}\r\n\x20\x20\x20\x20\x20\x20ul\x20{\r\n\x20\x20\x20\x20\x20\x20\x20\x20padding-left:\x2051px;\r\n\x20\x20\x20\x20\x20\x20\x20\x20position:\x20relative;\r\n\x20\x20\x20\x20\x20\x20}\r\n\x20\x20\x20\x20\x20\x20li\x20{\r\n\x20\x20\x20\x20\x20\x20\x20\x20font-size:&quot;)%r(HTTPOptions,A4D,&quot;HTTP/1\.0\x20503\x20Service\x20Unavailable\r\npragma:\x20no-cache\r\ncache-control:\x20private,\x20max-age=0,\x20no-cache,\x20no-store\r\ncontent-type:\x20text/html\r\n\r\n&lt;html&gt;\r\n\x20\x20&lt;head&gt;\r\n\x20\x20\x20\x20&lt;meta\x20name=\&quot;viewport\&quot;\x20content=\&quot;width=device-width,\x20initial-scale=1\&quot;&gt;\r\n\r\n\x20\x20\x20\x20&lt;style\x20type=\&quot;text/css\&quot;&gt;\r\n\x20\x20\x20\x20\x20\x20body\x20{\r\n\x20\x20\x20\x20\x20\x20\x20\x20font-family:\x20\&quot;Helvetica\x20Neue\&quot;,\x20Helvetica,\x20Arial,\x20sans-serif;\r\n\x20\x20\x20\x20\x20\x20\x20\x20line-height:\x201\.66666667;\r\n\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2016px;\r\n\x20\x20\x20\x20\x20\x20\x20\x20color:\x20#333;\r\n\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#fff;\r\n\x20\x20\x20\x20\x20\x20\x20\x20margin:\x202em\x201em;\r\n\x20\x20\x20\x20\x20\x20}\r\n\x20\x20\x20\x20\x20\x20h1\x20{\r\n\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2028px;\r\n\x20\x20\x20\x20\x20\x20\x20\x20font-weight:\x20400;\r\n\x20\x20\x20\x20\x20\x20}\r\n\x20\x20\x20\x20\x20\x20p\x20{\r\n\x20\x20\x20\x20\x20\x20\x20\x20margin:\x200\x200\x2010px;\r\n\x20\x20\x20\x20\x20\x20}\r\n\x20\x20\x20\x20\x20\x20\.alert\.alert-info\x20{\r\n\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#F0F0F0;\r\n\x20\x20\x20\x20\x20\x20\x20\x20margin-top:\x2030px;\r\n\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2030px;\r\n\x20\x20\x20\x20\x20\x20}\r\n\x20\x20\x20\x20\x20\x20\.alert\x20p\x20{\r\n\x20\x20\x20\x20\x20\x20\x20\x20padding-left:\x2035px;\r\n\x20\x20\x20\x20\x20\x20}\r\n\x20\x20\x20\x20\x20\x20ul\x20{\r\n\x20\x20\x20\x20\x20\x20\x20\x20padding-left:\x2051px;\r\n\x20\x20\x20\x20\x20\x20\x20\x20position:\x20relative;\r\n\x20\x20\x20\x20\x20\x20}\r\n\x20\x20\x20\x20\x20\x20li\x20{\r\n\x20\x20\x20\x20\x20\x20\x20\x20font-size:&quot;);" tunnel="ssl" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  GetRequest, HTTPOptions: &#xa;    HTTP/1.0 503 Service Unavailable&#xa;    pragma: no-cache&#xa;    cache-control: private, max-age=0, no-cache, no-store&#xa;    content-type: text/html&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&#xa;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;&#xa;    &lt;style type=&quot;text/css&quot;&gt;&#xa;    body {&#xa;    font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;&#xa;    line-height: 1.66666667;&#xa;    font-size: 16px;&#xa;    color: #333;&#xa;    background-color: #fff;&#xa;    margin: 2em 1em;&#xa;    font-size: 28px;&#xa;    font-weight: 400;&#xa;    margin: 0 0 10px;&#xa;    .alert.alert-info {&#xa;    background-color: #F0F0F0;&#xa;    margin-top: 30px;&#xa;    padding: 30px;&#xa;    .alert p {&#xa;    padding-left: 35px;&#xa;    padding-left: 51px;&#xa;    position: relative;&#xa;    font-size:"><elem key="GetRequest, HTTPOptions">&#xa;    HTTP/1.0 503 Service Unavailable&#xa;    pragma: no-cache&#xa;    cache-control: private, max-age=0, no-cache, no-store&#xa;    content-type: text/html&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&#xa;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;&#xa;    &lt;style type=&quot;text/css&quot;&gt;&#xa;    body {&#xa;    font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;&#xa;    line-height: 1.66666667;&#xa;    font-size: 16px;&#xa;    color: #333;&#xa;    background-color: #fff;&#xa;    margin: 2em 1em;&#xa;    font-size: 28px;&#xa;    font-weight: 400;&#xa;    margin: 0 0 10px;&#xa;    .alert.alert-info {&#xa;    background-color: #F0F0F0;&#xa;    margin-top: 30px;&#xa;    padding: 30px;&#xa;    .alert p {&#xa;    padding-left: 35px;&#xa;    padding-left: 51px;&#xa;    position: relative;&#xa;    font-size:</elem>
+</script><script id="http-title" output="Site doesn&apos;t have a title (text/html)."></script><script id="ssl-cert" output="Subject: commonName=*.ext.stage-shared-aro-e2.partners.org&#xa;Subject Alternative Name: DNS:*.ext.stage-shared-aro-e2.partners.org&#xa;Issuer: commonName=ingress-operator@1620920252&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2021-08-06T17:13:24&#xa;Not valid after:  2023-08-06T17:13:25&#xa;MD5:   d0c3 83ca 7956 2cd8 89d4 db62 67c3 aa82&#xa;SHA-1: a820 6289 71d9 2d8e 5bbb 18c7 8110 1b5c 094e 14ab"><table key="subject">
+<elem key="commonName">*.ext.stage-shared-aro-e2.partners.org</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">ingress-operator@1620920252</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">2048</elem>
+<elem key="exponent">BIGNUM: 0x55d7848cef18</elem>
+<elem key="type">rsa</elem>
+<elem key="modulus">BIGNUM: 0x55d785def768</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="critical">true</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="critical">true</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">C9:BB:8A:68:61:B9:EE:F0:8E:D5:8F:8B:FD:B6:85:63:A9:CB:BB:B3</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">19:E1:FA:E4:FE:C1:0F:F8:12:57:1F:B3:69:28:26:5E:8E:0C:BD:E5</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:*.ext.stage-shared-aro-e2.partners.org</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2021-08-06T17:13:24</elem>
+<elem key="notAfter">2023-08-06T17:13:25</elem>
+</table>
+<elem key="md5">d0c383ca79562cd889d4db6267c3aa82</elem>
+<elem key="sha1">a820628971d92d8e5bbb18c781101b5c094e14ab</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDgzCCAmugAwIBAgIISytgq6AsdSswDQYJKoZIhvcNAQELBQAwJjEkMCIGA1UE&#xa;AwwbaW5ncmVzcy1vcGVyYXRvckAxNjIwOTIwMjUyMB4XDTIxMDgwNjE3MTMyNFoX&#xa;DTIzMDgwNjE3MTMyNVowMTEvMC0GA1UEAwwmKi5leHQuc3RhZ2Utc2hhcmVkLWFy&#xa;by1lMi5wYXJ0bmVycy5vcmcwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIB&#xa;AQCjc3mytUroNZwG4LXGh4KeaTWLzhYIJ4oHB+PKb45QPAHnBUb4gQxCW6HSG/9u&#xa;dv4rbsljfE4BwK8A6usYpi8GiSBldpPB8/Dpn7xffJpHlUT6sapRYfA08ptOK9T8&#xa;8lDlVLfeygpNnCXzklblOW1E0ZZ40LEq7NaqtWqk28qDvL5H3Iuxe+KWj4cmZgey&#xa;Qw1SDOpN6ARMeKddKdNIY4QIesqZlRx7XxeFaS7ZwrPuX+OlPZHlVch2cNQd92j4&#xa;sepY7v9AcBE3l1nvLx31VNvdss/UnLBDS6I9UbqSATRhW+qv9FpspMVAqZwbGevN&#xa;/ZRnf3x1ZpwGBuHXNxPBzRwnAgMBAAGjgakwgaYwDgYDVR0PAQH/BAQDAgWgMBMG&#xa;A1UdJQQMMAoGCCsGAQUFBwMBMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYEFMm7imhh&#xa;ue7wjtWPi/22hWOpy7uzMB8GA1UdIwQYMBaAFBnh+uT+wQ/4Elcfs2koJl6ODL3l&#xa;MDEGA1UdEQQqMCiCJiouZXh0LnN0YWdlLXNoYXJlZC1hcm8tZTIucGFydG5lcnMu&#xa;b3JnMA0GCSqGSIb3DQEBCwUAA4IBAQCoyMiu5CHUlZj3LZXs1yw4VvrfgPExN8Xf&#xa;zh/2nOkeUe3ICq3+Y1aVXE2zfLK2zp8fiISNpaMA3ow3c3f4UYmw5k+2PBQnMMn1&#xa;5Ao91exqJqQS/8kiJHX8QAzWti/n+SMg8uKyqIDQVpXSVQD7ZcU5Gu79CXUongR1&#xa;M3ASNPQAGGhvJgTLuh76RKgfDSS8sO8/OmqWx6KBRG+gazuulyiReg8/L1EiRzC1&#xa;zq65Je5CdM9pORVdNmSD3aNwmK+HKt5wqfksSyv/0sXT6moS0YdSLOufgXKGYCpV&#xa;k9uSPObf2uxml13ViyD2IuJ2NKFIZT+GHYyJ7l6Cc+aPQJCQLrMI&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+</ports>
+<times srtt="16378" rttvar="5273" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730792882"/>
+<taskend task="NSE" time="1730792882"/>
+<taskbegin task="NSE" time="1730792882"/>
+<taskend task="NSE" time="1730792882"/>
+<taskbegin task="NSE" time="1730792882"/>
+<taskend task="NSE" time="1730792882"/>
+<runstats><finished time="1730792882" timestr="Tue Nov  5 07:48:02 2024" elapsed="151.09" summary="Nmap done at Tue Nov  5 07:48:02 2024; 1 IP address (1 host up) scanned in 151.09 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
