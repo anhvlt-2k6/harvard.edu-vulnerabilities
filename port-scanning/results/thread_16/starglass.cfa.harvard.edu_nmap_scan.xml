@@ -19,3 +19,129 @@
 <taskbegin task="Connect Scan" time="1730794981"/>
 <taskend task="Connect Scan" time="1730794985" extrainfo="1000 total ports"/>
 <taskbegin task="Service scan" time="1730794985"/>
+<taskprogress task="Service scan" time="1730795025" percent="50.00" remaining="40" etc="1730795065"/>
+<taskend task="Service scan" time="1730795032" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1730795032"/>
+<taskend task="NSE" time="1730795034"/>
+<taskbegin task="NSE" time="1730795034"/>
+<taskend task="NSE" time="1730795035"/>
+<taskbegin task="NSE" time="1730795035"/>
+<taskend task="NSE" time="1730795035"/>
+<host starttime="1730794981" endtime="1730795035"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="52.4.36.136" addrtype="ipv4"/>
+<hostnames>
+<hostname name="starglass.cfa.harvard.edu" type="user"/>
+<hostname name="ec2-52-4-36-136.compute-1.amazonaws.com" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="998">
+<extrareasons reason="no-responses" count="998"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="envoy" servicefp="SF-Port80-TCP:V=7.80%I=7%D=11/5%Time=6729D5F0%P=x86_64-pc-linux-gnu%r(GetRequest,7B,&quot;HTTP/1\.1\x20426\x20Upgrade\x20Required\r\ndate:\x20Tue,\x2005\x20Nov\x202024\x2008:23:10\x20GMT\r\nserver:\x20envoy\r\nconnection:\x20close\r\ncontent-length:\x200\r\n\r\n&quot;)%r(HTTPOptions,7B,&quot;HTTP/1\.1\x20426\x20Upgrade\x20Required\r\ndate:\x20Tue,\x2005\x20Nov\x202024\x2008:23:12\x20GMT\r\nserver:\x20envoy\r\nconnection:\x20close\r\ncontent-length:\x200\r\n\r\n&quot;)%r(RTSPRequest,9C,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\ncontent-length:\x2011\r\ncontent-type:\x20text/plain\r\ndate:\x20Tue,\x2005\x20Nov\x202024\x2008:23:13\x20GMT\r\nserver:\x20envoy\r\nconnection:\x20close\r\n\r\nBad\x20Request&quot;)%r(X11Probe,9C,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\ncontent-length:\x2011\r\ncontent-type:\x20text/plain\r\ndate:\x20Tue,\x2005\x20Nov\x202024\x2008:23:14\x20GMT\r\nserver:\x20envoy\r\nconnection:\x20close\r\n\r\nBad\x20Request&quot;)%r(FourOhFourRequest,7B,&quot;HTTP/1\.1\x20426\x20Upgrade\x20Required\r\ndate:\x20Tue,\x2005\x20Nov\x202024\x2008:23:13\x20GMT\r\nserver:\x20envoy\r\nconnection:\x20close\r\ncontent-length:\x200\r\n\r\n&quot;)%r(RPCCheck,9C,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\ncontent-length:\x2011\r\ncontent-type:\x20text/plain\r\ndate:\x20Tue,\x2005\x20Nov\x202024\x2008:23:21\x20GMT\r\nserver:\x20envoy\r\nconnection:\x20close\r\n\r\nBad\x20Request&quot;)%r(DNSVersionBindReqTCP,9C,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\ncontent-length:\x2011\r\ncontent-type:\x20text/plain\r\ndate:\x20Tue,\x2005\x20Nov\x202024\x2008:23:22\x20GMT\r\nserver:\x20envoy\r\nconnection:\x20close\r\n\r\nBad\x20Request&quot;)%r(DNSStatusRequestTCP,9C,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\ncontent-length:\x2011\r\ncontent-type:\x20text/plain\r\ndate:\x20Tue,\x2005\x20Nov\x202024\x2008:23:13\x20GMT\r\nserver:\x20envoy\r\nconnection:\x20close\r\n\r\nBad\x20Request&quot;)%r(Help,9C,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\ncontent-length:\x2011\r\ncontent-type:\x20text/plain\r\ndate:\x20Tue,\x2005\x20Nov\x202024\x2008:23:24\x20GMT\r\nserver:\x20envoy\r\nconnection:\x20close\r\n\r\nBad\x20Request&quot;)%r(SSLSessionReq,9C,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\ncontent-length:\x2011\r\ncontent-type:\x20text/plain\r\ndate:\x20Tue,\x2005\x20Nov\x202024\x2008:23:24\x20GMT\r\nserver:\x20envoy\r\nconnection:\x20close\r\n\r\nBad\x20Request&quot;);" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  DNSStatusRequestTCP, RTSPRequest: &#xa;    HTTP/1.1 400 Bad Request&#xa;    content-length: 11&#xa;    content-type: text/plain&#xa;    date: Tue, 05 Nov 2024 08:23:13 GMT&#xa;    server: envoy&#xa;    connection: close&#xa;    Request&#xa;  DNSVersionBindReqTCP: &#xa;    HTTP/1.1 400 Bad Request&#xa;    content-length: 11&#xa;    content-type: text/plain&#xa;    date: Tue, 05 Nov 2024 08:23:22 GMT&#xa;    server: envoy&#xa;    connection: close&#xa;    Request&#xa;  FourOhFourRequest: &#xa;    HTTP/1.1 426 Upgrade Required&#xa;    date: Tue, 05 Nov 2024 08:23:13 GMT&#xa;    server: envoy&#xa;    connection: close&#xa;    content-length: 0&#xa;  GetRequest: &#xa;    HTTP/1.1 426 Upgrade Required&#xa;    date: Tue, 05 Nov 2024 08:23:10 GMT&#xa;    server: envoy&#xa;    connection: close&#xa;    content-length: 0&#xa;  HTTPOptions: &#xa;    HTTP/1.1 426 Upgrade Required&#xa;    date: Tue, 05 Nov 2024 08:23:12 GMT&#xa;    server: envoy&#xa;    connection: close&#xa;    content-length: 0&#xa;  Help, SSLSessionReq: &#xa;    HTTP/1.1 400 Bad Request&#xa;    content-length: 11&#xa;    content-type: text/plain&#xa;    date: Tue, 05 Nov 2024 08:23:24 GMT&#xa;    server: envoy&#xa;    connection: close&#xa;    Request&#xa;  RPCCheck: &#xa;    HTTP/1.1 400 Bad Request&#xa;    content-length: 11&#xa;    content-type: text/plain&#xa;    date: Tue, 05 Nov 2024 08:23:21 GMT&#xa;    server: envoy&#xa;    connection: close&#xa;    Request&#xa;  X11Probe: &#xa;    HTTP/1.1 400 Bad Request&#xa;    content-length: 11&#xa;    content-type: text/plain&#xa;    date: Tue, 05 Nov 2024 08:23:14 GMT&#xa;    server: envoy&#xa;    connection: close&#xa;    Request"><elem key="DNSStatusRequestTCP, RTSPRequest">&#xa;    HTTP/1.1 400 Bad Request&#xa;    content-length: 11&#xa;    content-type: text/plain&#xa;    date: Tue, 05 Nov 2024 08:23:13 GMT&#xa;    server: envoy&#xa;    connection: close&#xa;    Request</elem>
+<elem key="DNSVersionBindReqTCP">&#xa;    HTTP/1.1 400 Bad Request&#xa;    content-length: 11&#xa;    content-type: text/plain&#xa;    date: Tue, 05 Nov 2024 08:23:22 GMT&#xa;    server: envoy&#xa;    connection: close&#xa;    Request</elem>
+<elem key="FourOhFourRequest">&#xa;    HTTP/1.1 426 Upgrade Required&#xa;    date: Tue, 05 Nov 2024 08:23:13 GMT&#xa;    server: envoy&#xa;    connection: close&#xa;    content-length: 0</elem>
+<elem key="GetRequest">&#xa;    HTTP/1.1 426 Upgrade Required&#xa;    date: Tue, 05 Nov 2024 08:23:10 GMT&#xa;    server: envoy&#xa;    connection: close&#xa;    content-length: 0</elem>
+<elem key="HTTPOptions">&#xa;    HTTP/1.1 426 Upgrade Required&#xa;    date: Tue, 05 Nov 2024 08:23:12 GMT&#xa;    server: envoy&#xa;    connection: close&#xa;    content-length: 0</elem>
+<elem key="Help, SSLSessionReq">&#xa;    HTTP/1.1 400 Bad Request&#xa;    content-length: 11&#xa;    content-type: text/plain&#xa;    date: Tue, 05 Nov 2024 08:23:24 GMT&#xa;    server: envoy&#xa;    connection: close&#xa;    Request</elem>
+<elem key="RPCCheck">&#xa;    HTTP/1.1 400 Bad Request&#xa;    content-length: 11&#xa;    content-type: text/plain&#xa;    date: Tue, 05 Nov 2024 08:23:21 GMT&#xa;    server: envoy&#xa;    connection: close&#xa;    Request</elem>
+<elem key="X11Probe">&#xa;    HTTP/1.1 400 Bad Request&#xa;    content-length: 11&#xa;    content-type: text/plain&#xa;    date: Tue, 05 Nov 2024 08:23:14 GMT&#xa;    server: envoy&#xa;    connection: close&#xa;    Request</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="envoy"><elem>envoy</elem>
+</script><script id="http-title" output="Did not follow redirect to https://starglass.cfa.harvard.edu:443/"><elem key="redirect_url">https://starglass.cfa.harvard.edu:443/</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" product="envoy" servicefp="SF-Port443-TCP:V=7.80%T=SSL%I=7%D=11/5%Time=6729D5F6%P=x86_64-pc-linux-gnu%r(GetRequest,76,&quot;HTTP/1\.0\x20400\x20Bad\x20Request\r\ndate:\x20Tue,\x2005\x20Nov\x202024\x2008:23:13\x20GMT\r\nserver:\x20envoy\r\nconnection:\x20close\r\ncontent-length:\x200\r\n\r\n&quot;)%r(HTTPOptions,76,&quot;HTTP/1\.0\x20400\x20Bad\x20Request\r\ndate:\x20Tue,\x2005\x20Nov\x202024\x2008:23:13\x20GMT\r\nserver:\x20envoy\r\nconnection:\x20close\r\ncontent-length:\x200\r\n\r\n&quot;)%r(FourOhFourRequest,76,&quot;HTTP/1\.0\x20400\x20Bad\x20Request\r\ndate:\x20Tue,\x2005\x20Nov\x202024\x2008:23:19\x20GMT\r\nserver:\x20envoy\r\nconnection:\x20close\r\ncontent-length:\x200\r\n\r\n&quot;)%r(tor-versions,9C,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\ncontent-length:\x2011\r\ncontent-type:\x20text/plain\r\ndate:\x20Tue,\x2005\x20Nov\x202024\x2008:23:13\x20GMT\r\nserver:\x20envoy\r\nconnection:\x20close\r\n\r\nBad\x20Request&quot;)%r(RTSPRequest,9C,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\ncontent-length:\x2011\r\ncontent-type:\x20text/plain\r\ndate:\x20Tue,\x2005\x20Nov\x202024\x2008:23:26\x20GMT\r\nserver:\x20envoy\r\nconnection:\x20close\r\n\r\nBad\x20Request&quot;)%r(RPCCheck,9C,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\ncontent-length:\x2011\r\ncontent-type:\x20text/plain\r\ndate:\x20Tue,\x2005\x20Nov\x202024\x2008:23:27\x20GMT\r\nserver:\x20envoy\r\nconnection:\x20close\r\n\r\nBad\x20Request&quot;)%r(DNSVersionBindReqTCP,9C,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\ncontent-length:\x2011\r\ncontent-type:\x20text/plain\r\ndate:\x20Tue,\x2005\x20Nov\x202024\x2008:23:27\x20GMT\r\nserver:\x20envoy\r\nconnection:\x20close\r\n\r\nBad\x20Request&quot;)%r(DNSStatusRequestTCP,9C,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\ncontent-length:\x2011\r\ncontent-type:\x20text/plain\r\ndate:\x20Tue,\x2005\x20Nov\x202024\x2008:23:13\x20GMT\r\nserver:\x20envoy\r\nconnection:\x20close\r\n\r\nBad\x20Request&quot;)%r(Help,9C,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\ncontent-length:\x2011\r\ncontent-type:\x20text/plain\r\ndate:\x20Tue,\x2005\x20Nov\x202024\x2008:23:13\x20GMT\r\nserver:\x20envoy\r\nconnection:\x20close\r\n\r\nBad\x20Request&quot;)%r(SSLSessionReq,9C,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\ncontent-length:\x2011\r\ncontent-type:\x20text/plain\r\ndate:\x20Tue,\x2005\x20Nov\x202024\x2008:23:30\x20GMT\r\nserver:\x20envoy\r\nconnection:\x20close\r\n\r\nBad\x20Request&quot;);" tunnel="ssl" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  DNSStatusRequestTCP, Help, tor-versions: &#xa;    HTTP/1.1 400 Bad Request&#xa;    content-length: 11&#xa;    content-type: text/plain&#xa;    date: Tue, 05 Nov 2024 08:23:13 GMT&#xa;    server: envoy&#xa;    connection: close&#xa;    Request&#xa;  DNSVersionBindReqTCP, RPCCheck: &#xa;    HTTP/1.1 400 Bad Request&#xa;    content-length: 11&#xa;    content-type: text/plain&#xa;    date: Tue, 05 Nov 2024 08:23:27 GMT&#xa;    server: envoy&#xa;    connection: close&#xa;    Request&#xa;  FourOhFourRequest: &#xa;    HTTP/1.0 400 Bad Request&#xa;    date: Tue, 05 Nov 2024 08:23:19 GMT&#xa;    server: envoy&#xa;    connection: close&#xa;    content-length: 0&#xa;  GetRequest, HTTPOptions: &#xa;    HTTP/1.0 400 Bad Request&#xa;    date: Tue, 05 Nov 2024 08:23:13 GMT&#xa;    server: envoy&#xa;    connection: close&#xa;    content-length: 0&#xa;  RTSPRequest: &#xa;    HTTP/1.1 400 Bad Request&#xa;    content-length: 11&#xa;    content-type: text/plain&#xa;    date: Tue, 05 Nov 2024 08:23:26 GMT&#xa;    server: envoy&#xa;    connection: close&#xa;    Request&#xa;  SSLSessionReq: &#xa;    HTTP/1.1 400 Bad Request&#xa;    content-length: 11&#xa;    content-type: text/plain&#xa;    date: Tue, 05 Nov 2024 08:23:30 GMT&#xa;    server: envoy&#xa;    connection: close&#xa;    Request"><elem key="DNSStatusRequestTCP, Help, tor-versions">&#xa;    HTTP/1.1 400 Bad Request&#xa;    content-length: 11&#xa;    content-type: text/plain&#xa;    date: Tue, 05 Nov 2024 08:23:13 GMT&#xa;    server: envoy&#xa;    connection: close&#xa;    Request</elem>
+<elem key="DNSVersionBindReqTCP, RPCCheck">&#xa;    HTTP/1.1 400 Bad Request&#xa;    content-length: 11&#xa;    content-type: text/plain&#xa;    date: Tue, 05 Nov 2024 08:23:27 GMT&#xa;    server: envoy&#xa;    connection: close&#xa;    Request</elem>
+<elem key="FourOhFourRequest">&#xa;    HTTP/1.0 400 Bad Request&#xa;    date: Tue, 05 Nov 2024 08:23:19 GMT&#xa;    server: envoy&#xa;    connection: close&#xa;    content-length: 0</elem>
+<elem key="GetRequest, HTTPOptions">&#xa;    HTTP/1.0 400 Bad Request&#xa;    date: Tue, 05 Nov 2024 08:23:13 GMT&#xa;    server: envoy&#xa;    connection: close&#xa;    content-length: 0</elem>
+<elem key="RTSPRequest">&#xa;    HTTP/1.1 400 Bad Request&#xa;    content-length: 11&#xa;    content-type: text/plain&#xa;    date: Tue, 05 Nov 2024 08:23:26 GMT&#xa;    server: envoy&#xa;    connection: close&#xa;    Request</elem>
+<elem key="SSLSessionReq">&#xa;    HTTP/1.1 400 Bad Request&#xa;    content-length: 11&#xa;    content-type: text/plain&#xa;    date: Tue, 05 Nov 2024 08:23:30 GMT&#xa;    server: envoy&#xa;    connection: close&#xa;    Request</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="envoy"><elem>envoy</elem>
+</script><script id="http-title" output="Site doesn&apos;t have a title."></script><script id="ssl-cert" output="Subject: commonName=starglass.cfa.harvard.edu&#xa;Subject Alternative Name: DNS:starglass.cfa.harvard.edu, DNS:2a57j78h5fsbzb7ey72hbx9c01pbxcf.starglass.cfa.harvard.edu, DNS:www.starglass.cfa.harvard.edu&#xa;Issuer: commonName=Amazon RSA 2048 M02/organizationName=Amazon/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-02-08T00:00:00&#xa;Not valid after:  2025-03-08T23:59:59&#xa;MD5:   7b9f 2d03 1544 a91c aafd 5b25 5ac7 b4a3&#xa;SHA-1: 7625 3582 77eb 7868 ae57 bbe8 3ac6 9815 cf60 f890"><table key="subject">
+<elem key="commonName">starglass.cfa.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">US</elem>
+<elem key="commonName">Amazon RSA 2048 M02</elem>
+<elem key="organizationName">Amazon</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">BIGNUM: 0x55e8e3c8a2b8</elem>
+<elem key="exponent">BIGNUM: 0x55e8e3c8a238</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">C0:31:52:CD:5A:50:C3:82:7C:74:71:CE:CB:E9:9C:F9:7A:EB:82:E2</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">B9:42:08:6F:87:8D:50:77:E4:C6:D8:4E:CF:28:F6:83:28:6B:4A:EE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:starglass.cfa.harvard.edu, DNS:2a57j78h5fsbzb7ey72hbx9c01pbxcf.starglass.cfa.harvard.edu, DNS:www.starglass.cfa.harvard.edu</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://crl.r2m02.amazontrust.com/r2m02.crl</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://ocsp.r2m02.amazontrust.com&#xa;CA Issuers - URI:http://crt.r2m02.amazontrust.com/r2m02.cer</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 4E:75:A3:27:5C:9A:10:C3:38:5B:6C:D4:DF:3F:52:EB:&#xa;                1D:F0:E0:8E:1B:8D:69:C0:B1:FA:64:B1:62:9A:39:DF&#xa;    Timestamp : Feb  8 21:27:36.439 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:0D:B9:5B:B8:B9:D2:11:0C:BC:FA:65:68:&#xa;                12:C0:D0:F2:DA:5A:45:CA:BA:03:44:8B:8D:8A:37:9A:&#xa;                B5:08:3B:39:02:20:65:E1:54:53:DE:22:A6:A0:2F:DB:&#xa;                63:6A:AF:70:BE:4F:A8:13:D6:C2:A3:5E:7F:60:B7:B0:&#xa;                9A:64:AB:BB:49:2A&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 7D:59:1E:12:E1:78:2A:7B:1C:61:67:7C:5E:FD:F8:D0:&#xa;                87:5C:14:A0:4E:95:9E:B9:03:2F:D9:0E:8C:2E:79:B8&#xa;    Timestamp : Feb  8 21:27:36.385 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:4F:99:39:2F:FA:28:7E:FD:76:37:FB:2A:&#xa;                EE:B0:BA:8E:44:18:B2:B6:C0:30:69:25:A0:5A:30:6F:&#xa;                5D:8D:C1:10:02:21:00:C9:7E:B8:BC:99:72:4E:52:CA:&#xa;                1B:70:AB:F5:6E:72:89:D5:90:F0:79:A4:A1:3B:A4:B9:&#xa;                66:B0:DE:3F:A1:20:7F&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : E6:D2:31:63:40:77:8C:C1:10:41:06:D7:71:B9:CE:C1:&#xa;                D2:40:F6:96:84:86:FB:BA:87:32:1D:FD:1E:37:8E:50&#xa;    Timestamp : Feb  8 21:27:36.427 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:C8:49:B8:38:A3:8E:A1:42:A9:E6:21:&#xa;                B5:F1:55:4C:7C:26:42:A6:27:F5:FC:91:7D:D0:79:05:&#xa;                7D:55:F5:6C:0A:02:20:7E:AC:AC:B7:57:08:1D:0F:27:&#xa;                D0:6A:4B:BE:EE:93:A8:04:75:86:76:A0:4B:C8:8C:98:&#xa;                41:D1:38:35:AE:92:32</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notAfter">2025-03-08T23:59:59</elem>
+<elem key="notBefore">2024-02-08T00:00:00</elem>
+</table>
+<elem key="md5">7b9f2d031544a91caafd5b255ac7b4a3</elem>
+<elem key="sha1">7625358277eb7868ae57bbe83ac69815cf60f890</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIGNzCCBR+gAwIBAgIQA+sFwafcjgZC42SCyd6nRDANBgkqhkiG9w0BAQsFADA8&#xa;MQswCQYDVQQGEwJVUzEPMA0GA1UEChMGQW1hem9uMRwwGgYDVQQDExNBbWF6b24g&#xa;UlNBIDIwNDggTTAyMB4XDTI0MDIwODAwMDAwMFoXDTI1MDMwODIzNTk1OVowJDEi&#xa;MCAGA1UEAxMZc3RhcmdsYXNzLmNmYS5oYXJ2YXJkLmVkdTCCASIwDQYJKoZIhvcN&#xa;AQEBBQADggEPADCCAQoCggEBAMpzkYZJ2s9rTu/wM6SV+iZpbO7h2KsvNTwo7vRF&#xa;Dv5v0HyIWBXXnDAKygJM3y82Wn7kOCT56ZPlf1ZbRMfFYHDQIeh7ityFsvDGswA4&#xa;qmtbXFtnpt1w1AWcSnYFlBU/ZjGUT2ApjiHzh+X77ZHtx9ETEmOFyY8sSy7T2EVS&#xa;vUFxJcA6u5alMclAtaLZMzYyKGsfS3SLttdlZC01GB2UNM5Rrx/3cIbsyeLuCVb9&#xa;qLSTC2gQniIucHWPIuk8NHiqBtWBxi4bwiCfm0piJmk+bvRbnocBz7N2mZo8pNoC&#xa;9akXkWmTLf2Trqulv7qx7EK6/Wki4CjlHFGoXe0KEwaa0JUCAwEAAaOCA0swggNH&#xa;MB8GA1UdIwQYMBaAFMAxUs1aUMOCfHRxzsvpnPl664LiMB0GA1UdDgQWBBS5Qghv&#xa;h41Qd+TG2E7PKPaDKGtK7jB+BgNVHREEdzB1ghlzdGFyZ2xhc3MuY2ZhLmhhcnZh&#xa;cmQuZWR1gjkyYTU3ajc4aDVmc2J6YjdleTcyaGJ4OWMwMXBieGNmLnN0YXJnbGFz&#xa;cy5jZmEuaGFydmFyZC5lZHWCHXd3dy5zdGFyZ2xhc3MuY2ZhLmhhcnZhcmQuZWR1&#xa;MBMGA1UdIAQMMAowCAYGZ4EMAQIBMA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAU&#xa;BggrBgEFBQcDAQYIKwYBBQUHAwIwOwYDVR0fBDQwMjAwoC6gLIYqaHR0cDovL2Ny&#xa;bC5yMm0wMi5hbWF6b250cnVzdC5jb20vcjJtMDIuY3JsMHUGCCsGAQUFBwEBBGkw&#xa;ZzAtBggrBgEFBQcwAYYhaHR0cDovL29jc3AucjJtMDIuYW1hem9udHJ1c3QuY29t&#xa;MDYGCCsGAQUFBzAChipodHRwOi8vY3J0LnIybTAyLmFtYXpvbnRydXN0LmNvbS9y&#xa;Mm0wMi5jZXIwDAYDVR0TAQH/BAIwADCCAX0GCisGAQQB1nkCBAIEggFtBIIBaQFn&#xa;AHUATnWjJ1yaEMM4W2zU3z9S6x3w4I4bjWnAsfpksWKaOd8AAAGNip5y9wAABAMA&#xa;RjBEAiANuVu4udIRDLz6ZWgSwNDy2lpFyroDRIuNijeatQg7OQIgZeFUU94ipqAv&#xa;22Nqr3C+T6gT1sKjXn9gt7CaZKu7SSoAdgB9WR4S4XgqexxhZ3xe/fjQh1wUoE6V&#xa;nrkDL9kOjC55uAAAAY2KnnLBAAAEAwBHMEUCIE+ZOS/6KH79djf7Ku6wuo5EGLK2&#xa;wDBpJaBaMG9djcEQAiEAyX64vJlyTlLKG3Cr9W5yidWQ8HmkoTukuWaw3j+hIH8A&#xa;dgDm0jFjQHeMwRBBBtdxuc7B0kD2loSG+7qHMh39HjeOUAAAAY2KnnLrAAAEAwBH&#xa;MEUCIQDISbg4o46hQqnmIbXxVUx8JkKmJ/X8kX3QeQV9VfVsCgIgfqyst1cIHQ8n&#xa;0GpLvu6TqAR1hnagS8iMmEHRODWukjIwDQYJKoZIhvcNAQELBQADggEBAJU3n1/E&#xa;UObc2LupWUckU0D0k0Ng+rvCU/b15r660QNxYaBOHzEys62gIt07i/Mn1yQgKdnO&#xa;V2ANoCrEqggW5jT/BsFis8J1lVacM9a4ZuIFHcgU1S5SSe4bKK0GGmadF8cCiXPe&#xa;MMe7WoyCAuVCXldFyZHNTrzeMOpJuPxkWQ4wD6fjUpf+insIvG9m+5TnH1sfBZvj&#xa;Jtj8aZ+SZc5/Wj5LNSkJzMCcIbyv9LVTDgQDOJGXg2orsjAQs/9O4QdCMcD3Fj+e&#xa;CpprJB42nv+wGpuHyTqfdg8Ze/+t0KQRslU55xfXs5tPpB3UVmuCQaR8ehJFWSpU&#xa;9TGeNi+zYJoRbz8=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+</ports>
+<times srtt="6388" rttvar="2093" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730795035"/>
+<taskend task="NSE" time="1730795035"/>
+<taskbegin task="NSE" time="1730795035"/>
+<taskend task="NSE" time="1730795035"/>
+<taskbegin task="NSE" time="1730795035"/>
+<taskend task="NSE" time="1730795035"/>
+<runstats><finished time="1730795035" timestr="Tue Nov  5 08:23:55 2024" elapsed="55.20" summary="Nmap done at Tue Nov  5 08:23:55 2024; 1 IP address (1 host up) scanned in 55.20 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
