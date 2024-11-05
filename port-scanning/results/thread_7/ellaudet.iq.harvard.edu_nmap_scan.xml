@@ -19,3 +19,113 @@
 <taskbegin task="Connect Scan" time="1730782208"/>
 <taskend task="Connect Scan" time="1730782213" extrainfo="1000 total ports"/>
 <taskbegin task="Service scan" time="1730782213"/>
+<taskprogress task="Service scan" time="1730782357" percent="80.00" remaining="36" etc="1730782393"/>
+<taskend task="Service scan" time="1730782367" extrainfo="5 services on 1 host"/>
+<taskbegin task="NSE" time="1730782367"/>
+<taskend task="NSE" time="1730782395"/>
+<taskbegin task="NSE" time="1730782395"/>
+<taskend task="NSE" time="1730782396"/>
+<taskbegin task="NSE" time="1730782396"/>
+<taskend task="NSE" time="1730782396"/>
+<host starttime="1730782195" endtime="1730782396"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="199.94.60.175" addrtype="ipv4"/>
+<hostnames>
+<hostname name="ellaudet.iq.harvard.edu" type="user"/>
+</hostnames>
+<ports><extraports state="filtered" count="993">
+<extrareasons reason="no-responses" count="993"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="8.9p1 Ubuntu 3ubuntu0.10" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:8.9p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Did not follow redirect to https://ellaudet.iq.harvard.edu/"><elem key="redirect_url">https://ellaudet.iq.harvard.edu/</elem>
+</script></port>
+<port protocol="tcp" portid="113"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ident" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Site doesn&apos;t have a title (text/html; charset=UTF-8)."></script><script id="ssl-cert" output="Subject: commonName=ellaudet.iq.harvard.edu&#xa;Subject Alternative Name: DNS:ellaudet.iq.harvard.edu&#xa;Issuer: commonName=R10/organizationName=Let&apos;s Encrypt/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-08-23T03:40:07&#xa;Not valid after:  2024-11-21T03:40:06&#xa;MD5:   afe2 d394 890c 4974 ce4d 0ec8 27d1 a2d2&#xa;SHA-1: 1565 0df7 0226 aa98 7b39 4ec5 bbf0 14fd 2dff e57a"><table key="subject">
+<elem key="commonName">ellaudet.iq.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">R10</elem>
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+<elem key="countryName">US</elem>
+</table>
+<table key="pubkey">
+<elem key="exponent">BIGNUM: 0x562b54b4b018</elem>
+<elem key="bits">2048</elem>
+<elem key="type">rsa</elem>
+<elem key="modulus">BIGNUM: 0x562b54b4af88</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">68:56:58:59:63:99:4B:59:79:68:0D:B8:3F:CB:A6:92:2F:66:95:8D</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">BB:BC:C3:47:A5:E4:BC:A9:C6:C3:A4:72:0C:10:8D:A2:35:E1:C8:E8</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://r10.o.lencr.org&#xa;CA Issuers - URI:http://r10.i.lencr.org/</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:ellaudet.iq.harvard.edu</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 3F:17:4B:4F:D7:22:47:58:94:1D:65:1C:84:BE:0D:12:&#xa;                ED:90:37:7F:1F:85:6A:EB:C1:BF:28:85:EC:F8:64:6E&#xa;    Timestamp : Aug 23 04:38:37.853 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:CE:9D:7E:FE:D9:83:E0:23:9C:62:9C:&#xa;                8B:26:C3:2B:17:71:B6:58:0C:7C:9F:45:83:F4:52:FA:&#xa;                D4:78:B2:F3:2D:02:21:00:C8:91:0B:A4:C9:93:52:4F:&#xa;                B9:63:4A:0A:DB:07:11:6C:9D:53:43:10:A4:29:21:72:&#xa;                6F:E2:95:C4:FC:D8:3A:10&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : DF:E1:56:EB:AA:05:AF:B5:9C:0F:86:71:8D:A8:C0:32:&#xa;                4E:AE:56:D9:6E:A7:F5:A5:6A:01:D1:C1:3B:BE:52:5C&#xa;    Timestamp : Aug 23 04:38:38.056 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:C6:8F:A5:7B:54:1B:D4:81:26:69:92:&#xa;                5B:DC:6E:2C:39:09:B6:0D:92:2F:FE:39:E6:B3:DD:29:&#xa;                2A:A6:55:DA:28:02:20:19:B2:62:C4:61:C4:68:71:1C:&#xa;                47:B7:65:01:48:F4:22:B2:9D:19:B0:86:98:FE:7E:A7:&#xa;                E5:42:1B:80:40:9D:A2</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-08-23T03:40:07</elem>
+<elem key="notAfter">2024-11-21T03:40:06</elem>
+</table>
+<elem key="md5">afe2d394890c4974ce4d0ec827d1a2d2</elem>
+<elem key="sha1">15650df70226aa987b394ec5bbf014fd2dffe57a</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIE/zCCA+egAwIBAgISBAmyDv2av+rUxFpDx9TXAD+qMA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNSMTAwHhcNMjQwODIzMDM0MDA3WhcNMjQxMTIxMDM0MDA2WjAiMSAwHgYDVQQD&#xa;ExdlbGxhdWRldC5pcS5oYXJ2YXJkLmVkdTCCASIwDQYJKoZIhvcNAQEBBQADggEP&#xa;ADCCAQoCggEBAMd9Y/ODtQE6MVpTaUfr+tS+eEhyRGoERXHA51tJPz4pzWu2FYWx&#xa;KM7mvEcYBq0aMb1y/7GldMbjLxXidFBEHTaxc7E14pWCSoHziF4Z2/M1HuLQcACd&#xa;fGUfqEOa5YWzr6/GRZONsrCuYG/VfOXu+dBZKCF9jdJgtFijD7hGgviWwJPQmN3f&#xa;0/Mc9a1mIheMtv7LZpiYnDOmqHuJ0TVRA78x+g8uxQsr434zmwPE25O3haJy+bZL&#xa;v4xBD96vclBFkNCeCsN0cAy/n89rk+kIl68Q1PaYRbrtYofakMuQxk/G1cRQxdiA&#xa;JAiL/fzYVfR5epLnhIJQGswNsMzJ7ltlQTMCAwEAAaOCAhwwggIYMA4GA1UdDwEB&#xa;/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/&#xa;BAIwADAdBgNVHQ4EFgQUaFZYWWOZS1l5aA24P8umki9mlY0wHwYDVR0jBBgwFoAU&#xa;u7zDR6XkvKnGw6RyDBCNojXhyOgwVwYIKwYBBQUHAQEESzBJMCIGCCsGAQUFBzAB&#xa;hhZodHRwOi8vcjEwLm8ubGVuY3Iub3JnMCMGCCsGAQUFBzAChhdodHRwOi8vcjEw&#xa;LmkubGVuY3Iub3JnLzAiBgNVHREEGzAZghdlbGxhdWRldC5pcS5oYXJ2YXJkLmVk&#xa;dTATBgNVHSAEDDAKMAgGBmeBDAECATCCAQUGCisGAQQB1nkCBAIEgfYEgfMA8QB3&#xa;AD8XS0/XIkdYlB1lHIS+DRLtkDd/H4Vq68G/KIXs+GRuAAABkX2HgB0AAAQDAEgw&#xa;RgIhAM6dfv7Zg+AjnGKciybDKxdxtlgMfJ9Fg/RS+tR4svMtAiEAyJELpMmTUk+5&#xa;Y0oK2wcRbJ1TQxCkKSFyb+KVxPzYOhAAdgDf4VbrqgWvtZwPhnGNqMAyTq5W2W6n&#xa;9aVqAdHBO75SXAAAAZF9h4DoAAAEAwBHMEUCIQDGj6V7VBvUgSZpklvcbiw5CbYN&#xa;ki/+Oeaz3SkqplXaKAIgGbJixGHEaHEcR7dlAUj0IrKdGbCGmP5+p+VCG4BAnaIw&#xa;DQYJKoZIhvcNAQELBQADggEBAHe7L13ImlFSADsKnVg33l1vceU9zEW3LtUGO7Xu&#xa;vH9Pa902/G3mj325mg3aymeiWDhTh4PfFoqGbXX8ZXa5cBrlGT5/LJzn+2LSR/0A&#xa;qgqxQ0z5lbBLppMD6VslFlO5z/NGKlQBXr2RDUkuBncpbJd7i/TIX4LFxjMps0dA&#xa;QCeYbD0Uiv8L3atzaUDeXc/BJTHjlCJXPDJ1eIyUsriFqDoylMTHEauyR6B2PMMY&#xa;geNSsuERGFEmJFz0bTRNGPlNidu1NDccwGUprug65YE2k+kF1asBQEYA9803bfG1&#xa;HkdLKIb/z6r5Mp5XSlY5Cytgp1xi2Y/jYJQ7fD2xEystarY=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="2000"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="cisco-sccp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3000"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ppp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5060"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="sip" method="table" conf="3"/></port>
+</ports>
+<times srtt="76472" rttvar="6618" to="102944"/>
+</host>
+<taskbegin task="NSE" time="1730782396"/>
+<taskend task="NSE" time="1730782396"/>
+<taskbegin task="NSE" time="1730782396"/>
+<taskend task="NSE" time="1730782396"/>
+<taskbegin task="NSE" time="1730782396"/>
+<taskend task="NSE" time="1730782396"/>
+<runstats><finished time="1730782396" timestr="Tue Nov  5 04:53:16 2024" elapsed="201.85" summary="Nmap done at Tue Nov  5 04:53:16 2024; 1 IP address (1 host up) scanned in 201.85 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
