@@ -17,3 +17,98 @@
 <taskbegin task="Parallel DNS resolution of 1 host." time="1730832033"/>
 <taskend task="Parallel DNS resolution of 1 host." time="1730832033"/>
 <taskbegin task="Connect Scan" time="1730832033"/>
+<taskend task="Connect Scan" time="1730832039" extrainfo="1000 total ports"/>
+<taskbegin task="Service scan" time="1730832039"/>
+<taskend task="Service scan" time="1730832052" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1730832052"/>
+<taskend task="NSE" time="1730832063"/>
+<taskbegin task="NSE" time="1730832063"/>
+<taskend task="NSE" time="1730832063"/>
+<taskbegin task="NSE" time="1730832063"/>
+<taskend task="NSE" time="1730832063"/>
+<host starttime="1730832033" endtime="1730832063"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="35.227.179.169" addrtype="ipv4"/>
+<hostnames>
+<hostname name="pediatrics.developingchild.harvard.edu" type="user"/>
+<hostname name="169.179.227.35.bc.googleusercontent.com" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="998">
+<extrareasons reason="no-responses" count="998"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service><script id="http-title" output="400 The plain HTTP request was sent to HTTPS port"><elem key="title">400 The plain HTTP request was sent to HTTPS port</elem>
+</script><script id="ssl-cert" output="Subject: commonName=pediatrics.developingchild.harvard.edu&#xa;Subject Alternative Name: DNS:pediatrics.developingchild.harvard.edu&#xa;Issuer: commonName=R11/organizationName=Let&apos;s Encrypt/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-10-17T18:30:29&#xa;Not valid after:  2025-01-15T18:30:28&#xa;MD5:   3492 6ebd 6219 6fdc dec9 43fa e1e2 36fd&#xa;SHA-1: 1c38 3d82 9f0d f0a7 b688 54ff b841 ce1b 12f0 1123"><table key="subject">
+<elem key="commonName">pediatrics.developingchild.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">US</elem>
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+<elem key="commonName">R11</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">2048</elem>
+<elem key="type">rsa</elem>
+<elem key="modulus">BIGNUM: 0x55edf98cbc78</elem>
+<elem key="exponent">BIGNUM: 0x55edf9ce8148</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">BD:2F:B3:3B:F5:2A:E4:5E:25:BA:0B:83:37:A7:C9:DF:A8:5A:3E:B0</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">C5:CF:46:A4:EA:F4:C3:C0:7A:6C:95:C4:2D:B0:5E:92:2F:26:E3:B9</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://r11.o.lencr.org&#xa;CA Issuers - URI:http://r11.i.lencr.org/</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:pediatrics.developingchild.harvard.edu</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : A2:E3:0A:E4:45:EF:BD:AD:9B:7E:38:ED:47:67:77:53:&#xa;                D7:82:5B:84:94:D7:2B:5E:1B:2C:C4:B9:50:A4:47:E7&#xa;    Timestamp : Oct 17 19:28:59.085 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:49:43:1E:17:B3:94:82:5C:C9:D1:D4:C4:&#xa;                0A:12:74:6A:0B:40:6F:2F:C4:D8:11:39:F7:DC:04:5F:&#xa;                C6:C5:B5:DF:02:20:0D:44:AB:24:87:93:88:76:76:A8:&#xa;                04:C2:10:62:B1:2B:6A:4C:5F:E1:64:CF:DE:74:85:61:&#xa;                5B:F8:04:77:9A:13&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : E0:92:B3:FC:0C:1D:C8:E7:68:36:1F:DE:61:B9:96:4D:&#xa;                0A:52:78:19:8A:72:D6:72:C4:B0:4D:A5:6D:6F:54:04&#xa;    Timestamp : Oct 17 19:28:59.239 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:2B:1F:21:E0:C9:69:BA:59:9B:74:E3:C0:&#xa;                F6:82:37:19:B9:7E:54:E3:14:55:70:57:E3:91:53:E5:&#xa;                35:C7:B7:76:02:21:00:80:FE:F4:4B:B5:CE:77:B2:E3:&#xa;                EB:6E:1C:60:8D:48:C5:B6:62:C4:BE:43:E6:8A:F0:23:&#xa;                2C:A7:D3:FF:C6:AE:A2</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-10-17T18:30:29</elem>
+<elem key="notAfter">2025-01-15T18:30:28</elem>
+</table>
+<elem key="md5">34926ebd62196fdcdec943fae1e236fd</elem>
+<elem key="sha1">1c383d829f0df0a7b68854ffb841ce1b12f01123</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFGzCCBAOgAwIBAgISA4x30drsO2jz+LvemyAkSZpdMA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNSMTEwHhcNMjQxMDE3MTgzMDI5WhcNMjUwMTE1MTgzMDI4WjAxMS8wLQYDVQQD&#xa;EyZwZWRpYXRyaWNzLmRldmVsb3BpbmdjaGlsZC5oYXJ2YXJkLmVkdTCCASIwDQYJ&#xa;KoZIhvcNAQEBBQADggEPADCCAQoCggEBAMAUSosR+JUubbpULf3JswcIwZmJf+9c&#xa;gapG+c4GcKn4I1+ljzeeMkVal9H0j02BtbceQdO8aQAe8MdQPf1/g2DVdZp/Ci1j&#xa;bYgLZ9AXLo5VV1ezims9CmAJqSz9S+LKQD1ERrH6Hao9XgNUgPlUOMku3cxJc2/Y&#xa;wH810HjR3M+DW20I+UdLF2wHO5/i/QN4pjaeVTFxoDRMZ8gwQx9q0IhWiGl1MjyE&#xa;aYGbJ84mk6yfBS4XjI982gyfno4VcrECDgTuelVAepJPOel0fL+SGrwJ9HtQo7z5&#xa;Wm1ukzejIvaD446hg2ni1NftOK1WUofx5cGlEDb3jrBpRs0F+79Dv5UCAwEAAaOC&#xa;AikwggIlMA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYB&#xa;BQUHAwIwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQUvS+zO/Uq5F4luguDN6fJ36ha&#xa;PrAwHwYDVR0jBBgwFoAUxc9GpOr0w8B6bJXELbBeki8m47kwVwYIKwYBBQUHAQEE&#xa;SzBJMCIGCCsGAQUFBzABhhZodHRwOi8vcjExLm8ubGVuY3Iub3JnMCMGCCsGAQUF&#xa;BzAChhdodHRwOi8vcjExLmkubGVuY3Iub3JnLzAxBgNVHREEKjAogiZwZWRpYXRy&#xa;aWNzLmRldmVsb3BpbmdjaGlsZC5oYXJ2YXJkLmVkdTATBgNVHSAEDDAKMAgGBmeB&#xa;DAECATCCAQMGCisGAQQB1nkCBAIEgfQEgfEA7wB1AKLjCuRF772tm3447Udnd1PX&#xa;gluElNcrXhssxLlQpEfnAAABkpv0aM0AAAQDAEYwRAIgSUMeF7OUglzJ0dTEChJ0&#xa;agtAby/E2BE599wEX8bFtd8CIA1EqySHk4h2dqgEwhBisStqTF/hZM/edIVhW/gE&#xa;d5oTAHYA4JKz/AwdyOdoNh/eYbmWTQpSeBmKctZyxLBNpW1vVAQAAAGSm/RpZwAA&#xa;BAMARzBFAiArHyHgyWm6WZt048D2gjcZuX5U4xRVcFfjkVPlNce3dgIhAID+9Eu1&#xa;zney4+tuHGCNSMW2YsS+Q+aK8CMsp9P/xq6iMA0GCSqGSIb3DQEBCwUAA4IBAQBb&#xa;+ZiFHIlbjWnRKX+AvNQdaABYlyZ8YEx6j4aKrQBrP4EF0zX62IUe1bOpJckoYUlP&#xa;71mLuvel+g3a8vHbs/p4M837w05soLOW1iUdRZpsCjZu3fcj8Jj7IyuQ5uz13gfA&#xa;cTfNkmEVWlHpAE9cC1CJciZ3kbKKLMgw975xhHF0ze8GHMv6YwI4GvcHIiiQnUPT&#xa;5gfPoaPcqHj365FZPdDcx8tFziuLSV0V2w2WaWLNxLvlVbZeRz3eavkZTqxslXH6&#xa;S2HrDvzrtXXriH66/r0ZGLnBIl0zDOy7x7WTSJMeJs3sAknNPKn+XO3F92KKyrPF&#xa;DzCgqi8Ne2HagvigRioY&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+</ports>
+<times srtt="66340" rttvar="13581" to="120664"/>
+</host>
+<taskbegin task="NSE" time="1730832063"/>
+<taskend task="NSE" time="1730832063"/>
+<taskbegin task="NSE" time="1730832063"/>
+<taskend task="NSE" time="1730832063"/>
+<taskbegin task="NSE" time="1730832063"/>
+<taskend task="NSE" time="1730832063"/>
+<runstats><finished time="1730832063" timestr="Tue Nov  5 18:41:03 2024" elapsed="30.43" summary="Nmap done at Tue Nov  5 18:41:03 2024; 1 IP address (1 host up) scanned in 30.43 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
