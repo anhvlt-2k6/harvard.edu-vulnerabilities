@@ -19,3 +19,155 @@
 <taskbegin task="Connect Scan" time="1730832064"/>
 <taskend task="Connect Scan" time="1730832068" extrainfo="1000 total ports"/>
 <taskbegin task="Service scan" time="1730832068"/>
+<taskend task="Service scan" time="1730832099" extrainfo="6 services on 1 host"/>
+<taskbegin task="NSE" time="1730832099"/>
+<taskend task="NSE" time="1730832123"/>
+<taskbegin task="NSE" time="1730832123"/>
+<taskend task="NSE" time="1730832142"/>
+<taskbegin task="NSE" time="1730832142"/>
+<taskend task="NSE" time="1730832142"/>
+<host starttime="1730832064" endtime="1730832142"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="208.70.245.210" addrtype="ipv4"/>
+<hostnames>
+<hostname name="peerprereview.iq.harvard.edu" type="user"/>
+<hostname name="sfulib8.nmsrv.com" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="980">
+<extrareasons reason="no-responses" count="980"/>
+</extraports>
+<port protocol="tcp" portid="20"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ftp-data" method="table" conf="3"/></port>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ftp" product="ProFTPD" method="probed" conf="10"><cpe>cpe:/a:proftpd:proftpd</cpe></service><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="tls-nextprotoneg" output="&#xa;  ftp"><elem>ftp</elem>
+</script></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="7.2p2" extrainfo="protocol 2.0; HPN-SSH patch 14v10" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.2p2</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 44:51:b2:db:21:f8:b8:53:15:d1:da:b1:dc:eb:3f:13 (RSA)&#xa;  256 31:c4:7f:21:75:9d:35:81:2b:ae:4e:85:74:47:76:54 (ECDSA)&#xa;  256 3f:b4:6e:78:b5:9d:b8:47:be:c7:bc:07:5e:55:7a:fc (ED25519)"><table>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQCrxiMbsSnxBJlMPLoCPFHCh4b8zllqM8KwWI+p21op2eYD3GfeiHY3YCxW8mAEKydnzFjunCqlZ7kzPbDcufs8YwjFKYjBeMPmkPrCv0H6Iyo+vboEq83aQ8PRDVg2+8gE/OI+eAqu56CikuZxSoBAzdox1YwGu7swKTKc2RFhKZz+efyZCWl5feDeMmnhKcvSl38wYUnwt/dzfREFAzZv75czSA0y3OGHLzfrsbf9BRIYJ5nAmzh563gI5ri8NApGsvxTPGFa2m5Rr7N+rwytPWv4jhaqHtij3KIig0OF7IIDF82wHd6jJy++o5f8UkZRPk6dZSqCNguIxXW5wUCZ</elem>
+<elem key="fingerprint">4451b2db21f8b85315d1dab1dceb3f13</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="bits">2048</elem>
+</table>
+<table>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBIjSQBHG4+E+RwE129Tb4FKyDSHGqqhbueALAka4zq+UV8ihBsZ3NTIAtPB2QNb9VuBjGRHxx9Ua41O2v2WaWO8=</elem>
+<elem key="fingerprint">31c47f21759d35812bae4e8574477654</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="bits">256</elem>
+</table>
+<table>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAILvsGxUMr8eUhrYkINoZrAr4+Z564rfQMnwD4B8Fnxm/</elem>
+<elem key="fingerprint">3fb46e78b59db847bec7bc075e557afc</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="bits">256</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="25"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtp" servicefp="SF-Port25-TCP:V=7.80%I=7%D=11/5%Time=672A66CA%P=x86_64-pc-linux-gnu%r(NULL,1D,&quot;220\x20sfulib8\.nmsrv\.com\x20ESMTP\r\n&quot;)%r(Hello,8B,&quot;220\x20sfulib8\.nmsrv\.com\x20ESMTP\r\n250-sfulib8\.nmsrv\.com\r\n250-STARTTLS\r\n250-PIPELINING\r\n250-8BITMIME\r\n250-SIZE\x200\r\n250\x20AUTH\x20LOGIN\x20PLAIN\x20CRAM-MD5\r\n&quot;);" method="table" conf="3"/><script id="fingerprint-strings" output="&#xa;  Hello: &#xa;    220 sfulib8.nmsrv.com ESMTP&#xa;    250-sfulib8.nmsrv.com&#xa;    250-STARTTLS&#xa;    250-PIPELINING&#xa;    250-8BITMIME&#xa;    250-SIZE 0&#xa;    AUTH LOGIN PLAIN CRAM-MD5&#xa;  NULL: &#xa;    220 sfulib8.nmsrv.com ESMTP"><elem key="Hello">&#xa;    220 sfulib8.nmsrv.com ESMTP&#xa;    250-sfulib8.nmsrv.com&#xa;    250-STARTTLS&#xa;    250-PIPELINING&#xa;    250-8BITMIME&#xa;    250-SIZE 0&#xa;    AUTH LOGIN PLAIN CRAM-MD5</elem>
+<elem key="NULL">&#xa;    220 sfulib8.nmsrv.com ESMTP</elem>
+</script><script id="smtp-commands" output="sfulib8.nmsrv.com, STARTTLS, PIPELINING, 8BITMIME, SIZE 0, AUTH LOGIN PLAIN CRAM-MD5, &#xa; qmail "/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" method="probed" conf="10"><cpe>cpe:/a:apache:http_server</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="Apache"><elem>Apache</elem>
+</script><script id="http-title" output="Did not follow redirect to https://peerprereview.iq.harvard.edu/"><elem key="redirect_url">https://peerprereview.iq.harvard.edu/</elem>
+</script></port>
+<port protocol="tcp" portid="113"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ident" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssl" product="Apache httpd" extrainfo="SSL-only mode" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:apache:http_server</cpe></service><script id="http-auth" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-cisco-anyconnect" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-cookie-flags" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-favicon" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-generator" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-ls" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-ntlm-info" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-robots.txt" output="1 disallowed entry &#xa;/cache/"/><script id="http-server-header" output="Apache"><elem>Apache</elem>
+</script><script id="http-title" output="ERROR: Script execution failed (use -d to debug)"/><script id="ssl-cert" output="Subject: commonName=peerprereview.iq.harvard.edu&#xa;Subject Alternative Name: DNS:peerprereview.iq.harvard.edu&#xa;Issuer: commonName=R10/organizationName=Let&apos;s Encrypt/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 4096&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-09-18T15:40:19&#xa;Not valid after:  2024-12-17T15:40:18&#xa;MD5:   acb7 7fd4 cf74 717d 01f3 2fa0 3df3 14a7&#xa;SHA-1: 37f5 23e1 2655 793b 447b 8a49 abf3 5f65 5c7a c45d"><table key="subject">
+<elem key="commonName">peerprereview.iq.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">US</elem>
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+<elem key="commonName">R10</elem>
+</table>
+<table key="pubkey">
+<elem key="modulus">BIGNUM: 0x562f91a54388</elem>
+<elem key="bits">4096</elem>
+<elem key="type">rsa</elem>
+<elem key="exponent">BIGNUM: 0x562f91a54348</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">64:E0:EC:0D:9E:AC:6B:01:2B:48:35:0D:2C:25:70:67:1A:FA:E4:26</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">BB:BC:C3:47:A5:E4:BC:A9:C6:C3:A4:72:0C:10:8D:A2:35:E1:C8:E8</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://r10.o.lencr.org&#xa;CA Issuers - URI:http://r10.i.lencr.org/</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:peerprereview.iq.harvard.edu</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 48:B0:E3:6B:DA:A6:47:34:0F:E5:6A:02:FA:9D:30:EB:&#xa;                1C:52:01:CB:56:DD:2C:81:D9:BB:BF:AB:39:D8:84:73&#xa;    Timestamp : Sep 18 16:38:49.438 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:3F:AE:A1:8D:FD:8D:64:07:F0:A0:7D:41:&#xa;                00:9B:03:D9:39:6B:F6:98:80:EC:81:A5:97:16:9F:4D:&#xa;                EC:F5:15:CA:02:21:00:F5:FD:3A:0F:9C:D5:CA:5C:24:&#xa;                8F:C9:F4:2C:58:2D:95:40:0F:5A:29:37:CE:B8:EC:65:&#xa;                BA:71:64:2D:60:B4:63&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 3F:17:4B:4F:D7:22:47:58:94:1D:65:1C:84:BE:0D:12:&#xa;                ED:90:37:7F:1F:85:6A:EB:C1:BF:28:85:EC:F8:64:6E&#xa;    Timestamp : Sep 18 16:38:49.446 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:2F:3A:0F:DD:6B:7B:9B:19:C1:A9:2B:28:&#xa;                87:3A:BD:E3:FC:55:2D:7A:77:16:FE:33:28:39:8D:BA:&#xa;                C4:F7:74:67:02:20:21:54:8A:63:E7:BC:B9:C6:A5:D7:&#xa;                E9:FE:F4:74:AB:C1:40:EC:AC:B2:BE:B8:CA:EC:E7:73:&#xa;                AD:0E:DB:DC:3D:CC</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-09-18T15:40:19</elem>
+<elem key="notAfter">2024-12-17T15:40:18</elem>
+</table>
+<elem key="md5">acb77fd4cf74717d01f32fa03df314a7</elem>
+<elem key="sha1">37f523e12655793b447b8a49abf35f655c7ac45d</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIGBzCCBO+gAwIBAgISBKLyMrI10FFaF08xcD/kPXpyMA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNSMTAwHhcNMjQwOTE4MTU0MDE5WhcNMjQxMjE3MTU0MDE4WjAnMSUwIwYDVQQD&#xa;ExxwZWVycHJlcmV2aWV3LmlxLmhhcnZhcmQuZWR1MIICIjANBgkqhkiG9w0BAQEF&#xa;AAOCAg8AMIICCgKCAgEAv5xKZruWo/hxIUAUQuney8K47wyokJkFmoUQ2eeNG+WB&#xa;iOwJoeP2QQ/YXWr7QcjZoj4iFeQtGY10+GwXVWposdBM8A96VPWoS84a3EfiNhdg&#xa;rz51iB+2XjYtRurG6dAobW5yc97RmkR7DmqFd4U4MTQ23eiNdnLjSaNXBmCDA6/U&#xa;X/opPz0kMOCFJBmWV4z0WJYQOn/+GRZ5sTWmLDvjiuZwaQ1ECA/E5M70rtFVUV2Y&#xa;SFtc/wkOwWsPxl7wzn6IVILJnH18Gwo4mE2rjxUY/udNJmybbEhO9KoY5i5oE2Jo&#xa;Fpuq8y862HC1GNMmPEdKjY3oM7lc9DoV3mGJ6IOPKo9AvH3/ugLuXqU7ZmOCz9Fg&#xa;zaMvwZBxIPB89xhKq//A8zZhxQT0iwluOWcW17dmKfRdfUvRfHPRuvAXeE4gjW62&#xa;6Qc79Y3tbL/0vHil/n1v0tLL7rG0zwxIzDn9O6DZoJeRWFkVmjHYzzdSNm49rL3r&#xa;Be9HUlbmZeswGJkEvOUjm/IwpAVNsMDpRoO8QewRcthpffzF8yN1H24fDYMVM7hD&#xa;gzbWoNHu2gLWLnTXnOUvP7uNxbElPm12rQiTh5ab9R4JWYXxH1XpixI5e5K2zkRz&#xa;QKKkUGb5Wd2IZ5vPqS54Jdw7lhg5siCQQuViNKW3hYsG3B4LbNW0JID1ox6VOUUC&#xa;AwEAAaOCAh8wggIbMA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcD&#xa;AQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQUZODsDZ6sawErSDUN&#xa;LCVwZxr65CYwHwYDVR0jBBgwFoAUu7zDR6XkvKnGw6RyDBCNojXhyOgwVwYIKwYB&#xa;BQUHAQEESzBJMCIGCCsGAQUFBzABhhZodHRwOi8vcjEwLm8ubGVuY3Iub3JnMCMG&#xa;CCsGAQUFBzAChhdodHRwOi8vcjEwLmkubGVuY3Iub3JnLzAnBgNVHREEIDAeghxw&#xa;ZWVycHJlcmV2aWV3LmlxLmhhcnZhcmQuZWR1MBMGA1UdIAQMMAowCAYGZ4EMAQIB&#xa;MIIBAwYKKwYBBAHWeQIEAgSB9ASB8QDvAHYASLDja9qmRzQP5WoC+p0w6xxSActW&#xa;3SyB2bu/qznYhHMAAAGSBgAzXgAABAMARzBFAiA/rqGN/Y1kB/CgfUEAmwPZOWv2&#xa;mIDsgaWXFp9N7PUVygIhAPX9Og+c1cpcJI/J9CxYLZVAD1opN8647GW6cWQtYLRj&#xa;AHUAPxdLT9ciR1iUHWUchL4NEu2QN38fhWrrwb8ohez4ZG4AAAGSBgAzZgAABAMA&#xa;RjBEAiAvOg/da3ubGcGpKyiHOr3j/FUtencW/jMoOY26xPd0ZwIgIVSKY+e8ucal&#xa;1+n+9HSrwUDsrLK+uMrs53OtDtvcPcwwDQYJKoZIhvcNAQELBQADggEBAHy23awK&#xa;Rt4JMfwW2f4Z7yLAthtOIcymTcL7rbEgRT+AYw8A/jdcWinyigFGnQZPQ3/nvL8E&#xa;ZOkZrPsHZOVtb+5YKevCvbm/Hvpz5GgGEsHwYhf1z4zfacGi1udvV+vEXmZhooEK&#xa;h8OtiOoqkYJKEpGrpr3wnM94ebNmxd+BRIwGAV7Lh8g7SuC48kBsdVKAZAJPW3jr&#xa;VdlrVpjKx/m/T9YsdskthL5zQfrlNXDBd4AyKREIMOnFyekpQj89aSh0eWi7/NDp&#xa;nHnsCU6j7xI3lyNXsNVzrHCR4WoBNW5O8OwM3eQLH4OfJXn0RWhjZN+h+s2lhAke&#xa;pD7Awqo51is65Bs=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="tls-alpn" output="&#xa;  h2&#xa;  http/1.1"><elem>h2</elem>
+<elem>http/1.1</elem>
+</script></port>
+<port protocol="tcp" portid="465"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="smtps" method="table" conf="3"/></port>
+<port protocol="tcp" portid="587"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtp" servicefp="SF-Port587-TCP:V=7.80%I=7%D=11/5%Time=672A66CA%P=x86_64-pc-linux-gnu%r(NULL,1D,&quot;220\x20sfulib8\.nmsrv\.com\x20ESMTP\r\n&quot;)%r(GenericLines,55,&quot;220\x20sfulib8\.nmsrv\.com\x20ESMTP\r\n502\x20unimplemented\x20\(#5\.5\.1\)\r\n502\x20unimplemented\x20\(#5\.5\.1\)\r\n&quot;)%r(Hello,8B,&quot;220\x20sfulib8\.nmsrv\.com\x20ESMTP\r\n250-sfulib8\.nmsrv\.com\r\n250-STARTTLS\r\n250-PIPELINING\r\n250-8BITMIME\r\n250-SIZE\x200\r\n250\x20AUTH\x20LOGIN\x20PLAIN\x20CRAM-MD5\r\n&quot;)%r(Help,28,&quot;220\x20sfulib8\.nmsrv\.com\x20ESMTP\r\n214\x20qmail\r\n&quot;)%r(GetRequest,55,&quot;220\x20sfulib8\.nmsrv\.com\x20ESMTP\r\n502\x20unimplemented\x20\(#5\.5\.1\)\r\n502\x20unimplemented\x20\(#5\.5\.1\)\r\n&quot;);" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  GenericLines, GetRequest: &#xa;    220 sfulib8.nmsrv.com ESMTP&#xa;    unimplemented (#5.5.1)&#xa;    unimplemented (#5.5.1)&#xa;  Hello: &#xa;    220 sfulib8.nmsrv.com ESMTP&#xa;    250-sfulib8.nmsrv.com&#xa;    250-STARTTLS&#xa;    250-PIPELINING&#xa;    250-8BITMIME&#xa;    250-SIZE 0&#xa;    AUTH LOGIN PLAIN CRAM-MD5&#xa;  Help: &#xa;    220 sfulib8.nmsrv.com ESMTP&#xa;    qmail&#xa;  NULL: &#xa;    220 sfulib8.nmsrv.com ESMTP"><elem key="GenericLines, GetRequest">&#xa;    220 sfulib8.nmsrv.com ESMTP&#xa;    unimplemented (#5.5.1)&#xa;    unimplemented (#5.5.1)</elem>
+<elem key="Hello">&#xa;    220 sfulib8.nmsrv.com ESMTP&#xa;    250-sfulib8.nmsrv.com&#xa;    250-STARTTLS&#xa;    250-PIPELINING&#xa;    250-8BITMIME&#xa;    250-SIZE 0&#xa;    AUTH LOGIN PLAIN CRAM-MD5</elem>
+<elem key="Help">&#xa;    220 sfulib8.nmsrv.com ESMTP&#xa;    qmail</elem>
+<elem key="NULL">&#xa;    220 sfulib8.nmsrv.com ESMTP</elem>
+</script><script id="smtp-commands" output="sfulib8.nmsrv.com, STARTTLS, PIPELINING, 8BITMIME, SIZE 0, AUTH LOGIN PLAIN CRAM-MD5, &#xa; qmail "/></port>
+<port protocol="tcp" portid="49152"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="49153"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="49154"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="49155"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="49156"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="49157"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="49158"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="49159"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="49160"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="49161"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="49163"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+</ports>
+<times srtt="66676" rttvar="296" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730832142"/>
+<taskend task="NSE" time="1730832142"/>
+<taskbegin task="NSE" time="1730832142"/>
+<taskend task="NSE" time="1730832142"/>
+<taskbegin task="NSE" time="1730832142"/>
+<taskend task="NSE" time="1730832142"/>
+<runstats><finished time="1730832142" timestr="Tue Nov  5 18:42:22 2024" elapsed="78.99" summary="Nmap done at Tue Nov  5 18:42:22 2024; 1 IP address (1 host up) scanned in 78.99 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
