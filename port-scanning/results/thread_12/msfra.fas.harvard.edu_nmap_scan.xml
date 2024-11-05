@@ -19,3 +19,105 @@
 <taskbegin task="Connect Scan" time="1730831366"/>
 <taskend task="Connect Scan" time="1730831371" extrainfo="1000 total ports"/>
 <taskbegin task="Service scan" time="1730831371"/>
+<taskend task="Service scan" time="1730831383" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1730831383"/>
+<taskend task="NSE" time="1730831385"/>
+<taskbegin task="NSE" time="1730831385"/>
+<taskend task="NSE" time="1730831385"/>
+<taskbegin task="NSE" time="1730831385"/>
+<taskend task="NSE" time="1730831385"/>
+<host starttime="1730831366" endtime="1730831385"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="52.202.246.166" addrtype="ipv4"/>
+<hostnames>
+<hostname name="msfra.fas.harvard.edu" type="user"/>
+<hostname name="ec2-52-202-246-166.compute-1.amazonaws.com" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="998">
+<extrareasons reason="no-responses" count="998"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="OpenResty web app server" method="probed" conf="10"><cpe>cpe:/a:openresty:ngx_openresty</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="openresty"><elem>openresty</elem>
+</script><script id="http-title" output="Did not follow redirect to https://msfra.fas.harvard.edu/"><elem key="redirect_url">https://msfra.fas.harvard.edu/</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="OpenResty web app server" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:openresty:ngx_openresty</cpe></service><script id="http-server-header" output="openresty"><elem>openresty</elem>
+</script><script id="http-title" output="Forbidden"><elem key="title">Forbidden</elem>
+</script><script id="ssl-cert" output="Subject: commonName=msfra.fas.harvard.edu&#xa;Subject Alternative Name: DNS:msfra.fas.harvard.edu, DNS:www.msfra.fas.harvard.edu&#xa;Issuer: commonName=R11/organizationName=Let&apos;s Encrypt/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-09-24T09:11:52&#xa;Not valid after:  2024-12-23T09:11:51&#xa;MD5:   cf51 2437 f2a6 9e01 dd1e 8451 59ef 69b8&#xa;SHA-1: 0eba 2ce9 4c57 9a9e 7fa7 fff5 b813 7663 2031 0577"><table key="subject">
+<elem key="commonName">msfra.fas.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">US</elem>
+<elem key="commonName">R11</elem>
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+</table>
+<table key="pubkey">
+<elem key="exponent">BIGNUM: 0x555784c1ef18</elem>
+<elem key="modulus">BIGNUM: 0x5557853bda98</elem>
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">CA:FALSE</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="value">03:CA:F7:A1:DD:E6:C8:D8:E7:8A:2F:12:79:D5:47:20:94:0F:02:3C</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="value">C5:CF:46:A4:EA:F4:C3:C0:7A:6C:95:C4:2D:B0:5E:92:2F:26:E3:B9</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">OCSP - URI:http://r11.o.lencr.org&#xa;CA Issuers - URI:http://r11.i.lencr.org/</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">DNS:msfra.fas.harvard.edu, DNS:www.msfra.fas.harvard.edu</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+<table>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 48:B0:E3:6B:DA:A6:47:34:0F:E5:6A:02:FA:9D:30:EB:&#xa;                1C:52:01:CB:56:DD:2C:81:D9:BB:BF:AB:39:D8:84:73&#xa;    Timestamp : Sep 24 10:10:22.704 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:14:13:F1:5A:B8:B4:86:21:17:17:34:17:&#xa;                47:F7:B6:0B:B4:F0:44:09:F3:1D:36:70:B2:C2:34:CC:&#xa;                2C:98:6A:A2:02:20:03:C9:AE:F1:DE:A6:CA:1E:B1:7B:&#xa;                8A:97:81:8C:16:FA:AE:DA:52:27:11:82:B4:56:98:1F:&#xa;                0F:3F:9D:05:4F:0D&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : EE:CD:D0:64:D5:DB:1A:CE:C5:5C:B7:9D:B4:CD:13:A2:&#xa;                32:87:46:7C:BC:EC:DE:C3:51:48:59:46:71:1F:B5:9B&#xa;    Timestamp : Sep 24 10:10:22.702 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:EE:27:1E:8B:6B:00:E0:92:44:DE:9B:&#xa;                36:E9:A7:F3:EE:13:02:76:17:B8:AD:F2:67:99:56:87:&#xa;                99:5D:35:A2:E7:02:21:00:D3:08:CD:A1:7E:CE:26:27:&#xa;                0E:EE:77:BC:25:44:95:A1:AF:17:9E:1A:DD:43:7B:9B:&#xa;                38:79:8D:A5:5C:D2:D2:3E</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-09-24T09:11:52</elem>
+<elem key="notAfter">2024-12-23T09:11:51</elem>
+</table>
+<elem key="md5">cf512437f2a69e01dd1e845159ef69b8</elem>
+<elem key="sha1">0eba2ce94c579a9e7fa7fff5b813766320310577</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFFTCCA/2gAwIBAgISA56N+oHz0Vtz6vREK0Nnh76tMA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNSMTEwHhcNMjQwOTI0MDkxMTUyWhcNMjQxMjIzMDkxMTUxWjAgMR4wHAYDVQQD&#xa;ExVtc2ZyYS5mYXMuaGFydmFyZC5lZHUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw&#xa;ggEKAoIBAQCzj+X/8DqVTCE/A3vrW6Acht/Qqshb5wbT0Ap5A52BtdTMr8aTSVKH&#xa;RW715Ys2uVHsIpt3U/tA5aQwLbRZFxdNkQp2N44crCzzjVeOI3k82bQGBjIkpo59&#xa;MCa1IKlzX8PAEgYczEAnQZEIKVM2EUTTg8VIp46kojmew6/9kKIs5mi3kqp5ZVHv&#xa;aFSK/xkO/J2y4UImFAN5I/OUNWkiBQqfSZpRUj+VqIH4qz8MzAtsGx5K7wtoJksT&#xa;0bTLwsnwlOqvGYLdUU4A7pRvq+sqjIRwmLwOohhxweehZfdFdOx9SUf3ImRyNOj/&#xa;r5ZVrV73c47u6PsbAw96uxkhPUe9je+zAgMBAAGjggI0MIICMDAOBgNVHQ8BAf8E&#xa;BAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQC&#xa;MAAwHQYDVR0OBBYEFAPK96Hd5sjY54ovEnnVRyCUDwI8MB8GA1UdIwQYMBaAFMXP&#xa;RqTq9MPAemyVxC2wXpIvJuO5MFcGCCsGAQUFBwEBBEswSTAiBggrBgEFBQcwAYYW&#xa;aHR0cDovL3IxMS5vLmxlbmNyLm9yZzAjBggrBgEFBQcwAoYXaHR0cDovL3IxMS5p&#xa;LmxlbmNyLm9yZy8wOwYDVR0RBDQwMoIVbXNmcmEuZmFzLmhhcnZhcmQuZWR1ghl3&#xa;d3cubXNmcmEuZmFzLmhhcnZhcmQuZWR1MBMGA1UdIAQMMAowCAYGZ4EMAQIBMIIB&#xa;BAYKKwYBBAHWeQIEAgSB9QSB8gDwAHUASLDja9qmRzQP5WoC+p0w6xxSActW3SyB&#xa;2bu/qznYhHMAAAGSI4K5cAAABAMARjBEAiAUE/FauLSGIRcXNBdH97YLtPBECfMd&#xa;NnCywjTMLJhqogIgA8mu8d6myh6xe4qXgYwW+q7aUicRgrRWmB8PP50FTw0AdwDu&#xa;zdBk1dsazsVct520zROiModGfLzs3sNRSFlGcR+1mwAAAZIjgrluAAAEAwBIMEYC&#xa;IQDuJx6LawDgkkTemzbpp/PuEwJ2F7it8meZVoeZXTWi5wIhANMIzaF+ziYnDu53&#xa;vCVElaGvF54a3UN7mzh5jaVc0tI+MA0GCSqGSIb3DQEBCwUAA4IBAQB1CJXsKSUs&#xa;iBANUdaP1+HVeIaofN79avQLYys3/h03VKm8qRUI8Gnx5Hrc13l+e3LPXlZRYFPj&#xa;z6I6WCdsntpX6GdadwiLfLoQUFbEj89OuvpHul+NoigS7kPoIDNFQCmAVTsVs8HR&#xa;uZHOJhmV45hCAICCU61BLezzD7YTD0FDLZGutUJ/9FQynNKj/MhyulyzwrbwEnAb&#xa;HmaZmGZ6SE7CV3WmLORUuKXJkx1IjOru3micpTNnKXE+EJ8qULs+dmPvozuPTRXZ&#xa;TYr3w1exWvnvAiTLhI6x7JjqyfsvFd8X2PV5DsUVYQqD0DDKbp6l4S9e4tLqTj12&#xa;sWBs41Xa8exF&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+</ports>
+<times srtt="19880" rttvar="7219" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730831385"/>
+<taskend task="NSE" time="1730831385"/>
+<taskbegin task="NSE" time="1730831385"/>
+<taskend task="NSE" time="1730831385"/>
+<taskbegin task="NSE" time="1730831385"/>
+<taskend task="NSE" time="1730831385"/>
+<runstats><finished time="1730831385" timestr="Tue Nov  5 18:29:45 2024" elapsed="19.26" summary="Nmap done at Tue Nov  5 18:29:45 2024; 1 IP address (1 host up) scanned in 19.26 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
