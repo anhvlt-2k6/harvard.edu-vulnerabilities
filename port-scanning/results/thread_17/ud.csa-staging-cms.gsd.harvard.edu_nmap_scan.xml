@@ -19,3 +19,115 @@
 <taskbegin task="Connect Scan" time="1730796395"/>
 <taskend task="Connect Scan" time="1730796400" extrainfo="1000 total ports"/>
 <taskbegin task="Service scan" time="1730796400"/>
+<taskend task="Service scan" time="1730796542" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1730796542"/>
+<taskend task="NSE" time="1730796557"/>
+<taskbegin task="NSE" time="1730796557"/>
+<taskend task="NSE" time="1730796559"/>
+<taskbegin task="NSE" time="1730796559"/>
+<taskend task="NSE" time="1730796559"/>
+<host starttime="1730796395" endtime="1730796559"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="13.248.132.87" addrtype="ipv4"/>
+<hostnames>
+<hostname name="ud.csa-staging-cms.gsd.harvard.edu" type="user"/>
+<hostname name="a33a763eea48e22da.awsglobalaccelerator.com" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="998">
+<extrareasons reason="no-responses" count="998"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="heroku-router" servicefp="SF-Port80-TCP:V=7.80%I=7%D=11/5%Time=6729DB76%P=x86_64-pc-linux-gnu%r(GetRequest,C0,&quot;HTTP/1\.0\x20400\x20Bad\x20Request\r\nCache-Control:\x20no-cache,\x20no-store\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nDate:\x202024-11-05\x2008:46:46\.605032974\x20\+0000\x20UTC\r\nServer:\x20heroku-router\r\nContent-Length:\x200\r\n\r\n&quot;)%r(HTTPOptions,C0,&quot;HTTP/1\.0\x20400\x20Bad\x20Request\r\nCache-Control:\x20no-cache,\x20no-store\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nDate:\x202024-11-05\x2008:46:46\.735329168\x20\+0000\x20UTC\r\nServer:\x20heroku-router\r\nContent-Length:\x200\r\n\r\n&quot;)%r(FourOhFourRequest,C0,&quot;HTTP/1\.0\x20400\x20Bad\x20Request\r\nCache-Control:\x20no-cache,\x20no-store\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nDate:\x202024-11-05\x2008:46:56\.875098758\x20\+0000\x20UTC\r\nServer:\x20heroku-router\r\nContent-Length:\x200\r\n\r\n&quot;);" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  FourOhFourRequest: &#xa;    HTTP/1.0 400 Bad Request&#xa;    Cache-Control: no-cache, no-store&#xa;    Content-Type: text/html; charset=utf-8&#xa;    Date: 2024-11-05 08:46:56.875098758 +0000 UTC&#xa;    Server: heroku-router&#xa;    Content-Length: 0&#xa;  GetRequest: &#xa;    HTTP/1.0 400 Bad Request&#xa;    Cache-Control: no-cache, no-store&#xa;    Content-Type: text/html; charset=utf-8&#xa;    Date: 2024-11-05 08:46:46.605032974 +0000 UTC&#xa;    Server: heroku-router&#xa;    Content-Length: 0&#xa;  HTTPOptions: &#xa;    HTTP/1.0 400 Bad Request&#xa;    Cache-Control: no-cache, no-store&#xa;    Content-Type: text/html; charset=utf-8&#xa;    Date: 2024-11-05 08:46:46.735329168 +0000 UTC&#xa;    Server: heroku-router&#xa;    Content-Length: 0"><elem key="FourOhFourRequest">&#xa;    HTTP/1.0 400 Bad Request&#xa;    Cache-Control: no-cache, no-store&#xa;    Content-Type: text/html; charset=utf-8&#xa;    Date: 2024-11-05 08:46:56.875098758 +0000 UTC&#xa;    Server: heroku-router&#xa;    Content-Length: 0</elem>
+<elem key="GetRequest">&#xa;    HTTP/1.0 400 Bad Request&#xa;    Cache-Control: no-cache, no-store&#xa;    Content-Type: text/html; charset=utf-8&#xa;    Date: 2024-11-05 08:46:46.605032974 +0000 UTC&#xa;    Server: heroku-router&#xa;    Content-Length: 0</elem>
+<elem key="HTTPOptions">&#xa;    HTTP/1.0 400 Bad Request&#xa;    Cache-Control: no-cache, no-store&#xa;    Content-Type: text/html; charset=utf-8&#xa;    Date: 2024-11-05 08:46:46.735329168 +0000 UTC&#xa;    Server: heroku-router&#xa;    Content-Length: 0</elem>
+</script><script id="http-favicon" output="Unknown favicon MD5: C396A0B028E0999C15FE3F324C2D1F45"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="&#xa;  Cowboy&#xa;  heroku-router"><elem>Cowboy</elem>
+<elem>heroku-router</elem>
+</script><script id="http-title" output="Urban Design Case Study Library"><elem key="title">Urban Design Case Study Library</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" tunnel="ssl" method="probed" conf="10"/><script id="http-favicon" output="Unknown favicon MD5: C396A0B028E0999C15FE3F324C2D1F45"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="Cowboy"><elem>Cowboy</elem>
+</script><script id="http-title" output="Urban Design Case Study Library"><elem key="title">Urban Design Case Study Library</elem>
+</script><script id="ssl-cert" output="Subject: commonName=ud.csa-staging-cms.gsd.harvard.edu&#xa;Subject Alternative Name: DNS:ud.csa-staging-cms.gsd.harvard.edu&#xa;Issuer: commonName=R10/organizationName=Let&apos;s Encrypt/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-09-10T02:09:53&#xa;Not valid after:  2024-12-09T02:09:52&#xa;MD5:   5676 8040 ef1b 4930 ba1e 5f28 b126 3028&#xa;SHA-1: c7d7 0c62 784c e3ad dace 3ef3 1333 59e1 2149 8a78"><table key="subject">
+<elem key="commonName">ud.csa-staging-cms.gsd.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">US</elem>
+<elem key="commonName">R10</elem>
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+</table>
+<table key="pubkey">
+<elem key="exponent">BIGNUM: 0x561ca9c89008</elem>
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">BIGNUM: 0x561ca84d4148</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">EF:33:84:B6:51:B1:68:01:CF:8C:A7:9A:CA:EE:1C:D2:05:A6:9E:BD</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">BB:BC:C3:47:A5:E4:BC:A9:C6:C3:A4:72:0C:10:8D:A2:35:E1:C8:E8</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://r10.o.lencr.org&#xa;CA Issuers - URI:http://r10.i.lencr.org/</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:ud.csa-staging-cms.gsd.harvard.edu</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 3F:17:4B:4F:D7:22:47:58:94:1D:65:1C:84:BE:0D:12:&#xa;                ED:90:37:7F:1F:85:6A:EB:C1:BF:28:85:EC:F8:64:6E&#xa;    Timestamp : Sep 10 03:08:23.545 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:4B:95:D3:F2:02:F3:2A:E6:71:A6:92:EA:&#xa;                29:52:E5:55:F6:B5:9D:1F:45:02:D4:B4:8B:E7:40:CA:&#xa;                3A:CE:27:6E:02:21:00:CA:A2:EB:44:97:44:59:1C:91:&#xa;                C4:3F:EC:B6:8F:67:6E:90:E9:28:84:CB:CD:13:5A:6A:&#xa;                F6:91:3C:B9:F5:BB:C3&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : DF:E1:56:EB:AA:05:AF:B5:9C:0F:86:71:8D:A8:C0:32:&#xa;                4E:AE:56:D9:6E:A7:F5:A5:6A:01:D1:C1:3B:BE:52:5C&#xa;    Timestamp : Sep 10 03:08:23.749 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:8B:D9:D8:D0:5A:08:80:AC:17:D5:68:&#xa;                E9:93:59:7D:8C:CA:E3:5C:62:F0:21:EB:A1:A1:2D:FE:&#xa;                E8:24:56:D0:D4:02:20:67:BC:46:7A:F3:97:EE:C8:DA:&#xa;                83:93:1F:1A:E8:9C:42:5B:0C:B0:47:8C:D5:32:7A:EE:&#xa;                0E:34:5D:B9:97:7C:F6</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-09-10T02:09:53</elem>
+<elem key="notAfter">2024-12-09T02:09:52</elem>
+</table>
+<elem key="md5">56768040ef1b4930ba1e5f28b1263028</elem>
+<elem key="sha1">c7d70c62784ce3addace3ef3133359e121498a78</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFFDCCA/ygAwIBAgISA7TUGB8slPULKzGraypLsDdtMA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNSMTAwHhcNMjQwOTEwMDIwOTUzWhcNMjQxMjA5MDIwOTUyWjAtMSswKQYDVQQD&#xa;EyJ1ZC5jc2Etc3RhZ2luZy1jbXMuZ3NkLmhhcnZhcmQuZWR1MIIBIjANBgkqhkiG&#xa;9w0BAQEFAAOCAQ8AMIIBCgKCAQEAucHX40MnJH7DK+SVsQ86LcZSi5T1s00FT77b&#xa;YeXr4LRVSf43yqiut32nkeIaHdojtYnDxtTb/JhnQa0ynK5LEnPaqkJOYREMT0cz&#xa;mD5Pt+78wc7P6BqBGUdI8pQ32bSZgZHY5d35877yjZrWEXThvHNB9T2wpPpeL/O/&#xa;7FZupWApxN87UXRe/UTy14JUT0bt7FuCzh0vlv98qSSWGky/yy12ZcWNGzv0B5n+&#xa;cVRWhlWu9XQUQzJ0B0HKTgM23cAySMGhrLdLLnw7Qgrj28UlrNk8ZKCqzsFhHPcD&#xa;Pn17s5bowBWjq99RITnFIxoh7d1xEKddUkiVmoGe80tlRlI29wIDAQABo4ICJjCC&#xa;AiIwDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcD&#xa;AjAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBTvM4S2UbFoAc+Mp5rK7hzSBaaevTAf&#xa;BgNVHSMEGDAWgBS7vMNHpeS8qcbDpHIMEI2iNeHI6DBXBggrBgEFBQcBAQRLMEkw&#xa;IgYIKwYBBQUHMAGGFmh0dHA6Ly9yMTAuby5sZW5jci5vcmcwIwYIKwYBBQUHMAKG&#xa;F2h0dHA6Ly9yMTAuaS5sZW5jci5vcmcvMC0GA1UdEQQmMCSCInVkLmNzYS1zdGFn&#xa;aW5nLWNtcy5nc2QuaGFydmFyZC5lZHUwEwYDVR0gBAwwCjAIBgZngQwBAgEwggEE&#xa;BgorBgEEAdZ5AgQCBIH1BIHyAPAAdgA/F0tP1yJHWJQdZRyEvg0S7ZA3fx+FauvB&#xa;vyiF7PhkbgAAAZHZ51p5AAAEAwBHMEUCIEuV0/IC8yrmcaaS6ilS5VX2tZ0fRQLU&#xa;tIvnQMo6ziduAiEAyqLrRJdEWRyRxD/sto9nbpDpKITLzRNaavaRPLn1u8MAdgDf&#xa;4VbrqgWvtZwPhnGNqMAyTq5W2W6n9aVqAdHBO75SXAAAAZHZ51tFAAAEAwBHMEUC&#xa;IQCL2djQWgiArBfVaOmTWX2MyuNcYvAh66GhLf7oJFbQ1AIgZ7xGevOX7sjag5Mf&#xa;GuicQlsMsEeM1TJ67g40XbmXfPYwDQYJKoZIhvcNAQELBQADggEBAFkJt3zbTHSv&#xa;7xc6zFCU4RAIGNJq1Mba+ud+j1drmWVRgneFGZtil4/F/WF42Ms4hpwcj+mvTvBV&#xa;sXMKJ9PS3/Ao7J4rnQD5Ak+eoNPa6tPx4Gn3wXUP78koFYIgOhiDZzG1MfnkBXtW&#xa;u1uLJf7rjN2xcj+d5JZ83Hq25inu2mX65jnSMeBPF5B/U8hPm/xde1tPVJN4oznn&#xa;P39an+YzR8Ei7GKqKKX4OO6lgeuQFdlwcZVDyxdKAM841qaiM4SwrUOK8SZKX76D&#xa;JwXbAAK86ZScciYYA8JZOXhL84NWa+PomsIkiisAq9mCQrNfQRTyCVveTwWKxgvb&#xa;VQW+mpdoUmI=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+</ports>
+<times srtt="1042" rttvar="1701" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730796559"/>
+<taskend task="NSE" time="1730796559"/>
+<taskbegin task="NSE" time="1730796559"/>
+<taskend task="NSE" time="1730796559"/>
+<taskbegin task="NSE" time="1730796559"/>
+<taskend task="NSE" time="1730796559"/>
+<runstats><finished time="1730796559" timestr="Tue Nov  5 08:49:19 2024" elapsed="163.64" summary="Nmap done at Tue Nov  5 08:49:19 2024; 1 IP address (1 host up) scanned in 163.64 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
