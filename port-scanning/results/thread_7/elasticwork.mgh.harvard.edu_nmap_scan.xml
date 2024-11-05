@@ -19,3 +19,118 @@
 <taskbegin task="Connect Scan" time="1730781416"/>
 <taskend task="Connect Scan" time="1730781423" extrainfo="1000 total ports"/>
 <taskbegin task="Service scan" time="1730781423"/>
+<taskend task="Service scan" time="1730781554" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1730781554"/>
+<taskend task="NSE" time="1730781570"/>
+<taskbegin task="NSE" time="1730781570"/>
+<taskend task="NSE" time="1730781571"/>
+<taskbegin task="NSE" time="1730781571"/>
+<taskend task="NSE" time="1730781571"/>
+<host starttime="1730781416" endtime="1730781571"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="170.223.156.228" addrtype="ipv4"/>
+<hostnames>
+<hostname name="elasticwork.mgh.harvard.edu" type="user"/>
+<hostname name="slavin-academy.mgh.harvard.edu.mgh.harvard.edu" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="998">
+<extrareasons reason="no-responses" count="998"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" servicefp="SF-Port80-TCP:V=7.80%I=7%D=11/5%Time=6729A0F5%P=x86_64-pc-linux-gnu%r(GetRequest,7D,&quot;HTTP/1\.0\x20302\x20Found\x20:\x20Moved\x20Temporarily\r\nLocation:\x20https:///\r\nConnection:\x20close\r\nCache-Control:\x20no-cache\r\nPragma:\x20no-cache\r\n\r\n&quot;)%r(HTTPOptions,7D,&quot;HTTP/1\.0\x20302\x20Found\x20:\x20Moved\x20Temporarily\r\nLocation:\x20https:///\r\nConnection:\x20close\r\nCache-Control:\x20no-cache\r\nPragma:\x20no-cache\r\n\r\n&quot;)%r(RTSPRequest,7D,&quot;HTTP/1\.0\x20302\x20Found\x20:\x20Moved\x20Temporarily\r\nLocation:\x20https:///\r\nConnection:\x20close\r\nCache-Control:\x20no-cache\r\nPragma:\x20no-cache\r\n\r\n&quot;)%r(FourOhFourRequest,A0,&quot;HTTP/1\.0\x20302\x20Found\x20:\x20Moved\x20Temporarily\r\nLocation:\x20https:///nice%20ports%2C/Tri%6Eity\.txt%2ebak\r\nConnection:\x20close\r\nCache-Control:\x20no-cache\r\nPragma:\x20no-cache\r\n\r\n&quot;)%r(SIPOptions,82,&quot;HTTP/1\.0\x20302\x20Found\x20:\x20Moved\x20Temporarily\r\nLocation:\x20https://sip:nm\r\nConnection:\x20close\r\nCache-Control:\x20no-cache\r\nPragma:\x20no-cache\r\n\r\n&quot;);" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  FourOhFourRequest: &#xa;    HTTP/1.0 302 Found : Moved Temporarily&#xa;    Location: https:///nice%20ports%2C/Tri%6Eity.txt%2ebak&#xa;    Connection: close&#xa;    Cache-Control: no-cache&#xa;    Pragma: no-cache&#xa;  GetRequest, HTTPOptions, RTSPRequest: &#xa;    HTTP/1.0 302 Found : Moved Temporarily&#xa;    Location: https:///&#xa;    Connection: close&#xa;    Cache-Control: no-cache&#xa;    Pragma: no-cache&#xa;  SIPOptions: &#xa;    HTTP/1.0 302 Found : Moved Temporarily&#xa;    Location: https://sip:nm&#xa;    Connection: close&#xa;    Cache-Control: no-cache&#xa;    Pragma: no-cache"><elem key="FourOhFourRequest">&#xa;    HTTP/1.0 302 Found : Moved Temporarily&#xa;    Location: https:///nice%20ports%2C/Tri%6Eity.txt%2ebak&#xa;    Connection: close&#xa;    Cache-Control: no-cache&#xa;    Pragma: no-cache</elem>
+<elem key="GetRequest, HTTPOptions, RTSPRequest">&#xa;    HTTP/1.0 302 Found : Moved Temporarily&#xa;    Location: https:///&#xa;    Connection: close&#xa;    Cache-Control: no-cache&#xa;    Pragma: no-cache</elem>
+<elem key="SIPOptions">&#xa;    HTTP/1.0 302 Found : Moved Temporarily&#xa;    Location: https://sip:nm&#xa;    Connection: close&#xa;    Cache-Control: no-cache&#xa;    Pragma: no-cache</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Did not follow redirect to https://elasticwork.mgh.harvard.edu/"><elem key="redirect_url">https://elasticwork.mgh.harvard.edu/</elem>
+</script><script id="https-redirect" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" version="1.18.0" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.18.0</cpe></service><script id="http-favicon" output="Unknown favicon MD5: 5006D77BEBFEF6D2D11CA2013F49AC46"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+</table>
+</script><script id="http-server-header" output="nginx/1.18.0"><elem>nginx/1.18.0</elem>
+</script><script id="http-title" output="Elastic Work"><elem key="title">Elastic Work</elem>
+</script><script id="http-trane-info" output="Problem with XML parsing of /evox/about"/><script id="ssl-cert" output="Subject: commonName=elasticwork.mgh.harvard.edu/organizationName=President and Fellows of Harvard College/stateOrProvinceName=Massachusetts/countryName=US&#xa;Subject Alternative Name: DNS:elasticwork.mgh.harvard.edu, DNS:api-elasticwork.mgh.harvard.edu, DNS:api-elasticwork.partners.org, DNS:elasticwork.mgb.org, DNS:elasticwork.partners.org, DNS:researchjobs.mgh.harvard.edu&#xa;Issuer: commonName=InCommon RSA Server CA 2/organizationName=Internet2/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha384WithRSAEncryption&#xa;Not valid before: 2024-08-06T00:00:00&#xa;Not valid after:  2025-08-06T23:59:59&#xa;MD5:   a93b 1b25 ba62 254f 6ba1 8003 8f80 da65&#xa;SHA-1: 5a48 8b93 46c2 3355 ae5b 5816 332f c605 b570 fac2"><table key="subject">
+<elem key="organizationName">President and Fellows of Harvard College</elem>
+<elem key="commonName">elasticwork.mgh.harvard.edu</elem>
+<elem key="stateOrProvinceName">Massachusetts</elem>
+<elem key="countryName">US</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">US</elem>
+<elem key="organizationName">Internet2</elem>
+<elem key="commonName">InCommon RSA Server CA 2</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">2048</elem>
+<elem key="modulus">BIGNUM: 0x555a1cb71208</elem>
+<elem key="type">rsa</elem>
+<elem key="exponent">BIGNUM: 0x555a1df10b88</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">EF:4C:00:92:A6:FB:76:2E:5E:95:E2:C9:5F:87:1B:19:D5:4D:E2:D9</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">84:56:47:50:78:8C:0D:3E:D7:0C:A4:CF:47:3D:2D:18:56:80:84:8F</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="critical">true</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="critical">true</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 1.3.6.1.4.1.6449.1.2.2.103&#xa;  CPS: https://sectigo.com/CPS&#xa;Policy: 2.23.140.1.2.2</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://crl.sectigo.com/InCommonRSAServerCA2.crl</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:http://crt.sectigo.com/InCommonRSAServerCA2.crt&#xa;OCSP - URI:http://ocsp.sectigo.com</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : DD:DC:CA:34:95:D7:E1:16:05:E7:95:32:FA:C7:9F:F8:&#xa;                3D:1C:50:DF:DB:00:3A:14:12:76:0A:2C:AC:BB:C8:2A&#xa;    Timestamp : Aug  6 19:25:51.827 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:57:30:14:D4:DC:CB:76:31:57:2C:D7:98:&#xa;                09:D6:C8:A6:28:6F:73:6E:AE:88:EA:7A:FA:55:2C:C6:&#xa;                07:A3:94:79:02:21:00:FF:AF:87:B5:B7:92:A5:F5:EF:&#xa;                A8:AD:44:E9:26:7B:04:C1:17:36:C6:E1:3D:73:7E:D9:&#xa;                C3:61:07:D2:8C:8F:D7&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 0D:E1:F2:30:2B:D3:0D:C1:40:62:12:09:EA:55:2E:FC:&#xa;                47:74:7C:B1:D7:E9:30:EF:0E:42:1E:B4:7E:4E:AA:34&#xa;    Timestamp : Aug  6 19:25:51.720 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:53:E2:89:FC:50:50:42:9C:6A:3A:55:28:&#xa;                5A:50:00:13:50:F1:E3:CD:38:78:9F:56:0D:08:19:FD:&#xa;                90:E8:1B:44:02:20:2B:41:B5:4B:A5:BD:F2:B7:51:CF:&#xa;                E4:24:DF:30:07:1B:49:9C:8E:F9:88:0C:43:D7:54:48:&#xa;                AA:0E:89:33:BB:A2&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 12:F1:4E:34:BD:53:72:4C:84:06:19:C3:8F:3F:7A:13:&#xa;                F8:E7:B5:62:87:88:9C:6D:30:05:84:EB:E5:86:26:3A&#xa;    Timestamp : Aug  6 19:25:51.721 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:E6:C0:DB:C5:7A:9E:7F:89:5E:16:FE:&#xa;                96:7B:44:11:7C:1B:F9:23:58:CC:0F:9A:8B:93:EB:D7:&#xa;                53:B8:2C:57:11:02:21:00:E8:2E:C6:C5:89:CF:27:B8:&#xa;                55:BA:C3:35:3C:A7:A4:66:BB:E4:3B:8A:6A:16:CE:DD:&#xa;                D4:C7:39:8F:C6:9B:E8:70</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:elasticwork.mgh.harvard.edu, DNS:api-elasticwork.mgh.harvard.edu, DNS:api-elasticwork.partners.org, DNS:elasticwork.mgb.org, DNS:elasticwork.partners.org, DNS:researchjobs.mgh.harvard.edu</elem>
+</table>
+</table>
+<elem key="sig_algo">sha384WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-08-06T00:00:00</elem>
+<elem key="notAfter">2025-08-06T23:59:59</elem>
+</table>
+<elem key="md5">a93b1b25ba62254f6ba180038f80da65</elem>
+<elem key="sha1">5a488b9346c23355ae5b5816332fc605b570fac2</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIHhzCCBe+gAwIBAgIQeW54DnbUa9PJrao0Vcq+yzANBgkqhkiG9w0BAQwFADBE&#xa;MQswCQYDVQQGEwJVUzESMBAGA1UEChMJSW50ZXJuZXQyMSEwHwYDVQQDExhJbkNv&#xa;bW1vbiBSU0EgU2VydmVyIENBIDIwHhcNMjQwODA2MDAwMDAwWhcNMjUwODA2MjM1&#xa;OTU5WjB+MQswCQYDVQQGEwJVUzEWMBQGA1UECBMNTWFzc2FjaHVzZXR0czExMC8G&#xa;A1UEChMoUHJlc2lkZW50IGFuZCBGZWxsb3dzIG9mIEhhcnZhcmQgQ29sbGVnZTEk&#xa;MCIGA1UEAxMbZWxhc3RpY3dvcmsubWdoLmhhcnZhcmQuZWR1MIIBIjANBgkqhkiG&#xa;9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsvtaysD24AUm/mj6VnfQDu+3t3y7JzEln4UC&#xa;HUp4sXYne6rQik28vO+ExE01D8ohxhnEUl3hs1uw1tow/4SsAQV10ICCNjpGC3qd&#xa;hX75siDQiAOfe3ov5wzJldWSBui2qF+bVHGyCtVm/DmZ6uaDMYZzJ5yPoWP7XmUe&#xa;szZeUwBdRTOWQF5zuKKxoQSSpzAOjqhcp2VSIsM6LBLa1Ic3Kb0sn24PdgGIkuSZ&#xa;osl0G5qnD+vEeay1Gi0kM9BZGWhoOCNZPlm9XA6vriJtvf3bUge87J2dsJKjROge&#xa;GDEXkQFVSz6qIhgDw8nBcnfhTv7LlI4e437CCamuvg8oFj8qDQIDAQABo4IDuTCC&#xa;A7UwHwYDVR0jBBgwFoAU70wAkqb7di5eleLJX4cbGdVN4tkwHQYDVR0OBBYEFIRW&#xa;R1B4jA0+1wykz0c9LRhWgISPMA4GA1UdDwEB/wQEAwIFoDAMBgNVHRMBAf8EAjAA&#xa;MB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjBJBgNVHSAEQjBAMDQGCysG&#xa;AQQBsjEBAgJnMCUwIwYIKwYBBQUHAgEWF2h0dHBzOi8vc2VjdGlnby5jb20vQ1BT&#xa;MAgGBmeBDAECAjBABgNVHR8EOTA3MDWgM6Axhi9odHRwOi8vY3JsLnNlY3RpZ28u&#xa;Y29tL0luQ29tbW9uUlNBU2VydmVyQ0EyLmNybDBwBggrBgEFBQcBAQRkMGIwOwYI&#xa;KwYBBQUHMAKGL2h0dHA6Ly9jcnQuc2VjdGlnby5jb20vSW5Db21tb25SU0FTZXJ2&#xa;ZXJDQTIuY3J0MCMGCCsGAQUFBzABhhdodHRwOi8vb2NzcC5zZWN0aWdvLmNvbTCC&#xa;AX4GCisGAQQB1nkCBAIEggFuBIIBagFoAHYA3dzKNJXX4RYF55Uy+sef+D0cUN/b&#xa;ADoUEnYKLKy7yCoAAAGRKSetUwAABAMARzBFAiBXMBTU3Mt2MVcs15gJ1simKG9z&#xa;bq6I6nr6VSzGB6OUeQIhAP+vh7W3kqX176itROkmewTBFzbG4T1zftnDYQfSjI/X&#xa;AHUADeHyMCvTDcFAYhIJ6lUu/Ed0fLHX6TDvDkIetH5OqjQAAAGRKSes6AAABAMA&#xa;RjBEAiBT4on8UFBCnGo6VShaUAATUPHjzTh4n1YNCBn9kOgbRAIgK0G1S6W98rdR&#xa;z+Qk3zAHG0mcjvmIDEPXVEiqDokzu6IAdwAS8U40vVNyTIQGGcOPP3oT+Oe1YoeI&#xa;nG0wBYTr5YYmOgAAAZEpJ6zpAAAEAwBIMEYCIQDmwNvFep5/iV4W/pZ7RBF8G/kj&#xa;WMwPmouT69dTuCxXEQIhAOguxsWJzye4VbrDNTynpGa75DuKahbO3dTHOY/Gm+hw&#xa;MIG0BgNVHREEgawwgamCG2VsYXN0aWN3b3JrLm1naC5oYXJ2YXJkLmVkdYIfYXBp&#xa;LWVsYXN0aWN3b3JrLm1naC5oYXJ2YXJkLmVkdYIcYXBpLWVsYXN0aWN3b3JrLnBh&#xa;cnRuZXJzLm9yZ4ITZWxhc3RpY3dvcmsubWdiLm9yZ4IYZWxhc3RpY3dvcmsucGFy&#xa;dG5lcnMub3JnghxyZXNlYXJjaGpvYnMubWdoLmhhcnZhcmQuZWR1MA0GCSqGSIb3&#xa;DQEBDAUAA4IBgQAjEFTIn95SQHTdq9ybaNECsh6g5H6FLDJ8wIVqxv9V9v7rEtGW&#xa;YuXVwyKBfgY+0b3dJE+Oinmjo6TrbTNO9It4iUIzK1SZToMcDkWXUEpbOEYP75ld&#xa;LlubpwlGiILFW2iFqKOuvJ6dmLZxV9HfUXIuN4WqDqmoVvMi+mFybPRKdOoyxq0M&#xa;UBbb9aXqwGQOxYAZvLwKyu742UQubjClpiQhffHvC7CGJ2qr4a7rdwual1DhKfLr&#xa;ryQqjyvbonXZIkyGEEORplG+cM+dlSsvVnTK2LHsBfDCF4MxOZDXXAmGI6SGTJWP&#xa;wAGQBYwQXevf67YfGvgGKVROB0Ug2oarNs+DoRnTbtix2KYRGfhBdbU1Mc6dwcGT&#xa;aqEGtnDhZISu37r3fDoZ1JOWxCqiqdPsZPZTh3kZW0XJgWOBu8PzQ61A+hGg9PLw&#xa;vwXfz4gp4kjOyn/N2535bWZ+Lp0CwmRX5ASJqGhiwS/EQ/OktIlC9vxPQJYmkWS/&#xa;bf4/RVjlNtDXhkg=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+</ports>
+<times srtt="76077" rttvar="15659" to="138713"/>
+</host>
+<taskbegin task="NSE" time="1730781571"/>
+<taskend task="NSE" time="1730781571"/>
+<taskbegin task="NSE" time="1730781571"/>
+<taskend task="NSE" time="1730781571"/>
+<taskbegin task="NSE" time="1730781571"/>
+<taskend task="NSE" time="1730781571"/>
+<runstats><finished time="1730781571" timestr="Tue Nov  5 04:39:31 2024" elapsed="156.43" summary="Nmap done at Tue Nov  5 04:39:31 2024; 1 IP address (1 host up) scanned in 156.43 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
