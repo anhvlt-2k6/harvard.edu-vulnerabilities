@@ -19,3 +19,107 @@
 <taskbegin task="Connect Scan" time="1730825458"/>
 <taskend task="Connect Scan" time="1730825463" extrainfo="1000 total ports"/>
 <taskbegin task="Service scan" time="1730825463"/>
+<taskend task="Service scan" time="1730825498" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1730825498"/>
+<taskend task="NSE" time="1730825505"/>
+<taskbegin task="NSE" time="1730825505"/>
+<taskend task="NSE" time="1730825520"/>
+<taskbegin task="NSE" time="1730825520"/>
+<taskend task="NSE" time="1730825520"/>
+<host starttime="1730825458" endtime="1730825520"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="52.206.50.78" addrtype="ipv4"/>
+<hostnames>
+<hostname name="alumfeed.caads.harvard.edu" type="user"/>
+<hostname name="ec2-52-206-50-78.compute-1.amazonaws.com" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="998">
+<extrareasons reason="no-responses" count="998"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="awselb/2.0" servicefp="SF-Port80-TCP:V=7.80%I=7%D=11/5%Time=672A4CFD%P=x86_64-pc-linux-gnu%r(GetRequest,17F,&quot;HTTP/1\.1\x20301\x20Moved\x20Permanently\r\nServer:\x20awselb/2\.0\r\nDate:\x20Tue,\x2005\x20Nov\x202024\x2016:51:09\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20134\r\nConnection:\x20close\r\nLocation:\x20https://smart-crimson-lb-prod-app-pub-1943040521\.us-east-1\.elb\.amazonaws\.com:443/\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;301\x20Moved\x20Permanently&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;301\x20Moved\x20Permanently&lt;/h1&gt;&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(HTTPOptions,17F,&quot;HTTP/1\.1\x20301\x20Moved\x20Permanently\r\nServer:\x20awselb/2\.0\r\nDate:\x20Tue,\x2005\x20Nov\x202024\x2016:51:09\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20134\r\nConnection:\x20close\r\nLocation:\x20https://smart-crimson-lb-prod-app-pub-1943040521\.us-east-1\.elb\.amazonaws\.com:443/\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;301\x20Moved\x20Permanently&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;301\x20Moved\x20Permanently&lt;/h1&gt;&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(RTSPRequest,7A,&quot;&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(X11Probe,110,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nServer:\x20awselb/2\.0\r\nDate:\x20Tue,\x2005\x20Nov\x202024\x2016:51:09\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20122\r\nConnection:\x20close\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(FourOhFourRequest,1A2,&quot;HTTP/1\.1\x20301\x20Moved\x20Permanently\r\nServer:\x20awselb/2\.0\r\nDate:\x20Tue,\x2005\x20Nov\x202024\x2016:51:09\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20134\r\nConnection:\x20close\r\nLocation:\x20https://smart-crimson-lb-prod-app-pub-1943040521\.us-east-1\.elb\.amazonaws\.com:443/nice%20ports%2C/Tri%6Eity\.txt%2ebak\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;301\x20Moved\x20Permanently&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;301\x20Moved\x20Permanently&lt;/h1&gt;&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;);" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  FourOhFourRequest: &#xa;    HTTP/1.1 301 Moved Permanently&#xa;    Server: awselb/2.0&#xa;    Date: Tue, 05 Nov 2024 16:51:09 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 134&#xa;    Connection: close&#xa;    Location: https://smart-crimson-lb-prod-app-pub-1943040521.us-east-1.elb.amazonaws.com:443/nice%20ports%2C/Tri%6Eity.txt%2ebak&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;301 Moved Permanently&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;301 Moved Permanently&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;&#xa;  GetRequest, HTTPOptions: &#xa;    HTTP/1.1 301 Moved Permanently&#xa;    Server: awselb/2.0&#xa;    Date: Tue, 05 Nov 2024 16:51:09 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 134&#xa;    Connection: close&#xa;    Location: https://smart-crimson-lb-prod-app-pub-1943040521.us-east-1.elb.amazonaws.com:443/&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;301 Moved Permanently&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;301 Moved Permanently&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;&#xa;  RTSPRequest: &#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;&#xa;  X11Probe: &#xa;    HTTP/1.1 400 Bad Request&#xa;    Server: awselb/2.0&#xa;    Date: Tue, 05 Nov 2024 16:51:09 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 122&#xa;    Connection: close&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;"><elem key="FourOhFourRequest">&#xa;    HTTP/1.1 301 Moved Permanently&#xa;    Server: awselb/2.0&#xa;    Date: Tue, 05 Nov 2024 16:51:09 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 134&#xa;    Connection: close&#xa;    Location: https://smart-crimson-lb-prod-app-pub-1943040521.us-east-1.elb.amazonaws.com:443/nice%20ports%2C/Tri%6Eity.txt%2ebak&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;301 Moved Permanently&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;301 Moved Permanently&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;</elem>
+<elem key="GetRequest, HTTPOptions">&#xa;    HTTP/1.1 301 Moved Permanently&#xa;    Server: awselb/2.0&#xa;    Date: Tue, 05 Nov 2024 16:51:09 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 134&#xa;    Connection: close&#xa;    Location: https://smart-crimson-lb-prod-app-pub-1943040521.us-east-1.elb.amazonaws.com:443/&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;301 Moved Permanently&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;301 Moved Permanently&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;</elem>
+<elem key="RTSPRequest">&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;</elem>
+<elem key="X11Probe">&#xa;    HTTP/1.1 400 Bad Request&#xa;    Server: awselb/2.0&#xa;    Date: Tue, 05 Nov 2024 16:51:09 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 122&#xa;    Connection: close&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;</elem>
+</script><script id="http-server-header" output="awselb/2.0"><elem>awselb/2.0</elem>
+</script><script id="http-title" output="403 Forbidden"><elem key="title">403 Forbidden</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" product="awselb/2.0" tunnel="ssl" method="probed" conf="10"/><script id="http-server-header" output="awselb/2.0"><elem>awselb/2.0</elem>
+</script><script id="http-title" output="403 Forbidden"><elem key="title">403 Forbidden</elem>
+</script><script id="ssl-cert" output="Subject: commonName=crpt.caads.harvard.edu&#xa;Subject Alternative Name: DNS:crpt.caads.harvard.edu&#xa;Issuer: commonName=Amazon RSA 2048 M03/organizationName=Amazon/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-05-29T00:00:00&#xa;Not valid after:  2025-06-27T23:59:59&#xa;MD5:   509b 5d25 33d7 57c7 bd34 c726 c4b1 67ed&#xa;SHA-1: dfc6 074e 0a51 f727 820e 2bd9 658a 714f 36d8 d40d"><table key="subject">
+<elem key="commonName">crpt.caads.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">US</elem>
+<elem key="organizationName">Amazon</elem>
+<elem key="commonName">Amazon RSA 2048 M03</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">2048</elem>
+<elem key="modulus">BIGNUM: 0x561af86dbb68</elem>
+<elem key="type">rsa</elem>
+<elem key="exponent">BIGNUM: 0x561af86dbae8</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">55:D9:18:5F:D2:1C:CC:01:E1:58:B4:BE:AB:D9:55:42:01:D7:2E:02</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">BC:51:F9:44:99:E8:BD:A3:A7:79:DD:95:AA:75:04:AD:B4:83:50:31</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:crpt.caads.harvard.edu</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://crl.r2m03.amazontrust.com/r2m03.crl</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://ocsp.r2m03.amazontrust.com&#xa;CA Issuers - URI:http://crt.r2m03.amazontrust.com/r2m03.cer</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : CF:11:56:EE:D5:2E:7C:AF:F3:87:5B:D9:69:2E:9B:E9:&#xa;                1A:71:67:4A:B0:17:EC:AC:01:D2:5B:77:CE:CC:3B:08&#xa;    Timestamp : May 29 08:25:14.954 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:D5:33:DD:98:AE:D3:E0:97:B0:52:E0:&#xa;                4E:45:78:38:D1:80:27:65:A6:1C:7C:1F:25:76:70:B0:&#xa;                51:B3:70:25:50:02:20:4B:FC:AE:B6:12:1D:FA:AD:E7:&#xa;                3E:8A:EF:0E:6A:86:47:E1:F7:04:D3:E3:B9:D3:78:B6:&#xa;                4B:38:94:42:F6:A3:19&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 7D:59:1E:12:E1:78:2A:7B:1C:61:67:7C:5E:FD:F8:D0:&#xa;                87:5C:14:A0:4E:95:9E:B9:03:2F:D9:0E:8C:2E:79:B8&#xa;    Timestamp : May 29 08:25:14.898 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:DA:D4:32:10:80:87:80:AD:4D:3F:91:&#xa;                74:8D:58:6B:3C:5F:2A:53:DA:A8:98:95:6B:8A:ED:D2:&#xa;                70:C1:FB:6D:97:02:20:45:DE:A2:57:83:A9:1A:A1:88:&#xa;                5F:AD:33:C1:A9:FF:A1:AD:AC:B8:26:67:AC:F3:84:5F:&#xa;                11:27:5A:DC:D2:68:85&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : E6:D2:31:63:40:77:8C:C1:10:41:06:D7:71:B9:CE:C1:&#xa;                D2:40:F6:96:84:86:FB:BA:87:32:1D:FD:1E:37:8E:50&#xa;    Timestamp : May 29 08:25:14.918 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:3A:0B:D7:FB:54:3C:4B:30:5B:70:D9:54:&#xa;                C6:25:36:3B:5E:69:5E:0F:D8:A3:D7:98:E6:85:AC:E8:&#xa;                CE:A0:DD:0F:02:21:00:D0:05:83:03:C3:8D:58:9F:25:&#xa;                ED:04:D3:32:E4:F3:FF:22:32:B8:5D:57:55:52:95:B6:&#xa;                C1:E9:00:66:67:E0:15</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-05-29T00:00:00</elem>
+<elem key="notAfter">2025-06-27T23:59:59</elem>
+</table>
+<elem key="md5">509b5d2533d757c7bd34c726c4b167ed</elem>
+<elem key="sha1">dfc6074e0a51f727820e2bd9658a714f36d8d40d</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIF2DCCBMCgAwIBAgIQBhUqZ2YoMYJIV7mz6x2oPjANBgkqhkiG9w0BAQsFADA8&#xa;MQswCQYDVQQGEwJVUzEPMA0GA1UEChMGQW1hem9uMRwwGgYDVQQDExNBbWF6b24g&#xa;UlNBIDIwNDggTTAzMB4XDTI0MDUyOTAwMDAwMFoXDTI1MDYyNzIzNTk1OVowITEf&#xa;MB0GA1UEAxMWY3JwdC5jYWFkcy5oYXJ2YXJkLmVkdTCCASIwDQYJKoZIhvcNAQEB&#xa;BQADggEPADCCAQoCggEBALEc/38TNN8VYhIlVyRMkQaXt6/6LVf+Z/yXlswyH2O9&#xa;havay4j+PH6l07S+yubCdHAuJqLYhPP7KnpAt+cGjFjQfZvReC8iNqIrf4xbn/6o&#xa;x4SoEHXh/5U3cu7Ai+H7xOKwjo7R9zP3XkDzPDPnlTLWMkraUEg7aowfJUxHM9GH&#xa;h9BjBZJd9AA+nxx0k9cMws8Ojt5hgjl4LUlWQBN7uufdmc8BE3F8DBZjJRZgSYrc&#xa;kHUkC4A9ZEFX9us00KqGLbzKVnCrAJZmzvvlCah4UgWXiBoFcJPwsaVhed+MoQkI&#xa;oClBy1R0ukbBvjaA42uwkl3MD74Y3MwhM98UzhpI82ECAwEAAaOCAu8wggLrMB8G&#xa;A1UdIwQYMBaAFFXZGF/SHMwB4Vi0vqvZVUIB1y4CMB0GA1UdDgQWBBS8UflEmei9&#xa;o6d53ZWqdQSttINQMTAhBgNVHREEGjAYghZjcnB0LmNhYWRzLmhhcnZhcmQuZWR1&#xa;MBMGA1UdIAQMMAowCAYGZ4EMAQIBMA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAU&#xa;BggrBgEFBQcDAQYIKwYBBQUHAwIwOwYDVR0fBDQwMjAwoC6gLIYqaHR0cDovL2Ny&#xa;bC5yMm0wMy5hbWF6b250cnVzdC5jb20vcjJtMDMuY3JsMHUGCCsGAQUFBwEBBGkw&#xa;ZzAtBggrBgEFBQcwAYYhaHR0cDovL29jc3AucjJtMDMuYW1hem9udHJ1c3QuY29t&#xa;MDYGCCsGAQUFBzAChipodHRwOi8vY3J0LnIybTAzLmFtYXpvbnRydXN0LmNvbS9y&#xa;Mm0wMy5jZXIwDAYDVR0TAQH/BAIwADCCAX4GCisGAQQB1nkCBAIEggFuBIIBagFo&#xa;AHYAzxFW7tUufK/zh1vZaS6b6RpxZ0qwF+ysAdJbd87MOwgAAAGPw3QRygAABAMA&#xa;RzBFAiEA1TPdmK7T4JewUuBORXg40YAnZaYcfB8ldnCwUbNwJVACIEv8rrYSHfqt&#xa;5z6K7w5qhkfh9wTT47nTeLZLOJRC9qMZAHYAfVkeEuF4KnscYWd8Xv340IdcFKBO&#xa;lZ65Ay/ZDowuebgAAAGPw3QRkgAABAMARzBFAiEA2tQyEICHgK1NP5F0jVhrPF8q&#xa;U9qomJVriu3ScMH7bZcCIEXeoleDqRqhiF+tM8Gp/6GtrLgmZ6zzhF8RJ1rc0miF&#xa;AHYA5tIxY0B3jMEQQQbXcbnOwdJA9paEhvu6hzId/R43jlAAAAGPw3QRpgAABAMA&#xa;RzBFAiA6C9f7VDxLMFtw2VTGJTY7XmleD9ij15jmhazozqDdDwIhANAFgwPDjVif&#xa;Je0E0zLk8/8iMrhdV1VSlbbB6QBmZ+AVMA0GCSqGSIb3DQEBCwUAA4IBAQBJFBUR&#xa;SX83L/6z9t+18d2IhjMVi0MiVMkWiKlYhzivBFVJn5BKbvZ6c1H4TRtXu9EKqhSp&#xa;xShaM8nufK5c7wo4OdcQu9w18y2J2MQYjnIzwl3AGJEcbB51/iny/OGeQTOOwQvG&#xa;iSO+ttKu5l7WhOhKN+hjdpr9NlALsEUYnT86dkWQAGAUZXacKZxdpMpfg/iSXYrH&#xa;hkj2S7ta2k3vuEBKTcVqRY4sDHw5DYjSK/ohFIfHIPfTeFedqa6O0eBCay6K/xG/&#xa;n/x6t3QFKRoCRTh/lpr2Mef+fYJ4hqY5zbVbt2F9eQLqJY4PDcDsSkVjpoa/ALfi&#xa;pR2btRyYupGI5DjI&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+</ports>
+<times srtt="20156" rttvar="8078" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730825520"/>
+<taskend task="NSE" time="1730825520"/>
+<taskbegin task="NSE" time="1730825520"/>
+<taskend task="NSE" time="1730825520"/>
+<taskbegin task="NSE" time="1730825520"/>
+<taskend task="NSE" time="1730825520"/>
+<runstats><finished time="1730825520" timestr="Tue Nov  5 16:52:00 2024" elapsed="62.16" summary="Nmap done at Tue Nov  5 16:52:00 2024; 1 IP address (1 host up) scanned in 62.16 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
