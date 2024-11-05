@@ -19,3 +19,120 @@
 <taskbegin task="Connect Scan" time="1730780117"/>
 <taskend task="Connect Scan" time="1730780123" extrainfo="1000 total ports"/>
 <taskbegin task="Service scan" time="1730780123"/>
+<taskend task="Service scan" time="1730780143" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1730780143"/>
+<taskend task="NSE" time="1730780146"/>
+<taskbegin task="NSE" time="1730780146"/>
+<taskend task="NSE" time="1730780147"/>
+<taskbegin task="NSE" time="1730780147"/>
+<taskend task="NSE" time="1730780147"/>
+<host starttime="1730780117" endtime="1730780147"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="35.161.18.85" addrtype="ipv4"/>
+<hostnames>
+<hostname name="catchpy.harvardx.harvard.edu" type="user"/>
+<hostname name="ec2-35-161-18-85.us-west-2.compute.amazonaws.com" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="998">
+<extrareasons reason="no-responses" count="998"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" version="1.18.0" extrainfo="Ubuntu" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.18.0</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Did not follow redirect to https://catchpy.harvardx.harvard.edu/"><elem key="redirect_url">https://catchpy.harvardx.harvard.edu/</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" version="1.18.0" extrainfo="Ubuntu" ostype="Linux" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.18.0</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+</table>
+</script><script id="http-server-header" output="nginx/1.18.0 (Ubuntu)"><elem>nginx/1.18.0 (Ubuntu)</elem>
+</script><script id="http-title" output="403 Forbidden"><elem key="title">403 Forbidden</elem>
+</script><script id="ssl-cert" output="Subject: commonName=catchpy.harvardx.harvard.edu/organizationName=President and Fellows of Harvard College/stateOrProvinceName=Massachusetts/countryName=US&#xa;Subject Alternative Name: DNS:catchpy.harvardx.harvard.edu&#xa;Issuer: commonName=InCommon RSA Server CA 2/organizationName=Internet2/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha384WithRSAEncryption&#xa;Not valid before: 2024-09-05T00:00:00&#xa;Not valid after:  2025-09-05T23:59:59&#xa;MD5:   0ee8 41be 8327 1fe3 03fb 8d73 b463 fb6e&#xa;SHA-1: cd39 da49 4259 3a4e 5dc0 b89c 3e33 b6a2 05e7 ce5e"><table key="subject">
+<elem key="countryName">US</elem>
+<elem key="stateOrProvinceName">Massachusetts</elem>
+<elem key="organizationName">President and Fellows of Harvard College</elem>
+<elem key="commonName">catchpy.harvardx.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">InCommon RSA Server CA 2</elem>
+<elem key="organizationName">Internet2</elem>
+<elem key="countryName">US</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="modulus">BIGNUM: 0x5612ad546d38</elem>
+<elem key="bits">2048</elem>
+<elem key="exponent">BIGNUM: 0x5612ad546cb8</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">EF:4C:00:92:A6:FB:76:2E:5E:95:E2:C9:5F:87:1B:19:D5:4D:E2:D9</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">00:CE:71:83:9A:8E:24:6D:36:71:25:E4:EB:84:9B:F4:7B:0D:93:06</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="value">CA:FALSE</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">Policy: 1.3.6.1.4.1.6449.1.2.2.103&#xa;  CPS: https://sectigo.com/CPS&#xa;Policy: 2.23.140.1.2.2</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Full Name:&#xa;  URI:http://crl.sectigo.com/InCommonRSAServerCA2.crl</elem>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+</table>
+<table>
+<elem key="value">CA Issuers - URI:http://crt.sectigo.com/InCommonRSAServerCA2.crt&#xa;OCSP - URI:http://ocsp.sectigo.com</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : DD:DC:CA:34:95:D7:E1:16:05:E7:95:32:FA:C7:9F:F8:&#xa;                3D:1C:50:DF:DB:00:3A:14:12:76:0A:2C:AC:BB:C8:2A&#xa;    Timestamp : Sep  5 13:02:30.114 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:B5:24:59:50:37:F8:4C:A0:30:BE:2E:&#xa;                24:7A:65:FC:75:81:C2:27:0D:90:41:E2:46:B2:BC:E6:&#xa;                19:B7:BE:C6:D2:02:21:00:C2:8C:5E:01:B8:D6:8D:5B:&#xa;                FC:24:83:AA:8E:4D:83:59:42:8A:02:92:C4:8B:78:79:&#xa;                6B:01:77:B3:2D:09:1B:74&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 0D:E1:F2:30:2B:D3:0D:C1:40:62:12:09:EA:55:2E:FC:&#xa;                47:74:7C:B1:D7:E9:30:EF:0E:42:1E:B4:7E:4E:AA:34&#xa;    Timestamp : Sep  5 13:02:30.076 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:2A:94:6B:89:36:53:27:C2:D0:87:51:B1:&#xa;                0A:6D:A2:AF:C9:FD:BF:F3:C4:75:80:30:0B:5D:5A:BB:&#xa;                71:8B:A5:67:02:21:00:AF:37:E1:01:82:3D:93:E6:B7:&#xa;                06:04:4C:2D:94:FB:D7:D5:24:F2:40:6E:F7:D5:7C:07:&#xa;                79:44:9F:87:85:8D:E1&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 12:F1:4E:34:BD:53:72:4C:84:06:19:C3:8F:3F:7A:13:&#xa;                F8:E7:B5:62:87:88:9C:6D:30:05:84:EB:E5:86:26:3A&#xa;    Timestamp : Sep  5 13:02:30.086 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:3E:D1:86:BC:0F:6B:D4:05:4D:B1:16:68:&#xa;                2D:CC:2C:2C:78:CD:B1:1E:40:D5:8D:ED:64:D5:13:B2:&#xa;                FA:BE:16:0E:02:20:1C:6F:0E:A1:6D:9F:AE:1A:EF:83:&#xa;                DF:EB:3A:7F:12:85:09:9F:FF:13:0D:7B:3D:FE:24:78:&#xa;                65:1E:63:5F:07:7E</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+<table>
+<elem key="value">DNS:catchpy.harvardx.harvard.edu</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+</table>
+<elem key="sig_algo">sha384WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-09-05T00:00:00</elem>
+<elem key="notAfter">2025-09-05T23:59:59</elem>
+</table>
+<elem key="md5">0ee841be83271fe303fb8d73b463fb6e</elem>
+<elem key="sha1">cd39da4942593a4e5dc0b89c3e33b6a205e7ce5e</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIG+jCCBWKgAwIBAgIQNJy4PUou5nIkjggFozcV0TANBgkqhkiG9w0BAQwFADBE&#xa;MQswCQYDVQQGEwJVUzESMBAGA1UEChMJSW50ZXJuZXQyMSEwHwYDVQQDExhJbkNv&#xa;bW1vbiBSU0EgU2VydmVyIENBIDIwHhcNMjQwOTA1MDAwMDAwWhcNMjUwOTA1MjM1&#xa;OTU5WjB/MQswCQYDVQQGEwJVUzEWMBQGA1UECBMNTWFzc2FjaHVzZXR0czExMC8G&#xa;A1UEChMoUHJlc2lkZW50IGFuZCBGZWxsb3dzIG9mIEhhcnZhcmQgQ29sbGVnZTEl&#xa;MCMGA1UEAxMcY2F0Y2hweS5oYXJ2YXJkeC5oYXJ2YXJkLmVkdTCCASIwDQYJKoZI&#xa;hvcNAQEBBQADggEPADCCAQoCggEBAPFtbjNrHNv8Cn9c+NvW+lPJ6fzV7+5T7Wgu&#xa;eJuyXs8yIKJc+JBafQAHgmqZphmskcxBRihq0Ia670juXAspgTine+U3HdrZjwMp&#xa;/zZZKgjKslHhx1LHcrBx79yQJqYUh6nZdBf7zmap85ka7HVL1+HZnFLxzfLDlNtV&#xa;ZcW2Z1ri4mYmqMjRLLgjEd13rKig92jpo8KOzVioLtVZzFJOG6v+GfehmNqlWEy4&#xa;0N7fgrgMSVfq6BdgySDicY/9rKjVQpzcwTLAgjsQBOqI5a42szxL+ONRqVWX1/23&#xa;DDVCMR7zVSnkMqj1XVgacDPqCtER29Mz3o24h4hHdADT5BnJrBcCAwEAAaOCAysw&#xa;ggMnMB8GA1UdIwQYMBaAFO9MAJKm+3YuXpXiyV+HGxnVTeLZMB0GA1UdDgQWBBQA&#xa;znGDmo4kbTZxJeTrhJv0ew2TBjAOBgNVHQ8BAf8EBAMCBaAwDAYDVR0TAQH/BAIw&#xa;ADAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwSQYDVR0gBEIwQDA0Bgsr&#xa;BgEEAbIxAQICZzAlMCMGCCsGAQUFBwIBFhdodHRwczovL3NlY3RpZ28uY29tL0NQ&#xa;UzAIBgZngQwBAgIwQAYDVR0fBDkwNzA1oDOgMYYvaHR0cDovL2NybC5zZWN0aWdv&#xa;LmNvbS9JbkNvbW1vblJTQVNlcnZlckNBMi5jcmwwcAYIKwYBBQUHAQEEZDBiMDsG&#xa;CCsGAQUFBzAChi9odHRwOi8vY3J0LnNlY3RpZ28uY29tL0luQ29tbW9uUlNBU2Vy&#xa;dmVyQ0EyLmNydDAjBggrBgEFBQcwAYYXaHR0cDovL29jc3Auc2VjdGlnby5jb20w&#xa;ggF+BgorBgEEAdZ5AgQCBIIBbgSCAWoBaAB3AN3cyjSV1+EWBeeVMvrHn/g9HFDf&#xa;2wA6FBJ2Ciysu8gqAAABkcJHeuIAAAQDAEgwRgIhALUkWVA3+EygML4uJHpl/HWB&#xa;wicNkEHiRrK85hm3vsbSAiEAwoxeAbjWjVv8JIOqjk2DWUKKApLEi3h5awF3sy0J&#xa;G3QAdgAN4fIwK9MNwUBiEgnqVS78R3R8sdfpMO8OQh60fk6qNAAAAZHCR3q8AAAE&#xa;AwBHMEUCICqUa4k2UyfC0IdRsQptoq/J/b/zxHWAMAtdWrtxi6VnAiEArzfhAYI9&#xa;k+a3BgRMLZT719Uk8kBu99V8B3lEn4eFjeEAdQAS8U40vVNyTIQGGcOPP3oT+Oe1&#xa;YoeInG0wBYTr5YYmOgAAAZHCR3rGAAAEAwBGMEQCID7RhrwPa9QFTbEWaC3MLCx4&#xa;zbEeQNWN7WTVE7L6vhYOAiAcbw6hbZ+uGu+D3+s6fxKFCZ//Ew17Pf4keGUeY18H&#xa;fjAnBgNVHREEIDAeghxjYXRjaHB5LmhhcnZhcmR4LmhhcnZhcmQuZWR1MA0GCSqG&#xa;SIb3DQEBDAUAA4IBgQBEEd4WPJ03pacVbn7oqcObsZvj6SPuL4qd3IK7X3ya7xYT&#xa;dS9UnJQ9K7BJMN6V2G+bNnYxwBfP71gB6q30VZ7nAjITR0EBou3F1G8uWfjP6Mbx&#xa;bhxwhRlkt2xvbUbXECJE1iQVEVEIfTnPUJ+L3M+sDI3SsStALVBcZeZIudG+0PqY&#xa;REttmHDq+V2/BYpnwEtkYDoygKYCGfnIOqs5+newqjGFWpu/ZW7bHAJNKWTdArfB&#xa;XBj7EVQKryU+/q1S0RHum4K+V2sEfrq2rsX26h+k/4IV90BMwPjWY+CA1CvGJFlD&#xa;x0yc0JrJ6zUZerEq+pNbOiIQnhdK2HbXP35JXGn4RGk9FHSH5Y1VBDeZo5/xTfFi&#xa;qbFH/Xjnkw9clfVO8EbKcLDaEaMHHpjGC+pEMzjyWwcJEPD1AhzpTEftueqgGmMB&#xa;tidY5wxXNS+m3X+W9Rzau90yDw/jH6S9tiLwgqQcEOecBG9V/sQvQtNxVInHel30&#xa;BgXmFiwYnPn7euU9HOg=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="tls-alpn" output="&#xa;  h2&#xa;  http/1.1"><elem>h2</elem>
+<elem>http/1.1</elem>
+</script><script id="tls-nextprotoneg" output="&#xa;  h2&#xa;  http/1.1"><elem>h2</elem>
+<elem>http/1.1</elem>
+</script></port>
+</ports>
+<times srtt="60058" rttvar="14872" to="119546"/>
+</host>
+<taskbegin task="NSE" time="1730780147"/>
+<taskend task="NSE" time="1730780147"/>
+<taskbegin task="NSE" time="1730780147"/>
+<taskend task="NSE" time="1730780147"/>
+<taskbegin task="NSE" time="1730780147"/>
+<taskend task="NSE" time="1730780147"/>
+<runstats><finished time="1730780147" timestr="Tue Nov  5 04:15:47 2024" elapsed="29.66" summary="Nmap done at Tue Nov  5 04:15:47 2024; 1 IP address (1 host up) scanned in 29.66 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
