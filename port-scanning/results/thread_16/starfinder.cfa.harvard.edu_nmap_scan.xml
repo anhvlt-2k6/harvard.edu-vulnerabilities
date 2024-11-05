@@ -19,3 +19,132 @@
 <taskbegin task="Connect Scan" time="1730794941"/>
 <taskend task="Connect Scan" time="1730794945" extrainfo="1000 total ports"/>
 <taskbegin task="Service scan" time="1730794945"/>
+<taskend task="Service scan" time="1730794958" extrainfo="4 services on 1 host"/>
+<taskbegin task="NSE" time="1730794958"/>
+<taskend task="NSE" time="1730794978"/>
+<taskbegin task="NSE" time="1730794978"/>
+<taskend task="NSE" time="1730794978"/>
+<taskbegin task="NSE" time="1730794978"/>
+<taskend task="NSE" time="1730794978"/>
+<host starttime="1730794941" endtime="1730794978"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="23.236.49.181" addrtype="ipv4"/>
+<hostnames>
+<hostname name="starfinder.cfa.harvard.edu" type="user"/>
+<hostname name="181.49.236.23.bc.googleusercontent.com" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="996">
+<extrareasons reason="no-responses" count="996"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="9.2p1 Debian 2+deb12u3" extrainfo="protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:9.2p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.62" hostname="oirsa.cfa.harvard.edu" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.62</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="Apache/2.4.62 (Debian)"><elem>Apache/2.4.62 (Debian)</elem>
+</script><script id="http-title" output="Did not follow redirect to https://starfinder.cfa.harvard.edu/"><elem key="redirect_url">https://starfinder.cfa.harvard.edu/</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssl" product="Apache httpd" extrainfo="SSL-only mode" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:apache:http_server</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET POST PUT HEAD OPTIONS&#xa;  Potentially risky methods: PUT"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>POST</elem>
+<elem>PUT</elem>
+<elem>HEAD</elem>
+<elem>OPTIONS</elem>
+</table>
+<table key="Potentially risky methods">
+<elem>PUT</elem>
+</table>
+</script><script id="http-server-header" output="Apache/2.4.62 (Debian)"><elem>Apache/2.4.62 (Debian)</elem>
+</script><script id="http-title" output="StarFinder"><elem key="title">StarFinder</elem>
+</script><script id="ssl-cert" output="Subject: commonName=starfinder.cfa.harvard.edu/organizationName=President and Fellows of Harvard College/stateOrProvinceName=Massachusetts/countryName=US&#xa;Subject Alternative Name: DNS:starfinder.cfa.harvard.edu&#xa;Issuer: commonName=InCommon RSA Server CA 2/organizationName=Internet2/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha384WithRSAEncryption&#xa;Not valid before: 2024-04-03T00:00:00&#xa;Not valid after:  2025-04-03T23:59:59&#xa;MD5:   ec46 4933 8fc5 ebb3 719d 7cad b9d5 9c17&#xa;SHA-1: 2aaa 7f2a aaf6 f6b1 e55c e55c 4ff4 3540 e2b6 8aea"><table key="subject">
+<elem key="commonName">starfinder.cfa.harvard.edu</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">President and Fellows of Harvard College</elem>
+<elem key="stateOrProvinceName">Massachusetts</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">InCommon RSA Server CA 2</elem>
+<elem key="organizationName">Internet2</elem>
+<elem key="countryName">US</elem>
+</table>
+<table key="pubkey">
+<elem key="modulus">BIGNUM: 0x56484a2a9658</elem>
+<elem key="exponent">BIGNUM: 0x56484a113758</elem>
+<elem key="bits">2048</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">EF:4C:00:92:A6:FB:76:2E:5E:95:E2:C9:5F:87:1B:19:D5:4D:E2:D9</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">FB:30:A2:BF:8E:E4:7F:5F:1B:F4:63:E3:E1:7A:40:94:A8:61:93:0B</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 1.3.6.1.4.1.6449.1.2.2.103&#xa;  CPS: https://sectigo.com/CPS&#xa;Policy: 2.23.140.1.2.2</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://crl.sectigo.com/InCommonRSAServerCA2.crl</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:http://crt.sectigo.com/InCommonRSAServerCA2.crt&#xa;OCSP - URI:http://ocsp.sectigo.com</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:starfinder.cfa.harvard.edu</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : CF:11:56:EE:D5:2E:7C:AF:F3:87:5B:D9:69:2E:9B:E9:&#xa;                1A:71:67:4A:B0:17:EC:AC:01:D2:5B:77:CE:CC:3B:08&#xa;    Timestamp : Apr  3 00:39:49.387 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:65:E7:14:02:E6:27:61:FF:73:05:45:FA:&#xa;                D5:5C:56:BC:14:0C:48:BC:E7:ED:89:D9:C6:F4:AF:93:&#xa;                AD:F1:A1:C4:02:20:13:3C:BA:78:C9:7C:A0:99:0F:78:&#xa;                B7:37:FB:69:69:02:E7:BF:A7:CE:41:9B:F1:76:8E:D4:&#xa;                95:91:6D:C0:C9:35&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : A2:E3:0A:E4:45:EF:BD:AD:9B:7E:38:ED:47:67:77:53:&#xa;                D7:82:5B:84:94:D7:2B:5E:1B:2C:C4:B9:50:A4:47:E7&#xa;    Timestamp : Apr  3 00:39:49.329 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:A2:EE:7C:5A:E3:AA:38:66:EA:93:6C:&#xa;                FF:1A:DA:99:5C:70:E5:7C:D0:DF:42:7A:55:21:25:F5:&#xa;                BB:40:0A:65:92:02:20:23:EA:0C:DE:00:CF:25:8E:26:&#xa;                E2:C6:2E:46:EC:21:10:22:B8:7F:F0:30:04:61:A6:05:&#xa;                41:A0:BC:C8:6D:C9:AA&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 4E:75:A3:27:5C:9A:10:C3:38:5B:6C:D4:DF:3F:52:EB:&#xa;                1D:F0:E0:8E:1B:8D:69:C0:B1:FA:64:B1:62:9A:39:DF&#xa;    Timestamp : Apr  3 00:39:49.300 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:21:5A:32:99:2E:4F:BB:E6:2B:DA:CE:2D:&#xa;                A2:70:54:5A:73:F9:2E:A6:09:DE:7D:8E:DE:C1:4C:EB:&#xa;                4D:AD:CB:81:02:21:00:AE:59:00:8F:89:CC:75:2F:FE:&#xa;                CA:E8:93:1C:7A:9D:72:BA:E0:AA:0A:B2:B4:AE:50:EA:&#xa;                8B:C4:28:CB:44:6A:5B</elem>
+</table>
+</table>
+<elem key="sig_algo">sha384WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notAfter">2025-04-03T23:59:59</elem>
+<elem key="notBefore">2024-04-03T00:00:00</elem>
+</table>
+<elem key="md5">ec4649338fc5ebb3719d7cadb9d59c17</elem>
+<elem key="sha1">2aaa7f2aaaf6f6b1e55ce55c4ff43540e2b68aea</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIG9TCCBV2gAwIBAgIQS3qRLdp0V3OL5MuIBnD0OzANBgkqhkiG9w0BAQwFADBE&#xa;MQswCQYDVQQGEwJVUzESMBAGA1UEChMJSW50ZXJuZXQyMSEwHwYDVQQDExhJbkNv&#xa;bW1vbiBSU0EgU2VydmVyIENBIDIwHhcNMjQwNDAzMDAwMDAwWhcNMjUwNDAzMjM1&#xa;OTU5WjB9MQswCQYDVQQGEwJVUzEWMBQGA1UECBMNTWFzc2FjaHVzZXR0czExMC8G&#xa;A1UEChMoUHJlc2lkZW50IGFuZCBGZWxsb3dzIG9mIEhhcnZhcmQgQ29sbGVnZTEj&#xa;MCEGA1UEAxMac3RhcmZpbmRlci5jZmEuaGFydmFyZC5lZHUwggEiMA0GCSqGSIb3&#xa;DQEBAQUAA4IBDwAwggEKAoIBAQDux+rWCdu4SUzXAliW/fYpJZ9N2O6Xk+VtprbD&#xa;1I3XCuM3zkNeRX5mf4nPC1iQpTIudksEpjvre1kKoBoMi56m0cdyZD06417aNUSW&#xa;++Zs+6W+wCPGyKUqIwczr4NAnKsAOM94HrlSPwn0GTr1/CzadtDXlCZGHR3ZpiGu&#xa;XO/0dFA6Qg4agtjf9ls0PN/uIJdz3hw0sabcS4alH0LmSBIqr+h7vAHfVuyk8dml&#xa;W+hZa8jeKBQLw3SUXsmJjdwncMRrcYZk/6YphXvOYhdUuhzCjIOVfTQxCvkARolv&#xa;bIP9dLxRN0jl1VZMjCCzHGv3oNta7N3wHEwA3beS/NNCuUjBAgMBAAGjggMoMIID&#xa;JDAfBgNVHSMEGDAWgBTvTACSpvt2Ll6V4slfhxsZ1U3i2TAdBgNVHQ4EFgQU+zCi&#xa;v47kf18b9GPj4XpAlKhhkwswDgYDVR0PAQH/BAQDAgWgMAwGA1UdEwEB/wQCMAAw&#xa;HQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMEkGA1UdIARCMEAwNAYLKwYB&#xa;BAGyMQECAmcwJTAjBggrBgEFBQcCARYXaHR0cHM6Ly9zZWN0aWdvLmNvbS9DUFMw&#xa;CAYGZ4EMAQICMEAGA1UdHwQ5MDcwNaAzoDGGL2h0dHA6Ly9jcmwuc2VjdGlnby5j&#xa;b20vSW5Db21tb25SU0FTZXJ2ZXJDQTIuY3JsMHAGCCsGAQUFBwEBBGQwYjA7Bggr&#xa;BgEFBQcwAoYvaHR0cDovL2NydC5zZWN0aWdvLmNvbS9JbkNvbW1vblJTQVNlcnZl&#xa;ckNBMi5jcnQwIwYIKwYBBQUHMAGGF2h0dHA6Ly9vY3NwLnNlY3RpZ28uY29tMCUG&#xa;A1UdEQQeMByCGnN0YXJmaW5kZXIuY2ZhLmhhcnZhcmQuZWR1MIIBfQYKKwYBBAHW&#xa;eQIEAgSCAW0EggFpAWcAdQDPEVbu1S58r/OHW9lpLpvpGnFnSrAX7KwB0lt3zsw7&#xa;CAAAAY6hZdWLAAAEAwBGMEQCIGXnFALmJ2H/cwVF+tVcVrwUDEi85+2J2cb0r5Ot&#xa;8aHEAiATPLp4yXygmQ94tzf7aWkC57+nzkGb8XaO1JWRbcDJNQB2AKLjCuRF772t&#xa;m3447Udnd1PXgluElNcrXhssxLlQpEfnAAABjqFl1VEAAAQDAEcwRQIhAKLufFrj&#xa;qjhm6pNs/xramVxw5XzQ30J6VSEl9btACmWSAiAj6gzeAM8ljibixi5G7CEQIrh/&#xa;8DAEYaYFQaC8yG3JqgB2AE51oydcmhDDOFts1N8/Uusd8OCOG41pwLH6ZLFimjnf&#xa;AAABjqFl1TQAAAQDAEcwRQIgIVoymS5Pu+Yr2s4tonBUWnP5LqYJ3n2O3sFM602t&#xa;y4ECIQCuWQCPicx1L/7K6JMcep1yuuCqCrK0rlDqi8Qoy0RqWzANBgkqhkiG9w0B&#xa;AQwFAAOCAYEADHjz5tK8dh36LVbEMsizqxNhPedx3cdpAoVVdIDF6FRvzwbJPGmF&#xa;e0gism5SLI7aFo0pjICE9WTvUXi8W+d7+Mq65PkZlxZU6Mn+hG4n8QGyZkKZVPxI&#xa;5m90D17Qk0/nXlyu+ULfOQQVaxAHeidcKxAd/7IzYV29I7T+Lgdi6W9E/e6qoikS&#xa;hgVbHG2ByNfZ0nzyMKspvEldkzy79xPGTS7cpLS7LQkXl+KF7ZO+robSGQkVp3FB&#xa;rABTvKILgGa6dED7ZYjOcfCaZzymyFGSv/FnpXFOgi/zBLD9AQwuXgwtxTXjtYwj&#xa;VSyrSXO3bHdBiw6OFOG8ADCwg8wicfYPdHOds7bL8k5a7Op5UI8cydLpxnI/i6nZ&#xa;0Dicn1iLo+ZG6uDTx/3VMhAjjeAHkI1ey3adbkVzaFSr0buT8aYbhMFx7DGJ41Sm&#xa;iT6biU+s9L13WSDA8aJWnTI2UWeOWPtCjRV5pQDH0W+bvgcaGtU4u1HTZzMeLRFw&#xa;+Uwqmnm59E9C&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="tls-alpn" output="&#xa;  http/1.1"><elem>http/1.1</elem>
+</script></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="rtsp" servicefp="SF-Port8080-TCP:V=7.80%I=7%D=11/5%Time=6729D5C7%P=x86_64-pc-linux-gnu%r(GetRequest,25CA,&quot;HTTP/1\.0\x20200\x20OK\r\nServer:\x20DaCHS/2\.7\x20twistedWeb/22\.4\.0\r\nDate:\x20Tue,\x2005\x20Nov\x202024\x2008:22:31\x20GMT\r\nContent-Encoding:\x20gzip\r\nContent-Type:\x20text/html\r\nX-Cache-Creation:\x201729614065\.104195\r\nContent-Length:\x209473\r\n\r\n&lt;!DOCTYPE\x20html\x20PUBLIC\x20\&quot;-//W3C//DTD\x20XHTML\x201\.0\x20Strict//EN\&quot;\x20\&quot;http://www\.w3\.org/TR/xhtml1/DTD/xhtml1-strict\.dtd\&quot;&gt;\n&lt;html\x20xmlns=\&quot;http://www\.w3\.org/1999/xhtml\&quot;&gt;\n\x20\x20&lt;head&gt;\n\x20\x20\x20\x20&lt;title&gt;Smithsonian\x20Astrophysical\x20Observatory\x20Telescope\x20Data\x20Center\x20Home&lt;/title&gt;\n\x20\x20\x20\x20&lt;meta\x20http-equiv=\&quot;Content-type\&quot;\x20content=\&quot;text/html;charset=UTF-8\&quot;\x20/&gt;&lt;link\x20rel=\&quot;stylesheet\&quot;\x20href=\&quot;/static/css/formal\.css\&quot;\x20type=\&quot;text/css\&quot;\x20/&gt;&lt;link\x20rel=\&quot;stylesheet\&quot;\x20href=\&quot;/static/css/gavo_dc\.css\&quot;\x20type=\&quot;text/css\&quot;\x20/&gt;&lt;script\x20src=\&quot;/static/js/jquery-gavo\.js\&quot;\x20type=\&quot;text/javascript\&quot;&gt;&lt;/script&gt;&lt;script\x20src=\&quot;/static/js/gavo\.js\&quot;\x20type=\&quot;text/javascript\&quot;&gt;&lt;/script&gt;\n\n\t&lt;style\x20type=\&quot;text/css\&quot;&gt;\n\t\t\.panel\x20{\n\t\t\tposition:\x20relative;\n\t\t\tbackground-color:\x20#EAEBEE;\n\t\t\tmargin&quot;)%r(HTTPOptions,56D,&quot;HTTP/1\.0\x20500\x20Internal\x20Server\x20Error\r\nServer:\x20DaCHS/2\.7\x20twistedWeb/22\.4\.0\r\nDate:\x20Tue,\x2005\x20Nov\x202024\x2008:22:31\x20GMT\r\nContent-Type:\x20text/html\r\n\r\n&lt;html\x20xmlns=\&quot;http://www\.w3\.org/1999/xhtml\&quot;&gt;&lt;head&gt;&lt;meta\x20http-equiv=\&quot;Content-type\&quot;\x20content=\&quot;text/html;charset=UTF-8\&quot;\x20/&gt;&lt;link\x20rel=\&quot;stylesheet\&quot;\x20href=\&quot;/static/css/formal\.css\&quot;\x20type=\&quot;text/css\&quot;\x20/&gt;&lt;link\x20rel=\&quot;stylesheet\&quot;\x20href=\&quot;/static/css/gavo_dc\.css\&quot;\x20type=\&quot;text/css\&quot;\x20/&gt;&lt;script\x20src=\&quot;/static/js/jquery-gavo\.js\&quot;\x20type=\&quot;text/javascript\&quot;&gt;&lt;/script&gt;&lt;script\x20src=\&quot;/static/js/gavo\.js\&quot;\x20type=\&quot;text/javascript\&quot;&gt;&lt;/script&gt;&lt;title&gt;Smithsonian\x20Astrophysical\x20Observatory\x20Telescope\x20Data\x20Center\x20-&#45;\x20Uncaught\x20Exception&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;img\x20src=\&quot;/static/img/logo_medium\.png\&quot;\x20class=\&quot;headlinelogo\&quot;\x20style=\&quot;position:absolute;right:5pt\&quot;\x20/&gt;&lt;h1&gt;Smithsonian\x20Astrophysical\x20Observatory\x20Telescope\x20Data\x20Center\x20-&#45;\x20Uncaught\x20Exception\x20\(500\)&lt;/h1&gt;&lt;p&gt;&lt;p&gt;Your\x20action\x20has\x20caused\x20a\(n\)\x20&lt;span&gt;UnsupportedMethod&lt;/span&quot;);" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  GetRequest: &#xa;    HTTP/1.0 200 OK&#xa;    Server: DaCHS/2.7 twistedWeb/22.4.0&#xa;    Date: Tue, 05 Nov 2024 08:22:31 GMT&#xa;    Content-Encoding: gzip&#xa;    Content-Type: text/html&#xa;    X-Cache-Creation: 1729614065.104195&#xa;    Content-Length: 9473&#xa;    &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;&#xa;    &lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&#xa;    &lt;head&gt;&#xa;    &lt;title&gt;Smithsonian Astrophysical Observatory Telescope Data Center Home&lt;/title&gt;&#xa;    &lt;meta http-equiv=&quot;Content-type&quot; content=&quot;text/html;charset=UTF-8&quot; /&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/static/css/formal.css&quot; type=&quot;text/css&quot; /&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/static/css/gavo_dc.css&quot; type=&quot;text/css&quot; /&gt;&lt;script src=&quot;/static/js/jquery-gavo.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/static/js/gavo.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;&#xa;    &lt;style type=&quot;text/css&quot;&gt;&#xa;    .panel {&#xa;    position: relative;&#xa;    background-color: #EAEBEE;&#xa;    margin&#xa;  HTTPOptions: &#xa;    HTTP/1.0 500 Internal Server Error&#xa;    Server: DaCHS/2.7 twistedWeb/22.4.0&#xa;    Date: Tue, 05 Nov 2024 08:22:31 GMT&#xa;    Content-Type: text/html&#xa;    &lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;head&gt;&lt;meta http-equiv=&quot;Content-type&quot; content=&quot;text/html;charset=UTF-8&quot; /&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/static/css/formal.css&quot; type=&quot;text/css&quot; /&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/static/css/gavo_dc.css&quot; type=&quot;text/css&quot; /&gt;&lt;script src=&quot;/static/js/jquery-gavo.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/static/js/gavo.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;&lt;title&gt;Smithsonian Astrophysical Observatory Telescope Data Center -&#45; Uncaught Exception&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;img src=&quot;/static/img/logo_medium.png&quot; class=&quot;headlinelogo&quot; style=&quot;position:absolute;right:5pt&quot; /&gt;&lt;h1&gt;Smithsonian Astrophysical Observatory Telescope Data Center -&#45; Uncaught Exception (500)&lt;/h1&gt;&lt;p&gt;&lt;p&gt;Your action has caused a(n) &lt;span&gt;UnsupportedMethod&lt;/span"><elem key="GetRequest">&#xa;    HTTP/1.0 200 OK&#xa;    Server: DaCHS/2.7 twistedWeb/22.4.0&#xa;    Date: Tue, 05 Nov 2024 08:22:31 GMT&#xa;    Content-Encoding: gzip&#xa;    Content-Type: text/html&#xa;    X-Cache-Creation: 1729614065.104195&#xa;    Content-Length: 9473&#xa;    &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;&#xa;    &lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&#xa;    &lt;head&gt;&#xa;    &lt;title&gt;Smithsonian Astrophysical Observatory Telescope Data Center Home&lt;/title&gt;&#xa;    &lt;meta http-equiv=&quot;Content-type&quot; content=&quot;text/html;charset=UTF-8&quot; /&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/static/css/formal.css&quot; type=&quot;text/css&quot; /&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/static/css/gavo_dc.css&quot; type=&quot;text/css&quot; /&gt;&lt;script src=&quot;/static/js/jquery-gavo.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/static/js/gavo.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;&#xa;    &lt;style type=&quot;text/css&quot;&gt;&#xa;    .panel {&#xa;    position: relative;&#xa;    background-color: #EAEBEE;&#xa;    margin</elem>
+<elem key="HTTPOptions">&#xa;    HTTP/1.0 500 Internal Server Error&#xa;    Server: DaCHS/2.7 twistedWeb/22.4.0&#xa;    Date: Tue, 05 Nov 2024 08:22:31 GMT&#xa;    Content-Type: text/html&#xa;    &lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;head&gt;&lt;meta http-equiv=&quot;Content-type&quot; content=&quot;text/html;charset=UTF-8&quot; /&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/static/css/formal.css&quot; type=&quot;text/css&quot; /&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/static/css/gavo_dc.css&quot; type=&quot;text/css&quot; /&gt;&lt;script src=&quot;/static/js/jquery-gavo.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;&lt;script src=&quot;/static/js/gavo.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;&lt;title&gt;Smithsonian Astrophysical Observatory Telescope Data Center -&#45; Uncaught Exception&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;img src=&quot;/static/img/logo_medium.png&quot; class=&quot;headlinelogo&quot; style=&quot;position:absolute;right:5pt&quot; /&gt;&lt;h1&gt;Smithsonian Astrophysical Observatory Telescope Data Center -&#45; Uncaught Exception (500)&lt;/h1&gt;&lt;p&gt;&lt;p&gt;Your action has caused a(n) &lt;span&gt;UnsupportedMethod&lt;/span</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: HEAD POST"><table key="Supported Methods">
+<elem>HEAD</elem>
+<elem>POST</elem>
+</table>
+</script><script id="http-robots.txt" output="2 disallowed entries &#xa;/login /seffe"/><script id="http-server-header" output="DaCHS/2.7 twistedWeb/22.4.0"><elem>DaCHS/2.7 twistedWeb/22.4.0</elem>
+</script><script id="rtsp-methods" output="ERROR: Script execution failed (use -d to debug)"/></port>
+</ports>
+<times srtt="30679" rttvar="5489" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730794978"/>
+<taskend task="NSE" time="1730794978"/>
+<taskbegin task="NSE" time="1730794978"/>
+<taskend task="NSE" time="1730794978"/>
+<taskbegin task="NSE" time="1730794978"/>
+<taskend task="NSE" time="1730794978"/>
+<runstats><finished time="1730794978" timestr="Tue Nov  5 08:22:58 2024" elapsed="37.14" summary="Nmap done at Tue Nov  5 08:22:58 2024; 1 IP address (1 host up) scanned in 37.14 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
