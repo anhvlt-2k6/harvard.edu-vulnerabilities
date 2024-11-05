@@ -19,3 +19,116 @@
 <taskbegin task="Connect Scan" time="1730795909"/>
 <taskend task="Connect Scan" time="1730795915" extrainfo="1000 total ports"/>
 <taskbegin task="Service scan" time="1730795915"/>
+<taskend task="Service scan" time="1730796020" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1730796020"/>
+<taskend task="NSE" time="1730796024"/>
+<taskbegin task="NSE" time="1730796024"/>
+<taskend task="NSE" time="1730796024"/>
+<taskbegin task="NSE" time="1730796024"/>
+<taskend task="NSE" time="1730796024"/>
+<host starttime="1730795908" endtime="1730796024"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="3.23.107.205" addrtype="ipv4"/>
+<hostnames>
+<hostname name="uat.ces.fas.harvard.edu" type="user"/>
+<hostname name="ec2-3-23-107-205.us-east-2.compute.amazonaws.com" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="998">
+<extrareasons reason="no-responses" count="998"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Caddy httpd" method="probed" conf="10"><cpe>cpe:/a:matt_holt:caddy</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="Caddy"><elem>Caddy</elem>
+</script><script id="http-title" output="Site doesn&apos;t have a title."></script><script id="https-redirect" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" servicefp="SF-Port443-TCP:V=7.80%T=SSL%I=7%D=11/5%Time=6729D998%P=x86_64-pc-linux-gnu%r(GetRequest,568,&quot;HTTP/1\.0\x20200\x20OK\r\nAccept-Ranges:\x20bytes\r\nAlt-Svc:\x20h3=\&quot;:443\&quot;;\x20ma=2592000\r\nContent-Type:\x20text/html\r\nDate:\x20Tue,\x2005\x20Nov\x202024\x2008:38:48\x20GMT\r\nEtag:\x20\&quot;439-5f80f426d3724-gzip\&quot;\r\nLast-Modified:\x20Wed,\x2029\x20Mar\x202023\x2019:48:26\x20GMT\r\nVary:\x20Accept-Encoding\r\nX-Imarc-Conf:\x20app-server-proxy\r\nX-Imarc-Service:\x20Amethyst-NoCache\r\n\r\n&lt;!DOCTYPE\x20html&gt;\n&lt;html\x20lang=\&quot;en\&quot;&gt;\n\x20\x20\x20\x20&lt;head&gt;\n\x20\x20\x20\x20\x20\x20\x20\x20&lt;!-&#45;\x20Required\x20meta\x20tags\x20-&#45;&gt;\n\x20\x20\x20\x20\x20\x20\x20\x20&lt;meta\x20charset=\&quot;utf-8\&quot;&gt;\n\x20\x20\x20\x20\x20\x20\x20\x20&lt;meta\x20name=\&quot;viewport\&quot;\x20content=\&quot;width=device-width,\x20initial-scale=1,\x20shrink-to-fit=no\&quot;&gt;\n\n\x20\x20\x20\x20\x20\x20\x20\x20&lt;!-&#45;\x20Bootstrap\x20CSS\x20-&#45;&gt;\n\x20\x20\x20\x20\x20\x20\x20\x20&lt;link\x20rel=\&quot;stylesheet\&quot;\x20href=\&quot;https://stackpath\.bootstrapcdn\.com/bootstrap/4\.5\.2/css/bootstrap\.min\.css\&quot;\x20integrity=\&quot;sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP\+VmmDGMN5t9UJ0Z\&quot;\x20crossorigin=\&quot;anonymous\&quot;&gt;\n\n\x20\x20\x20\x20\x20\x20\x20\x20&lt;title&gt;Imarc&lt;/title&gt;\n\x20\x20\x20\x20\x20\x20\x20\x20&lt;style&gt;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20body,\x20html\x20{\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20100%;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#252&quot;)%r(HTTPOptions,E5,&quot;HTTP/1\.0\x20200\x20OK\r\nAllow:\x20HEAD,GET,POST,OPTIONS\r\nAlt-Svc:\x20h3=\&quot;:443\&quot;;\x20ma=2592000\r\nContent-Length:\x200\r\nContent-Type:\x20text/html\r\nDate:\x20Tue,\x2005\x20Nov\x202024\x2008:38:48\x20GMT\r\nX-Imarc-Conf:\x20app-server-proxy\r\nX-Imarc-Service:\x20Amethyst-NoCache\r\n\r\n&quot;)%r(FourOhFourRequest,1A8,&quot;HTTP/1\.0\x20404\x20Not\x20Found\r\nAlt-Svc:\x20h3=\&quot;:443\&quot;;\x20ma=2592000\r\nContent-Length:\x20196\r\nContent-Type:\x20text/html;\x20charset=iso-8859-1\r\nDate:\x20Tue,\x2005\x20Nov\x202024\x2008:38:48\x20GMT\r\nX-Imarc-Conf:\x20app-server-proxy\r\nX-Imarc-Service:\x20Amethyst-NoCache\r\n\r\n&lt;!DOCTYPE\x20HTML\x20PUBLIC\x20\&quot;-//IETF//DTD\x20HTML\x202\.0//EN\&quot;&gt;\n&lt;html&gt;&lt;head&gt;\n&lt;title&gt;404\x20Not\x20Found&lt;/title&gt;\n&lt;/head&gt;&lt;body&gt;\n&lt;h1&gt;Not\x20Found&lt;/h1&gt;\n&lt;p&gt;The\x20requested\x20URL\x20was\x20not\x20found\x20on\x20this\x20server\.&lt;/p&gt;\n&lt;/body&gt;&lt;/html&gt;\n&quot;);" tunnel="ssl" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  FourOhFourRequest: &#xa;    HTTP/1.0 404 Not Found&#xa;    Alt-Svc: h3=&quot;:443&quot;; ma=2592000&#xa;    Content-Length: 196&#xa;    Content-Type: text/html; charset=iso-8859-1&#xa;    Date: Tue, 05 Nov 2024 08:38:48 GMT&#xa;    X-Imarc-Conf: app-server-proxy&#xa;    X-Imarc-Service: Amethyst-NoCache&#xa;    &lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;&#xa;    &lt;html&gt;&lt;head&gt;&#xa;    &lt;title&gt;404 Not Found&lt;/title&gt;&#xa;    &lt;/head&gt;&lt;body&gt;&#xa;    &lt;h1&gt;Not Found&lt;/h1&gt;&#xa;    &lt;p&gt;The requested URL was not found on this server.&lt;/p&gt;&#xa;    &lt;/body&gt;&lt;/html&gt;&#xa;  GetRequest: &#xa;    HTTP/1.0 200 OK&#xa;    Accept-Ranges: bytes&#xa;    Alt-Svc: h3=&quot;:443&quot;; ma=2592000&#xa;    Content-Type: text/html&#xa;    Date: Tue, 05 Nov 2024 08:38:48 GMT&#xa;    Etag: &quot;439-5f80f426d3724-gzip&quot;&#xa;    Last-Modified: Wed, 29 Mar 2023 19:48:26 GMT&#xa;    Vary: Accept-Encoding&#xa;    X-Imarc-Conf: app-server-proxy&#xa;    X-Imarc-Service: Amethyst-NoCache&#xa;    &lt;!DOCTYPE html&gt;&#xa;    &lt;html lang=&quot;en&quot;&gt;&#xa;    &lt;head&gt;&#xa;    &lt;!-&#45; Required meta tags -&#45;&gt;&#xa;    &lt;meta charset=&quot;utf-8&quot;&gt;&#xa;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot;&gt;&#xa;    &lt;!-&#45; Bootstrap CSS -&#45;&gt;&#xa;    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css&quot; integrity=&quot;sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z&quot; crossorigin=&quot;anonymous&quot;&gt;&#xa;    &lt;title&gt;Imarc&lt;/title&gt;&#xa;    &lt;style&gt;&#xa;    body, html {&#xa;    height: 100%;&#xa;    background-color: #252&#xa;  HTTPOptions: &#xa;    HTTP/1.0 200 OK&#xa;    Allow: HEAD,GET,POST,OPTIONS&#xa;    Alt-Svc: h3=&quot;:443&quot;; ma=2592000&#xa;    Content-Length: 0&#xa;    Content-Type: text/html&#xa;    Date: Tue, 05 Nov 2024 08:38:48 GMT&#xa;    X-Imarc-Conf: app-server-proxy&#xa;    X-Imarc-Service: Amethyst-NoCache"><elem key="FourOhFourRequest">&#xa;    HTTP/1.0 404 Not Found&#xa;    Alt-Svc: h3=&quot;:443&quot;; ma=2592000&#xa;    Content-Length: 196&#xa;    Content-Type: text/html; charset=iso-8859-1&#xa;    Date: Tue, 05 Nov 2024 08:38:48 GMT&#xa;    X-Imarc-Conf: app-server-proxy&#xa;    X-Imarc-Service: Amethyst-NoCache&#xa;    &lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;&#xa;    &lt;html&gt;&lt;head&gt;&#xa;    &lt;title&gt;404 Not Found&lt;/title&gt;&#xa;    &lt;/head&gt;&lt;body&gt;&#xa;    &lt;h1&gt;Not Found&lt;/h1&gt;&#xa;    &lt;p&gt;The requested URL was not found on this server.&lt;/p&gt;&#xa;    &lt;/body&gt;&lt;/html&gt;</elem>
+<elem key="GetRequest">&#xa;    HTTP/1.0 200 OK&#xa;    Accept-Ranges: bytes&#xa;    Alt-Svc: h3=&quot;:443&quot;; ma=2592000&#xa;    Content-Type: text/html&#xa;    Date: Tue, 05 Nov 2024 08:38:48 GMT&#xa;    Etag: &quot;439-5f80f426d3724-gzip&quot;&#xa;    Last-Modified: Wed, 29 Mar 2023 19:48:26 GMT&#xa;    Vary: Accept-Encoding&#xa;    X-Imarc-Conf: app-server-proxy&#xa;    X-Imarc-Service: Amethyst-NoCache&#xa;    &lt;!DOCTYPE html&gt;&#xa;    &lt;html lang=&quot;en&quot;&gt;&#xa;    &lt;head&gt;&#xa;    &lt;!-&#45; Required meta tags -&#45;&gt;&#xa;    &lt;meta charset=&quot;utf-8&quot;&gt;&#xa;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot;&gt;&#xa;    &lt;!-&#45; Bootstrap CSS -&#45;&gt;&#xa;    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css&quot; integrity=&quot;sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z&quot; crossorigin=&quot;anonymous&quot;&gt;&#xa;    &lt;title&gt;Imarc&lt;/title&gt;&#xa;    &lt;style&gt;&#xa;    body, html {&#xa;    height: 100%;&#xa;    background-color: #252</elem>
+<elem key="HTTPOptions">&#xa;    HTTP/1.0 200 OK&#xa;    Allow: HEAD,GET,POST,OPTIONS&#xa;    Alt-Svc: h3=&quot;:443&quot;; ma=2592000&#xa;    Content-Length: 0&#xa;    Content-Type: text/html&#xa;    Date: Tue, 05 Nov 2024 08:38:48 GMT&#xa;    X-Imarc-Conf: app-server-proxy&#xa;    X-Imarc-Service: Amethyst-NoCache</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: HEAD GET POST OPTIONS"><table key="Supported Methods">
+<elem>HEAD</elem>
+<elem>GET</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Imarc"><elem key="title">Imarc</elem>
+</script><script id="ssl-cert" output="Subject: commonName=uat.ces.fas.harvard.edu&#xa;Subject Alternative Name: DNS:uat.ces.fas.harvard.edu&#xa;Issuer: commonName=E6/organizationName=Let&apos;s Encrypt/countryName=US&#xa;Public Key type: ec&#xa;Public Key bits: 256&#xa;Signature Algorithm: ecdsa-with-SHA384&#xa;Not valid before: 2024-10-28T22:46:09&#xa;Not valid after:  2025-01-26T22:46:08&#xa;MD5:   ede2 5f02 5704 32fd fd51 f4c6 c4b1 d251&#xa;SHA-1: b461 4c33 0bb6 ceff d9c4 e615 c6ec 232b 7d26 655d"><table key="subject">
+<elem key="commonName">uat.ces.fas.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">US</elem>
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+<elem key="commonName">E6</elem>
+</table>
+<table key="pubkey">
+<elem key="type">ec</elem>
+<table key="ecdhparams">
+<table key="curve_params">
+<elem key="ec_curve_type">namedcurve</elem>
+<elem key="curve">prime256v1</elem>
+</table>
+</table>
+<elem key="bits">256</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">59:53:3D:21:69:89:BA:CF:C0:21:01:02:92:5B:22:56:58:F9:D7:13</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">93:27:46:98:03:A9:51:68:8E:98:D6:C4:42:48:DB:23:BF:58:94:D2</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://e6.o.lencr.org&#xa;CA Issuers - URI:http://e6.i.lencr.org/</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:uat.ces.fas.harvard.edu</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : A2:E3:0A:E4:45:EF:BD:AD:9B:7E:38:ED:47:67:77:53:&#xa;                D7:82:5B:84:94:D7:2B:5E:1B:2C:C4:B9:50:A4:47:E7&#xa;    Timestamp : Oct 28 23:44:39.159 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:5B:28:50:08:32:2A:61:56:CD:D3:85:C3:&#xa;                FE:EF:4D:7A:1C:25:E5:62:22:EA:76:AE:7B:5E:43:F6:&#xa;                F0:52:9C:81:02:21:00:E1:67:5F:50:ED:AD:19:72:96:&#xa;                43:CA:10:78:87:37:5F:35:10:CB:2C:8E:6D:E2:A3:BD:&#xa;                7D:84:F1:0E:59:B4:62&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 13:4A:DF:1A:B5:98:42:09:78:0C:6F:EF:4C:7A:91:A4:&#xa;                16:B7:23:49:CE:58:57:6A:DF:AE:DA:A7:C2:AB:E0:22&#xa;    Timestamp : Oct 28 23:44:39.392 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:44:83:40:D9:D5:19:FD:8C:5F:59:BF:B9:&#xa;                61:5E:E0:FC:60:21:98:8F:55:BC:17:F8:79:4B:0D:99:&#xa;                C2:94:FF:6F:02:20:34:CC:EF:CD:4A:53:EC:A7:C4:94:&#xa;                DF:75:19:57:85:A3:CF:11:2F:F9:D1:34:C2:E8:DB:0B:&#xa;                8B:B7:6C:A8:E7:09</elem>
+</table>
+</table>
+<elem key="sig_algo">ecdsa-with-SHA384</elem>
+<table key="validity">
+<elem key="notBefore">2024-10-28T22:46:09</elem>
+<elem key="notAfter">2025-01-26T22:46:08</elem>
+</table>
+<elem key="md5">ede25f02570432fdfd51f4c6c4b1d251</elem>
+<elem key="sha1">b4614c330bb6ceffd9c4e615c6ec232b7d26655d</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDjTCCAxSgAwIBAgISA0wDoIot7eYhIsBgElreE472MAoGCCqGSM49BAMDMDIx&#xa;CzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJF&#xa;NjAeFw0yNDEwMjgyMjQ2MDlaFw0yNTAxMjYyMjQ2MDhaMCIxIDAeBgNVBAMTF3Vh&#xa;dC5jZXMuZmFzLmhhcnZhcmQuZWR1MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE&#xa;0z0I24OByE7NBA3MOQIvtxl5V748u77w0nyHwtb/XsCE9cFtrS9RdO8GeGwIrZ+N&#xa;Hm67fzMLmo1JeWOi7Q3BM6OCAhgwggIUMA4GA1UdDwEB/wQEAwIHgDAdBgNVHSUE&#xa;FjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQU&#xa;WVM9IWmJus/AIQECklsiVlj51xMwHwYDVR0jBBgwFoAUkydGmAOpUWiOmNbEQkjb&#xa;I79YlNIwVQYIKwYBBQUHAQEESTBHMCEGCCsGAQUFBzABhhVodHRwOi8vZTYuby5s&#xa;ZW5jci5vcmcwIgYIKwYBBQUHMAKGFmh0dHA6Ly9lNi5pLmxlbmNyLm9yZy8wIgYD&#xa;VR0RBBswGYIXdWF0LmNlcy5mYXMuaGFydmFyZC5lZHUwEwYDVR0gBAwwCjAIBgZn&#xa;gQwBAgEwggEDBgorBgEEAdZ5AgQCBIH0BIHxAO8AdgCi4wrkRe+9rZt+OO1HZ3dT&#xa;14JbhJTXK14bLMS5UKRH5wAAAZLVhG73AAAEAwBHMEUCIFsoUAgyKmFWzdOFw/7v&#xa;TXocJeViIup2rnteQ/bwUpyBAiEA4WdfUO2tGXKWQ8oQeIc3XzUQyyyObeKjvX2E&#xa;8Q5ZtGIAdQATSt8atZhCCXgMb+9MepGkFrcjSc5YV2rfrtqnwqvgIgAAAZLVhG/g&#xa;AAAEAwBGMEQCIESDQNnVGf2MX1m/uWFe4PxgIZiPVbwX+HlLDZnClP9vAiA0zO/N&#xa;SlPsp8SU33UZV4WjzxEv+dE0wujbC4u3bKjnCTAKBggqhkjOPQQDAwNnADBkAjAM&#xa;Ukxoy7TSBEQmwzJDaxSe8c9N6LUNs9IvHEiciVifj7OckoQN4NQ29H0PouJ1ncwC&#xa;MCvZtHFtP7VihQyOg18zrGJ3NuwnJqqmBd0YuuFhIvPVrXj1g8Vb/Wa+Z15qOVr+&#xa;sQ==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+</ports>
+<times srtt="80515" rttvar="15521" to="142599"/>
+</host>
+<taskbegin task="NSE" time="1730796024"/>
+<taskend task="NSE" time="1730796024"/>
+<taskbegin task="NSE" time="1730796024"/>
+<taskend task="NSE" time="1730796024"/>
+<taskbegin task="NSE" time="1730796024"/>
+<taskend task="NSE" time="1730796024"/>
+<runstats><finished time="1730796024" timestr="Tue Nov  5 08:40:24 2024" elapsed="115.84" summary="Nmap done at Tue Nov  5 08:40:24 2024; 1 IP address (1 host up) scanned in 115.84 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
