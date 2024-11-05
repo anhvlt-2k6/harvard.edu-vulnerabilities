@@ -19,3 +19,106 @@
 <taskbegin task="Connect Scan" time="1730795249"/>
 <taskend task="Connect Scan" time="1730795254" extrainfo="1000 total ports"/>
 <taskbegin task="Service scan" time="1730795254"/>
+<taskend task="Service scan" time="1730795266" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1730795266"/>
+<taskend task="NSE" time="1730795267"/>
+<taskbegin task="NSE" time="1730795267"/>
+<taskend task="NSE" time="1730795267"/>
+<taskbegin task="NSE" time="1730795267"/>
+<taskend task="NSE" time="1730795267"/>
+<host starttime="1730795249" endtime="1730795267"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="18.160.18.3" addrtype="ipv4"/>
+<hostnames>
+<hostname name="status.huit.harvard.edu" type="user"/>
+<hostname name="server-18-160-18-3.iad12.r.cloudfront.net" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="998">
+<extrareasons reason="no-responses" count="998"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Amazon CloudFront httpd" method="probed" conf="10"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="CloudFront"><elem>CloudFront</elem>
+</script><script id="http-title" output="Did not follow redirect to https://status.huit.harvard.edu/"><elem key="redirect_url">https://status.huit.harvard.edu/</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Amazon CloudFront httpd" tunnel="ssl" method="probed" conf="10"/><script id="http-server-header" output="&#xa;  AtlassianEdge&#xa;  CloudFront"><elem>AtlassianEdge</elem>
+<elem>CloudFront</elem>
+</script><script id="http-title" output="ERROR: The request could not be satisfied"><elem key="title">ERROR: The request could not be satisfied</elem>
+</script><script id="ssl-cert" output="Subject: commonName=apac-status.cayuse.com&#xa;Subject Alternative Name: DNS:apac-status.cayuse.com, DNS:prostatus.whitepages.com, DNS:status.247e.com, DNS:status.adestra.com, DNS:status.bugsnag.com, DNS:status.deribit.com, DNS:status.fileforce.jp, DNS:status.fpalpha.com, DNS:status.huit.harvard.edu, DNS:status.iadvize.com, DNS:status.instapage.com, DNS:status.jamf.com, DNS:status.machine.global, DNS:status.mailjet.com, DNS:status.mobi2go.com, DNS:status.netstream.ch, DNS:status.npmjs.org, DNS:status.nside.io, DNS:status.okcupid.com, DNS:status.onehub.com, DNS:status.ookla.com, DNS:status.periscopedata.com, DNS:status.phraseapp.com, DNS:status.poweroutage.us, DNS:status.propertymeld.com, DNS:status.proxyrack.com, DNS:status.raventools.com, DNS:status.sendwithus.com, DNS:status.srcclr.net, DNS:status.t1cloud.com, DNS:status.wepay.com, DNS:status.whaller.com, DNS:status.zerotrust.it.com, DNS:systemstatus.utoronto.ca, DNS:www.bugcrowdstatus.com, DNS:www.dpstatus.com, DNS:www.dynstatus.com, DNS:www.harveststatus.com, DNS:www.systemstatus.utoronto.ca, DNS:zephyr-squad.status.smartbear.com&#xa;Issuer: commonName=R11/organizationName=Let&apos;s Encrypt/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-10-16T22:22:22&#xa;Not valid after:  2025-01-14T22:22:21&#xa;MD5:   6554 7c61 a837 1fa2 b9d9 0505 7ae5 de2f&#xa;SHA-1: dbfc be6a 4571 423c 6f36 ae83 3c82 0154 f849 7833"><table key="subject">
+<elem key="commonName">apac-status.cayuse.com</elem>
+</table>
+<table key="issuer">
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+<elem key="countryName">US</elem>
+<elem key="commonName">R11</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">2048</elem>
+<elem key="type">rsa</elem>
+<elem key="modulus">BIGNUM: 0x5595ae1485d8</elem>
+<elem key="exponent">BIGNUM: 0x5595ae13b068</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">32:46:C0:8B:37:F7:A1:50:B2:95:B6:86:BE:C5:F6:22:B4:24:B4:69</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">C5:CF:46:A4:EA:F4:C3:C0:7A:6C:95:C4:2D:B0:5E:92:2F:26:E3:B9</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://r11.o.lencr.org&#xa;CA Issuers - URI:http://r11.i.lencr.org/</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:apac-status.cayuse.com, DNS:prostatus.whitepages.com, DNS:status.247e.com, DNS:status.adestra.com, DNS:status.bugsnag.com, DNS:status.deribit.com, DNS:status.fileforce.jp, DNS:status.fpalpha.com, DNS:status.huit.harvard.edu, DNS:status.iadvize.com, DNS:status.instapage.com, DNS:status.jamf.com, DNS:status.machine.global, DNS:status.mailjet.com, DNS:status.mobi2go.com, DNS:status.netstream.ch, DNS:status.npmjs.org, DNS:status.nside.io, DNS:status.okcupid.com, DNS:status.onehub.com, DNS:status.ookla.com, DNS:status.periscopedata.com, DNS:status.phraseapp.com, DNS:status.poweroutage.us, DNS:status.propertymeld.com, DNS:status.proxyrack.com, DNS:status.raventools.com, DNS:status.sendwithus.com, DNS:status.srcclr.net, DNS:status.t1cloud.com, DNS:status.wepay.com, DNS:status.whaller.com, DNS:status.zerotrust.it.com, DNS:systemstatus.utoronto.ca, DNS:www.bugcrowdstatus.com, DNS:www.dpstatus.com, DNS:www.dynstatus.com, DNS:www.harveststatus.com, DNS:www.systemstatus.utoronto.ca, DNS:zephyr-squad.status.smartbear.com</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : CF:11:56:EE:D5:2E:7C:AF:F3:87:5B:D9:69:2E:9B:E9:&#xa;                1A:71:67:4A:B0:17:EC:AC:01:D2:5B:77:CE:CC:3B:08&#xa;    Timestamp : Oct 16 23:20:52.631 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:DF:54:7F:6E:87:16:65:65:D1:18:78:&#xa;                51:20:BC:D8:D8:37:5E:85:DD:E1:FC:B0:58:FC:7E:D1:&#xa;                91:C4:18:FA:54:02:20:1F:41:A5:50:F0:F3:F1:9B:84:&#xa;                9D:AC:94:22:A6:36:86:97:A0:55:5B:99:F8:EA:43:BE:&#xa;                B7:18:5C:88:A3:05:5F&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : E0:92:B3:FC:0C:1D:C8:E7:68:36:1F:DE:61:B9:96:4D:&#xa;                0A:52:78:19:8A:72:D6:72:C4:B0:4D:A5:6D:6F:54:04&#xa;    Timestamp : Oct 16 23:20:52.585 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:84:5D:23:72:75:32:2B:FF:CB:AE:66:&#xa;                1D:A1:CE:82:36:FB:A7:3F:CE:3B:F0:A0:7C:C2:8B:F8:&#xa;                46:C2:62:29:C7:02:20:28:EE:75:78:D1:52:2C:38:05:&#xa;                F0:40:A4:83:3E:88:58:FA:F1:22:81:86:AA:6A:04:34:&#xa;                FE:D2:FE:7E:30:E0:8B</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-10-16T22:22:22</elem>
+<elem key="notAfter">2025-01-14T22:22:21</elem>
+</table>
+<elem key="md5">65547c61a8371fa2b9d905057ae5de2f</elem>
+<elem key="sha1">dbfcbe6a4571423c6f36ae833c820154f8497833</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIITzCCBzegAwIBAgISAwoyHoyck09gvgqfaYDEUeBbMA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNSMTEwHhcNMjQxMDE2MjIyMjIyWhcNMjUwMTE0MjIyMjIxWjAhMR8wHQYDVQQD&#xa;ExZhcGFjLXN0YXR1cy5jYXl1c2UuY29tMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8A&#xa;MIIBCgKCAQEAqAIC6Z78gbjrWQdQgvGnFvx5Y72/GD4uSFea11PwDbq2+8lf0xdX&#xa;P6urD8urZXueaI8R3Xne779QwXzbFMb2yQTfebZciq9J1XEw7QJvFCOiR0lVSO9v&#xa;MZJ2pPjUcr80hRzVsj4Nmvq3VCOIMHUqjY7Ptd1rLjK+TbEO2HyOIPBZRwWz66xE&#xa;PdXSCgTs+RKuRiERnzlhZbPdtVzhuGcLBRTgZx/o1RtL9MO/F/nN5XTijkCEhV6z&#xa;lComuFsVsM2TXFNqLgWrZmM5OeJoVPLUro0i6ozKblnLaEwzG81uyhuu3UQftrcS&#xa;zDmAV/iAzf20UITF8q+bSERzrsTOBHYouQIDAQABo4IFbTCCBWkwDgYDVR0PAQH/&#xa;BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAMBgNVHRMBAf8E&#xa;AjAAMB0GA1UdDgQWBBQyRsCLN/ehULKVtoa+xfYitCS0aTAfBgNVHSMEGDAWgBTF&#xa;z0ak6vTDwHpslcQtsF6SLybjuTBXBggrBgEFBQcBAQRLMEkwIgYIKwYBBQUHMAGG&#xa;Fmh0dHA6Ly9yMTEuby5sZW5jci5vcmcwIwYIKwYBBQUHMAKGF2h0dHA6Ly9yMTEu&#xa;aS5sZW5jci5vcmcvMIIDcgYDVR0RBIIDaTCCA2WCFmFwYWMtc3RhdHVzLmNheXVz&#xa;ZS5jb22CGHByb3N0YXR1cy53aGl0ZXBhZ2VzLmNvbYIPc3RhdHVzLjI0N2UuY29t&#xa;ghJzdGF0dXMuYWRlc3RyYS5jb22CEnN0YXR1cy5idWdzbmFnLmNvbYISc3RhdHVz&#xa;LmRlcmliaXQuY29tghNzdGF0dXMuZmlsZWZvcmNlLmpwghJzdGF0dXMuZnBhbHBo&#xa;YS5jb22CF3N0YXR1cy5odWl0LmhhcnZhcmQuZWR1ghJzdGF0dXMuaWFkdml6ZS5j&#xa;b22CFHN0YXR1cy5pbnN0YXBhZ2UuY29tgg9zdGF0dXMuamFtZi5jb22CFXN0YXR1&#xa;cy5tYWNoaW5lLmdsb2JhbIISc3RhdHVzLm1haWxqZXQuY29tghJzdGF0dXMubW9i&#xa;aTJnby5jb22CE3N0YXR1cy5uZXRzdHJlYW0uY2iCEHN0YXR1cy5ucG1qcy5vcmeC&#xa;D3N0YXR1cy5uc2lkZS5pb4ISc3RhdHVzLm9rY3VwaWQuY29tghFzdGF0dXMub25l&#xa;aHViLmNvbYIQc3RhdHVzLm9va2xhLmNvbYIYc3RhdHVzLnBlcmlzY29wZWRhdGEu&#xa;Y29tghRzdGF0dXMucGhyYXNlYXBwLmNvbYIVc3RhdHVzLnBvd2Vyb3V0YWdlLnVz&#xa;ghdzdGF0dXMucHJvcGVydHltZWxkLmNvbYIUc3RhdHVzLnByb3h5cmFjay5jb22C&#xa;FXN0YXR1cy5yYXZlbnRvb2xzLmNvbYIVc3RhdHVzLnNlbmR3aXRodXMuY29tghFz&#xa;dGF0dXMuc3JjY2xyLm5ldIISc3RhdHVzLnQxY2xvdWQuY29tghBzdGF0dXMud2Vw&#xa;YXkuY29tghJzdGF0dXMud2hhbGxlci5jb22CF3N0YXR1cy56ZXJvdHJ1c3QuaXQu&#xa;Y29tghhzeXN0ZW1zdGF0dXMudXRvcm9udG8uY2GCFnd3dy5idWdjcm93ZHN0YXR1&#xa;cy5jb22CEHd3dy5kcHN0YXR1cy5jb22CEXd3dy5keW5zdGF0dXMuY29tghV3d3cu&#xa;aGFydmVzdHN0YXR1cy5jb22CHHd3dy5zeXN0ZW1zdGF0dXMudXRvcm9udG8uY2GC&#xa;IXplcGh5ci1zcXVhZC5zdGF0dXMuc21hcnRiZWFyLmNvbTATBgNVHSAEDDAKMAgG&#xa;BmeBDAECATCCAQQGCisGAQQB1nkCBAIEgfUEgfIA8AB2AM8RVu7VLnyv84db2Wku&#xa;m+kacWdKsBfsrAHSW3fOzDsIAAABkpeiWpcAAAQDAEcwRQIhAN9Uf26HFmVl0Rh4&#xa;USC82Ng3XoXd4fywWPx+0ZHEGPpUAiAfQaVQ8PPxm4SdrJQipjaGl6BVW5n46kO+&#xa;txhciKMFXwB2AOCSs/wMHcjnaDYf3mG5lk0KUngZinLWcsSwTaVtb1QEAAABkpei&#xa;WmkAAAQDAEcwRQIhAIRdI3J1Miv/y65mHaHOgjb7pz/OO/CgfMKL+EbCYinHAiAo&#xa;7nV40VIsOAXwQKSDPohY+vEigYaqagQ0/tL+fjDgizANBgkqhkiG9w0BAQsFAAOC&#xa;AQEATyxifwSQpFdqvgDlAeeEbAiwCIebG+AQuyDSnhXqN1HMP01WjUiTiXeHagOq&#xa;o2JjrIZhOUaop1Wu9bw44G9636v0F7fnq7G+vMWdp+l26ulzNqcauDRLCCzot3wB&#xa;agt6u0GJfmhXbyJs+yMrm4LmQXTalTT9h4KfxBWOUG4gxyW4WD7hjgFkY5ah/qCx&#xa;MeEWaiGhKO3KaLu+VNRl98d6xM9Nyw4dkRN9ncZsUeBgl9mrw6WDF2Nz6vD5LxXK&#xa;hpVOQoitool7Yb3912JQCgRqSXhJECNhrL3COxoYict7uvTtTNAafnkcfu3TAD0h&#xa;REWrFKexoFA+ehcB6CNv4lFhUg==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+</ports>
+<times srtt="5703" rttvar="1973" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730795267"/>
+<taskend task="NSE" time="1730795267"/>
+<taskbegin task="NSE" time="1730795267"/>
+<taskend task="NSE" time="1730795267"/>
+<taskbegin task="NSE" time="1730795267"/>
+<taskend task="NSE" time="1730795267"/>
+<runstats><finished time="1730795267" timestr="Tue Nov  5 08:27:47 2024" elapsed="18.01" summary="Nmap done at Tue Nov  5 08:27:47 2024; 1 IP address (1 host up) scanned in 18.01 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
