@@ -17,3 +17,191 @@
 <taskbegin task="Parallel DNS resolution of 1 host." time="1730837231"/>
 <taskend task="Parallel DNS resolution of 1 host." time="1730837232"/>
 <taskbegin task="Connect Scan" time="1730837232"/>
+<taskend task="Connect Scan" time="1730837236" extrainfo="1000 total ports"/>
+<taskbegin task="Service scan" time="1730837236"/>
+<taskend task="Service scan" time="1730837248" extrainfo="3 services on 1 host"/>
+<taskbegin task="NSE" time="1730837248"/>
+<taskend task="NSE" time="1730837249"/>
+<taskbegin task="NSE" time="1730837249"/>
+<taskend task="NSE" time="1730837249"/>
+<taskbegin task="NSE" time="1730837249"/>
+<taskend task="NSE" time="1730837249"/>
+<host starttime="1730837231" endtime="1730837249"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="132.183.1.43" addrtype="ipv4"/>
+<hostnames>
+<hostname name="surfer.nmr.mgh.harvard.edu" type="user"/>
+</hostnames>
+<ports><extraports state="filtered" count="997">
+<extrareasons reason="no-responses" count="997"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ftp" product="vsftpd" version="2.0.8 or later" hostname="This" method="probed" conf="10"><cpe>cpe:/a:vsftpd:vsftpd</cpe></service><script id="ftp-anon" output="Anonymous FTP login allowed (FTP code 230)&#xa;-rw-r-&#45;r-&#45;    1 0        0             393 Dec 14  2020 index.html&#xa;drwxr-xr-x   11 0        0              13 Nov 15  2021 pub&#xa;drwxr-xr-x    4 0        0            4096 Nov 10  2020 transfer"/><script id="ftp-syst" output="&#xa;  STAT: &#xa;FTP server status:&#xa;     Connected to 20.55.46.126&#xa;     Logged in as ftp&#xa;     TYPE: ASCII&#xa;     No session bandwidth limit&#xa;     Session timeout in seconds is 6000&#xa;     Control connection is plain text&#xa;     Data connections will be plain text&#xa;     vsFTPd 3.0.3 - secure, fast, stable&#xa;End of status"><elem key="STAT">&#xa;FTP server status:&#xa;     Connected to 20.55.46.126&#xa;     Logged in as ftp&#xa;     TYPE: ASCII&#xa;     No session bandwidth limit&#xa;     Session timeout in seconds is 6000&#xa;     Control connection is plain text&#xa;     Data connections will be plain text&#xa;     vsFTPd 3.0.3 - secure, fast, stable&#xa;End of status</elem>
+</script><script id="ssl-cert" output="Subject: commonName=surfer.nmr.mgh.harvard.edu/organizationName=President and Fellows of Harvard College/stateOrProvinceName=Massachusetts/countryName=US&#xa;Subject Alternative Name: DNS:surfer.nmr.mgh.harvard.edu, DNS:forum.freesurfer.net, DNS:forum.nmr.mgh.harvard.edu, DNS:freesurfer.net, DNS:ftp.nmr.mgh.harvard.edu, DNS:rsync.nmr.mgh.harvard.edu, DNS:support.freesurfer.net, DNS:webdev.nmr.mgh.harvard.edu, DNS:www.freesurfer.net&#xa;Issuer: commonName=InCommon RSA Server CA 2/organizationName=Internet2/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha384WithRSAEncryption&#xa;Not valid before: 2024-05-09T00:00:00&#xa;Not valid after:  2025-05-09T23:59:59&#xa;MD5:   510e 631c 5888 f811 4753 3eba 9ad6 611a&#xa;SHA-1: 34ee e3f2 6d33 800e 96b9 cc92 ceaf e411 8561 b82b"><table key="subject">
+<elem key="commonName">surfer.nmr.mgh.harvard.edu</elem>
+<elem key="countryName">US</elem>
+<elem key="stateOrProvinceName">Massachusetts</elem>
+<elem key="organizationName">President and Fellows of Harvard College</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">InCommon RSA Server CA 2</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">Internet2</elem>
+</table>
+<table key="pubkey">
+<elem key="exponent">BIGNUM: 0x55f52e2c8798</elem>
+<elem key="type">rsa</elem>
+<elem key="modulus">BIGNUM: 0x55f52e3de3d8</elem>
+<elem key="bits">2048</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">EF:4C:00:92:A6:FB:76:2E:5E:95:E2:C9:5F:87:1B:19:D5:4D:E2:D9</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">6D:08:6D:21:DA:61:B4:4F:B1:FB:47:53:BB:89:E4:0E:D9:F5:40:5F</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="value">CA:FALSE</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">Policy: 1.3.6.1.4.1.6449.1.2.2.103&#xa;  CPS: https://sectigo.com/CPS&#xa;Policy: 2.23.140.1.2.2</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Full Name:&#xa;  URI:http://crl.sectigo.com/InCommonRSAServerCA2.crl</elem>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+</table>
+<table>
+<elem key="value">CA Issuers - URI:http://crt.sectigo.com/InCommonRSAServerCA2.crt&#xa;OCSP - URI:http://ocsp.sectigo.com</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : CF:11:56:EE:D5:2E:7C:AF:F3:87:5B:D9:69:2E:9B:E9:&#xa;                1A:71:67:4A:B0:17:EC:AC:01:D2:5B:77:CE:CC:3B:08&#xa;    Timestamp : May  9 13:11:56.328 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:11:6E:FF:21:CF:7B:AD:1A:44:DA:AF:66:&#xa;                37:8C:D9:D6:38:62:86:69:A8:C0:62:E0:77:7F:7D:20:&#xa;                E4:19:DB:F8:02:20:02:6C:1A:96:D7:C6:72:9D:AE:35:&#xa;                89:93:31:4D:9E:48:2E:40:56:1A:67:6E:2B:03:4B:62:&#xa;                9C:17:20:BB:A2:4E&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : A2:E3:0A:E4:45:EF:BD:AD:9B:7E:38:ED:47:67:77:53:&#xa;                D7:82:5B:84:94:D7:2B:5E:1B:2C:C4:B9:50:A4:47:E7&#xa;    Timestamp : May  9 13:11:56.240 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:EB:33:C0:BB:63:A1:9D:10:A4:66:19:&#xa;                0D:40:52:66:D4:02:B6:E9:22:6A:44:5E:EB:48:F0:4F:&#xa;                8A:54:E5:2C:A2:02:21:00:A6:E5:F9:06:2A:24:85:01:&#xa;                AD:11:E9:46:42:99:95:E7:CF:C9:94:11:A3:A2:67:44:&#xa;                DC:FF:27:52:84:BA:AB:13&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 4E:75:A3:27:5C:9A:10:C3:38:5B:6C:D4:DF:3F:52:EB:&#xa;                1D:F0:E0:8E:1B:8D:69:C0:B1:FA:64:B1:62:9A:39:DF&#xa;    Timestamp : May  9 13:11:56.230 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:A4:1E:2A:15:61:D9:2C:6B:4F:36:45:&#xa;                0A:FB:A8:C5:AA:C1:24:BE:6C:B7:6E:FD:DC:B8:E0:D7:&#xa;                48:6D:C2:BD:F3:02:21:00:82:40:F4:7F:DC:77:2B:48:&#xa;                67:E6:78:9B:05:8D:6B:F0:2D:B2:45:A9:EE:86:6D:15:&#xa;                82:BE:36:94:6A:57:48:58</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+<table>
+<elem key="value">DNS:surfer.nmr.mgh.harvard.edu, DNS:forum.freesurfer.net, DNS:forum.nmr.mgh.harvard.edu, DNS:freesurfer.net, DNS:ftp.nmr.mgh.harvard.edu, DNS:rsync.nmr.mgh.harvard.edu, DNS:support.freesurfer.net, DNS:webdev.nmr.mgh.harvard.edu, DNS:www.freesurfer.net</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+</table>
+<elem key="sig_algo">sha384WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-05-09T00:00:00</elem>
+<elem key="notAfter">2025-05-09T23:59:59</elem>
+</table>
+<elem key="md5">510e631c5888f81147533eba9ad6611a</elem>
+<elem key="sha1">34eee3f26d33800e96b9cc92ceafe4118561b82b</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIHuDCCBiCgAwIBAgIRAMa1FS9MSn5TXKMgD8OXtoswDQYJKoZIhvcNAQEMBQAw&#xa;RDELMAkGA1UEBhMCVVMxEjAQBgNVBAoTCUludGVybmV0MjEhMB8GA1UEAxMYSW5D&#xa;b21tb24gUlNBIFNlcnZlciBDQSAyMB4XDTI0MDUwOTAwMDAwMFoXDTI1MDUwOTIz&#xa;NTk1OVowfTELMAkGA1UEBhMCVVMxFjAUBgNVBAgTDU1hc3NhY2h1c2V0dHMxMTAv&#xa;BgNVBAoTKFByZXNpZGVudCBhbmQgRmVsbG93cyBvZiBIYXJ2YXJkIENvbGxlZ2Ux&#xa;IzAhBgNVBAMTGnN1cmZlci5ubXIubWdoLmhhcnZhcmQuZWR1MIIBIjANBgkqhkiG&#xa;9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxJfeMKn0NjFkmduegvgRICrm+hn4TaZITeVl&#xa;uM/af+g05RUtKRKNIR0CC9mzPDYiW10VNj7TuDyS1DNoe/Jr1Or8lrMCm81NHjnY&#xa;aKvtC61O9GWvvDfWeb35vkHfkbd60AgBaLGZIEglENl122bBqpSdO8JglVTDgvFd&#xa;mWkuBnQzE/qKt7j88Xjafjhzbnv9Uf1hh8NtbiOaAf53/b5FZuUary64k5twPwpm&#xa;Y/pWw3CQhIWUhvRMwcQNvG24lDOssOXSEgb9Gd96ikU/yE4MDnuDBb6tf+2crVQ5&#xa;PF4V2YvbQZ2x8Kf8hygWk3C555ZSCR3LgRl/Paxp9DZUrxfjtwIDAQABo4ID6jCC&#xa;A+YwHwYDVR0jBBgwFoAU70wAkqb7di5eleLJX4cbGdVN4tkwHQYDVR0OBBYEFG0I&#xa;bSHaYbRPsftHU7uJ5A7Z9UBfMA4GA1UdDwEB/wQEAwIFoDAMBgNVHRMBAf8EAjAA&#xa;MB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjBJBgNVHSAEQjBAMDQGCysG&#xa;AQQBsjEBAgJnMCUwIwYIKwYBBQUHAgEWF2h0dHBzOi8vc2VjdGlnby5jb20vQ1BT&#xa;MAgGBmeBDAECAjBABgNVHR8EOTA3MDWgM6Axhi9odHRwOi8vY3JsLnNlY3RpZ28u&#xa;Y29tL0luQ29tbW9uUlNBU2VydmVyQ0EyLmNybDBwBggrBgEFBQcBAQRkMGIwOwYI&#xa;KwYBBQUHMAKGL2h0dHA6Ly9jcnQuc2VjdGlnby5jb20vSW5Db21tb25SU0FTZXJ2&#xa;ZXJDQTIuY3J0MCMGCCsGAQUFBzABhhdodHRwOi8vb2NzcC5zZWN0aWdvLmNvbTCC&#xa;AX8GCisGAQQB1nkCBAIEggFvBIIBawFpAHUAzxFW7tUufK/zh1vZaS6b6RpxZ0qw&#xa;F+ysAdJbd87MOwgAAAGPXXtaqAAABAMARjBEAiARbv8hz3utGkTar2Y3jNnWOGKG&#xa;aajAYuB3f30g5Bnb+AIgAmwaltfGcp2uNYmTMU2eSC5AVhpnbisDS2KcFyC7ok4A&#xa;dwCi4wrkRe+9rZt+OO1HZ3dT14JbhJTXK14bLMS5UKRH5wAAAY9de1pQAAAEAwBI&#xa;MEYCIQDrM8C7Y6GdEKRmGQ1AUmbUArbpImpEXutI8E+KVOUsogIhAKbl+QYqJIUB&#xa;rRHpRkKZlefPyZQRo6JnRNz/J1KEuqsTAHcATnWjJ1yaEMM4W2zU3z9S6x3w4I4b&#xa;jWnAsfpksWKaOd8AAAGPXXtaRgAABAMASDBGAiEApB4qFWHZLGtPNkUK+6jFqsEk&#xa;vmy3bv3cuODXSG3CvfMCIQCCQPR/3HcrSGfmeJsFjWvwLbJFqe6GbRWCvjaUaldI&#xa;WDCB5AYDVR0RBIHcMIHZghpzdXJmZXIubm1yLm1naC5oYXJ2YXJkLmVkdYIUZm9y&#xa;dW0uZnJlZXN1cmZlci5uZXSCGWZvcnVtLm5tci5tZ2guaGFydmFyZC5lZHWCDmZy&#xa;ZWVzdXJmZXIubmV0ghdmdHAubm1yLm1naC5oYXJ2YXJkLmVkdYIZcnN5bmMubm1y&#xa;Lm1naC5oYXJ2YXJkLmVkdYIWc3VwcG9ydC5mcmVlc3VyZmVyLm5ldIIad2ViZGV2&#xa;Lm5tci5tZ2guaGFydmFyZC5lZHWCEnd3dy5mcmVlc3VyZmVyLm5ldDANBgkqhkiG&#xa;9w0BAQwFAAOCAYEAB5nGih504XqNbZJjz1mK43IAiFs0YjocdDWOqqbXMirpbpNd&#xa;cPleB0iJkXJnzfzkZFyLdvFGos9FuPRDGmXSh0sdWpm2uQdkXlOp+/e4vMDg8Nrl&#xa;YkjshuU4fmUswnzsQ1aj/ome1DG3rmp3umjKpV6ewnVLhgjQ5zwCHfLLsNyzowqn&#xa;I6qAa2uzk7bS3XuYu4bLhVfD3X0Ybe4V3FKODBZRAIIU8hgtCz6zw5WtxzdEm5Qp&#xa;FHdN8OKazXvrJbzHB1WVk7buIn+8n2HoO202wGaFyyQFVqM2ug0FgCW8AaB+XRCq&#xa;BV+nZND2AIALG1HcIIL+pZwxS1K/jBkjUJRb3GDVWw7yzxuvlmawLhk8xzrgTsvp&#xa;QXaR+CbnTBx1PeB4nf+yHg2VBvKk6m7E9lnyymENmbeaLC67CJQgr+ne1rpOuEIs&#xa;fVbKUP437fyEvPuZCZ+3gxFsKgOerk2J95+AdLKB01pQFh/ITS/2zHHeMeD118sR&#xa;mUO+RXiPX5ZUqu/M&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" method="probed" conf="10"><cpe>cpe:/a:apache:http_server</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="Apache"><elem>Apache</elem>
+</script><script id="http-title" output="Did not follow redirect to https://surfer.nmr.mgh.harvard.edu/"><elem key="redirect_url">https://surfer.nmr.mgh.harvard.edu/</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssl" product="Apache httpd" extrainfo="SSL-only mode" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:apache:http_server</cpe></service><script id="http-favicon" output="Unknown favicon MD5: B561358AD75FC5D84D81DA3828E1D548"/><script id="http-methods" output="&#xa;  Supported Methods: OPTIONS HEAD GET POST"><table key="Supported Methods">
+<elem>OPTIONS</elem>
+<elem>HEAD</elem>
+<elem>GET</elem>
+<elem>POST</elem>
+</table>
+</script><script id="http-robots.txt" output="14 disallowed entries &#xa;/Equation /alternative /bug-report /bugzilla &#xa;/completion /gothic /images /kutaslab /schedule &#xa;/study_participation /tony /web-playwright /Dr.Rand /cgi-bin"/><script id="http-server-header" output="Apache"><elem>Apache</elem>
+</script><script id="http-title" output="FreeSurfer"><elem key="title">FreeSurfer</elem>
+</script><script id="ssl-cert" output="Subject: commonName=surfer.nmr.mgh.harvard.edu/organizationName=President and Fellows of Harvard College/stateOrProvinceName=Massachusetts/countryName=US&#xa;Subject Alternative Name: DNS:surfer.nmr.mgh.harvard.edu, DNS:forum.freesurfer.net, DNS:forum.nmr.mgh.harvard.edu, DNS:freesurfer.net, DNS:ftp.nmr.mgh.harvard.edu, DNS:rsync.nmr.mgh.harvard.edu, DNS:support.freesurfer.net, DNS:webdev.nmr.mgh.harvard.edu, DNS:www.freesurfer.net&#xa;Issuer: commonName=InCommon RSA Server CA 2/organizationName=Internet2/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha384WithRSAEncryption&#xa;Not valid before: 2024-05-09T00:00:00&#xa;Not valid after:  2025-05-09T23:59:59&#xa;MD5:   510e 631c 5888 f811 4753 3eba 9ad6 611a&#xa;SHA-1: 34ee e3f2 6d33 800e 96b9 cc92 ceaf e411 8561 b82b"><table key="subject">
+<elem key="commonName">surfer.nmr.mgh.harvard.edu</elem>
+<elem key="countryName">US</elem>
+<elem key="stateOrProvinceName">Massachusetts</elem>
+<elem key="organizationName">President and Fellows of Harvard College</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">InCommon RSA Server CA 2</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">Internet2</elem>
+</table>
+<table key="pubkey">
+<elem key="exponent">BIGNUM: 0x55f52ec44268</elem>
+<elem key="type">rsa</elem>
+<elem key="modulus">BIGNUM: 0x55f52e8c8448</elem>
+<elem key="bits">2048</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">EF:4C:00:92:A6:FB:76:2E:5E:95:E2:C9:5F:87:1B:19:D5:4D:E2:D9</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">6D:08:6D:21:DA:61:B4:4F:B1:FB:47:53:BB:89:E4:0E:D9:F5:40:5F</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="value">CA:FALSE</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">Policy: 1.3.6.1.4.1.6449.1.2.2.103&#xa;  CPS: https://sectigo.com/CPS&#xa;Policy: 2.23.140.1.2.2</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Full Name:&#xa;  URI:http://crl.sectigo.com/InCommonRSAServerCA2.crl</elem>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+</table>
+<table>
+<elem key="value">CA Issuers - URI:http://crt.sectigo.com/InCommonRSAServerCA2.crt&#xa;OCSP - URI:http://ocsp.sectigo.com</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : CF:11:56:EE:D5:2E:7C:AF:F3:87:5B:D9:69:2E:9B:E9:&#xa;                1A:71:67:4A:B0:17:EC:AC:01:D2:5B:77:CE:CC:3B:08&#xa;    Timestamp : May  9 13:11:56.328 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:11:6E:FF:21:CF:7B:AD:1A:44:DA:AF:66:&#xa;                37:8C:D9:D6:38:62:86:69:A8:C0:62:E0:77:7F:7D:20:&#xa;                E4:19:DB:F8:02:20:02:6C:1A:96:D7:C6:72:9D:AE:35:&#xa;                89:93:31:4D:9E:48:2E:40:56:1A:67:6E:2B:03:4B:62:&#xa;                9C:17:20:BB:A2:4E&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : A2:E3:0A:E4:45:EF:BD:AD:9B:7E:38:ED:47:67:77:53:&#xa;                D7:82:5B:84:94:D7:2B:5E:1B:2C:C4:B9:50:A4:47:E7&#xa;    Timestamp : May  9 13:11:56.240 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:EB:33:C0:BB:63:A1:9D:10:A4:66:19:&#xa;                0D:40:52:66:D4:02:B6:E9:22:6A:44:5E:EB:48:F0:4F:&#xa;                8A:54:E5:2C:A2:02:21:00:A6:E5:F9:06:2A:24:85:01:&#xa;                AD:11:E9:46:42:99:95:E7:CF:C9:94:11:A3:A2:67:44:&#xa;                DC:FF:27:52:84:BA:AB:13&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 4E:75:A3:27:5C:9A:10:C3:38:5B:6C:D4:DF:3F:52:EB:&#xa;                1D:F0:E0:8E:1B:8D:69:C0:B1:FA:64:B1:62:9A:39:DF&#xa;    Timestamp : May  9 13:11:56.230 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:A4:1E:2A:15:61:D9:2C:6B:4F:36:45:&#xa;                0A:FB:A8:C5:AA:C1:24:BE:6C:B7:6E:FD:DC:B8:E0:D7:&#xa;                48:6D:C2:BD:F3:02:21:00:82:40:F4:7F:DC:77:2B:48:&#xa;                67:E6:78:9B:05:8D:6B:F0:2D:B2:45:A9:EE:86:6D:15:&#xa;                82:BE:36:94:6A:57:48:58</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+<table>
+<elem key="value">DNS:surfer.nmr.mgh.harvard.edu, DNS:forum.freesurfer.net, DNS:forum.nmr.mgh.harvard.edu, DNS:freesurfer.net, DNS:ftp.nmr.mgh.harvard.edu, DNS:rsync.nmr.mgh.harvard.edu, DNS:support.freesurfer.net, DNS:webdev.nmr.mgh.harvard.edu, DNS:www.freesurfer.net</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+</table>
+<elem key="sig_algo">sha384WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-05-09T00:00:00</elem>
+<elem key="notAfter">2025-05-09T23:59:59</elem>
+</table>
+<elem key="md5">510e631c5888f81147533eba9ad6611a</elem>
+<elem key="sha1">34eee3f26d33800e96b9cc92ceafe4118561b82b</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIHuDCCBiCgAwIBAgIRAMa1FS9MSn5TXKMgD8OXtoswDQYJKoZIhvcNAQEMBQAw&#xa;RDELMAkGA1UEBhMCVVMxEjAQBgNVBAoTCUludGVybmV0MjEhMB8GA1UEAxMYSW5D&#xa;b21tb24gUlNBIFNlcnZlciBDQSAyMB4XDTI0MDUwOTAwMDAwMFoXDTI1MDUwOTIz&#xa;NTk1OVowfTELMAkGA1UEBhMCVVMxFjAUBgNVBAgTDU1hc3NhY2h1c2V0dHMxMTAv&#xa;BgNVBAoTKFByZXNpZGVudCBhbmQgRmVsbG93cyBvZiBIYXJ2YXJkIENvbGxlZ2Ux&#xa;IzAhBgNVBAMTGnN1cmZlci5ubXIubWdoLmhhcnZhcmQuZWR1MIIBIjANBgkqhkiG&#xa;9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxJfeMKn0NjFkmduegvgRICrm+hn4TaZITeVl&#xa;uM/af+g05RUtKRKNIR0CC9mzPDYiW10VNj7TuDyS1DNoe/Jr1Or8lrMCm81NHjnY&#xa;aKvtC61O9GWvvDfWeb35vkHfkbd60AgBaLGZIEglENl122bBqpSdO8JglVTDgvFd&#xa;mWkuBnQzE/qKt7j88Xjafjhzbnv9Uf1hh8NtbiOaAf53/b5FZuUary64k5twPwpm&#xa;Y/pWw3CQhIWUhvRMwcQNvG24lDOssOXSEgb9Gd96ikU/yE4MDnuDBb6tf+2crVQ5&#xa;PF4V2YvbQZ2x8Kf8hygWk3C555ZSCR3LgRl/Paxp9DZUrxfjtwIDAQABo4ID6jCC&#xa;A+YwHwYDVR0jBBgwFoAU70wAkqb7di5eleLJX4cbGdVN4tkwHQYDVR0OBBYEFG0I&#xa;bSHaYbRPsftHU7uJ5A7Z9UBfMA4GA1UdDwEB/wQEAwIFoDAMBgNVHRMBAf8EAjAA&#xa;MB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjBJBgNVHSAEQjBAMDQGCysG&#xa;AQQBsjEBAgJnMCUwIwYIKwYBBQUHAgEWF2h0dHBzOi8vc2VjdGlnby5jb20vQ1BT&#xa;MAgGBmeBDAECAjBABgNVHR8EOTA3MDWgM6Axhi9odHRwOi8vY3JsLnNlY3RpZ28u&#xa;Y29tL0luQ29tbW9uUlNBU2VydmVyQ0EyLmNybDBwBggrBgEFBQcBAQRkMGIwOwYI&#xa;KwYBBQUHMAKGL2h0dHA6Ly9jcnQuc2VjdGlnby5jb20vSW5Db21tb25SU0FTZXJ2&#xa;ZXJDQTIuY3J0MCMGCCsGAQUFBzABhhdodHRwOi8vb2NzcC5zZWN0aWdvLmNvbTCC&#xa;AX8GCisGAQQB1nkCBAIEggFvBIIBawFpAHUAzxFW7tUufK/zh1vZaS6b6RpxZ0qw&#xa;F+ysAdJbd87MOwgAAAGPXXtaqAAABAMARjBEAiARbv8hz3utGkTar2Y3jNnWOGKG&#xa;aajAYuB3f30g5Bnb+AIgAmwaltfGcp2uNYmTMU2eSC5AVhpnbisDS2KcFyC7ok4A&#xa;dwCi4wrkRe+9rZt+OO1HZ3dT14JbhJTXK14bLMS5UKRH5wAAAY9de1pQAAAEAwBI&#xa;MEYCIQDrM8C7Y6GdEKRmGQ1AUmbUArbpImpEXutI8E+KVOUsogIhAKbl+QYqJIUB&#xa;rRHpRkKZlefPyZQRo6JnRNz/J1KEuqsTAHcATnWjJ1yaEMM4W2zU3z9S6x3w4I4b&#xa;jWnAsfpksWKaOd8AAAGPXXtaRgAABAMASDBGAiEApB4qFWHZLGtPNkUK+6jFqsEk&#xa;vmy3bv3cuODXSG3CvfMCIQCCQPR/3HcrSGfmeJsFjWvwLbJFqe6GbRWCvjaUaldI&#xa;WDCB5AYDVR0RBIHcMIHZghpzdXJmZXIubm1yLm1naC5oYXJ2YXJkLmVkdYIUZm9y&#xa;dW0uZnJlZXN1cmZlci5uZXSCGWZvcnVtLm5tci5tZ2guaGFydmFyZC5lZHWCDmZy&#xa;ZWVzdXJmZXIubmV0ghdmdHAubm1yLm1naC5oYXJ2YXJkLmVkdYIZcnN5bmMubm1y&#xa;Lm1naC5oYXJ2YXJkLmVkdYIWc3VwcG9ydC5mcmVlc3VyZmVyLm5ldIIad2ViZGV2&#xa;Lm5tci5tZ2guaGFydmFyZC5lZHWCEnd3dy5mcmVlc3VyZmVyLm5ldDANBgkqhkiG&#xa;9w0BAQwFAAOCAYEAB5nGih504XqNbZJjz1mK43IAiFs0YjocdDWOqqbXMirpbpNd&#xa;cPleB0iJkXJnzfzkZFyLdvFGos9FuPRDGmXSh0sdWpm2uQdkXlOp+/e4vMDg8Nrl&#xa;YkjshuU4fmUswnzsQ1aj/ome1DG3rmp3umjKpV6ewnVLhgjQ5zwCHfLLsNyzowqn&#xa;I6qAa2uzk7bS3XuYu4bLhVfD3X0Ybe4V3FKODBZRAIIU8hgtCz6zw5WtxzdEm5Qp&#xa;FHdN8OKazXvrJbzHB1WVk7buIn+8n2HoO202wGaFyyQFVqM2ug0FgCW8AaB+XRCq&#xa;BV+nZND2AIALG1HcIIL+pZwxS1K/jBkjUJRb3GDVWw7yzxuvlmawLhk8xzrgTsvp&#xa;QXaR+CbnTBx1PeB4nf+yHg2VBvKk6m7E9lnyymENmbeaLC67CJQgr+ne1rpOuEIs&#xa;fVbKUP437fyEvPuZCZ+3gxFsKgOerk2J95+AdLKB01pQFh/ITS/2zHHeMeD118sR&#xa;mUO+RXiPX5ZUqu/M&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="tls-alpn" output="&#xa;  http/1.1"><elem>http/1.1</elem>
+</script></port>
+</ports>
+<times srtt="13178" rttvar="3335" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730837249"/>
+<taskend task="NSE" time="1730837249"/>
+<taskbegin task="NSE" time="1730837249"/>
+<taskend task="NSE" time="1730837249"/>
+<taskbegin task="NSE" time="1730837249"/>
+<taskend task="NSE" time="1730837249"/>
+<runstats><finished time="1730837249" timestr="Tue Nov  5 20:07:29 2024" elapsed="18.26" summary="Nmap done at Tue Nov  5 20:07:29 2024; 1 IP address (1 host up) scanned in 18.26 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
