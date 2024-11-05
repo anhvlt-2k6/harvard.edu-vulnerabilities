@@ -19,3 +19,107 @@
 <taskbegin task="Connect Scan" time="1730836667"/>
 <taskend task="Connect Scan" time="1730836671" extrainfo="1000 total ports"/>
 <taskbegin task="Service scan" time="1730836671"/>
+<taskend task="Service scan" time="1730836689" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1730836689"/>
+<taskend task="NSE" time="1730836689"/>
+<taskbegin task="NSE" time="1730836689"/>
+<taskend task="NSE" time="1730836689"/>
+<taskbegin task="NSE" time="1730836689"/>
+<taskend task="NSE" time="1730836689"/>
+<host starttime="1730836667" endtime="1730836689"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="18.235.90.35" addrtype="ipv4"/>
+<hostnames>
+<hostname name="summarize.api.ea.huit.harvard.edu" type="user"/>
+<hostname name="ec2-18-235-90-35.compute-1.amazonaws.com" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="999">
+<extrareasons reason="no-responses" count="999"/>
+</extraports>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" product="gunicorn" servicefp="SF-Port443-TCP:V=7.80%T=SSL%I=7%D=11/5%Time=672A78CB%P=x86_64-pc-linux-gnu%r(GetRequest,E8,&quot;HTTP/1\.1\x20400\x20BAD\x20REQUEST\r\nDate:\x20Tue,\x2005\x20Nov\x202024\x2019:58:03\x20GMT\r\nContent-Type:\x20application/json\r\nContent-Length:\x2046\r\nConnection:\x20close\r\nServer:\x20gunicorn\r\nAccess-Control-Allow-Origin:\x20\*\r\n\r\n{\&quot;message\&quot;:\&quot;Missing\x20\\\&quot;url\\\&quot;\x20query\x20parameter\&quot;}\n&quot;)%r(HTTPOptions,D9,&quot;HTTP/1\.1\x20200\x20OK\r\nDate:\x20Tue,\x2005\x20Nov\x202024\x2019:58:03\x20GMT\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nContent-Length:\x200\r\nConnection:\x20close\r\nServer:\x20gunicorn\r\nAllow:\x20OPTIONS,\x20GET,\x20HEAD,\x20POST\r\nAccess-Control-Allow-Origin:\x20\*\r\n\r\n&quot;)%r(FourOhFourRequest,190,&quot;HTTP/1\.1\x20404\x20NOT\x20FOUND\r\nDate:\x20Tue,\x2005\x20Nov\x202024\x2019:58:03\x20GMT\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nContent-Length:\x20207\r\nConnection:\x20close\r\nServer:\x20gunicorn\r\nAccess-Control-Allow-Origin:\x20\*\r\n\r\n&lt;!doctype\x20html&gt;\n&lt;html\x20lang=en&gt;\n&lt;title&gt;404\x20Not\x20Found&lt;/title&gt;\n&lt;h1&gt;Not\x20Found&lt;/h1&gt;\n&lt;p&gt;The\x20requested\x20URL\x20was\x20not\x20found\x20on\x20the\x20server\.\x20If\x20you\x20entered\x20the\x20URL\x20manually\x20please\x20check\x20your\x20spelling\x20and\x20try\x20again\.&lt;/p&gt;\n&quot;);" tunnel="ssl" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  FourOhFourRequest: &#xa;    HTTP/1.1 404 NOT FOUND&#xa;    Date: Tue, 05 Nov 2024 19:58:03 GMT&#xa;    Content-Type: text/html; charset=utf-8&#xa;    Content-Length: 207&#xa;    Connection: close&#xa;    Server: gunicorn&#xa;    Access-Control-Allow-Origin: *&#xa;    &lt;!doctype html&gt;&#xa;    &lt;html lang=en&gt;&#xa;    &lt;title&gt;404 Not Found&lt;/title&gt;&#xa;    &lt;h1&gt;Not Found&lt;/h1&gt;&#xa;    &lt;p&gt;The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.&lt;/p&gt;&#xa;  GetRequest: &#xa;    HTTP/1.1 400 BAD REQUEST&#xa;    Date: Tue, 05 Nov 2024 19:58:03 GMT&#xa;    Content-Type: application/json&#xa;    Content-Length: 46&#xa;    Connection: close&#xa;    Server: gunicorn&#xa;    Access-Control-Allow-Origin: *&#xa;    {&quot;message&quot;:&quot;Missing &quot;url&quot; query parameter&quot;}&#xa;  HTTPOptions: &#xa;    HTTP/1.1 200 OK&#xa;    Date: Tue, 05 Nov 2024 19:58:03 GMT&#xa;    Content-Type: text/html; charset=utf-8&#xa;    Content-Length: 0&#xa;    Connection: close&#xa;    Server: gunicorn&#xa;    Allow: OPTIONS, GET, HEAD, POST&#xa;    Access-Control-Allow-Origin: *"><elem key="FourOhFourRequest">&#xa;    HTTP/1.1 404 NOT FOUND&#xa;    Date: Tue, 05 Nov 2024 19:58:03 GMT&#xa;    Content-Type: text/html; charset=utf-8&#xa;    Content-Length: 207&#xa;    Connection: close&#xa;    Server: gunicorn&#xa;    Access-Control-Allow-Origin: *&#xa;    &lt;!doctype html&gt;&#xa;    &lt;html lang=en&gt;&#xa;    &lt;title&gt;404 Not Found&lt;/title&gt;&#xa;    &lt;h1&gt;Not Found&lt;/h1&gt;&#xa;    &lt;p&gt;The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.&lt;/p&gt;</elem>
+<elem key="GetRequest">&#xa;    HTTP/1.1 400 BAD REQUEST&#xa;    Date: Tue, 05 Nov 2024 19:58:03 GMT&#xa;    Content-Type: application/json&#xa;    Content-Length: 46&#xa;    Connection: close&#xa;    Server: gunicorn&#xa;    Access-Control-Allow-Origin: *&#xa;    {&quot;message&quot;:&quot;Missing &quot;url&quot; query parameter&quot;}</elem>
+<elem key="HTTPOptions">&#xa;    HTTP/1.1 200 OK&#xa;    Date: Tue, 05 Nov 2024 19:58:03 GMT&#xa;    Content-Type: text/html; charset=utf-8&#xa;    Content-Length: 0&#xa;    Connection: close&#xa;    Server: gunicorn&#xa;    Allow: OPTIONS, GET, HEAD, POST&#xa;    Access-Control-Allow-Origin: *</elem>
+</script><script id="http-server-header" output="gunicorn"><elem>gunicorn</elem>
+</script><script id="http-title" output="403 Forbidden"><elem key="title">403 Forbidden</elem>
+</script><script id="ssl-cert" output="Subject: commonName=summarize.api.ea.huit.harvard.edu&#xa;Subject Alternative Name: DNS:summarize.api.ea.huit.harvard.edu&#xa;Issuer: commonName=Amazon RSA 2048 M02/organizationName=Amazon/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-05-24T00:00:00&#xa;Not valid after:  2025-06-22T23:59:59&#xa;MD5:   db18 e81e 617e 8003 1deb 7388 44a1 3679&#xa;SHA-1: 063e 87d0 a0af 9649 7498 a0a3 5afa 90cf bbbb 8be6"><table key="subject">
+<elem key="commonName">summarize.api.ea.huit.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="organizationName">Amazon</elem>
+<elem key="countryName">US</elem>
+<elem key="commonName">Amazon RSA 2048 M02</elem>
+</table>
+<table key="pubkey">
+<elem key="exponent">BIGNUM: 0x555ccc221df8</elem>
+<elem key="modulus">BIGNUM: 0x555ccc221e78</elem>
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">C0:31:52:CD:5A:50:C3:82:7C:74:71:CE:CB:E9:9C:F9:7A:EB:82:E2</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">CF:20:8C:40:A0:AE:76:34:CB:20:21:7E:E1:C1:49:E1:62:9A:27:F5</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:summarize.api.ea.huit.harvard.edu</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://crl.r2m02.amazontrust.com/r2m02.crl</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://ocsp.r2m02.amazontrust.com&#xa;CA Issuers - URI:http://crt.r2m02.amazontrust.com/r2m02.cer</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 4E:75:A3:27:5C:9A:10:C3:38:5B:6C:D4:DF:3F:52:EB:&#xa;                1D:F0:E0:8E:1B:8D:69:C0:B1:FA:64:B1:62:9A:39:DF&#xa;    Timestamp : May 24 16:40:07.870 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:7E:35:36:33:6F:39:07:4B:36:96:4A:DB:&#xa;                C4:CF:08:AD:29:B0:51:8A:8F:35:A1:32:0C:5D:C5:B2:&#xa;                18:34:87:86:02:21:00:80:01:81:BE:90:EE:74:0A:2E:&#xa;                A4:97:32:F9:03:64:67:E4:B6:94:34:2F:F3:12:97:47:&#xa;                B0:E1:B0:41:91:35:1F&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 7D:59:1E:12:E1:78:2A:7B:1C:61:67:7C:5E:FD:F8:D0:&#xa;                87:5C:14:A0:4E:95:9E:B9:03:2F:D9:0E:8C:2E:79:B8&#xa;    Timestamp : May 24 16:40:07.898 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:D1:E4:79:A7:C5:2B:D6:8C:AA:CD:41:&#xa;                DE:76:1F:ED:A6:BE:07:0D:2A:60:EA:B4:C5:70:DA:3E:&#xa;                D5:46:8E:1C:0E:02:21:00:98:15:DA:C2:5D:18:27:52:&#xa;                C1:DE:01:68:16:2A:A4:73:74:15:FB:D3:28:E1:AC:26:&#xa;                88:CC:5C:73:D1:D0:F8:79&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : E6:D2:31:63:40:77:8C:C1:10:41:06:D7:71:B9:CE:C1:&#xa;                D2:40:F6:96:84:86:FB:BA:87:32:1D:FD:1E:37:8E:50&#xa;    Timestamp : May 24 16:40:07.922 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:5A:83:83:40:2C:38:4E:9E:84:6C:71:55:&#xa;                77:C7:83:80:69:9C:24:C8:56:0B:C4:70:C0:51:19:FC:&#xa;                35:35:4C:69:02:20:52:C5:28:BA:4B:47:3B:C1:76:99:&#xa;                00:9F:4C:7D:74:A4:22:6A:2D:13:C9:FB:36:06:CB:1F:&#xa;                91:C5:78:C0:DC:A9</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notAfter">2025-06-22T23:59:59</elem>
+<elem key="notBefore">2024-05-24T00:00:00</elem>
+</table>
+<elem key="md5">db18e81e617e80031deb738844a13679</elem>
+<elem key="sha1">063e87d0a0af96497498a0a35afa90cfbbbb8be6</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIF7jCCBNagAwIBAgIQDdl5rhRuy0Tt1QeX4mtROTANBgkqhkiG9w0BAQsFADA8&#xa;MQswCQYDVQQGEwJVUzEPMA0GA1UEChMGQW1hem9uMRwwGgYDVQQDExNBbWF6b24g&#xa;UlNBIDIwNDggTTAyMB4XDTI0MDUyNDAwMDAwMFoXDTI1MDYyMjIzNTk1OVowLDEq&#xa;MCgGA1UEAxMhc3VtbWFyaXplLmFwaS5lYS5odWl0LmhhcnZhcmQuZWR1MIIBIjAN&#xa;BgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAv7KaowcVvkTSxERMie1WcA0ZX5e/&#xa;I5lF3vTG1FzDjUGsuThygDJxdU9H+oaKdwZjSM9hr9BJGT+FRWcuCky0bnSq6qkS&#xa;X3X5Ch/SOOgJHuKHJu07RicK9G578zwrO/n8isyqiRNPY+i3jX0N0vMnNTe5aw2u&#xa;kqmut1R5u6/rYTlyEoeg2cOQ6I/o993gwbb7hZrBR0tshrecwgweAjQd5nCt9B9A&#xa;sz/3ZF0cNX6u9FfuiDTf5Dme2dhkbJOWGklVxPRFg6RF3buBbNpt4ZPY5vFNrDcx&#xa;jW4WFKu4rauGCxmx1BzDDKO6N6JWVx+5aKSWPOHK02eMJeTxMXOmbf0wvwIDAQAB&#xa;o4IC+jCCAvYwHwYDVR0jBBgwFoAUwDFSzVpQw4J8dHHOy+mc+XrrguIwHQYDVR0O&#xa;BBYEFM8gjECgrnY0yyAhfuHBSeFimif1MCwGA1UdEQQlMCOCIXN1bW1hcml6ZS5h&#xa;cGkuZWEuaHVpdC5oYXJ2YXJkLmVkdTATBgNVHSAEDDAKMAgGBmeBDAECATAOBgNV&#xa;HQ8BAf8EBAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMDsGA1Ud&#xa;HwQ0MDIwMKAuoCyGKmh0dHA6Ly9jcmwucjJtMDIuYW1hem9udHJ1c3QuY29tL3Iy&#xa;bTAyLmNybDB1BggrBgEFBQcBAQRpMGcwLQYIKwYBBQUHMAGGIWh0dHA6Ly9vY3Nw&#xa;LnIybTAyLmFtYXpvbnRydXN0LmNvbTA2BggrBgEFBQcwAoYqaHR0cDovL2NydC5y&#xa;Mm0wMi5hbWF6b250cnVzdC5jb20vcjJtMDIuY2VyMAwGA1UdEwEB/wQCMAAwggF+&#xa;BgorBgEEAdZ5AgQCBIIBbgSCAWoBaAB2AE51oydcmhDDOFts1N8/Uusd8OCOG41p&#xa;wLH6ZLFimjnfAAABj6t5Wb4AAAQDAEcwRQIgfjU2M285B0s2lkrbxM8IrSmwUYqP&#xa;NaEyDF3Fshg0h4YCIQCAAYG+kO50Ci6klzL5A2Rn5LaUNC/zEpdHsOGwQZE1HwB3&#xa;AH1ZHhLheCp7HGFnfF79+NCHXBSgTpWeuQMv2Q6MLnm4AAABj6t5WdoAAAQDAEgw&#xa;RgIhANHkeafFK9aMqs1B3nYf7aa+Bw0qYOq0xXDaPtVGjhwOAiEAmBXawl0YJ1LB&#xa;3gFoFiqkc3QV+9Mo4awmiMxcc9HQ+HkAdQDm0jFjQHeMwRBBBtdxuc7B0kD2loSG&#xa;+7qHMh39HjeOUAAAAY+reVnyAAAEAwBGMEQCIFqDg0AsOE6ehGxxVXfHg4BpnCTI&#xa;VgvEcMBRGfw1NUxpAiBSxSi6S0c7wXaZAJ9MfXSkImotE8n7NgbLH5HFeMDcqTAN&#xa;BgkqhkiG9w0BAQsFAAOCAQEAVts9H7To6azw5ebmEhCVGs8vtAyQgWoMXbqBzr4m&#xa;b5gd0WslNP3BBC1Rk2U2CaoUdkSFAhNPGUW2Yor8X1hc2PSmCISryWUFSC3yT7mu&#xa;MYEd+FVY6iih6CjqYu7gPw40vqphgdtLWoxipg7WEBN+MuA1lWnGtX+KH2FbqIpx&#xa;Mhpo9YVQPQLfz3SssgNcdwaS4noQRR536mJWvpLvtil2xrg+xdZxcrbysTMzgtVg&#xa;vCea2P+Nmb3viSJG3mKhgpDw+BFF4kPAJdgC5tW0WoJZKbYiYH0DmEoKbdAcOUVO&#xa;n1ASJDastS5QnjmJIVrtj1aozytD7loO7PgH8149vi9EEw==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="tls-alpn" output="&#xa;  h2&#xa;  http/1.1"><elem>h2</elem>
+<elem>http/1.1</elem>
+</script><script id="tls-nextprotoneg" output="&#xa;  h2&#xa;  http/1.1"><elem>h2</elem>
+<elem>http/1.1</elem>
+</script></port>
+</ports>
+<times srtt="2441" rttvar="1708" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730836689"/>
+<taskend task="NSE" time="1730836689"/>
+<taskbegin task="NSE" time="1730836689"/>
+<taskend task="NSE" time="1730836689"/>
+<taskbegin task="NSE" time="1730836689"/>
+<taskend task="NSE" time="1730836689"/>
+<runstats><finished time="1730836689" timestr="Tue Nov  5 19:58:09 2024" elapsed="22.42" summary="Nmap done at Tue Nov  5 19:58:09 2024; 1 IP address (1 host up) scanned in 22.42 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
