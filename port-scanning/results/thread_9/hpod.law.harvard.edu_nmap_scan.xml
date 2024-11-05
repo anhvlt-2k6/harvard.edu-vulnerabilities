@@ -19,3 +19,380 @@
 <taskbegin task="Connect Scan" time="1730827701"/>
 <taskend task="Connect Scan" time="1730827705" extrainfo="1000 total ports"/>
 <taskbegin task="Service scan" time="1730827705"/>
+<taskend task="Service scan" time="1730827862" extrainfo="7 services on 1 host"/>
+<taskbegin task="NSE" time="1730827862"/>
+<taskend task="NSE" time="1730827864"/>
+<taskbegin task="NSE" time="1730827864"/>
+<taskend task="NSE" time="1730827865"/>
+<taskbegin task="NSE" time="1730827865"/>
+<taskend task="NSE" time="1730827865"/>
+<host starttime="1730827701" endtime="1730827865"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="192.240.172.29" addrtype="ipv4"/>
+<hostnames>
+<hostname name="hpod.law.harvard.edu" type="user"/>
+<hostname name="eep2-15.nexcess.net" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="983">
+<extrareasons reason="no-responses" count="983"/>
+</extraports>
+<port protocol="tcp" portid="25"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtp" product="qmail smtpd" ostype="Unix" method="probed" conf="10"><cpe>cpe:/a:djb:qmail</cpe></service><script id="smtp-commands" output="eep2-15.nexcess.net, STARTTLS, SIZE 50971520, PIPELINING, 8BITMIME, &#xa; qmail home page: http://pobox.com/~djb/qmail.html "/><script id="ssl-cert" output="Subject: commonName=*.nexcess.net&#xa;Subject Alternative Name: DNS:*.nexcess.net, DNS:nexcess.net&#xa;Issuer: commonName=GlobalSign GCC R3 DV TLS CA 2020/organizationName=GlobalSign nv-sa/countryName=BE&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-06-23T18:01:26&#xa;Not valid after:  2025-07-25T18:01:25&#xa;MD5:   172b b472 3328 ee9e b020 788c 82c9 0d92&#xa;SHA-1: 27ff e798 eeca ca14 39f1 da2f b25b fc2e 3b08 d0d7"><table key="subject">
+<elem key="commonName">*.nexcess.net</elem>
+</table>
+<table key="issuer">
+<elem key="organizationName">GlobalSign nv-sa</elem>
+<elem key="countryName">BE</elem>
+<elem key="commonName">GlobalSign GCC R3 DV TLS CA 2020</elem>
+</table>
+<table key="pubkey">
+<elem key="modulus">BIGNUM: 0x55f00b852718</elem>
+<elem key="bits">2048</elem>
+<elem key="exponent">BIGNUM: 0x55f00b831268</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:http://secure.globalsign.com/cacert/gsgccr3dvtlsca2020.crt&#xa;OCSP - URI:http://ocsp.globalsign.com/gsgccr3dvtlsca2020</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 1.3.6.1.4.1.4146.1.10&#xa;  CPS: https://www.globalsign.com/repository/&#xa;Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://crl.globalsign.com/gsgccr3dvtlsca2020.crl</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:*.nexcess.net, DNS:nexcess.net</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">0D:98:C0:73:7F:AB:BD:BD:D9:47:4B:49:AD:0A:4A:0C:AC:3E:C7:7C</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">38:38:5F:98:F0:3D:17:93:A4:57:2B:43:5C:12:E5:6F:BD:87:BA:EE</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 1A:04:FF:49:D0:54:1D:40:AF:F6:A0:C3:BF:F1:D8:C4:&#xa;                67:2F:4E:EC:EE:23:40:68:98:6B:17:40:2E:DC:89:7D&#xa;    Timestamp : Jun 23 18:01:28.357 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:0A:A6:19:76:31:ED:0D:75:59:12:13:2D:&#xa;                76:B5:59:F8:47:6B:FF:E8:03:51:43:B3:CC:A2:7E:95:&#xa;                AF:78:C3:03:02:20:11:D6:FC:2C:AF:FE:51:99:F8:9D:&#xa;                9F:96:60:13:35:B0:3E:4C:2A:73:78:AF:56:07:35:8F:&#xa;                A6:16:45:FF:C8:53&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 12:F1:4E:34:BD:53:72:4C:84:06:19:C3:8F:3F:7A:13:&#xa;                F8:E7:B5:62:87:88:9C:6D:30:05:84:EB:E5:86:26:3A&#xa;    Timestamp : Jun 23 18:01:28.372 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:2F:FB:E1:52:20:5D:DD:88:AF:18:FB:5C:&#xa;                EC:59:01:68:48:2E:23:91:1A:55:02:A9:A7:AB:C5:2B:&#xa;                73:FE:0B:11:02:20:77:40:68:0E:37:78:F8:CC:2E:9A:&#xa;                33:96:4F:E0:21:ED:2A:69:C7:27:AD:9B:26:42:3A:25:&#xa;                FB:68:9E:B5:3A:EA&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 0D:E1:F2:30:2B:D3:0D:C1:40:62:12:09:EA:55:2E:FC:&#xa;                47:74:7C:B1:D7:E9:30:EF:0E:42:1E:B4:7E:4E:AA:34&#xa;    Timestamp : Jun 23 18:01:28.076 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:43:02:1F:04:98:B4:E3:35:23:C7:DB:EB:EE:68:57:&#xa;                7D:D2:BC:8F:70:BB:4B:0C:CB:A9:2C:D5:59:5E:C2:7E:&#xa;                8A:3A:A0:02:20:75:F1:79:2D:B8:DE:EB:39:7A:41:3D:&#xa;                3F:14:90:9D:2F:D8:D8:48:CC:71:F6:65:92:01:7D:DA:&#xa;                01:1D:CE:63:F3</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-06-23T18:01:26</elem>
+<elem key="notAfter">2025-07-25T18:01:25</elem>
+</table>
+<elem key="md5">172bb4723328ee9eb020788c82c90d92</elem>
+<elem key="sha1">27ffe798eecaca1439f1da2fb25bfc2e3b08d0d7</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIGSjCCBTKgAwIBAgIMbvmYNhvbPbWzIy48MA0GCSqGSIb3DQEBCwUAMFMxCzAJ&#xa;BgNVBAYTAkJFMRkwFwYDVQQKExBHbG9iYWxTaWduIG52LXNhMSkwJwYDVQQDEyBH&#xa;bG9iYWxTaWduIEdDQyBSMyBEViBUTFMgQ0EgMjAyMDAeFw0yNDA2MjMxODAxMjZa&#xa;Fw0yNTA3MjUxODAxMjVaMBgxFjAUBgNVBAMMDSoubmV4Y2Vzcy5uZXQwggEiMA0G&#xa;CSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC4ZoPDnuMWZQzL4cO+ca3l51uOEtcK&#xa;KEBqU1X6skCEy9PDgyGDh2K65BEYI7LPfv08CIivOMY22dmRmcfdpjILb61V+hBL&#xa;Vq8ECRGGINzRxvLSE70ZHH8yjzp5OQw+DHdr+cOqInphNcB3sUr7wfkquPDUuaDj&#xa;GwUqkcNaig1STmYGXj/a1xLUKheDqf/ISOVy5/xVuTQArWUcjRAuBT7u7OGNSF4P&#xa;nNwpXicFs7MVJAoN1YxhTOWgJ6rUGYDzsR+DLHmQRvWAm77CNRrgVzNQmGcHiNYN&#xa;9+QZU/HndsIq23Lkfiay2flmRDuYviG3hR1Av1NOAT63WhJdzO/7aYepAgMBAAGj&#xa;ggNXMIIDUzAOBgNVHQ8BAf8EBAMCBaAwDAYDVR0TAQH/BAIwADCBkwYIKwYBBQUH&#xa;AQEEgYYwgYMwRgYIKwYBBQUHMAKGOmh0dHA6Ly9zZWN1cmUuZ2xvYmFsc2lnbi5j&#xa;b20vY2FjZXJ0L2dzZ2NjcjNkdnRsc2NhMjAyMC5jcnQwOQYIKwYBBQUHMAGGLWh0&#xa;dHA6Ly9vY3NwLmdsb2JhbHNpZ24uY29tL2dzZ2NjcjNkdnRsc2NhMjAyMDBWBgNV&#xa;HSAETzBNMEEGCSsGAQQBoDIBCjA0MDIGCCsGAQUFBwIBFiZodHRwczovL3d3dy5n&#xa;bG9iYWxzaWduLmNvbS9yZXBvc2l0b3J5LzAIBgZngQwBAgEwQQYDVR0fBDowODA2&#xa;oDSgMoYwaHR0cDovL2NybC5nbG9iYWxzaWduLmNvbS9nc2djY3IzZHZ0bHNjYTIw&#xa;MjAuY3JsMCUGA1UdEQQeMByCDSoubmV4Y2Vzcy5uZXSCC25leGNlc3MubmV0MB0G&#xa;A1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAfBgNVHSMEGDAWgBQNmMBzf6u9&#xa;vdlHS0mtCkoMrD7HfDAdBgNVHQ4EFgQUODhfmPA9F5OkVytDXBLlb72Huu4wggF6&#xa;BgorBgEEAdZ5AgQCBIIBagSCAWYBZAB1ABoE/0nQVB1Ar/agw7/x2MRnL07s7iNA&#xa;aJhrF0Au3Il9AAABkEZCmiUAAAQDAEYwRAIgCqYZdjHtDXVZEhMtdrVZ+Edr/+gD&#xa;UUOzzKJ+la94wwMCIBHW/Cyv/lGZ+J2flmATNbA+TCpzeK9WBzWPphZF/8hTAHUA&#xa;EvFONL1TckyEBhnDjz96E/jntWKHiJxtMAWE6+WGJjoAAAGQRkKaNAAABAMARjBE&#xa;AiAv++FSIF3diK8Y+1zsWQFoSC4jkRpVAqmnq8Urc/4LEQIgd0BoDjd4+MwumjOW&#xa;T+Ah7SppxyetmyZCOiX7aJ61OuoAdAAN4fIwK9MNwUBiEgnqVS78R3R8sdfpMO8O&#xa;Qh60fk6qNAAAAZBGQpkMAAAEAwBFMEMCHwSYtOM1I8fb6+5oV33SvI9wu0sMy6ks&#xa;1Vlewn6KOqACIHXxeS243us5ekE9PxSQnS/Y2EjMcfZlkgF92gEdzmPzMA0GCSqG&#xa;SIb3DQEBCwUAA4IBAQBgpe/lSURinKcpU8o6bhcWu/KAVs0ohay4NYvBlF9mVks0&#xa;rbIxNftWYURxXMWfV0atkwUJWtR7sUj92m9B1YyCdz9sb0YhzwxUGFMSrxwXn2xj&#xa;3AKs65FbdIUrrMcqCOtAv25tC7AZzyF/DlYqXEYY1hhgIoCWngEKXSQKdSZ/SXCJ&#xa;0YGz+vUgKGj/ygr34FAXrlSwsOYJPBqhDlogPk/VqMpT3geCXMyw7mbdMk/2E0td&#xa;Jv6sFhdkBEoOYCCTgttFuKtA/Qruok7VCiJJPiyNmjtudf3jRtbWIZwUQbgRWRn9&#xa;hKJvoy9dmdJK371tYJVzYv3GSqp126OXID1NDTd5&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="2024-11-05T17:31:04+00:00; 0s from scanner time."><elem key="delta">0.0</elem>
+<elem key="date">2024-11-05T17:31:04+00:00</elem>
+</script></port>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="domain" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" method="probed" conf="10"><cpe>cpe:/a:apache:http_server</cpe></service><script id="http-server-header" output="Apache"><elem>Apache</elem>
+</script><script id="http-title" output="400 Bad Request"><elem key="title">400 Bad Request</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssl" product="Apache httpd" extrainfo="SSL-only mode" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:apache:http_server</cpe></service><script id="http-server-header" output="Apache"><elem>Apache</elem>
+</script><script id="http-title" output="400 Bad Request"><elem key="title">400 Bad Request</elem>
+</script><script id="ssl-cert" output="Subject: commonName=hpod.law.harvard.edu&#xa;Subject Alternative Name: DNS:hpod.law.harvard.edu&#xa;Issuer: commonName=R11/organizationName=Let&apos;s Encrypt/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-10-07T06:49:31&#xa;Not valid after:  2025-01-05T06:49:30&#xa;MD5:   4ad0 ee55 c206 a3df 76d8 25e3 6566 bc0b&#xa;SHA-1: feb0 d136 cb39 50f7 4c58 1373 32e9 f517 25fc 2ac9"><table key="subject">
+<elem key="commonName">hpod.law.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+<elem key="countryName">US</elem>
+<elem key="commonName">R11</elem>
+</table>
+<table key="pubkey">
+<elem key="modulus">BIGNUM: 0x55f00b8810d8</elem>
+<elem key="bits">2048</elem>
+<elem key="exponent">BIGNUM: 0x55f00b881058</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">84:BD:03:CC:CE:BD:61:AF:BA:F7:51:9B:A0:9C:26:38:74:7C:38:6B</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">C5:CF:46:A4:EA:F4:C3:C0:7A:6C:95:C4:2D:B0:5E:92:2F:26:E3:B9</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://r11.o.lencr.org&#xa;CA Issuers - URI:http://r11.i.lencr.org/</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:hpod.law.harvard.edu</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : E6:D2:31:63:40:77:8C:C1:10:41:06:D7:71:B9:CE:C1:&#xa;                D2:40:F6:96:84:86:FB:BA:87:32:1D:FD:1E:37:8E:50&#xa;    Timestamp : Oct  7 07:48:01.526 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:FB:70:6A:5C:37:8C:F2:BF:CA:B8:70:&#xa;                A1:B1:04:A5:AC:F9:ED:15:12:57:01:23:5A:8D:7A:65:&#xa;                3E:79:DD:BF:42:02:21:00:CB:75:BC:A3:BB:16:7B:EE:&#xa;                B6:12:26:00:11:50:1A:C0:24:E0:86:7E:A4:F2:CD:F7:&#xa;                EE:07:08:4C:94:7F:4C:D4&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : CF:11:56:EE:D5:2E:7C:AF:F3:87:5B:D9:69:2E:9B:E9:&#xa;                1A:71:67:4A:B0:17:EC:AC:01:D2:5B:77:CE:CC:3B:08&#xa;    Timestamp : Oct  7 07:48:01.588 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:45:82:01:C4:8D:A8:7F:8D:57:6D:CD:C0:&#xa;                49:48:18:EA:91:F3:89:96:D1:8C:97:8F:14:02:7F:47:&#xa;                9F:A4:B3:55:02:20:6F:E0:B8:C1:9D:B4:79:9F:CD:AC:&#xa;                26:59:32:3F:C9:88:EE:95:7B:E9:52:F3:3A:98:60:2F:&#xa;                A9:FD:DD:DE:6D:5C</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-10-07T06:49:31</elem>
+<elem key="notAfter">2025-01-05T06:49:30</elem>
+</table>
+<elem key="md5">4ad0ee55c206a3df76d825e36566bc0b</elem>
+<elem key="sha1">feb0d136cb3950f74c58137332e9f51725fc2ac9</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIE+DCCA+CgAwIBAgISA+WbgmwuQ/Qu/2RMU5nyGrg6MA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNSMTEwHhcNMjQxMDA3MDY0OTMxWhcNMjUwMTA1MDY0OTMwWjAfMR0wGwYDVQQD&#xa;ExRocG9kLmxhdy5oYXJ2YXJkLmVkdTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCC&#xa;AQoCggEBAMYH7p5XD9n2jIkNCk5HRx7TFOz7zHtJxgD0J/T3lxjtAvN2GabucfXg&#xa;py/kcJOfmb5c6WexPnS8ZH4oBOfew49JdBVrqgoEm/vRoRDCiGj1uwsYizE+mlv/&#xa;zKPwUMB9Qy4bQF68/cV3wNWkdHCp7aHNPmNHagQIYLlGh1CxFcA2jV8ZHTIX7GPa&#xa;4+qgW408mI7PZB5eoWJR7w+yHLT3v6iOa9PYkIdiBjKf9iI5esbZCgrAnhYFqVnL&#xa;X/4ToJX+NA8Agd1ALUnfLyxjqhQwsE9Ep88MHtCVy/FAjfQ/zWMP7CYxZww5IeHU&#xa;5Ei5MwEyyBGtLoAltI9pqJRu6Ek0SY0CAwEAAaOCAhgwggIUMA4GA1UdDwEB/wQE&#xa;AwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIw&#xa;ADAdBgNVHQ4EFgQUhL0DzM69Ya+691GboJwmOHR8OGswHwYDVR0jBBgwFoAUxc9G&#xa;pOr0w8B6bJXELbBeki8m47kwVwYIKwYBBQUHAQEESzBJMCIGCCsGAQUFBzABhhZo&#xa;dHRwOi8vcjExLm8ubGVuY3Iub3JnMCMGCCsGAQUFBzAChhdodHRwOi8vcjExLmku&#xa;bGVuY3Iub3JnLzAfBgNVHREEGDAWghRocG9kLmxhdy5oYXJ2YXJkLmVkdTATBgNV&#xa;HSAEDDAKMAgGBmeBDAECATCCAQQGCisGAQQB1nkCBAIEgfUEgfIA8AB3AObSMWNA&#xa;d4zBEEEG13G5zsHSQPaWhIb7uocyHf0eN45QAAABkmXzEXYAAAQDAEgwRgIhAPtw&#xa;alw3jPK/yrhwobEEpaz57RUSVwEjWo16ZT553b9CAiEAy3W8o7sWe+62EiYAEVAa&#xa;wCTghn6k8s337gcITJR/TNQAdQDPEVbu1S58r/OHW9lpLpvpGnFnSrAX7KwB0lt3&#xa;zsw7CAAAAZJl8xG0AAAEAwBGMEQCIEWCAcSNqH+NV23NwElIGOqR84mW0YyXjxQC&#xa;f0efpLNVAiBv4LjBnbR5n82sJlkyP8mI7pV76VLzOphgL6n93d5tXDANBgkqhkiG&#xa;9w0BAQsFAAOCAQEAo8USYU9A2PuXKXYbNszqmZRJ+SWnzif648RJZ59T1fOTVjhx&#xa;SCYKRx4IyMnW+/8ptzc4l5sUK1j0ZLhhrJ5EFT4QvDRsqZRx7JFOvsZY9T/oh5+8&#xa;FvRsvGXUCMEh7xAFmKKqZ4wx5HrjdgRslI1KRXTSUbpyzMFpTRvnNxEfFEnooAOv&#xa;m0+eRt6pJ3qBIHT+5+tW8wAYwTjWFWEVFA8QEQl9NpHvIe/LbatKzDfaR99tcsKp&#xa;HMBFtiXp/88ysUrdATuvHGYVY81b11yRoQAsE+ptrt7IXxKYkrDI0yszxv0l/9JP&#xa;F02W9+2P8ElpmCcN+d9FmT76TMt4wFI5ts2dWw==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="587"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="submission" servicefp="SF-Port587-TCP:V=7.80%I=7%D=11/5%Time=672A55BF%P=x86_64-pc-linux-gnu%r(NULL,28,&quot;220\x20eep2-15\.nexcess\.net\x20Dovecot\x20ready\.\r\n&quot;)%r(GenericLines,5E,&quot;220\x20eep2-15\.nexcess\.net\x20Dovecot\x20ready\.\r\n500\x205\.5\.1\x20Unknown\x20command\r\n500\x205\.5\.1\x20Unknown\x20command\r\n&quot;)%r(Hello,3E,&quot;220\x20eep2-15\.nexcess\.net\x20Dovecot\x20ready\.\r\n501\x20Missing\x20hostname\r\n&quot;)%r(Help,43,&quot;220\x20eep2-15\.nexcess\.net\x20Dovecot\x20ready\.\r\n500\x205\.5\.1\x20Unknown\x20command\r\n&quot;)%r(GetRequest,5E,&quot;220\x20eep2-15\.nexcess\.net\x20Dovecot\x20ready\.\r\n500\x205\.5\.1\x20Unknown\x20command\r\n500\x205\.5\.1\x20Unknown\x20command\r\n&quot;)%r(HTTPOptions,5E,&quot;220\x20eep2-15\.nexcess\.net\x20Dovecot\x20ready\.\r\n500\x205\.5\.1\x20Unknown\x20command\r\n500\x205\.5\.1\x20Unknown\x20command\r\n&quot;)%r(RTSPRequest,5E,&quot;220\x20eep2-15\.nexcess\.net\x20Dovecot\x20ready\.\r\n500\x205\.5\.1\x20Unknown\x20command\r\n500\x205\.5\.1\x20Unknown\x20command\r\n&quot;)%r(RPCCheck,4A,&quot;220\x20eep2-15\.nexcess\.net\x20Dovecot\x20ready\.\r\n500\x205\.5\.2\x20Invalid\x20command\x20syntax\r\n&quot;)%r(DNSVersionBindReqTCP,4A,&quot;220\x20eep2-15\.nexcess\.net\x20Dovecot\x20ready\.\r\n500\x205\.5\.2\x20Invalid\x20command\x20syntax\r\n&quot;)%r(DNSStatusRequestTCP,4A,&quot;220\x20eep2-15\.nexcess\.net\x20Dovecot\x20ready\.\r\n500\x205\.5\.2\x20Invalid\x20command\x20syntax\r\n&quot;)%r(SSLSessionReq,6C,&quot;220\x20eep2-15\.nexcess\.net\x20Dovecot\x20ready\.\r\n500\x205\.5\.2\x20Invalid\x20command\x20syntax\r\n500\x205\.5\.2\x20Invalid\x20command\x20syntax\r\n&quot;)%r(TerminalServerCookie,6C,&quot;220\x20eep2-15\.nexcess\.net\x20Dovecot\x20ready\.\r\n500\x205\.5\.2\x20Invalid\x20command\x20syntax\r\n500\x205\.5\.2\x20Invalid\x20command\x20syntax\r\n&quot;)%r(TLSSessionReq,6C,&quot;220\x20eep2-15\.nexcess\.net\x20Dovecot\x20ready\.\r\n500\x205\.5\.2\x20Invalid\x20command\x20syntax\r\n500\x205\.5\.2\x20Invalid\x20command\x20syntax\r\n&quot;)%r(Kerberos,6C,&quot;220\x20eep2-15\.nexcess\.net\x20Dovecot\x20ready\.\r\n500\x205\.5\.2\x20Invalid\x20command\x20syntax\r\n500\x205\.5\.2\x20Invalid\x20command\x20syntax\r\n&quot;)%r(SMBProgNeg,4A,&quot;220\x20eep2-15\.nexcess\.net\x20Dovecot\x20ready\.\r\n500\x205\.5\.2\x20Invalid\x20command\x20syntax\r\n&quot;);" method="table" conf="3"/><script id="fingerprint-strings" output="&#xa;  DNSStatusRequestTCP, DNSVersionBindReqTCP, RPCCheck, SMBProgNeg: &#xa;    220 eep2-15.nexcess.net Dovecot ready.&#xa;    5.5.2 Invalid command syntax&#xa;  GenericLines, GetRequest, HTTPOptions, RTSPRequest: &#xa;    220 eep2-15.nexcess.net Dovecot ready.&#xa;    5.5.1 Unknown command&#xa;    5.5.1 Unknown command&#xa;  Hello: &#xa;    220 eep2-15.nexcess.net Dovecot ready.&#xa;    Missing hostname&#xa;  Help: &#xa;    220 eep2-15.nexcess.net Dovecot ready.&#xa;    5.5.1 Unknown command&#xa;  Kerberos, SSLSessionReq, TLSSessionReq, TerminalServerCookie: &#xa;    220 eep2-15.nexcess.net Dovecot ready.&#xa;    5.5.2 Invalid command syntax&#xa;    5.5.2 Invalid command syntax&#xa;  NULL: &#xa;    220 eep2-15.nexcess.net Dovecot ready."><elem key="DNSStatusRequestTCP, DNSVersionBindReqTCP, RPCCheck, SMBProgNeg">&#xa;    220 eep2-15.nexcess.net Dovecot ready.&#xa;    5.5.2 Invalid command syntax</elem>
+<elem key="GenericLines, GetRequest, HTTPOptions, RTSPRequest">&#xa;    220 eep2-15.nexcess.net Dovecot ready.&#xa;    5.5.1 Unknown command&#xa;    5.5.1 Unknown command</elem>
+<elem key="Hello">&#xa;    220 eep2-15.nexcess.net Dovecot ready.&#xa;    Missing hostname</elem>
+<elem key="Help">&#xa;    220 eep2-15.nexcess.net Dovecot ready.&#xa;    5.5.1 Unknown command</elem>
+<elem key="Kerberos, SSLSessionReq, TLSSessionReq, TerminalServerCookie">&#xa;    220 eep2-15.nexcess.net Dovecot ready.&#xa;    5.5.2 Invalid command syntax&#xa;    5.5.2 Invalid command syntax</elem>
+<elem key="NULL">&#xa;    220 eep2-15.nexcess.net Dovecot ready.</elem>
+</script><script id="smtp-commands" output="eep2-15.nexcess.net, 8BITMIME, BURL imap, CHUNKING, ENHANCEDSTATUSCODES, SIZE, STARTTLS, PIPELINING, "/><script id="ssl-cert" output="Subject: commonName=hpod.law.harvard.edu&#xa;Subject Alternative Name: DNS:hpod.law.harvard.edu&#xa;Issuer: commonName=R10/organizationName=Let&apos;s Encrypt/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-08-08T06:43:37&#xa;Not valid after:  2024-11-06T06:43:36&#xa;MD5:   d231 311b 399e 74dd 9231 8121 0f25 2420&#xa;SHA-1: 49d5 e5b0 ff0c dc1a b120 dde0 8fd7 b091 da12 cfd4"><table key="subject">
+<elem key="commonName">hpod.law.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+<elem key="countryName">US</elem>
+<elem key="commonName">R10</elem>
+</table>
+<table key="pubkey">
+<elem key="modulus">BIGNUM: 0x55f00b858798</elem>
+<elem key="bits">2048</elem>
+<elem key="exponent">BIGNUM: 0x55f00b827ec8</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">AA:D0:2B:FE:E7:71:48:6B:5C:05:0D:89:96:EC:87:3D:9D:40:2D:B4</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">BB:BC:C3:47:A5:E4:BC:A9:C6:C3:A4:72:0C:10:8D:A2:35:E1:C8:E8</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://r10.o.lencr.org&#xa;CA Issuers - URI:http://r10.i.lencr.org/</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:hpod.law.harvard.edu</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 3F:17:4B:4F:D7:22:47:58:94:1D:65:1C:84:BE:0D:12:&#xa;                ED:90:37:7F:1F:85:6A:EB:C1:BF:28:85:EC:F8:64:6E&#xa;    Timestamp : Aug  8 07:42:08.728 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:81:24:BB:9F:F1:25:1A:A3:1B:5B:02:&#xa;                78:7C:AE:0C:77:6D:B2:23:4A:F8:0C:0C:9A:97:DE:F2:&#xa;                87:1B:4C:5E:FC:02:20:4D:56:97:DA:07:C1:19:10:5C:&#xa;                43:31:19:3F:4E:83:CA:7C:80:02:4B:4E:8A:66:00:95:&#xa;                0A:CC:8B:45:E1:3A:0B&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 48:B0:E3:6B:DA:A6:47:34:0F:E5:6A:02:FA:9D:30:EB:&#xa;                1C:52:01:CB:56:DD:2C:81:D9:BB:BF:AB:39:D8:84:73&#xa;    Timestamp : Aug  8 07:42:08.733 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:8B:68:6E:A1:CA:C1:DE:0D:42:AE:9B:&#xa;                E0:27:C7:BB:AF:18:B2:94:30:BE:CC:A6:27:95:D7:47:&#xa;                78:F2:EE:A3:A1:02:21:00:C1:17:57:48:11:FC:99:83:&#xa;                B4:4D:96:2F:0B:23:41:D2:19:F0:66:09:CE:A6:0B:7E:&#xa;                C7:2B:63:03:4F:9C:35:98</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-08-08T06:43:37</elem>
+<elem key="notAfter">2024-11-06T06:43:36</elem>
+</table>
+<elem key="md5">d231311b399e74dd923181210f252420</elem>
+<elem key="sha1">49d5e5b0ff0cdc1ab120dde08fd7b091da12cfd4</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIE+TCCA+GgAwIBAgISBLXc7636l4+zWD1mxiwP1o7RMA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNSMTAwHhcNMjQwODA4MDY0MzM3WhcNMjQxMTA2MDY0MzM2WjAfMR0wGwYDVQQD&#xa;ExRocG9kLmxhdy5oYXJ2YXJkLmVkdTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCC&#xa;AQoCggEBAOErifecMSlvr4zSllKEeJOpk3Whmc1C5u5MwOSjQypFYuGunR6K022R&#xa;TZvb3SoDxjV/NnB+BbZedQK0+VaTw4g0JCMKBDM0Yg63iWSVOOx/LQ7o4I2UIMMf&#xa;40J1QHBTJfLb+D2oJaL5Gf/4BrMwgjKwu2s7woWJ2fIB/HE+vuNgg+6ST1BVuVFA&#xa;DDUqzCpmDAkWQod4h5arG5uVykhkw4iPaWGY1pDEoXRmiZAtsAyqZY1IZpRMB/OC&#xa;fHhFxuRm62jtNSDIVwkKuSJ9EYC9UkLI8em7bZabDYtFKIY9wd/eOVJ0kfCd0y1y&#xa;guWlCHrefrYpgD9/vSQzpiFzqIPQT5cCAwEAAaOCAhkwggIVMA4GA1UdDwEB/wQE&#xa;AwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIw&#xa;ADAdBgNVHQ4EFgQUqtAr/udxSGtcBQ2JluyHPZ1ALbQwHwYDVR0jBBgwFoAUu7zD&#xa;R6XkvKnGw6RyDBCNojXhyOgwVwYIKwYBBQUHAQEESzBJMCIGCCsGAQUFBzABhhZo&#xa;dHRwOi8vcjEwLm8ubGVuY3Iub3JnMCMGCCsGAQUFBzAChhdodHRwOi8vcjEwLmku&#xa;bGVuY3Iub3JnLzAfBgNVHREEGDAWghRocG9kLmxhdy5oYXJ2YXJkLmVkdTATBgNV&#xa;HSAEDDAKMAgGBmeBDAECATCCAQUGCisGAQQB1nkCBAIEgfYEgfMA8QB2AD8XS0/X&#xa;IkdYlB1lHIS+DRLtkDd/H4Vq68G/KIXs+GRuAAABkTDwH1gAAAQDAEcwRQIhAIEk&#xa;u5/xJRqjG1sCeHyuDHdtsiNK+AwMmpfe8ocbTF78AiBNVpfaB8EZEFxDMRk/ToPK&#xa;fIACS06KZgCVCsyLReE6CwB3AEiw42vapkc0D+VqAvqdMOscUgHLVt0sgdm7v6s5&#xa;2IRzAAABkTDwH10AAAQDAEgwRgIhAItobqHKwd4NQq6b4CfHu68YspQwvsymJ5XX&#xa;R3jy7qOhAiEAwRdXSBH8mYO0TZYvCyNB0hnwZgnOpgt+xytjA0+cNZgwDQYJKoZI&#xa;hvcNAQELBQADggEBAA7LeeyHAx2AEM5iEAvJyocCE9HLILfVT+HT/yiHAP2eqqUP&#xa;xplmBZqgY8/Ha4lLD99NvJXN5Jd1IGcLbsaK8fgX2b4HHW1tlWCwLxOPXSXLUNJT&#xa;QSZWMM3FdNZzm32/aWXGSznRA+KK6bv6p3c8n1elRS++aDAMh5nVdbkqdBQBIA62&#xa;GMl2a8mTWGEnau77EghlgayvFJkXpNlCo0xuqhep61BMfZA+R4RQBQVH9xK2+4lU&#xa;VjlkYpV79Rn1H8cmYt9hwx8gH5pP1/fiffkjV/vUO6lK+x/jSgzDUvu+U6M0/t8d&#xa;v1TStPItXPaBCDVzf84yPbBl07dDmuxrcvhXBo0=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="2024-11-05T17:31:04+00:00; 0s from scanner time."><elem key="delta">0.0</elem>
+<elem key="date">2024-11-05T17:31:04+00:00</elem>
+</script></port>
+<port protocol="tcp" portid="993"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="imap" product="Dovecot imapd" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:dovecot:dovecot</cpe></service><script id="imap-capabilities" output="OK have ENABLE listed post-login AUTH=LOGINA0001 IMAP4rev1 LOGIN-REFERRALS LITERAL+ more capabilities IDLE ID SASL-IR AUTH=PLAIN Pre-login"/><script id="ssl-cert" output="Subject: commonName=hpod.law.harvard.edu&#xa;Subject Alternative Name: DNS:hpod.law.harvard.edu&#xa;Issuer: commonName=R10/organizationName=Let&apos;s Encrypt/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-08-08T06:43:37&#xa;Not valid after:  2024-11-06T06:43:36&#xa;MD5:   d231 311b 399e 74dd 9231 8121 0f25 2420&#xa;SHA-1: 49d5 e5b0 ff0c dc1a b120 dde0 8fd7 b091 da12 cfd4"><table key="subject">
+<elem key="commonName">hpod.law.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+<elem key="countryName">US</elem>
+<elem key="commonName">R10</elem>
+</table>
+<table key="pubkey">
+<elem key="modulus">BIGNUM: 0x55f00b880a38</elem>
+<elem key="bits">2048</elem>
+<elem key="exponent">BIGNUM: 0x55f00b87d9e8</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">AA:D0:2B:FE:E7:71:48:6B:5C:05:0D:89:96:EC:87:3D:9D:40:2D:B4</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">BB:BC:C3:47:A5:E4:BC:A9:C6:C3:A4:72:0C:10:8D:A2:35:E1:C8:E8</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://r10.o.lencr.org&#xa;CA Issuers - URI:http://r10.i.lencr.org/</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:hpod.law.harvard.edu</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 3F:17:4B:4F:D7:22:47:58:94:1D:65:1C:84:BE:0D:12:&#xa;                ED:90:37:7F:1F:85:6A:EB:C1:BF:28:85:EC:F8:64:6E&#xa;    Timestamp : Aug  8 07:42:08.728 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:81:24:BB:9F:F1:25:1A:A3:1B:5B:02:&#xa;                78:7C:AE:0C:77:6D:B2:23:4A:F8:0C:0C:9A:97:DE:F2:&#xa;                87:1B:4C:5E:FC:02:20:4D:56:97:DA:07:C1:19:10:5C:&#xa;                43:31:19:3F:4E:83:CA:7C:80:02:4B:4E:8A:66:00:95:&#xa;                0A:CC:8B:45:E1:3A:0B&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 48:B0:E3:6B:DA:A6:47:34:0F:E5:6A:02:FA:9D:30:EB:&#xa;                1C:52:01:CB:56:DD:2C:81:D9:BB:BF:AB:39:D8:84:73&#xa;    Timestamp : Aug  8 07:42:08.733 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:8B:68:6E:A1:CA:C1:DE:0D:42:AE:9B:&#xa;                E0:27:C7:BB:AF:18:B2:94:30:BE:CC:A6:27:95:D7:47:&#xa;                78:F2:EE:A3:A1:02:21:00:C1:17:57:48:11:FC:99:83:&#xa;                B4:4D:96:2F:0B:23:41:D2:19:F0:66:09:CE:A6:0B:7E:&#xa;                C7:2B:63:03:4F:9C:35:98</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-08-08T06:43:37</elem>
+<elem key="notAfter">2024-11-06T06:43:36</elem>
+</table>
+<elem key="md5">d231311b399e74dd923181210f252420</elem>
+<elem key="sha1">49d5e5b0ff0cdc1ab120dde08fd7b091da12cfd4</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIE+TCCA+GgAwIBAgISBLXc7636l4+zWD1mxiwP1o7RMA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNSMTAwHhcNMjQwODA4MDY0MzM3WhcNMjQxMTA2MDY0MzM2WjAfMR0wGwYDVQQD&#xa;ExRocG9kLmxhdy5oYXJ2YXJkLmVkdTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCC&#xa;AQoCggEBAOErifecMSlvr4zSllKEeJOpk3Whmc1C5u5MwOSjQypFYuGunR6K022R&#xa;TZvb3SoDxjV/NnB+BbZedQK0+VaTw4g0JCMKBDM0Yg63iWSVOOx/LQ7o4I2UIMMf&#xa;40J1QHBTJfLb+D2oJaL5Gf/4BrMwgjKwu2s7woWJ2fIB/HE+vuNgg+6ST1BVuVFA&#xa;DDUqzCpmDAkWQod4h5arG5uVykhkw4iPaWGY1pDEoXRmiZAtsAyqZY1IZpRMB/OC&#xa;fHhFxuRm62jtNSDIVwkKuSJ9EYC9UkLI8em7bZabDYtFKIY9wd/eOVJ0kfCd0y1y&#xa;guWlCHrefrYpgD9/vSQzpiFzqIPQT5cCAwEAAaOCAhkwggIVMA4GA1UdDwEB/wQE&#xa;AwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIw&#xa;ADAdBgNVHQ4EFgQUqtAr/udxSGtcBQ2JluyHPZ1ALbQwHwYDVR0jBBgwFoAUu7zD&#xa;R6XkvKnGw6RyDBCNojXhyOgwVwYIKwYBBQUHAQEESzBJMCIGCCsGAQUFBzABhhZo&#xa;dHRwOi8vcjEwLm8ubGVuY3Iub3JnMCMGCCsGAQUFBzAChhdodHRwOi8vcjEwLmku&#xa;bGVuY3Iub3JnLzAfBgNVHREEGDAWghRocG9kLmxhdy5oYXJ2YXJkLmVkdTATBgNV&#xa;HSAEDDAKMAgGBmeBDAECATCCAQUGCisGAQQB1nkCBAIEgfYEgfMA8QB2AD8XS0/X&#xa;IkdYlB1lHIS+DRLtkDd/H4Vq68G/KIXs+GRuAAABkTDwH1gAAAQDAEcwRQIhAIEk&#xa;u5/xJRqjG1sCeHyuDHdtsiNK+AwMmpfe8ocbTF78AiBNVpfaB8EZEFxDMRk/ToPK&#xa;fIACS06KZgCVCsyLReE6CwB3AEiw42vapkc0D+VqAvqdMOscUgHLVt0sgdm7v6s5&#xa;2IRzAAABkTDwH10AAAQDAEgwRgIhAItobqHKwd4NQq6b4CfHu68YspQwvsymJ5XX&#xa;R3jy7qOhAiEAwRdXSBH8mYO0TZYvCyNB0hnwZgnOpgt+xytjA0+cNZgwDQYJKoZI&#xa;hvcNAQELBQADggEBAA7LeeyHAx2AEM5iEAvJyocCE9HLILfVT+HT/yiHAP2eqqUP&#xa;xplmBZqgY8/Ha4lLD99NvJXN5Jd1IGcLbsaK8fgX2b4HHW1tlWCwLxOPXSXLUNJT&#xa;QSZWMM3FdNZzm32/aWXGSznRA+KK6bv6p3c8n1elRS++aDAMh5nVdbkqdBQBIA62&#xa;GMl2a8mTWGEnau77EghlgayvFJkXpNlCo0xuqhep61BMfZA+R4RQBQVH9xK2+4lU&#xa;VjlkYpV79Rn1H8cmYt9hwx8gH5pP1/fiffkjV/vUO6lK+x/jSgzDUvu+U6M0/t8d&#xa;v1TStPItXPaBCDVzf84yPbBl07dDmuxrcvhXBo0=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="2024-11-05T17:31:04+00:00; 0s from scanner time."><elem key="delta">0.0</elem>
+<elem key="date">2024-11-05T17:31:04+00:00</elem>
+</script></port>
+<port protocol="tcp" portid="995"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="pop3" product="Dovecot pop3d" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:dovecot:dovecot</cpe></service><script id="pop3-capabilities" output="RESP-CODES PIPELINING UIDL SASL(PLAIN LOGIN) USER CAPA TOP AUTH-RESP-CODE"/><script id="ssl-cert" output="Subject: commonName=hpod.law.harvard.edu&#xa;Subject Alternative Name: DNS:hpod.law.harvard.edu&#xa;Issuer: commonName=R10/organizationName=Let&apos;s Encrypt/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-08-08T06:43:37&#xa;Not valid after:  2024-11-06T06:43:36&#xa;MD5:   d231 311b 399e 74dd 9231 8121 0f25 2420&#xa;SHA-1: 49d5 e5b0 ff0c dc1a b120 dde0 8fd7 b091 da12 cfd4"><table key="subject">
+<elem key="commonName">hpod.law.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+<elem key="countryName">US</elem>
+<elem key="commonName">R10</elem>
+</table>
+<table key="pubkey">
+<elem key="modulus">BIGNUM: 0x55f00b885968</elem>
+<elem key="bits">2048</elem>
+<elem key="exponent">BIGNUM: 0x55f00b883438</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">AA:D0:2B:FE:E7:71:48:6B:5C:05:0D:89:96:EC:87:3D:9D:40:2D:B4</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">BB:BC:C3:47:A5:E4:BC:A9:C6:C3:A4:72:0C:10:8D:A2:35:E1:C8:E8</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://r10.o.lencr.org&#xa;CA Issuers - URI:http://r10.i.lencr.org/</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:hpod.law.harvard.edu</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 3F:17:4B:4F:D7:22:47:58:94:1D:65:1C:84:BE:0D:12:&#xa;                ED:90:37:7F:1F:85:6A:EB:C1:BF:28:85:EC:F8:64:6E&#xa;    Timestamp : Aug  8 07:42:08.728 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:81:24:BB:9F:F1:25:1A:A3:1B:5B:02:&#xa;                78:7C:AE:0C:77:6D:B2:23:4A:F8:0C:0C:9A:97:DE:F2:&#xa;                87:1B:4C:5E:FC:02:20:4D:56:97:DA:07:C1:19:10:5C:&#xa;                43:31:19:3F:4E:83:CA:7C:80:02:4B:4E:8A:66:00:95:&#xa;                0A:CC:8B:45:E1:3A:0B&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 48:B0:E3:6B:DA:A6:47:34:0F:E5:6A:02:FA:9D:30:EB:&#xa;                1C:52:01:CB:56:DD:2C:81:D9:BB:BF:AB:39:D8:84:73&#xa;    Timestamp : Aug  8 07:42:08.733 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:8B:68:6E:A1:CA:C1:DE:0D:42:AE:9B:&#xa;                E0:27:C7:BB:AF:18:B2:94:30:BE:CC:A6:27:95:D7:47:&#xa;                78:F2:EE:A3:A1:02:21:00:C1:17:57:48:11:FC:99:83:&#xa;                B4:4D:96:2F:0B:23:41:D2:19:F0:66:09:CE:A6:0B:7E:&#xa;                C7:2B:63:03:4F:9C:35:98</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-08-08T06:43:37</elem>
+<elem key="notAfter">2024-11-06T06:43:36</elem>
+</table>
+<elem key="md5">d231311b399e74dd923181210f252420</elem>
+<elem key="sha1">49d5e5b0ff0cdc1ab120dde08fd7b091da12cfd4</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIE+TCCA+GgAwIBAgISBLXc7636l4+zWD1mxiwP1o7RMA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNSMTAwHhcNMjQwODA4MDY0MzM3WhcNMjQxMTA2MDY0MzM2WjAfMR0wGwYDVQQD&#xa;ExRocG9kLmxhdy5oYXJ2YXJkLmVkdTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCC&#xa;AQoCggEBAOErifecMSlvr4zSllKEeJOpk3Whmc1C5u5MwOSjQypFYuGunR6K022R&#xa;TZvb3SoDxjV/NnB+BbZedQK0+VaTw4g0JCMKBDM0Yg63iWSVOOx/LQ7o4I2UIMMf&#xa;40J1QHBTJfLb+D2oJaL5Gf/4BrMwgjKwu2s7woWJ2fIB/HE+vuNgg+6ST1BVuVFA&#xa;DDUqzCpmDAkWQod4h5arG5uVykhkw4iPaWGY1pDEoXRmiZAtsAyqZY1IZpRMB/OC&#xa;fHhFxuRm62jtNSDIVwkKuSJ9EYC9UkLI8em7bZabDYtFKIY9wd/eOVJ0kfCd0y1y&#xa;guWlCHrefrYpgD9/vSQzpiFzqIPQT5cCAwEAAaOCAhkwggIVMA4GA1UdDwEB/wQE&#xa;AwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIw&#xa;ADAdBgNVHQ4EFgQUqtAr/udxSGtcBQ2JluyHPZ1ALbQwHwYDVR0jBBgwFoAUu7zD&#xa;R6XkvKnGw6RyDBCNojXhyOgwVwYIKwYBBQUHAQEESzBJMCIGCCsGAQUFBzABhhZo&#xa;dHRwOi8vcjEwLm8ubGVuY3Iub3JnMCMGCCsGAQUFBzAChhdodHRwOi8vcjEwLmku&#xa;bGVuY3Iub3JnLzAfBgNVHREEGDAWghRocG9kLmxhdy5oYXJ2YXJkLmVkdTATBgNV&#xa;HSAEDDAKMAgGBmeBDAECATCCAQUGCisGAQQB1nkCBAIEgfYEgfMA8QB2AD8XS0/X&#xa;IkdYlB1lHIS+DRLtkDd/H4Vq68G/KIXs+GRuAAABkTDwH1gAAAQDAEcwRQIhAIEk&#xa;u5/xJRqjG1sCeHyuDHdtsiNK+AwMmpfe8ocbTF78AiBNVpfaB8EZEFxDMRk/ToPK&#xa;fIACS06KZgCVCsyLReE6CwB3AEiw42vapkc0D+VqAvqdMOscUgHLVt0sgdm7v6s5&#xa;2IRzAAABkTDwH10AAAQDAEgwRgIhAItobqHKwd4NQq6b4CfHu68YspQwvsymJ5XX&#xa;R3jy7qOhAiEAwRdXSBH8mYO0TZYvCyNB0hnwZgnOpgt+xytjA0+cNZgwDQYJKoZI&#xa;hvcNAQELBQADggEBAA7LeeyHAx2AEM5iEAvJyocCE9HLILfVT+HT/yiHAP2eqqUP&#xa;xplmBZqgY8/Ha4lLD99NvJXN5Jd1IGcLbsaK8fgX2b4HHW1tlWCwLxOPXSXLUNJT&#xa;QSZWMM3FdNZzm32/aWXGSznRA+KK6bv6p3c8n1elRS++aDAMh5nVdbkqdBQBIA62&#xa;GMl2a8mTWGEnau77EghlgayvFJkXpNlCo0xuqhep61BMfZA+R4RQBQVH9xK2+4lU&#xa;VjlkYpV79Rn1H8cmYt9hwx8gH5pP1/fiffkjV/vUO6lK+x/jSgzDUvu+U6M0/t8d&#xa;v1TStPItXPaBCDVzf84yPbBl07dDmuxrcvhXBo0=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="2024-11-05T17:31:04+00:00; 0s from scanner time."><elem key="delta">0.0</elem>
+<elem key="date">2024-11-05T17:31:04+00:00</elem>
+</script></port>
+<port protocol="tcp" portid="50000"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ibm-db2" method="table" conf="3"/></port>
+<port protocol="tcp" portid="50001"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="50002"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="iiimsf" method="table" conf="3"/></port>
+<port protocol="tcp" portid="50003"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="50006"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="50300"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="50389"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="50500"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="50636"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="50800"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+</ports>
+<times srtt="26872" rttvar="1918" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730827865"/>
+<taskend task="NSE" time="1730827865"/>
+<taskbegin task="NSE" time="1730827865"/>
+<taskend task="NSE" time="1730827865"/>
+<taskbegin task="NSE" time="1730827865"/>
+<taskend task="NSE" time="1730827865"/>
+<runstats><finished time="1730827865" timestr="Tue Nov  5 17:31:05 2024" elapsed="164.57" summary="Nmap done at Tue Nov  5 17:31:05 2024; 1 IP address (1 host up) scanned in 164.57 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
