@@ -21,3 +21,114 @@
 <taskbegin task="Service scan" time="1730795058"/>
 <taskend task="Service scan" time="1730795070" extrainfo="2 services on 1 host"/>
 <taskbegin task="NSE" time="1730795070"/>
+<taskend task="NSE" time="1730795077"/>
+<taskbegin task="NSE" time="1730795077"/>
+<taskend task="NSE" time="1730795078"/>
+<taskbegin task="NSE" time="1730795078"/>
+<taskend task="NSE" time="1730795078"/>
+<host starttime="1730795054" endtime="1730795078"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="64.233.180.121" addrtype="ipv4"/>
+<hostnames>
+<hostname name="start.channing.harvard.edu" type="user"/>
+<hostname name="on-in-f121.1e100.net" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="998">
+<extrareasons reason="no-responses" count="998"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Google httpd" method="probed" conf="10"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="&#xa;  ESF&#xa;  ghs"><elem>ESF</elem>
+<elem>ghs</elem>
+</script><script id="http-title" output="Did not follow redirect to https://start.channing.harvard.edu/"><elem key="redirect_url">https://start.channing.harvard.edu/</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Google httpd" tunnel="ssl" method="probed" conf="10"/><script id="http-methods" output="&#xa;  Supported Methods: HEAD GET OPTIONS"><table key="Supported Methods">
+<elem>HEAD</elem>
+<elem>GET</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="&#xa;  ESF&#xa;  ghs"><elem>ESF</elem>
+<elem>ghs</elem>
+</script><script id="http-title" output="Did not follow redirect to https://accounts.google.com/ServiceLogin?passive=1209600&amp;osid=1&amp;continue=https://sites.google.com/channing.harvard.edu/home&amp;followup=https://sites.google.com/channing.harvard.edu/home"><elem key="redirect_url">https://accounts.google.com/ServiceLogin?passive=1209600&amp;osid=1&amp;continue=https://sites.google.com/channing.harvard.edu/home&amp;followup=https://sites.google.com/channing.harvard.edu/home</elem>
+</script><script id="ssl-cert" output="Subject: commonName=start.channing.harvard.edu&#xa;Subject Alternative Name: DNS:start.channing.harvard.edu&#xa;Issuer: commonName=WR3/organizationName=Google Trust Services/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-10-29T02:21:50&#xa;Not valid after:  2025-01-27T03:11:42&#xa;MD5:   4b01 8e3b 6ba2 211a b87b 748b f835 1845&#xa;SHA-1: 57e0 89ac 8f34 6428 74b7 0f20 a05f 2dc8 3390 257a"><table key="subject">
+<elem key="commonName">start.channing.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">US</elem>
+<elem key="organizationName">Google Trust Services</elem>
+<elem key="commonName">WR3</elem>
+</table>
+<table key="pubkey">
+<elem key="exponent">BIGNUM: 0x55967a11a328</elem>
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">BIGNUM: 0x55967a11c048</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">CE:EA:22:0C:8D:A9:F3:80:6C:ED:E5:94:CB:E7:57:9F:D4:10:17:49</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">C7:81:F5:FD:8E:88:D9:00:3C:4D:63:A2:50:31:24:A0:CE:23:FE:23</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://o.pki.goog/s/wr3/7ic&#xa;CA Issuers - URI:http://i.pki.goog/wr3.crt</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:start.channing.harvard.edu</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://c.pki.goog/wr3/UU8pwFkWD50.crl</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 4E:75:A3:27:5C:9A:10:C3:38:5B:6C:D4:DF:3F:52:EB:&#xa;                1D:F0:E0:8E:1B:8D:69:C0:B1:FA:64:B1:62:9A:39:DF&#xa;    Timestamp : Oct 29 03:21:51.356 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:F6:C5:1C:22:29:00:A9:D4:A8:45:13:&#xa;                7A:A7:6B:C0:12:F7:BB:E4:42:8A:6F:D8:15:0F:B1:AC:&#xa;                C0:A3:68:70:1C:02:21:00:FF:E5:B9:D4:38:61:AA:55:&#xa;                21:37:21:03:7E:4E:33:6D:B5:DB:D7:93:F3:9B:DF:9C:&#xa;                02:0B:16:95:ED:07:0E:3D&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : E6:D2:31:63:40:77:8C:C1:10:41:06:D7:71:B9:CE:C1:&#xa;                D2:40:F6:96:84:86:FB:BA:87:32:1D:FD:1E:37:8E:50&#xa;    Timestamp : Oct 29 03:21:51.377 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:46:0C:4C:9F:FD:AC:10:36:0E:1C:AC:AA:&#xa;                C6:7B:D8:83:BE:2C:5E:91:05:E0:77:71:41:58:8C:85:&#xa;                2D:29:62:15:02:21:00:D2:83:AD:06:6B:E2:DD:5E:E9:&#xa;                1B:16:DC:0F:19:59:FA:D5:65:F5:02:4A:83:E3:47:E1:&#xa;                CA:43:BA:97:FE:15:82</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-10-29T02:21:50</elem>
+<elem key="notAfter">2025-01-27T03:11:42</elem>
+</table>
+<elem key="md5">4b018e3b6ba2211ab87b748bf8351845</elem>
+<elem key="sha1">57e089ac8f34642874b70f20a05f2dc83390257a</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFQTCCBCmgAwIBAgIRAO4nSe5GC6JnCv0A1vWIzJ4wDQYJKoZIhvcNAQELBQAw&#xa;OzELMAkGA1UEBhMCVVMxHjAcBgNVBAoTFUdvb2dsZSBUcnVzdCBTZXJ2aWNlczEM&#xa;MAoGA1UEAxMDV1IzMB4XDTI0MTAyOTAyMjE1MFoXDTI1MDEyNzAzMTE0MlowJTEj&#xa;MCEGA1UEAxMac3RhcnQuY2hhbm5pbmcuaGFydmFyZC5lZHUwggEiMA0GCSqGSIb3&#xa;DQEBAQUAA4IBDwAwggEKAoIBAQDXJn90CsJK38ta1adB+J8UjQrFrdG+LHw0x8MU&#xa;4Pmv495dQ4XvM9PgptnUVy12pzHtZ9NeYNvPlHLcfq7j+lC1xNTrP00L6SoX0dDT&#xa;BSZ2lMJyBBDnTmTAnedkuUwvoOWFMzlQ4ps0Air41RP/He4mozdUR4Qy/ZXHaais&#xa;hIJPrpaWoVwqzaereWCI1KorO8kMXuWagXCRewdkFTbEXepLPMnLgaRo3up1dlnz&#xa;XCQXA7fFEZS7uUvIjdqBcJ7rnPQHYbYjcQ8FD0gPf00QBUAbSm0vlemvUT6wa8uG&#xa;WmAHrKJfS1TCLroK0amJQpoyQsx5VYV/Qi30OSN+LKSQPEyJAgMBAAGjggJUMIIC&#xa;UDAOBgNVHQ8BAf8EBAMCBaAwEwYDVR0lBAwwCgYIKwYBBQUHAwEwDAYDVR0TAQH/&#xa;BAIwADAdBgNVHQ4EFgQUzuoiDI2p84Bs7eWUy+dXn9QQF0kwHwYDVR0jBBgwFoAU&#xa;x4H1/Y6I2QA8TWOiUDEkoM4j/iMwXgYIKwYBBQUHAQEEUjBQMCcGCCsGAQUFBzAB&#xa;hhtodHRwOi8vby5wa2kuZ29vZy9zL3dyMy83aWMwJQYIKwYBBQUHMAKGGWh0dHA6&#xa;Ly9pLnBraS5nb29nL3dyMy5jcnQwJQYDVR0RBB4wHIIac3RhcnQuY2hhbm5pbmcu&#xa;aGFydmFyZC5lZHUwEwYDVR0gBAwwCjAIBgZngQwBAgEwNgYDVR0fBC8wLTAroCmg&#xa;J4YlaHR0cDovL2MucGtpLmdvb2cvd3IzL1VVOHB3RmtXRDUwLmNybDCCAQUGCisG&#xa;AQQB1nkCBAIEgfYEgfMA8QB3AE51oydcmhDDOFts1N8/Uusd8OCOG41pwLH6ZLFi&#xa;mjnfAAABktZLSfwAAAQDAEgwRgIhAPbFHCIpAKnUqEUTeqdrwBL3u+RCim/YFQ+x&#xa;rMCjaHAcAiEA/+W51DhhqlUhNyEDfk4zbbXb15Pzm9+cAgsWle0HDj0AdgDm0jFj&#xa;QHeMwRBBBtdxuc7B0kD2loSG+7qHMh39HjeOUAAAAZLWS0oRAAAEAwBHMEUCIEYM&#xa;TJ/9rBA2DhysqsZ72IO+LF6RBeB3cUFYjIUtKWIVAiEA0oOtBmvi3V7pGxbcDxlZ&#xa;+tVl9QJKg+NH4cpDupf+FYIwDQYJKoZIhvcNAQELBQADggEBAISYQL0lrjQdRbNJ&#xa;EZxa++we4W0fxfwC4s3lijDpQERCQWJNbVm5TIbw9mDcQA5xcIqM01ufYZUd7an9&#xa;qoILF0fXhDrVcPTeH08Uf4mhVxxCekPjcXxnMkZ7YXMkN2yR1BRzbhPpuLqIFfK9&#xa;YoiwD0NQnoqa4f91vFvzq0VUa5sp/Zx8rhfkgEmlj1zIvMEr2qEJB3fmZsTFDPjj&#xa;TJd7N5BtQfBvg4oA0sIFAoD8pCN22+PyqdqCYL9X1lzn9d5399s0L9FoWCcH3w1I&#xa;4MmwWqmOl8wRc/g7XfnH3sQ6RGVn7Jy/Z4kWMG4kzFhktEzytuWGv1Ky8yZWIjzz&#xa;lbED34s=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+</ports>
+<times srtt="6436" rttvar="1742" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730795078"/>
+<taskend task="NSE" time="1730795078"/>
+<taskbegin task="NSE" time="1730795078"/>
+<taskend task="NSE" time="1730795078"/>
+<taskbegin task="NSE" time="1730795078"/>
+<taskend task="NSE" time="1730795078"/>
+<runstats><finished time="1730795078" timestr="Tue Nov  5 08:24:38 2024" elapsed="23.74" summary="Nmap done at Tue Nov  5 08:24:38 2024; 1 IP address (1 host up) scanned in 23.74 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
