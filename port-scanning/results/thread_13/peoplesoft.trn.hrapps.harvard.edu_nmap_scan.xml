@@ -17,3 +17,109 @@
 <taskbegin task="Parallel DNS resolution of 1 host." time="1730832643"/>
 <taskend task="Parallel DNS resolution of 1 host." time="1730832643"/>
 <taskbegin task="Connect Scan" time="1730832643"/>
+<taskend task="Connect Scan" time="1730832647" extrainfo="1000 total ports"/>
+<taskbegin task="Service scan" time="1730832647"/>
+<taskend task="Service scan" time="1730832659" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1730832659"/>
+<taskend task="NSE" time="1730832660"/>
+<taskbegin task="NSE" time="1730832660"/>
+<taskend task="NSE" time="1730832660"/>
+<taskbegin task="NSE" time="1730832660"/>
+<taskend task="NSE" time="1730832660"/>
+<host starttime="1730832643" endtime="1730832660"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="44.206.173.216" addrtype="ipv4"/>
+<hostnames>
+<hostname name="peoplesoft.trn.hrapps.harvard.edu" type="user"/>
+<hostname name="ec2-44-206-173-216.compute-1.amazonaws.com" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="999">
+<extrareasons reason="no-responses" count="999"/>
+</extraports>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.37" extrainfo="(Red Hat Enterprise Linux) OpenSSL/1.1.1k" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.37</cpe></service><script id="http-server-header" output="Apache/2.4.37 (Red Hat Enterprise Linux) OpenSSL/1.1.1k"><elem>Apache/2.4.37 (Red Hat Enterprise Linux) OpenSSL/1.1.1k</elem>
+</script><script id="http-title" output="403 Forbidden"><elem key="title">403 Forbidden</elem>
+</script><script id="ssl-cert" output="Subject: commonName=peoplesofttrain.hrapps.harvard.edu/organizationName=President and Fellows of Harvard College/stateOrProvinceName=Massachusetts/countryName=US&#xa;Subject Alternative Name: DNS:peoplesofttrain.hrapps.harvard.edu, DNS:peoplesoft-db01.trn.hrapps.harvard.edu, DNS:peoplesoft-db1.trn.hrapps.harvard.edu, DNS:peoplesoft-gateway.trn.hrapps.harvard.edu, DNS:peoplesoft-scheduler.trn.hrapps.harvard.edu, DNS:peoplesoft-scheduler01.trn.hrapps.harvard.edu, DNS:peoplesoft-web01.trn.hrapps.harvard.edu, DNS:peoplesoft-web02.trn.hrapps.harvard.edu, DNS:peoplesoft-web03.trn.hrapps.harvard.edu, DNS:peoplesoft-webib01.trn.hrapps.harvard.edu, DNS:peoplesoft-webib02.trn.hrapps.harvard.edu, DNS:peoplesoft.trn.hrapps.harvard.edu, DNS:peoplesofttrain-db1.hrapps.harvard.edu, DNS:peoplesofttrain-gateway.hrapps.harvard.edu, DNS:peoplesofttrain-ib.hrapps.harvard.edu, DNS:peoplesofttrain-report.hrapps.harvard.edu, DNS:peoplesofttrain-scheduler.hrapps.harvard.edu, DNS:peoplesofttrain-web01.hrapps.harvard.edu&#xa;Issuer: commonName=InCommon RSA Server CA 2/organizationName=Internet2/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha384WithRSAEncryption&#xa;Not valid before: 2024-04-24T00:00:00&#xa;Not valid after:  2025-04-24T23:59:59&#xa;MD5:   d273 d155 1b32 f14d 8681 51b4 9658 5855&#xa;SHA-1: 93fc 8cbc 0470 f4e9 7377 ed0b 8bd1 75c0 5b8a a518"><table key="subject">
+<elem key="organizationName">President and Fellows of Harvard College</elem>
+<elem key="countryName">US</elem>
+<elem key="commonName">peoplesofttrain.hrapps.harvard.edu</elem>
+<elem key="stateOrProvinceName">Massachusetts</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">US</elem>
+<elem key="commonName">InCommon RSA Server CA 2</elem>
+<elem key="organizationName">Internet2</elem>
+</table>
+<table key="pubkey">
+<elem key="modulus">BIGNUM: 0x56503ba30018</elem>
+<elem key="bits">2048</elem>
+<elem key="exponent">BIGNUM: 0x56503b9c5fa8</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">EF:4C:00:92:A6:FB:76:2E:5E:95:E2:C9:5F:87:1B:19:D5:4D:E2:D9</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">6A:99:A6:9B:56:53:AF:91:2E:05:E2:7B:C3:BD:CD:40:E0:16:4C:41</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="critical">true</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="critical">true</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 1.3.6.1.4.1.6449.1.2.2.103&#xa;  CPS: https://sectigo.com/CPS&#xa;Policy: 2.23.140.1.2.2</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://crl.sectigo.com/InCommonRSAServerCA2.crl</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:http://crt.sectigo.com/InCommonRSAServerCA2.crt&#xa;OCSP - URI:http://ocsp.sectigo.com</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : CF:11:56:EE:D5:2E:7C:AF:F3:87:5B:D9:69:2E:9B:E9:&#xa;                1A:71:67:4A:B0:17:EC:AC:01:D2:5B:77:CE:CC:3B:08&#xa;    Timestamp : Apr 24 10:06:27.120 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:F5:C8:57:60:50:89:C8:66:EB:EC:A6:&#xa;                E6:99:D3:D6:22:A8:70:DA:78:93:BD:7A:7D:D1:8C:AA:&#xa;                5C:8E:AE:76:96:02:20:59:48:FF:9E:0C:E4:6C:21:C0:&#xa;                5F:80:E6:F8:9B:38:4E:35:21:4D:17:E2:53:8E:42:9C:&#xa;                FB:C8:8B:60:F3:26:11&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : A2:E3:0A:E4:45:EF:BD:AD:9B:7E:38:ED:47:67:77:53:&#xa;                D7:82:5B:84:94:D7:2B:5E:1B:2C:C4:B9:50:A4:47:E7&#xa;    Timestamp : Apr 24 10:06:27.089 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:84:99:D0:FA:72:26:92:A5:31:84:52:&#xa;                07:5A:E9:7E:1D:9C:96:A9:C2:9F:28:DC:AA:3A:1A:D5:&#xa;                7D:DA:E4:49:08:02:21:00:88:1A:49:04:B7:5D:94:63:&#xa;                FB:72:54:48:BF:EA:63:46:E3:C2:CF:9A:23:3B:D7:E4:&#xa;                6D:A6:66:F5:E7:DA:A1:2E&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 4E:75:A3:27:5C:9A:10:C3:38:5B:6C:D4:DF:3F:52:EB:&#xa;                1D:F0:E0:8E:1B:8D:69:C0:B1:FA:64:B1:62:9A:39:DF&#xa;    Timestamp : Apr 24 10:06:27.088 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:44:70:6E:AA:9F:DC:85:36:8B:60:68:A0:&#xa;                DB:3A:EE:4C:BA:87:E0:1E:6F:2B:50:C3:0C:1C:80:23:&#xa;                18:65:07:F3:02:20:35:72:3C:D7:54:83:7E:48:1F:C6:&#xa;                FB:E7:D0:EF:D0:A3:FB:B8:A4:50:3D:AC:A6:F8:34:FE:&#xa;                6C:C0:98:CB:4E:9B</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:peoplesofttrain.hrapps.harvard.edu, DNS:peoplesoft-db01.trn.hrapps.harvard.edu, DNS:peoplesoft-db1.trn.hrapps.harvard.edu, DNS:peoplesoft-gateway.trn.hrapps.harvard.edu, DNS:peoplesoft-scheduler.trn.hrapps.harvard.edu, DNS:peoplesoft-scheduler01.trn.hrapps.harvard.edu, DNS:peoplesoft-web01.trn.hrapps.harvard.edu, DNS:peoplesoft-web02.trn.hrapps.harvard.edu, DNS:peoplesoft-web03.trn.hrapps.harvard.edu, DNS:peoplesoft-webib01.trn.hrapps.harvard.edu, DNS:peoplesoft-webib02.trn.hrapps.harvard.edu, DNS:peoplesoft.trn.hrapps.harvard.edu, DNS:peoplesofttrain-db1.hrapps.harvard.edu, DNS:peoplesofttrain-gateway.hrapps.harvard.edu, DNS:peoplesofttrain-ib.hrapps.harvard.edu, DNS:peoplesofttrain-report.hrapps.harvard.edu, DNS:peoplesofttrain-scheduler.hrapps.harvard.edu, DNS:peoplesofttrain-web01.hrapps.harvard.edu</elem>
+</table>
+</table>
+<elem key="sig_algo">sha384WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-04-24T00:00:00</elem>
+<elem key="notAfter">2025-04-24T23:59:59</elem>
+</table>
+<elem key="md5">d273d1551b32f14d868151b496585855</elem>
+<elem key="sha1">93fc8cbc0470f4e97377ed0b8bd175c05b8aa518</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIJ1TCCCD2gAwIBAgIQCctn/RkMq0Ph8NZvO400oDANBgkqhkiG9w0BAQwFADBE&#xa;MQswCQYDVQQGEwJVUzESMBAGA1UEChMJSW50ZXJuZXQyMSEwHwYDVQQDExhJbkNv&#xa;bW1vbiBSU0EgU2VydmVyIENBIDIwHhcNMjQwNDI0MDAwMDAwWhcNMjUwNDI0MjM1&#xa;OTU5WjCBhTELMAkGA1UEBhMCVVMxFjAUBgNVBAgTDU1hc3NhY2h1c2V0dHMxMTAv&#xa;BgNVBAoTKFByZXNpZGVudCBhbmQgRmVsbG93cyBvZiBIYXJ2YXJkIENvbGxlZ2Ux&#xa;KzApBgNVBAMTInBlb3BsZXNvZnR0cmFpbi5ocmFwcHMuaGFydmFyZC5lZHUwggEi&#xa;MA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCt59a94D2SDgt3R5s3kNseauSo&#xa;WfRqYJOZsV4L0M6G1KGikyoFPh+BqGzxo/hI7nWsLQAxadJjW4DyWaovD8m6hKi3&#xa;SyCm6giZwQh/eTeSQbnlrKZX+zqf8XASrIobI8J5YEoGdJF3RT7/oAQT2jfOz56P&#xa;grRKZyla757MG0TxMkBjJ/cfLZhal1iU3yzkUWFWBccaFtnplYnAT9Un3mmexfby&#xa;oQZ3cG77Z8vk2Lme8cB/ldryZzBk2UvehY+JUygJDZNTXdE49x8/mRSSMUE0x1zW&#xa;KjlTBEokWOJd8Qr9lbFP92K65w2RbPX6JrkDotZvANL1sAhZXu04uFuIbiXtAgMB&#xa;AAGjggX/MIIF+zAfBgNVHSMEGDAWgBTvTACSpvt2Ll6V4slfhxsZ1U3i2TAdBgNV&#xa;HQ4EFgQUapmmm1ZTr5EuBeJ7w73NQOAWTEEwDgYDVR0PAQH/BAQDAgWgMAwGA1Ud&#xa;EwEB/wQCMAAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMEkGA1UdIARC&#xa;MEAwNAYLKwYBBAGyMQECAmcwJTAjBggrBgEFBQcCARYXaHR0cHM6Ly9zZWN0aWdv&#xa;LmNvbS9DUFMwCAYGZ4EMAQICMEAGA1UdHwQ5MDcwNaAzoDGGL2h0dHA6Ly9jcmwu&#xa;c2VjdGlnby5jb20vSW5Db21tb25SU0FTZXJ2ZXJDQTIuY3JsMHAGCCsGAQUFBwEB&#xa;BGQwYjA7BggrBgEFBQcwAoYvaHR0cDovL2NydC5zZWN0aWdvLmNvbS9JbkNvbW1v&#xa;blJTQVNlcnZlckNBMi5jcnQwIwYIKwYBBQUHMAGGF2h0dHA6Ly9vY3NwLnNlY3Rp&#xa;Z28uY29tMIIBfgYKKwYBBAHWeQIEAgSCAW4EggFqAWgAdgDPEVbu1S58r/OHW9lp&#xa;LpvpGnFnSrAX7KwB0lt3zsw7CAAAAY8PkiUwAAAEAwBHMEUCIQD1yFdgUInIZuvs&#xa;puaZ09YiqHDaeJO9en3RjKpcjq52lgIgWUj/ngzkbCHAX4Dm+Js4TjUhTRfiU45C&#xa;nPvIi2DzJhEAdwCi4wrkRe+9rZt+OO1HZ3dT14JbhJTXK14bLMS5UKRH5wAAAY8P&#xa;kiURAAAEAwBIMEYCIQCEmdD6ciaSpTGEUgda6X4dnJapwp8o3Ko6GtV92uRJCAIh&#xa;AIgaSQS3XZRj+3JUSL/qY0bjws+aIzvX5G2mZvXn2qEuAHUATnWjJ1yaEMM4W2zU&#xa;3z9S6x3w4I4bjWnAsfpksWKaOd8AAAGPD5IlEAAABAMARjBEAiBEcG6qn9yFNotg&#xa;aKDbOu5MuofgHm8rUMMMHIAjGGUH8wIgNXI811SDfkgfxvvn0O/Qo/u4pFA9rKb4&#xa;NP5swJjLTpswggL5BgNVHREEggLwMIIC7IIicGVvcGxlc29mdHRyYWluLmhyYXBw&#xa;cy5oYXJ2YXJkLmVkdYImcGVvcGxlc29mdC1kYjAxLnRybi5ocmFwcHMuaGFydmFy&#xa;ZC5lZHWCJXBlb3BsZXNvZnQtZGIxLnRybi5ocmFwcHMuaGFydmFyZC5lZHWCKXBl&#xa;b3BsZXNvZnQtZ2F0ZXdheS50cm4uaHJhcHBzLmhhcnZhcmQuZWR1gitwZW9wbGVz&#xa;b2Z0LXNjaGVkdWxlci50cm4uaHJhcHBzLmhhcnZhcmQuZWR1gi1wZW9wbGVzb2Z0&#xa;LXNjaGVkdWxlcjAxLnRybi5ocmFwcHMuaGFydmFyZC5lZHWCJ3Blb3BsZXNvZnQt&#xa;d2ViMDEudHJuLmhyYXBwcy5oYXJ2YXJkLmVkdYIncGVvcGxlc29mdC13ZWIwMi50&#xa;cm4uaHJhcHBzLmhhcnZhcmQuZWR1gidwZW9wbGVzb2Z0LXdlYjAzLnRybi5ocmFw&#xa;cHMuaGFydmFyZC5lZHWCKXBlb3BsZXNvZnQtd2ViaWIwMS50cm4uaHJhcHBzLmhh&#xa;cnZhcmQuZWR1gilwZW9wbGVzb2Z0LXdlYmliMDIudHJuLmhyYXBwcy5oYXJ2YXJk&#xa;LmVkdYIhcGVvcGxlc29mdC50cm4uaHJhcHBzLmhhcnZhcmQuZWR1giZwZW9wbGVz&#xa;b2Z0dHJhaW4tZGIxLmhyYXBwcy5oYXJ2YXJkLmVkdYIqcGVvcGxlc29mdHRyYWlu&#xa;LWdhdGV3YXkuaHJhcHBzLmhhcnZhcmQuZWR1giVwZW9wbGVzb2Z0dHJhaW4taWIu&#xa;aHJhcHBzLmhhcnZhcmQuZWR1gilwZW9wbGVzb2Z0dHJhaW4tcmVwb3J0LmhyYXBw&#xa;cy5oYXJ2YXJkLmVkdYIscGVvcGxlc29mdHRyYWluLXNjaGVkdWxlci5ocmFwcHMu&#xa;aGFydmFyZC5lZHWCKHBlb3BsZXNvZnR0cmFpbi13ZWIwMS5ocmFwcHMuaGFydmFy&#xa;ZC5lZHUwDQYJKoZIhvcNAQEMBQADggGBAFJFTbESUgbXSnvA6VmF109jA1of/6Uu&#xa;Pwuel4M/l7k3594kYDoXcCbAT+U8DZPJLgJ0SRritNYc4AI46oBP/9cxKipRL754&#xa;r5eCmLYJcPqIP3CFjkk0MVKk1+P5ggz0T6qxAX232RAS3qEmquB/FXQJYMS6Lz8V&#xa;3M9NXS7A09zW4gmC7gVL8WqiXwR+HLWZH7AWQqaYGvd9gIDZZfdBHRyQX+u8a2BO&#xa;DqVnfYjHmRp3xw9GxHGuewo1/RpeDXXO2VCR5RhzH4ZBVpOSwCw7t62b+V9NlIEr&#xa;y90Gpi2jETKFd4t5d49Aefiw8eFNFD+TgzzaYE5M5NUrbotQ8N3a5AYNz0Dz7FA+&#xa;O0aeygLxaf95f8xuuF771eRO755iLSotzxW5Qrxo95AVUV53QJ2i+GLfnG7HaMWH&#xa;cQAE0ilN1AORAPyrs9BHxhCbyrJvS60FR/+jANbJSvWhX/7FHycbm+nqHQcb9HHS&#xa;NEUhwi936/grw40YjUzQycB4TztH1sswTQ==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="tls-alpn" output="&#xa;  h2&#xa;  http/1.1"><elem>h2</elem>
+<elem>http/1.1</elem>
+</script><script id="tls-nextprotoneg" output="&#xa;  h2&#xa;  http/1.1"><elem>h2</elem>
+<elem>http/1.1</elem>
+</script></port>
+</ports>
+<times srtt="1722" rttvar="1798" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730832660"/>
+<taskend task="NSE" time="1730832660"/>
+<taskbegin task="NSE" time="1730832660"/>
+<taskend task="NSE" time="1730832660"/>
+<taskbegin task="NSE" time="1730832660"/>
+<taskend task="NSE" time="1730832660"/>
+<runstats><finished time="1730832660" timestr="Tue Nov  5 18:51:00 2024" elapsed="17.10" summary="Nmap done at Tue Nov  5 18:51:00 2024; 1 IP address (1 host up) scanned in 17.10 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
