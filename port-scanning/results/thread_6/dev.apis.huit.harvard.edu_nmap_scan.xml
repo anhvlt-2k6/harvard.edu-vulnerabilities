@@ -19,3 +19,131 @@
 <taskbegin task="Connect Scan" time="1730825411"/>
 <taskend task="Connect Scan" time="1730825415" extrainfo="1000 total ports"/>
 <taskbegin task="Service scan" time="1730825415"/>
+<taskprogress task="Service scan" time="1730825473" percent="50.00" remaining="58" etc="1730825531"/>
+<taskend task="Service scan" time="1730825479" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1730825479"/>
+<taskend task="NSE" time="1730825481"/>
+<taskbegin task="NSE" time="1730825481"/>
+<taskend task="NSE" time="1730825482"/>
+<taskbegin task="NSE" time="1730825482"/>
+<taskend task="NSE" time="1730825482"/>
+<host starttime="1730825411" endtime="1730825482"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="34.49.73.219" addrtype="ipv4"/>
+<hostnames>
+<hostname name="dev.apis.huit.harvard.edu" type="user"/>
+<hostname name="219.73.49.34.bc.googleusercontent.com" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="998">
+<extrareasons reason="no-responses" count="998"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" servicefp="SF-Port80-TCP:V=7.80%I=7%D=11/5%Time=672A4CCD%P=x86_64-pc-linux-gnu%r(GetRequest,BF,&quot;HTTP/1\.0\x20301\x20Moved\x20Permanently\r\nCache-Control:\x20private\r\nLocation:\x20https://34\.49\.73\.219:443/\r\nContent-Length:\x200\r\nDate:\x20Tue,\x2005\x20Nov\x202024\x2016:50:21\x20GMT\r\nContent-Type:\x20text/html;\x20charset=UTF-8\r\n\r\n&quot;)%r(HTTPOptions,BF,&quot;HTTP/1\.0\x20301\x20Moved\x20Permanently\r\nCache-Control:\x20private\r\nLocation:\x20https://34\.49\.73\.219:443/\r\nContent-Length:\x200\r\nDate:\x20Tue,\x2005\x20Nov\x202024\x2016:50:21\x20GMT\r\nContent-Type:\x20text/html;\x20charset=UTF-8\r\n\r\n&quot;)%r(RTSPRequest,1AD,&quot;HTTP/1\.0\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/html;\x20charset=UTF-8\r\nReferrer-Policy:\x20no-referrer\r\nContent-Length:\x20273\r\nDate:\x20Tue,\x2005\x20Nov\x202024\x2016:50:21\x20GMT\r\n\r\n\n&lt;html&gt;&lt;head&gt;\n&lt;meta\x20http-equiv=\&quot;content-type\&quot;\x20content=\&quot;text/html;charset=utf-8\&quot;&gt;\n&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;\n&lt;/head&gt;\n&lt;body\x20text=#000000\x20bgcolor=#ffffff&gt;\n&lt;h1&gt;Error:\x20Bad\x20Request&lt;/h1&gt;\n&lt;h2&gt;Your\x20client\x20has\x20issued\x20a\x20malformed\x20or\x20illegal\x20request\.&lt;/h2&gt;\n&lt;h2&gt;&lt;/h2&gt;\n&lt;/body&gt;&lt;/html&gt;\n&quot;)%r(FourOhFourRequest,DE,&quot;HTTP/1\.0\x20301\x20Moved\x20Permanently\r\nCache-Control:\x20private\r\nLocation:\x20https://34\.49\.73\.219:443/nice%20ports%2C/Trinity\.txt\.bak\r\nContent-Length:\x200\r\nDate:\x20Tue,\x2005\x20Nov\x202024\x2016:50:26\x20GMT\r\nContent-Type:\x20text/html;\x20charset=UTF-8\r\n\r\n&quot;)%r(DNSVersionBindReqTCP,B3,&quot;HTTP/1\.0\x20400\x20Bad\x20Request\r\nContent-Length:\x2054\r\nContent-Type:\x20text/html;\x20charset=UTF-8\r\nDate:\x20Tue,\x2005\x20Nov\x202024\x2016:50:36\x20GMT\r\n\r\n&lt;html&gt;&lt;title&gt;Error\x20400\x20\(Bad\x20Request\)!!1&lt;/title&gt;&lt;/html&gt;&quot;)%r(DNSStatusRequestTCP,B3,&quot;HTTP/1\.0\x20400\x20Bad\x20Request\r\nContent-Length:\x2054\r\nContent-Type:\x20text/html;\x20charset=UTF-8\r\nDate:\x20Tue,\x2005\x20Nov\x202024\x2016:50:36\x20GMT\r\n\r\n&lt;html&gt;&lt;title&gt;Error\x20400\x20\(Bad\x20Request\)!!1&lt;/title&gt;&lt;/html&gt;&quot;)%r(Help,1AD,&quot;HTTP/1\.0\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/html;\x20charset=UTF-8\r\nReferrer-Policy:\x20no-referrer\r\nContent-Length:\x20273\r\nDate:\x20Tue,\x2005\x20Nov\x202024\x2016:50:36\x20GMT\r\n\r\n\n&lt;html&gt;&lt;head&gt;\n&lt;meta\x20http-equiv=\&quot;content-type\&quot;\x20content=\&quot;text/html;charset=utf-8\&quot;&gt;\n&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;\n&lt;/head&gt;\n&lt;body\x20text=#000000\x20bgcolor=#ffffff&gt;\n&lt;h1&gt;Error:\x20Bad\x20Request&lt;/h1&gt;\n&lt;h2&gt;Your\x20client\x20has\x20issued\x20a\x20malformed\x20or\x20illegal\x20request\.&lt;/h2&gt;\n&lt;h2&gt;&lt;/h2&gt;\n&lt;/body&gt;&lt;/html&gt;\n&quot;);" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  DNSStatusRequestTCP, DNSVersionBindReqTCP: &#xa;    HTTP/1.0 400 Bad Request&#xa;    Content-Length: 54&#xa;    Content-Type: text/html; charset=UTF-8&#xa;    Date: Tue, 05 Nov 2024 16:50:36 GMT&#xa;    &lt;html&gt;&lt;title&gt;Error 400 (Bad Request)!!1&lt;/title&gt;&lt;/html&gt;&#xa;  FourOhFourRequest: &#xa;    HTTP/1.0 301 Moved Permanently&#xa;    Cache-Control: private&#xa;    Location: https://34.49.73.219:443/nice%20ports%2C/Trinity.txt.bak&#xa;    Content-Length: 0&#xa;    Date: Tue, 05 Nov 2024 16:50:26 GMT&#xa;    Content-Type: text/html; charset=UTF-8&#xa;  GetRequest, HTTPOptions: &#xa;    HTTP/1.0 301 Moved Permanently&#xa;    Cache-Control: private&#xa;    Location: https://34.49.73.219:443/&#xa;    Content-Length: 0&#xa;    Date: Tue, 05 Nov 2024 16:50:21 GMT&#xa;    Content-Type: text/html; charset=UTF-8&#xa;  Help: &#xa;    HTTP/1.0 400 Bad Request&#xa;    Content-Type: text/html; charset=UTF-8&#xa;    Referrer-Policy: no-referrer&#xa;    Content-Length: 273&#xa;    Date: Tue, 05 Nov 2024 16:50:36 GMT&#xa;    &lt;html&gt;&lt;head&gt;&#xa;    &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html;charset=utf-8&quot;&gt;&#xa;    &lt;title&gt;400 Bad Request&lt;/title&gt;&#xa;    &lt;/head&gt;&#xa;    &lt;body text=#000000 bgcolor=#ffffff&gt;&#xa;    &lt;h1&gt;Error: Bad Request&lt;/h1&gt;&#xa;    &lt;h2&gt;Your client has issued a malformed or illegal request.&lt;/h2&gt;&#xa;    &lt;h2&gt;&lt;/h2&gt;&#xa;    &lt;/body&gt;&lt;/html&gt;&#xa;  RTSPRequest: &#xa;    HTTP/1.0 400 Bad Request&#xa;    Content-Type: text/html; charset=UTF-8&#xa;    Referrer-Policy: no-referrer&#xa;    Content-Length: 273&#xa;    Date: Tue, 05 Nov 2024 16:50:21 GMT&#xa;    &lt;html&gt;&lt;head&gt;&#xa;    &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html;charset=utf-8&quot;&gt;&#xa;    &lt;title&gt;400 Bad Request&lt;/title&gt;&#xa;    &lt;/head&gt;&#xa;    &lt;body text=#000000 bgcolor=#ffffff&gt;&#xa;    &lt;h1&gt;Error: Bad Request&lt;/h1&gt;&#xa;    &lt;h2&gt;Your client has issued a malformed or illegal request.&lt;/h2&gt;&#xa;    &lt;h2&gt;&lt;/h2&gt;&#xa;    &lt;/body&gt;&lt;/html&gt;"><elem key="DNSStatusRequestTCP, DNSVersionBindReqTCP">&#xa;    HTTP/1.0 400 Bad Request&#xa;    Content-Length: 54&#xa;    Content-Type: text/html; charset=UTF-8&#xa;    Date: Tue, 05 Nov 2024 16:50:36 GMT&#xa;    &lt;html&gt;&lt;title&gt;Error 400 (Bad Request)!!1&lt;/title&gt;&lt;/html&gt;</elem>
+<elem key="FourOhFourRequest">&#xa;    HTTP/1.0 301 Moved Permanently&#xa;    Cache-Control: private&#xa;    Location: https://34.49.73.219:443/nice%20ports%2C/Trinity.txt.bak&#xa;    Content-Length: 0&#xa;    Date: Tue, 05 Nov 2024 16:50:26 GMT&#xa;    Content-Type: text/html; charset=UTF-8</elem>
+<elem key="GetRequest, HTTPOptions">&#xa;    HTTP/1.0 301 Moved Permanently&#xa;    Cache-Control: private&#xa;    Location: https://34.49.73.219:443/&#xa;    Content-Length: 0&#xa;    Date: Tue, 05 Nov 2024 16:50:21 GMT&#xa;    Content-Type: text/html; charset=UTF-8</elem>
+<elem key="Help">&#xa;    HTTP/1.0 400 Bad Request&#xa;    Content-Type: text/html; charset=UTF-8&#xa;    Referrer-Policy: no-referrer&#xa;    Content-Length: 273&#xa;    Date: Tue, 05 Nov 2024 16:50:36 GMT&#xa;    &lt;html&gt;&lt;head&gt;&#xa;    &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html;charset=utf-8&quot;&gt;&#xa;    &lt;title&gt;400 Bad Request&lt;/title&gt;&#xa;    &lt;/head&gt;&#xa;    &lt;body text=#000000 bgcolor=#ffffff&gt;&#xa;    &lt;h1&gt;Error: Bad Request&lt;/h1&gt;&#xa;    &lt;h2&gt;Your client has issued a malformed or illegal request.&lt;/h2&gt;&#xa;    &lt;h2&gt;&lt;/h2&gt;&#xa;    &lt;/body&gt;&lt;/html&gt;</elem>
+<elem key="RTSPRequest">&#xa;    HTTP/1.0 400 Bad Request&#xa;    Content-Type: text/html; charset=UTF-8&#xa;    Referrer-Policy: no-referrer&#xa;    Content-Length: 273&#xa;    Date: Tue, 05 Nov 2024 16:50:21 GMT&#xa;    &lt;html&gt;&lt;head&gt;&#xa;    &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html;charset=utf-8&quot;&gt;&#xa;    &lt;title&gt;400 Bad Request&lt;/title&gt;&#xa;    &lt;/head&gt;&#xa;    &lt;body text=#000000 bgcolor=#ffffff&gt;&#xa;    &lt;h1&gt;Error: Bad Request&lt;/h1&gt;&#xa;    &lt;h2&gt;Your client has issued a malformed or illegal request.&lt;/h2&gt;&#xa;    &lt;h2&gt;&lt;/h2&gt;&#xa;    &lt;/body&gt;&lt;/html&gt;</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Did not follow redirect to https://dev.apis.huit.harvard.edu:443/"><elem key="redirect_url">https://dev.apis.huit.harvard.edu:443/</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" servicefp="SF-Port443-TCP:V=7.80%T=SSL%I=7%D=11/5%Time=672A4CD4%P=x86_64-pc-linux-gnu%r(tor-versions,B3,&quot;HTTP/1\.0\x20400\x20Bad\x20Request\r\nContent-Length:\x2054\r\nContent-Type:\x20text/html;\x20charset=UTF-8\r\nDate:\x20Tue,\x2005\x20Nov\x202024\x2016:50:28\x20GMT\r\n\r\n&lt;html&gt;&lt;title&gt;Error\x20400\x20\(Bad\x20Request\)!!1&lt;/title&gt;&lt;/html&gt;&quot;)%r(Help,1AD,&quot;HTTP/1\.0\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/html;\x20charset=UTF-8\r\nReferrer-Policy:\x20no-referrer\r\nContent-Length:\x20273\r\nDate:\x20Tue,\x2005\x20Nov\x202024\x2016:50:38\x20GMT\r\n\r\n\n&lt;html&gt;&lt;head&gt;\n&lt;meta\x20http-equiv=\&quot;content-type\&quot;\x20content=\&quot;text/html;charset=utf-8\&quot;&gt;\n&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;\n&lt;/head&gt;\n&lt;body\x20text=#000000\x20bgcolor=#ffffff&gt;\n&lt;h1&gt;Error:\x20Bad\x20Request&lt;/h1&gt;\n&lt;h2&gt;Your\x20client\x20has\x20issued\x20a\x20malformed\x20or\x20illegal\x20request\.&lt;/h2&gt;\n&lt;h2&gt;&lt;/h2&gt;\n&lt;/body&gt;&lt;/html&gt;\n&quot;);" tunnel="ssl" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  Help: &#xa;    HTTP/1.0 400 Bad Request&#xa;    Content-Type: text/html; charset=UTF-8&#xa;    Referrer-Policy: no-referrer&#xa;    Content-Length: 273&#xa;    Date: Tue, 05 Nov 2024 16:50:38 GMT&#xa;    &lt;html&gt;&lt;head&gt;&#xa;    &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html;charset=utf-8&quot;&gt;&#xa;    &lt;title&gt;400 Bad Request&lt;/title&gt;&#xa;    &lt;/head&gt;&#xa;    &lt;body text=#000000 bgcolor=#ffffff&gt;&#xa;    &lt;h1&gt;Error: Bad Request&lt;/h1&gt;&#xa;    &lt;h2&gt;Your client has issued a malformed or illegal request.&lt;/h2&gt;&#xa;    &lt;h2&gt;&lt;/h2&gt;&#xa;    &lt;/body&gt;&lt;/html&gt;&#xa;  tor-versions: &#xa;    HTTP/1.0 400 Bad Request&#xa;    Content-Length: 54&#xa;    Content-Type: text/html; charset=UTF-8&#xa;    Date: Tue, 05 Nov 2024 16:50:28 GMT&#xa;    &lt;html&gt;&lt;title&gt;Error 400 (Bad Request)!!1&lt;/title&gt;&lt;/html&gt;"><elem key="Help">&#xa;    HTTP/1.0 400 Bad Request&#xa;    Content-Type: text/html; charset=UTF-8&#xa;    Referrer-Policy: no-referrer&#xa;    Content-Length: 273&#xa;    Date: Tue, 05 Nov 2024 16:50:38 GMT&#xa;    &lt;html&gt;&lt;head&gt;&#xa;    &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html;charset=utf-8&quot;&gt;&#xa;    &lt;title&gt;400 Bad Request&lt;/title&gt;&#xa;    &lt;/head&gt;&#xa;    &lt;body text=#000000 bgcolor=#ffffff&gt;&#xa;    &lt;h1&gt;Error: Bad Request&lt;/h1&gt;&#xa;    &lt;h2&gt;Your client has issued a malformed or illegal request.&lt;/h2&gt;&#xa;    &lt;h2&gt;&lt;/h2&gt;&#xa;    &lt;/body&gt;&lt;/html&gt;</elem>
+<elem key="tor-versions">&#xa;    HTTP/1.0 400 Bad Request&#xa;    Content-Length: 54&#xa;    Content-Type: text/html; charset=UTF-8&#xa;    Date: Tue, 05 Nov 2024 16:50:28 GMT&#xa;    &lt;html&gt;&lt;title&gt;Error 400 (Bad Request)!!1&lt;/title&gt;&lt;/html&gt;</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Site doesn&apos;t have a title."></script><script id="ssl-cert" output="Subject: commonName=*.dev.apis.huit.harvard.edu/organizationName=President and Fellows of Harvard College/stateOrProvinceName=Massachusetts/countryName=US&#xa;Subject Alternative Name: DNS:*.dev.apis.huit.harvard.edu, DNS:*.dev.api.huit.harvard.edu, DNS:dev.api.huit.harvard.edu, DNS:dev.apis.huit.harvard.edu&#xa;Issuer: commonName=InCommon RSA Server CA 2/organizationName=Internet2/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha384WithRSAEncryption&#xa;Not valid before: 2024-05-03T00:00:00&#xa;Not valid after:  2025-05-03T23:59:59&#xa;MD5:   6560 a136 6085 efe5 2281 efa7 7d53 1bb5&#xa;SHA-1: f509 dde4 5f56 0087 ccc9 810a 75c7 2258 2077 bdb8"><table key="subject">
+<elem key="commonName">*.dev.apis.huit.harvard.edu</elem>
+<elem key="stateOrProvinceName">Massachusetts</elem>
+<elem key="organizationName">President and Fellows of Harvard College</elem>
+<elem key="countryName">US</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">InCommon RSA Server CA 2</elem>
+<elem key="organizationName">Internet2</elem>
+<elem key="countryName">US</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">2048</elem>
+<elem key="modulus">BIGNUM: 0x55b593fe5158</elem>
+<elem key="exponent">BIGNUM: 0x55b593fe4fe8</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">EF:4C:00:92:A6:FB:76:2E:5E:95:E2:C9:5F:87:1B:19:D5:4D:E2:D9</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">EE:4F:0C:31:BA:D7:EF:51:F7:2F:EE:32:CE:86:1E:A1:50:89:3F:2C</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 1.3.6.1.4.1.6449.1.2.2.103&#xa;  CPS: https://sectigo.com/CPS&#xa;Policy: 2.23.140.1.2.2</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://crl.sectigo.com/InCommonRSAServerCA2.crl</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:http://crt.sectigo.com/InCommonRSAServerCA2.crt&#xa;OCSP - URI:http://ocsp.sectigo.com</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : CF:11:56:EE:D5:2E:7C:AF:F3:87:5B:D9:69:2E:9B:E9:&#xa;                1A:71:67:4A:B0:17:EC:AC:01:D2:5B:77:CE:CC:3B:08&#xa;    Timestamp : May  3 00:08:15.181 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:AD:59:A6:03:02:0A:48:D7:55:74:E0:&#xa;                F1:99:AF:1E:4B:7E:9C:83:ED:2E:27:D1:FC:39:41:4D:&#xa;                A7:57:6C:F5:FC:02:21:00:A8:FF:01:03:AF:2A:4B:D0:&#xa;                95:F9:19:4A:6C:92:12:6A:74:0A:CB:44:0E:46:80:2E:&#xa;                FB:F9:5B:55:57:28:8C:51&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : A2:E3:0A:E4:45:EF:BD:AD:9B:7E:38:ED:47:67:77:53:&#xa;                D7:82:5B:84:94:D7:2B:5E:1B:2C:C4:B9:50:A4:47:E7&#xa;    Timestamp : May  3 00:08:15.089 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:22:02:9E:05:8E:BA:A1:4C:1A:96:04:31:&#xa;                43:F8:10:2A:17:66:3A:09:73:A0:DD:09:B3:30:C1:8A:&#xa;                F6:42:44:0C:02:21:00:DD:E0:71:C2:DB:0B:8F:EB:8A:&#xa;                96:7E:A5:C5:26:9B:61:11:EA:13:C9:9A:15:58:BA:08:&#xa;                BD:E7:80:A3:49:E3:9C&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 4E:75:A3:27:5C:9A:10:C3:38:5B:6C:D4:DF:3F:52:EB:&#xa;                1D:F0:E0:8E:1B:8D:69:C0:B1:FA:64:B1:62:9A:39:DF&#xa;    Timestamp : May  3 00:08:15.086 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:E1:3C:F4:9B:F4:68:00:73:1A:14:FC:&#xa;                53:5F:FC:19:44:36:93:85:B2:26:FE:6B:CB:0F:75:C5:&#xa;                B6:F5:3B:5F:F9:02:20:3E:36:6E:75:6E:F4:69:43:2D:&#xa;                EB:4B:95:4A:0E:12:9B:A1:17:F9:66:CB:A9:51:23:AE:&#xa;                39:1A:4A:A7:51:26:5D</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:*.dev.apis.huit.harvard.edu, DNS:*.dev.api.huit.harvard.edu, DNS:dev.api.huit.harvard.edu, DNS:dev.apis.huit.harvard.edu</elem>
+</table>
+</table>
+<elem key="sig_algo">sha384WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-05-03T00:00:00</elem>
+<elem key="notAfter">2025-05-03T23:59:59</elem>
+</table>
+<elem key="md5">6560a1366085efe52281efa77d531bb5</elem>
+<elem key="sha1">f509dde45f560087ccc9810a75c722582077bdb8</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIHSjCCBbKgAwIBAgIQEJNsTO7UFZYwtfnroTo2kDANBgkqhkiG9w0BAQwFADBE&#xa;MQswCQYDVQQGEwJVUzESMBAGA1UEChMJSW50ZXJuZXQyMSEwHwYDVQQDExhJbkNv&#xa;bW1vbiBSU0EgU2VydmVyIENBIDIwHhcNMjQwNTAzMDAwMDAwWhcNMjUwNTAzMjM1&#xa;OTU5WjB+MQswCQYDVQQGEwJVUzEWMBQGA1UECBMNTWFzc2FjaHVzZXR0czExMC8G&#xa;A1UEChMoUHJlc2lkZW50IGFuZCBGZWxsb3dzIG9mIEhhcnZhcmQgQ29sbGVnZTEk&#xa;MCIGA1UEAwwbKi5kZXYuYXBpcy5odWl0LmhhcnZhcmQuZWR1MIIBIjANBgkqhkiG&#xa;9w0BAQEFAAOCAQ8AMIIBCgKCAQEA05ufFr3BlfGOkIOYBoSAVA4MH3tbEQWe9/gz&#xa;5GfIhp1FiuB4ZE/K5ngtVrdARdG+WatuuK9ZCu9140gxIHlebxIyLRSM3FZu9aMI&#xa;W8E0XAw/W9JWgdd65AKAMbeqkNyf2fjQsjV/On9VwzOc0mhcm5KAtQxlSKfxfbeY&#xa;vyR88wIlmVL50qasSvN917AhO1T93bsmNlHyLHVXz65WT9YS2B3iPbbbP9RTXlhj&#xa;I5Hcc2JCrWvcqosioBbiQUQVB3rsPXYEM5bq1cLchC8S9UBmn08FdOBLP0W9gnLU&#xa;IC2Grmk0v7GdyhsaeXe6kbba1r0X4E2UbrXUGhYmx1TTqOPnKwIDAQABo4IDfDCC&#xa;A3gwHwYDVR0jBBgwFoAU70wAkqb7di5eleLJX4cbGdVN4tkwHQYDVR0OBBYEFO5P&#xa;DDG61+9R9y/uMs6GHqFQiT8sMA4GA1UdDwEB/wQEAwIFoDAMBgNVHRMBAf8EAjAA&#xa;MB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjBJBgNVHSAEQjBAMDQGCysG&#xa;AQQBsjEBAgJnMCUwIwYIKwYBBQUHAgEWF2h0dHBzOi8vc2VjdGlnby5jb20vQ1BT&#xa;MAgGBmeBDAECAjBABgNVHR8EOTA3MDWgM6Axhi9odHRwOi8vY3JsLnNlY3RpZ28u&#xa;Y29tL0luQ29tbW9uUlNBU2VydmVyQ0EyLmNybDBwBggrBgEFBQcBAQRkMGIwOwYI&#xa;KwYBBQUHMAKGL2h0dHA6Ly9jcnQuc2VjdGlnby5jb20vSW5Db21tb25SU0FTZXJ2&#xa;ZXJDQTIuY3J0MCMGCCsGAQUFBzABhhdodHRwOi8vb2NzcC5zZWN0aWdvLmNvbTCC&#xa;AX8GCisGAQQB1nkCBAIEggFvBIIBawFpAHcAzxFW7tUufK/zh1vZaS6b6RpxZ0qw&#xa;F+ysAdJbd87MOwgAAAGPO8e2TQAABAMASDBGAiEArVmmAwIKSNdVdODxma8eS36c&#xa;g+0uJ9H8OUFNp1ds9fwCIQCo/wEDrypL0JX5GUpskhJqdArLRA5GgC77+VtVVyiM&#xa;UQB2AKLjCuRF772tm3447Udnd1PXgluElNcrXhssxLlQpEfnAAABjzvHtfEAAAQD&#xa;AEcwRQIgIgKeBY66oUwalgQxQ/gQKhdmOglzoN0JszDBivZCRAwCIQDd4HHC2wuP&#xa;64qWfqXFJpthEeoTyZoVWLoIveeAo0njnAB2AE51oydcmhDDOFts1N8/Uusd8OCO&#xa;G41pwLH6ZLFimjnfAAABjzvHte4AAAQDAEcwRQIhAOE89Jv0aABzGhT8U1/8GUQ2&#xa;k4WyJv5ryw91xbb1O1/5AiA+Nm51bvRpQy3rS5VKDhKboRf5ZsupUSOuORpKp1Em&#xa;XTB3BgNVHREEcDBughsqLmRldi5hcGlzLmh1aXQuaGFydmFyZC5lZHWCGiouZGV2&#xa;LmFwaS5odWl0LmhhcnZhcmQuZWR1ghhkZXYuYXBpLmh1aXQuaGFydmFyZC5lZHWC&#xa;GWRldi5hcGlzLmh1aXQuaGFydmFyZC5lZHUwDQYJKoZIhvcNAQEMBQADggGBAEhQ&#xa;44u8DkbVqj5CFLovleIfqlywGedjrCerv6qFdyAX8uOF1lJJBO7Cuwkp3ml1HQN4&#xa;OFnvZbg07ptnGlTU0emPltL0PBht+toL5iLNRIG1x/PgikvAvKKTbonvdFddG4jn&#xa;mdEvHuO+9THmAsHRX4gbfmLxRKC6DehMbJ1X/N8l+m+Hh7GqB7X7qqAiVeaBICrt&#xa;VWDjBZONLsu9HBrdmLMv1IBegmFbjW/npuAht2jPIWFsP6DRiaIw8wjWfskKjdB3&#xa;QxiKdc1WFWhYW5+GH3lx0efdlrMdPN70rYalIA6ppeVPaVII4Ry6IOPsr7VGeIYd&#xa;A+lHh2nlw1ErhO69dbEI1eZjlj/KHc8LnhNoZ4fwA8S3O/tW2eHOnNDCybP58bLW&#xa;vfdD5HiogHsBnStS/FltsFsqJoe40vw5LiK5SUM9x6T1N5hkuh8X0FhevnaZdeHK&#xa;9G68Nb0nP8D2DCSdjsEaGA4xNYk1FXCKvCZ+6sncnN2a60eDFJbIB6d2w5lxSw==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="2024-11-05T16:51:21+00:00; 0s from scanner time."><elem key="date">2024-11-05T16:51:21+00:00</elem>
+<elem key="delta">0.0</elem>
+</script><script id="tls-alpn" output="&#xa;  grpc-exp&#xa;  h2&#xa;  http/1.1"><elem>grpc-exp</elem>
+<elem>h2</elem>
+<elem>http/1.1</elem>
+</script><script id="tls-nextprotoneg" output="&#xa;  grpc-exp&#xa;  h2&#xa;  http/1.1"><elem>grpc-exp</elem>
+<elem>h2</elem>
+<elem>http/1.1</elem>
+</script></port>
+</ports>
+<times srtt="1955" rttvar="1481" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730825482"/>
+<taskend task="NSE" time="1730825482"/>
+<taskbegin task="NSE" time="1730825482"/>
+<taskend task="NSE" time="1730825482"/>
+<taskbegin task="NSE" time="1730825482"/>
+<taskend task="NSE" time="1730825482"/>
+<runstats><finished time="1730825482" timestr="Tue Nov  5 16:51:22 2024" elapsed="71.46" summary="Nmap done at Tue Nov  5 16:51:22 2024; 1 IP address (1 host up) scanned in 71.46 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
