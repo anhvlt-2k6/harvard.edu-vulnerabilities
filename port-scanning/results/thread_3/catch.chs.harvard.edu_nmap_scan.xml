@@ -19,3 +19,109 @@
 <taskbegin task="Connect Scan" time="1730779904"/>
 <taskend task="Connect Scan" time="1730779909" extrainfo="1000 total ports"/>
 <taskbegin task="Service scan" time="1730779909"/>
+<taskend task="Service scan" time="1730780069" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1730780069"/>
+<taskend task="NSE" time="1730780076"/>
+<taskbegin task="NSE" time="1730780076"/>
+<taskend task="NSE" time="1730780076"/>
+<taskbegin task="NSE" time="1730780076"/>
+<taskend task="NSE" time="1730780076"/>
+<host starttime="1730779904" endtime="1730780076"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="54.213.12.1" addrtype="ipv4"/>
+<hostnames>
+<hostname name="catch.chs.harvard.edu" type="user"/>
+<hostname name="ec2-54-213-12-1.us-west-2.compute.amazonaws.com" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="998">
+<extrareasons reason="no-responses" count="998"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" servicefp="SF-Port80-TCP:V=7.80%I=7%D=11/5%Time=67299B0C%P=x86_64-pc-linux-gnu%r(GetRequest,6A,&quot;HTTP/1\.1\x20503\x20Service\x20Unavailable:\x20Back-end\x20server\x20is\x20at\x20capacity\r\nContent-Length:\x200\r\nConnection:\x20Close\r\n\r\n&quot;)%r(HTTPOptions,6A,&quot;HTTP/1\.1\x20503\x20Service\x20Unavailable:\x20Back-end\x20server\x20is\x20at\x20capacity\r\nContent-Length:\x200\r\nConnection:\x20Close\r\n\r\n&quot;)%r(RTSPRequest,42,&quot;HTTP/1\.1\x20400\x20BAD_REQUEST\r\nContent-Length:\x200\r\nConnection:\x20Close\r\n\r\n&quot;)%r(X11Probe,42,&quot;HTTP/1\.1\x20400\x20BAD_REQUEST\r\nContent-Length:\x200\r\nConnection:\x20Close\r\n\r\n&quot;)%r(FourOhFourRequest,6A,&quot;HTTP/1\.1\x20503\x20Service\x20Unavailable:\x20Back-end\x20server\x20is\x20at\x20capacity\r\nContent-Length:\x200\r\nConnection:\x20Close\r\n\r\n&quot;)%r(RPCCheck,42,&quot;HTTP/1\.1\x20400\x20BAD_REQUEST\r\nContent-Length:\x200\r\nConnection:\x20Close\r\n\r\n&quot;)%r(DNSVersionBindReqTCP,42,&quot;HTTP/1\.1\x20400\x20BAD_REQUEST\r\nContent-Length:\x200\r\nConnection:\x20Close\r\n\r\n&quot;)%r(DNSStatusRequestTCP,42,&quot;HTTP/1\.1\x20400\x20BAD_REQUEST\r\nContent-Length:\x200\r\nConnection:\x20Close\r\n\r\n&quot;)%r(SSLSessionReq,42,&quot;HTTP/1\.1\x20400\x20BAD_REQUEST\r\nContent-Length:\x200\r\nConnection:\x20Close\r\n\r\n&quot;)%r(TerminalServerCookie,42,&quot;HTTP/1\.1\x20400\x20BAD_REQUEST\r\nContent-Length:\x200\r\nConnection:\x20Close\r\n\r\n&quot;)%r(TLSSessionReq,42,&quot;HTTP/1\.1\x20400\x20BAD_REQUEST\r\nContent-Length:\x200\r\nConnection:\x20Close\r\n\r\n&quot;)%r(Kerberos,42,&quot;HTTP/1\.1\x20400\x20BAD_REQUEST\r\nContent-Length:\x200\r\nConnection:\x20Close\r\n\r\n&quot;)%r(SMBProgNeg,42,&quot;HTTP/1\.1\x20400\x20BAD_REQUEST\r\nContent-Length:\x200\r\nConnection:\x20Close\r\n\r\n&quot;)%r(LDAPSearchReq,42,&quot;HTTP/1\.1\x20400\x20BAD_REQUEST\r\nContent-Length:\x200\r\nConnection:\x20Close\r\n\r\n&quot;)%r(LDAPBindReq,42,&quot;HTTP/1\.1\x20400\x20BAD_REQUEST\r\nContent-Length:\x200\r\nConnection:\x20Close\r\n\r\n&quot;)%r(SIPOptions,42,&quot;HTTP/1\.1\x20400\x20BAD_REQUEST\r\nContent-Length:\x200\r\nConnection:\x20Close\r\n\r\n&quot;)%r(LANDesk-RC,42,&quot;HTTP/1\.1\x20400\x20BAD_REQUEST\r\nContent-Length:\x200\r\nConnection:\x20Close\r\n\r\n&quot;);" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  DNSStatusRequestTCP, DNSVersionBindReqTCP, Kerberos, LANDesk-RC, LDAPBindReq, LDAPSearchReq, RPCCheck, RTSPRequest, SIPOptions, SMBProgNeg, SSLSessionReq, TLSSessionReq, TerminalServerCookie, X11Probe: &#xa;    HTTP/1.1 400 BAD_REQUEST&#xa;    Content-Length: 0&#xa;    Connection: Close&#xa;  FourOhFourRequest, GetRequest, HTTPOptions: &#xa;    HTTP/1.1 503 Service Unavailable: Back-end server is at capacity&#xa;    Content-Length: 0&#xa;    Connection: Close"><elem key="DNSStatusRequestTCP, DNSVersionBindReqTCP, Kerberos, LANDesk-RC, LDAPBindReq, LDAPSearchReq, RPCCheck, RTSPRequest, SIPOptions, SMBProgNeg, SSLSessionReq, TLSSessionReq, TerminalServerCookie, X11Probe">&#xa;    HTTP/1.1 400 BAD_REQUEST&#xa;    Content-Length: 0&#xa;    Connection: Close</elem>
+<elem key="FourOhFourRequest, GetRequest, HTTPOptions">&#xa;    HTTP/1.1 503 Service Unavailable: Back-end server is at capacity&#xa;    Content-Length: 0&#xa;    Connection: Close</elem>
+</script><script id="http-title" output="Site doesn&apos;t have a title."></script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" servicefp="SF-Port443-TCP:V=7.80%T=SSL%I=7%D=11/5%Time=67299B17%P=x86_64-pc-linux-gnu%r(GetRequest,6A,&quot;HTTP/1\.1\x20503\x20Service\x20Unavailable:\x20Back-end\x20server\x20is\x20at\x20capacity\r\nContent-Length:\x200\r\nConnection:\x20Close\r\n\r\n&quot;)%r(HTTPOptions,6A,&quot;HTTP/1\.1\x20503\x20Service\x20Unavailable:\x20Back-end\x20server\x20is\x20at\x20capacity\r\nContent-Length:\x200\r\nConnection:\x20Close\r\n\r\n&quot;)%r(FourOhFourRequest,6A,&quot;HTTP/1\.1\x20503\x20Service\x20Unavailable:\x20Back-end\x20server\x20is\x20at\x20capacity\r\nContent-Length:\x200\r\nConnection:\x20Close\r\n\r\n&quot;)%r(tor-versions,42,&quot;HTTP/1\.1\x20400\x20BAD_REQUEST\r\nContent-Length:\x200\r\nConnection:\x20Close\r\n\r\n&quot;)%r(RTSPRequest,42,&quot;HTTP/1\.1\x20400\x20BAD_REQUEST\r\nContent-Length:\x200\r\nConnection:\x20Close\r\n\r\n&quot;)%r(RPCCheck,42,&quot;HTTP/1\.1\x20400\x20BAD_REQUEST\r\nContent-Length:\x200\r\nConnection:\x20Close\r\n\r\n&quot;)%r(DNSVersionBindReqTCP,42,&quot;HTTP/1\.1\x20400\x20BAD_REQUEST\r\nContent-Length:\x200\r\nConnection:\x20Close\r\n\r\n&quot;)%r(DNSStatusRequestTCP,42,&quot;HTTP/1\.1\x20400\x20BAD_REQUEST\r\nContent-Length:\x200\r\nConnection:\x20Close\r\n\r\n&quot;)%r(SSLSessionReq,42,&quot;HTTP/1\.1\x20400\x20BAD_REQUEST\r\nContent-Length:\x200\r\nConnection:\x20Close\r\n\r\n&quot;)%r(TerminalServerCookie,42,&quot;HTTP/1\.1\x20400\x20BAD_REQUEST\r\nContent-Length:\x200\r\nConnection:\x20Close\r\n\r\n&quot;)%r(TLSSessionReq,42,&quot;HTTP/1\.1\x20400\x20BAD_REQUEST\r\nContent-Length:\x200\r\nConnection:\x20Close\r\n\r\n&quot;)%r(Kerberos,42,&quot;HTTP/1\.1\x20400\x20BAD_REQUEST\r\nContent-Length:\x200\r\nConnection:\x20Close\r\n\r\n&quot;)%r(SMBProgNeg,42,&quot;HTTP/1\.1\x20400\x20BAD_REQUEST\r\nContent-Length:\x200\r\nConnection:\x20Close\r\n\r\n&quot;)%r(X11Probe,42,&quot;HTTP/1\.1\x20400\x20BAD_REQUEST\r\nContent-Length:\x200\r\nConnection:\x20Close\r\n\r\n&quot;)%r(LDAPSearchReq,42,&quot;HTTP/1\.1\x20400\x20BAD_REQUEST\r\nContent-Length:\x200\r\nConnection:\x20Close\r\n\r\n&quot;)%r(LDAPBindReq,42,&quot;HTTP/1\.1\x20400\x20BAD_REQUEST\r\nContent-Length:\x200\r\nConnection:\x20Close\r\n\r\n&quot;)%r(SIPOptions,42,&quot;HTTP/1\.1\x20400\x20BAD_REQUEST\r\nContent-Length:\x200\r\nConnection:\x20Close\r\n\r\n&quot;);" tunnel="ssl" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  DNSStatusRequestTCP, DNSVersionBindReqTCP, Kerberos, LDAPBindReq, LDAPSearchReq, RPCCheck, RTSPRequest, SIPOptions, SMBProgNeg, SSLSessionReq, TLSSessionReq, TerminalServerCookie, X11Probe, tor-versions: &#xa;    HTTP/1.1 400 BAD_REQUEST&#xa;    Content-Length: 0&#xa;    Connection: Close&#xa;  FourOhFourRequest, GetRequest, HTTPOptions: &#xa;    HTTP/1.1 503 Service Unavailable: Back-end server is at capacity&#xa;    Content-Length: 0&#xa;    Connection: Close"><elem key="DNSStatusRequestTCP, DNSVersionBindReqTCP, Kerberos, LDAPBindReq, LDAPSearchReq, RPCCheck, RTSPRequest, SIPOptions, SMBProgNeg, SSLSessionReq, TLSSessionReq, TerminalServerCookie, X11Probe, tor-versions">&#xa;    HTTP/1.1 400 BAD_REQUEST&#xa;    Content-Length: 0&#xa;    Connection: Close</elem>
+<elem key="FourOhFourRequest, GetRequest, HTTPOptions">&#xa;    HTTP/1.1 503 Service Unavailable: Back-end server is at capacity&#xa;    Content-Length: 0&#xa;    Connection: Close</elem>
+</script><script id="http-title" output="Site doesn&apos;t have a title."></script><script id="ssl-cert" output="Subject: commonName=catch.chs.harvard.edu/organizationName=Harvard College/stateOrProvinceName=DC/countryName=US&#xa;Subject Alternative Name: DNS:catch.chs.harvard.edu&#xa;Issuer: commonName=InCommon RSA Server CA/organizationName=Internet2/stateOrProvinceName=MI/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2015-01-22T00:00:00&#xa;Not valid after:  2018-01-21T23:59:59&#xa;MD5:   025c 4b13 b682 ac18 1509 0672 7ac5 66f6&#xa;SHA-1: ad80 736c feb6 0192 3c20 608b 05c9 d533 5b40 7c19"><table key="subject">
+<elem key="countryName">US</elem>
+<elem key="postalCode">20008</elem>
+<elem key="stateOrProvinceName">DC</elem>
+<elem key="localityName">Washington</elem>
+<elem key="streetAddress">3100 Whitehaven St. NW</elem>
+<elem key="organizationName">Harvard College</elem>
+<elem key="organizationalUnitName">Center for Hellenic Studies</elem>
+<elem key="commonName">catch.chs.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">US</elem>
+<elem key="stateOrProvinceName">MI</elem>
+<elem key="localityName">Ann Arbor</elem>
+<elem key="organizationName">Internet2</elem>
+<elem key="organizationalUnitName">InCommon</elem>
+<elem key="commonName">InCommon RSA Server CA</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">BIGNUM: 0x55b90c0f7158</elem>
+<elem key="exponent">BIGNUM: 0x55b90c0f7058</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">1E:05:A3:77:8F:6C:96:E2:5B:87:4B:A6:B4:86:AC:71:00:0C:E7:38</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">71:8C:9E:6B:4F:8F:3E:2F:69:26:EA:86:70:24:FF:05:0A:73:A6:77</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 1.3.6.1.4.1.5923.1.4.3.1.1&#xa;  CPS: https://www.incommon.org/cert/repository/cps_ssl.pdf&#xa;Policy: 2.23.140.1.2.2</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://crl.incommon-rsa.org/InCommonRSAServerCA.crl</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:http://crt.usertrust.com/InCommonRSAServerCA_2.crt&#xa;OCSP - URI:http://ocsp.usertrust.com</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:catch.chs.harvard.edu</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2015-01-22T00:00:00</elem>
+<elem key="notAfter">2018-01-21T23:59:59</elem>
+</table>
+<elem key="md5">025c4b13b682ac18150906727ac566f6</elem>
+<elem key="sha1">ad80736cfeb601923c20608b05c9d5335b407c19</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFjTCCBHWgAwIBAgIRALVvXZj33x+m3PcMHR/6l9swDQYJKoZIhvcNAQELBQAw&#xa;djELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAk1JMRIwEAYDVQQHEwlBbm4gQXJib3Ix&#xa;EjAQBgNVBAoTCUludGVybmV0MjERMA8GA1UECxMISW5Db21tb24xHzAdBgNVBAMT&#xa;FkluQ29tbW9uIFJTQSBTZXJ2ZXIgQ0EwHhcNMTUwMTIyMDAwMDAwWhcNMTgwMTIx&#xa;MjM1OTU5WjCBwDELMAkGA1UEBhMCVVMxDjAMBgNVBBETBTIwMDA4MQswCQYDVQQI&#xa;EwJEQzETMBEGA1UEBxMKV2FzaGluZ3RvbjEfMB0GA1UECRMWMzEwMCBXaGl0ZWhh&#xa;dmVuIFN0LiBOVzEYMBYGA1UEChMPSGFydmFyZCBDb2xsZWdlMSQwIgYDVQQLExtD&#xa;ZW50ZXIgZm9yIEhlbGxlbmljIFN0dWRpZXMxHjAcBgNVBAMTFWNhdGNoLmNocy5o&#xa;YXJ2YXJkLmVkdTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAOKFJn+M&#xa;3lzREdkP+cSxuiJoADGIVfzr+WFIrFvh81MT3TuGhuhpGYtg1VLntAoKVzvD5uO6&#xa;kOCjVNlRUTXAn72KUz5gumuVPanu2YloOFeVBVrux/3EROkpHfdER2WE7F4ubLzW&#xa;XQ49prdKex50Vy8K4kcP/ztEDJ9w1bXXFyzcmLQHJXVSWaN4CxovhS3spiuT16B4&#xa;HhImQUkiz2/eUoG+e8dT5ebklB33BdofmsJvjBCgMa3U3QmYa6t3C4zMAbx1yuGt&#xa;L+D/friPZ+s1ABULAWMw/Qj8Pm7vM07iznJOqOXTKagUx55lVxO1lPJkbPTadz0x&#xa;Jz7gw1miFCvZl0UCAwEAAaOCAckwggHFMB8GA1UdIwQYMBaAFB4Fo3ePbJbiW4dL&#xa;prSGrHEADOc4MB0GA1UdDgQWBBRxjJ5rT48+L2km6oZwJP8FCnOmdzAOBgNVHQ8B&#xa;Af8EBAMCBaAwDAYDVR0TAQH/BAIwADAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYB&#xa;BQUHAwIwZwYDVR0gBGAwXjBSBgwrBgEEAa4jAQQDAQEwQjBABggrBgEFBQcCARY0&#xa;aHR0cHM6Ly93d3cuaW5jb21tb24ub3JnL2NlcnQvcmVwb3NpdG9yeS9jcHNfc3Ns&#xa;LnBkZjAIBgZngQwBAgIwRAYDVR0fBD0wOzA5oDegNYYzaHR0cDovL2NybC5pbmNv&#xa;bW1vbi1yc2Eub3JnL0luQ29tbW9uUlNBU2VydmVyQ0EuY3JsMHUGCCsGAQUFBwEB&#xa;BGkwZzA+BggrBgEFBQcwAoYyaHR0cDovL2NydC51c2VydHJ1c3QuY29tL0luQ29t&#xa;bW9uUlNBU2VydmVyQ0FfMi5jcnQwJQYIKwYBBQUHMAGGGWh0dHA6Ly9vY3NwLnVz&#xa;ZXJ0cnVzdC5jb20wIAYDVR0RBBkwF4IVY2F0Y2guY2hzLmhhcnZhcmQuZWR1MA0G&#xa;CSqGSIb3DQEBCwUAA4IBAQBT3mi2lpYdkwbHKUOm/M9RQ2I+KMGZUZNiuCAz1XkP&#xa;/rwwjhvYC9mVh31tcDwtGgbWiqD0PVO5njnEhgVxKbB9SsBVrRPK7ivwqwD8WuSn&#xa;bC0ub1lA71w5woXeUUSsJvbTT+jYkvFs3lkAwW8lOpmF1Qdsg6AJPHz+ygAiBuXq&#xa;KZcUvd3Cc6tCdxssPrYKX+qDSYpoVqjOOHH/3vHEjbyd0jAYHtvF3NkMHURzXuCe&#xa;zDH2n5+d4ryq9fYuxgLCFgk7gL72J6OgqDpBqnF9LxqUPYIoPG0X88Q1juIPnfFg&#xa;iLiAlRS8DMC3XHwtg4yM6uhhR2tVaBJPyBo9yzs4h8Fw&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+</ports>
+<times srtt="59289" rttvar="11569" to="105565"/>
+</host>
+<taskbegin task="NSE" time="1730780076"/>
+<taskend task="NSE" time="1730780076"/>
+<taskbegin task="NSE" time="1730780076"/>
+<taskend task="NSE" time="1730780076"/>
+<taskbegin task="NSE" time="1730780076"/>
+<taskend task="NSE" time="1730780076"/>
+<runstats><finished time="1730780076" timestr="Tue Nov  5 04:14:36 2024" elapsed="177.02" summary="Nmap done at Tue Nov  5 04:14:36 2024; 1 IP address (1 host up) scanned in 177.02 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
