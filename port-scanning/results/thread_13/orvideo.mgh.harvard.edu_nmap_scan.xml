@@ -23,3 +23,123 @@
 <taskbegin task="NSE" time="1730792255"/>
 <taskend task="NSE" time="1730792279"/>
 <taskbegin task="NSE" time="1730792279"/>
+<taskend task="NSE" time="1730792467"/>
+<taskbegin task="NSE" time="1730792467"/>
+<taskend task="NSE" time="1730792467"/>
+<host starttime="1730792085" endtime="1730792467"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="68.66.229.135" addrtype="ipv4"/>
+<hostnames>
+<hostname name="orvideo.mgh.harvard.edu" type="user"/>
+<hostname name="68.66.229.135.static.a2webhosting.com" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="914">
+<extrareasons reason="no-responses" count="914"/>
+</extraports>
+<extraports state="closed" count="73">
+<extrareasons reason="conn-refused" count="73"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ftp" product="Pure-FTPd" method="probed" conf="10"><cpe>cpe:/a:pureftpd:pure-ftpd</cpe></service></port>
+<port protocol="tcp" portid="25"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtp" method="table" conf="3"/><script id="smtp-commands" output="Couldn&apos;t establish connection on port 25"/></port>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="domain" product="PowerDNS Authoritative Server" version="4.9.1" method="probed" conf="10"><cpe>cpe:/a:powerdns:authoritative:4.9.1</cpe></service></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" method="probed" conf="10"><cpe>cpe:/a:apache:http_server</cpe></service><script id="http-favicon" output="Unknown favicon MD5: 0B3F92486C60246C8001D528603C1364"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="imunify360-webshield/1.21"><elem>imunify360-webshield/1.21</elem>
+</script><script id="http-title" output="One moment, please..."><elem key="title">One moment, please...</elem>
+</script><script id="http-trane-info" output="Problem with XML parsing of /evox/about"/><script id="https-redirect" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="tcp" portid="110"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="pop3" product="Dovecot pop3d" method="probed" conf="10"><cpe>cpe:/a:dovecot:dovecot</cpe></service></port>
+<port protocol="tcp" portid="143"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="imap" product="Dovecot imapd" method="probed" conf="10"><cpe>cpe:/a:dovecot:dovecot</cpe></service></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssl" product="Apache httpd" extrainfo="SSL-only mode" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:apache:http_server</cpe></service><script id="http-favicon" output="Unknown favicon MD5: 6457281C5E9BBF59F26A4E4CF6B05F10"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="imunify360-webshield/1.21"><elem>imunify360-webshield/1.21</elem>
+</script><script id="http-title" output="One moment, please..."><elem key="title">One moment, please...</elem>
+</script><script id="http-trane-info" output="Problem with XML parsing of /evox/about"/><script id="ssl-cert" output="Subject: commonName=nssgw.mgh.harvard.edu&#xa;Subject Alternative Name: DNS:alumni.neurosurgery.mgh.harvard.edu, DNS:brain.mgh.harvard.edu, DNS:nssgw.mgh.harvard.edu, DNS:orvideo.mgh.harvard.edu, DNS:pituitary.mgh.harvard.edu, DNS:residents.neurosurgery.mgh.harvard.edu, DNS:shankarlab.mgh.harvard.edu&#xa;Issuer: commonName=R10/organizationName=Let&apos;s Encrypt/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-09-18T02:40:30&#xa;Not valid after:  2024-12-17T02:40:29&#xa;MD5:   88bb 9880 e08d ad3f 6794 e739 bade 487b&#xa;SHA-1: 891e 23c7 0278 dbcf 3fd4 6101 fcfe 167f 24dd 4fb3"><table key="subject">
+<elem key="commonName">nssgw.mgh.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+<elem key="countryName">US</elem>
+<elem key="commonName">R10</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">2048</elem>
+<elem key="modulus">BIGNUM: 0x560bceea7d88</elem>
+<elem key="type">rsa</elem>
+<elem key="exponent">BIGNUM: 0x560bcd7e6328</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">CA:FALSE</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="value">3A:71:A9:42:8B:BC:DF:94:45:02:0E:29:2C:80:8A:56:02:2A:82:C0</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="value">BB:BC:C3:47:A5:E4:BC:A9:C6:C3:A4:72:0C:10:8D:A2:35:E1:C8:E8</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">OCSP - URI:http://r10.o.lencr.org&#xa;CA Issuers - URI:http://r10.i.lencr.org/</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">DNS:alumni.neurosurgery.mgh.harvard.edu, DNS:brain.mgh.harvard.edu, DNS:nssgw.mgh.harvard.edu, DNS:orvideo.mgh.harvard.edu, DNS:pituitary.mgh.harvard.edu, DNS:residents.neurosurgery.mgh.harvard.edu, DNS:shankarlab.mgh.harvard.edu</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+<table>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 3F:17:4B:4F:D7:22:47:58:94:1D:65:1C:84:BE:0D:12:&#xa;                ED:90:37:7F:1F:85:6A:EB:C1:BF:28:85:EC:F8:64:6E&#xa;    Timestamp : Sep 18 03:39:00.960 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:0F:AA:8E:EC:5E:AE:E4:91:C2:CD:66:A7:&#xa;                99:2E:19:5A:A6:9A:8A:3F:A7:27:D8:2B:EF:01:AB:33:&#xa;                2F:11:54:6A:02:20:77:8D:5C:29:1F:F7:5D:E7:BC:2B:&#xa;                90:41:D8:FB:DE:D2:FE:A5:0A:41:F3:A7:9D:5A:31:18:&#xa;                A1:70:BF:3B:5E:56&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : EE:CD:D0:64:D5:DB:1A:CE:C5:5C:B7:9D:B4:CD:13:A2:&#xa;                32:87:46:7C:BC:EC:DE:C3:51:48:59:46:71:1F:B5:9B&#xa;    Timestamp : Sep 18 03:39:00.952 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:D8:4D:17:BC:DF:99:03:62:45:4C:E3:&#xa;                38:6F:3A:3D:3D:6B:CF:B7:D5:9E:75:19:61:84:6E:1A:&#xa;                C7:04:EE:BD:27:02:20:0B:D6:6D:B9:A2:FC:6D:A9:85:&#xa;                58:C2:85:5E:10:E4:C9:FF:B8:2D:F4:18:B3:A7:B8:90:&#xa;                C9:21:27:5B:63:F3:B7</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notAfter">2024-12-17T02:40:29</elem>
+<elem key="notBefore">2024-09-18T02:40:30</elem>
+</table>
+<elem key="md5">88bb9880e08dad3f6794e739bade487b</elem>
+<elem key="sha1">891e23c70278dbcf3fd46101fcfe167f24dd4fb3</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFsDCCBJigAwIBAgISA2vDi7GoxmJ1ewgLfckvBLpOMA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNSMTAwHhcNMjQwOTE4MDI0MDMwWhcNMjQxMjE3MDI0MDI5WjAgMR4wHAYDVQQD&#xa;ExVuc3Nndy5tZ2guaGFydmFyZC5lZHUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw&#xa;ggEKAoIBAQDZB+xkQRjyUTJx/+I4JyX+QMRej01AvOUW8xIx9OV0g/rGaQcyYu6I&#xa;AT9b8L2EWaEXXQ+Xb/RNGWcCtzef1zIssgvLQA1k2Qu/48Ro2yqSTSyqMjNUseCj&#xa;l50eVzGGItQ9chiwRKb/L6IL9xFAlP78o7qoAhnkKqxHVOzDvvxqex/14AP1twhO&#xa;l0E5NvVfzbHFMNdQD+ZLKi2huZxYa3VpT1wtrzahsUZGH6AmoJUsxM7Fak7peL0u&#xa;U3JfF+T6J7NCeHFQ8hvk+FBeVYIi7en/w3/e6uf9X+wx1oov0W8RVo4Mu1qblsQn&#xa;jdq3mNLzjAOeAIpeCjnA7VmDCoyrHt2TAgMBAAGjggLPMIICyzAOBgNVHQ8BAf8E&#xa;BAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQC&#xa;MAAwHQYDVR0OBBYEFDpxqUKLvN+URQIOKSyAilYCKoLAMB8GA1UdIwQYMBaAFLu8&#xa;w0el5LypxsOkcgwQjaI14cjoMFcGCCsGAQUFBwEBBEswSTAiBggrBgEFBQcwAYYW&#xa;aHR0cDovL3IxMC5vLmxlbmNyLm9yZzAjBggrBgEFBQcwAoYXaHR0cDovL3IxMC5p&#xa;LmxlbmNyLm9yZy8wgdYGA1UdEQSBzjCBy4IjYWx1bW5pLm5ldXJvc3VyZ2VyeS5t&#xa;Z2guaGFydmFyZC5lZHWCFWJyYWluLm1naC5oYXJ2YXJkLmVkdYIVbnNzZ3cubWdo&#xa;LmhhcnZhcmQuZWR1ghdvcnZpZGVvLm1naC5oYXJ2YXJkLmVkdYIZcGl0dWl0YXJ5&#xa;Lm1naC5oYXJ2YXJkLmVkdYImcmVzaWRlbnRzLm5ldXJvc3VyZ2VyeS5tZ2guaGFy&#xa;dmFyZC5lZHWCGnNoYW5rYXJsYWIubWdoLmhhcnZhcmQuZWR1MBMGA1UdIAQMMAow&#xa;CAYGZ4EMAQIBMIIBAwYKKwYBBAHWeQIEAgSB9ASB8QDvAHUAPxdLT9ciR1iUHWUc&#xa;hL4NEu2QN38fhWrrwb8ohez4ZG4AAAGSAzZD4AAABAMARjBEAiAPqo7sXq7kkcLN&#xa;ZqeZLhlappqKP6cn2CvvAaszLxFUagIgd41cKR/3Xee8K5BB2Pve0v6lCkHzp51a&#xa;MRihcL87XlYAdgDuzdBk1dsazsVct520zROiModGfLzs3sNRSFlGcR+1mwAAAZID&#xa;NkPYAAAEAwBHMEUCIQDYTRe835kDYkVM4zhvOj09a8+31Z51GWGEbhrHBO69JwIg&#xa;C9ZtuaL8bamFWMKFXhDkyf+4LfQYs6e4kMkhJ1tj87cwDQYJKoZIhvcNAQELBQAD&#xa;ggEBAGPQ35fsdQl12RqSfGoEmFVTTEKNODuGboFW+bFhoXptwqL+69rbNZXe7UyZ&#xa;MPirYAwks5EqGLAkTXLLFRxnIj/bVCFd7EYwJ07RlePFfNqlnYCR2in0F6eeJ1Fc&#xa;AqN4dhuG6GwSHi98R65lri2edyeL3ndG9Lzv+iRvOxj97vmm75mU/3Jey6Wk3deP&#xa;BWkT4f+lC0H6i+OylcA5nItmGwzqKiaMv5OrnEkSxyEjUGgPhy0zAzS7HOtvYRaF&#xa;VANjRuG60fJ/c0fBUIePhurSEj8OkQscjFecXF794N4afjkzdVJVGjjkRJ6YID7s&#xa;RWepyi+expngzZNkcPAtM7a3sHA=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="tls-alpn" output="&#xa;  h2&#xa;  http/1.1"><elem>h2</elem>
+<elem>http/1.1</elem>
+</script></port>
+<port protocol="tcp" portid="465"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtp" product="Exim smtpd" version="4.98" hostname="server.nssgw.edu" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:exim:exim:4.98</cpe></service><script id="smtp-commands" output="Couldn&apos;t establish connection on port 465"/></port>
+<port protocol="tcp" portid="587"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtp" product="Exim smtpd" version="4.98" hostname="server.nssgw.edu" method="probed" conf="10"><cpe>cpe:/a:exim:exim:4.98</cpe></service><script id="smtp-commands" output="Couldn&apos;t establish connection on port 587"/></port>
+<port protocol="tcp" portid="993"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="imap" product="Dovecot imapd" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:dovecot:dovecot</cpe></service></port>
+<port protocol="tcp" portid="995"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="pop3" product="Dovecot pop3d" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:dovecot:dovecot</cpe></service></port>
+<port protocol="tcp" portid="2525"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtp" product="Exim smtpd" version="4.98" hostname="server.nssgw.edu" method="probed" conf="10"><cpe>cpe:/a:exim:exim:4.98</cpe></service><script id="smtp-commands" output="Couldn&apos;t establish connection on port 2525"/><script id="smtp-ntlm-info" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="mysql" product="MySQL" extrainfo="unauthorized" method="probed" conf="10"><cpe>cpe:/a:mysql:mysql</cpe></service></port>
+</ports>
+<times srtt="63147" rttvar="394" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730792467"/>
+<taskend task="NSE" time="1730792467"/>
+<taskbegin task="NSE" time="1730792467"/>
+<taskend task="NSE" time="1730792467"/>
+<taskbegin task="NSE" time="1730792467"/>
+<taskend task="NSE" time="1730792467"/>
+<runstats><finished time="1730792467" timestr="Tue Nov  5 07:41:07 2024" elapsed="381.82" summary="Nmap done at Tue Nov  5 07:41:07 2024; 1 IP address (1 host up) scanned in 381.82 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
