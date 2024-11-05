@@ -21,3 +21,114 @@
 <taskbegin task="Service scan" time="1730790157"/>
 <taskend task="Service scan" time="1730790271" extrainfo="4 services on 1 host"/>
 <taskbegin task="NSE" time="1730790271"/>
+<taskend task="NSE" time="1730790336"/>
+<taskbegin task="NSE" time="1730790336"/>
+<taskend task="NSE" time="1730790343"/>
+<taskbegin task="NSE" time="1730790343"/>
+<taskend task="NSE" time="1730790343"/>
+<host starttime="1730790155" endtime="1730790343"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="140.247.196.105" addrtype="ipv4"/>
+<hostnames>
+<hostname name="jupyterhub.labzone.dce.harvard.edu" type="user"/>
+<hostname name="dhcp-140-247-196-105.fas.harvard.edu" type="PTR"/>
+</hostnames>
+<ports><extraports state="closed" count="985">
+<extrareasons reason="conn-refused" count="985"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="23"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="telnet" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Golang net/http server" extrainfo="Go-IPFS json-rpc or InfluxDB API" method="probed" conf="10"><cpe>cpe:/a:protocol_labs:go-ipfs</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Did not follow redirect to https://jupyterhub.labzone.dce.harvard.edu/"><elem key="redirect_url">https://jupyterhub.labzone.dce.harvard.edu/</elem>
+</script></port>
+<port protocol="tcp" portid="135"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="msrpc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="139"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" servicefp="SF-Port443-TCP:V=7.80%T=SSL%I=7%D=11/5%Time=6729C32D%P=x86_64-pc-linux-gnu%r(GenericLines,67,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request&quot;)%r(RTSPRequest,67,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request&quot;)%r(Help,67,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request&quot;)%r(SSLSessionReq,67,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request&quot;)%r(TerminalServerCookie,67,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request&quot;)%r(TLSSessionReq,67,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request&quot;)%r(Kerberos,67,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request&quot;)%r(LPDString,67,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request&quot;)%r(LDAPSearchReq,67,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request&quot;)%r(SIPOptions,67,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request&quot;);" tunnel="ssl" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  GenericLines, Help, Kerberos, LDAPSearchReq, LPDString, RTSPRequest, SIPOptions, SSLSessionReq, TLSSessionReq, TerminalServerCookie: &#xa;    HTTP/1.1 400 Bad Request&#xa;    Content-Type: text/plain; charset=utf-8&#xa;    Connection: close&#xa;    Request"><elem key="GenericLines, Help, Kerberos, LDAPSearchReq, LPDString, RTSPRequest, SIPOptions, SSLSessionReq, TLSSessionReq, TerminalServerCookie">&#xa;    HTTP/1.1 400 Bad Request&#xa;    Content-Type: text/plain; charset=utf-8&#xa;    Connection: close&#xa;    Request</elem>
+</script><script id="http-title" output="Site doesn&apos;t have a title (text/plain; charset=utf-8)."></script><script id="ssl-cert" output="Subject: commonName=jupyterhub.labzone.dce.harvard.edu&#xa;Subject Alternative Name: DNS:jupyterhub.labzone.dce.harvard.edu&#xa;Issuer: commonName=R11/organizationName=Let&apos;s Encrypt/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 4096&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-09-05T13:15:55&#xa;Not valid after:  2024-12-04T13:15:54&#xa;MD5:   ec96 946c 24f9 fe59 b60d c9ae 37a8 49cc&#xa;SHA-1: 80ab 750b cdf7 acfc 03e9 5ea5 4f06 be5e 2fa1 c829"><table key="subject">
+<elem key="commonName">jupyterhub.labzone.dce.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+<elem key="countryName">US</elem>
+<elem key="commonName">R11</elem>
+</table>
+<table key="pubkey">
+<elem key="exponent">BIGNUM: 0x558c59a27a58</elem>
+<elem key="modulus">BIGNUM: 0x558c5a49f698</elem>
+<elem key="bits">4096</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">52:9D:A7:64:78:CD:99:E0:F5:C5:B4:40:97:27:8D:89:72:88:19:D3</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">C5:CF:46:A4:EA:F4:C3:C0:7A:6C:95:C4:2D:B0:5E:92:2F:26:E3:B9</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://r11.o.lencr.org&#xa;CA Issuers - URI:http://r11.i.lencr.org/</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:jupyterhub.labzone.dce.harvard.edu</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 48:B0:E3:6B:DA:A6:47:34:0F:E5:6A:02:FA:9D:30:EB:&#xa;                1C:52:01:CB:56:DD:2C:81:D9:BB:BF:AB:39:D8:84:73&#xa;    Timestamp : Sep  5 14:14:25.302 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:D3:24:A1:8A:B4:B3:5F:42:B7:C9:91:&#xa;                EC:AA:03:03:06:A4:58:B3:64:72:98:36:6F:B2:06:4D:&#xa;                F6:7E:EB:2E:96:02:21:00:84:8A:02:84:B3:AD:39:01:&#xa;                C2:22:16:7B:13:CB:1C:BD:A9:BE:5F:62:A7:5C:97:99:&#xa;                D6:6D:F4:15:6B:D9:12:B4&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 3F:17:4B:4F:D7:22:47:58:94:1D:65:1C:84:BE:0D:12:&#xa;                ED:90:37:7F:1F:85:6A:EB:C1:BF:28:85:EC:F8:64:6E&#xa;    Timestamp : Sep  5 14:14:25.308 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:26:05:B8:B6:58:25:30:62:BD:26:E6:2B:&#xa;                B9:22:8F:CA:A1:7B:12:F4:E7:92:0F:15:06:D7:41:3D:&#xa;                4B:CA:21:66:02:21:00:CF:B0:8B:18:A8:DB:49:2C:25:&#xa;                81:F0:4C:D2:A9:5E:4E:B4:86:8A:D5:56:11:3B:17:3B:&#xa;                3C:A5:2C:DA:52:77:29</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-09-05T13:15:55</elem>
+<elem key="notAfter">2024-12-04T13:15:54</elem>
+</table>
+<elem key="md5">ec96946c24f9fe59b60dc9ae37a849cc</elem>
+<elem key="sha1">80ab750bcdf7acfc03e95ea54f06be5e2fa1c829</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIGFTCCBP2gAwIBAgISA1uM0+0b3YS3VbWhD+zFILF9MA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNSMTEwHhcNMjQwOTA1MTMxNTU1WhcNMjQxMjA0MTMxNTU0WjAtMSswKQYDVQQD&#xa;EyJqdXB5dGVyaHViLmxhYnpvbmUuZGNlLmhhcnZhcmQuZWR1MIICIjANBgkqhkiG&#xa;9w0BAQEFAAOCAg8AMIICCgKCAgEAp/DWHS0IQEG64udLh4VonZBVKq1CLtbZa7mo&#xa;9YcIfGJYV8eQX507XSpynX/rRC+AVwNHhExHWT9PH5sR/oM+/vUqBBHf+o5pxrz0&#xa;JBY+G8SJN0pJhXB1acVYemH4GAg3Uc5jlKAQ4zMYNaUEmYE4lJTFfwNaWuTosZLA&#xa;GbBdKxTf4Aw7hDUWwnGur73HgGNJY0ZBBpusz+bxa2X6bT5VWL/8Gt3DLabr398e&#xa;xxTw+75lWnbhDzGaueqTWAoFa5DTI7Z9Qd9oYA+sXaET3TQwifvaBgWrxW6g8f9D&#xa;TSKT6zf4aq6Qlykj3qtnmf7iOKPP2cG3jYHLD75D7caS5xysFOlPSH27dJ5jq9Gd&#xa;nWmUviksOBNZ8FhRTAps9rRj07qaABXb5nUjuqIFeGOBPEoUr3isYVr2JpWD3Cqi&#xa;xtVIOmBTBTOikEl5Vn8TjpQEiIREMyKRCxb3nwvhFQhoToN5H0wJfmN5Z62zUv1z&#xa;x1BiJqNGOSKqd1HCMV5iMmlvDlfH7KrKHyFoHOWoXlysngwd9U7psWA+qfELJTbT&#xa;qYQC4nNRN3j/DxdknD2jRNDL+M0yJ8Rms2T/cuQgKhQK0GTbTQ1jvRV4eE1r3Pzo&#xa;N89LQnM568rDrwoWmAyd9CKH6gmplMY4qK0XP9ARPe5fX3i1YzFtQ/MAfM/NUyNb&#xa;jVNKXo0CAwEAAaOCAicwggIjMA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAUBggr&#xa;BgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQUUp2nZHjN&#xa;meD1xbRAlyeNiXKIGdMwHwYDVR0jBBgwFoAUxc9GpOr0w8B6bJXELbBeki8m47kw&#xa;VwYIKwYBBQUHAQEESzBJMCIGCCsGAQUFBzABhhZodHRwOi8vcjExLm8ubGVuY3Iu&#xa;b3JnMCMGCCsGAQUFBzAChhdodHRwOi8vcjExLmkubGVuY3Iub3JnLzAtBgNVHREE&#xa;JjAkgiJqdXB5dGVyaHViLmxhYnpvbmUuZGNlLmhhcnZhcmQuZWR1MBMGA1UdIAQM&#xa;MAowCAYGZ4EMAQIBMIIBBQYKKwYBBAHWeQIEAgSB9gSB8wDxAHcASLDja9qmRzQP&#xa;5WoC+p0w6xxSActW3SyB2bu/qznYhHMAAAGRwolTFgAABAMASDBGAiEA0yShirSz&#xa;X0K3yZHsqgMDBqRYs2RymDZvsgZN9n7rLpYCIQCEigKEs605AcIiFnsTyxy9qb5f&#xa;Yqdcl5nWbfQVa9kStAB2AD8XS0/XIkdYlB1lHIS+DRLtkDd/H4Vq68G/KIXs+GRu&#xa;AAABkcKJUxwAAAQDAEcwRQIgJgW4tlglMGK9JuYruSKPyqF7EvTnkg8VBtdBPUvK&#xa;IWYCIQDPsIsYqNtJLCWB8EzSqV5OtIaK1VYROxc7PKUs2lJ3KTANBgkqhkiG9w0B&#xa;AQsFAAOCAQEAnNqyvMK5/EadMIIs0WIMZtTOj0kFxPI3eDc2uULxbWgq8cJtOrQ6&#xa;pqjv5EO1cQcRO46LcEK56BTMsnMtQxd19d6u+5FmNn3TA7wu0uhKqJaAjClmjAI0&#xa;BVPwBlLP16diYcERbDMO7RE2RquQ/4V3WAEjIm42fr9d0A+lLtPNpsQv+u0jSPLe&#xa;dM+of9CFfuFlfxtfFXCgQMmdu3SGbUOy9dyDh9BQWyAyZTU8oTcw3AjqH5/v3M1J&#xa;A9ehW3GXjGNTwA8L0ANZvgNUxEXl/DC0LKmEmsu3H8E0eqEPb4O1/Ypua93V4rXR&#xa;Q2lCxeqYlaUAZAHt1v5znooNfSx2mVOaNA==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="445"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="515"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="printer" method="table" conf="3"/></port>
+<port protocol="tcp" portid="593"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="http-rpc-epmap" method="table" conf="3"/></port>
+<port protocol="tcp" portid="631"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="ipp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2000"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="3389"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="ms-wbt-server" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5060"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="5900"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="vnc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9100"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="jetdirect" method="table" conf="3"/></port>
+</ports>
+<times srtt="15895" rttvar="114" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730790343"/>
+<taskend task="NSE" time="1730790343"/>
+<taskbegin task="NSE" time="1730790343"/>
+<taskend task="NSE" time="1730790343"/>
+<taskbegin task="NSE" time="1730790343"/>
+<taskend task="NSE" time="1730790343"/>
+<runstats><finished time="1730790343" timestr="Tue Nov  5 07:05:43 2024" elapsed="188.09" summary="Nmap done at Tue Nov  5 07:05:43 2024; 1 IP address (1 host up) scanned in 188.09 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
