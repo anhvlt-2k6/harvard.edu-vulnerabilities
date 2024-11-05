@@ -17,3 +17,114 @@
 <taskbegin task="Parallel DNS resolution of 1 host." time="1730795194"/>
 <taskend task="Parallel DNS resolution of 1 host." time="1730795195"/>
 <taskbegin task="Connect Scan" time="1730795195"/>
+<taskend task="Connect Scan" time="1730795199" extrainfo="1000 total ports"/>
+<taskbegin task="Service scan" time="1730795199"/>
+<taskend task="Service scan" time="1730795211" extrainfo="3 services on 1 host"/>
+<taskbegin task="NSE" time="1730795211"/>
+<taskend task="NSE" time="1730795213"/>
+<taskbegin task="NSE" time="1730795213"/>
+<taskend task="NSE" time="1730795214"/>
+<taskbegin task="NSE" time="1730795214"/>
+<taskend task="NSE" time="1730795214"/>
+<host starttime="1730795194" endtime="1730795214"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="128.103.64.74" addrtype="ipv4"/>
+<hostnames>
+<hostname name="stats.berkman.harvard.edu" type="user"/>
+<hostname name="lists.cyber.harvard.edu" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="996">
+<extrareasons reason="no-responses" count="996"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ftp" product="ProFTPD" version="1.3.5a" ostype="Unix" method="probed" conf="10"><cpe>cpe:/a:proftpd:proftpd:1.3.5a</cpe></service><script id="ftp-anon" output="Anonymous FTP login allowed (FTP code 230)&#xa;drwxr-xr-x   2 ftp      ftp       3772416 Oct 27 11:56 incoming&#xa;drwxr-xr-x   6 ftp      ftp          4096 Jul 22  2011 outgoing&#xa;lrwxrwxrwx   1 ftp      ftp             8 Oct 26  2007 pub -&gt; outgoing"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" extrainfo="Mythical Beasts" method="probed" conf="10"><cpe>cpe:/a:apache:http_server</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="Apache"><elem>Apache</elem>
+</script><script id="http-title" output="Did not follow redirect to https://stats.berkman.harvard.edu/"><elem key="redirect_url">https://stats.berkman.harvard.edu/</elem>
+</script></port>
+<port protocol="tcp" portid="113"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ident" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssl" product="Apache httpd" extrainfo="SSL-only mode" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:apache:http_server</cpe></service><script id="http-generator" output="Matomo - free/libre analytics platform"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+</table>
+</script><script id="http-robots.txt" output="1 disallowed entry &#xa;/"/><script id="http-server-header" output="Apache"><elem>Apache</elem>
+</script><script id="http-title" output="Sign in - Matomo"><elem key="title">Sign in - Matomo</elem>
+</script><script id="ssl-cert" output="Subject: commonName=adam.law.harvard.edu&#xa;Subject Alternative Name: DNS:adam.law.harvard.edu, DNS:berkman.harvard.edu, DNS:blogs.harvard.edu, DNS:blogs.law.harvard.edu, DNS:brk.mn, DNS:cyber.harvard.edu, DNS:cyber.law.harvard.edu, DNS:dev.herdict.org, DNS:herdict.org, DNS:nymity.berkman.harvard.edu, DNS:nymity.cyber.harvard.edu, DNS:opennet.net, DNS:stats.berkman.harvard.edu, DNS:tagteam.harvard.edu, DNS:www.berkman.harvard.edu, DNS:www.citmedialaw.org, DNS:www.dmlp.org, DNS:www.herdict.org, DNS:www.omln.org, DNS:www.opennet.net&#xa;Issuer: commonName=R10/organizationName=Let&apos;s Encrypt/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-09-19T12:56:57&#xa;Not valid after:  2024-12-18T12:56:56&#xa;MD5:   06f0 b7b4 333b 8ba9 e2b3 cbbc 3a70 6f5f&#xa;SHA-1: 9b1b 8ebe 38be 97b2 714e 8f4a 3a30 8285 2492 8d4b"><table key="subject">
+<elem key="commonName">adam.law.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">US</elem>
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+<elem key="commonName">R10</elem>
+</table>
+<table key="pubkey">
+<elem key="exponent">BIGNUM: 0x565382656ac8</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">BIGNUM: 0x565382059508</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+</table>
+<table>
+<elem key="value">91:4A:F0:B4:8F:8E:BF:B9:FE:0D:54:38:15:BF:C8:10:92:7D:D1:16</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="value">BB:BC:C3:47:A5:E4:BC:A9:C6:C3:A4:72:0C:10:8D:A2:35:E1:C8:E8</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">OCSP - URI:http://r10.o.lencr.org&#xa;CA Issuers - URI:http://r10.i.lencr.org/</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">DNS:adam.law.harvard.edu, DNS:berkman.harvard.edu, DNS:blogs.harvard.edu, DNS:blogs.law.harvard.edu, DNS:brk.mn, DNS:cyber.harvard.edu, DNS:cyber.law.harvard.edu, DNS:dev.herdict.org, DNS:herdict.org, DNS:nymity.berkman.harvard.edu, DNS:nymity.cyber.harvard.edu, DNS:opennet.net, DNS:stats.berkman.harvard.edu, DNS:tagteam.harvard.edu, DNS:www.berkman.harvard.edu, DNS:www.citmedialaw.org, DNS:www.dmlp.org, DNS:www.herdict.org, DNS:www.omln.org, DNS:www.opennet.net</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+<table>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 3F:17:4B:4F:D7:22:47:58:94:1D:65:1C:84:BE:0D:12:&#xa;                ED:90:37:7F:1F:85:6A:EB:C1:BF:28:85:EC:F8:64:6E&#xa;    Timestamp : Sep 19 13:55:28.239 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:5F:B2:B2:FF:2F:D2:E6:6B:85:DB:70:A1:&#xa;                25:25:F6:01:51:E9:9E:BA:8A:73:73:F2:68:3E:79:99:&#xa;                56:8F:34:3B:02:21:00:AF:76:91:48:AF:25:F8:B7:01:&#xa;                6E:EC:EA:15:91:83:28:2F:0E:80:0E:AB:EB:F4:85:C9:&#xa;                74:D4:A1:95:D6:1F:DD&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 48:B0:E3:6B:DA:A6:47:34:0F:E5:6A:02:FA:9D:30:EB:&#xa;                1C:52:01:CB:56:DD:2C:81:D9:BB:BF:AB:39:D8:84:73&#xa;    Timestamp : Sep 19 13:55:28.243 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:F2:CB:31:A6:D6:33:8E:50:5E:F1:79:&#xa;                D9:2C:4C:59:57:E0:99:DE:0A:64:86:80:F5:B8:AC:82:&#xa;                C8:A0:3C:2F:93:02:20:6E:C2:D0:AB:EE:F1:74:EE:51:&#xa;                83:84:AF:0E:12:9F:2D:4E:28:7A:FC:CA:E0:94:3B:D1:&#xa;                85:B8:51:52:5D:93:98</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-09-19T12:56:57</elem>
+<elem key="notAfter">2024-12-18T12:56:56</elem>
+</table>
+<elem key="md5">06f0b7b4333b8ba9e2b3cbbc3a706f5f</elem>
+<elem key="sha1">9b1b8ebe38be97b2714e8f4a3a30828524928d4b</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIGbDCCBVSgAwIBAgISBHrfGQe1muaVjDFOWG8v5Xz6MA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNSMTAwHhcNMjQwOTE5MTI1NjU3WhcNMjQxMjE4MTI1NjU2WjAfMR0wGwYDVQQD&#xa;ExRhZGFtLmxhdy5oYXJ2YXJkLmVkdTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCC&#xa;AQoCggEBANQ2Z0FpkwvfrkaKeCbNcEeDujsqVpAwJRuMgyVNcvRWh0i+2UOa3+L5&#xa;emDT8VG6X2Vafb2jaMYwvJMuAXXsHfrPb+hE2wiKwMWN7NE1CnmkikTsVbOdYJVl&#xa;Ir1NuJCJp93bn+BMT4sQK088uyyE0t/2lPbEW214vwLY8MS4pJWVUdXPtaapz5Fz&#xa;7FUo1/+LMJxuCcypv/JG/ylhAMr5rTm8vdXB2CDw7VlwVgoBRXz0PEeixc2d8XWk&#xa;C9ClC1iP0dwnzOCBUxQTkng6eUc/v1WeGlIZpvCxfFX24Xwj6woG0YoFPKrTpw/z&#xa;dp0WrYtAsAzz9wime1nEgYn3kvbhgmsCAwEAAaOCA4wwggOIMA4GA1UdDwEB/wQE&#xa;AwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIw&#xa;ADAdBgNVHQ4EFgQUkUrwtI+Ov7n+DVQ4Fb/IEJJ90RYwHwYDVR0jBBgwFoAUu7zD&#xa;R6XkvKnGw6RyDBCNojXhyOgwVwYIKwYBBQUHAQEESzBJMCIGCCsGAQUFBzABhhZo&#xa;dHRwOi8vcjEwLm8ubGVuY3Iub3JnMCMGCCsGAQUFBzAChhdodHRwOi8vcjEwLmku&#xa;bGVuY3Iub3JnLzCCAZEGA1UdEQSCAYgwggGEghRhZGFtLmxhdy5oYXJ2YXJkLmVk&#xa;dYITYmVya21hbi5oYXJ2YXJkLmVkdYIRYmxvZ3MuaGFydmFyZC5lZHWCFWJsb2dz&#xa;Lmxhdy5oYXJ2YXJkLmVkdYIGYnJrLm1ughFjeWJlci5oYXJ2YXJkLmVkdYIVY3li&#xa;ZXIubGF3LmhhcnZhcmQuZWR1gg9kZXYuaGVyZGljdC5vcmeCC2hlcmRpY3Qub3Jn&#xa;ghpueW1pdHkuYmVya21hbi5oYXJ2YXJkLmVkdYIYbnltaXR5LmN5YmVyLmhhcnZh&#xa;cmQuZWR1ggtvcGVubmV0Lm5ldIIZc3RhdHMuYmVya21hbi5oYXJ2YXJkLmVkdYIT&#xa;dGFndGVhbS5oYXJ2YXJkLmVkdYIXd3d3LmJlcmttYW4uaGFydmFyZC5lZHWCE3d3&#xa;dy5jaXRtZWRpYWxhdy5vcmeCDHd3dy5kbWxwLm9yZ4IPd3d3LmhlcmRpY3Qub3Jn&#xa;ggx3d3cub21sbi5vcmeCD3d3dy5vcGVubmV0Lm5ldDATBgNVHSAEDDAKMAgGBmeB&#xa;DAECATCCAQQGCisGAQQB1nkCBAIEgfUEgfIA8AB2AD8XS0/XIkdYlB1lHIS+DRLt&#xa;kDd/H4Vq68G/KIXs+GRuAAABkgqRAW8AAAQDAEcwRQIgX7Ky/y/S5muF23ChJSX2&#xa;AVHpnrqKc3PyaD55mVaPNDsCIQCvdpFIryX4twFu7OoVkYMoLw6ADqvr9IXJdNSh&#xa;ldYf3QB2AEiw42vapkc0D+VqAvqdMOscUgHLVt0sgdm7v6s52IRzAAABkgqRAXMA&#xa;AAQDAEcwRQIhAPLLMabWM45QXvF52SxMWVfgmd4KZIaA9bisgsigPC+TAiBuwtCr&#xa;7vF07lGDhK8OEp8tTih6/MrglDvRhbhRUl2TmDANBgkqhkiG9w0BAQsFAAOCAQEA&#xa;chyKJKxOvgjb+b3UTv/jWyWK1Nr47R3Sb7MG6uhm1kQDL6phv6J4fn2k6Zn77eI8&#xa;OJ2S9dm/d0hxDJ9+pUQqUdT/eaLv2MQtjU1ls7M6IbW2stQCQb2pEA+cDGaFbPJu&#xa;Z3uwv7YQnTgJrzYl5bOC9G+5LSDS+XS6WIA8N0RhBMU7msI71CprKDs7xnjm3VxC&#xa;B9Kcf8FPi2qTwefGSstEMWezdiqwBtLbeSV0sRnS9VD2gipyGpiAa+ZDwwfQr1aK&#xa;xYZQ4vAKFHmQkkE/9NP0/od5tuwCNr4mi1ntCs2ndlz+IuQVc99ZMrLjh0Z/BdpE&#xa;Jm7Rql7t/yX6sqz4Y4xGlw==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+</ports>
+<times srtt="18855" rttvar="6904" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730795214"/>
+<taskend task="NSE" time="1730795214"/>
+<taskbegin task="NSE" time="1730795214"/>
+<taskend task="NSE" time="1730795214"/>
+<taskbegin task="NSE" time="1730795214"/>
+<taskend task="NSE" time="1730795214"/>
+<runstats><finished time="1730795214" timestr="Tue Nov  5 08:26:54 2024" elapsed="19.51" summary="Nmap done at Tue Nov  5 08:26:54 2024; 1 IP address (1 host up) scanned in 19.51 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
