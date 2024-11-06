@@ -17,3 +17,110 @@
 <taskbegin task="Connect Scan" time="1730873913"/>
 <taskend task="Connect Scan" time="1730873917" extrainfo="1000 total ports"/>
 <taskbegin task="Service scan" time="1730873917"/>
+<taskend task="Service scan" time="1730873935" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1730873935"/>
+<taskend task="NSE" time="1730873936"/>
+<taskbegin task="NSE" time="1730873936"/>
+<taskend task="NSE" time="1730873936"/>
+<taskbegin task="NSE" time="1730873936"/>
+<taskend task="NSE" time="1730873936"/>
+<host starttime="1730873913" endtime="1730873936"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="54.224.200.55" addrtype="ipv4"/>
+<hostnames>
+<hostname name="grouper-facade.stage.iam.harvard.edu" type="user"/>
+<hostname name="ec2-54-224-200-55.compute-1.amazonaws.com" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="998">
+<extrareasons reason="no-responses" count="998"/>
+</extraports>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" servicefp="SF-Port443-TCP:V=7.80%T=SSL%I=7%D=11/6%Time=672B0A49%P=x86_64-pc-linux-gnu%r(GetRequest,139,&quot;HTTP/1\.1\x20401\x20\r\nDate:\x20Wed,\x2006\x20Nov\x202024\x2006:18:49\x20GMT\r\nContent-Length:\x200\r\nConnection:\x20close\r\nWWW-Authenticate:\x20Basic\x20realm=\&quot;Realm\&quot;\r\nX-Content-Type-Options:\x20nosniff\r\nX-XSS-Protection:\x201;\x20mode=block\r\nCache-Control:\x20no-cache,\x20no-store,\x20max-age=0,\x20must-revalidate\r\nPragma:\x20no-cache\r\nExpires:\x200\r\nX-Frame-Options:\x20DENY\r\n\r\n&quot;)%r(HTTPOptions,139,&quot;HTTP/1\.1\x20401\x20\r\nDate:\x20Wed,\x2006\x20Nov\x202024\x2006:18:50\x20GMT\r\nContent-Length:\x200\r\nConnection:\x20close\r\nWWW-Authenticate:\x20Basic\x20realm=\&quot;Realm\&quot;\r\nX-Content-Type-Options:\x20nosniff\r\nX-XSS-Protection:\x201;\x20mode=block\r\nCache-Control:\x20no-cache,\x20no-store,\x20max-age=0,\x20must-revalidate\r\nPragma:\x20no-cache\r\nExpires:\x200\r\nX-Frame-Options:\x20DENY\r\n\r\n&quot;)%r(FourOhFourRequest,83,&quot;HTTP/1\.1\x20401\x20\r\nDate:\x20Wed,\x2006\x20Nov\x202024\x2006:18:50\x20GMT\r\nContent-Length:\x200\r\nConnection:\x20close\r\nWWW-Authenticate:\x20Basic\x20realm=\&quot;Realm\&quot;\r\n\r\n&quot;);" tunnel="ssl" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  FourOhFourRequest: &#xa;    HTTP/1.1 401 &#xa;    Date: Wed, 06 Nov 2024 06:18:50 GMT&#xa;    Content-Length: 0&#xa;    Connection: close&#xa;    WWW-Authenticate: Basic realm=&quot;Realm&quot;&#xa;  GetRequest: &#xa;    HTTP/1.1 401 &#xa;    Date: Wed, 06 Nov 2024 06:18:49 GMT&#xa;    Content-Length: 0&#xa;    Connection: close&#xa;    WWW-Authenticate: Basic realm=&quot;Realm&quot;&#xa;    X-Content-Type-Options: nosniff&#xa;    X-XSS-Protection: 1; mode=block&#xa;    Cache-Control: no-cache, no-store, max-age=0, must-revalidate&#xa;    Pragma: no-cache&#xa;    Expires: 0&#xa;    X-Frame-Options: DENY&#xa;  HTTPOptions: &#xa;    HTTP/1.1 401 &#xa;    Date: Wed, 06 Nov 2024 06:18:50 GMT&#xa;    Content-Length: 0&#xa;    Connection: close&#xa;    WWW-Authenticate: Basic realm=&quot;Realm&quot;&#xa;    X-Content-Type-Options: nosniff&#xa;    X-XSS-Protection: 1; mode=block&#xa;    Cache-Control: no-cache, no-store, max-age=0, must-revalidate&#xa;    Pragma: no-cache&#xa;    Expires: 0&#xa;    X-Frame-Options: DENY"><elem key="FourOhFourRequest">&#xa;    HTTP/1.1 401 &#xa;    Date: Wed, 06 Nov 2024 06:18:50 GMT&#xa;    Content-Length: 0&#xa;    Connection: close&#xa;    WWW-Authenticate: Basic realm=&quot;Realm&quot;</elem>
+<elem key="GetRequest">&#xa;    HTTP/1.1 401 &#xa;    Date: Wed, 06 Nov 2024 06:18:49 GMT&#xa;    Content-Length: 0&#xa;    Connection: close&#xa;    WWW-Authenticate: Basic realm=&quot;Realm&quot;&#xa;    X-Content-Type-Options: nosniff&#xa;    X-XSS-Protection: 1; mode=block&#xa;    Cache-Control: no-cache, no-store, max-age=0, must-revalidate&#xa;    Pragma: no-cache&#xa;    Expires: 0&#xa;    X-Frame-Options: DENY</elem>
+<elem key="HTTPOptions">&#xa;    HTTP/1.1 401 &#xa;    Date: Wed, 06 Nov 2024 06:18:50 GMT&#xa;    Content-Length: 0&#xa;    Connection: close&#xa;    WWW-Authenticate: Basic realm=&quot;Realm&quot;&#xa;    X-Content-Type-Options: nosniff&#xa;    X-XSS-Protection: 1; mode=block&#xa;    Cache-Control: no-cache, no-store, max-age=0, must-revalidate&#xa;    Pragma: no-cache&#xa;    Expires: 0&#xa;    X-Frame-Options: DENY</elem>
+</script><script id="http-title" output="400 The plain HTTP request was sent to HTTPS port"><elem key="title">400 The plain HTTP request was sent to HTTPS port</elem>
+</script><script id="ssl-cert" output="Subject: commonName=grouper-facade.stage.iam.harvard.edu/organizationName=President and Fellows of Harvard College/stateOrProvinceName=Massachusetts/countryName=US&#xa;Subject Alternative Name: DNS:grouper-facade.stage.iam.harvard.edu&#xa;Issuer: commonName=InCommon RSA Server CA 2/organizationName=Internet2/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha384WithRSAEncryption&#xa;Not valid before: 2024-05-09T00:00:00&#xa;Not valid after:  2025-06-09T23:59:59&#xa;MD5:   11dc 4139 1366 5ff3 d690 ae22 d055 1920&#xa;SHA-1: e558 8925 308c 2304 5042 2e12 276e 64fa 9621 2f59"><table key="subject">
+<elem key="stateOrProvinceName">Massachusetts</elem>
+<elem key="organizationName">President and Fellows of Harvard College</elem>
+<elem key="commonName">grouper-facade.stage.iam.harvard.edu</elem>
+<elem key="countryName">US</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">InCommon RSA Server CA 2</elem>
+<elem key="organizationName">Internet2</elem>
+<elem key="countryName">US</elem>
+</table>
+<table key="pubkey">
+<elem key="exponent">BIGNUM: 0x55f48446a8d8</elem>
+<elem key="modulus">BIGNUM: 0x55f48446a9f8</elem>
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">EF:4C:00:92:A6:FB:76:2E:5E:95:E2:C9:5F:87:1B:19:D5:4D:E2:D9</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">0E:92:4F:99:A1:A8:97:18:CD:92:EC:67:4B:85:94:0A:AD:26:CC:72</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+</table>
+<table>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">Policy: 1.3.6.1.4.1.6449.1.2.2.103&#xa;  CPS: https://sectigo.com/CPS&#xa;Policy: 2.23.140.1.2.2</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Full Name:&#xa;  URI:http://crl.sectigo.com/InCommonRSAServerCA2.crl</elem>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+</table>
+<table>
+<elem key="value">CA Issuers - URI:http://crt.sectigo.com/InCommonRSAServerCA2.crt&#xa;OCSP - URI:http://ocsp.sectigo.com</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : CF:11:56:EE:D5:2E:7C:AF:F3:87:5B:D9:69:2E:9B:E9:&#xa;                1A:71:67:4A:B0:17:EC:AC:01:D2:5B:77:CE:CC:3B:08&#xa;    Timestamp : May  9 06:07:47.012 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:A4:B3:69:D0:3A:0C:80:4C:D1:80:11:&#xa;                CA:40:85:7B:87:34:0F:5E:DE:42:20:45:71:6D:6D:56:&#xa;                75:89:96:90:73:02:21:00:B1:DB:71:54:07:7F:80:8F:&#xa;                9E:69:72:96:0F:84:C9:21:C2:34:8E:2C:88:0D:0E:C2:&#xa;                F4:64:1A:EB:9A:90:25:8A&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : A2:E3:0A:E4:45:EF:BD:AD:9B:7E:38:ED:47:67:77:53:&#xa;                D7:82:5B:84:94:D7:2B:5E:1B:2C:C4:B9:50:A4:47:E7&#xa;    Timestamp : May  9 06:07:47.008 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:86:49:2B:18:98:DF:6C:45:0E:25:CC:&#xa;                8C:59:D8:56:1D:E4:73:ED:40:B6:FF:50:66:E4:85:CB:&#xa;                C1:C2:AA:77:06:02:20:58:32:50:77:71:C5:1E:22:E1:&#xa;                62:60:BF:77:F9:5D:E8:99:EB:CA:8E:22:1A:E5:02:C0:&#xa;                B0:3F:D4:B7:D1:58:93&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 4E:75:A3:27:5C:9A:10:C3:38:5B:6C:D4:DF:3F:52:EB:&#xa;                1D:F0:E0:8E:1B:8D:69:C0:B1:FA:64:B1:62:9A:39:DF&#xa;    Timestamp : May  9 06:07:46.982 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:6D:36:E7:7B:7B:74:CC:E9:68:F2:AB:39:&#xa;                B7:43:4B:2D:60:DE:9F:48:E8:12:33:49:6B:5B:68:DF:&#xa;                BA:66:B8:73:02:21:00:E7:39:28:F4:28:9F:0A:F5:0E:&#xa;                C7:A6:CE:9F:E7:48:76:E9:32:90:C6:0A:A7:CE:2E:C7:&#xa;                AE:F1:3C:50:97:F7:8C</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+<table>
+<elem key="value">DNS:grouper-facade.stage.iam.harvard.edu</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+</table>
+<elem key="sig_algo">sha384WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-05-09T00:00:00</elem>
+<elem key="notAfter">2025-06-09T23:59:59</elem>
+</table>
+<elem key="md5">11dc413913665ff3d690ae22d0551920</elem>
+<elem key="sha1">e5588925308c230450422e12276e64fa96212f59</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIHDDCCBXSgAwIBAgIQRSwzMXjxqx2vp8NPGPi6dzANBgkqhkiG9w0BAQwFADBE&#xa;MQswCQYDVQQGEwJVUzESMBAGA1UEChMJSW50ZXJuZXQyMSEwHwYDVQQDExhJbkNv&#xa;bW1vbiBSU0EgU2VydmVyIENBIDIwHhcNMjQwNTA5MDAwMDAwWhcNMjUwNjA5MjM1&#xa;OTU5WjCBhzELMAkGA1UEBhMCVVMxFjAUBgNVBAgTDU1hc3NhY2h1c2V0dHMxMTAv&#xa;BgNVBAoTKFByZXNpZGVudCBhbmQgRmVsbG93cyBvZiBIYXJ2YXJkIENvbGxlZ2Ux&#xa;LTArBgNVBAMTJGdyb3VwZXItZmFjYWRlLnN0YWdlLmlhbS5oYXJ2YXJkLmVkdTCC&#xa;ASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAOmWmLVKV4y8HuazIxGLIZDL&#xa;93a3g1hCiPtnjmLCtrw5atNHqr0OVvFpz4vBJvGKoxhQNqB8hCAPPQa1YVnxGbWF&#xa;ZVP6flaTyFMrX/p4CFkYCngiSR09ncFSXFPuOE56L8rO+db3V0+7Le6lyVVlbt1q&#xa;Lm+tP1J4h3Ljm20QFpdKQL19FUVuH477o8wvzntA7AjtzxshyAyK2w2kM8DUyjt2&#xa;S9f0Vlg5GkwQ4nO5czt5oU5EkgKrvGN4YqPhPUxQFsfr6wnAiQ8psDK7HlOduROq&#xa;LaswG9bZac5cculVuDZTqiIcY2pe/cGdNbktyGTk6TfMOffHWHaAVM7o8PmmMgcC&#xa;AwEAAaOCAzQwggMwMB8GA1UdIwQYMBaAFO9MAJKm+3YuXpXiyV+HGxnVTeLZMB0G&#xa;A1UdDgQWBBQOkk+ZoaiXGM2S7GdLhZQKrSbMcjAOBgNVHQ8BAf8EBAMCBaAwDAYD&#xa;VR0TAQH/BAIwADAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwSQYDVR0g&#xa;BEIwQDA0BgsrBgEEAbIxAQICZzAlMCMGCCsGAQUFBwIBFhdodHRwczovL3NlY3Rp&#xa;Z28uY29tL0NQUzAIBgZngQwBAgIwQAYDVR0fBDkwNzA1oDOgMYYvaHR0cDovL2Ny&#xa;bC5zZWN0aWdvLmNvbS9JbkNvbW1vblJTQVNlcnZlckNBMi5jcmwwcAYIKwYBBQUH&#xa;AQEEZDBiMDsGCCsGAQUFBzAChi9odHRwOi8vY3J0LnNlY3RpZ28uY29tL0luQ29t&#xa;bW9uUlNBU2VydmVyQ0EyLmNydDAjBggrBgEFBQcwAYYXaHR0cDovL29jc3Auc2Vj&#xa;dGlnby5jb20wggF/BgorBgEEAdZ5AgQCBIIBbwSCAWsBaQB3AM8RVu7VLnyv84db&#xa;2Wkum+kacWdKsBfsrAHSW3fOzDsIAAABj1v3B0QAAAQDAEgwRgIhAKSzadA6DIBM&#xa;0YARykCFe4c0D17eQiBFcW1tVnWJlpBzAiEAsdtxVAd/gI+eaXKWD4TJIcI0jiyI&#xa;DQ7C9GQa65qQJYoAdgCi4wrkRe+9rZt+OO1HZ3dT14JbhJTXK14bLMS5UKRH5wAA&#xa;AY9b9wdAAAAEAwBHMEUCIQCGSSsYmN9sRQ4lzIxZ2FYd5HPtQLb/UGbkhcvBwqp3&#xa;BgIgWDJQd3HFHiLhYmC/d/ld6Jnryo4iGuUCwLA/1LfRWJMAdgBOdaMnXJoQwzhb&#xa;bNTfP1LrHfDgjhuNacCx+mSxYpo53wAAAY9b9wcmAAAEAwBHMEUCIG0253t7dMzp&#xa;aPKrObdDSy1g3p9I6BIzSWtbaN+6ZrhzAiEA5zko9CifCvUOx6bOn+dIdukykMYK&#xa;p84ux67xPFCX94wwLwYDVR0RBCgwJoIkZ3JvdXBlci1mYWNhZGUuc3RhZ2UuaWFt&#xa;LmhhcnZhcmQuZWR1MA0GCSqGSIb3DQEBDAUAA4IBgQACAjDoTy5s164aew5iuZ9U&#xa;Z9PW8o5gnRoqQa77IL7XE0HmaJjhaqJxypBvfIq6ZtmtBSqDQ6vkwRktzIlGoFvG&#xa;bUsDlqMNF4wohK+IIIb1jStEXDsYuK8323Hq8+8yUFynbOIaeM8rgcGvUV//MiJk&#xa;3SPfk+dHU85ExEhLX/hYh/0ZHYj99qIDivatsHPhMxAaGVdwd6mh1WF3Nzyt/vtE&#xa;Btg9Trcik3lsYMG2KNI7JMkMhCIDVY1YqB3+osraZe7D75BwONt+S8ejE7Srlmao&#xa;OrHO1TN+QnOEDVDLDTbqt/qTOn72POn4ktb4zHNyYKeSMs7rcAR4EqNeUwyln52d&#xa;TTv637Gdp337JMImazaHHXTs2aPO5H9s4o85MGJsHlghl11SdbZqssMq5iqlM4uK&#xa;cY6PmsWOlOQCgF6DqWaffSEqLaKB+rOsG+s8ToUjSxT3EKUGxkZWeKS7VIKvWvl/&#xa;rlM3oRba2AfxZnfwocQsyOBeH/ixa8/1Zy6NBZFGA/4=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="tls-alpn" output="&#xa;  h2&#xa;  http/1.1"><elem>h2</elem>
+<elem>http/1.1</elem>
+</script><script id="tls-nextprotoneg" output="&#xa;  h2&#xa;  http/1.1"><elem>h2</elem>
+<elem>http/1.1</elem>
+</script></port>
+<port protocol="tcp" portid="8443"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="https-alt" method="table" conf="3"/></port>
+</ports>
+<times srtt="6277" rttvar="2715" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730873936"/>
+<taskend task="NSE" time="1730873936"/>
+<taskbegin task="NSE" time="1730873936"/>
+<taskend task="NSE" time="1730873936"/>
+<taskbegin task="NSE" time="1730873936"/>
+<taskend task="NSE" time="1730873936"/>
+<runstats><finished time="1730873936" timestr="Wed Nov  6 06:18:56 2024" elapsed="23.11" summary="Nmap done at Wed Nov  6 06:18:56 2024; 1 IP address (1 host up) scanned in 23.11 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
