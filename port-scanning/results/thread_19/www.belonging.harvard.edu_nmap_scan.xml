@@ -17,3 +17,112 @@
 <taskbegin task="Connect Scan" time="1730897271"/>
 <taskend task="Connect Scan" time="1730897275" extrainfo="1000 total ports"/>
 <taskbegin task="Service scan" time="1730897275"/>
+<taskend task="Service scan" time="1730897287" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1730897287"/>
+<taskend task="NSE" time="1730897288"/>
+<taskbegin task="NSE" time="1730897288"/>
+<taskend task="NSE" time="1730897288"/>
+<taskbegin task="NSE" time="1730897288"/>
+<taskend task="NSE" time="1730897288"/>
+<host starttime="1730897271" endtime="1730897288"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="23.220.246.137" addrtype="ipv4"/>
+<hostnames>
+<hostname name="www.belonging.harvard.edu" type="user"/>
+<hostname name="a23-220-246-137.deploy.static.akamaitechnologies.com" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="998">
+<extrareasons reason="no-responses" count="998"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="AkamaiGHost" extrainfo="Akamai&apos;s HTTP Acceleration/Mirror service" method="probed" conf="10"/><script id="http-title" output="Invalid URL"><elem key="title">Invalid URL</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="AkamaiGHost" extrainfo="Akamai&apos;s HTTP Acceleration/Mirror service" tunnel="ssl" method="probed" conf="10"/><script id="http-title" output="Invalid URL"><elem key="title">Invalid URL</elem>
+</script><script id="ssl-cert" output="Subject: commonName=a248.e.akamai.net/organizationName=Akamai Technologies, Inc./stateOrProvinceName=Massachusetts/countryName=US&#xa;Subject Alternative Name: DNS:a248.e.akamai.net, DNS:*.akamaized.net, DNS:*.akamaized-staging.net, DNS:*.akamaihd.net, DNS:*.akamaihd-staging.net&#xa;Issuer: commonName=DigiCert TLS RSA SHA256 2020 CA1/organizationName=DigiCert Inc/countryName=US&#xa;Public Key type: ec&#xa;Public Key bits: 256&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-04-18T00:00:00&#xa;Not valid after:  2025-04-19T23:59:59&#xa;MD5:   884c e8f3 a4bf 4ecf e70b 9447 12dc bec2&#xa;SHA-1: 2839 af63 7d02 e8f7 1723 a0ee e0c9 2f9c 6417 680a"><table key="subject">
+<elem key="localityName">Cambridge</elem>
+<elem key="commonName">a248.e.akamai.net</elem>
+<elem key="countryName">US</elem>
+<elem key="stateOrProvinceName">Massachusetts</elem>
+<elem key="organizationName">Akamai Technologies, Inc.</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">US</elem>
+<elem key="organizationName">DigiCert Inc</elem>
+<elem key="commonName">DigiCert TLS RSA SHA256 2020 CA1</elem>
+</table>
+<table key="pubkey">
+<elem key="type">ec</elem>
+<elem key="bits">256</elem>
+<table key="ecdhparams">
+<table key="curve_params">
+<elem key="curve">prime256v1</elem>
+<elem key="ec_curve_type">namedcurve</elem>
+</table>
+</table>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">B7:6B:A2:EA:A8:AA:84:8C:79:EA:B4:DA:0F:98:B2:C5:95:76:B9:F4</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">73:B7:5C:73:3D:00:33:52:6B:43:45:56:EC:74:33:41:A1:09:22:A2</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:a248.e.akamai.net, DNS:*.akamaized.net, DNS:*.akamaized-staging.net, DNS:*.akamaihd.net, DNS:*.akamaihd-staging.net</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.2&#xa;  CPS: http://www.digicert.com/CPS</elem>
+</table>
+<table>
+<elem key="value">Digital Signature, Key Agreement</elem>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://crl3.digicert.com/DigiCertTLSRSASHA2562020CA1-4.crl&#xa;Full Name:&#xa;  URI:http://crl4.digicert.com/DigiCertTLSRSASHA2562020CA1-4.crl</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://ocsp.digicert.com&#xa;CA Issuers - URI:http://cacerts.digicert.com/DigiCertTLSRSASHA2562020CA1-1.crt</elem>
+</table>
+<table>
+<elem key="value">CA:FALSE</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 4E:75:A3:27:5C:9A:10:C3:38:5B:6C:D4:DF:3F:52:EB:&#xa;                1D:F0:E0:8E:1B:8D:69:C0:B1:FA:64:B1:62:9A:39:DF&#xa;    Timestamp : Apr 18 15:36:11.398 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:B6:3C:C6:60:88:80:CD:8B:2A:52:75:&#xa;                F8:5A:9E:BA:D2:B3:A3:E1:44:30:21:36:2A:42:81:CD:&#xa;                DC:E3:2F:F1:18:02:20:2F:32:13:51:67:65:58:26:43:&#xa;                4F:14:E1:E8:3B:7B:4D:64:F3:3C:63:16:D5:A9:6D:7A:&#xa;                23:99:58:3B:28:C1:B4&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 7D:59:1E:12:E1:78:2A:7B:1C:61:67:7C:5E:FD:F8:D0:&#xa;                87:5C:14:A0:4E:95:9E:B9:03:2F:D9:0E:8C:2E:79:B8&#xa;    Timestamp : Apr 18 15:36:11.399 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:EC:CE:E9:4C:98:C1:F0:0D:0F:8D:49:&#xa;                3A:58:35:7B:D9:E4:B9:1A:23:09:35:BF:E7:01:DF:63:&#xa;                1C:C8:BC:02:2F:02:20:27:43:AD:2A:7B:26:F7:B2:DC:&#xa;                03:59:25:DA:69:2D:F9:11:6F:DE:54:AD:C5:11:1A:B1:&#xa;                D9:C1:A3:DD:E5:81:86&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : E6:D2:31:63:40:77:8C:C1:10:41:06:D7:71:B9:CE:C1:&#xa;                D2:40:F6:96:84:86:FB:BA:87:32:1D:FD:1E:37:8E:50&#xa;    Timestamp : Apr 18 15:36:11.420 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:3F:EE:10:47:C8:A0:F0:DA:57:60:64:89:&#xa;                B8:97:BD:CA:BF:8C:C1:8A:6E:53:A6:E1:98:C0:21:E4:&#xa;                48:3C:92:09:02:20:14:D8:CB:85:FB:B5:9A:ED:7E:0B:&#xa;                78:4D:DB:1C:49:5D:FE:17:8D:34:C3:91:D8:91:10:BB:&#xa;                85:10:8C:B8:87:B7</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-04-18T00:00:00</elem>
+<elem key="notAfter">2025-04-19T23:59:59</elem>
+</table>
+<elem key="md5">884ce8f3a4bf4ecfe70b944712dcbec2</elem>
+<elem key="sha1">2839af637d02e8f71723a0eee0c92f9c6417680a</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIGTjCCBTagAwIBAgIQCw76aZhIcJKl1k7A56Vu8jANBgkqhkiG9w0BAQsFADBP&#xa;MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMSkwJwYDVQQDEyBE&#xa;aWdpQ2VydCBUTFMgUlNBIFNIQTI1NiAyMDIwIENBMTAeFw0yNDA0MTgwMDAwMDBa&#xa;Fw0yNTA0MTkyMzU5NTlaMHkxCzAJBgNVBAYTAlVTMRYwFAYDVQQIEw1NYXNzYWNo&#xa;dXNldHRzMRIwEAYDVQQHEwlDYW1icmlkZ2UxIjAgBgNVBAoTGUFrYW1haSBUZWNo&#xa;bm9sb2dpZXMsIEluYy4xGjAYBgNVBAMTEWEyNDguZS5ha2FtYWkubmV0MFkwEwYH&#xa;KoZIzj0CAQYIKoZIzj0DAQcDQgAEBeCxRTX6UI6WiuWoUvmjxCOWjLZW0DCE0zEM&#xa;qTqUE2nfwVjsoNDHliD8d0tVBfeCivK6uGtDseYoJGiDsuTnlKOCA8UwggPBMB8G&#xa;A1UdIwQYMBaAFLdrouqoqoSMeeq02g+YssWVdrn0MB0GA1UdDgQWBBRzt1xzPQAz&#xa;UmtDRVbsdDNBoQkiojBuBgNVHREEZzBlghFhMjQ4LmUuYWthbWFpLm5ldIIPKi5h&#xa;a2FtYWl6ZWQubmV0ghcqLmFrYW1haXplZC1zdGFnaW5nLm5ldIIOKi5ha2FtYWlo&#xa;ZC5uZXSCFiouYWthbWFpaGQtc3RhZ2luZy5uZXQwPgYDVR0gBDcwNTAzBgZngQwB&#xa;AgIwKTAnBggrBgEFBQcCARYbaHR0cDovL3d3dy5kaWdpY2VydC5jb20vQ1BTMA4G&#xa;A1UdDwEB/wQEAwIDiDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwgY8G&#xa;A1UdHwSBhzCBhDBAoD6gPIY6aHR0cDovL2NybDMuZGlnaWNlcnQuY29tL0RpZ2lD&#xa;ZXJ0VExTUlNBU0hBMjU2MjAyMENBMS00LmNybDBAoD6gPIY6aHR0cDovL2NybDQu&#xa;ZGlnaWNlcnQuY29tL0RpZ2lDZXJ0VExTUlNBU0hBMjU2MjAyMENBMS00LmNybDB/&#xa;BggrBgEFBQcBAQRzMHEwJAYIKwYBBQUHMAGGGGh0dHA6Ly9vY3NwLmRpZ2ljZXJ0&#xa;LmNvbTBJBggrBgEFBQcwAoY9aHR0cDovL2NhY2VydHMuZGlnaWNlcnQuY29tL0Rp&#xa;Z2lDZXJ0VExTUlNBU0hBMjU2MjAyMENBMS0xLmNydDAMBgNVHRMBAf8EAjAAMIIB&#xa;fQYKKwYBBAHWeQIEAgSCAW0EggFpAWcAdgBOdaMnXJoQwzhbbNTfP1LrHfDgjhuN&#xa;acCx+mSxYpo53wAAAY7x2d+GAAAEAwBHMEUCIQC2PMZgiIDNiypSdfhanrrSs6Ph&#xa;RDAhNipCgc3c4y/xGAIgLzITUWdlWCZDTxTh6Dt7TWTzPGMW1alteiOZWDsowbQA&#xa;dgB9WR4S4XgqexxhZ3xe/fjQh1wUoE6VnrkDL9kOjC55uAAAAY7x2d+HAAAEAwBH&#xa;MEUCIQDszulMmMHwDQ+NSTpYNXvZ5LkaIwk1v+cB32McyLwCLwIgJ0OtKnsm97Lc&#xa;A1kl2mkt+RFv3lStxREasdnBo93lgYYAdQDm0jFjQHeMwRBBBtdxuc7B0kD2loSG&#xa;+7qHMh39HjeOUAAAAY7x2d+cAAAEAwBGMEQCID/uEEfIoPDaV2BkibiXvcq/jMGK&#xa;blOm4ZjAIeRIPJIJAiAU2MuF+7Wa7X4LeE3bHEld/heNNMOR2JEQu4UQjLiHtzAN&#xa;BgkqhkiG9w0BAQsFAAOCAQEAYpMbdKSHThMBCzXj3TGakxOuduS8WlE8Rkg2X97M&#xa;N7+r/n7kItClSof8hYPNR9h8UdCSHNuobFFMHnJ5R4Z0nDpVJrDKIXy9m/zZb3QH&#xa;U7qVBwd/J6cyRWGiQVrqO3JcE1d2j9hhwOJf5vTQ7ccHA2NsRdZfJEV0S8P+Es8L&#xa;Iv3t+H+YHTqDMbKNSG8Llx4DOAYGnC1nAxnSX+ttHS07FSRRkqCluclkln6g5n6A&#xa;3vMxd7yjomKZrrnqLOJmuM8CwUJNxyfbQCyRBs807TLIN/0V0HyWA4jERnlWSylM&#xa;R8FeSZf/pH+B8iN9UBgVebgS4NRGOs56Ivp3y1Q3CwndZw==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="tls-alpn" output="&#xa;  http/1.1"><elem>http/1.1</elem>
+</script><script id="tls-nextprotoneg" output="&#xa;  http/1.1&#xa;  http/1.0"><elem>http/1.1</elem>
+<elem>http/1.0</elem>
+</script></port>
+</ports>
+<times srtt="2394" rttvar="2336" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730897288"/>
+<taskend task="NSE" time="1730897288"/>
+<taskbegin task="NSE" time="1730897288"/>
+<taskend task="NSE" time="1730897288"/>
+<taskbegin task="NSE" time="1730897288"/>
+<taskend task="NSE" time="1730897288"/>
+<runstats><finished time="1730897288" timestr="Wed Nov  6 12:48:08 2024" elapsed="17.85" summary="Nmap done at Wed Nov  6 12:48:08 2024; 1 IP address (1 host up) scanned in 17.85 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
