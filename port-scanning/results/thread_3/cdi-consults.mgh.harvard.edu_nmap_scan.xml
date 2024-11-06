@@ -17,3 +17,122 @@
 <taskbegin task="Connect Scan" time="1730875617"/>
 <taskend task="Connect Scan" time="1730875623" extrainfo="1000 total ports"/>
 <taskbegin task="Service scan" time="1730875623"/>
+<taskend task="Service scan" time="1730875752" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1730875752"/>
+<taskend task="NSE" time="1730875766"/>
+<taskbegin task="NSE" time="1730875766"/>
+<taskend task="NSE" time="1730875768"/>
+<taskbegin task="NSE" time="1730875768"/>
+<taskend task="NSE" time="1730875768"/>
+<host starttime="1730875617" endtime="1730875768"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="170.223.156.228" addrtype="ipv4"/>
+<hostnames>
+<hostname name="cdi-consults.mgh.harvard.edu" type="user"/>
+<hostname name="slavin-academy.mgh.harvard.edu.mgh.harvard.edu" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="998">
+<extrareasons reason="no-responses" count="998"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" servicefp="SF-Port80-TCP:V=7.80%I=7%D=11/6%Time=672B10ED%P=x86_64-pc-linux-gnu%r(GetRequest,7D,&quot;HTTP/1\.0\x20302\x20Found\x20:\x20Moved\x20Temporarily\r\nLocation:\x20https:///\r\nConnection:\x20close\r\nCache-Control:\x20no-cache\r\nPragma:\x20no-cache\r\n\r\n&quot;)%r(HTTPOptions,7D,&quot;HTTP/1\.0\x20302\x20Found\x20:\x20Moved\x20Temporarily\r\nLocation:\x20https:///\r\nConnection:\x20close\r\nCache-Control:\x20no-cache\r\nPragma:\x20no-cache\r\n\r\n&quot;)%r(RTSPRequest,7D,&quot;HTTP/1\.0\x20302\x20Found\x20:\x20Moved\x20Temporarily\r\nLocation:\x20https:///\r\nConnection:\x20close\r\nCache-Control:\x20no-cache\r\nPragma:\x20no-cache\r\n\r\n&quot;)%r(FourOhFourRequest,A0,&quot;HTTP/1\.0\x20302\x20Found\x20:\x20Moved\x20Temporarily\r\nLocation:\x20https:///nice%20ports%2C/Tri%6Eity\.txt%2ebak\r\nConnection:\x20close\r\nCache-Control:\x20no-cache\r\nPragma:\x20no-cache\r\n\r\n&quot;)%r(SIPOptions,82,&quot;HTTP/1\.0\x20302\x20Found\x20:\x20Moved\x20Temporarily\r\nLocation:\x20https://sip:nm\r\nConnection:\x20close\r\nCache-Control:\x20no-cache\r\nPragma:\x20no-cache\r\n\r\n&quot;);" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  FourOhFourRequest: &#xa;    HTTP/1.0 302 Found : Moved Temporarily&#xa;    Location: https:///nice%20ports%2C/Tri%6Eity.txt%2ebak&#xa;    Connection: close&#xa;    Cache-Control: no-cache&#xa;    Pragma: no-cache&#xa;  GetRequest, HTTPOptions, RTSPRequest: &#xa;    HTTP/1.0 302 Found : Moved Temporarily&#xa;    Location: https:///&#xa;    Connection: close&#xa;    Cache-Control: no-cache&#xa;    Pragma: no-cache&#xa;  SIPOptions: &#xa;    HTTP/1.0 302 Found : Moved Temporarily&#xa;    Location: https://sip:nm&#xa;    Connection: close&#xa;    Cache-Control: no-cache&#xa;    Pragma: no-cache"><elem key="FourOhFourRequest">&#xa;    HTTP/1.0 302 Found : Moved Temporarily&#xa;    Location: https:///nice%20ports%2C/Tri%6Eity.txt%2ebak&#xa;    Connection: close&#xa;    Cache-Control: no-cache&#xa;    Pragma: no-cache</elem>
+<elem key="GetRequest, HTTPOptions, RTSPRequest">&#xa;    HTTP/1.0 302 Found : Moved Temporarily&#xa;    Location: https:///&#xa;    Connection: close&#xa;    Cache-Control: no-cache&#xa;    Pragma: no-cache</elem>
+<elem key="SIPOptions">&#xa;    HTTP/1.0 302 Found : Moved Temporarily&#xa;    Location: https://sip:nm&#xa;    Connection: close&#xa;    Cache-Control: no-cache&#xa;    Pragma: no-cache</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Did not follow redirect to https://cdi-consults.mgh.harvard.edu/"><elem key="redirect_url">https://cdi-consults.mgh.harvard.edu/</elem>
+</script><script id="https-redirect" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" version="1.18.0" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.18.0</cpe></service><script id="http-favicon" output="Unknown favicon MD5: F456B84482F8DC9E3E096E2510C92B15"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+</table>
+</script><script id="http-server-header" output="nginx/1.18.0"><elem>nginx/1.18.0</elem>
+</script><script id="http-title" output="Loading ..."><elem key="title">Loading ...</elem>
+</script><script id="http-trane-info" output="Problem with XML parsing of /evox/about"/><script id="ssl-cert" output="Subject: commonName=cdi-consults.mgh.harvard.edu/organizationName=President and Fellows of Harvard College/stateOrProvinceName=Massachusetts/countryName=US&#xa;Subject Alternative Name: DNS:cdi-consults.mgh.harvard.edu, DNS:api-cdi-consults.mgh.harvard.edu&#xa;Issuer: commonName=InCommon ECC Server CA 2/organizationName=Internet2/countryName=US&#xa;Public Key type: ec&#xa;Public Key bits: 256&#xa;Signature Algorithm: ecdsa-with-SHA256&#xa;Not valid before: 2024-09-19T00:00:00&#xa;Not valid after:  2025-09-19T23:59:59&#xa;MD5:   c1cd 9f31 ca3c d3b7 88bf cb37 c4ef 0b7f&#xa;SHA-1: cf59 020b 0a4e ad8f 8cbe 4aab a4fc be86 ee5f f038"><table key="subject">
+<elem key="organizationName">President and Fellows of Harvard College</elem>
+<elem key="countryName">US</elem>
+<elem key="stateOrProvinceName">Massachusetts</elem>
+<elem key="commonName">cdi-consults.mgh.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="organizationName">Internet2</elem>
+<elem key="countryName">US</elem>
+<elem key="commonName">InCommon ECC Server CA 2</elem>
+</table>
+<table key="pubkey">
+<elem key="type">ec</elem>
+<elem key="bits">256</elem>
+<table key="ecdhparams">
+<table key="curve_params">
+<elem key="curve">prime256v1</elem>
+<elem key="ec_curve_type">namedcurve</elem>
+</table>
+</table>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">32:5F:0A:D9:18:59:ED:41:71:21:D5:EE:09:E2:D9:AF:B2:D7:0F:B1</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">A6:52:88:34:D6:88:F3:6F:93:55:BC:6C:D7:B4:DE:10:29:97:2A:35</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="value">Digital Signature</elem>
+<elem key="name">X509v3 Key Usage</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">Policy: 1.3.6.1.4.1.6449.1.2.2.103&#xa;  CPS: https://sectigo.com/CPS&#xa;Policy: 2.23.140.1.2.2</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Full Name:&#xa;  URI:http://crl.sectigo.com/InCommonECCServerCA2.crl</elem>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+</table>
+<table>
+<elem key="value">CA Issuers - URI:http://crt.sectigo.com/InCommonECCServerCA2.crt&#xa;OCSP - URI:http://ocsp.sectigo.com</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : DD:DC:CA:34:95:D7:E1:16:05:E7:95:32:FA:C7:9F:F8:&#xa;                3D:1C:50:DF:DB:00:3A:14:12:76:0A:2C:AC:BB:C8:2A&#xa;    Timestamp : Sep 19 02:28:26.993 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:13:97:A9:BC:78:09:38:A9:DC:C8:AF:7D:&#xa;                96:43:DE:7C:16:D7:A6:61:54:A6:7D:49:10:EE:38:61:&#xa;                D9:59:13:55:02:21:00:A6:8B:7F:75:3F:B0:59:37:5E:&#xa;                B5:EE:9C:CA:35:C9:46:99:D7:85:95:0E:35:59:8C:68:&#xa;                6D:C4:6D:9A:C1:45:D2&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : CC:FB:0F:6A:85:71:09:65:FE:95:9B:53:CE:E9:B2:7C:&#xa;                22:E9:85:5C:0D:97:8D:B6:A9:7E:54:C0:FE:4C:0D:B0&#xa;    Timestamp : Sep 19 02:28:26.902 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:BF:22:E6:DC:2F:B5:BF:D2:8D:07:C0:&#xa;                5E:A1:08:21:4D:EE:7E:BE:00:14:1A:18:C8:20:B8:DD:&#xa;                5A:AA:6E:66:75:02:20:2D:2E:65:ED:69:C3:2C:70:F6:&#xa;                5F:CE:8C:BE:B4:9B:E2:52:B8:AA:04:D1:6C:40:E6:5B:&#xa;                15:61:8C:6B:75:42:CE&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 12:F1:4E:34:BD:53:72:4C:84:06:19:C3:8F:3F:7A:13:&#xa;                F8:E7:B5:62:87:88:9C:6D:30:05:84:EB:E5:86:26:3A&#xa;    Timestamp : Sep 19 02:28:26.863 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:72:20:C1:04:6B:8D:78:C4:B4:68:9D:22:&#xa;                17:1B:FE:B8:6C:58:83:C1:B7:4C:AB:5F:7F:0B:E5:BD:&#xa;                B9:94:1E:D6:02:21:00:93:E0:27:1C:B5:B9:97:0F:45:&#xa;                22:31:0E:E2:D7:76:0B:5A:32:B8:ED:0E:54:0A:21:73:&#xa;                83:97:1C:1D:16:80:92</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+<table>
+<elem key="value">DNS:cdi-consults.mgh.harvard.edu, DNS:api-cdi-consults.mgh.harvard.edu</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+</table>
+<elem key="sig_algo">ecdsa-with-SHA256</elem>
+<table key="validity">
+<elem key="notBefore">2024-09-19T00:00:00</elem>
+<elem key="notAfter">2025-09-19T23:59:59</elem>
+</table>
+<elem key="md5">c1cd9f31ca3cd3b788bfcb37c4ef0b7f</elem>
+<elem key="sha1">cf59020b0a4ead8f8cbe4aaba4fcbe86ee5ff038</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFETCCBLagAwIBAgIQXS6NYFDdhinBwW2UgKm+/jAKBggqhkjOPQQDAjBEMQsw&#xa;CQYDVQQGEwJVUzESMBAGA1UEChMJSW50ZXJuZXQyMSEwHwYDVQQDExhJbkNvbW1v&#xa;biBFQ0MgU2VydmVyIENBIDIwHhcNMjQwOTE5MDAwMDAwWhcNMjUwOTE5MjM1OTU5&#xa;WjB/MQswCQYDVQQGEwJVUzEWMBQGA1UECBMNTWFzc2FjaHVzZXR0czExMC8GA1UE&#xa;ChMoUHJlc2lkZW50IGFuZCBGZWxsb3dzIG9mIEhhcnZhcmQgQ29sbGVnZTElMCMG&#xa;A1UEAxMcY2RpLWNvbnN1bHRzLm1naC5oYXJ2YXJkLmVkdTBZMBMGByqGSM49AgEG&#xa;CCqGSM49AwEHA0IABL01/CFbHVARm4KprS7Mwj6n48vnPks9JHAWx//NYShBqgRI&#xa;QXhdhznUU5+OmrFsCdMuwxo/leI+4ruF+U/h/iyjggNNMIIDSTAfBgNVHSMEGDAW&#xa;gBQyXwrZGFntQXEh1e4J4tmvstcPsTAdBgNVHQ4EFgQUplKINNaI82+TVbxs17Te&#xa;ECmXKjUwDgYDVR0PAQH/BAQDAgeAMAwGA1UdEwEB/wQCMAAwHQYDVR0lBBYwFAYI&#xa;KwYBBQUHAwEGCCsGAQUFBwMCMEkGA1UdIARCMEAwNAYLKwYBBAGyMQECAmcwJTAj&#xa;BggrBgEFBQcCARYXaHR0cHM6Ly9zZWN0aWdvLmNvbS9DUFMwCAYGZ4EMAQICMEAG&#xa;A1UdHwQ5MDcwNaAzoDGGL2h0dHA6Ly9jcmwuc2VjdGlnby5jb20vSW5Db21tb25F&#xa;Q0NTZXJ2ZXJDQTIuY3JsMHAGCCsGAQUFBwEBBGQwYjA7BggrBgEFBQcwAoYvaHR0&#xa;cDovL2NydC5zZWN0aWdvLmNvbS9JbkNvbW1vbkVDQ1NlcnZlckNBMi5jcnQwIwYI&#xa;KwYBBQUHMAGGF2h0dHA6Ly9vY3NwLnNlY3RpZ28uY29tMIIBfgYKKwYBBAHWeQIE&#xa;AgSCAW4EggFqAWgAdgDd3Mo0ldfhFgXnlTL6x5/4PRxQ39sAOhQSdgosrLvIKgAA&#xa;AZIIHATxAAAEAwBHMEUCIBOXqbx4CTip3MivfZZD3nwW16ZhVKZ9SRDuOGHZWRNV&#xa;AiEApot/dT+wWTdete6cyjXJRpnXhZUONVmMaG3EbZrBRdIAdgDM+w9qhXEJZf6V&#xa;m1PO6bJ8IumFXA2XjbapflTA/kwNsAAAAZIIHASWAAAEAwBHMEUCIQC/IubcL7W/&#xa;0o0HwF6hCCFN7n6+ABQaGMgguN1aqm5mdQIgLS5l7WnDLHD2X86MvrSb4lK4qgTR&#xa;bEDmWxVhjGt1Qs4AdgAS8U40vVNyTIQGGcOPP3oT+Oe1YoeInG0wBYTr5YYmOgAA&#xa;AZIIHARvAAAEAwBHMEUCIHIgwQRrjXjEtGidIhcb/rhsWIPBt0yrX38L5b25lB7W&#xa;AiEAk+AnHLW5lw9FIjEO4td2C1oyuO0OVAohc4OXHB0WgJIwSQYDVR0RBEIwQIIc&#xa;Y2RpLWNvbnN1bHRzLm1naC5oYXJ2YXJkLmVkdYIgYXBpLWNkaS1jb25zdWx0cy5t&#xa;Z2guaGFydmFyZC5lZHUwCgYIKoZIzj0EAwIDSQAwRgIhAPonk/8lvZAl2MDNkDk3&#xa;2PvdJVvGdsiajVZK/t01MwhTAiEAruz0R/Oqe8ePF+nbvilKP65iqUVYk9t0QZ7j&#xa;CwjgXb0=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+</ports>
+<times srtt="16287" rttvar="7002" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730875768"/>
+<taskend task="NSE" time="1730875768"/>
+<taskbegin task="NSE" time="1730875768"/>
+<taskend task="NSE" time="1730875768"/>
+<taskbegin task="NSE" time="1730875768"/>
+<taskend task="NSE" time="1730875768"/>
+<runstats><finished time="1730875768" timestr="Wed Nov  6 06:49:28 2024" elapsed="150.73" summary="Nmap done at Wed Nov  6 06:49:28 2024; 1 IP address (1 host up) scanned in 150.73 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
