@@ -15,3 +15,111 @@
 <taskbegin task="Parallel DNS resolution of 1 host." time="1730894168"/>
 <taskend task="Parallel DNS resolution of 1 host." time="1730894168"/>
 <taskbegin task="Connect Scan" time="1730894168"/>
+<taskend task="Connect Scan" time="1730894173" extrainfo="1000 total ports"/>
+<taskbegin task="Service scan" time="1730894173"/>
+<taskend task="Service scan" time="1730894184" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1730894184"/>
+<taskend task="NSE" time="1730894185"/>
+<taskbegin task="NSE" time="1730894185"/>
+<taskend task="NSE" time="1730894185"/>
+<taskbegin task="NSE" time="1730894185"/>
+<taskend task="NSE" time="1730894185"/>
+<host starttime="1730894168" endtime="1730894185"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="52.190.30.248" addrtype="ipv4"/>
+<hostnames>
+<hostname name="bchcompmgmt.tch.harvard.edu" type="user"/>
+</hostnames>
+<ports><extraports state="filtered" count="999">
+<extrareasons reason="no-responses" count="999"/>
+</extraports>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" tunnel="ssl" method="probed" conf="10"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="Microsoft-IIS/10.0"><elem>Microsoft-IIS/10.0</elem>
+</script><script id="http-title" output="Site doesn&apos;t have a title."></script><script id="ssl-cert" output="Subject: commonName=bchcompmgmt.chboston.org/organizationName=The Children&apos;s Hospital Corporation/stateOrProvinceName=Massachusetts/countryName=US&#xa;Subject Alternative Name: DNS:bchcompmgmt.chboston.org, DNS:bchcompmgmt.cardio.chboston.org, DNS:bchcompmgmt.childrens.harvard.edu, DNS:bchcompmgmt.chtrust.org, DNS:bchcompmgmt.tch.harvard.edu&#xa;Issuer: commonName=Sectigo RSA Organization Validation Secure Server CA/organizationName=Sectigo Limited/stateOrProvinceName=Greater Manchester/countryName=GB&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2023-11-21T00:00:00&#xa;Not valid after:  2024-11-20T23:59:59&#xa;MD5:   dfdb 33b1 a2e8 256b f0ea 2c10 3f06 1cf3&#xa;SHA-1: fe33 f72c 8436 b10f ef24 7d18 f713 d870 5878 cf85"><table key="subject">
+<elem key="countryName">US</elem>
+<elem key="stateOrProvinceName">Massachusetts</elem>
+<elem key="organizationName">The Children&apos;s Hospital Corporation</elem>
+<elem key="commonName">bchcompmgmt.chboston.org</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">GB</elem>
+<elem key="commonName">Sectigo RSA Organization Validation Secure Server CA</elem>
+<elem key="localityName">Salford</elem>
+<elem key="stateOrProvinceName">Greater Manchester</elem>
+<elem key="organizationName">Sectigo Limited</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">2048</elem>
+<elem key="exponent">BIGNUM: 0x559bd61fef58</elem>
+<elem key="modulus">BIGNUM: 0x559bd61fd8e8</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">17:D9:D6:25:27:67:F9:31:C2:49:43:D9:30:36:44:8C:6C:A9:4F:EB</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">71:2B:32:0A:EB:A7:43:97:04:F9:14:8F:7C:93:93:90:B1:CC:44:C0</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+</table>
+<table>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">Policy: 1.3.6.1.4.1.6449.1.2.1.3.4&#xa;  CPS: https://sectigo.com/CPS&#xa;Policy: 2.23.140.1.2.2</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Full Name:&#xa;  URI:http://crl.sectigo.com/SectigoRSAOrganizationValidationSecureServerCA.crl</elem>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+</table>
+<table>
+<elem key="value">CA Issuers - URI:http://crt.sectigo.com/SectigoRSAOrganizationValidationSecureServerCA.crt&#xa;OCSP - URI:http://ocsp.sectigo.com</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 76:FF:88:3F:0A:B6:FB:95:51:C2:61:CC:F5:87:BA:34:&#xa;                B4:A4:CD:BB:29:DC:68:42:0A:9F:E6:67:4C:5A:3A:74&#xa;    Timestamp : Nov 21 19:49:27.237 2023 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:CB:4E:78:C4:A5:9C:C0:D1:53:CB:64:&#xa;                53:F8:EC:00:7B:49:7E:D6:3C:81:9A:75:06:3F:D0:36:&#xa;                C6:4A:8C:6A:65:02:20:5D:D6:A9:1D:2E:FB:A1:79:C0:&#xa;                AA:E8:4C:81:58:FB:6D:81:CA:C6:79:9E:19:4C:CF:8F:&#xa;                A4:16:00:40:EE:C5:40&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 3F:17:4B:4F:D7:22:47:58:94:1D:65:1C:84:BE:0D:12:&#xa;                ED:90:37:7F:1F:85:6A:EB:C1:BF:28:85:EC:F8:64:6E&#xa;    Timestamp : Nov 21 19:49:27.456 2023 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:1E:4D:48:B0:1A:71:C6:50:AB:30:A9:6A:&#xa;                E8:45:5C:CD:92:C4:03:53:47:24:16:1C:C4:47:7A:CE:&#xa;                B3:78:93:CB:02:21:00:DA:B8:AB:9A:51:C0:13:CD:F5:&#xa;                45:EA:BE:85:F3:EA:B7:D5:F1:EE:3E:5C:78:BF:33:8B:&#xa;                15:F9:11:4F:EB:F7:13&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : EE:CD:D0:64:D5:DB:1A:CE:C5:5C:B7:9D:B4:CD:13:A2:&#xa;                32:87:46:7C:BC:EC:DE:C3:51:48:59:46:71:1F:B5:9B&#xa;    Timestamp : Nov 21 19:49:27.276 2023 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:B2:41:D6:9D:DE:E2:06:ED:1C:BA:CE:&#xa;                B6:95:29:B9:7F:FD:35:63:77:15:0B:2B:D1:DE:DA:99:&#xa;                1A:1F:4E:A4:B9:02:21:00:B4:D3:96:8C:0B:83:B4:22:&#xa;                D3:74:E4:A3:1D:2B:49:D2:FA:E7:19:40:14:7D:68:EB:&#xa;                30:BC:F2:F4:30:BE:47:91</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+<table>
+<elem key="value">DNS:bchcompmgmt.chboston.org, DNS:bchcompmgmt.cardio.chboston.org, DNS:bchcompmgmt.childrens.harvard.edu, DNS:bchcompmgmt.chtrust.org, DNS:bchcompmgmt.tch.harvard.edu</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2023-11-21T00:00:00</elem>
+<elem key="notAfter">2024-11-20T23:59:59</elem>
+</table>
+<elem key="md5">dfdb33b1a2e8256bf0ea2c103f061cf3</elem>
+<elem key="sha1">fe33f72c8436b10fef247d18f713d8705878cf85</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIHdDCCBlygAwIBAgIRAL66/xU5aqbwJkqrVQtUTWEwDQYJKoZIhvcNAQELBQAw&#xa;gZUxCzAJBgNVBAYTAkdCMRswGQYDVQQIExJHcmVhdGVyIE1hbmNoZXN0ZXIxEDAO&#xa;BgNVBAcTB1NhbGZvcmQxGDAWBgNVBAoTD1NlY3RpZ28gTGltaXRlZDE9MDsGA1UE&#xa;AxM0U2VjdGlnbyBSU0EgT3JnYW5pemF0aW9uIFZhbGlkYXRpb24gU2VjdXJlIFNl&#xa;cnZlciBDQTAeFw0yMzExMjEwMDAwMDBaFw0yNDExMjAyMzU5NTlaMHYxCzAJBgNV&#xa;BAYTAlVTMRYwFAYDVQQIEw1NYXNzYWNodXNldHRzMSwwKgYDVQQKEyNUaGUgQ2hp&#xa;bGRyZW4ncyBIb3NwaXRhbCBDb3Jwb3JhdGlvbjEhMB8GA1UEAxMYYmNoY29tcG1n&#xa;bXQuY2hib3N0b24ub3JnMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA&#xa;n3xlRV7HYkLT2cFrhKMIOkMG9GpX987YuiuQQRjnWjDm6zfWKfdiY3rsAe1SKxXA&#xa;8bu5UfsfxYv2quoD4Ki54Q/Y214GFeOrsUnAaj8/NI78euFqipLkXHCyjjQE/JG+&#xa;Fj0VCdyA8wCNoP+6Neuz2QLLiLWUsprDk00kMlsy2QuRPg8y/2ob2mCRzbyqek3F&#xa;mEoXPCruXWyBRejVsz1NVnGxth7Zg1fy7bHicNKe21OkuNg7T7nYPOGH5AOilIKW&#xa;lP+1KtxNhVj/tCcHm6WHXhtCjP65fq9ibZqVb7EmZRO+58OuVsslUMcMKTqNPc8J&#xa;lkkqnLPPM0wbuhUWOxW6VQIDAQABo4ID2zCCA9cwHwYDVR0jBBgwFoAUF9nWJSdn&#xa;+THCSUPZMDZEjGypT+swHQYDVR0OBBYEFHErMgrrp0OXBPkUj3yTk5CxzETAMA4G&#xa;A1UdDwEB/wQEAwIFoDAMBgNVHRMBAf8EAjAAMB0GA1UdJQQWMBQGCCsGAQUFBwMB&#xa;BggrBgEFBQcDAjBKBgNVHSAEQzBBMDUGDCsGAQQBsjEBAgEDBDAlMCMGCCsGAQUF&#xa;BwIBFhdodHRwczovL3NlY3RpZ28uY29tL0NQUzAIBgZngQwBAgIwWgYDVR0fBFMw&#xa;UTBPoE2gS4ZJaHR0cDovL2NybC5zZWN0aWdvLmNvbS9TZWN0aWdvUlNBT3JnYW5p&#xa;emF0aW9uVmFsaWRhdGlvblNlY3VyZVNlcnZlckNBLmNybDCBigYIKwYBBQUHAQEE&#xa;fjB8MFUGCCsGAQUFBzAChklodHRwOi8vY3J0LnNlY3RpZ28uY29tL1NlY3RpZ29S&#xa;U0FPcmdhbml6YXRpb25WYWxpZGF0aW9uU2VjdXJlU2VydmVyQ0EuY3J0MCMGCCsG&#xa;AQUFBzABhhdodHRwOi8vb2NzcC5zZWN0aWdvLmNvbTCCAX8GCisGAQQB1nkCBAIE&#xa;ggFvBIIBawFpAHYAdv+IPwq2+5VRwmHM9Ye6NLSkzbsp3GhCCp/mZ0xaOnQAAAGL&#xa;824yRQAABAMARzBFAiEAy054xKWcwNFTy2RT+OwAe0l+1jyBmnUGP9A2xkqMamUC&#xa;IF3WqR0u+6F5wKroTIFY+22BysZ5nhlMz4+kFgBA7sVAAHYAPxdLT9ciR1iUHWUc&#xa;hL4NEu2QN38fhWrrwb8ohez4ZG4AAAGL824zIAAABAMARzBFAiAeTUiwGnHGUKsw&#xa;qWroRVzNksQDU0ckFhzER3rOs3iTywIhANq4q5pRwBPN9UXqvoXz6rfV8e4+XHi/&#xa;M4sV+RFP6/cTAHcA7s3QZNXbGs7FXLedtM0TojKHRny87N7DUUhZRnEftZsAAAGL&#xa;824ybAAABAMASDBGAiEAskHWnd7iBu0cus62lSm5f/01Y3cVCyvR3tqZGh9OpLkC&#xa;IQC005aMC4O0ItN05KMdK0nS+ucZQBR9aOswvPL0ML5HkTCBnwYDVR0RBIGXMIGU&#xa;ghhiY2hjb21wbWdtdC5jaGJvc3Rvbi5vcmeCH2JjaGNvbXBtZ210LmNhcmRpby5j&#xa;aGJvc3Rvbi5vcmeCIWJjaGNvbXBtZ210LmNoaWxkcmVucy5oYXJ2YXJkLmVkdYIX&#xa;YmNoY29tcG1nbXQuY2h0cnVzdC5vcmeCG2JjaGNvbXBtZ210LnRjaC5oYXJ2YXJk&#xa;LmVkdTANBgkqhkiG9w0BAQsFAAOCAQEAF9PzqpQXF6ljVF+CY5OeJs3uNyBOvXmo&#xa;f63wrYEcyDdZCAaE4mx9fW1lvu0ulUZjYESpT5H3kZz2GnE2pt7vhAbLMazyWNoh&#xa;fMIRPQsR4OJwAwh6D32paPoqG77yjL2OGIH6V3v81Zt8xHl6YdzdXrjlIWBxln8/&#xa;S8KRoXENeXVEhnN9eShwYOePyhD8jcmsHa2XLtDIzQ42npizKUEyojMSO/6AB9h5&#xa;yViHKRiyuYajGBW9xNvwneSezwRCP0JpLlr8SRwm7ieMf7OCTVCpVD+/SPJ78Sr3&#xa;OJ6yVDCe02hVCCV+SCePmR+HH9IXPguCAUTH0NIso3epX8OTB/il9w==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+</ports>
+<times srtt="1627" rttvar="3186" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730894185"/>
+<taskend task="NSE" time="1730894185"/>
+<taskbegin task="NSE" time="1730894185"/>
+<taskend task="NSE" time="1730894185"/>
+<taskbegin task="NSE" time="1730894185"/>
+<taskend task="NSE" time="1730894185"/>
+<runstats><finished time="1730894185" timestr="Wed Nov  6 11:56:25 2024" elapsed="17.53" summary="Nmap done at Wed Nov  6 11:56:25 2024; 1 IP address (1 host up) scanned in 17.53 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
