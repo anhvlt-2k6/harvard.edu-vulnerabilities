@@ -19,3 +19,96 @@
 <taskbegin task="Service scan" time="1730882467"/>
 <taskend task="Service scan" time="1730882479" extrainfo="3 services on 1 host"/>
 <taskbegin task="NSE" time="1730882479"/>
+<taskend task="NSE" time="1730882490"/>
+<taskbegin task="NSE" time="1730882490"/>
+<taskend task="NSE" time="1730882490"/>
+<taskbegin task="NSE" time="1730882490"/>
+<taskend task="NSE" time="1730882490"/>
+<host starttime="1730882460" endtime="1730882490"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="104.199.127.254" addrtype="ipv4"/>
+<hostnames>
+<hostname name="pic2023.innovationlabs.harvard.edu" type="user"/>
+<hostname name="254.127.199.104.bc.googleusercontent.com" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="997">
+<extrareasons reason="no-responses" count="997"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service><script id="http-title" output="400 The plain HTTP request was sent to HTTPS port"><elem key="title">400 The plain HTTP request was sent to HTTPS port</elem>
+</script><script id="ssl-cert" output="Subject: commonName=pic2023.innovationlabs.harvard.edu&#xa;Subject Alternative Name: DNS:pic2023.innovationlabs.harvard.edu&#xa;Issuer: commonName=R10/organizationName=Let&apos;s Encrypt/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-09-05T02:58:22&#xa;Not valid after:  2024-12-04T02:58:21&#xa;MD5:   db3b d16c 6441 cf3a 8d7b d0a2 e022 b21a&#xa;SHA-1: d262 60b7 4f18 7b5c d8e4 8977 6b46 28c4 a9db 92ad"><table key="subject">
+<elem key="commonName">pic2023.innovationlabs.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">R10</elem>
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+<elem key="countryName">US</elem>
+</table>
+<table key="pubkey">
+<elem key="exponent">BIGNUM: 0x55df0e0484a8</elem>
+<elem key="modulus">BIGNUM: 0x55df0dd837e8</elem>
+<elem key="bits">2048</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="critical">true</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="name">X509v3 Key Usage</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+</table>
+<table>
+<elem key="value">94:13:DB:A7:CA:E4:ED:B9:9E:18:18:76:02:8F:CF:0F:ED:93:CA:2F</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="value">BB:BC:C3:47:A5:E4:BC:A9:C6:C3:A4:72:0C:10:8D:A2:35:E1:C8:E8</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">OCSP - URI:http://r10.o.lencr.org&#xa;CA Issuers - URI:http://r10.i.lencr.org/</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">DNS:pic2023.innovationlabs.harvard.edu</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+<table>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 76:FF:88:3F:0A:B6:FB:95:51:C2:61:CC:F5:87:BA:34:&#xa;                B4:A4:CD:BB:29:DC:68:42:0A:9F:E6:67:4C:5A:3A:74&#xa;    Timestamp : Sep  5 03:56:52.761 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:0D:41:F5:B0:0B:15:A4:60:A0:D7:67:9A:&#xa;                8D:85:D3:78:AE:B9:DC:B1:BE:C5:5E:9B:1A:EC:FF:7B:&#xa;                04:7B:31:72:02:21:00:AB:F9:95:3F:81:13:05:FA:DE:&#xa;                E6:7E:32:89:5B:30:38:28:7C:02:EA:F2:7E:1F:0F:48:&#xa;                9A:FA:69:FD:35:7E:D7&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 48:B0:E3:6B:DA:A6:47:34:0F:E5:6A:02:FA:9D:30:EB:&#xa;                1C:52:01:CB:56:DD:2C:81:D9:BB:BF:AB:39:D8:84:73&#xa;    Timestamp : Sep  5 03:56:52.813 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:46:6E:45:58:14:10:DB:5C:C1:93:77:C8:&#xa;                0B:40:1B:B6:88:10:5D:EE:EA:26:17:FA:F6:3D:53:E3:&#xa;                AE:76:35:E6:02:20:77:E4:68:D6:AA:78:80:7C:3D:38:&#xa;                9E:9E:4A:FA:B3:25:73:E7:CC:2D:82:C8:79:4D:AA:76:&#xa;                56:4D:01:2D:C1:02</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-09-05T02:58:22</elem>
+<elem key="notAfter">2024-12-04T02:58:21</elem>
+</table>
+<elem key="md5">db3bd16c6441cf3a8d7bd0a2e022b21a</elem>
+<elem key="sha1">d26260b74f187b5cd8e489776b4628c4a9db92ad</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFEzCCA/ugAwIBAgISBEcV6/2cdfTuOIIih8RJe5XUMA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNSMTAwHhcNMjQwOTA1MDI1ODIyWhcNMjQxMjA0MDI1ODIxWjAtMSswKQYDVQQD&#xa;EyJwaWMyMDIzLmlubm92YXRpb25sYWJzLmhhcnZhcmQuZWR1MIIBIjANBgkqhkiG&#xa;9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3ojFoUOdiL+Cu9TTyvJOqMpDFGjmp3jAgiyM&#xa;1V5vAAhwUC+e5q1D4twGVw/0VV+7mbPM9ypzk2sXmQ2KaQ+y/3Wk+Yl2szkI6+8O&#xa;eNIdtHg49PY8e0FbOVnEkeZ5ASjM2h8GeWXUUTT78nsA+NeJLHvUQr6FGf/m7jgR&#xa;0ADikFi5gwZV3L6LxpToZX4G9rlp8QwGFTVylN7feJ0GcIDrVifAyf8f2ZuCGZuj&#xa;RvZW+BtMkRr7Bfphec6bul6ki3HuN4x2imQnJWVmqGywAm0uUjyEiVG91bOxFROe&#xa;8ZqH3R4hlgydkG3fYCbP6ou3yeokzlA1o43FQcyguRtUu4Ky/QIDAQABo4ICJTCC&#xa;AiEwDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcD&#xa;AjAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBSUE9unyuTtuZ4YGHYCj88P7ZPKLzAf&#xa;BgNVHSMEGDAWgBS7vMNHpeS8qcbDpHIMEI2iNeHI6DBXBggrBgEFBQcBAQRLMEkw&#xa;IgYIKwYBBQUHMAGGFmh0dHA6Ly9yMTAuby5sZW5jci5vcmcwIwYIKwYBBQUHMAKG&#xa;F2h0dHA6Ly9yMTAuaS5sZW5jci5vcmcvMC0GA1UdEQQmMCSCInBpYzIwMjMuaW5u&#xa;b3ZhdGlvbmxhYnMuaGFydmFyZC5lZHUwEwYDVR0gBAwwCjAIBgZngQwBAgEwggED&#xa;BgorBgEEAdZ5AgQCBIH0BIHxAO8AdgB2/4g/Crb7lVHCYcz1h7o0tKTNuyncaEIK&#xa;n+ZnTFo6dAAAAZHAU/KZAAAEAwBHMEUCIA1B9bALFaRgoNdnmo2F03iuudyxvsVe&#xa;mxrs/3sEezFyAiEAq/mVP4ETBfre5n4yiVswOCh8Auryfh8PSJr6af01ftcAdQBI&#xa;sONr2qZHNA/lagL6nTDrHFIBy1bdLIHZu7+rOdiEcwAAAZHAU/LNAAAEAwBGMEQC&#xa;IEZuRVgUENtcwZN3yAtAG7aIEF3u6iYX+vY9U+OudjXmAiB35GjWqniAfD04np5K&#xa;+rMlc+fMLYLIeU2qdlZNAS3BAjANBgkqhkiG9w0BAQsFAAOCAQEAIcU1BSOJaY3B&#xa;DOU1rOTkBeV6cJkZJA5zMh5k3t/GWgzCGZKBnmFkgWpvXIXPoK+9qE6WYXVFMJTt&#xa;VZ3TyOAA8MQNEBPEspJtCf+R7+CW8dQCUIZeHP0Wjvoy2PAYmSrl4I29Hho0wame&#xa;Y5pD3C+5yW4N4JGFwaTA5oqtkZ6SSpyNCXVkAfA11yL8tTivY0fWBm8US4RqjHzS&#xa;Zm85EIyXVQ0Q5gJhtORVUtytuoTanC2sxEVV5Bds6+6+OJCxcv2RY/S2bkceZEqw&#xa;NIfpaqKT9OOsxsrlQJLblap0X7Lo3oXW0MPtrEmkoS2mVqrtZeUfYb6hu/62hqHN&#xa;0eYpc/jGzA==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="2222"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" extrainfo="protocol 2.0" servicefp="SF-Port2222-TCP:V=7.80%I=7%D=11/6%Time=672B2BA9%P=x86_64-pc-linux-gnu%r(NULL,292,&quot;SSH-2\.0-mod_sftp\r\n\0\0\x02\|\x08\x14\xfd\xfaM\xc4&amp;\x91\x15{\x04\xd3\x81\xe9\xb8\x01tO\0\0\x01jcurve448-sha512,curve25519-sha256,curve25519-sha256@libssh\.org,ecdh-sha2-nistp521,ecdh-sha2-nistp384,ecdh-sha2-nistp256,diffie-hellman-group18-sha512,diffie-hellman-group16-sha512,diffie-hellman-group14-sha256,diffie-hellman-group-exchange-sha256,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1,rsa1024-sha1,ext-info-s,kex-strict-s-v00@openssh\.com\0\0\0!rsa-sha2-512,rsa-sha2-256,ssh-rsa\0\0\0\x20aes128-ctr,aes192-ctr,aes256-ctr\0\0\0\x20aes128-ctr,aes192-ctr,aes256-ctr\0\0\0\x1bhmac-sha2-256,hmac-sha2-512\0\0\0\x1bhmac-sha2-256,hmac-sha2-512\0\0\0\x1azlib@openssh\.com,zlib,none\0\0\0\x1azlib@openssh\.com,zlib,none\0\0\0\0\0\0\0\0\0\0\0\0\0\xf0#\x88V\x053\xef;&quot;);" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  NULL: &#xa;    SSH-2.0-mod_sftp&#xa;    jcurve448-sha512,curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp521,ecdh-sha2-nistp384,ecdh-sha2-nistp256,diffie-hellman-group18-sha512,diffie-hellman-group16-sha512,diffie-hellman-group14-sha256,diffie-hellman-group-exchange-sha256,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1,rsa1024-sha1,ext-info-s,kex-strict-s-v00@openssh.com&#xa;    !rsa-sha2-512,rsa-sha2-256,ssh-rsa&#xa;    aes128-ctr,aes192-ctr,aes256-ctr&#xa;    aes128-ctr,aes192-ctr,aes256-ctr&#xa;    hmac-sha2-256,hmac-sha2-512&#xa;    hmac-sha2-256,hmac-sha2-512&#xa;    zlib@openssh.com,zlib,none&#xa;    zlib@openssh.com,zlib,none"><elem key="NULL">&#xa;    SSH-2.0-mod_sftp&#xa;    jcurve448-sha512,curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp521,ecdh-sha2-nistp384,ecdh-sha2-nistp256,diffie-hellman-group18-sha512,diffie-hellman-group16-sha512,diffie-hellman-group14-sha256,diffie-hellman-group-exchange-sha256,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1,rsa1024-sha1,ext-info-s,kex-strict-s-v00@openssh.com&#xa;    !rsa-sha2-512,rsa-sha2-256,ssh-rsa&#xa;    aes128-ctr,aes192-ctr,aes256-ctr&#xa;    aes128-ctr,aes192-ctr,aes256-ctr&#xa;    hmac-sha2-256,hmac-sha2-512&#xa;    hmac-sha2-256,hmac-sha2-512&#xa;    zlib@openssh.com,zlib,none&#xa;    zlib@openssh.com,zlib,none</elem>
+</script></port>
+</ports>
+<times srtt="50361" rttvar="13221" to="103245"/>
+</host>
+<taskbegin task="NSE" time="1730882490"/>
+<taskend task="NSE" time="1730882490"/>
+<taskbegin task="NSE" time="1730882490"/>
+<taskend task="NSE" time="1730882490"/>
+<taskbegin task="NSE" time="1730882490"/>
+<taskend task="NSE" time="1730882490"/>
+<runstats><finished time="1730882490" timestr="Wed Nov  6 08:41:30 2024" elapsed="30.75" summary="Nmap done at Wed Nov  6 08:41:30 2024; 1 IP address (1 host up) scanned in 30.75 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
