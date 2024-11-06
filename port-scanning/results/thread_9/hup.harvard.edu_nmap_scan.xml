@@ -17,3 +17,112 @@
 <taskbegin task="Connect Scan" time="1730889002"/>
 <taskend task="Connect Scan" time="1730889008" extrainfo="1000 total ports"/>
 <taskbegin task="Service scan" time="1730889008"/>
+<taskend task="Service scan" time="1730889020" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1730889020"/>
+<taskend task="NSE" time="1730889020"/>
+<taskbegin task="NSE" time="1730889020"/>
+<taskend task="NSE" time="1730889020"/>
+<taskbegin task="NSE" time="1730889020"/>
+<taskend task="NSE" time="1730889020"/>
+<host starttime="1730889002" endtime="1730889020"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="3.167.37.69" addrtype="ipv4"/>
+<hostnames>
+<hostname name="hup.harvard.edu" type="user"/>
+<hostname name="server-3-167-37-69.iad61.r.cloudfront.net" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="998">
+<extrareasons reason="no-responses" count="998"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Amazon CloudFront httpd" method="probed" conf="10"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="CloudFront"><elem>CloudFront</elem>
+</script><script id="http-title" output="Did not follow redirect to https://hup.harvard.edu/"><elem key="redirect_url">https://hup.harvard.edu/</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Amazon CloudFront httpd" tunnel="ssl" method="probed" conf="10"/><script id="http-server-header" output="CloudFront"><elem>CloudFront</elem>
+</script><script id="http-title" output="ERROR: The request could not be satisfied"><elem key="title">ERROR: The request could not be satisfied</elem>
+</script><script id="ssl-cert" output="Subject: commonName=hup.harvard.edu/organizationName=President and Fellows of Harvard College/stateOrProvinceName=Massachusetts/countryName=US&#xa;Subject Alternative Name: DNS:hup.harvard.edu, DNS:admin.prod.hup.harvard.edu, DNS:admin.production.hup.harvard.edu, DNS:hupweb-app01.hupweb.cloud.huit.harvard.edu, DNS:hupweb-app02.hupweb.cloud.huit.harvard.edu, DNS:hupweb-prod.hupweb.cloud.huit.harvard.edu, DNS:hupwebprod.hup.harvard.edu, DNS:origin.prod.hup.harvard.edu, DNS:origin.production.hup.harvard.edu, DNS:prod.hup.harvard.edu, DNS:production.hup.harvard.edu, DNS:www.hup.harvard.edu, DNS:www.prod.hup.harvard.edu, DNS:www.production.hup.harvard.edu&#xa;Issuer: commonName=InCommon RSA Server CA 2/organizationName=Internet2/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha384WithRSAEncryption&#xa;Not valid before: 2023-11-30T00:00:00&#xa;Not valid after:  2024-12-30T23:59:59&#xa;MD5:   a6e2 a07c c8d2 9e08 febf 65f8 0dca 4389&#xa;SHA-1: 418d 91ef 8ac6 2de2 7f98 b9d5 9f00 67cc c207 ad56"><table key="subject">
+<elem key="organizationName">President and Fellows of Harvard College</elem>
+<elem key="countryName">US</elem>
+<elem key="commonName">hup.harvard.edu</elem>
+<elem key="stateOrProvinceName">Massachusetts</elem>
+</table>
+<table key="issuer">
+<elem key="organizationName">Internet2</elem>
+<elem key="countryName">US</elem>
+<elem key="commonName">InCommon RSA Server CA 2</elem>
+</table>
+<table key="pubkey">
+<elem key="modulus">BIGNUM: 0x556db8792f18</elem>
+<elem key="exponent">BIGNUM: 0x556db8792758</elem>
+<elem key="bits">2048</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">EF:4C:00:92:A6:FB:76:2E:5E:95:E2:C9:5F:87:1B:19:D5:4D:E2:D9</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">1E:5A:62:70:CA:7A:81:57:5B:9B:EF:4C:E2:33:66:77:6E:0E:18:E5</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+</table>
+<table>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">Policy: 1.3.6.1.4.1.6449.1.2.2.103&#xa;  CPS: https://sectigo.com/CPS&#xa;Policy: 2.23.140.1.2.2</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Full Name:&#xa;  URI:http://crl.sectigo.com/InCommonRSAServerCA2.crl</elem>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+</table>
+<table>
+<elem key="value">CA Issuers - URI:http://crt.sectigo.com/InCommonRSAServerCA2.crt&#xa;OCSP - URI:http://ocsp.sectigo.com</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 76:FF:88:3F:0A:B6:FB:95:51:C2:61:CC:F5:87:BA:34:&#xa;                B4:A4:CD:BB:29:DC:68:42:0A:9F:E6:67:4C:5A:3A:74&#xa;    Timestamp : Nov 30 19:03:46.445 2023 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:77:92:FB:94:7E:76:EA:39:57:29:4F:55:&#xa;                A5:79:D3:B3:E1:55:F9:85:90:E2:3C:69:2D:42:B0:A7:&#xa;                6D:30:EF:DC:02:20:40:5C:11:93:89:82:CC:2F:BD:A3:&#xa;                D7:75:63:3B:D8:8E:EB:B6:F2:59:E9:6F:41:19:85:37:&#xa;                79:8F:34:35:0B:8B&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 3F:17:4B:4F:D7:22:47:58:94:1D:65:1C:84:BE:0D:12:&#xa;                ED:90:37:7F:1F:85:6A:EB:C1:BF:28:85:EC:F8:64:6E&#xa;    Timestamp : Nov 30 19:03:46.520 2023 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:F6:9D:22:7A:46:1D:8F:CE:88:30:26:&#xa;                53:A6:3D:1C:E6:A9:56:49:98:99:60:4D:6C:F7:98:03:&#xa;                B9:1F:FA:B9:2E:02:20:60:77:39:9A:D4:CD:BE:55:99:&#xa;                16:B7:A9:A5:5C:E4:B3:F3:91:F8:92:15:96:89:CB:F8:&#xa;                22:A8:AB:D3:83:A6:F4&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : EE:CD:D0:64:D5:DB:1A:CE:C5:5C:B7:9D:B4:CD:13:A2:&#xa;                32:87:46:7C:BC:EC:DE:C3:51:48:59:46:71:1F:B5:9B&#xa;    Timestamp : Nov 30 19:03:46.483 2023 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:89:57:7A:9C:AA:82:39:C7:D1:2D:75:&#xa;                12:E4:59:58:98:30:20:20:8A:2B:1C:8F:82:67:39:5D:&#xa;                3E:33:82:91:02:02:20:4C:33:9A:9E:04:E7:01:12:9A:&#xa;                44:28:4B:7E:CE:85:27:34:28:78:C9:B2:24:F9:18:4F:&#xa;                CA:57:B7:3F:D0:E0:AB</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+<table>
+<elem key="value">DNS:hup.harvard.edu, DNS:admin.prod.hup.harvard.edu, DNS:admin.production.hup.harvard.edu, DNS:hupweb-app01.hupweb.cloud.huit.harvard.edu, DNS:hupweb-app02.hupweb.cloud.huit.harvard.edu, DNS:hupweb-prod.hupweb.cloud.huit.harvard.edu, DNS:hupwebprod.hup.harvard.edu, DNS:origin.prod.hup.harvard.edu, DNS:origin.production.hup.harvard.edu, DNS:prod.hup.harvard.edu, DNS:production.hup.harvard.edu, DNS:www.hup.harvard.edu, DNS:www.prod.hup.harvard.edu, DNS:www.production.hup.harvard.edu</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+</table>
+<elem key="sig_algo">sha384WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2023-11-30T00:00:00</elem>
+<elem key="notAfter">2024-12-30T23:59:59</elem>
+</table>
+<elem key="md5">a6e2a07cc8d29e08febf65f80dca4389</elem>
+<elem key="sha1">418d91ef8ac62de27f98b9d59f0067ccc207ad56</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIIgzCCBuugAwIBAgIQej+GmqdOpp7JRNtdRyqvfjANBgkqhkiG9w0BAQwFADBE&#xa;MQswCQYDVQQGEwJVUzESMBAGA1UEChMJSW50ZXJuZXQyMSEwHwYDVQQDExhJbkNv&#xa;bW1vbiBSU0EgU2VydmVyIENBIDIwHhcNMjMxMTMwMDAwMDAwWhcNMjQxMjMwMjM1&#xa;OTU5WjByMQswCQYDVQQGEwJVUzEWMBQGA1UECBMNTWFzc2FjaHVzZXR0czExMC8G&#xa;A1UEChMoUHJlc2lkZW50IGFuZCBGZWxsb3dzIG9mIEhhcnZhcmQgQ29sbGVnZTEY&#xa;MBYGA1UEAxMPaHVwLmhhcnZhcmQuZWR1MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8A&#xa;MIIBCgKCAQEAyA6kt7SHtQ5dZqI04st9L/QQSEZ2qyTwOhPkQRT5l+xqghWPIZMr&#xa;pM5zWmjHIwW0TCbaIZjzBlfIlOVemFpEYAMirz7X3N4GAs3eWfU3JIAnksqApq/V&#xa;EG5das3932GN303Sj2RtmUB/gnUs1YmTPWL4qQDq+M7vWEM+i5EEqtF9z86QdL6W&#xa;9V6+9Uf5dQd8Tc43fTLtEP9hMSu+Nrm9rckVS7BMoe7XwRiMRKTZ20jJ7wGbncc2&#xa;+1bjQb3mQSHgWLTx0LyxpjTgFonkbZEZAodZEnr/eEYYNqMdgyt+08dr1+Mh08yp&#xa;Nlweo0dThDBd7JpCqW9W82e/U2n/AXA9rQIDAQABo4IEwTCCBL0wHwYDVR0jBBgw&#xa;FoAU70wAkqb7di5eleLJX4cbGdVN4tkwHQYDVR0OBBYEFB5aYnDKeoFXW5vvTOIz&#xa;ZnduDhjlMA4GA1UdDwEB/wQEAwIFoDAMBgNVHRMBAf8EAjAAMB0GA1UdJQQWMBQG&#xa;CCsGAQUFBwMBBggrBgEFBQcDAjBJBgNVHSAEQjBAMDQGCysGAQQBsjEBAgJnMCUw&#xa;IwYIKwYBBQUHAgEWF2h0dHBzOi8vc2VjdGlnby5jb20vQ1BTMAgGBmeBDAECAjBA&#xa;BgNVHR8EOTA3MDWgM6Axhi9odHRwOi8vY3JsLnNlY3RpZ28uY29tL0luQ29tbW9u&#xa;UlNBU2VydmVyQ0EyLmNybDBwBggrBgEFBQcBAQRkMGIwOwYIKwYBBQUHMAKGL2h0&#xa;dHA6Ly9jcnQuc2VjdGlnby5jb20vSW5Db21tb25SU0FTZXJ2ZXJDQTIuY3J0MCMG&#xa;CCsGAQUFBzABhhdodHRwOi8vb2NzcC5zZWN0aWdvLmNvbTCCAX0GCisGAQQB1nkC&#xa;BAIEggFtBIIBaQFnAHUAdv+IPwq2+5VRwmHM9Ye6NLSkzbsp3GhCCp/mZ0xaOnQA&#xa;AAGMIZ2cDQAABAMARjBEAiB3kvuUfnbqOVcpT1WledOz4VX5hZDiPGktQrCnbTDv&#xa;3AIgQFwRk4mCzC+9o9d1YzvYjuu28lnpb0EZhTd5jzQ1C4sAdgA/F0tP1yJHWJQd&#xa;ZRyEvg0S7ZA3fx+FauvBvyiF7PhkbgAAAYwhnZxYAAAEAwBHMEUCIQD2nSJ6Rh2P&#xa;zogwJlOmPRzmqVZJmJlgTWz3mAO5H/q5LgIgYHc5mtTNvlWZFreppVzks/OR+JIV&#xa;lonL+CKoq9ODpvQAdgDuzdBk1dsazsVct520zROiModGfLzs3sNRSFlGcR+1mwAA&#xa;AYwhnZwzAAAEAwBHMEUCIQCJV3qcqoI5x9EtdRLkWViYMCAgiiscj4JnOV0+M4KR&#xa;AgIgTDOangTnARKaRChLfs6FJzQoeMmyJPkYT8pXtz/Q4KswggG8BgNVHREEggGz&#xa;MIIBr4IPaHVwLmhhcnZhcmQuZWR1ghphZG1pbi5wcm9kLmh1cC5oYXJ2YXJkLmVk&#xa;dYIgYWRtaW4ucHJvZHVjdGlvbi5odXAuaGFydmFyZC5lZHWCKmh1cHdlYi1hcHAw&#xa;MS5odXB3ZWIuY2xvdWQuaHVpdC5oYXJ2YXJkLmVkdYIqaHVwd2ViLWFwcDAyLmh1&#xa;cHdlYi5jbG91ZC5odWl0LmhhcnZhcmQuZWR1gilodXB3ZWItcHJvZC5odXB3ZWIu&#xa;Y2xvdWQuaHVpdC5oYXJ2YXJkLmVkdYIaaHVwd2VicHJvZC5odXAuaGFydmFyZC5l&#xa;ZHWCG29yaWdpbi5wcm9kLmh1cC5oYXJ2YXJkLmVkdYIhb3JpZ2luLnByb2R1Y3Rp&#xa;b24uaHVwLmhhcnZhcmQuZWR1ghRwcm9kLmh1cC5oYXJ2YXJkLmVkdYIacHJvZHVj&#xa;dGlvbi5odXAuaGFydmFyZC5lZHWCE3d3dy5odXAuaGFydmFyZC5lZHWCGHd3dy5w&#xa;cm9kLmh1cC5oYXJ2YXJkLmVkdYIed3d3LnByb2R1Y3Rpb24uaHVwLmhhcnZhcmQu&#xa;ZWR1MA0GCSqGSIb3DQEBDAUAA4IBgQAewxz0PSMMenHo+9EbRuwTyh+uYDSsYDNG&#xa;tMZmPAJ8AY/eiTfGnGoaA2BLPRBauV6hXVIPt26kqGhbYYrvQbzLHn5G0rV3eTYM&#xa;qywPmnSAsrde9DDG+WpT4iM0VKGVWu1rntqeHL8Yk5EsrH77yUwWSj6MkeMrVMGJ&#xa;tvlxfvKN5DR/rHCUoIP71lYtKmY4ggnXJWcH6HRANTcjhtOX8DrU1nXObN8Tvb67&#xa;puTMyRjDwIwPgikJ5eUDS4S0+nYlOCaeWLpqBmRpjHj7Ro+ju7SNlkuwCcNPABVi&#xa;f4YgnrPPxdXoouj9lfGUwbXzzJ85OWt/MkKHJCWbdSVSkLDyFHJFEGXy/nmyJ4j0&#xa;b4+RbFnlFmsxYdiy3xCEVMC6Iv3ESYQDvrJ/fypOFROvTYbjKnHrFtkQkMw8lzQy&#xa;9CvDGEv//jyRMyjad3HB0vFfr3wg6ojKfUfsuLAT7pDcCuNrytJkKRAZJJd+SvH2&#xa;HeDWUpqCWgDBdGA1eFEHz0ML+fGo4Zw=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+</ports>
+<times srtt="2061" rttvar="2531" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730889020"/>
+<taskend task="NSE" time="1730889020"/>
+<taskbegin task="NSE" time="1730889020"/>
+<taskend task="NSE" time="1730889020"/>
+<taskbegin task="NSE" time="1730889020"/>
+<taskend task="NSE" time="1730889020"/>
+<runstats><finished time="1730889020" timestr="Wed Nov  6 10:30:20 2024" elapsed="18.64" summary="Nmap done at Wed Nov  6 10:30:20 2024; 1 IP address (1 host up) scanned in 18.64 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
