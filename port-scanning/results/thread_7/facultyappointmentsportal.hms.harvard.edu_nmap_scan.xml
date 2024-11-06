@@ -17,3 +17,113 @@
 <taskbegin task="Connect Scan" time="1730907136"/>
 <taskend task="Connect Scan" time="1730907141" extrainfo="1000 total ports"/>
 <taskbegin task="Service scan" time="1730907141"/>
+<taskend task="Service scan" time="1730907153" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1730907153"/>
+<taskend task="NSE" time="1730907155"/>
+<taskbegin task="NSE" time="1730907155"/>
+<taskend task="NSE" time="1730907155"/>
+<taskbegin task="NSE" time="1730907155"/>
+<taskend task="NSE" time="1730907155"/>
+<host starttime="1730907136" endtime="1730907155"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="23.48.203.135" addrtype="ipv4"/>
+<hostnames>
+<hostname name="facultyappointmentsportal.hms.harvard.edu" type="user"/>
+<hostname name="a23-48-203-135.deploy.static.akamaitechnologies.com" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="998">
+<extrareasons reason="no-responses" count="998"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="AkamaiGHost" extrainfo="Akamai&apos;s HTTP Acceleration/Mirror service" method="probed" conf="10"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Access Denied"><elem key="title">Access Denied</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="AkamaiGHost" extrainfo="Akamai&apos;s HTTP Acceleration/Mirror service" tunnel="ssl" method="probed" conf="10"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Access Denied"><elem key="title">Access Denied</elem>
+</script><script id="ssl-cert" output="Subject: commonName=facultyappointmentsportal.hms.harvard.edu&#xa;Subject Alternative Name: DNS:facultyappointmentsportal.hms.harvard.edu&#xa;Issuer: commonName=E5/organizationName=Let&apos;s Encrypt/countryName=US&#xa;Public Key type: ec&#xa;Public Key bits: 256&#xa;Signature Algorithm: ecdsa-with-SHA384&#xa;Not valid before: 2024-10-17T01:00:20&#xa;Not valid after:  2025-01-15T01:00:19&#xa;MD5:   c262 cb11 a97a dd0f 02cb 37a5 08c0 5fd1&#xa;SHA-1: abbb 4dca 8892 a587 64f5 b762 728e 160e f054 2bb5"><table key="subject">
+<elem key="commonName">facultyappointmentsportal.hms.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">E5</elem>
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+<elem key="countryName">US</elem>
+</table>
+<table key="pubkey">
+<elem key="type">ec</elem>
+<table key="ecdhparams">
+<table key="curve_params">
+<elem key="curve">prime256v1</elem>
+<elem key="ec_curve_type">namedcurve</elem>
+</table>
+</table>
+<elem key="bits">256</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">9F:A1:DB:43:0B:AF:F5:91:DE:02:AF:1A:54:A1:A6:CB:3A:50:2C:4C</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">9F:2B:5F:CF:3C:21:4F:9D:04:B7:ED:2B:2C:C4:C6:70:8B:D2:D7:0D</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://e5.o.lencr.org&#xa;CA Issuers - URI:http://e5.i.lencr.org/</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:facultyappointmentsportal.hms.harvard.edu</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : CF:11:56:EE:D5:2E:7C:AF:F3:87:5B:D9:69:2E:9B:E9:&#xa;                1A:71:67:4A:B0:17:EC:AC:01:D2:5B:77:CE:CC:3B:08&#xa;    Timestamp : Oct 17 01:58:50.813 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:9C:6C:E9:8C:5A:AA:0C:E7:0A:F2:3D:&#xa;                99:78:EB:1F:67:16:4A:94:CA:20:82:7D:D8:6B:E2:44:&#xa;                40:D5:83:6B:C3:02:21:00:FE:58:81:CF:F3:4B:7F:E9:&#xa;                0D:09:33:57:7E:38:3E:A8:58:46:9D:48:CA:70:42:D2:&#xa;                CF:2D:D5:DF:46:6E:FB:2C&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 7D:59:1E:12:E1:78:2A:7B:1C:61:67:7C:5E:FD:F8:D0:&#xa;                87:5C:14:A0:4E:95:9E:B9:03:2F:D9:0E:8C:2E:79:B8&#xa;    Timestamp : Oct 17 01:58:50.829 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:2B:0C:C5:C5:0C:C8:DD:DD:DA:BB:C8:D8:&#xa;                7C:40:53:3E:E1:5E:49:CC:41:77:45:9C:5B:19:A4:70:&#xa;                6E:3E:BC:E9:02:20:06:1D:EC:65:0B:F9:9C:BD:FB:B7:&#xa;                FE:E2:7C:F5:45:21:F4:2B:4E:64:0F:51:6B:58:E7:A2:&#xa;                BF:77:5E:D3:8D:E0</elem>
+</table>
+</table>
+<elem key="sig_algo">ecdsa-with-SHA384</elem>
+<table key="validity">
+<elem key="notAfter">2025-01-15T01:00:19</elem>
+<elem key="notBefore">2024-10-17T01:00:20</elem>
+</table>
+<elem key="md5">c262cb11a97add0f02cb37a508c05fd1</elem>
+<elem key="sha1">abbb4dca8892a58764f5b762728e160ef0542bb5</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDszCCAzmgAwIBAgISA+PYEnN1hs4vnpUMSCCjx9Y5MAoGCCqGSM49BAMDMDIx&#xa;CzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJF&#xa;NTAeFw0yNDEwMTcwMTAwMjBaFw0yNTAxMTUwMTAwMTlaMDQxMjAwBgNVBAMTKWZh&#xa;Y3VsdHlhcHBvaW50bWVudHNwb3J0YWwuaG1zLmhhcnZhcmQuZWR1MFkwEwYHKoZI&#xa;zj0CAQYIKoZIzj0DAQcDQgAEIFJ/YjeXFUkPGYaELBHkZj7nHbjqkHOqwdsOF45/&#xa;BSH+lDWm1+30O7hPtMOCJ+YhJLHC8glexNd6QaRdy6EWz6OCAiswggInMA4GA1Ud&#xa;DwEB/wQEAwIHgDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0T&#xa;AQH/BAIwADAdBgNVHQ4EFgQUn6HbQwuv9ZHeAq8aVKGmyzpQLEwwHwYDVR0jBBgw&#xa;FoAUnytfzzwhT50Et+0rLMTGcIvS1w0wVQYIKwYBBQUHAQEESTBHMCEGCCsGAQUF&#xa;BzABhhVodHRwOi8vZTUuby5sZW5jci5vcmcwIgYIKwYBBQUHMAKGFmh0dHA6Ly9l&#xa;NS5pLmxlbmNyLm9yZy8wNAYDVR0RBC0wK4IpZmFjdWx0eWFwcG9pbnRtZW50c3Bv&#xa;cnRhbC5obXMuaGFydmFyZC5lZHUwEwYDVR0gBAwwCjAIBgZngQwBAgEwggEEBgor&#xa;BgEEAdZ5AgQCBIH1BIHyAPAAdwDPEVbu1S58r/OHW9lpLpvpGnFnSrAX7KwB0lt3&#xa;zsw7CAAAAZKYMvq9AAAEAwBIMEYCIQCcbOmMWqoM5wryPZl46x9nFkqUyiCCfdhr&#xa;4kRA1YNrwwIhAP5Ygc/zS3/pDQkzV344PqhYRp1IynBC0s8t1d9GbvssAHUAfVke&#xa;EuF4KnscYWd8Xv340IdcFKBOlZ65Ay/ZDowuebgAAAGSmDL6zQAABAMARjBEAiAr&#xa;DMXFDMjd3dq7yNh8QFM+4V5JzEF3RZxbGaRwbj686QIgBh3sZQv5nL37t/7ifPVF&#xa;IfQrTmQPUWtY56K/d17TjeAwCgYIKoZIzj0EAwMDaAAwZQIwcHmZSmIAbGiWbPFN&#xa;Hu2u466wBYwY8ssImWW4h+yVsKY07dphvXpI/iAmwZqmeLmuAjEA0KhfQFj9rDXx&#xa;MrplVYi+q3rxFwUq2zmpqeZogTjH8PR6QLDwHvvy1dQN6CX1U8Om&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+</ports>
+<times srtt="6053" rttvar="2696" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730907155"/>
+<taskend task="NSE" time="1730907155"/>
+<taskbegin task="NSE" time="1730907155"/>
+<taskend task="NSE" time="1730907155"/>
+<taskbegin task="NSE" time="1730907155"/>
+<taskend task="NSE" time="1730907155"/>
+<runstats><finished time="1730907155" timestr="Wed Nov  6 15:32:35 2024" elapsed="19.78" summary="Nmap done at Wed Nov  6 15:32:35 2024; 1 IP address (1 host up) scanned in 19.78 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
