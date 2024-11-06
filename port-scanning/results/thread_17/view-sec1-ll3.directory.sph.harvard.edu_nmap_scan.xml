@@ -17,3 +17,187 @@
 <taskbegin task="Connect Scan" time="1730901410"/>
 <taskend task="Connect Scan" time="1730901417" extrainfo="1000 total ports"/>
 <taskbegin task="Service scan" time="1730901417"/>
+<taskend task="Service scan" time="1730901525" extrainfo="3 services on 1 host"/>
+<taskbegin task="NSE" time="1730901525"/>
+<taskend task="NSE" time="1730901529"/>
+<taskbegin task="NSE" time="1730901529"/>
+<taskend task="NSE" time="1730901530"/>
+<taskbegin task="NSE" time="1730901530"/>
+<taskend task="NSE" time="1730901530"/>
+<host starttime="1730901410" endtime="1730901530"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="134.174.190.126" addrtype="ipv4"/>
+<hostnames>
+<hostname name="view-sec1-ll3.directory.sph.harvard.edu" type="user"/>
+<hostname name="sph-viewsec1ll3.sph.harvard.edu" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="996">
+<extrareasons reason="no-responses" count="996"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="rtsp" servicefp="SF-Port80-TCP:V=7.80%I=7%D=11/6%Time=672B75AF%P=x86_64-pc-linux-gnu%r(GetRequest,6B,&quot;HTTP/1\.0\x20400\x20Bad\x20Request\r\ncontent-length:\x2034\r\ncontent-type:\x20text/html\r\n\r\nNeed\x20https\x20protocol\x20for\x20connection&quot;)%r(HTTPOptions,6B,&quot;HTTP/1\.0\x20400\x20Bad\x20Request\r\ncontent-length:\x2034\r\ncontent-type:\x20text/html\r\n\r\nNeed\x20https\x20protocol\x20for\x20connection&quot;)%r(RTSPRequest,6B,&quot;RTSP/1\.0\x20400\x20Bad\x20Request\r\ncontent-length:\x2034\r\ncontent-type:\x20text/html\r\n\r\nNeed\x20https\x20protocol\x20for\x20connection&quot;)%r(FourOhFourRequest,6B,&quot;HTTP/1\.0\x20400\x20Bad\x20Request\r\ncontent-length:\x2034\r\ncontent-type:\x20text/html\r\n\r\nNeed\x20https\x20protocol\x20for\x20connection&quot;)%r(SIPOptions,6A,&quot;SIP/2\.0\x20400\x20Bad\x20Request\r\ncontent-length:\x2034\r\ncontent-type:\x20text/html\r\n\r\nNeed\x20https\x20protocol\x20for\x20connection&quot;);" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  FourOhFourRequest, GetRequest, HTTPOptions: &#xa;    HTTP/1.0 400 Bad Request&#xa;    content-length: 34&#xa;    content-type: text/html&#xa;    Need https protocol for connection&#xa;  RTSPRequest: &#xa;    RTSP/1.0 400 Bad Request&#xa;    content-length: 34&#xa;    content-type: text/html&#xa;    Need https protocol for connection&#xa;  SIPOptions: &#xa;    SIP/2.0 400 Bad Request&#xa;    content-length: 34&#xa;    content-type: text/html&#xa;    Need https protocol for connection"><elem key="FourOhFourRequest, GetRequest, HTTPOptions">&#xa;    HTTP/1.0 400 Bad Request&#xa;    content-length: 34&#xa;    content-type: text/html&#xa;    Need https protocol for connection</elem>
+<elem key="RTSPRequest">&#xa;    RTSP/1.0 400 Bad Request&#xa;    content-length: 34&#xa;    content-type: text/html&#xa;    Need https protocol for connection</elem>
+<elem key="SIPOptions">&#xa;    SIP/2.0 400 Bad Request&#xa;    content-length: 34&#xa;    content-type: text/html&#xa;    Need https protocol for connection</elem>
+</script><script id="http-title" output="Site doesn&apos;t have a title (text/html)."></script><script id="rtsp-methods" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="tcp" portid="113"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ident" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" servicefp="SF-Port443-TCP:V=7.80%T=SSL%I=7%D=11/6%Time=672B75B5%P=x86_64-pc-linux-gnu%r(GetRequest,1BD,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\ncontent-length:\x2029\r\nconnection:\x20close\r\nX-XSS-Protection:\x201;\x20mode=block\r\nStrict-Transport-Security:\x20max-age=63072000;\x20includeSubdomains;\x20preload\r\nX-Frame-Options:\x20SAMEORIGIN\r\nContent-Security-Policy:\x20default-src\x20&apos;self&apos;;font-src\x20&apos;self&apos;\x20data:;script-src\x20&apos;self&apos;\x20&apos;unsafe-inline&apos;\x20&apos;unsafe-eval&apos;\x20data:;style-src\x20&apos;self&apos;\x20&apos;unsafe-inline&apos;;img-src\x20&apos;self&apos;\x20blob:\x20data:\r\nX-Content-Type-Options:\x20nosniff\r\n\r\nError\x20in\x20serving\x20the\x20request\.&quot;)%r(HTTPOptions,1BD,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\ncontent-length:\x2029\r\nconnection:\x20close\r\nX-XSS-Protection:\x201;\x20mode=block\r\nStrict-Transport-Security:\x20max-age=63072000;\x20includeSubdomains;\x20preload\r\nX-Frame-Options:\x20SAMEORIGIN\r\nContent-Security-Policy:\x20default-src\x20&apos;self&apos;;font-src\x20&apos;self&apos;\x20data:;script-src\x20&apos;self&apos;\x20&apos;unsafe-inline&apos;\x20&apos;unsafe-eval&apos;\x20data:;style-src\x20&apos;self&apos;\x20&apos;unsafe-inline&apos;;img-src\x20&apos;self&apos;\x20blob:\x20data:\r\nX-Content-Type-Options:\x20nosniff\r\n\r\nError\x20in\x20serving\x20the\x20request\.&quot;)%r(FourOhFourRequest,1BD,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\ncontent-length:\x2029\r\nconnection:\x20close\r\nX-XSS-Protection:\x201;\x20mode=block\r\nStrict-Transport-Security:\x20max-age=63072000;\x20includeSubdomains;\x20preload\r\nX-Frame-Options:\x20SAMEORIGIN\r\nContent-Security-Policy:\x20default-src\x20&apos;self&apos;;font-src\x20&apos;self&apos;\x20data:;script-src\x20&apos;self&apos;\x20&apos;unsafe-inline&apos;\x20&apos;unsafe-eval&apos;\x20data:;style-src\x20&apos;self&apos;\x20&apos;unsafe-inline&apos;;img-src\x20&apos;self&apos;\x20blob:\x20data:\r\nX-Content-Type-Options:\x20nosniff\r\n\r\nError\x20in\x20serving\x20the\x20request\.&quot;)%r(RTSPRequest,1BD,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\ncontent-length:\x2029\r\nconnection:\x20close\r\nX-XSS-Protection:\x201;\x20mode=block\r\nStrict-Transport-Security:\x20max-age=63072000;\x20includeSubdomains;\x20preload\r\nX-Frame-Options:\x20SAMEORIGIN\r\nContent-Security-Policy:\x20default-src\x20&apos;self&apos;;font-src\x20&apos;self&apos;\x20data:;script-src\x20&apos;self&apos;\x20&apos;unsafe-inline&apos;\x20&apos;unsafe-eval&apos;\x20data:;style-src\x20&apos;self&apos;\x20&apos;unsafe-inline&apos;;img-src\x20&apos;self&apos;\x20blob:\x20data:\r\nX-Content-Type-Options:\x20nosniff\r\n\r\nError\x20in\x20serving\x20the\x20request\.&quot;);" tunnel="ssl" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  FourOhFourRequest, GetRequest, HTTPOptions, RTSPRequest: &#xa;    HTTP/1.1 400 Bad Request&#xa;    content-length: 29&#xa;    connection: close&#xa;    X-XSS-Protection: 1; mode=block&#xa;    Strict-Transport-Security: max-age=63072000; includeSubdomains; preload&#xa;    X-Frame-Options: SAMEORIGIN&#xa;    Content-Security-Policy: default-src &apos;self&apos;;font-src &apos;self&apos; data:;script-src &apos;self&apos; &apos;unsafe-inline&apos; &apos;unsafe-eval&apos; data:;style-src &apos;self&apos; &apos;unsafe-inline&apos;;img-src &apos;self&apos; blob: data:&#xa;    X-Content-Type-Options: nosniff&#xa;    Error in serving the request."><elem key="FourOhFourRequest, GetRequest, HTTPOptions, RTSPRequest">&#xa;    HTTP/1.1 400 Bad Request&#xa;    content-length: 29&#xa;    connection: close&#xa;    X-XSS-Protection: 1; mode=block&#xa;    Strict-Transport-Security: max-age=63072000; includeSubdomains; preload&#xa;    X-Frame-Options: SAMEORIGIN&#xa;    Content-Security-Policy: default-src &apos;self&apos;;font-src &apos;self&apos; data:;script-src &apos;self&apos; &apos;unsafe-inline&apos; &apos;unsafe-eval&apos; data:;style-src &apos;self&apos; &apos;unsafe-inline&apos;;img-src &apos;self&apos; blob: data:&#xa;    X-Content-Type-Options: nosniff&#xa;    Error in serving the request.</elem>
+</script><script id="http-favicon" output="Unknown favicon MD5: C6ACEDAFF906029FC5455D9EC52C7F42"/><script id="http-title" output="Site doesn&apos;t have a title."></script><script id="ssl-cert" output="Subject: commonName=desktop.sph.harvard.edu/organizationName=President and Fellows of Harvard College/stateOrProvinceName=Massachusetts/countryName=US&#xa;Subject Alternative Name: DNS:desktop.sph.harvard.edu, DNS:desktop-int.sph.harvard.edu, DNS:sph-view1dr.sph.harvard.edu, DNS:sph-view1ll3.sph.harvard.edu, DNS:sph-viewcompdr.sph.harvard.edu, DNS:sph-viewcompll3.sph.harvard.edu, DNS:sph-viewint1dr.sph.harvard.edu, DNS:sph-viewint1ll3.sph.harvard.edu, DNS:sph-viewint2ll3.sph.harvard.edu, DNS:sph-viewsec1dr.sph.harvard.edu, DNS:sph-viewsec1ll3.sph.harvard.edu, DNS:sph-viewsec2ll3.sph.harvard.edu, DNS:sph-viewvcdr.sph.harvard.edu, DNS:sph-viewvcll3.sph.harvard.edu&#xa;Issuer: commonName=InCommon RSA Server CA 2/organizationName=Internet2/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha384WithRSAEncryption&#xa;Not valid before: 2024-08-17T00:00:00&#xa;Not valid after:  2025-08-17T23:59:59&#xa;MD5:   93e0 282c cf0f 4b8e c94e b2ae a8e3 32c0&#xa;SHA-1: 7559 4bab 5baa 2d77 d44d e9ce c5fb 5463 1244 4d93"><table key="subject">
+<elem key="commonName">desktop.sph.harvard.edu</elem>
+<elem key="countryName">US</elem>
+<elem key="stateOrProvinceName">Massachusetts</elem>
+<elem key="organizationName">President and Fellows of Harvard College</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">InCommon RSA Server CA 2</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">Internet2</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">2048</elem>
+<elem key="exponent">BIGNUM: 0x557376ef57f8</elem>
+<elem key="type">rsa</elem>
+<elem key="modulus">BIGNUM: 0x5573769b4878</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">EF:4C:00:92:A6:FB:76:2E:5E:95:E2:C9:5F:87:1B:19:D5:4D:E2:D9</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">0E:90:30:EF:25:BF:6D:93:D4:E4:71:FA:EE:65:CD:3F:AC:9E:BE:0F</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+</table>
+<table>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">Policy: 1.3.6.1.4.1.6449.1.2.2.103&#xa;  CPS: https://sectigo.com/CPS&#xa;Policy: 2.23.140.1.2.2</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Full Name:&#xa;  URI:http://crl.sectigo.com/InCommonRSAServerCA2.crl</elem>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+</table>
+<table>
+<elem key="value">CA Issuers - URI:http://crt.sectigo.com/InCommonRSAServerCA2.crt&#xa;OCSP - URI:http://ocsp.sectigo.com</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : DD:DC:CA:34:95:D7:E1:16:05:E7:95:32:FA:C7:9F:F8:&#xa;                3D:1C:50:DF:DB:00:3A:14:12:76:0A:2C:AC:BB:C8:2A&#xa;    Timestamp : Aug 17 00:46:31.270 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:CF:88:EC:19:6F:D8:B2:B7:1E:24:CB:&#xa;                F7:85:B8:62:C9:D4:18:80:F6:8B:85:DD:FB:3E:CF:84:&#xa;                2C:AB:86:A7:23:02:20:68:3E:40:93:8F:82:AA:E7:B7:&#xa;                2F:28:9C:64:9D:61:2E:87:2F:E6:8F:DD:41:DE:BD:C4:&#xa;                4D:60:DB:69:3B:FF:85&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 0D:E1:F2:30:2B:D3:0D:C1:40:62:12:09:EA:55:2E:FC:&#xa;                47:74:7C:B1:D7:E9:30:EF:0E:42:1E:B4:7E:4E:AA:34&#xa;    Timestamp : Aug 17 00:46:31.197 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:22:0C:B5:14:A0:AE:AE:D4:B4:79:75:6C:&#xa;                45:2F:FE:FF:7B:5C:65:CF:C0:A0:A5:09:B9:D9:EA:4E:&#xa;                05:01:17:55:02:20:36:F1:D6:BB:1C:4F:C8:51:3D:45:&#xa;                E9:FD:98:34:EF:40:17:C3:D4:DE:B9:70:9C:A5:45:48:&#xa;                4C:B8:F3:18:F3:E7&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 12:F1:4E:34:BD:53:72:4C:84:06:19:C3:8F:3F:7A:13:&#xa;                F8:E7:B5:62:87:88:9C:6D:30:05:84:EB:E5:86:26:3A&#xa;    Timestamp : Aug 17 00:46:31.156 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:4A:4A:5F:D1:A0:A7:9F:ED:59:50:9B:12:&#xa;                F2:C5:B9:52:D9:DD:A7:C4:AF:00:9E:21:32:F9:39:34:&#xa;                E5:64:F2:99:02:21:00:8C:11:78:DA:64:07:F9:12:1F:&#xa;                59:43:5E:27:C2:CA:43:61:24:D8:6B:38:0C:CE:0D:D5:&#xa;                03:BB:63:5B:A9:85:F0</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+<table>
+<elem key="value">DNS:desktop.sph.harvard.edu, DNS:desktop-int.sph.harvard.edu, DNS:sph-view1dr.sph.harvard.edu, DNS:sph-view1ll3.sph.harvard.edu, DNS:sph-viewcompdr.sph.harvard.edu, DNS:sph-viewcompll3.sph.harvard.edu, DNS:sph-viewint1dr.sph.harvard.edu, DNS:sph-viewint1ll3.sph.harvard.edu, DNS:sph-viewint2ll3.sph.harvard.edu, DNS:sph-viewsec1dr.sph.harvard.edu, DNS:sph-viewsec1ll3.sph.harvard.edu, DNS:sph-viewsec2ll3.sph.harvard.edu, DNS:sph-viewvcdr.sph.harvard.edu, DNS:sph-viewvcll3.sph.harvard.edu</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+</table>
+<elem key="sig_algo">sha384WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-08-17T00:00:00</elem>
+<elem key="notAfter">2025-08-17T23:59:59</elem>
+</table>
+<elem key="md5">93e0282ccf0f4b8ec94eb2aea8e332c0</elem>
+<elem key="sha1">75594bab5baa2d77d44de9cec5fb546312444d93</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIIkDCCBvigAwIBAgIRAJbjcVbxcjpREA+Xuaxt+RUwDQYJKoZIhvcNAQEMBQAw&#xa;RDELMAkGA1UEBhMCVVMxEjAQBgNVBAoTCUludGVybmV0MjEhMB8GA1UEAxMYSW5D&#xa;b21tb24gUlNBIFNlcnZlciBDQSAyMB4XDTI0MDgxNzAwMDAwMFoXDTI1MDgxNzIz&#xa;NTk1OVowejELMAkGA1UEBhMCVVMxFjAUBgNVBAgTDU1hc3NhY2h1c2V0dHMxMTAv&#xa;BgNVBAoTKFByZXNpZGVudCBhbmQgRmVsbG93cyBvZiBIYXJ2YXJkIENvbGxlZ2Ux&#xa;IDAeBgNVBAMTF2Rlc2t0b3Auc3BoLmhhcnZhcmQuZWR1MIIBIjANBgkqhkiG9w0B&#xa;AQEFAAOCAQ8AMIIBCgKCAQEAr6ahQz3zunwEQofCGe6K19Ko4l5LNw1ZFpuCKhi+&#xa;wvkDBWBOHtXFzcmAuHDnsDN9+bxKRsnJeDbeWv9YNnk14DMNvZCbDASLaAIiw003&#xa;j+BQpO5TokBFhKOHAGdTnRZhOXQOjbR14oO/3P0CYSj5c4JTNMDgi8E6DffMO0Ve&#xa;SnLh17j9qZZbf+lCZgNhl8RVu2XYeI3ICAwbVrygTyDZeWFaYy1juSz7vQE/tdCE&#xa;bDMvE8WZCROI+cwkUHuO2+p9/4GAQwClWcnf9p70gl2o/W042Qk8tjpwM8vrseFK&#xa;Q6qV5ArL0wPcwBUxG8JJEnnHGBRfxWycJ6rPG09Ff5RXJwIDAQABo4IExTCCBMEw&#xa;HwYDVR0jBBgwFoAU70wAkqb7di5eleLJX4cbGdVN4tkwHQYDVR0OBBYEFA6QMO8l&#xa;v22T1ORx+u5lzT+snr4PMA4GA1UdDwEB/wQEAwIFoDAMBgNVHRMBAf8EAjAAMB0G&#xa;A1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjBJBgNVHSAEQjBAMDQGCysGAQQB&#xa;sjEBAgJnMCUwIwYIKwYBBQUHAgEWF2h0dHBzOi8vc2VjdGlnby5jb20vQ1BTMAgG&#xa;BmeBDAECAjBABgNVHR8EOTA3MDWgM6Axhi9odHRwOi8vY3JsLnNlY3RpZ28uY29t&#xa;L0luQ29tbW9uUlNBU2VydmVyQ0EyLmNybDBwBggrBgEFBQcBAQRkMGIwOwYIKwYB&#xa;BQUHMAKGL2h0dHA6Ly9jcnQuc2VjdGlnby5jb20vSW5Db21tb25SU0FTZXJ2ZXJD&#xa;QTIuY3J0MCMGCCsGAQUFBzABhhdodHRwOi8vb2NzcC5zZWN0aWdvLmNvbTCCAX0G&#xa;CisGAQQB1nkCBAIEggFtBIIBaQFnAHYA3dzKNJXX4RYF55Uy+sef+D0cUN/bADoU&#xa;EnYKLKy7yCoAAAGRXczXZgAABAMARzBFAiEAz4jsGW/YsrceJMv3hbhiydQYgPaL&#xa;hd37Ps+ELKuGpyMCIGg+QJOPgqrnty8onGSdYS6HL+aP3UHevcRNYNtpO/+FAHUA&#xa;DeHyMCvTDcFAYhIJ6lUu/Ed0fLHX6TDvDkIetH5OqjQAAAGRXczXHQAABAMARjBE&#xa;AiAiDLUUoK6u1LR5dWxFL/7/e1xlz8CgpQm52epOBQEXVQIgNvHWuxxPyFE9Ren9&#xa;mDTvQBfD1N65cJylRUhMuPMY8+cAdgAS8U40vVNyTIQGGcOPP3oT+Oe1YoeInG0w&#xa;BYTr5YYmOgAAAZFdzNb0AAAEAwBHMEUCIEpKX9Ggp5/tWVCbEvLFuVLZ3afErwCe&#xa;ITL5OTTlZPKZAiEAjBF42mQH+RIfWUNeJ8LKQ2Ek2Gs4DM4N1QO7Y1uphfAwggHA&#xa;BgNVHREEggG3MIIBs4IXZGVza3RvcC5zcGguaGFydmFyZC5lZHWCG2Rlc2t0b3At&#xa;aW50LnNwaC5oYXJ2YXJkLmVkdYIbc3BoLXZpZXcxZHIuc3BoLmhhcnZhcmQuZWR1&#xa;ghxzcGgtdmlldzFsbDMuc3BoLmhhcnZhcmQuZWR1gh5zcGgtdmlld2NvbXBkci5z&#xa;cGguaGFydmFyZC5lZHWCH3NwaC12aWV3Y29tcGxsMy5zcGguaGFydmFyZC5lZHWC&#xa;HnNwaC12aWV3aW50MWRyLnNwaC5oYXJ2YXJkLmVkdYIfc3BoLXZpZXdpbnQxbGwz&#xa;LnNwaC5oYXJ2YXJkLmVkdYIfc3BoLXZpZXdpbnQybGwzLnNwaC5oYXJ2YXJkLmVk&#xa;dYIec3BoLXZpZXdzZWMxZHIuc3BoLmhhcnZhcmQuZWR1gh9zcGgtdmlld3NlYzFs&#xa;bDMuc3BoLmhhcnZhcmQuZWR1gh9zcGgtdmlld3NlYzJsbDMuc3BoLmhhcnZhcmQu&#xa;ZWR1ghxzcGgtdmlld3ZjZHIuc3BoLmhhcnZhcmQuZWR1gh1zcGgtdmlld3ZjbGwz&#xa;LnNwaC5oYXJ2YXJkLmVkdTANBgkqhkiG9w0BAQwFAAOCAYEAFCE1yjGGWtSCo26C&#xa;qltLYb4CN7EKYhEv+UaneokrxKuyu4qakNFPb1fbg3xiCpfGfeMppG1c77Ghvm7x&#xa;Ie7X7fDX68jLelgYv/AgAXl1MbxagwtwAzU3Dj2wng46NkJU0/KL+hVLhnFU4E/z&#xa;AjD257B2Qxqb+O8GNVKm1TS8kX9w/L8VGoZQfu09VepFLcH0S7/GVuTI3yrpQRBn&#xa;WQmURcZQDWvrDrG++Cz8GSXnGKgMcMaWXJQFMc3LCZGNlQeA7nc1YpVzNKSn0XWk&#xa;pPO8zAAEKzOlmEb0Lqi8XqixYMcTi98zlwKx3SWMIRVqWAB7ERevHTbru5+LoBBy&#xa;srIFYKqkr7cIfvJxoa7BErysp2k126WkVPsjZ+yIhnOMOlxX6WGS21IR+pUVEDke&#xa;eOkVJ7viEqXroQd/Mv/H+Y3AfXm0fEcFSpEUHDhvV5B4rhyn4R4wDMA20L+U9WqO&#xa;DQ6M+YKqfSQpzD1T7cRBhLxk4QhiXr3j/FYINR2BhAdHLVwx&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="8443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https-alt" servicefp="SF-Port8443-TCP:V=7.80%T=SSL%I=7%D=11/6%Time=672B75B5%P=x86_64-pc-linux-gnu%r(GetRequest,67,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\nDate:\x20Wed,\x2006\x20Nov\x202024\x2013:57:09\x20GMT\r\n\r\nMissing\x20Host\x20header&quot;)%r(HTTPOptions,67,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\nDate:\x20Wed,\x2006\x20Nov\x202024\x2013:57:09\x20GMT\r\n\r\nMissing\x20Host\x20header&quot;)%r(FourOhFourRequest,67,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\nDate:\x20Wed,\x2006\x20Nov\x202024\x2013:57:10\x20GMT\r\n\r\nMissing\x20Host\x20header&quot;)%r(RTSPRequest,67,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\nDate:\x20Wed,\x2006\x20Nov\x202024\x2013:57:15\x20GMT\r\n\r\nMissing\x20Host\x20header&quot;)%r(RPCCheck,2F,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n&quot;)%r(TerminalServer,2F,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n&quot;);" tunnel="ssl" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  FourOhFourRequest: &#xa;    HTTP/1.1 400 Bad Request&#xa;    Connection: close&#xa;    Date: Wed, 06 Nov 2024 13:57:10 GMT&#xa;    Missing Host header&#xa;  GetRequest, HTTPOptions: &#xa;    HTTP/1.1 400 Bad Request&#xa;    Connection: close&#xa;    Date: Wed, 06 Nov 2024 13:57:09 GMT&#xa;    Missing Host header&#xa;  RPCCheck, TerminalServer: &#xa;    HTTP/1.1 400 Bad Request&#xa;    Connection: close&#xa;  RTSPRequest: &#xa;    HTTP/1.1 400 Bad Request&#xa;    Connection: close&#xa;    Date: Wed, 06 Nov 2024 13:57:15 GMT&#xa;    Missing Host header"><elem key="FourOhFourRequest">&#xa;    HTTP/1.1 400 Bad Request&#xa;    Connection: close&#xa;    Date: Wed, 06 Nov 2024 13:57:10 GMT&#xa;    Missing Host header</elem>
+<elem key="GetRequest, HTTPOptions">&#xa;    HTTP/1.1 400 Bad Request&#xa;    Connection: close&#xa;    Date: Wed, 06 Nov 2024 13:57:09 GMT&#xa;    Missing Host header</elem>
+<elem key="RPCCheck, TerminalServer">&#xa;    HTTP/1.1 400 Bad Request&#xa;    Connection: close</elem>
+<elem key="RTSPRequest">&#xa;    HTTP/1.1 400 Bad Request&#xa;    Connection: close&#xa;    Date: Wed, 06 Nov 2024 13:57:15 GMT&#xa;    Missing Host header</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Site doesn&apos;t have a title."></script><script id="ssl-cert" output="Subject: commonName=desktop.sph.harvard.edu/organizationName=President and Fellows of Harvard College/stateOrProvinceName=Massachusetts/countryName=US&#xa;Subject Alternative Name: DNS:desktop.sph.harvard.edu, DNS:desktop-int.sph.harvard.edu, DNS:sph-view1dr.sph.harvard.edu, DNS:sph-view1ll3.sph.harvard.edu, DNS:sph-viewcompdr.sph.harvard.edu, DNS:sph-viewcompll3.sph.harvard.edu, DNS:sph-viewint1dr.sph.harvard.edu, DNS:sph-viewint1ll3.sph.harvard.edu, DNS:sph-viewint2ll3.sph.harvard.edu, DNS:sph-viewsec1dr.sph.harvard.edu, DNS:sph-viewsec1ll3.sph.harvard.edu, DNS:sph-viewsec2ll3.sph.harvard.edu, DNS:sph-viewvcdr.sph.harvard.edu, DNS:sph-viewvcll3.sph.harvard.edu&#xa;Issuer: commonName=InCommon RSA Server CA 2/organizationName=Internet2/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha384WithRSAEncryption&#xa;Not valid before: 2024-08-17T00:00:00&#xa;Not valid after:  2025-08-17T23:59:59&#xa;MD5:   93e0 282c cf0f 4b8e c94e b2ae a8e3 32c0&#xa;SHA-1: 7559 4bab 5baa 2d77 d44d e9ce c5fb 5463 1244 4d93"><table key="subject">
+<elem key="commonName">desktop.sph.harvard.edu</elem>
+<elem key="countryName">US</elem>
+<elem key="stateOrProvinceName">Massachusetts</elem>
+<elem key="organizationName">President and Fellows of Harvard College</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">InCommon RSA Server CA 2</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">Internet2</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">2048</elem>
+<elem key="exponent">BIGNUM: 0x557376ac3c58</elem>
+<elem key="type">rsa</elem>
+<elem key="modulus">BIGNUM: 0x557376dbff08</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">EF:4C:00:92:A6:FB:76:2E:5E:95:E2:C9:5F:87:1B:19:D5:4D:E2:D9</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">0E:90:30:EF:25:BF:6D:93:D4:E4:71:FA:EE:65:CD:3F:AC:9E:BE:0F</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+</table>
+<table>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">Policy: 1.3.6.1.4.1.6449.1.2.2.103&#xa;  CPS: https://sectigo.com/CPS&#xa;Policy: 2.23.140.1.2.2</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Full Name:&#xa;  URI:http://crl.sectigo.com/InCommonRSAServerCA2.crl</elem>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+</table>
+<table>
+<elem key="value">CA Issuers - URI:http://crt.sectigo.com/InCommonRSAServerCA2.crt&#xa;OCSP - URI:http://ocsp.sectigo.com</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : DD:DC:CA:34:95:D7:E1:16:05:E7:95:32:FA:C7:9F:F8:&#xa;                3D:1C:50:DF:DB:00:3A:14:12:76:0A:2C:AC:BB:C8:2A&#xa;    Timestamp : Aug 17 00:46:31.270 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:CF:88:EC:19:6F:D8:B2:B7:1E:24:CB:&#xa;                F7:85:B8:62:C9:D4:18:80:F6:8B:85:DD:FB:3E:CF:84:&#xa;                2C:AB:86:A7:23:02:20:68:3E:40:93:8F:82:AA:E7:B7:&#xa;                2F:28:9C:64:9D:61:2E:87:2F:E6:8F:DD:41:DE:BD:C4:&#xa;                4D:60:DB:69:3B:FF:85&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 0D:E1:F2:30:2B:D3:0D:C1:40:62:12:09:EA:55:2E:FC:&#xa;                47:74:7C:B1:D7:E9:30:EF:0E:42:1E:B4:7E:4E:AA:34&#xa;    Timestamp : Aug 17 00:46:31.197 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:22:0C:B5:14:A0:AE:AE:D4:B4:79:75:6C:&#xa;                45:2F:FE:FF:7B:5C:65:CF:C0:A0:A5:09:B9:D9:EA:4E:&#xa;                05:01:17:55:02:20:36:F1:D6:BB:1C:4F:C8:51:3D:45:&#xa;                E9:FD:98:34:EF:40:17:C3:D4:DE:B9:70:9C:A5:45:48:&#xa;                4C:B8:F3:18:F3:E7&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 12:F1:4E:34:BD:53:72:4C:84:06:19:C3:8F:3F:7A:13:&#xa;                F8:E7:B5:62:87:88:9C:6D:30:05:84:EB:E5:86:26:3A&#xa;    Timestamp : Aug 17 00:46:31.156 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:4A:4A:5F:D1:A0:A7:9F:ED:59:50:9B:12:&#xa;                F2:C5:B9:52:D9:DD:A7:C4:AF:00:9E:21:32:F9:39:34:&#xa;                E5:64:F2:99:02:21:00:8C:11:78:DA:64:07:F9:12:1F:&#xa;                59:43:5E:27:C2:CA:43:61:24:D8:6B:38:0C:CE:0D:D5:&#xa;                03:BB:63:5B:A9:85:F0</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+<table>
+<elem key="value">DNS:desktop.sph.harvard.edu, DNS:desktop-int.sph.harvard.edu, DNS:sph-view1dr.sph.harvard.edu, DNS:sph-view1ll3.sph.harvard.edu, DNS:sph-viewcompdr.sph.harvard.edu, DNS:sph-viewcompll3.sph.harvard.edu, DNS:sph-viewint1dr.sph.harvard.edu, DNS:sph-viewint1ll3.sph.harvard.edu, DNS:sph-viewint2ll3.sph.harvard.edu, DNS:sph-viewsec1dr.sph.harvard.edu, DNS:sph-viewsec1ll3.sph.harvard.edu, DNS:sph-viewsec2ll3.sph.harvard.edu, DNS:sph-viewvcdr.sph.harvard.edu, DNS:sph-viewvcll3.sph.harvard.edu</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+</table>
+<elem key="sig_algo">sha384WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-08-17T00:00:00</elem>
+<elem key="notAfter">2025-08-17T23:59:59</elem>
+</table>
+<elem key="md5">93e0282ccf0f4b8ec94eb2aea8e332c0</elem>
+<elem key="sha1">75594bab5baa2d77d44de9cec5fb546312444d93</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIIkDCCBvigAwIBAgIRAJbjcVbxcjpREA+Xuaxt+RUwDQYJKoZIhvcNAQEMBQAw&#xa;RDELMAkGA1UEBhMCVVMxEjAQBgNVBAoTCUludGVybmV0MjEhMB8GA1UEAxMYSW5D&#xa;b21tb24gUlNBIFNlcnZlciBDQSAyMB4XDTI0MDgxNzAwMDAwMFoXDTI1MDgxNzIz&#xa;NTk1OVowejELMAkGA1UEBhMCVVMxFjAUBgNVBAgTDU1hc3NhY2h1c2V0dHMxMTAv&#xa;BgNVBAoTKFByZXNpZGVudCBhbmQgRmVsbG93cyBvZiBIYXJ2YXJkIENvbGxlZ2Ux&#xa;IDAeBgNVBAMTF2Rlc2t0b3Auc3BoLmhhcnZhcmQuZWR1MIIBIjANBgkqhkiG9w0B&#xa;AQEFAAOCAQ8AMIIBCgKCAQEAr6ahQz3zunwEQofCGe6K19Ko4l5LNw1ZFpuCKhi+&#xa;wvkDBWBOHtXFzcmAuHDnsDN9+bxKRsnJeDbeWv9YNnk14DMNvZCbDASLaAIiw003&#xa;j+BQpO5TokBFhKOHAGdTnRZhOXQOjbR14oO/3P0CYSj5c4JTNMDgi8E6DffMO0Ve&#xa;SnLh17j9qZZbf+lCZgNhl8RVu2XYeI3ICAwbVrygTyDZeWFaYy1juSz7vQE/tdCE&#xa;bDMvE8WZCROI+cwkUHuO2+p9/4GAQwClWcnf9p70gl2o/W042Qk8tjpwM8vrseFK&#xa;Q6qV5ArL0wPcwBUxG8JJEnnHGBRfxWycJ6rPG09Ff5RXJwIDAQABo4IExTCCBMEw&#xa;HwYDVR0jBBgwFoAU70wAkqb7di5eleLJX4cbGdVN4tkwHQYDVR0OBBYEFA6QMO8l&#xa;v22T1ORx+u5lzT+snr4PMA4GA1UdDwEB/wQEAwIFoDAMBgNVHRMBAf8EAjAAMB0G&#xa;A1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjBJBgNVHSAEQjBAMDQGCysGAQQB&#xa;sjEBAgJnMCUwIwYIKwYBBQUHAgEWF2h0dHBzOi8vc2VjdGlnby5jb20vQ1BTMAgG&#xa;BmeBDAECAjBABgNVHR8EOTA3MDWgM6Axhi9odHRwOi8vY3JsLnNlY3RpZ28uY29t&#xa;L0luQ29tbW9uUlNBU2VydmVyQ0EyLmNybDBwBggrBgEFBQcBAQRkMGIwOwYIKwYB&#xa;BQUHMAKGL2h0dHA6Ly9jcnQuc2VjdGlnby5jb20vSW5Db21tb25SU0FTZXJ2ZXJD&#xa;QTIuY3J0MCMGCCsGAQUFBzABhhdodHRwOi8vb2NzcC5zZWN0aWdvLmNvbTCCAX0G&#xa;CisGAQQB1nkCBAIEggFtBIIBaQFnAHYA3dzKNJXX4RYF55Uy+sef+D0cUN/bADoU&#xa;EnYKLKy7yCoAAAGRXczXZgAABAMARzBFAiEAz4jsGW/YsrceJMv3hbhiydQYgPaL&#xa;hd37Ps+ELKuGpyMCIGg+QJOPgqrnty8onGSdYS6HL+aP3UHevcRNYNtpO/+FAHUA&#xa;DeHyMCvTDcFAYhIJ6lUu/Ed0fLHX6TDvDkIetH5OqjQAAAGRXczXHQAABAMARjBE&#xa;AiAiDLUUoK6u1LR5dWxFL/7/e1xlz8CgpQm52epOBQEXVQIgNvHWuxxPyFE9Ren9&#xa;mDTvQBfD1N65cJylRUhMuPMY8+cAdgAS8U40vVNyTIQGGcOPP3oT+Oe1YoeInG0w&#xa;BYTr5YYmOgAAAZFdzNb0AAAEAwBHMEUCIEpKX9Ggp5/tWVCbEvLFuVLZ3afErwCe&#xa;ITL5OTTlZPKZAiEAjBF42mQH+RIfWUNeJ8LKQ2Ek2Gs4DM4N1QO7Y1uphfAwggHA&#xa;BgNVHREEggG3MIIBs4IXZGVza3RvcC5zcGguaGFydmFyZC5lZHWCG2Rlc2t0b3At&#xa;aW50LnNwaC5oYXJ2YXJkLmVkdYIbc3BoLXZpZXcxZHIuc3BoLmhhcnZhcmQuZWR1&#xa;ghxzcGgtdmlldzFsbDMuc3BoLmhhcnZhcmQuZWR1gh5zcGgtdmlld2NvbXBkci5z&#xa;cGguaGFydmFyZC5lZHWCH3NwaC12aWV3Y29tcGxsMy5zcGguaGFydmFyZC5lZHWC&#xa;HnNwaC12aWV3aW50MWRyLnNwaC5oYXJ2YXJkLmVkdYIfc3BoLXZpZXdpbnQxbGwz&#xa;LnNwaC5oYXJ2YXJkLmVkdYIfc3BoLXZpZXdpbnQybGwzLnNwaC5oYXJ2YXJkLmVk&#xa;dYIec3BoLXZpZXdzZWMxZHIuc3BoLmhhcnZhcmQuZWR1gh9zcGgtdmlld3NlYzFs&#xa;bDMuc3BoLmhhcnZhcmQuZWR1gh9zcGgtdmlld3NlYzJsbDMuc3BoLmhhcnZhcmQu&#xa;ZWR1ghxzcGgtdmlld3ZjZHIuc3BoLmhhcnZhcmQuZWR1gh1zcGgtdmlld3ZjbGwz&#xa;LnNwaC5oYXJ2YXJkLmVkdTANBgkqhkiG9w0BAQwFAAOCAYEAFCE1yjGGWtSCo26C&#xa;qltLYb4CN7EKYhEv+UaneokrxKuyu4qakNFPb1fbg3xiCpfGfeMppG1c77Ghvm7x&#xa;Ie7X7fDX68jLelgYv/AgAXl1MbxagwtwAzU3Dj2wng46NkJU0/KL+hVLhnFU4E/z&#xa;AjD257B2Qxqb+O8GNVKm1TS8kX9w/L8VGoZQfu09VepFLcH0S7/GVuTI3yrpQRBn&#xa;WQmURcZQDWvrDrG++Cz8GSXnGKgMcMaWXJQFMc3LCZGNlQeA7nc1YpVzNKSn0XWk&#xa;pPO8zAAEKzOlmEb0Lqi8XqixYMcTi98zlwKx3SWMIRVqWAB7ERevHTbru5+LoBBy&#xa;srIFYKqkr7cIfvJxoa7BErysp2k126WkVPsjZ+yIhnOMOlxX6WGS21IR+pUVEDke&#xa;eOkVJ7viEqXroQd/Mv/H+Y3AfXm0fEcFSpEUHDhvV5B4rhyn4R4wDMA20L+U9WqO&#xa;DQ6M+YKqfSQpzD1T7cRBhLxk4QhiXr3j/FYINR2BhAdHLVwx&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+</ports>
+<times srtt="76075" rttvar="15983" to="140007"/>
+</host>
+<taskbegin task="NSE" time="1730901530"/>
+<taskend task="NSE" time="1730901530"/>
+<taskbegin task="NSE" time="1730901530"/>
+<taskend task="NSE" time="1730901530"/>
+<taskbegin task="NSE" time="1730901530"/>
+<taskend task="NSE" time="1730901530"/>
+<runstats><finished time="1730901530" timestr="Wed Nov  6 13:58:50 2024" elapsed="120.30" summary="Nmap done at Wed Nov  6 13:58:50 2024; 1 IP address (1 host up) scanned in 120.30 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
