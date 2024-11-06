@@ -17,3 +17,118 @@
 <taskbegin task="Connect Scan" time="1730895908"/>
 <taskend task="Connect Scan" time="1730895912" extrainfo="1000 total ports"/>
 <taskbegin task="Service scan" time="1730895912"/>
+<taskend task="Service scan" time="1730895932" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1730895932"/>
+<taskend task="NSE" time="1730895933"/>
+<taskbegin task="NSE" time="1730895933"/>
+<taskend task="NSE" time="1730895933"/>
+<taskbegin task="NSE" time="1730895933"/>
+<taskend task="NSE" time="1730895933"/>
+<host starttime="1730895908" endtime="1730895933"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="134.174.159.103" addrtype="ipv4"/>
+<hostnames>
+<hostname name="devopsdemo-doug.rc.hms.harvard.edu" type="user"/>
+<hostname name="therapeutics.harvard.edu" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="998">
+<extrareasons reason="no-responses" count="998"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" servicefp="SF-Port80-TCP:V=7.80%I=7%D=11/6%Time=672B602E%P=x86_64-pc-linux-gnu%r(GetRequest,D0,&quot;HTTP/1\.1\x20403\x20Forbidden\r\ncontent-length:\x2093\r\ncache-control:\x20no-cache\r\ncontent-type:\x20text/html\r\nconnection:\x20close\r\n\r\n&lt;html&gt;&lt;body&gt;&lt;h1&gt;403\x20Forbidden&lt;/h1&gt;\nRequest\x20forbidden\x20by\x20administrative\x20rules\.\n&lt;/body&gt;&lt;/html&gt;\n&quot;)%r(HTTPOptions,D0,&quot;HTTP/1\.1\x20403\x20Forbidden\r\ncontent-length:\x2093\r\ncache-control:\x20no-cache\r\ncontent-type:\x20text/html\r\nconnection:\x20close\r\n\r\n&lt;html&gt;&lt;body&gt;&lt;h1&gt;403\x20Forbidden&lt;/h1&gt;\nRequest\x20forbidden\x20by\x20administrative\x20rules\.\n&lt;/body&gt;&lt;/html&gt;\n&quot;)%r(RTSPRequest,CF,&quot;HTTP/1\.1\x20400\x20Bad\x20request\r\ncontent-length:\x2090\r\ncache-control:\x20no-cache\r\ncontent-type:\x20text/html\r\nconnection:\x20close\r\n\r\n&lt;html&gt;&lt;body&gt;&lt;h1&gt;400\x20Bad\x20request&lt;/h1&gt;\nYour\x20browser\x20sent\x20an\x20invalid\x20request\.\n&lt;/body&gt;&lt;/html&gt;\n&quot;)%r(X11Probe,CF,&quot;HTTP/1\.1\x20400\x20Bad\x20request\r\ncontent-length:\x2090\r\ncache-control:\x20no-cache\r\ncontent-type:\x20text/html\r\nconnection:\x20close\r\n\r\n&lt;html&gt;&lt;body&gt;&lt;h1&gt;400\x20Bad\x20request&lt;/h1&gt;\nYour\x20browser\x20sent\x20an\x20invalid\x20request\.\n&lt;/body&gt;&lt;/html&gt;\n&quot;)%r(FourOhFourRequest,D0,&quot;HTTP/1\.1\x20403\x20Forbidden\r\ncontent-length:\x2093\r\ncache-control:\x20no-cache\r\ncontent-type:\x20text/html\r\nconnection:\x20close\r\n\r\n&lt;html&gt;&lt;body&gt;&lt;h1&gt;403\x20Forbidden&lt;/h1&gt;\nRequest\x20forbidden\x20by\x20administrative\x20rules\.\n&lt;/body&gt;&lt;/html&gt;\n&quot;)%r(RPCCheck,CF,&quot;HTTP/1\.1\x20400\x20Bad\x20request\r\ncontent-length:\x2090\r\ncache-control:\x20no-cache\r\ncontent-type:\x20text/html\r\nconnection:\x20close\r\n\r\n&lt;html&gt;&lt;body&gt;&lt;h1&gt;400\x20Bad\x20request&lt;/h1&gt;\nYour\x20browser\x20sent\x20an\x20invalid\x20request\.\n&lt;/body&gt;&lt;/html&gt;\n&quot;)%r(DNSVersionBindReqTCP,CF,&quot;HTTP/1\.1\x20400\x20Bad\x20request\r\ncontent-length:\x2090\r\ncache-control:\x20no-cache\r\ncontent-type:\x20text/html\r\nconnection:\x20close\r\n\r\n&lt;html&gt;&lt;body&gt;&lt;h1&gt;400\x20Bad\x20request&lt;/h1&gt;\nYour\x20browser\x20sent\x20an\x20invalid\x20request\.\n&lt;/body&gt;&lt;/html&gt;\n&quot;)%r(DNSStatusRequestTCP,CF,&quot;HTTP/1\.1\x20400\x20Bad\x20request\r\ncontent-length:\x2090\r\ncache-control:\x20no-cache\r\ncontent-type:\x20text/html\r\nconnection:\x20close\r\n\r\n&lt;html&gt;&lt;body&gt;&lt;h1&gt;400\x20Bad\x20request&lt;/h1&gt;\nYour\x20browser\x20sent\x20an\x20invalid\x20request\.\n&lt;/body&gt;&lt;/html&gt;\n&quot;);" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  DNSStatusRequestTCP, DNSVersionBindReqTCP, RPCCheck, RTSPRequest, X11Probe: &#xa;    HTTP/1.1 400 Bad request&#xa;    content-length: 90&#xa;    cache-control: no-cache&#xa;    content-type: text/html&#xa;    connection: close&#xa;    &lt;html&gt;&lt;body&gt;&lt;h1&gt;400 Bad request&lt;/h1&gt;&#xa;    Your browser sent an invalid request.&#xa;    &lt;/body&gt;&lt;/html&gt;&#xa;  FourOhFourRequest, GetRequest, HTTPOptions: &#xa;    HTTP/1.1 403 Forbidden&#xa;    content-length: 93&#xa;    cache-control: no-cache&#xa;    content-type: text/html&#xa;    connection: close&#xa;    &lt;html&gt;&lt;body&gt;&lt;h1&gt;403 Forbidden&lt;/h1&gt;&#xa;    Request forbidden by administrative rules.&#xa;    &lt;/body&gt;&lt;/html&gt;"><elem key="DNSStatusRequestTCP, DNSVersionBindReqTCP, RPCCheck, RTSPRequest, X11Probe">&#xa;    HTTP/1.1 400 Bad request&#xa;    content-length: 90&#xa;    cache-control: no-cache&#xa;    content-type: text/html&#xa;    connection: close&#xa;    &lt;html&gt;&lt;body&gt;&lt;h1&gt;400 Bad request&lt;/h1&gt;&#xa;    Your browser sent an invalid request.&#xa;    &lt;/body&gt;&lt;/html&gt;</elem>
+<elem key="FourOhFourRequest, GetRequest, HTTPOptions">&#xa;    HTTP/1.1 403 Forbidden&#xa;    content-length: 93&#xa;    cache-control: no-cache&#xa;    content-type: text/html&#xa;    connection: close&#xa;    &lt;html&gt;&lt;body&gt;&lt;h1&gt;403 Forbidden&lt;/h1&gt;&#xa;    Request forbidden by administrative rules.&#xa;    &lt;/body&gt;&lt;/html&gt;</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Did not follow redirect to https://devopsdemo-doug.rc.hms.harvard.edu/"><elem key="redirect_url">https://devopsdemo-doug.rc.hms.harvard.edu/</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" product="Apache" servicefp="SF-Port443-TCP:V=7.80%T=SSL%I=7%D=11/6%Time=672B6034%P=x86_64-pc-linux-gnu%r(GetRequest,D0,&quot;HTTP/1\.1\x20403\x20Forbidden\r\ncontent-length:\x2093\r\ncache-control:\x20no-cache\r\ncontent-type:\x20text/html\r\nconnection:\x20close\r\n\r\n&lt;html&gt;&lt;body&gt;&lt;h1&gt;403\x20Forbidden&lt;/h1&gt;\nRequest\x20forbidden\x20by\x20administrative\x20rules\.\n&lt;/body&gt;&lt;/html&gt;\n&quot;)%r(HTTPOptions,D0,&quot;HTTP/1\.1\x20403\x20Forbidden\r\ncontent-length:\x2093\r\ncache-control:\x20no-cache\r\ncontent-type:\x20text/html\r\nconnection:\x20close\r\n\r\n&lt;html&gt;&lt;body&gt;&lt;h1&gt;403\x20Forbidden&lt;/h1&gt;\nRequest\x20forbidden\x20by\x20administrative\x20rules\.\n&lt;/body&gt;&lt;/html&gt;\n&quot;)%r(FourOhFourRequest,D0,&quot;HTTP/1\.1\x20403\x20Forbidden\r\ncontent-length:\x2093\r\ncache-control:\x20no-cache\r\ncontent-type:\x20text/html\r\nconnection:\x20close\r\n\r\n&lt;html&gt;&lt;body&gt;&lt;h1&gt;403\x20Forbidden&lt;/h1&gt;\nRequest\x20forbidden\x20by\x20administrative\x20rules\.\n&lt;/body&gt;&lt;/html&gt;\n&quot;)%r(tor-versions,CF,&quot;HTTP/1\.1\x20400\x20Bad\x20request\r\ncontent-length:\x2090\r\ncache-control:\x20no-cache\r\ncontent-type:\x20text/html\r\nconnection:\x20close\r\n\r\n&lt;html&gt;&lt;body&gt;&lt;h1&gt;400\x20Bad\x20request&lt;/h1&gt;\nYour\x20browser\x20sent\x20an\x20invalid\x20request\.\n&lt;/body&gt;&lt;/html&gt;\n&quot;)%r(RTSPRequest,CF,&quot;HTTP/1\.1\x20400\x20Bad\x20request\r\ncontent-length:\x2090\r\ncache-control:\x20no-cache\r\ncontent-type:\x20text/html\r\nconnection:\x20close\r\n\r\n&lt;html&gt;&lt;body&gt;&lt;h1&gt;400\x20Bad\x20request&lt;/h1&gt;\nYour\x20browser\x20sent\x20an\x20invalid\x20request\.\n&lt;/body&gt;&lt;/html&gt;\n&quot;)%r(RPCCheck,CF,&quot;HTTP/1\.1\x20400\x20Bad\x20request\r\ncontent-length:\x2090\r\ncache-control:\x20no-cache\r\ncontent-type:\x20text/html\r\nconnection:\x20close\r\n\r\n&lt;html&gt;&lt;body&gt;&lt;h1&gt;400\x20Bad\x20request&lt;/h1&gt;\nYour\x20browser\x20sent\x20an\x20invalid\x20request\.\n&lt;/body&gt;&lt;/html&gt;\n&quot;)%r(DNSVersionBindReqTCP,CF,&quot;HTTP/1\.1\x20400\x20Bad\x20request\r\ncontent-length:\x2090\r\ncache-control:\x20no-cache\r\ncontent-type:\x20text/html\r\nconnection:\x20close\r\n\r\n&lt;html&gt;&lt;body&gt;&lt;h1&gt;400\x20Bad\x20request&lt;/h1&gt;\nYour\x20browser\x20sent\x20an\x20invalid\x20request\.\n&lt;/body&gt;&lt;/html&gt;\n&quot;)%r(DNSStatusRequestTCP,CF,&quot;HTTP/1\.1\x20400\x20Bad\x20request\r\ncontent-length:\x2090\r\ncache-control:\x20no-cache\r\ncontent-type:\x20text/html\r\nconnection:\x20close\r\n\r\n&lt;html&gt;&lt;body&gt;&lt;h1&gt;400\x20Bad\x20request&lt;/h1&gt;\nYour\x20browser\x20sent\x20an\x20invalid\x20request\.\n&lt;/body&gt;&lt;/html&gt;\n&quot;);" tunnel="ssl" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  DNSStatusRequestTCP, DNSVersionBindReqTCP, RPCCheck, RTSPRequest, tor-versions: &#xa;    HTTP/1.1 400 Bad request&#xa;    content-length: 90&#xa;    cache-control: no-cache&#xa;    content-type: text/html&#xa;    connection: close&#xa;    &lt;html&gt;&lt;body&gt;&lt;h1&gt;400 Bad request&lt;/h1&gt;&#xa;    Your browser sent an invalid request.&#xa;    &lt;/body&gt;&lt;/html&gt;&#xa;  FourOhFourRequest, GetRequest, HTTPOptions: &#xa;    HTTP/1.1 403 Forbidden&#xa;    content-length: 93&#xa;    cache-control: no-cache&#xa;    content-type: text/html&#xa;    connection: close&#xa;    &lt;html&gt;&lt;body&gt;&lt;h1&gt;403 Forbidden&lt;/h1&gt;&#xa;    Request forbidden by administrative rules.&#xa;    &lt;/body&gt;&lt;/html&gt;"><elem key="DNSStatusRequestTCP, DNSVersionBindReqTCP, RPCCheck, RTSPRequest, tor-versions">&#xa;    HTTP/1.1 400 Bad request&#xa;    content-length: 90&#xa;    cache-control: no-cache&#xa;    content-type: text/html&#xa;    connection: close&#xa;    &lt;html&gt;&lt;body&gt;&lt;h1&gt;400 Bad request&lt;/h1&gt;&#xa;    Your browser sent an invalid request.&#xa;    &lt;/body&gt;&lt;/html&gt;</elem>
+<elem key="FourOhFourRequest, GetRequest, HTTPOptions">&#xa;    HTTP/1.1 403 Forbidden&#xa;    content-length: 93&#xa;    cache-control: no-cache&#xa;    content-type: text/html&#xa;    connection: close&#xa;    &lt;html&gt;&lt;body&gt;&lt;h1&gt;403 Forbidden&lt;/h1&gt;&#xa;    Request forbidden by administrative rules.&#xa;    &lt;/body&gt;&lt;/html&gt;</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: HEAD GET POST OPTIONS TRACE&#xa;  Potentially risky methods: TRACE"><table key="Supported Methods">
+<elem>HEAD</elem>
+<elem>GET</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+<elem>TRACE</elem>
+</table>
+<table key="Potentially risky methods">
+<elem>TRACE</elem>
+</table>
+</script><script id="http-server-header" output="Apache"><elem>Apache</elem>
+</script><script id="http-title" output="403 Forbidden"><elem key="title">403 Forbidden</elem>
+</script><script id="ssl-cert" output="Subject: commonName=devopsdemo-doug.rc.hms.harvard.edu&#xa;Subject Alternative Name: DNS:devopsdemo-doug.rc.hms.harvard.edu&#xa;Issuer: commonName=R10/organizationName=Let&apos;s Encrypt/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-10-10T16:40:38&#xa;Not valid after:  2025-01-08T16:40:37&#xa;MD5:   8034 a163 ed33 e70b e562 bdbf 662c c5b0&#xa;SHA-1: 666d 67ca 7973 2339 40f6 ce64 92d5 58aa e8d0 edb7"><table key="subject">
+<elem key="commonName">devopsdemo-doug.rc.hms.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+<elem key="countryName">US</elem>
+<elem key="commonName">R10</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">2048</elem>
+<elem key="type">rsa</elem>
+<elem key="exponent">BIGNUM: 0x560c7256e028</elem>
+<elem key="modulus">BIGNUM: 0x560c7218c448</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="critical">true</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="critical">true</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">A2:4B:BC:CE:4A:41:1E:CA:82:C5:8C:3F:41:D6:E4:4E:AA:A7:EE:E9</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">BB:BC:C3:47:A5:E4:BC:A9:C6:C3:A4:72:0C:10:8D:A2:35:E1:C8:E8</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://r10.o.lencr.org&#xa;CA Issuers - URI:http://r10.i.lencr.org/</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:devopsdemo-doug.rc.hms.harvard.edu</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : E0:92:B3:FC:0C:1D:C8:E7:68:36:1F:DE:61:B9:96:4D:&#xa;                0A:52:78:19:8A:72:D6:72:C4:B0:4D:A5:6D:6F:54:04&#xa;    Timestamp : Oct 10 17:39:08.500 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:2D:79:DD:70:D1:A8:E9:59:E7:35:0B:90:&#xa;                3C:ED:84:39:00:27:9F:75:C3:75:5F:81:FD:76:9A:EF:&#xa;                11:D6:3C:5F:02:21:00:9E:36:21:1D:B1:B2:99:82:00:&#xa;                B6:FD:6C:FA:48:B3:21:7D:32:BE:47:68:6D:34:88:48:&#xa;                BE:E0:80:CC:67:8A:F6&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 3F:17:4B:4F:D7:22:47:58:94:1D:65:1C:84:BE:0D:12:&#xa;                ED:90:37:7F:1F:85:6A:EB:C1:BF:28:85:EC:F8:64:6E&#xa;    Timestamp : Oct 10 17:39:10.161 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:0A:FA:CF:07:60:E8:34:83:56:31:74:55:&#xa;                72:E6:29:21:2A:4C:00:27:E3:DC:DE:A4:77:1B:97:F8:&#xa;                56:58:62:1A:02:20:66:8A:16:88:B5:16:1F:BA:3B:EE:&#xa;                0B:E2:02:FA:D3:43:B5:A3:38:D8:A5:71:08:5C:8F:4B:&#xa;                FC:69:BB:56:39:15</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-10-10T16:40:38</elem>
+<elem key="notAfter">2025-01-08T16:40:37</elem>
+</table>
+<elem key="md5">8034a163ed33e70be562bdbf662cc5b0</elem>
+<elem key="sha1">666d67ca7973233940f6ce6492d558aae8d0edb7</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFEzCCA/ugAwIBAgISAxB85h61XMhGkOz6zHcfn5F1MA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNSMTAwHhcNMjQxMDEwMTY0MDM4WhcNMjUwMTA4MTY0MDM3WjAtMSswKQYDVQQD&#xa;EyJkZXZvcHNkZW1vLWRvdWcucmMuaG1zLmhhcnZhcmQuZWR1MIIBIjANBgkqhkiG&#xa;9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvEfROuXb4OWAJAfAXHJ0dN0tT1JEO9vcPLAe&#xa;jqg04lG0ulote/26kAKwSjbYWLeEkK1IHr9sABU9L7zR9cQGbKOe81tk2No/YPUa&#xa;H9C7dekCvxv/wWffDvJsmGSx/3KNv2Nfk2eyR+5IVR3eLOTZNxHS1QHZ27TkIZnT&#xa;hGv8W8l/z9kZXLrNALSuLG9avitPWMarsJBQj2tfGtECQI3LlDjiLM4M+AEpjC6/&#xa;G5R/HWw6eDBpwr8hXzGXEww5ASRc0xyW6y6ODIF0RW7SJaGCXd9RWr3jcHC9QWmf&#xa;QtO8aFUWNok9MY5U+/U85+EhxGvLYin94Z6ti9UuMSREV4C2bwIDAQABo4ICJTCC&#xa;AiEwDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcD&#xa;AjAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBSiS7zOSkEeyoLFjD9B1uROqqfu6TAf&#xa;BgNVHSMEGDAWgBS7vMNHpeS8qcbDpHIMEI2iNeHI6DBXBggrBgEFBQcBAQRLMEkw&#xa;IgYIKwYBBQUHMAGGFmh0dHA6Ly9yMTAuby5sZW5jci5vcmcwIwYIKwYBBQUHMAKG&#xa;F2h0dHA6Ly9yMTAuaS5sZW5jci5vcmcvMC0GA1UdEQQmMCSCImRldm9wc2RlbW8t&#xa;ZG91Zy5yYy5obXMuaGFydmFyZC5lZHUwEwYDVR0gBAwwCjAIBgZngQwBAgEwggED&#xa;BgorBgEEAdZ5AgQCBIH0BIHxAO8AdgDgkrP8DB3I52g2H95huZZNClJ4GYpy1nLE&#xa;sE2lbW9UBAAAAZJ3g1RUAAAEAwBHMEUCIC153XDRqOlZ5zULkDzthDkAJ591w3Vf&#xa;gf12mu8R1jxfAiEAnjYhHbGymYIAtv1s+kizIX0yvkdobTSISL7ggMxnivYAdQA/&#xa;F0tP1yJHWJQdZRyEvg0S7ZA3fx+FauvBvyiF7PhkbgAAAZJ3g1rRAAAEAwBGMEQC&#xa;IAr6zwdg6DSDVjF0VXLmKSEqTAAn49zepHcbl/hWWGIaAiBmihaItRYfujvuC+IC&#xa;+tNDtaM42KVxCFyPS/xpu1Y5FTANBgkqhkiG9w0BAQsFAAOCAQEAHcmniIqUh/zM&#xa;BJ5VLv1aKTlH/FnkFwEtAbeWVbORaFt2ounAbV/haIrstjhj8IGVbz/QiHdwnvJ0&#xa;uGaTaXbTYS3fwaZHdxDx87wdpmJnyNr9a6LzIFK6cLZX/fZ+XV222Ii+iLfffGOi&#xa;r3porwjj7qAwUoTygqz/iVLRROVVq+oIImNGPRkIvOJjmsvTwWho+Cffu+wxju+O&#xa;+zHqfza0e4Z0TYAAoW8hDZhtqKN5OQZBydNLTtVA02nR7ZWMNKA//YM8lhEN74W1&#xa;+MxZQiBc3dGc4a7my7iN3SJAwB9sxYMlvefYyymF2BwM1crEM0vgGhK1CSXqQMPV&#xa;beFYN635OQ==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+</ports>
+<times srtt="11859" rttvar="3851" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730895933"/>
+<taskend task="NSE" time="1730895933"/>
+<taskbegin task="NSE" time="1730895933"/>
+<taskend task="NSE" time="1730895933"/>
+<taskbegin task="NSE" time="1730895933"/>
+<taskend task="NSE" time="1730895933"/>
+<runstats><finished time="1730895933" timestr="Wed Nov  6 12:25:33 2024" elapsed="25.71" summary="Nmap done at Wed Nov  6 12:25:33 2024; 1 IP address (1 host up) scanned in 25.71 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
