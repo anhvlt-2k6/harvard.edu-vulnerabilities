@@ -15,3 +15,116 @@
 <taskbegin task="Parallel DNS resolution of 1 host." time="1730915470"/>
 <taskend task="Parallel DNS resolution of 1 host." time="1730915470"/>
 <taskbegin task="Connect Scan" time="1730915470"/>
+<taskend task="Connect Scan" time="1730915478" extrainfo="1000 total ports"/>
+<taskbegin task="Service scan" time="1730915478"/>
+<taskend task="Service scan" time="1730915491" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1730915491"/>
+<taskend task="NSE" time="1730915495"/>
+<taskbegin task="NSE" time="1730915495"/>
+<taskend task="NSE" time="1730915496"/>
+<taskbegin task="NSE" time="1730915496"/>
+<taskend task="NSE" time="1730915496"/>
+<host starttime="1730915470" endtime="1730915496"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="92.223.159.140" addrtype="ipv4"/>
+<hostnames>
+<hostname name="florentinedrawings.itatti.harvard.edu" type="user"/>
+<hostname name="92-223-159-140.ip274.fastwebnet.it" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="997">
+<extrareasons reason="no-responses" count="997"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Golang net/http server" extrainfo="Go-IPFS json-rpc or InfluxDB API" method="probed" conf="10"><cpe>cpe:/a:protocol_labs:go-ipfs</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Did not follow redirect to https://florentinedrawings.itatti.harvard.edu/"><elem key="redirect_url">https://florentinedrawings.itatti.harvard.edu/</elem>
+</script></port>
+<port protocol="tcp" portid="113"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ident" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Golang net/http server" extrainfo="Go-IPFS json-rpc or InfluxDB API" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:protocol_labs:go-ipfs</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="Jetty(9.4.27.v20200227)"><elem>Jetty(9.4.27.v20200227)</elem>
+</script><script id="http-title" output="  The Drawings of the Florentine Painters&#xa;Requested resource was https://florentinedrawings.itatti.harvard.edu/resource/Start"><elem key="title">&#xa;  The Drawings of the Florentine Painters&#xa;</elem>
+<elem key="redirect_url">https://florentinedrawings.itatti.harvard.edu/resource/Start</elem>
+</script><script id="ssl-cert" output="Subject: commonName=florentinedrawings.itatti.harvard.edu&#xa;Subject Alternative Name: DNS:florentinedrawings.itatti.harvard.edu&#xa;Issuer: commonName=R11/organizationName=Let&apos;s Encrypt/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 4096&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-09-13T09:40:13&#xa;Not valid after:  2024-12-12T09:40:12&#xa;MD5:   e394 352d d85e fbd5 a836 1400 69db 5010&#xa;SHA-1: 936f a2c7 760b 7609 2640 02be 50a1 aae4 9c11 0ff4"><table key="subject">
+<elem key="commonName">florentinedrawings.itatti.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">R11</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">4096</elem>
+<elem key="exponent">BIGNUM: 0x56417281eba8</elem>
+<elem key="type">rsa</elem>
+<elem key="modulus">BIGNUM: 0x56417281dcd8</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="value">CA:FALSE</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">80:6F:3F:2A:BA:15:86:70:BA:94:66:7F:1C:4B:78:AF:E5:8B:85:0A</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">C5:CF:46:A4:EA:F4:C3:C0:7A:6C:95:C4:2D:B0:5E:92:2F:26:E3:B9</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://r11.o.lencr.org&#xa;CA Issuers - URI:http://r11.i.lencr.org/</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:florentinedrawings.itatti.harvard.edu</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 48:B0:E3:6B:DA:A6:47:34:0F:E5:6A:02:FA:9D:30:EB:&#xa;                1C:52:01:CB:56:DD:2C:81:D9:BB:BF:AB:39:D8:84:73&#xa;    Timestamp : Sep 13 10:38:43.068 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:E7:E0:C5:EB:3D:B6:66:E0:7F:99:E2:&#xa;                F3:19:98:91:AF:8C:48:DF:35:16:38:92:A9:FD:2D:E2:&#xa;                EA:A7:86:69:D9:02:21:00:C0:B1:2A:5D:1F:E1:75:80:&#xa;                6E:B7:40:7F:88:09:AF:04:C1:07:F7:13:96:C4:7B:B3:&#xa;                58:58:BF:82:53:45:66:C8&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : EE:CD:D0:64:D5:DB:1A:CE:C5:5C:B7:9D:B4:CD:13:A2:&#xa;                32:87:46:7C:BC:EC:DE:C3:51:48:59:46:71:1F:B5:9B&#xa;    Timestamp : Sep 13 10:38:43.063 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:BC:DC:C8:CA:B9:44:64:09:88:CF:61:&#xa;                01:79:3B:00:09:6E:AF:BC:F2:C9:55:74:3D:56:12:91:&#xa;                2C:21:64:D6:09:02:20:49:BB:64:B6:2A:EB:29:3F:10:&#xa;                0C:11:59:04:B2:76:51:F7:D8:42:D5:94:41:BE:7F:EB:&#xa;                E5:BD:8B:9F:37:34:21</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-09-13T09:40:13</elem>
+<elem key="notAfter">2024-12-12T09:40:12</elem>
+</table>
+<elem key="md5">e394352dd85efbd5a836140069db5010</elem>
+<elem key="sha1">936fa2c7760b7609264002be50a1aae49c110ff4</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIGGzCCBQOgAwIBAgISA/mPOV6ry/Q6RvG50XkHfsvBMA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNSMTEwHhcNMjQwOTEzMDk0MDEzWhcNMjQxMjEyMDk0MDEyWjAwMS4wLAYDVQQD&#xa;EyVmbG9yZW50aW5lZHJhd2luZ3MuaXRhdHRpLmhhcnZhcmQuZWR1MIICIjANBgkq&#xa;hkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAsefjMCMi+CQT8F/hXrRgkMDD7fiP/0Uk&#xa;6UcwzalsjyT1/hjSnCqF9II06c+XQGQkb24H6THI+zwRH3fD0EMoCp0DVw6YkI9a&#xa;k5VSBsZZS83JKxbvCgLuwVITEHNYQ5wIMJ8CRgg/iDFWAdSCz5AsQD1WBEs4ROjS&#xa;7IXTF0Vwd8esbL+42LJaygtjwF8tLFtxgU3Ed/Mrqt9OqGvojimYoAssYRI1gT3C&#xa;bQ42qJ8B1HTeJnteuiVT5lRJpIvQzss/nLQc7zv9fBEFqkJgIzK1rGE4MqNerVKa&#xa;o7o8So7qujApQtdqMs6y7kYSn/+eCORMIOh9fTMdBw8jB/4y4sREi88kxidaMZiI&#xa;78TvDBqBdP6xaKtr8hkKS0CKpUlroTXxRc9aUQ+el/oi8RZgga0GF3RcFSdHK3UV&#xa;QDwfpUPZ4Gd3l3r1Ampf19eGonA6CVBjGStvuaXRJwIz1PVZHScr1Fy33NFE/eNJ&#xa;CgXqPhYTgmf/eO0us8QBfF9ieYqDRmyY5N13eev9nM5ZnAJcgv9wyg3B48dyRYhl&#xa;4M9aMOeFo2mnbjGieVNASqpQ/HKZyeIMCaBRsAO5wYu9TjUtrIEAQmiPNEZNTWF6&#xa;lckl65ReG6CrcIB1OBm0pUMchF5K7ioQ6+P09zg/v5H4d3OGyGQ0GrSHzw8O6WyU&#xa;NbdZglUY8VMCAwEAAaOCAiowggImMA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAU&#xa;BggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQUgG8/&#xa;KroVhnC6lGZ/HEt4r+WLhQowHwYDVR0jBBgwFoAUxc9GpOr0w8B6bJXELbBeki8m&#xa;47kwVwYIKwYBBQUHAQEESzBJMCIGCCsGAQUFBzABhhZodHRwOi8vcjExLm8ubGVu&#xa;Y3Iub3JnMCMGCCsGAQUFBzAChhdodHRwOi8vcjExLmkubGVuY3Iub3JnLzAwBgNV&#xa;HREEKTAngiVmbG9yZW50aW5lZHJhd2luZ3MuaXRhdHRpLmhhcnZhcmQuZWR1MBMG&#xa;A1UdIAQMMAowCAYGZ4EMAQIBMIIBBQYKKwYBBAHWeQIEAgSB9gSB8wDxAHcASLDj&#xa;a9qmRzQP5WoC+p0w6xxSActW3SyB2bu/qznYhHMAAAGR6va3fAAABAMASDBGAiEA&#xa;5+DF6z22ZuB/meLzGZiRr4xI3zUWOJKp/S3i6qeGadkCIQDAsSpdH+F1gG63QH+I&#xa;Ca8EwQf3E5bEe7NYWL+CU0VmyAB2AO7N0GTV2xrOxVy3nbTNE6Iyh0Z8vOzew1FI&#xa;WUZxH7WbAAABker2t3cAAAQDAEcwRQIhALzcyMq5RGQJiM9hAXk7AAlur7zyyVV0&#xa;PVYSkSwhZNYJAiBJu2S2KuspPxAMEVkEsnZR99hC1ZRBvn/r5b2Lnzc0ITANBgkq&#xa;hkiG9w0BAQsFAAOCAQEAQhdy/kBy+8jrOoB7Dy4ZkWTAjiPU2qesr8+FqsOk5pTt&#xa;o9P2Dyx3zweN7bz8JJIZ/jLRcmZsjqnX1IRMtqLcjy8Krk5O/CVQ7mGb8e1z/0pF&#xa;DCAg8yWbCags7ZYbM8gGfdu5noRaOxBhFUk3s/4atrDZGzCGb9cZJyQQBsx8cWee&#xa;4bBhngH5vcFiB4jH09gZZ4HWQhU8UKbNf7TttvXNQGF39bqFknEjMOCjq86FeFno&#xa;vN+4iOsJUJjNKN6CdERkzzFP9a0myiuKzFYY52oEM74TJWNWlqPgD4/mVWhUP8g4&#xa;BwhQmd5kGvtxsF0m4QFdGtjobBhkVtk0/6ufDwWzkQ==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="tls-alpn" output="&#xa;  h2&#xa;  http/1.1"><elem>h2</elem>
+<elem>http/1.1</elem>
+</script></port>
+</ports>
+<times srtt="106815" rttvar="15363" to="168267"/>
+</host>
+<taskbegin task="NSE" time="1730915496"/>
+<taskend task="NSE" time="1730915496"/>
+<taskbegin task="NSE" time="1730915496"/>
+<taskend task="NSE" time="1730915496"/>
+<taskbegin task="NSE" time="1730915496"/>
+<taskend task="NSE" time="1730915496"/>
+<runstats><finished time="1730915496" timestr="Wed Nov  6 17:51:36 2024" elapsed="26.80" summary="Nmap done at Wed Nov  6 17:51:36 2024; 1 IP address (1 host up) scanned in 26.80 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
