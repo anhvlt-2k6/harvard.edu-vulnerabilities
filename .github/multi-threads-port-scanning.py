@@ -11,7 +11,9 @@ try:
         f.write(f"""name: Port Scanning for Harvard University, thread {str(i)}
 
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - master
 
 permissions:
   contents: write
@@ -37,21 +39,21 @@ jobs:
 
       - name: Wait for changes and Commit
         run: |
-          git config --local user.name "github-actions[bot]"
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
 
-          while true; do
-            git pull --rebase || git pull  # First try rebase, fallback to merge if it fails
-            git add .
-            
-            if ! git commit -m "GitHub Action Bot"; then
-              echo "No changes to commit"
-            else
-              git push --force  # Force push to avoid errors due to non-fast-forward
-            fi
-            
-            sleep 60
-          done
+        while true; do
+          git pull --rebase || git pull || true  # Ignore errors in pull/rebase
+          git add . || true  # Ignore errors in adding files
+          
+          if ! git commit -m "GitHub Action Bot" 2>/dev/null; then
+            echo "No changes to commit"
+          else
+            git push --force || true  # Ignore errors in push
+          fi
+          
+          sleep 60
+        done
         """)
         f.close()
 except NameError:
