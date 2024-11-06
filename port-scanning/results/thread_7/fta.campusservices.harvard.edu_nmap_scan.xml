@@ -15,3 +15,103 @@
 <taskbegin task="Parallel DNS resolution of 1 host." time="1730918744"/>
 <taskend task="Parallel DNS resolution of 1 host." time="1730918744"/>
 <taskbegin task="Connect Scan" time="1730918744"/>
+<taskend task="Connect Scan" time="1730918748" extrainfo="1000 total ports"/>
+<taskbegin task="Service scan" time="1730918748"/>
+<taskend task="Service scan" time="1730918760" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1730918760"/>
+<taskend task="NSE" time="1730918761"/>
+<taskbegin task="NSE" time="1730918761"/>
+<taskend task="NSE" time="1730918761"/>
+<taskbegin task="NSE" time="1730918761"/>
+<taskend task="NSE" time="1730918761"/>
+<host starttime="1730918744" endtime="1730918761"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="3.215.150.64" addrtype="ipv4"/>
+<hostnames>
+<hostname name="fta.campusservices.harvard.edu" type="user"/>
+<hostname name="ec2-3-215-150-64.compute-1.amazonaws.com" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="998">
+<extrareasons reason="no-responses" count="998"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="OpenResty web app server" method="probed" conf="10"><cpe>cpe:/a:openresty:ngx_openresty</cpe></service><script id="http-server-header" output="openresty"><elem>openresty</elem>
+</script><script id="http-title" output="Forbidden"><elem key="title">Forbidden</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="OpenResty web app server" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:openresty:ngx_openresty</cpe></service><script id="http-server-header" output="openresty"><elem>openresty</elem>
+</script><script id="http-title" output="Forbidden"><elem key="title">Forbidden</elem>
+</script><script id="ssl-cert" output="Subject: commonName=*.campuspress.com&#xa;Subject Alternative Name: DNS:*.campuspress.com, DNS:campuspress.com&#xa;Issuer: commonName=Sectigo RSA Domain Validation Secure Server CA/organizationName=Sectigo Limited/stateOrProvinceName=Greater Manchester/countryName=GB&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2023-12-19T00:00:00&#xa;Not valid after:  2024-12-19T23:59:59&#xa;MD5:   572b 4bb0 d409 b47c 3703 1ffb a61a f271&#xa;SHA-1: 1abe 8fd8 961e c780 febb 1042 548e d606 a86c 3f56"><table key="subject">
+<elem key="commonName">*.campuspress.com</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">Sectigo RSA Domain Validation Secure Server CA</elem>
+<elem key="localityName">Salford</elem>
+<elem key="organizationName">Sectigo Limited</elem>
+<elem key="countryName">GB</elem>
+<elem key="stateOrProvinceName">Greater Manchester</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="exponent">BIGNUM: 0x560221767628</elem>
+<elem key="modulus">BIGNUM: 0x560221e0ca98</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">8D:8C:5E:C4:54:AD:8A:E1:77:E9:9B:F9:9B:05:E1:B8:01:8D:61:E1</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">F4:21:EE:ED:6C:FB:C1:88:2A:A6:9B:5D:86:CE:B8:D8:8F:7C:54:DD</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="name">X509v3 Key Usage</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">Policy: 1.3.6.1.4.1.6449.1.2.2.7&#xa;  CPS: https://sectigo.com/CPS&#xa;Policy: 2.23.140.1.2.1</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">CA Issuers - URI:http://crt.sectigo.com/SectigoRSADomainValidationSecureServerCA.crt&#xa;OCSP - URI:http://ocsp.sectigo.com</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">DNS:*.campuspress.com, DNS:campuspress.com</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 76:FF:88:3F:0A:B6:FB:95:51:C2:61:CC:F5:87:BA:34:&#xa;                B4:A4:CD:BB:29:DC:68:42:0A:9F:E6:67:4C:5A:3A:74&#xa;    Timestamp : Dec 19 08:50:46.708 2023 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:95:21:79:64:92:56:AB:7C:41:16:58:&#xa;                9A:C4:28:01:4E:3C:AB:9F:CE:3E:FB:6F:76:2D:E8:CB:&#xa;                9C:0A:99:A8:37:02:20:59:11:2F:15:AB:81:8C:0C:1B:&#xa;                1B:A1:29:AE:82:AE:29:60:E3:A7:10:FD:4A:1C:21:A3:&#xa;                6A:FD:13:02:59:17:86&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 3F:17:4B:4F:D7:22:47:58:94:1D:65:1C:84:BE:0D:12:&#xa;                ED:90:37:7F:1F:85:6A:EB:C1:BF:28:85:EC:F8:64:6E&#xa;    Timestamp : Dec 19 08:50:46.603 2023 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:16:7B:0B:49:70:1A:CE:A1:AC:6C:E4:BA:&#xa;                81:5C:58:C0:F9:46:EE:9B:1D:B4:60:E5:35:B7:6D:6D:&#xa;                C0:05:23:6F:02:20:40:2D:D9:27:FB:2D:89:0C:27:F3:&#xa;                06:79:4E:7F:A3:89:69:8F:B5:FA:6C:AD:B2:70:55:12:&#xa;                83:AC:12:14:C6:E1&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : EE:CD:D0:64:D5:DB:1A:CE:C5:5C:B7:9D:B4:CD:13:A2:&#xa;                32:87:46:7C:BC:EC:DE:C3:51:48:59:46:71:1F:B5:9B&#xa;    Timestamp : Dec 19 08:50:46.602 2023 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:23:9F:D6:05:AF:4C:8B:A9:05:C0:54:72:&#xa;                26:7C:00:30:3E:A2:41:9B:7A:24:36:37:0F:CB:F6:FB:&#xa;                F9:0D:43:10:02:20:4B:6A:05:A6:86:26:D0:A2:EA:97:&#xa;                EE:69:0B:9E:CE:C3:00:D3:33:F0:C9:46:AE:E4:04:EE:&#xa;                76:C9:99:FC:74:2E</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2023-12-19T00:00:00</elem>
+<elem key="notAfter">2024-12-19T23:59:59</elem>
+</table>
+<elem key="md5">572b4bb0d409b47c37031ffba61af271</elem>
+<elem key="sha1">1abe8fd8961ec780febb1042548ed606a86c3f56</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIGOzCCBSOgAwIBAgIRAPHrotcOnbCQWU+TSdSIpnQwDQYJKoZIhvcNAQELBQAw&#xa;gY8xCzAJBgNVBAYTAkdCMRswGQYDVQQIExJHcmVhdGVyIE1hbmNoZXN0ZXIxEDAO&#xa;BgNVBAcTB1NhbGZvcmQxGDAWBgNVBAoTD1NlY3RpZ28gTGltaXRlZDE3MDUGA1UE&#xa;AxMuU2VjdGlnbyBSU0EgRG9tYWluIFZhbGlkYXRpb24gU2VjdXJlIFNlcnZlciBD&#xa;QTAeFw0yMzEyMTkwMDAwMDBaFw0yNDEyMTkyMzU5NTlaMBwxGjAYBgNVBAMMESou&#xa;Y2FtcHVzcHJlc3MuY29tMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA&#xa;r2qI7sUARaVPbcqrhq22Ka+GpOT4yWUuTNYzxPNLQ2wXlxKD9/eqMB7FbkiYdlvU&#xa;+eePALegkubfsCa0ZX9Y5ohSLgikQ63JRetReyn21VT/J3hJsLWxr6k/GVzajxiO&#xa;CQQbezvZwsFBn3d8VdZE6jWWAbqf5mOFzpugH8EjftnIWMQJCH6sc/uMdRw4uTIN&#xa;V3yNGE6J5hlatZHMyzFgqK82IfWNkNoSnVJTq4aEKKG+AFK9ABwqcYk/IlBCdgYT&#xa;tMWXm7b2mvK+m0LCsWCpQqDfHmj/A+5wRSWdrO66JOPctHce/T2RYnUjPOjnZTmg&#xa;PUg5vFjVQ3BgieR2fHoDaQIDAQABo4IDAjCCAv4wHwYDVR0jBBgwFoAUjYxexFSt&#xa;iuF36Zv5mwXhuAGNYeEwHQYDVR0OBBYEFPQh7u1s+8GIKqabXYbOuNiPfFTdMA4G&#xa;A1UdDwEB/wQEAwIFoDAMBgNVHRMBAf8EAjAAMB0GA1UdJQQWMBQGCCsGAQUFBwMB&#xa;BggrBgEFBQcDAjBJBgNVHSAEQjBAMDQGCysGAQQBsjEBAgIHMCUwIwYIKwYBBQUH&#xa;AgEWF2h0dHBzOi8vc2VjdGlnby5jb20vQ1BTMAgGBmeBDAECATCBhAYIKwYBBQUH&#xa;AQEEeDB2ME8GCCsGAQUFBzAChkNodHRwOi8vY3J0LnNlY3RpZ28uY29tL1NlY3Rp&#xa;Z29SU0FEb21haW5WYWxpZGF0aW9uU2VjdXJlU2VydmVyQ0EuY3J0MCMGCCsGAQUF&#xa;BzABhhdodHRwOi8vb2NzcC5zZWN0aWdvLmNvbTAtBgNVHREEJjAkghEqLmNhbXB1&#xa;c3ByZXNzLmNvbYIPY2FtcHVzcHJlc3MuY29tMIIBfAYKKwYBBAHWeQIEAgSCAWwE&#xa;ggFoAWYAdgB2/4g/Crb7lVHCYcz1h7o0tKTNuyncaEIKn+ZnTFo6dAAAAYyBRTk0&#xa;AAAEAwBHMEUCIQCVIXlkklarfEEWWJrEKAFOPKufzj77b3Yt6MucCpmoNwIgWREv&#xa;FauBjAwbG6EproKuKWDjpxD9Shwho2r9EwJZF4YAdQA/F0tP1yJHWJQdZRyEvg0S&#xa;7ZA3fx+FauvBvyiF7PhkbgAAAYyBRTjLAAAEAwBGMEQCIBZ7C0lwGs6hrGzkuoFc&#xa;WMD5Ru6bHbRg5TW3bW3ABSNvAiBALdkn+y2JDCfzBnlOf6OJaY+1+mytsnBVEoOs&#xa;EhTG4QB1AO7N0GTV2xrOxVy3nbTNE6Iyh0Z8vOzew1FIWUZxH7WbAAABjIFFOMoA&#xa;AAQDAEYwRAIgI5/WBa9Mi6kFwFRyJnwAMD6iQZt6JDY3D8v2+/kNQxACIEtqBaaG&#xa;JtCi6pfuaQuezsMA0zPwyUau5ATudsmZ/HQuMA0GCSqGSIb3DQEBCwUAA4IBAQBG&#xa;SgC7RQQ8MNobdPtMA0HJq5DsRGPVip7tC/vr/CnkI/smh91OrMjK26zG+HEXl/Wm&#xa;KJ3oN/ehrLpAI5b3yuhNSkipglXrmyO66Qau3P2+nXQDRsaNf839wiB2VaBEeSTg&#xa;H0Sfef2f2h1OmxOl/HhfgdH/l3VY85YE0b454ZWLdC7czt2a8yJJYL438c/zEGmt&#xa;mA4eOjEPOmK6hmWlGTEcJCl144V1URKxYG08CHDAR4tNanKmoIvZQCi2/RsUd53V&#xa;btYcyI1oMjFs7f3HscQnzHjl2V9IBfNV4cDWg7KWM380N7dQvHx6WPU9qqO8V3C5&#xa;ZpWOShh9w8wmBpUzeDU6&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+</ports>
+<times srtt="7096" rttvar="2551" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730918761"/>
+<taskend task="NSE" time="1730918761"/>
+<taskbegin task="NSE" time="1730918761"/>
+<taskend task="NSE" time="1730918761"/>
+<taskbegin task="NSE" time="1730918761"/>
+<taskend task="NSE" time="1730918761"/>
+<runstats><finished time="1730918761" timestr="Wed Nov  6 18:46:01 2024" elapsed="17.69" summary="Nmap done at Wed Nov  6 18:46:01 2024; 1 IP address (1 host up) scanned in 17.69 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
