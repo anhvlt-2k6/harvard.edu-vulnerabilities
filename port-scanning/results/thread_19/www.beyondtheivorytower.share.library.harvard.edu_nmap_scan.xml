@@ -21,3 +21,545 @@
 <taskbegin task="Service scan" time="1730897761"/>
 <taskend task="Service scan" time="1730897932" extrainfo="11 services on 1 host"/>
 <taskbegin task="NSE" time="1730897932"/>
+<taskend task="NSE" time="1730897953"/>
+<taskbegin task="NSE" time="1730897953"/>
+<taskend task="NSE" time="1730897969"/>
+<taskbegin task="NSE" time="1730897969"/>
+<taskend task="NSE" time="1730897969"/>
+<host starttime="1730897671" endtime="1730897969"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="147.135.81.23" addrtype="ipv4"/>
+<hostnames>
+<hostname name="www.beyondtheivorytower.share.library.harvard.edu" type="user"/>
+<hostname name="ip23.ip-147-135-81.us" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="890">
+<extrareasons reason="no-responses" count="890"/>
+</extraports>
+<extraports state="closed" count="99">
+<extrareasons reason="conn-refused" count="99"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ftp" product="Pure-FTPd" method="probed" conf="10"><cpe>cpe:/a:pureftpd:pure-ftpd</cpe></service><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="7.4" extrainfo="protocol 2.0" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.4</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 cf:96:45:ec:91:01:b8:50:d7:ba:9a:3d:0e:27:db:ec (RSA)&#xa;  256 2f:bc:23:c3:2d:05:8c:60:52:14:ec:a7:e9:f0:33:46 (ECDSA)&#xa;  256 6c:67:37:03:23:eb:aa:97:12:e7:8e:a7:c2:57:87:bd (ED25519)"><table>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDMJEFTp5Upu7hOc8BDEApKnMSvcmqWva1nTTvmDhZ8anXKur2MB4M6IpZkPgPNq7GvAhQhw4t4foaXBMG+irmJG97/z+ukJ9zUyKq9lAyXwvnwhb9+/Yw71Q9Ky64repTdDKhpRt7KgInTSkM8tBPZ1zAjeKS8fSkRVN8BkOnmpj50iE7kngxbNhz/sKJtzDldu6zqr8vtnWyPau4yNnWimyO327S8+3Ouvlf+/6nDuD0DOPSDK6INTgomqcPUlCvpPgKspl+ftIs3GxOLcShG4bhZIVq0bknuIsiqvhzcKi3+L46HFOOekKiv19Uw36fnLNhascwfx5bO/FUd4Xo3</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="fingerprint">cf9645ec9101b850d7ba9a3d0e27dbec</elem>
+</table>
+<table>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBEVW79hYJiWVcNrVfWqdFcUWiDVyToVgwypxnjvfQ3m6I1GwE+IYoKD1MydXRTK6GOMzo6ZG6YIbkIuHYZ7nMxM=</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="bits">256</elem>
+<elem key="fingerprint">2fbc23c32d058c605214eca7e9f03346</elem>
+</table>
+<table>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAILXoVNE2tFP2KDWOPVcnrW3Q3p+3GpzZBeLUEEuZUTku</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="bits">256</elem>
+<elem key="fingerprint">6c67370323ebaa9712e78ea7c25787bd</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="25"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtp" method="table" conf="3"/><script id="smtp-commands" output="SMTP EHLO www.beyondtheivorytower.share.library.harvard.edu: failed to receive data: connection closed"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" method="probed" conf="10"><cpe>cpe:/a:apache:http_server</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+</table>
+</script><script id="http-server-header" output="Apache"><elem>Apache</elem>
+</script><script id="http-title" output="Did not follow redirect to https://www.beyondtheivorytower.share.library.harvard.edu/"><elem key="redirect_url">https://www.beyondtheivorytower.share.library.harvard.edu/</elem>
+</script><script id="https-redirect" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="tcp" portid="110"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="pop3" product="Dovecot pop3d" method="probed" conf="10"><cpe>cpe:/a:dovecot:dovecot</cpe></service><script id="pop3-capabilities" output="AUTH-RESP-CODE TOP PIPELINING USER UIDL CAPA RESP-CODES SASL(PLAIN LOGIN) STLS"/><script id="ssl-cert" output="Subject: commonName=beyondtheivorytower.share.library.harvard.edu&#xa;Subject Alternative Name: DNS:beyondtheivorytower.share.library.harvard.edu, DNS:cpanel.beyondtheivorytower.share.library.harvard.edu, DNS:cpcalendars.beyondtheivorytower.share.library.harvard.edu, DNS:cpcontacts.beyondtheivorytower.share.library.harvard.edu, DNS:mail.beyondtheivorytower.share.library.harvard.edu, DNS:webdisk.beyondtheivorytower.share.library.harvard.edu, DNS:webmail.beyondtheivorytower.share.library.harvard.edu, DNS:www.beyondtheivorytower.share.library.harvard.edu&#xa;Issuer: commonName=cPanel, Inc. Certification Authority/organizationName=cPanel, Inc./stateOrProvinceName=TX/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-09-07T00:00:00&#xa;Not valid after:  2024-12-06T23:59:59&#xa;MD5:   3ea3 00d3 cafc f1c1 0c49 428b ab5d a90a&#xa;SHA-1: 24bd 6006 0fe9 d1cc 30c8 f515 da05 32d4 b552 a247"><table key="subject">
+<elem key="commonName">beyondtheivorytower.share.library.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="stateOrProvinceName">TX</elem>
+<elem key="localityName">Houston</elem>
+<elem key="countryName">US</elem>
+<elem key="commonName">cPanel, Inc. Certification Authority</elem>
+<elem key="organizationName">cPanel, Inc.</elem>
+</table>
+<table key="pubkey">
+<elem key="exponent">BIGNUM: 0x5562e9f9a5a8</elem>
+<elem key="modulus">BIGNUM: 0x5562e9f9a5e8</elem>
+<elem key="bits">2048</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">7E:03:5A:65:41:6B:A7:7E:0A:E1:B8:9D:08:EA:1D:8E:1D:6A:C7:65</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">04:02:E8:04:A8:D7:91:1D:22:96:2F:2A:F0:69:12:2A:CD:EF:10:02</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+</table>
+<table>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">Policy: 1.3.6.1.4.1.6449.1.2.2.52&#xa;  CPS: https://sectigo.com/CPS&#xa;Policy: 2.23.140.1.2.1</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Full Name:&#xa;  URI:http://crl.comodoca.com/cPanelIncCertificationAuthority.crl</elem>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+</table>
+<table>
+<elem key="value">CA Issuers - URI:http://crt.comodoca.com/cPanelIncCertificationAuthority.crt&#xa;OCSP - URI:http://ocsp.comodoca.com</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 76:FF:88:3F:0A:B6:FB:95:51:C2:61:CC:F5:87:BA:34:&#xa;                B4:A4:CD:BB:29:DC:68:42:0A:9F:E6:67:4C:5A:3A:74&#xa;    Timestamp : Sep  7 00:00:46.355 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:79:07:A4:9E:6C:6E:FD:4F:6A:BA:94:AF:&#xa;                8D:75:67:2B:D5:99:7B:47:34:48:4E:4D:0E:DF:0B:E2:&#xa;                DA:58:22:7F:02:21:00:E2:D6:CC:37:44:18:37:20:FE:&#xa;                77:EE:E5:BE:3D:76:23:01:52:65:38:2E:A4:5F:25:FB:&#xa;                08:45:D2:C1:AE:1D:66&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 3F:17:4B:4F:D7:22:47:58:94:1D:65:1C:84:BE:0D:12:&#xa;                ED:90:37:7F:1F:85:6A:EB:C1:BF:28:85:EC:F8:64:6E&#xa;    Timestamp : Sep  7 00:00:46.269 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:3F:43:B4:6B:86:CF:CC:13:9F:0C:23:C1:&#xa;                D7:EA:7B:6F:49:BB:EA:5D:CB:06:FB:B0:07:03:F4:24:&#xa;                C5:A9:C8:C5:02:21:00:B0:CC:47:3B:44:1A:AB:0B:0E:&#xa;                FF:18:B6:CB:37:20:58:D8:8B:27:6E:D8:EC:4D:4B:EB:&#xa;                AB:B6:96:0E:33:40:E0</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+<table>
+<elem key="value">DNS:beyondtheivorytower.share.library.harvard.edu, DNS:cpanel.beyondtheivorytower.share.library.harvard.edu, DNS:cpcalendars.beyondtheivorytower.share.library.harvard.edu, DNS:cpcontacts.beyondtheivorytower.share.library.harvard.edu, DNS:mail.beyondtheivorytower.share.library.harvard.edu, DNS:webdisk.beyondtheivorytower.share.library.harvard.edu, DNS:webmail.beyondtheivorytower.share.library.harvard.edu, DNS:www.beyondtheivorytower.share.library.harvard.edu</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notAfter">2024-12-06T23:59:59</elem>
+<elem key="notBefore">2024-09-07T00:00:00</elem>
+</table>
+<elem key="md5">3ea300d3cafcf1c10c49428bab5da90a</elem>
+<elem key="sha1">24bd60060fe9d1cc30c8f515da0532d4b552a247</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIHlzCCBn+gAwIBAgIQJ9a2tUOAYBKJ3HfpK861hTANBgkqhkiG9w0BAQsFADBy&#xa;MQswCQYDVQQGEwJVUzELMAkGA1UECBMCVFgxEDAOBgNVBAcTB0hvdXN0b24xFTAT&#xa;BgNVBAoTDGNQYW5lbCwgSW5jLjEtMCsGA1UEAxMkY1BhbmVsLCBJbmMuIENlcnRp&#xa;ZmljYXRpb24gQXV0aG9yaXR5MB4XDTI0MDkwNzAwMDAwMFoXDTI0MTIwNjIzNTk1&#xa;OVowODE2MDQGA1UEAxMtYmV5b25kdGhlaXZvcnl0b3dlci5zaGFyZS5saWJyYXJ5&#xa;LmhhcnZhcmQuZWR1MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvaNs&#xa;mwOb3LskvtX6NpWIrCB3Lv5dEOdO+9jpgH4AA5eaBSyXSv6VvdHWd/QbmlpPApNp&#xa;tshY3jugxII6Ep6TFIANCALZoaCPNugoXT0igE/20x8k5Ub2lezDSsSxs1Ji0FHR&#xa;FWtyFuKu0KYo6HjL+8EUP6ITyHcPIKY0dg/VHyca3V00AzpP7BsL4YnjQWjI5GGv&#xa;Ey9I3y9QCt91FN2tYoPRGCcIXumnSmW3E9eJnNQZC/Nqji4WL3J6j6sF/gN4gLyJ&#xa;JnIlMDHLHcGFV4sl0zn4bA5jeilsr+P2FmlsnM2HCoHA9ZT5KqHX4npJD68OnkHk&#xa;or5yQkorK9DYbZBaGwIDAQABo4IEYTCCBF0wHwYDVR0jBBgwFoAUfgNaZUFrp34K&#xa;4bidCOodjh1qx2UwHQYDVR0OBBYEFAQC6ASo15EdIpYvKvBpEirN7xACMA4GA1Ud&#xa;DwEB/wQEAwIFoDAMBgNVHRMBAf8EAjAAMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggr&#xa;BgEFBQcDAjBJBgNVHSAEQjBAMDQGCysGAQQBsjEBAgI0MCUwIwYIKwYBBQUHAgEW&#xa;F2h0dHBzOi8vc2VjdGlnby5jb20vQ1BTMAgGBmeBDAECATBMBgNVHR8ERTBDMEGg&#xa;P6A9hjtodHRwOi8vY3JsLmNvbW9kb2NhLmNvbS9jUGFuZWxJbmNDZXJ0aWZpY2F0&#xa;aW9uQXV0aG9yaXR5LmNybDB9BggrBgEFBQcBAQRxMG8wRwYIKwYBBQUHMAKGO2h0&#xa;dHA6Ly9jcnQuY29tb2RvY2EuY29tL2NQYW5lbEluY0NlcnRpZmljYXRpb25BdXRo&#xa;b3JpdHkuY3J0MCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5jb21vZG9jYS5jb20w&#xa;ggEEBgorBgEEAdZ5AgQCBIH1BIHyAPAAdgB2/4g/Crb7lVHCYcz1h7o0tKTNuync&#xa;aEIKn+ZnTFo6dAAAAZHJyIETAAAEAwBHMEUCIHkHpJ5sbv1ParqUr411ZyvVmXtH&#xa;NEhOTQ7fC+LaWCJ/AiEA4tbMN0QYNyD+d+7lvj12IwFSZTgupF8l+whF0sGuHWYA&#xa;dgA/F0tP1yJHWJQdZRyEvg0S7ZA3fx+FauvBvyiF7PhkbgAAAZHJyIC9AAAEAwBH&#xa;MEUCID9DtGuGz8wTnwwjwdfqe29Ju+pdywb7sAcD9CTFqcjFAiEAsMxHO0QaqwsO&#xa;/xi2yzcgWNiLJ27Y7E1L66u2lg4zQOAwggG8BgNVHREEggGzMIIBr4ItYmV5b25k&#xa;dGhlaXZvcnl0b3dlci5zaGFyZS5saWJyYXJ5LmhhcnZhcmQuZWR1gjRjcGFuZWwu&#xa;YmV5b25kdGhlaXZvcnl0b3dlci5zaGFyZS5saWJyYXJ5LmhhcnZhcmQuZWR1gjlj&#xa;cGNhbGVuZGFycy5iZXlvbmR0aGVpdm9yeXRvd2VyLnNoYXJlLmxpYnJhcnkuaGFy&#xa;dmFyZC5lZHWCOGNwY29udGFjdHMuYmV5b25kdGhlaXZvcnl0b3dlci5zaGFyZS5s&#xa;aWJyYXJ5LmhhcnZhcmQuZWR1gjJtYWlsLmJleW9uZHRoZWl2b3J5dG93ZXIuc2hh&#xa;cmUubGlicmFyeS5oYXJ2YXJkLmVkdYI1d2ViZGlzay5iZXlvbmR0aGVpdm9yeXRv&#xa;d2VyLnNoYXJlLmxpYnJhcnkuaGFydmFyZC5lZHWCNXdlYm1haWwuYmV5b25kdGhl&#xa;aXZvcnl0b3dlci5zaGFyZS5saWJyYXJ5LmhhcnZhcmQuZWR1gjF3d3cuYmV5b25k&#xa;dGhlaXZvcnl0b3dlci5zaGFyZS5saWJyYXJ5LmhhcnZhcmQuZWR1MA0GCSqGSIb3&#xa;DQEBCwUAA4IBAQBQvbTaFPs60nCPjgD2e/V1IgYXLYTXFwYd6gGBXiByC69qV0D/&#xa;EieQGy9pnKm4oOZfmERfhCT6fwhxVatyKk9mXMrtTilTcy6mS7gy6ee7/qKX5uam&#xa;rTa5YXAzy6f2/dRXkMGd50pZuaV3GfbCsxAWncJuDUh0J8KXc0yrEVdiwUeaRNpr&#xa;2P3+zNyK/h2G8m3Y/tv1Z+wuaCW4BKQlJmxPzHt4aOpGq7qSB3cT7ylPKk2+XBUX&#xa;OMNBO1nHFXc+u45kdxtuNJRe6okalaPOi8Qoym+7aqJSHdqId1KNK/uTtd9ZA/C7&#xa;LxZNtua+zdoDQrWTEaS4Y54buSCjfEgN6VPa&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="143"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="imap" product="Dovecot imapd" method="probed" conf="10"><cpe>cpe:/a:dovecot:dovecot</cpe></service><script id="imap-capabilities" output="capabilities Pre-login AUTH=LOGINA0001 SASL-IR post-login STARTTLS ENABLE NAMESPACE have IDLE more listed LOGIN-REFERRALS OK ID AUTH=PLAIN IMAP4rev1 LITERAL+"/><script id="ssl-cert" output="Subject: commonName=beyondtheivorytower.share.library.harvard.edu&#xa;Subject Alternative Name: DNS:beyondtheivorytower.share.library.harvard.edu, DNS:cpanel.beyondtheivorytower.share.library.harvard.edu, DNS:cpcalendars.beyondtheivorytower.share.library.harvard.edu, DNS:cpcontacts.beyondtheivorytower.share.library.harvard.edu, DNS:mail.beyondtheivorytower.share.library.harvard.edu, DNS:webdisk.beyondtheivorytower.share.library.harvard.edu, DNS:webmail.beyondtheivorytower.share.library.harvard.edu, DNS:www.beyondtheivorytower.share.library.harvard.edu&#xa;Issuer: commonName=cPanel, Inc. Certification Authority/organizationName=cPanel, Inc./stateOrProvinceName=TX/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-09-07T00:00:00&#xa;Not valid after:  2024-12-06T23:59:59&#xa;MD5:   3ea3 00d3 cafc f1c1 0c49 428b ab5d a90a&#xa;SHA-1: 24bd 6006 0fe9 d1cc 30c8 f515 da05 32d4 b552 a247"><table key="subject">
+<elem key="commonName">beyondtheivorytower.share.library.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="stateOrProvinceName">TX</elem>
+<elem key="localityName">Houston</elem>
+<elem key="countryName">US</elem>
+<elem key="commonName">cPanel, Inc. Certification Authority</elem>
+<elem key="organizationName">cPanel, Inc.</elem>
+</table>
+<table key="pubkey">
+<elem key="exponent">BIGNUM: 0x5562ea5dbc28</elem>
+<elem key="modulus">BIGNUM: 0x5562e93a5878</elem>
+<elem key="bits">2048</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">7E:03:5A:65:41:6B:A7:7E:0A:E1:B8:9D:08:EA:1D:8E:1D:6A:C7:65</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">04:02:E8:04:A8:D7:91:1D:22:96:2F:2A:F0:69:12:2A:CD:EF:10:02</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+</table>
+<table>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">Policy: 1.3.6.1.4.1.6449.1.2.2.52&#xa;  CPS: https://sectigo.com/CPS&#xa;Policy: 2.23.140.1.2.1</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Full Name:&#xa;  URI:http://crl.comodoca.com/cPanelIncCertificationAuthority.crl</elem>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+</table>
+<table>
+<elem key="value">CA Issuers - URI:http://crt.comodoca.com/cPanelIncCertificationAuthority.crt&#xa;OCSP - URI:http://ocsp.comodoca.com</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 76:FF:88:3F:0A:B6:FB:95:51:C2:61:CC:F5:87:BA:34:&#xa;                B4:A4:CD:BB:29:DC:68:42:0A:9F:E6:67:4C:5A:3A:74&#xa;    Timestamp : Sep  7 00:00:46.355 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:79:07:A4:9E:6C:6E:FD:4F:6A:BA:94:AF:&#xa;                8D:75:67:2B:D5:99:7B:47:34:48:4E:4D:0E:DF:0B:E2:&#xa;                DA:58:22:7F:02:21:00:E2:D6:CC:37:44:18:37:20:FE:&#xa;                77:EE:E5:BE:3D:76:23:01:52:65:38:2E:A4:5F:25:FB:&#xa;                08:45:D2:C1:AE:1D:66&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 3F:17:4B:4F:D7:22:47:58:94:1D:65:1C:84:BE:0D:12:&#xa;                ED:90:37:7F:1F:85:6A:EB:C1:BF:28:85:EC:F8:64:6E&#xa;    Timestamp : Sep  7 00:00:46.269 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:3F:43:B4:6B:86:CF:CC:13:9F:0C:23:C1:&#xa;                D7:EA:7B:6F:49:BB:EA:5D:CB:06:FB:B0:07:03:F4:24:&#xa;                C5:A9:C8:C5:02:21:00:B0:CC:47:3B:44:1A:AB:0B:0E:&#xa;                FF:18:B6:CB:37:20:58:D8:8B:27:6E:D8:EC:4D:4B:EB:&#xa;                AB:B6:96:0E:33:40:E0</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+<table>
+<elem key="value">DNS:beyondtheivorytower.share.library.harvard.edu, DNS:cpanel.beyondtheivorytower.share.library.harvard.edu, DNS:cpcalendars.beyondtheivorytower.share.library.harvard.edu, DNS:cpcontacts.beyondtheivorytower.share.library.harvard.edu, DNS:mail.beyondtheivorytower.share.library.harvard.edu, DNS:webdisk.beyondtheivorytower.share.library.harvard.edu, DNS:webmail.beyondtheivorytower.share.library.harvard.edu, DNS:www.beyondtheivorytower.share.library.harvard.edu</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notAfter">2024-12-06T23:59:59</elem>
+<elem key="notBefore">2024-09-07T00:00:00</elem>
+</table>
+<elem key="md5">3ea300d3cafcf1c10c49428bab5da90a</elem>
+<elem key="sha1">24bd60060fe9d1cc30c8f515da0532d4b552a247</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIHlzCCBn+gAwIBAgIQJ9a2tUOAYBKJ3HfpK861hTANBgkqhkiG9w0BAQsFADBy&#xa;MQswCQYDVQQGEwJVUzELMAkGA1UECBMCVFgxEDAOBgNVBAcTB0hvdXN0b24xFTAT&#xa;BgNVBAoTDGNQYW5lbCwgSW5jLjEtMCsGA1UEAxMkY1BhbmVsLCBJbmMuIENlcnRp&#xa;ZmljYXRpb24gQXV0aG9yaXR5MB4XDTI0MDkwNzAwMDAwMFoXDTI0MTIwNjIzNTk1&#xa;OVowODE2MDQGA1UEAxMtYmV5b25kdGhlaXZvcnl0b3dlci5zaGFyZS5saWJyYXJ5&#xa;LmhhcnZhcmQuZWR1MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvaNs&#xa;mwOb3LskvtX6NpWIrCB3Lv5dEOdO+9jpgH4AA5eaBSyXSv6VvdHWd/QbmlpPApNp&#xa;tshY3jugxII6Ep6TFIANCALZoaCPNugoXT0igE/20x8k5Ub2lezDSsSxs1Ji0FHR&#xa;FWtyFuKu0KYo6HjL+8EUP6ITyHcPIKY0dg/VHyca3V00AzpP7BsL4YnjQWjI5GGv&#xa;Ey9I3y9QCt91FN2tYoPRGCcIXumnSmW3E9eJnNQZC/Nqji4WL3J6j6sF/gN4gLyJ&#xa;JnIlMDHLHcGFV4sl0zn4bA5jeilsr+P2FmlsnM2HCoHA9ZT5KqHX4npJD68OnkHk&#xa;or5yQkorK9DYbZBaGwIDAQABo4IEYTCCBF0wHwYDVR0jBBgwFoAUfgNaZUFrp34K&#xa;4bidCOodjh1qx2UwHQYDVR0OBBYEFAQC6ASo15EdIpYvKvBpEirN7xACMA4GA1Ud&#xa;DwEB/wQEAwIFoDAMBgNVHRMBAf8EAjAAMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggr&#xa;BgEFBQcDAjBJBgNVHSAEQjBAMDQGCysGAQQBsjEBAgI0MCUwIwYIKwYBBQUHAgEW&#xa;F2h0dHBzOi8vc2VjdGlnby5jb20vQ1BTMAgGBmeBDAECATBMBgNVHR8ERTBDMEGg&#xa;P6A9hjtodHRwOi8vY3JsLmNvbW9kb2NhLmNvbS9jUGFuZWxJbmNDZXJ0aWZpY2F0&#xa;aW9uQXV0aG9yaXR5LmNybDB9BggrBgEFBQcBAQRxMG8wRwYIKwYBBQUHMAKGO2h0&#xa;dHA6Ly9jcnQuY29tb2RvY2EuY29tL2NQYW5lbEluY0NlcnRpZmljYXRpb25BdXRo&#xa;b3JpdHkuY3J0MCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5jb21vZG9jYS5jb20w&#xa;ggEEBgorBgEEAdZ5AgQCBIH1BIHyAPAAdgB2/4g/Crb7lVHCYcz1h7o0tKTNuync&#xa;aEIKn+ZnTFo6dAAAAZHJyIETAAAEAwBHMEUCIHkHpJ5sbv1ParqUr411ZyvVmXtH&#xa;NEhOTQ7fC+LaWCJ/AiEA4tbMN0QYNyD+d+7lvj12IwFSZTgupF8l+whF0sGuHWYA&#xa;dgA/F0tP1yJHWJQdZRyEvg0S7ZA3fx+FauvBvyiF7PhkbgAAAZHJyIC9AAAEAwBH&#xa;MEUCID9DtGuGz8wTnwwjwdfqe29Ju+pdywb7sAcD9CTFqcjFAiEAsMxHO0QaqwsO&#xa;/xi2yzcgWNiLJ27Y7E1L66u2lg4zQOAwggG8BgNVHREEggGzMIIBr4ItYmV5b25k&#xa;dGhlaXZvcnl0b3dlci5zaGFyZS5saWJyYXJ5LmhhcnZhcmQuZWR1gjRjcGFuZWwu&#xa;YmV5b25kdGhlaXZvcnl0b3dlci5zaGFyZS5saWJyYXJ5LmhhcnZhcmQuZWR1gjlj&#xa;cGNhbGVuZGFycy5iZXlvbmR0aGVpdm9yeXRvd2VyLnNoYXJlLmxpYnJhcnkuaGFy&#xa;dmFyZC5lZHWCOGNwY29udGFjdHMuYmV5b25kdGhlaXZvcnl0b3dlci5zaGFyZS5s&#xa;aWJyYXJ5LmhhcnZhcmQuZWR1gjJtYWlsLmJleW9uZHRoZWl2b3J5dG93ZXIuc2hh&#xa;cmUubGlicmFyeS5oYXJ2YXJkLmVkdYI1d2ViZGlzay5iZXlvbmR0aGVpdm9yeXRv&#xa;d2VyLnNoYXJlLmxpYnJhcnkuaGFydmFyZC5lZHWCNXdlYm1haWwuYmV5b25kdGhl&#xa;aXZvcnl0b3dlci5zaGFyZS5saWJyYXJ5LmhhcnZhcmQuZWR1gjF3d3cuYmV5b25k&#xa;dGhlaXZvcnl0b3dlci5zaGFyZS5saWJyYXJ5LmhhcnZhcmQuZWR1MA0GCSqGSIb3&#xa;DQEBCwUAA4IBAQBQvbTaFPs60nCPjgD2e/V1IgYXLYTXFwYd6gGBXiByC69qV0D/&#xa;EieQGy9pnKm4oOZfmERfhCT6fwhxVatyKk9mXMrtTilTcy6mS7gy6ee7/qKX5uam&#xa;rTa5YXAzy6f2/dRXkMGd50pZuaV3GfbCsxAWncJuDUh0J8KXc0yrEVdiwUeaRNpr&#xa;2P3+zNyK/h2G8m3Y/tv1Z+wuaCW4BKQlJmxPzHt4aOpGq7qSB3cT7ylPKk2+XBUX&#xa;OMNBO1nHFXc+u45kdxtuNJRe6okalaPOi8Qoym+7aqJSHdqId1KNK/uTtd9ZA/C7&#xa;LxZNtua+zdoDQrWTEaS4Y54buSCjfEgN6VPa&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:apache:http_server</cpe></service><script id="http-server-header" output="Apache"><elem>Apache</elem>
+</script><script id="http-title" output="Did not follow redirect to https://beyondtheivorytower.share.library.harvard.edu/"><elem key="redirect_url">https://beyondtheivorytower.share.library.harvard.edu/</elem>
+</script><script id="ssl-cert" output="Subject: commonName=beyondtheivorytower.share.library.harvard.edu&#xa;Subject Alternative Name: DNS:beyondtheivorytower.share.library.harvard.edu, DNS:cpanel.beyondtheivorytower.share.library.harvard.edu, DNS:cpcalendars.beyondtheivorytower.share.library.harvard.edu, DNS:cpcontacts.beyondtheivorytower.share.library.harvard.edu, DNS:mail.beyondtheivorytower.share.library.harvard.edu, DNS:webdisk.beyondtheivorytower.share.library.harvard.edu, DNS:webmail.beyondtheivorytower.share.library.harvard.edu, DNS:www.beyondtheivorytower.share.library.harvard.edu&#xa;Issuer: commonName=cPanel, Inc. Certification Authority/organizationName=cPanel, Inc./stateOrProvinceName=TX/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-09-07T00:00:00&#xa;Not valid after:  2024-12-06T23:59:59&#xa;MD5:   3ea3 00d3 cafc f1c1 0c49 428b ab5d a90a&#xa;SHA-1: 24bd 6006 0fe9 d1cc 30c8 f515 da05 32d4 b552 a247"><table key="subject">
+<elem key="commonName">beyondtheivorytower.share.library.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="stateOrProvinceName">TX</elem>
+<elem key="localityName">Houston</elem>
+<elem key="countryName">US</elem>
+<elem key="commonName">cPanel, Inc. Certification Authority</elem>
+<elem key="organizationName">cPanel, Inc.</elem>
+</table>
+<table key="pubkey">
+<elem key="exponent">BIGNUM: 0x5562ea117438</elem>
+<elem key="modulus">BIGNUM: 0x5562ea117478</elem>
+<elem key="bits">2048</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">7E:03:5A:65:41:6B:A7:7E:0A:E1:B8:9D:08:EA:1D:8E:1D:6A:C7:65</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">04:02:E8:04:A8:D7:91:1D:22:96:2F:2A:F0:69:12:2A:CD:EF:10:02</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+</table>
+<table>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">Policy: 1.3.6.1.4.1.6449.1.2.2.52&#xa;  CPS: https://sectigo.com/CPS&#xa;Policy: 2.23.140.1.2.1</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Full Name:&#xa;  URI:http://crl.comodoca.com/cPanelIncCertificationAuthority.crl</elem>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+</table>
+<table>
+<elem key="value">CA Issuers - URI:http://crt.comodoca.com/cPanelIncCertificationAuthority.crt&#xa;OCSP - URI:http://ocsp.comodoca.com</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 76:FF:88:3F:0A:B6:FB:95:51:C2:61:CC:F5:87:BA:34:&#xa;                B4:A4:CD:BB:29:DC:68:42:0A:9F:E6:67:4C:5A:3A:74&#xa;    Timestamp : Sep  7 00:00:46.355 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:79:07:A4:9E:6C:6E:FD:4F:6A:BA:94:AF:&#xa;                8D:75:67:2B:D5:99:7B:47:34:48:4E:4D:0E:DF:0B:E2:&#xa;                DA:58:22:7F:02:21:00:E2:D6:CC:37:44:18:37:20:FE:&#xa;                77:EE:E5:BE:3D:76:23:01:52:65:38:2E:A4:5F:25:FB:&#xa;                08:45:D2:C1:AE:1D:66&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 3F:17:4B:4F:D7:22:47:58:94:1D:65:1C:84:BE:0D:12:&#xa;                ED:90:37:7F:1F:85:6A:EB:C1:BF:28:85:EC:F8:64:6E&#xa;    Timestamp : Sep  7 00:00:46.269 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:3F:43:B4:6B:86:CF:CC:13:9F:0C:23:C1:&#xa;                D7:EA:7B:6F:49:BB:EA:5D:CB:06:FB:B0:07:03:F4:24:&#xa;                C5:A9:C8:C5:02:21:00:B0:CC:47:3B:44:1A:AB:0B:0E:&#xa;                FF:18:B6:CB:37:20:58:D8:8B:27:6E:D8:EC:4D:4B:EB:&#xa;                AB:B6:96:0E:33:40:E0</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+<table>
+<elem key="value">DNS:beyondtheivorytower.share.library.harvard.edu, DNS:cpanel.beyondtheivorytower.share.library.harvard.edu, DNS:cpcalendars.beyondtheivorytower.share.library.harvard.edu, DNS:cpcontacts.beyondtheivorytower.share.library.harvard.edu, DNS:mail.beyondtheivorytower.share.library.harvard.edu, DNS:webdisk.beyondtheivorytower.share.library.harvard.edu, DNS:webmail.beyondtheivorytower.share.library.harvard.edu, DNS:www.beyondtheivorytower.share.library.harvard.edu</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notAfter">2024-12-06T23:59:59</elem>
+<elem key="notBefore">2024-09-07T00:00:00</elem>
+</table>
+<elem key="md5">3ea300d3cafcf1c10c49428bab5da90a</elem>
+<elem key="sha1">24bd60060fe9d1cc30c8f515da0532d4b552a247</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIHlzCCBn+gAwIBAgIQJ9a2tUOAYBKJ3HfpK861hTANBgkqhkiG9w0BAQsFADBy&#xa;MQswCQYDVQQGEwJVUzELMAkGA1UECBMCVFgxEDAOBgNVBAcTB0hvdXN0b24xFTAT&#xa;BgNVBAoTDGNQYW5lbCwgSW5jLjEtMCsGA1UEAxMkY1BhbmVsLCBJbmMuIENlcnRp&#xa;ZmljYXRpb24gQXV0aG9yaXR5MB4XDTI0MDkwNzAwMDAwMFoXDTI0MTIwNjIzNTk1&#xa;OVowODE2MDQGA1UEAxMtYmV5b25kdGhlaXZvcnl0b3dlci5zaGFyZS5saWJyYXJ5&#xa;LmhhcnZhcmQuZWR1MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvaNs&#xa;mwOb3LskvtX6NpWIrCB3Lv5dEOdO+9jpgH4AA5eaBSyXSv6VvdHWd/QbmlpPApNp&#xa;tshY3jugxII6Ep6TFIANCALZoaCPNugoXT0igE/20x8k5Ub2lezDSsSxs1Ji0FHR&#xa;FWtyFuKu0KYo6HjL+8EUP6ITyHcPIKY0dg/VHyca3V00AzpP7BsL4YnjQWjI5GGv&#xa;Ey9I3y9QCt91FN2tYoPRGCcIXumnSmW3E9eJnNQZC/Nqji4WL3J6j6sF/gN4gLyJ&#xa;JnIlMDHLHcGFV4sl0zn4bA5jeilsr+P2FmlsnM2HCoHA9ZT5KqHX4npJD68OnkHk&#xa;or5yQkorK9DYbZBaGwIDAQABo4IEYTCCBF0wHwYDVR0jBBgwFoAUfgNaZUFrp34K&#xa;4bidCOodjh1qx2UwHQYDVR0OBBYEFAQC6ASo15EdIpYvKvBpEirN7xACMA4GA1Ud&#xa;DwEB/wQEAwIFoDAMBgNVHRMBAf8EAjAAMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggr&#xa;BgEFBQcDAjBJBgNVHSAEQjBAMDQGCysGAQQBsjEBAgI0MCUwIwYIKwYBBQUHAgEW&#xa;F2h0dHBzOi8vc2VjdGlnby5jb20vQ1BTMAgGBmeBDAECATBMBgNVHR8ERTBDMEGg&#xa;P6A9hjtodHRwOi8vY3JsLmNvbW9kb2NhLmNvbS9jUGFuZWxJbmNDZXJ0aWZpY2F0&#xa;aW9uQXV0aG9yaXR5LmNybDB9BggrBgEFBQcBAQRxMG8wRwYIKwYBBQUHMAKGO2h0&#xa;dHA6Ly9jcnQuY29tb2RvY2EuY29tL2NQYW5lbEluY0NlcnRpZmljYXRpb25BdXRo&#xa;b3JpdHkuY3J0MCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5jb21vZG9jYS5jb20w&#xa;ggEEBgorBgEEAdZ5AgQCBIH1BIHyAPAAdgB2/4g/Crb7lVHCYcz1h7o0tKTNuync&#xa;aEIKn+ZnTFo6dAAAAZHJyIETAAAEAwBHMEUCIHkHpJ5sbv1ParqUr411ZyvVmXtH&#xa;NEhOTQ7fC+LaWCJ/AiEA4tbMN0QYNyD+d+7lvj12IwFSZTgupF8l+whF0sGuHWYA&#xa;dgA/F0tP1yJHWJQdZRyEvg0S7ZA3fx+FauvBvyiF7PhkbgAAAZHJyIC9AAAEAwBH&#xa;MEUCID9DtGuGz8wTnwwjwdfqe29Ju+pdywb7sAcD9CTFqcjFAiEAsMxHO0QaqwsO&#xa;/xi2yzcgWNiLJ27Y7E1L66u2lg4zQOAwggG8BgNVHREEggGzMIIBr4ItYmV5b25k&#xa;dGhlaXZvcnl0b3dlci5zaGFyZS5saWJyYXJ5LmhhcnZhcmQuZWR1gjRjcGFuZWwu&#xa;YmV5b25kdGhlaXZvcnl0b3dlci5zaGFyZS5saWJyYXJ5LmhhcnZhcmQuZWR1gjlj&#xa;cGNhbGVuZGFycy5iZXlvbmR0aGVpdm9yeXRvd2VyLnNoYXJlLmxpYnJhcnkuaGFy&#xa;dmFyZC5lZHWCOGNwY29udGFjdHMuYmV5b25kdGhlaXZvcnl0b3dlci5zaGFyZS5s&#xa;aWJyYXJ5LmhhcnZhcmQuZWR1gjJtYWlsLmJleW9uZHRoZWl2b3J5dG93ZXIuc2hh&#xa;cmUubGlicmFyeS5oYXJ2YXJkLmVkdYI1d2ViZGlzay5iZXlvbmR0aGVpdm9yeXRv&#xa;d2VyLnNoYXJlLmxpYnJhcnkuaGFydmFyZC5lZHWCNXdlYm1haWwuYmV5b25kdGhl&#xa;aXZvcnl0b3dlci5zaGFyZS5saWJyYXJ5LmhhcnZhcmQuZWR1gjF3d3cuYmV5b25k&#xa;dGhlaXZvcnl0b3dlci5zaGFyZS5saWJyYXJ5LmhhcnZhcmQuZWR1MA0GCSqGSIb3&#xa;DQEBCwUAA4IBAQBQvbTaFPs60nCPjgD2e/V1IgYXLYTXFwYd6gGBXiByC69qV0D/&#xa;EieQGy9pnKm4oOZfmERfhCT6fwhxVatyKk9mXMrtTilTcy6mS7gy6ee7/qKX5uam&#xa;rTa5YXAzy6f2/dRXkMGd50pZuaV3GfbCsxAWncJuDUh0J8KXc0yrEVdiwUeaRNpr&#xa;2P3+zNyK/h2G8m3Y/tv1Z+wuaCW4BKQlJmxPzHt4aOpGq7qSB3cT7ylPKk2+XBUX&#xa;OMNBO1nHFXc+u45kdxtuNJRe6okalaPOi8Qoym+7aqJSHdqId1KNK/uTtd9ZA/C7&#xa;LxZNtua+zdoDQrWTEaS4Y54buSCjfEgN6VPa&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="465"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtp" product="Exim smtpd" version="4.96.2" hostname="harvard1.reclaimhosting.com" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:exim:exim:4.96.2</cpe></service><script id="smtp-commands" output="harvard1.reclaimhosting.com Hello www.beyondtheivorytower.share.library.harvard.edu [172.183.107.219], SIZE 52428800, 8BITMIME, PIPELINING, PIPECONNECT, AUTH PLAIN LOGIN, HELP, &#xa; Commands supported: AUTH HELO EHLO MAIL RCPT DATA BDAT NOOP QUIT RSET HELP "/><script id="ssl-cert" output="Subject: commonName=beyondtheivorytower.share.library.harvard.edu&#xa;Subject Alternative Name: DNS:beyondtheivorytower.share.library.harvard.edu, DNS:cpanel.beyondtheivorytower.share.library.harvard.edu, DNS:cpcalendars.beyondtheivorytower.share.library.harvard.edu, DNS:cpcontacts.beyondtheivorytower.share.library.harvard.edu, DNS:mail.beyondtheivorytower.share.library.harvard.edu, DNS:webdisk.beyondtheivorytower.share.library.harvard.edu, DNS:webmail.beyondtheivorytower.share.library.harvard.edu, DNS:www.beyondtheivorytower.share.library.harvard.edu&#xa;Issuer: commonName=cPanel, Inc. Certification Authority/organizationName=cPanel, Inc./stateOrProvinceName=TX/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-09-07T00:00:00&#xa;Not valid after:  2024-12-06T23:59:59&#xa;MD5:   3ea3 00d3 cafc f1c1 0c49 428b ab5d a90a&#xa;SHA-1: 24bd 6006 0fe9 d1cc 30c8 f515 da05 32d4 b552 a247"><table key="subject">
+<elem key="commonName">beyondtheivorytower.share.library.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="stateOrProvinceName">TX</elem>
+<elem key="localityName">Houston</elem>
+<elem key="countryName">US</elem>
+<elem key="commonName">cPanel, Inc. Certification Authority</elem>
+<elem key="organizationName">cPanel, Inc.</elem>
+</table>
+<table key="pubkey">
+<elem key="exponent">BIGNUM: 0x5562ea2e22d8</elem>
+<elem key="modulus">BIGNUM: 0x5562ea2267a8</elem>
+<elem key="bits">2048</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">7E:03:5A:65:41:6B:A7:7E:0A:E1:B8:9D:08:EA:1D:8E:1D:6A:C7:65</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">04:02:E8:04:A8:D7:91:1D:22:96:2F:2A:F0:69:12:2A:CD:EF:10:02</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+</table>
+<table>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">Policy: 1.3.6.1.4.1.6449.1.2.2.52&#xa;  CPS: https://sectigo.com/CPS&#xa;Policy: 2.23.140.1.2.1</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Full Name:&#xa;  URI:http://crl.comodoca.com/cPanelIncCertificationAuthority.crl</elem>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+</table>
+<table>
+<elem key="value">CA Issuers - URI:http://crt.comodoca.com/cPanelIncCertificationAuthority.crt&#xa;OCSP - URI:http://ocsp.comodoca.com</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 76:FF:88:3F:0A:B6:FB:95:51:C2:61:CC:F5:87:BA:34:&#xa;                B4:A4:CD:BB:29:DC:68:42:0A:9F:E6:67:4C:5A:3A:74&#xa;    Timestamp : Sep  7 00:00:46.355 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:79:07:A4:9E:6C:6E:FD:4F:6A:BA:94:AF:&#xa;                8D:75:67:2B:D5:99:7B:47:34:48:4E:4D:0E:DF:0B:E2:&#xa;                DA:58:22:7F:02:21:00:E2:D6:CC:37:44:18:37:20:FE:&#xa;                77:EE:E5:BE:3D:76:23:01:52:65:38:2E:A4:5F:25:FB:&#xa;                08:45:D2:C1:AE:1D:66&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 3F:17:4B:4F:D7:22:47:58:94:1D:65:1C:84:BE:0D:12:&#xa;                ED:90:37:7F:1F:85:6A:EB:C1:BF:28:85:EC:F8:64:6E&#xa;    Timestamp : Sep  7 00:00:46.269 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:3F:43:B4:6B:86:CF:CC:13:9F:0C:23:C1:&#xa;                D7:EA:7B:6F:49:BB:EA:5D:CB:06:FB:B0:07:03:F4:24:&#xa;                C5:A9:C8:C5:02:21:00:B0:CC:47:3B:44:1A:AB:0B:0E:&#xa;                FF:18:B6:CB:37:20:58:D8:8B:27:6E:D8:EC:4D:4B:EB:&#xa;                AB:B6:96:0E:33:40:E0</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+<table>
+<elem key="value">DNS:beyondtheivorytower.share.library.harvard.edu, DNS:cpanel.beyondtheivorytower.share.library.harvard.edu, DNS:cpcalendars.beyondtheivorytower.share.library.harvard.edu, DNS:cpcontacts.beyondtheivorytower.share.library.harvard.edu, DNS:mail.beyondtheivorytower.share.library.harvard.edu, DNS:webdisk.beyondtheivorytower.share.library.harvard.edu, DNS:webmail.beyondtheivorytower.share.library.harvard.edu, DNS:www.beyondtheivorytower.share.library.harvard.edu</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notAfter">2024-12-06T23:59:59</elem>
+<elem key="notBefore">2024-09-07T00:00:00</elem>
+</table>
+<elem key="md5">3ea300d3cafcf1c10c49428bab5da90a</elem>
+<elem key="sha1">24bd60060fe9d1cc30c8f515da0532d4b552a247</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIHlzCCBn+gAwIBAgIQJ9a2tUOAYBKJ3HfpK861hTANBgkqhkiG9w0BAQsFADBy&#xa;MQswCQYDVQQGEwJVUzELMAkGA1UECBMCVFgxEDAOBgNVBAcTB0hvdXN0b24xFTAT&#xa;BgNVBAoTDGNQYW5lbCwgSW5jLjEtMCsGA1UEAxMkY1BhbmVsLCBJbmMuIENlcnRp&#xa;ZmljYXRpb24gQXV0aG9yaXR5MB4XDTI0MDkwNzAwMDAwMFoXDTI0MTIwNjIzNTk1&#xa;OVowODE2MDQGA1UEAxMtYmV5b25kdGhlaXZvcnl0b3dlci5zaGFyZS5saWJyYXJ5&#xa;LmhhcnZhcmQuZWR1MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvaNs&#xa;mwOb3LskvtX6NpWIrCB3Lv5dEOdO+9jpgH4AA5eaBSyXSv6VvdHWd/QbmlpPApNp&#xa;tshY3jugxII6Ep6TFIANCALZoaCPNugoXT0igE/20x8k5Ub2lezDSsSxs1Ji0FHR&#xa;FWtyFuKu0KYo6HjL+8EUP6ITyHcPIKY0dg/VHyca3V00AzpP7BsL4YnjQWjI5GGv&#xa;Ey9I3y9QCt91FN2tYoPRGCcIXumnSmW3E9eJnNQZC/Nqji4WL3J6j6sF/gN4gLyJ&#xa;JnIlMDHLHcGFV4sl0zn4bA5jeilsr+P2FmlsnM2HCoHA9ZT5KqHX4npJD68OnkHk&#xa;or5yQkorK9DYbZBaGwIDAQABo4IEYTCCBF0wHwYDVR0jBBgwFoAUfgNaZUFrp34K&#xa;4bidCOodjh1qx2UwHQYDVR0OBBYEFAQC6ASo15EdIpYvKvBpEirN7xACMA4GA1Ud&#xa;DwEB/wQEAwIFoDAMBgNVHRMBAf8EAjAAMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggr&#xa;BgEFBQcDAjBJBgNVHSAEQjBAMDQGCysGAQQBsjEBAgI0MCUwIwYIKwYBBQUHAgEW&#xa;F2h0dHBzOi8vc2VjdGlnby5jb20vQ1BTMAgGBmeBDAECATBMBgNVHR8ERTBDMEGg&#xa;P6A9hjtodHRwOi8vY3JsLmNvbW9kb2NhLmNvbS9jUGFuZWxJbmNDZXJ0aWZpY2F0&#xa;aW9uQXV0aG9yaXR5LmNybDB9BggrBgEFBQcBAQRxMG8wRwYIKwYBBQUHMAKGO2h0&#xa;dHA6Ly9jcnQuY29tb2RvY2EuY29tL2NQYW5lbEluY0NlcnRpZmljYXRpb25BdXRo&#xa;b3JpdHkuY3J0MCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5jb21vZG9jYS5jb20w&#xa;ggEEBgorBgEEAdZ5AgQCBIH1BIHyAPAAdgB2/4g/Crb7lVHCYcz1h7o0tKTNuync&#xa;aEIKn+ZnTFo6dAAAAZHJyIETAAAEAwBHMEUCIHkHpJ5sbv1ParqUr411ZyvVmXtH&#xa;NEhOTQ7fC+LaWCJ/AiEA4tbMN0QYNyD+d+7lvj12IwFSZTgupF8l+whF0sGuHWYA&#xa;dgA/F0tP1yJHWJQdZRyEvg0S7ZA3fx+FauvBvyiF7PhkbgAAAZHJyIC9AAAEAwBH&#xa;MEUCID9DtGuGz8wTnwwjwdfqe29Ju+pdywb7sAcD9CTFqcjFAiEAsMxHO0QaqwsO&#xa;/xi2yzcgWNiLJ27Y7E1L66u2lg4zQOAwggG8BgNVHREEggGzMIIBr4ItYmV5b25k&#xa;dGhlaXZvcnl0b3dlci5zaGFyZS5saWJyYXJ5LmhhcnZhcmQuZWR1gjRjcGFuZWwu&#xa;YmV5b25kdGhlaXZvcnl0b3dlci5zaGFyZS5saWJyYXJ5LmhhcnZhcmQuZWR1gjlj&#xa;cGNhbGVuZGFycy5iZXlvbmR0aGVpdm9yeXRvd2VyLnNoYXJlLmxpYnJhcnkuaGFy&#xa;dmFyZC5lZHWCOGNwY29udGFjdHMuYmV5b25kdGhlaXZvcnl0b3dlci5zaGFyZS5s&#xa;aWJyYXJ5LmhhcnZhcmQuZWR1gjJtYWlsLmJleW9uZHRoZWl2b3J5dG93ZXIuc2hh&#xa;cmUubGlicmFyeS5oYXJ2YXJkLmVkdYI1d2ViZGlzay5iZXlvbmR0aGVpdm9yeXRv&#xa;d2VyLnNoYXJlLmxpYnJhcnkuaGFydmFyZC5lZHWCNXdlYm1haWwuYmV5b25kdGhl&#xa;aXZvcnl0b3dlci5zaGFyZS5saWJyYXJ5LmhhcnZhcmQuZWR1gjF3d3cuYmV5b25k&#xa;dGhlaXZvcnl0b3dlci5zaGFyZS5saWJyYXJ5LmhhcnZhcmQuZWR1MA0GCSqGSIb3&#xa;DQEBCwUAA4IBAQBQvbTaFPs60nCPjgD2e/V1IgYXLYTXFwYd6gGBXiByC69qV0D/&#xa;EieQGy9pnKm4oOZfmERfhCT6fwhxVatyKk9mXMrtTilTcy6mS7gy6ee7/qKX5uam&#xa;rTa5YXAzy6f2/dRXkMGd50pZuaV3GfbCsxAWncJuDUh0J8KXc0yrEVdiwUeaRNpr&#xa;2P3+zNyK/h2G8m3Y/tv1Z+wuaCW4BKQlJmxPzHt4aOpGq7qSB3cT7ylPKk2+XBUX&#xa;OMNBO1nHFXc+u45kdxtuNJRe6okalaPOi8Qoym+7aqJSHdqId1KNK/uTtd9ZA/C7&#xa;LxZNtua+zdoDQrWTEaS4Y54buSCjfEgN6VPa&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+<port protocol="tcp" portid="587"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtp" product="Exim smtpd" version="4.96.2" hostname="harvard1.reclaimhosting.com" method="probed" conf="10"><cpe>cpe:/a:exim:exim:4.96.2</cpe></service><script id="smtp-commands" output="harvard1.reclaimhosting.com Hello www.beyondtheivorytower.share.library.harvard.edu [172.183.107.219], SIZE 52428800, 8BITMIME, PIPELINING, PIPECONNECT, STARTTLS, HELP, &#xa; Commands supported: AUTH STARTTLS HELO EHLO MAIL RCPT DATA BDAT NOOP QUIT RSET HELP "/><script id="ssl-cert" output="Subject: commonName=beyondtheivorytower.share.library.harvard.edu&#xa;Subject Alternative Name: DNS:beyondtheivorytower.share.library.harvard.edu, DNS:cpanel.beyondtheivorytower.share.library.harvard.edu, DNS:cpcalendars.beyondtheivorytower.share.library.harvard.edu, DNS:cpcontacts.beyondtheivorytower.share.library.harvard.edu, DNS:mail.beyondtheivorytower.share.library.harvard.edu, DNS:webdisk.beyondtheivorytower.share.library.harvard.edu, DNS:webmail.beyondtheivorytower.share.library.harvard.edu, DNS:www.beyondtheivorytower.share.library.harvard.edu&#xa;Issuer: commonName=cPanel, Inc. Certification Authority/organizationName=cPanel, Inc./stateOrProvinceName=TX/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-09-07T00:00:00&#xa;Not valid after:  2024-12-06T23:59:59&#xa;MD5:   3ea3 00d3 cafc f1c1 0c49 428b ab5d a90a&#xa;SHA-1: 24bd 6006 0fe9 d1cc 30c8 f515 da05 32d4 b552 a247"><table key="subject">
+<elem key="commonName">beyondtheivorytower.share.library.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="stateOrProvinceName">TX</elem>
+<elem key="localityName">Houston</elem>
+<elem key="countryName">US</elem>
+<elem key="commonName">cPanel, Inc. Certification Authority</elem>
+<elem key="organizationName">cPanel, Inc.</elem>
+</table>
+<table key="pubkey">
+<elem key="exponent">BIGNUM: 0x5562e94aa2b8</elem>
+<elem key="modulus">BIGNUM: 0x5562e94aa2f8</elem>
+<elem key="bits">2048</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">7E:03:5A:65:41:6B:A7:7E:0A:E1:B8:9D:08:EA:1D:8E:1D:6A:C7:65</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">04:02:E8:04:A8:D7:91:1D:22:96:2F:2A:F0:69:12:2A:CD:EF:10:02</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+</table>
+<table>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">Policy: 1.3.6.1.4.1.6449.1.2.2.52&#xa;  CPS: https://sectigo.com/CPS&#xa;Policy: 2.23.140.1.2.1</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Full Name:&#xa;  URI:http://crl.comodoca.com/cPanelIncCertificationAuthority.crl</elem>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+</table>
+<table>
+<elem key="value">CA Issuers - URI:http://crt.comodoca.com/cPanelIncCertificationAuthority.crt&#xa;OCSP - URI:http://ocsp.comodoca.com</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 76:FF:88:3F:0A:B6:FB:95:51:C2:61:CC:F5:87:BA:34:&#xa;                B4:A4:CD:BB:29:DC:68:42:0A:9F:E6:67:4C:5A:3A:74&#xa;    Timestamp : Sep  7 00:00:46.355 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:79:07:A4:9E:6C:6E:FD:4F:6A:BA:94:AF:&#xa;                8D:75:67:2B:D5:99:7B:47:34:48:4E:4D:0E:DF:0B:E2:&#xa;                DA:58:22:7F:02:21:00:E2:D6:CC:37:44:18:37:20:FE:&#xa;                77:EE:E5:BE:3D:76:23:01:52:65:38:2E:A4:5F:25:FB:&#xa;                08:45:D2:C1:AE:1D:66&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 3F:17:4B:4F:D7:22:47:58:94:1D:65:1C:84:BE:0D:12:&#xa;                ED:90:37:7F:1F:85:6A:EB:C1:BF:28:85:EC:F8:64:6E&#xa;    Timestamp : Sep  7 00:00:46.269 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:3F:43:B4:6B:86:CF:CC:13:9F:0C:23:C1:&#xa;                D7:EA:7B:6F:49:BB:EA:5D:CB:06:FB:B0:07:03:F4:24:&#xa;                C5:A9:C8:C5:02:21:00:B0:CC:47:3B:44:1A:AB:0B:0E:&#xa;                FF:18:B6:CB:37:20:58:D8:8B:27:6E:D8:EC:4D:4B:EB:&#xa;                AB:B6:96:0E:33:40:E0</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+<table>
+<elem key="value">DNS:beyondtheivorytower.share.library.harvard.edu, DNS:cpanel.beyondtheivorytower.share.library.harvard.edu, DNS:cpcalendars.beyondtheivorytower.share.library.harvard.edu, DNS:cpcontacts.beyondtheivorytower.share.library.harvard.edu, DNS:mail.beyondtheivorytower.share.library.harvard.edu, DNS:webdisk.beyondtheivorytower.share.library.harvard.edu, DNS:webmail.beyondtheivorytower.share.library.harvard.edu, DNS:www.beyondtheivorytower.share.library.harvard.edu</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notAfter">2024-12-06T23:59:59</elem>
+<elem key="notBefore">2024-09-07T00:00:00</elem>
+</table>
+<elem key="md5">3ea300d3cafcf1c10c49428bab5da90a</elem>
+<elem key="sha1">24bd60060fe9d1cc30c8f515da0532d4b552a247</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIHlzCCBn+gAwIBAgIQJ9a2tUOAYBKJ3HfpK861hTANBgkqhkiG9w0BAQsFADBy&#xa;MQswCQYDVQQGEwJVUzELMAkGA1UECBMCVFgxEDAOBgNVBAcTB0hvdXN0b24xFTAT&#xa;BgNVBAoTDGNQYW5lbCwgSW5jLjEtMCsGA1UEAxMkY1BhbmVsLCBJbmMuIENlcnRp&#xa;ZmljYXRpb24gQXV0aG9yaXR5MB4XDTI0MDkwNzAwMDAwMFoXDTI0MTIwNjIzNTk1&#xa;OVowODE2MDQGA1UEAxMtYmV5b25kdGhlaXZvcnl0b3dlci5zaGFyZS5saWJyYXJ5&#xa;LmhhcnZhcmQuZWR1MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvaNs&#xa;mwOb3LskvtX6NpWIrCB3Lv5dEOdO+9jpgH4AA5eaBSyXSv6VvdHWd/QbmlpPApNp&#xa;tshY3jugxII6Ep6TFIANCALZoaCPNugoXT0igE/20x8k5Ub2lezDSsSxs1Ji0FHR&#xa;FWtyFuKu0KYo6HjL+8EUP6ITyHcPIKY0dg/VHyca3V00AzpP7BsL4YnjQWjI5GGv&#xa;Ey9I3y9QCt91FN2tYoPRGCcIXumnSmW3E9eJnNQZC/Nqji4WL3J6j6sF/gN4gLyJ&#xa;JnIlMDHLHcGFV4sl0zn4bA5jeilsr+P2FmlsnM2HCoHA9ZT5KqHX4npJD68OnkHk&#xa;or5yQkorK9DYbZBaGwIDAQABo4IEYTCCBF0wHwYDVR0jBBgwFoAUfgNaZUFrp34K&#xa;4bidCOodjh1qx2UwHQYDVR0OBBYEFAQC6ASo15EdIpYvKvBpEirN7xACMA4GA1Ud&#xa;DwEB/wQEAwIFoDAMBgNVHRMBAf8EAjAAMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggr&#xa;BgEFBQcDAjBJBgNVHSAEQjBAMDQGCysGAQQBsjEBAgI0MCUwIwYIKwYBBQUHAgEW&#xa;F2h0dHBzOi8vc2VjdGlnby5jb20vQ1BTMAgGBmeBDAECATBMBgNVHR8ERTBDMEGg&#xa;P6A9hjtodHRwOi8vY3JsLmNvbW9kb2NhLmNvbS9jUGFuZWxJbmNDZXJ0aWZpY2F0&#xa;aW9uQXV0aG9yaXR5LmNybDB9BggrBgEFBQcBAQRxMG8wRwYIKwYBBQUHMAKGO2h0&#xa;dHA6Ly9jcnQuY29tb2RvY2EuY29tL2NQYW5lbEluY0NlcnRpZmljYXRpb25BdXRo&#xa;b3JpdHkuY3J0MCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5jb21vZG9jYS5jb20w&#xa;ggEEBgorBgEEAdZ5AgQCBIH1BIHyAPAAdgB2/4g/Crb7lVHCYcz1h7o0tKTNuync&#xa;aEIKn+ZnTFo6dAAAAZHJyIETAAAEAwBHMEUCIHkHpJ5sbv1ParqUr411ZyvVmXtH&#xa;NEhOTQ7fC+LaWCJ/AiEA4tbMN0QYNyD+d+7lvj12IwFSZTgupF8l+whF0sGuHWYA&#xa;dgA/F0tP1yJHWJQdZRyEvg0S7ZA3fx+FauvBvyiF7PhkbgAAAZHJyIC9AAAEAwBH&#xa;MEUCID9DtGuGz8wTnwwjwdfqe29Ju+pdywb7sAcD9CTFqcjFAiEAsMxHO0QaqwsO&#xa;/xi2yzcgWNiLJ27Y7E1L66u2lg4zQOAwggG8BgNVHREEggGzMIIBr4ItYmV5b25k&#xa;dGhlaXZvcnl0b3dlci5zaGFyZS5saWJyYXJ5LmhhcnZhcmQuZWR1gjRjcGFuZWwu&#xa;YmV5b25kdGhlaXZvcnl0b3dlci5zaGFyZS5saWJyYXJ5LmhhcnZhcmQuZWR1gjlj&#xa;cGNhbGVuZGFycy5iZXlvbmR0aGVpdm9yeXRvd2VyLnNoYXJlLmxpYnJhcnkuaGFy&#xa;dmFyZC5lZHWCOGNwY29udGFjdHMuYmV5b25kdGhlaXZvcnl0b3dlci5zaGFyZS5s&#xa;aWJyYXJ5LmhhcnZhcmQuZWR1gjJtYWlsLmJleW9uZHRoZWl2b3J5dG93ZXIuc2hh&#xa;cmUubGlicmFyeS5oYXJ2YXJkLmVkdYI1d2ViZGlzay5iZXlvbmR0aGVpdm9yeXRv&#xa;d2VyLnNoYXJlLmxpYnJhcnkuaGFydmFyZC5lZHWCNXdlYm1haWwuYmV5b25kdGhl&#xa;aXZvcnl0b3dlci5zaGFyZS5saWJyYXJ5LmhhcnZhcmQuZWR1gjF3d3cuYmV5b25k&#xa;dGhlaXZvcnl0b3dlci5zaGFyZS5saWJyYXJ5LmhhcnZhcmQuZWR1MA0GCSqGSIb3&#xa;DQEBCwUAA4IBAQBQvbTaFPs60nCPjgD2e/V1IgYXLYTXFwYd6gGBXiByC69qV0D/&#xa;EieQGy9pnKm4oOZfmERfhCT6fwhxVatyKk9mXMrtTilTcy6mS7gy6ee7/qKX5uam&#xa;rTa5YXAzy6f2/dRXkMGd50pZuaV3GfbCsxAWncJuDUh0J8KXc0yrEVdiwUeaRNpr&#xa;2P3+zNyK/h2G8m3Y/tv1Z+wuaCW4BKQlJmxPzHt4aOpGq7qSB3cT7ylPKk2+XBUX&#xa;OMNBO1nHFXc+u45kdxtuNJRe6okalaPOi8Qoym+7aqJSHdqId1KNK/uTtd9ZA/C7&#xa;LxZNtua+zdoDQrWTEaS4Y54buSCjfEgN6VPa&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+<port protocol="tcp" portid="993"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="imaps" method="table" conf="3"/><script id="imap-capabilities" output="capabilities Pre-login AUTH=LOGINA0001 SASL-IR post-login ENABLE NAMESPACE have IDLE more listed LOGIN-REFERRALS OK ID AUTH=PLAIN IMAP4rev1 LITERAL+"/><script id="ssl-cert" output="Subject: commonName=beyondtheivorytower.share.library.harvard.edu&#xa;Subject Alternative Name: DNS:beyondtheivorytower.share.library.harvard.edu, DNS:cpanel.beyondtheivorytower.share.library.harvard.edu, DNS:cpcalendars.beyondtheivorytower.share.library.harvard.edu, DNS:cpcontacts.beyondtheivorytower.share.library.harvard.edu, DNS:mail.beyondtheivorytower.share.library.harvard.edu, DNS:webdisk.beyondtheivorytower.share.library.harvard.edu, DNS:webmail.beyondtheivorytower.share.library.harvard.edu, DNS:www.beyondtheivorytower.share.library.harvard.edu&#xa;Issuer: commonName=cPanel, Inc. Certification Authority/organizationName=cPanel, Inc./stateOrProvinceName=TX/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-09-07T00:00:00&#xa;Not valid after:  2024-12-06T23:59:59&#xa;MD5:   3ea3 00d3 cafc f1c1 0c49 428b ab5d a90a&#xa;SHA-1: 24bd 6006 0fe9 d1cc 30c8 f515 da05 32d4 b552 a247"><table key="subject">
+<elem key="commonName">beyondtheivorytower.share.library.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="stateOrProvinceName">TX</elem>
+<elem key="localityName">Houston</elem>
+<elem key="countryName">US</elem>
+<elem key="commonName">cPanel, Inc. Certification Authority</elem>
+<elem key="organizationName">cPanel, Inc.</elem>
+</table>
+<table key="pubkey">
+<elem key="exponent">BIGNUM: 0x5562e98470e8</elem>
+<elem key="modulus">BIGNUM: 0x5562e9847128</elem>
+<elem key="bits">2048</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">7E:03:5A:65:41:6B:A7:7E:0A:E1:B8:9D:08:EA:1D:8E:1D:6A:C7:65</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">04:02:E8:04:A8:D7:91:1D:22:96:2F:2A:F0:69:12:2A:CD:EF:10:02</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+</table>
+<table>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">Policy: 1.3.6.1.4.1.6449.1.2.2.52&#xa;  CPS: https://sectigo.com/CPS&#xa;Policy: 2.23.140.1.2.1</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Full Name:&#xa;  URI:http://crl.comodoca.com/cPanelIncCertificationAuthority.crl</elem>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+</table>
+<table>
+<elem key="value">CA Issuers - URI:http://crt.comodoca.com/cPanelIncCertificationAuthority.crt&#xa;OCSP - URI:http://ocsp.comodoca.com</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 76:FF:88:3F:0A:B6:FB:95:51:C2:61:CC:F5:87:BA:34:&#xa;                B4:A4:CD:BB:29:DC:68:42:0A:9F:E6:67:4C:5A:3A:74&#xa;    Timestamp : Sep  7 00:00:46.355 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:79:07:A4:9E:6C:6E:FD:4F:6A:BA:94:AF:&#xa;                8D:75:67:2B:D5:99:7B:47:34:48:4E:4D:0E:DF:0B:E2:&#xa;                DA:58:22:7F:02:21:00:E2:D6:CC:37:44:18:37:20:FE:&#xa;                77:EE:E5:BE:3D:76:23:01:52:65:38:2E:A4:5F:25:FB:&#xa;                08:45:D2:C1:AE:1D:66&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 3F:17:4B:4F:D7:22:47:58:94:1D:65:1C:84:BE:0D:12:&#xa;                ED:90:37:7F:1F:85:6A:EB:C1:BF:28:85:EC:F8:64:6E&#xa;    Timestamp : Sep  7 00:00:46.269 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:3F:43:B4:6B:86:CF:CC:13:9F:0C:23:C1:&#xa;                D7:EA:7B:6F:49:BB:EA:5D:CB:06:FB:B0:07:03:F4:24:&#xa;                C5:A9:C8:C5:02:21:00:B0:CC:47:3B:44:1A:AB:0B:0E:&#xa;                FF:18:B6:CB:37:20:58:D8:8B:27:6E:D8:EC:4D:4B:EB:&#xa;                AB:B6:96:0E:33:40:E0</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+<table>
+<elem key="value">DNS:beyondtheivorytower.share.library.harvard.edu, DNS:cpanel.beyondtheivorytower.share.library.harvard.edu, DNS:cpcalendars.beyondtheivorytower.share.library.harvard.edu, DNS:cpcontacts.beyondtheivorytower.share.library.harvard.edu, DNS:mail.beyondtheivorytower.share.library.harvard.edu, DNS:webdisk.beyondtheivorytower.share.library.harvard.edu, DNS:webmail.beyondtheivorytower.share.library.harvard.edu, DNS:www.beyondtheivorytower.share.library.harvard.edu</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notAfter">2024-12-06T23:59:59</elem>
+<elem key="notBefore">2024-09-07T00:00:00</elem>
+</table>
+<elem key="md5">3ea300d3cafcf1c10c49428bab5da90a</elem>
+<elem key="sha1">24bd60060fe9d1cc30c8f515da0532d4b552a247</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIHlzCCBn+gAwIBAgIQJ9a2tUOAYBKJ3HfpK861hTANBgkqhkiG9w0BAQsFADBy&#xa;MQswCQYDVQQGEwJVUzELMAkGA1UECBMCVFgxEDAOBgNVBAcTB0hvdXN0b24xFTAT&#xa;BgNVBAoTDGNQYW5lbCwgSW5jLjEtMCsGA1UEAxMkY1BhbmVsLCBJbmMuIENlcnRp&#xa;ZmljYXRpb24gQXV0aG9yaXR5MB4XDTI0MDkwNzAwMDAwMFoXDTI0MTIwNjIzNTk1&#xa;OVowODE2MDQGA1UEAxMtYmV5b25kdGhlaXZvcnl0b3dlci5zaGFyZS5saWJyYXJ5&#xa;LmhhcnZhcmQuZWR1MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvaNs&#xa;mwOb3LskvtX6NpWIrCB3Lv5dEOdO+9jpgH4AA5eaBSyXSv6VvdHWd/QbmlpPApNp&#xa;tshY3jugxII6Ep6TFIANCALZoaCPNugoXT0igE/20x8k5Ub2lezDSsSxs1Ji0FHR&#xa;FWtyFuKu0KYo6HjL+8EUP6ITyHcPIKY0dg/VHyca3V00AzpP7BsL4YnjQWjI5GGv&#xa;Ey9I3y9QCt91FN2tYoPRGCcIXumnSmW3E9eJnNQZC/Nqji4WL3J6j6sF/gN4gLyJ&#xa;JnIlMDHLHcGFV4sl0zn4bA5jeilsr+P2FmlsnM2HCoHA9ZT5KqHX4npJD68OnkHk&#xa;or5yQkorK9DYbZBaGwIDAQABo4IEYTCCBF0wHwYDVR0jBBgwFoAUfgNaZUFrp34K&#xa;4bidCOodjh1qx2UwHQYDVR0OBBYEFAQC6ASo15EdIpYvKvBpEirN7xACMA4GA1Ud&#xa;DwEB/wQEAwIFoDAMBgNVHRMBAf8EAjAAMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggr&#xa;BgEFBQcDAjBJBgNVHSAEQjBAMDQGCysGAQQBsjEBAgI0MCUwIwYIKwYBBQUHAgEW&#xa;F2h0dHBzOi8vc2VjdGlnby5jb20vQ1BTMAgGBmeBDAECATBMBgNVHR8ERTBDMEGg&#xa;P6A9hjtodHRwOi8vY3JsLmNvbW9kb2NhLmNvbS9jUGFuZWxJbmNDZXJ0aWZpY2F0&#xa;aW9uQXV0aG9yaXR5LmNybDB9BggrBgEFBQcBAQRxMG8wRwYIKwYBBQUHMAKGO2h0&#xa;dHA6Ly9jcnQuY29tb2RvY2EuY29tL2NQYW5lbEluY0NlcnRpZmljYXRpb25BdXRo&#xa;b3JpdHkuY3J0MCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5jb21vZG9jYS5jb20w&#xa;ggEEBgorBgEEAdZ5AgQCBIH1BIHyAPAAdgB2/4g/Crb7lVHCYcz1h7o0tKTNuync&#xa;aEIKn+ZnTFo6dAAAAZHJyIETAAAEAwBHMEUCIHkHpJ5sbv1ParqUr411ZyvVmXtH&#xa;NEhOTQ7fC+LaWCJ/AiEA4tbMN0QYNyD+d+7lvj12IwFSZTgupF8l+whF0sGuHWYA&#xa;dgA/F0tP1yJHWJQdZRyEvg0S7ZA3fx+FauvBvyiF7PhkbgAAAZHJyIC9AAAEAwBH&#xa;MEUCID9DtGuGz8wTnwwjwdfqe29Ju+pdywb7sAcD9CTFqcjFAiEAsMxHO0QaqwsO&#xa;/xi2yzcgWNiLJ27Y7E1L66u2lg4zQOAwggG8BgNVHREEggGzMIIBr4ItYmV5b25k&#xa;dGhlaXZvcnl0b3dlci5zaGFyZS5saWJyYXJ5LmhhcnZhcmQuZWR1gjRjcGFuZWwu&#xa;YmV5b25kdGhlaXZvcnl0b3dlci5zaGFyZS5saWJyYXJ5LmhhcnZhcmQuZWR1gjlj&#xa;cGNhbGVuZGFycy5iZXlvbmR0aGVpdm9yeXRvd2VyLnNoYXJlLmxpYnJhcnkuaGFy&#xa;dmFyZC5lZHWCOGNwY29udGFjdHMuYmV5b25kdGhlaXZvcnl0b3dlci5zaGFyZS5s&#xa;aWJyYXJ5LmhhcnZhcmQuZWR1gjJtYWlsLmJleW9uZHRoZWl2b3J5dG93ZXIuc2hh&#xa;cmUubGlicmFyeS5oYXJ2YXJkLmVkdYI1d2ViZGlzay5iZXlvbmR0aGVpdm9yeXRv&#xa;d2VyLnNoYXJlLmxpYnJhcnkuaGFydmFyZC5lZHWCNXdlYm1haWwuYmV5b25kdGhl&#xa;aXZvcnl0b3dlci5zaGFyZS5saWJyYXJ5LmhhcnZhcmQuZWR1gjF3d3cuYmV5b25k&#xa;dGhlaXZvcnl0b3dlci5zaGFyZS5saWJyYXJ5LmhhcnZhcmQuZWR1MA0GCSqGSIb3&#xa;DQEBCwUAA4IBAQBQvbTaFPs60nCPjgD2e/V1IgYXLYTXFwYd6gGBXiByC69qV0D/&#xa;EieQGy9pnKm4oOZfmERfhCT6fwhxVatyKk9mXMrtTilTcy6mS7gy6ee7/qKX5uam&#xa;rTa5YXAzy6f2/dRXkMGd50pZuaV3GfbCsxAWncJuDUh0J8KXc0yrEVdiwUeaRNpr&#xa;2P3+zNyK/h2G8m3Y/tv1Z+wuaCW4BKQlJmxPzHt4aOpGq7qSB3cT7ylPKk2+XBUX&#xa;OMNBO1nHFXc+u45kdxtuNJRe6okalaPOi8Qoym+7aqJSHdqId1KNK/uTtd9ZA/C7&#xa;LxZNtua+zdoDQrWTEaS4Y54buSCjfEgN6VPa&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="995"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="pop3s" method="table" conf="3"/><script id="pop3-capabilities" output="USER UIDL CAPA RESP-CODES SASL(PLAIN LOGIN) AUTH-RESP-CODE TOP PIPELINING"/><script id="ssl-cert" output="Subject: commonName=beyondtheivorytower.share.library.harvard.edu&#xa;Subject Alternative Name: DNS:beyondtheivorytower.share.library.harvard.edu, DNS:cpanel.beyondtheivorytower.share.library.harvard.edu, DNS:cpcalendars.beyondtheivorytower.share.library.harvard.edu, DNS:cpcontacts.beyondtheivorytower.share.library.harvard.edu, DNS:mail.beyondtheivorytower.share.library.harvard.edu, DNS:webdisk.beyondtheivorytower.share.library.harvard.edu, DNS:webmail.beyondtheivorytower.share.library.harvard.edu, DNS:www.beyondtheivorytower.share.library.harvard.edu&#xa;Issuer: commonName=cPanel, Inc. Certification Authority/organizationName=cPanel, Inc./stateOrProvinceName=TX/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-09-07T00:00:00&#xa;Not valid after:  2024-12-06T23:59:59&#xa;MD5:   3ea3 00d3 cafc f1c1 0c49 428b ab5d a90a&#xa;SHA-1: 24bd 6006 0fe9 d1cc 30c8 f515 da05 32d4 b552 a247"><table key="subject">
+<elem key="commonName">beyondtheivorytower.share.library.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="stateOrProvinceName">TX</elem>
+<elem key="localityName">Houston</elem>
+<elem key="countryName">US</elem>
+<elem key="commonName">cPanel, Inc. Certification Authority</elem>
+<elem key="organizationName">cPanel, Inc.</elem>
+</table>
+<table key="pubkey">
+<elem key="exponent">BIGNUM: 0x5562ea0e46d8</elem>
+<elem key="modulus">BIGNUM: 0x5562ea0e4718</elem>
+<elem key="bits">2048</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">7E:03:5A:65:41:6B:A7:7E:0A:E1:B8:9D:08:EA:1D:8E:1D:6A:C7:65</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">04:02:E8:04:A8:D7:91:1D:22:96:2F:2A:F0:69:12:2A:CD:EF:10:02</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+</table>
+<table>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">Policy: 1.3.6.1.4.1.6449.1.2.2.52&#xa;  CPS: https://sectigo.com/CPS&#xa;Policy: 2.23.140.1.2.1</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Full Name:&#xa;  URI:http://crl.comodoca.com/cPanelIncCertificationAuthority.crl</elem>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+</table>
+<table>
+<elem key="value">CA Issuers - URI:http://crt.comodoca.com/cPanelIncCertificationAuthority.crt&#xa;OCSP - URI:http://ocsp.comodoca.com</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 76:FF:88:3F:0A:B6:FB:95:51:C2:61:CC:F5:87:BA:34:&#xa;                B4:A4:CD:BB:29:DC:68:42:0A:9F:E6:67:4C:5A:3A:74&#xa;    Timestamp : Sep  7 00:00:46.355 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:79:07:A4:9E:6C:6E:FD:4F:6A:BA:94:AF:&#xa;                8D:75:67:2B:D5:99:7B:47:34:48:4E:4D:0E:DF:0B:E2:&#xa;                DA:58:22:7F:02:21:00:E2:D6:CC:37:44:18:37:20:FE:&#xa;                77:EE:E5:BE:3D:76:23:01:52:65:38:2E:A4:5F:25:FB:&#xa;                08:45:D2:C1:AE:1D:66&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 3F:17:4B:4F:D7:22:47:58:94:1D:65:1C:84:BE:0D:12:&#xa;                ED:90:37:7F:1F:85:6A:EB:C1:BF:28:85:EC:F8:64:6E&#xa;    Timestamp : Sep  7 00:00:46.269 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:3F:43:B4:6B:86:CF:CC:13:9F:0C:23:C1:&#xa;                D7:EA:7B:6F:49:BB:EA:5D:CB:06:FB:B0:07:03:F4:24:&#xa;                C5:A9:C8:C5:02:21:00:B0:CC:47:3B:44:1A:AB:0B:0E:&#xa;                FF:18:B6:CB:37:20:58:D8:8B:27:6E:D8:EC:4D:4B:EB:&#xa;                AB:B6:96:0E:33:40:E0</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+<table>
+<elem key="value">DNS:beyondtheivorytower.share.library.harvard.edu, DNS:cpanel.beyondtheivorytower.share.library.harvard.edu, DNS:cpcalendars.beyondtheivorytower.share.library.harvard.edu, DNS:cpcontacts.beyondtheivorytower.share.library.harvard.edu, DNS:mail.beyondtheivorytower.share.library.harvard.edu, DNS:webdisk.beyondtheivorytower.share.library.harvard.edu, DNS:webmail.beyondtheivorytower.share.library.harvard.edu, DNS:www.beyondtheivorytower.share.library.harvard.edu</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notAfter">2024-12-06T23:59:59</elem>
+<elem key="notBefore">2024-09-07T00:00:00</elem>
+</table>
+<elem key="md5">3ea300d3cafcf1c10c49428bab5da90a</elem>
+<elem key="sha1">24bd60060fe9d1cc30c8f515da0532d4b552a247</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIHlzCCBn+gAwIBAgIQJ9a2tUOAYBKJ3HfpK861hTANBgkqhkiG9w0BAQsFADBy&#xa;MQswCQYDVQQGEwJVUzELMAkGA1UECBMCVFgxEDAOBgNVBAcTB0hvdXN0b24xFTAT&#xa;BgNVBAoTDGNQYW5lbCwgSW5jLjEtMCsGA1UEAxMkY1BhbmVsLCBJbmMuIENlcnRp&#xa;ZmljYXRpb24gQXV0aG9yaXR5MB4XDTI0MDkwNzAwMDAwMFoXDTI0MTIwNjIzNTk1&#xa;OVowODE2MDQGA1UEAxMtYmV5b25kdGhlaXZvcnl0b3dlci5zaGFyZS5saWJyYXJ5&#xa;LmhhcnZhcmQuZWR1MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvaNs&#xa;mwOb3LskvtX6NpWIrCB3Lv5dEOdO+9jpgH4AA5eaBSyXSv6VvdHWd/QbmlpPApNp&#xa;tshY3jugxII6Ep6TFIANCALZoaCPNugoXT0igE/20x8k5Ub2lezDSsSxs1Ji0FHR&#xa;FWtyFuKu0KYo6HjL+8EUP6ITyHcPIKY0dg/VHyca3V00AzpP7BsL4YnjQWjI5GGv&#xa;Ey9I3y9QCt91FN2tYoPRGCcIXumnSmW3E9eJnNQZC/Nqji4WL3J6j6sF/gN4gLyJ&#xa;JnIlMDHLHcGFV4sl0zn4bA5jeilsr+P2FmlsnM2HCoHA9ZT5KqHX4npJD68OnkHk&#xa;or5yQkorK9DYbZBaGwIDAQABo4IEYTCCBF0wHwYDVR0jBBgwFoAUfgNaZUFrp34K&#xa;4bidCOodjh1qx2UwHQYDVR0OBBYEFAQC6ASo15EdIpYvKvBpEirN7xACMA4GA1Ud&#xa;DwEB/wQEAwIFoDAMBgNVHRMBAf8EAjAAMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggr&#xa;BgEFBQcDAjBJBgNVHSAEQjBAMDQGCysGAQQBsjEBAgI0MCUwIwYIKwYBBQUHAgEW&#xa;F2h0dHBzOi8vc2VjdGlnby5jb20vQ1BTMAgGBmeBDAECATBMBgNVHR8ERTBDMEGg&#xa;P6A9hjtodHRwOi8vY3JsLmNvbW9kb2NhLmNvbS9jUGFuZWxJbmNDZXJ0aWZpY2F0&#xa;aW9uQXV0aG9yaXR5LmNybDB9BggrBgEFBQcBAQRxMG8wRwYIKwYBBQUHMAKGO2h0&#xa;dHA6Ly9jcnQuY29tb2RvY2EuY29tL2NQYW5lbEluY0NlcnRpZmljYXRpb25BdXRo&#xa;b3JpdHkuY3J0MCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5jb21vZG9jYS5jb20w&#xa;ggEEBgorBgEEAdZ5AgQCBIH1BIHyAPAAdgB2/4g/Crb7lVHCYcz1h7o0tKTNuync&#xa;aEIKn+ZnTFo6dAAAAZHJyIETAAAEAwBHMEUCIHkHpJ5sbv1ParqUr411ZyvVmXtH&#xa;NEhOTQ7fC+LaWCJ/AiEA4tbMN0QYNyD+d+7lvj12IwFSZTgupF8l+whF0sGuHWYA&#xa;dgA/F0tP1yJHWJQdZRyEvg0S7ZA3fx+FauvBvyiF7PhkbgAAAZHJyIC9AAAEAwBH&#xa;MEUCID9DtGuGz8wTnwwjwdfqe29Ju+pdywb7sAcD9CTFqcjFAiEAsMxHO0QaqwsO&#xa;/xi2yzcgWNiLJ27Y7E1L66u2lg4zQOAwggG8BgNVHREEggGzMIIBr4ItYmV5b25k&#xa;dGhlaXZvcnl0b3dlci5zaGFyZS5saWJyYXJ5LmhhcnZhcmQuZWR1gjRjcGFuZWwu&#xa;YmV5b25kdGhlaXZvcnl0b3dlci5zaGFyZS5saWJyYXJ5LmhhcnZhcmQuZWR1gjlj&#xa;cGNhbGVuZGFycy5iZXlvbmR0aGVpdm9yeXRvd2VyLnNoYXJlLmxpYnJhcnkuaGFy&#xa;dmFyZC5lZHWCOGNwY29udGFjdHMuYmV5b25kdGhlaXZvcnl0b3dlci5zaGFyZS5s&#xa;aWJyYXJ5LmhhcnZhcmQuZWR1gjJtYWlsLmJleW9uZHRoZWl2b3J5dG93ZXIuc2hh&#xa;cmUubGlicmFyeS5oYXJ2YXJkLmVkdYI1d2ViZGlzay5iZXlvbmR0aGVpdm9yeXRv&#xa;d2VyLnNoYXJlLmxpYnJhcnkuaGFydmFyZC5lZHWCNXdlYm1haWwuYmV5b25kdGhl&#xa;aXZvcnl0b3dlci5zaGFyZS5saWJyYXJ5LmhhcnZhcmQuZWR1gjF3d3cuYmV5b25k&#xa;dGhlaXZvcnl0b3dlci5zaGFyZS5saWJyYXJ5LmhhcnZhcmQuZWR1MA0GCSqGSIb3&#xa;DQEBCwUAA4IBAQBQvbTaFPs60nCPjgD2e/V1IgYXLYTXFwYd6gGBXiByC69qV0D/&#xa;EieQGy9pnKm4oOZfmERfhCT6fwhxVatyKk9mXMrtTilTcy6mS7gy6ee7/qKX5uam&#xa;rTa5YXAzy6f2/dRXkMGd50pZuaV3GfbCsxAWncJuDUh0J8KXc0yrEVdiwUeaRNpr&#xa;2P3+zNyK/h2G8m3Y/tv1Z+wuaCW4BKQlJmxPzHt4aOpGq7qSB3cT7ylPKk2+XBUX&#xa;OMNBO1nHFXc+u45kdxtuNJRe6okalaPOi8Qoym+7aqJSHdqId1KNK/uTtd9ZA/C7&#xa;LxZNtua+zdoDQrWTEaS4Y54buSCjfEgN6VPa&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+</ports>
+<times srtt="21049" rttvar="988" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730897969"/>
+<taskend task="NSE" time="1730897969"/>
+<taskbegin task="NSE" time="1730897969"/>
+<taskend task="NSE" time="1730897969"/>
+<taskbegin task="NSE" time="1730897969"/>
+<taskend task="NSE" time="1730897969"/>
+<runstats><finished time="1730897969" timestr="Wed Nov  6 12:59:29 2024" elapsed="298.04" summary="Nmap done at Wed Nov  6 12:59:29 2024; 1 IP address (1 host up) scanned in 298.04 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
