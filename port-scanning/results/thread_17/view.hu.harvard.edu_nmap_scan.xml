@@ -17,3 +17,128 @@
 <taskbegin task="Connect Scan" time="1730901752"/>
 <taskend task="Connect Scan" time="1730901759" extrainfo="1000 total ports"/>
 <taskbegin task="Service scan" time="1730901759"/>
+<taskend task="Service scan" time="1730901782" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1730901782"/>
+<taskend task="NSE" time="1730901785"/>
+<taskbegin task="NSE" time="1730901785"/>
+<taskend task="NSE" time="1730901786"/>
+<taskbegin task="NSE" time="1730901786"/>
+<taskend task="NSE" time="1730901786"/>
+<host starttime="1730901752" endtime="1730901786"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="13.111.149.83" addrtype="ipv4"/>
+<hostnames>
+<hostname name="view.hu.harvard.edu" type="user"/>
+<hostname name="view.hu.harvard.edu" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="997">
+<extrareasons reason="no-responses" count="997"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="upnp" product="Microsoft IIS httpd" method="probed" conf="10"><cpe>cpe:/a:microsoft:iis</cpe></service><script id="http-generator" output="Microsoft Visual Studio .NET 7.1"/><script id="http-methods" output="&#xa;  Supported Methods: OPTIONS TRACE GET HEAD POST&#xa;  Potentially risky methods: TRACE"><table key="Supported Methods">
+<elem>OPTIONS</elem>
+<elem>TRACE</elem>
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+</table>
+<table key="Potentially risky methods">
+<elem>TRACE</elem>
+</table>
+</script><script id="http-robots.txt" output="1 disallowed entry &#xa;/"/><script id="http-title" output="Error&#xa;Requested resource was /Error.aspx"><elem key="title">Error</elem>
+<elem key="redirect_url">/Error.aspx</elem>
+</script></port>
+<port protocol="tcp" portid="113"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ident" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="upnp" product="Microsoft IIS httpd" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:microsoft:iis</cpe></service><script id="http-generator" output="Microsoft Visual Studio .NET 7.1"/><script id="http-methods" output="&#xa;  Supported Methods: OPTIONS TRACE GET HEAD POST&#xa;  Potentially risky methods: TRACE"><table key="Supported Methods">
+<elem>OPTIONS</elem>
+<elem>TRACE</elem>
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+</table>
+<table key="Potentially risky methods">
+<elem>TRACE</elem>
+</table>
+</script><script id="http-robots.txt" output="1 disallowed entry &#xa;/"/><script id="http-title" output="Error&#xa;Requested resource was /Error.aspx"><elem key="title">Error</elem>
+<elem key="redirect_url">/Error.aspx</elem>
+</script><script id="ssl-cert" output="Subject: commonName=view.hu.harvard.edu/organizationName=Salesforce, Inc./stateOrProvinceName=California/countryName=US&#xa;Subject Alternative Name: DNS:view.hu.harvard.edu&#xa;Issuer: commonName=DigiCert Global G2 TLS RSA SHA256 2020 CA1/organizationName=DigiCert Inc/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-06-16T00:00:00&#xa;Not valid after:  2025-07-17T23:59:59&#xa;MD5:   03e2 2075 9140 477b e5c4 3282 8e5e 986f&#xa;SHA-1: 45dd 9b49 9c04 8e65 123f a550 cd62 8532 8a6b 46d3"><table key="subject">
+<elem key="stateOrProvinceName">California</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">Salesforce, Inc.</elem>
+<elem key="localityName">San Francisco</elem>
+<elem key="commonName">view.hu.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">US</elem>
+<elem key="organizationName">DigiCert Inc</elem>
+<elem key="commonName">DigiCert Global G2 TLS RSA SHA256 2020 CA1</elem>
+</table>
+<table key="pubkey">
+<elem key="modulus">BIGNUM: 0x562da0cdbc08</elem>
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="exponent">BIGNUM: 0x562da0cdba78</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">74:85:80:C0:66:C7:DF:37:DE:CF:BD:29:37:AA:03:1D:BE:ED:CD:17</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">B5:0A:3D:9D:B3:12:EC:FA:8C:98:52:31:BA:5D:19:17:81:78:8E:89</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:view.hu.harvard.edu</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.2&#xa;  CPS: http://www.digicert.com/CPS</elem>
+</table>
+<table>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://crl3.digicert.com/DigiCertGlobalG2TLSRSASHA2562020CA1-1.crl&#xa;Full Name:&#xa;  URI:http://crl4.digicert.com/DigiCertGlobalG2TLSRSASHA2562020CA1-1.crl</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://ocsp.digicert.com&#xa;CA Issuers - URI:http://cacerts.digicert.com/DigiCertGlobalG2TLSRSASHA2562020CA1-1.crt</elem>
+</table>
+<table>
+<elem key="value">CA:FALSE</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 12:F1:4E:34:BD:53:72:4C:84:06:19:C3:8F:3F:7A:13:&#xa;                F8:E7:B5:62:87:88:9C:6D:30:05:84:EB:E5:86:26:3A&#xa;    Timestamp : Jun 16 18:11:26.621 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:47:F5:34:10:BA:77:78:D0:A9:BA:27:D1:&#xa;                93:EF:98:A5:65:9F:A2:04:88:9E:48:87:E7:AE:71:63:&#xa;                82:3F:23:09:02:20:75:48:4F:DB:7A:44:0D:BB:70:3E:&#xa;                65:9A:60:6E:10:6C:DE:10:F9:60:4A:8E:FF:9C:56:D0:&#xa;                71:45:43:2A:F8:38&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 7D:59:1E:12:E1:78:2A:7B:1C:61:67:7C:5E:FD:F8:D0:&#xa;                87:5C:14:A0:4E:95:9E:B9:03:2F:D9:0E:8C:2E:79:B8&#xa;    Timestamp : Jun 16 18:11:26.613 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:50:E8:18:7B:A2:72:77:BD:A3:A1:1E:DA:&#xa;                A0:35:10:A6:E1:8A:0E:65:15:0D:1C:BC:11:36:E2:80:&#xa;                7F:EC:4C:B8:02:20:20:D3:43:A7:6F:D4:33:77:B1:2A:&#xa;                A9:66:A2:3B:86:5F:5F:1D:33:77:82:69:8C:B7:B7:6F:&#xa;                DA:03:A0:CE:39:06&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : E6:D2:31:63:40:77:8C:C1:10:41:06:D7:71:B9:CE:C1:&#xa;                D2:40:F6:96:84:86:FB:BA:87:32:1D:FD:1E:37:8E:50&#xa;    Timestamp : Jun 16 18:11:26.631 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:67:10:32:FE:15:BF:A4:E0:86:63:3F:0B:&#xa;                D6:A2:2D:1A:42:1E:F8:A3:E3:3B:EF:44:8B:2B:AD:18:&#xa;                04:58:4A:41:02:20:61:DF:71:CB:57:F9:72:D7:12:B2:&#xa;                34:D8:D6:F4:CB:81:81:D9:AC:74:A1:2C:C8:5D:93:E4:&#xa;                DB:95:14:0C:6A:FA</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-06-16T00:00:00</elem>
+<elem key="notAfter">2025-07-17T23:59:59</elem>
+</table>
+<elem key="md5">03e220759140477be5c432828e5e986f</elem>
+<elem key="sha1">45dd9b499c048e65123fa550cd6285328a6b46d3</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIG5DCCBcygAwIBAgIQDUQ9XhBeKutzUcEagI35ODANBgkqhkiG9w0BAQsFADBZ&#xa;MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMTMwMQYDVQQDEypE&#xa;aWdpQ2VydCBHbG9iYWwgRzIgVExTIFJTQSBTSEEyNTYgMjAyMCBDQTEwHhcNMjQw&#xa;NjE2MDAwMDAwWhcNMjUwNzE3MjM1OTU5WjBzMQswCQYDVQQGEwJVUzETMBEGA1UE&#xa;CBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNU2FuIEZyYW5jaXNjbzEZMBcGA1UEChMQ&#xa;U2FsZXNmb3JjZSwgSW5jLjEcMBoGA1UEAxMTdmlldy5odS5oYXJ2YXJkLmVkdTCC&#xa;ASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKR/WCxV8FS7KyMviOiKF6tn&#xa;fT41vVTFG6+qjJfupN9q6wSIsjZPXoR6kgy1AAbNB+8tY/ti2KK4jcHl+apvOY3v&#xa;LiFXwo/pc3X9KHpxKstAas9BNKlqhjyA4x0Ky20uhpkiUKfO1NJPfSkjIpVsNyZb&#xa;d25j6RKCmHwV2r4OecCKbW6YgTEebKkQl4Y47VeJBuiAxy2vjomXWi3hNVkDMZVz&#xa;4sKXnVbGZMY3wAWqKRZfUzA0ukiGp/yox0xraGnBtNn8K7l8+H1Nt2JDVzLiPuvT&#xa;XkUALH/Xny1SQoeJrRrmWhNhP1Y7+UC3V2wZSeRe489M5Gr5wB7IlzUZCNHN2TUC&#xa;AwEAAaOCA4wwggOIMB8GA1UdIwQYMBaAFHSFgMBmx9833s+9KTeqAx2+7c0XMB0G&#xa;A1UdDgQWBBS1Cj2dsxLs+oyYUjG6XRkXgXiOiTAeBgNVHREEFzAVghN2aWV3Lmh1&#xa;LmhhcnZhcmQuZWR1MD4GA1UdIAQ3MDUwMwYGZ4EMAQICMCkwJwYIKwYBBQUHAgEW&#xa;G2h0dHA6Ly93d3cuZGlnaWNlcnQuY29tL0NQUzAOBgNVHQ8BAf8EBAMCBaAwHQYD&#xa;VR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMIGfBgNVHR8EgZcwgZQwSKBGoESG&#xa;Qmh0dHA6Ly9jcmwzLmRpZ2ljZXJ0LmNvbS9EaWdpQ2VydEdsb2JhbEcyVExTUlNB&#xa;U0hBMjU2MjAyMENBMS0xLmNybDBIoEagRIZCaHR0cDovL2NybDQuZGlnaWNlcnQu&#xa;Y29tL0RpZ2lDZXJ0R2xvYmFsRzJUTFNSU0FTSEEyNTYyMDIwQ0ExLTEuY3JsMIGH&#xa;BggrBgEFBQcBAQR7MHkwJAYIKwYBBQUHMAGGGGh0dHA6Ly9vY3NwLmRpZ2ljZXJ0&#xa;LmNvbTBRBggrBgEFBQcwAoZFaHR0cDovL2NhY2VydHMuZGlnaWNlcnQuY29tL0Rp&#xa;Z2lDZXJ0R2xvYmFsRzJUTFNSU0FTSEEyNTYyMDIwQ0ExLTEuY3J0MAwGA1UdEwEB&#xa;/wQCMAAwggF7BgorBgEEAdZ5AgQCBIIBawSCAWcBZQB1ABLxTjS9U3JMhAYZw48/&#xa;ehP457Vih4icbTAFhOvlhiY6AAABkCI/Nx0AAAQDAEYwRAIgR/U0ELp3eNCpuifR&#xa;k++YpWWfogSInkiH565xY4I/IwkCIHVIT9t6RA27cD5lmmBuEGzeEPlgSo7/nFbQ&#xa;cUVDKvg4AHUAfVkeEuF4KnscYWd8Xv340IdcFKBOlZ65Ay/ZDowuebgAAAGQIj83&#xa;FQAABAMARjBEAiBQ6Bh7onJ3vaOhHtqgNRCm4YoOZRUNHLwRNuKAf+xMuAIgINND&#xa;p2/UM3exKqlmojuGX18dM3eCaYy3t2/aA6DOOQYAdQDm0jFjQHeMwRBBBtdxuc7B&#xa;0kD2loSG+7qHMh39HjeOUAAAAZAiPzcnAAAEAwBGMEQCIGcQMv4Vv6TghmM/C9ai&#xa;LRpCHvij4zvvRIsrrRgEWEpBAiBh33HLV/ly1xKyNNjW9MuBgdmsdKEsyF2T5NuV&#xa;FAxq+jANBgkqhkiG9w0BAQsFAAOCAQEAjH7X7BvGKKN6zfBQcEBZn/wDU9VIAB85&#xa;nHkXnJK5FnogtWTPKsKNph9H0C2PUnX2Se1JKQ2qZXn9HwSr7MSwVmUUbj31NHrP&#xa;O+Quc1P4vM5nI4Ijbc5ZRHPxFM9YzvMIS206TlKvX5ZgaTTsHMKQs0G6EhauujkN&#xa;xR8qKjaxMDZ1zakOCHdKZ05GqgBFqoviJqplwDVGcodnpm1bNpqczHsTGeaROu11&#xa;9GnTXlD5mdapoMf34Zt13PGN+t6JufEyMnIKolQJLBcV+h6jXNn1mhHHsx4EjTA0&#xa;njxexgfBE2FrBOmwguo0Gt9xG7LD7d3/g1QJa+VvEID/AbBWBi7jbg==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+</ports>
+<times srtt="66533" rttvar="18829" to="141849"/>
+</host>
+<taskbegin task="NSE" time="1730901786"/>
+<taskend task="NSE" time="1730901786"/>
+<taskbegin task="NSE" time="1730901786"/>
+<taskend task="NSE" time="1730901786"/>
+<taskbegin task="NSE" time="1730901786"/>
+<taskend task="NSE" time="1730901786"/>
+<runstats><finished time="1730901786" timestr="Wed Nov  6 14:03:06 2024" elapsed="33.92" summary="Nmap done at Wed Nov  6 14:03:06 2024; 1 IP address (1 host up) scanned in 33.92 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
