@@ -16,6 +16,6 @@ with open(args.file_path, "r") as f:
 for dns in dns_list:
     kill_old_processes()
     process = subprocess.Popen(
-        ["nmap", "-T4", "-A", "-v", dns, "-oX", f"{args.save_path}/{dns}_nmap_scan.xml"]
+        ["nmap", "-T4", "-A", "-v", "-Pn", dns, "-oX", f"{args.save_path}/{dns}_nmap_scan.xml"]
     )
     process.wait()

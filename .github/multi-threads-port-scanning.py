@@ -39,21 +39,21 @@ jobs:
 
       - name: Wait for changes and Commit
         run: |
-        git config --local user.name "github-actions[bot]"
-        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+            git config --local user.name "github-actions[bot]"
+            git config --local user.email "github-actions[bot]@users.noreply.github.com"
 
-        while true; do
-          git pull --rebase || git pull || true  # Ignore errors in pull/rebase
-          git add . || true  # Ignore errors in adding files
-          
-          if ! git commit -m "GitHub Action Bot" 2>/dev/null; then
-            echo "No changes to commit"
-          else
-            git push --force || true  # Ignore errors in push
-          fi
-          
-          sleep 60
-        done
+            while true; do
+              git pull --rebase || git pull || true  # Ignore errors in pull/rebase
+              git add . || true  # Ignore errors in adding files
+              
+              if ! git commit -m "GitHub Action Bot" 2>/dev/null; then
+                echo "No changes to commit"
+              else
+                git push --force || true  # Ignore errors in push
+              fi
+              
+              sleep 60
+            done
         """)
         f.close()
 except NameError:
