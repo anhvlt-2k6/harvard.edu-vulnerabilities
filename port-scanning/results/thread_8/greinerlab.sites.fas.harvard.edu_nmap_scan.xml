@@ -15,3 +15,128 @@
 <taskbegin task="Parallel DNS resolution of 1 host." time="1730873551"/>
 <taskend task="Parallel DNS resolution of 1 host." time="1730873551"/>
 <taskbegin task="Connect Scan" time="1730873551"/>
+<taskend task="Connect Scan" time="1730873556" extrainfo="1000 total ports"/>
+<taskbegin task="Service scan" time="1730873556"/>
+<taskend task="Service scan" time="1730873568" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1730873568"/>
+<taskend task="NSE" time="1730873569"/>
+<taskbegin task="NSE" time="1730873569"/>
+<taskend task="NSE" time="1730873569"/>
+<taskbegin task="NSE" time="1730873569"/>
+<taskend task="NSE" time="1730873569"/>
+<host starttime="1730873551" endtime="1730873569"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="108.138.85.82" addrtype="ipv4"/>
+<hostnames>
+<hostname name="greinerlab.sites.fas.harvard.edu" type="user"/>
+<hostname name="server-108-138-85-82.iad12.r.cloudfront.net" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="998">
+<extrareasons reason="no-responses" count="998"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Amazon CloudFront httpd" method="probed" conf="10"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+</table>
+</script><script id="http-server-header" output="CloudFront"><elem>CloudFront</elem>
+</script><script id="http-title" output="Did not follow redirect to https://greinerlab.sites.fas.harvard.edu/"><elem key="redirect_url">https://greinerlab.sites.fas.harvard.edu/</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Amazon CloudFront httpd" tunnel="ssl" method="probed" conf="10"/><script id="http-git" output="&#xa;  108.138.85.82:443/.git/&#xa;    Git repository found!&#xa;    Repository description: Unnamed repository; edit this file &apos;description&apos; to name the...&#xa;    Last commit message: grammar typo &#xa;    Remotes:&#xa;      https://github.com/greinerlab/greinerlab.com.git&#xa;"><table key="108.138.85.82:443/.git/">
+<table key="files-found">
+<elem key=".gitignore">true</elem>
+<elem key=".git/description">true</elem>
+<elem key=".git/COMMIT_EDITMSG">true</elem>
+<elem key=".git/config">true</elem>
+<elem key=".git/info/exclude">true</elem>
+</table>
+<table key="remotes">
+<elem>https://github.com/greinerlab/greinerlab.com.git</elem>
+</table>
+<elem key="repository-description">Unnamed repository; edit this file &apos;description&apos; to name the repository.&#xa;</elem>
+<elem key="last-commit-message">grammar typo&#xa;</elem>
+</table>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+</table>
+</script><script id="http-server-header" output="&#xa;  AmazonS3&#xa;  CloudFront"><elem>AmazonS3</elem>
+<elem>CloudFront</elem>
+</script><script id="http-title" output="Greiner Lab"><elem key="title">Greiner Lab</elem>
+</script><script id="ssl-cert" output="Subject: commonName=greinerlab.sites.fas.harvard.edu&#xa;Subject Alternative Name: DNS:greinerlab.sites.fas.harvard.edu, DNS:greiner.physics.harvard.edu&#xa;Issuer: commonName=Amazon RSA 2048 M03/organizationName=Amazon/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-04-14T00:00:00&#xa;Not valid after:  2025-05-14T23:59:59&#xa;MD5:   2f64 8aa8 5104 4631 cfe6 6525 da49 a75a&#xa;SHA-1: 9225 3c9f e7a0 126e 0210 81cd a065 f3a0 3cea ee35"><table key="subject">
+<elem key="commonName">greinerlab.sites.fas.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">US</elem>
+<elem key="commonName">Amazon RSA 2048 M03</elem>
+<elem key="organizationName">Amazon</elem>
+</table>
+<table key="pubkey">
+<elem key="exponent">BIGNUM: 0x5572980e2718</elem>
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">BIGNUM: 0x5572980e2798</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">55:D9:18:5F:D2:1C:CC:01:E1:58:B4:BE:AB:D9:55:42:01:D7:2E:02</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">D9:94:06:28:0D:AB:7A:6C:DE:73:DD:A0:59:00:54:6E:3E:1E:10:B2</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="value">DNS:greinerlab.sites.fas.harvard.edu, DNS:greiner.physics.harvard.edu</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+<table>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="name">X509v3 Key Usage</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">Full Name:&#xa;  URI:http://crl.r2m03.amazontrust.com/r2m03.crl</elem>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+</table>
+<table>
+<elem key="value">OCSP - URI:http://ocsp.r2m03.amazontrust.com&#xa;CA Issuers - URI:http://crt.r2m03.amazontrust.com/r2m03.cer</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 4E:75:A3:27:5C:9A:10:C3:38:5B:6C:D4:DF:3F:52:EB:&#xa;                1D:F0:E0:8E:1B:8D:69:C0:B1:FA:64:B1:62:9A:39:DF&#xa;    Timestamp : Apr 14 04:10:42.533 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:CF:21:87:11:DD:7D:A7:DB:E9:2A:86:&#xa;                3B:E8:6D:A5:50:8C:25:F3:C7:7C:B9:9C:65:7B:19:3F:&#xa;                8A:4C:7A:A0:C5:02:20:1C:EF:97:F6:E9:DF:CC:C7:20:&#xa;                9A:5B:CF:A8:1A:1C:D0:2D:6D:15:77:14:A7:37:0D:03:&#xa;                CF:C5:31:C9:AB:BA:9F&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 55:81:D4:C2:16:90:36:01:4A:EA:0B:9B:57:3C:53:F0:&#xa;                C0:E4:38:78:70:25:08:17:2F:A3:AA:1D:07:13:D3:0C&#xa;    Timestamp : Apr 14 04:10:42.648 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:E0:0A:FE:83:29:24:5F:F7:BD:4F:4A:&#xa;                AA:F2:BB:5E:2F:86:E1:93:3E:69:B3:9B:74:CF:C6:92:&#xa;                E2:92:8D:DC:61:02:21:00:D1:78:73:1E:78:BB:3F:BF:&#xa;                9A:92:16:CA:10:D4:20:DD:34:DC:2F:14:5A:9E:1A:B0:&#xa;                85:59:CF:0D:FE:7E:F4:02&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 7D:59:1E:12:E1:78:2A:7B:1C:61:67:7C:5E:FD:F8:D0:&#xa;                87:5C:14:A0:4E:95:9E:B9:03:2F:D9:0E:8C:2E:79:B8&#xa;    Timestamp : Apr 14 04:10:42.541 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:C2:2E:F9:2A:37:FE:71:B3:91:4B:21:&#xa;                D2:FB:1E:63:AA:1D:44:A6:E4:2D:D4:89:52:C4:8C:03:&#xa;                3F:CE:AD:3D:94:02:20:1A:C1:66:6C:EA:66:9A:23:88:&#xa;                75:1A:C4:9B:E2:95:DC:B5:7D:4E:E6:4D:2A:2A:05:7B:&#xa;                A7:EA:11:36:34:08:9E</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-04-14T00:00:00</elem>
+<elem key="notAfter">2025-05-14T23:59:59</elem>
+</table>
+<elem key="md5">2f648aa851044631cfe66525da49a75a</elem>
+<elem key="sha1">92253c9fe7a0126e021081cda065f3a03ceaee35</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIGCjCCBPKgAwIBAgIQBNUC/qj5ieJgD6Vjv2vYDTANBgkqhkiG9w0BAQsFADA8&#xa;MQswCQYDVQQGEwJVUzEPMA0GA1UEChMGQW1hem9uMRwwGgYDVQQDExNBbWF6b24g&#xa;UlNBIDIwNDggTTAzMB4XDTI0MDQxNDAwMDAwMFoXDTI1MDUxNDIzNTk1OVowKzEp&#xa;MCcGA1UEAxMgZ3JlaW5lcmxhYi5zaXRlcy5mYXMuaGFydmFyZC5lZHUwggEiMA0G&#xa;CSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQClt2OHg9MK0cVC4JF2+zuPZFp20pAF&#xa;bUuOqK0o4wnRTdU+OsBv541Gd7qbkWYgGdsm2Z1pOoIg37JbFRSVQ4/zeOkZNUT4&#xa;WJLP9sPJA/r67CpODs//1FZU5biejhk9xmKKsyiX4HYJGqmqbKT68+4xFM+q4ENe&#xa;z8eDqMktuH6acCT3nnupbnm011l1MApMMKM89Sm6ZIsA8GflxjKy0/DSfBI0k30w&#xa;5A+SRNmQbTQ7QM+R7tgYdTMBVG5o0PfALknk1OQsqj5FuYr4Vdpi0jKi6b66eaUF&#xa;PoL5aU70U9PQlLiDZrTfVuqDgGO/atGO+zzEPgMZNGP+hT/cj0Xql2PBAgMBAAGj&#xa;ggMXMIIDEzAfBgNVHSMEGDAWgBRV2Rhf0hzMAeFYtL6r2VVCAdcuAjAdBgNVHQ4E&#xa;FgQU2ZQGKA2remzec92gWQBUbj4eELIwSAYDVR0RBEEwP4IgZ3JlaW5lcmxhYi5z&#xa;aXRlcy5mYXMuaGFydmFyZC5lZHWCG2dyZWluZXIucGh5c2ljcy5oYXJ2YXJkLmVk&#xa;dTATBgNVHSAEDDAKMAgGBmeBDAECATAOBgNVHQ8BAf8EBAMCBaAwHQYDVR0lBBYw&#xa;FAYIKwYBBQUHAwEGCCsGAQUFBwMCMDsGA1UdHwQ0MDIwMKAuoCyGKmh0dHA6Ly9j&#xa;cmwucjJtMDMuYW1hem9udHJ1c3QuY29tL3IybTAzLmNybDB1BggrBgEFBQcBAQRp&#xa;MGcwLQYIKwYBBQUHMAGGIWh0dHA6Ly9vY3NwLnIybTAzLmFtYXpvbnRydXN0LmNv&#xa;bTA2BggrBgEFBQcwAoYqaHR0cDovL2NydC5yMm0wMy5hbWF6b250cnVzdC5jb20v&#xa;cjJtMDMuY2VyMAwGA1UdEwEB/wQCMAAwggF/BgorBgEEAdZ5AgQCBIIBbwSCAWsB&#xa;aQB2AE51oydcmhDDOFts1N8/Uusd8OCOG41pwLH6ZLFimjnfAAABjtrM2+UAAAQD&#xa;AEcwRQIhAM8hhxHdfafb6SqGO+htpVCMJfPHfLmcZXsZP4pMeqDFAiAc75f26d/M&#xa;xyCaW8+oGhzQLW0VdxSnNw0Dz8Uxyau6nwB3AFWB1MIWkDYBSuoLm1c8U/DA5Dh4&#xa;cCUIFy+jqh0HE9MMAAABjtrM3FgAAAQDAEgwRgIhAOAK/oMpJF/3vU9KqvK7Xi+G&#xa;4ZM+abObdM/GkuKSjdxhAiEA0XhzHni7P7+akhbKENQg3TTcLxRanhqwhVnPDf5+&#xa;9AIAdgB9WR4S4XgqexxhZ3xe/fjQh1wUoE6VnrkDL9kOjC55uAAAAY7azNvtAAAE&#xa;AwBHMEUCIQDCLvkqN/5xs5FLIdL7HmOqHUSm5C3UiVLEjAM/zq09lAIgGsFmbOpm&#xa;miOIdRrEm+KV3LV9TuZNKioFe6fqETY0CJ4wDQYJKoZIhvcNAQELBQADggEBAI6d&#xa;6uCRbfYcg2Yvgk1pjTNmUQXwEiKvUfR3+n3SkwIP/6ENv+C+zQex1TYPhI3y4Qzo&#xa;1/JHzoYRyNUEiX2rjsC6sDLy9HRmc98jDNplnhza4YpAjEzG9avddpDxKNKbpKej&#xa;K/uI4KiIy/J3BGk14jQYFC2P6LcbCcEjO30j5eTm8hHpzCSICSfQJj5x3bADBpxK&#xa;zaNgMqNr1eSwx8UYTqWxZB2X1W7OEPso93CpVl95qWfHV6CILDJIiUyr9UJ6S6Bn&#xa;SQ5phjJLjwm9pGTqVDhN11opcat93S4vNfYde2rdL8FU+ywWSuTSXpdNwPIeeVCp&#xa;SBwnVMjUjXeAh+slk8w=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+</ports>
+<times srtt="5371" rttvar="2386" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730873569"/>
+<taskend task="NSE" time="1730873569"/>
+<taskbegin task="NSE" time="1730873569"/>
+<taskend task="NSE" time="1730873569"/>
+<taskbegin task="NSE" time="1730873569"/>
+<taskend task="NSE" time="1730873569"/>
+<runstats><finished time="1730873569" timestr="Wed Nov  6 06:12:49 2024" elapsed="17.97" summary="Nmap done at Wed Nov  6 06:12:49 2024; 1 IP address (1 host up) scanned in 17.97 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
