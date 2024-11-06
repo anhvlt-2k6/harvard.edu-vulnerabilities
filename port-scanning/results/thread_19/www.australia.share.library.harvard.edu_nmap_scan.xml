@@ -21,3 +21,549 @@
 <taskbegin task="Service scan" time="1730895936"/>
 <taskend task="Service scan" time="1730896102" extrainfo="11 services on 1 host"/>
 <taskbegin task="NSE" time="1730896102"/>
+<taskend task="NSE" time="1730896132"/>
+<taskbegin task="NSE" time="1730896132"/>
+<taskend task="NSE" time="1730896154"/>
+<taskbegin task="NSE" time="1730896154"/>
+<taskend task="NSE" time="1730896154"/>
+<host starttime="1730895843" endtime="1730896154"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="147.135.81.23" addrtype="ipv4"/>
+<hostnames>
+<hostname name="www.australia.share.library.harvard.edu" type="user"/>
+<hostname name="ip23.ip-147-135-81.us" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="891">
+<extrareasons reason="no-responses" count="891"/>
+</extraports>
+<extraports state="closed" count="98">
+<extrareasons reason="conn-refused" count="98"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ftp" product="Pure-FTPd" method="probed" conf="10"><cpe>cpe:/a:pureftpd:pure-ftpd</cpe></service><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="7.4" extrainfo="protocol 2.0" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.4</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 cf:96:45:ec:91:01:b8:50:d7:ba:9a:3d:0e:27:db:ec (RSA)&#xa;  256 2f:bc:23:c3:2d:05:8c:60:52:14:ec:a7:e9:f0:33:46 (ECDSA)&#xa;  256 6c:67:37:03:23:eb:aa:97:12:e7:8e:a7:c2:57:87:bd (ED25519)"><table>
+<elem key="bits">2048</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDMJEFTp5Upu7hOc8BDEApKnMSvcmqWva1nTTvmDhZ8anXKur2MB4M6IpZkPgPNq7GvAhQhw4t4foaXBMG+irmJG97/z+ukJ9zUyKq9lAyXwvnwhb9+/Yw71Q9Ky64repTdDKhpRt7KgInTSkM8tBPZ1zAjeKS8fSkRVN8BkOnmpj50iE7kngxbNhz/sKJtzDldu6zqr8vtnWyPau4yNnWimyO327S8+3Ouvlf+/6nDuD0DOPSDK6INTgomqcPUlCvpPgKspl+ftIs3GxOLcShG4bhZIVq0bknuIsiqvhzcKi3+L46HFOOekKiv19Uw36fnLNhascwfx5bO/FUd4Xo3</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="fingerprint">cf9645ec9101b850d7ba9a3d0e27dbec</elem>
+</table>
+<table>
+<elem key="bits">256</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBEVW79hYJiWVcNrVfWqdFcUWiDVyToVgwypxnjvfQ3m6I1GwE+IYoKD1MydXRTK6GOMzo6ZG6YIbkIuHYZ7nMxM=</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="fingerprint">2fbc23c32d058c605214eca7e9f03346</elem>
+</table>
+<table>
+<elem key="bits">256</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAILXoVNE2tFP2KDWOPVcnrW3Q3p+3GpzZBeLUEEuZUTku</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="fingerprint">6c67370323ebaa9712e78ea7c25787bd</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="25"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtp" method="table" conf="3"/><script id="smtp-commands" output="Couldn&apos;t establish connection on port 25"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" method="probed" conf="10"><cpe>cpe:/a:apache:http_server</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: OPTIONS"><table key="Supported Methods">
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="Apache"><elem>Apache</elem>
+</script><script id="http-title" output="Did not follow redirect to https://www.australia.share.library.harvard.edu/"><elem key="redirect_url">https://www.australia.share.library.harvard.edu/</elem>
+</script><script id="https-redirect" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="tcp" portid="110"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="pop3" product="Dovecot pop3d" method="probed" conf="10"><cpe>cpe:/a:dovecot:dovecot</cpe></service><script id="pop3-capabilities" output="SASL(PLAIN LOGIN) UIDL CAPA USER TOP RESP-CODES AUTH-RESP-CODE STLS PIPELINING"/><script id="ssl-cert" output="Subject: commonName=australia.share.library.harvard.edu&#xa;Subject Alternative Name: DNS:australia.share.library.harvard.edu, DNS:cpanel.australia.share.library.harvard.edu, DNS:cpcalendars.australia.share.library.harvard.edu, DNS:cpcontacts.australia.share.library.harvard.edu, DNS:mail.australia.share.library.harvard.edu, DNS:webdisk.australia.share.library.harvard.edu, DNS:webmail.australia.share.library.harvard.edu, DNS:www.australia.share.library.harvard.edu&#xa;Issuer: commonName=cPanel, Inc. Certification Authority/organizationName=cPanel, Inc./stateOrProvinceName=TX/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2023-05-12T00:00:00&#xa;Not valid after:  2023-08-10T23:59:59&#xa;MD5:   d8d8 68dd 5a36 f0f5 eb01 4749 1d58 4282&#xa;SHA-1: be07 d71e a7b6 f552 fb20 e325 abd4 54ec 639e 45d7"><table key="subject">
+<elem key="commonName">australia.share.library.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">US</elem>
+<elem key="stateOrProvinceName">TX</elem>
+<elem key="commonName">cPanel, Inc. Certification Authority</elem>
+<elem key="localityName">Houston</elem>
+<elem key="organizationName">cPanel, Inc.</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">2048</elem>
+<elem key="modulus">BIGNUM: 0x55fe0e3f6768</elem>
+<elem key="exponent">BIGNUM: 0x55fe10153198</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">7E:03:5A:65:41:6B:A7:7E:0A:E1:B8:9D:08:EA:1D:8E:1D:6A:C7:65</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">0C:C7:BB:8C:B8:87:B9:9C:D0:43:B6:A4:50:2E:48:E7:D8:7B:C6:EF</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">Policy: 1.3.6.1.4.1.6449.1.2.2.52&#xa;  CPS: https://sectigo.com/CPS&#xa;Policy: 2.23.140.1.2.1</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Full Name:&#xa;  URI:http://crl.comodoca.com/cPanelIncCertificationAuthority.crl</elem>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+</table>
+<table>
+<elem key="value">CA Issuers - URI:http://crt.comodoca.com/cPanelIncCertificationAuthority.crt&#xa;OCSP - URI:http://ocsp.comodoca.com</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : AD:F7:BE:FA:7C:FF:10:C8:8B:9D:3D:9C:1E:3E:18:6A:&#xa;                B4:67:29:5D:CF:B1:0C:24:CA:85:86:34:EB:DC:82:8A&#xa;    Timestamp : May 12 15:24:39.450 2023 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:14:35:B9:3B:00:DD:A3:11:50:0D:0F:4E:&#xa;                11:84:BB:57:B6:24:BC:B6:E9:E8:08:35:0B:8D:D4:DB:&#xa;                C5:55:52:1E:02:20:11:00:F9:65:D1:3B:8F:8E:F2:D1:&#xa;                90:18:23:CD:83:43:45:12:5D:4A:E9:7F:F3:05:62:90:&#xa;                0A:8B:39:87:FA:34&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 7A:32:8C:54:D8:B7:2D:B6:20:EA:38:E0:52:1E:E9:84:&#xa;                16:70:32:13:85:4D:3B:D2:2B:C1:3A:57:A3:52:EB:52&#xa;    Timestamp : May 12 15:24:39.551 2023 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:C8:93:90:02:7B:13:B2:2E:45:35:CD:&#xa;                83:68:A4:F3:B6:A6:55:A7:D9:1B:3F:69:45:3D:AF:62:&#xa;                03:7C:2D:19:64:02:20:38:A0:B8:B2:87:7F:BE:C7:CE:&#xa;                85:A4:6F:40:FB:A1:57:0C:26:11:4D:B4:7B:1D:89:73:&#xa;                1F:5F:62:2A:E0:50:00</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+<table>
+<elem key="value">DNS:australia.share.library.harvard.edu, DNS:cpanel.australia.share.library.harvard.edu, DNS:cpcalendars.australia.share.library.harvard.edu, DNS:cpcontacts.australia.share.library.harvard.edu, DNS:mail.australia.share.library.harvard.edu, DNS:webdisk.australia.share.library.harvard.edu, DNS:webmail.australia.share.library.harvard.edu, DNS:www.australia.share.library.harvard.edu</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2023-05-12T00:00:00</elem>
+<elem key="notAfter">2023-08-10T23:59:59</elem>
+</table>
+<elem key="md5">d8d868dd5a36f0f5eb0147491d584282</elem>
+<elem key="sha1">be07d71ea7b6f552fb20e325abd454ec639e45d7</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIHPDCCBiSgAwIBAgIQHvtbnsXSXoKuRRUl2puX+TANBgkqhkiG9w0BAQsFADBy&#xa;MQswCQYDVQQGEwJVUzELMAkGA1UECBMCVFgxEDAOBgNVBAcTB0hvdXN0b24xFTAT&#xa;BgNVBAoTDGNQYW5lbCwgSW5jLjEtMCsGA1UEAxMkY1BhbmVsLCBJbmMuIENlcnRp&#xa;ZmljYXRpb24gQXV0aG9yaXR5MB4XDTIzMDUxMjAwMDAwMFoXDTIzMDgxMDIzNTk1&#xa;OVowLjEsMCoGA1UEAxMjYXVzdHJhbGlhLnNoYXJlLmxpYnJhcnkuaGFydmFyZC5l&#xa;ZHUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDrsXieyATuzGlIhjXh&#xa;ftlrITrIGqQBFlr5p8NnSdkQhKgbGULuCBmOdLCUbNVYd/8dpz8l1izlx40tOYtq&#xa;JeHMCjIo8g3jvt/rl5K5zAExUL9Bd7tPwNPzUKZ3LqSw1KIuYNHVE9HyLWqzMo13&#xa;wW2icFQV317PsMRRpAe3Kt6ovsbrT36D6sRrPMjBGuaRYSPs/Q/TQq1Jlsoa3kVC&#xa;Ayjj4UWt3yUB9jIhiShHVPoR8FJYpfP4aeX/2Lt9yAzEOMpEiBILQWg1Y+DiSOkr&#xa;SISd90rLKm8MIxWO2RDk42p1pHZ4WVtAgGtA5Fs43sKbJFmruXcN85ZAul9uMX4P&#xa;opOJAgMBAAGjggQQMIIEDDAfBgNVHSMEGDAWgBR+A1plQWunfgrhuJ0I6h2OHWrH&#xa;ZTAdBgNVHQ4EFgQUDMe7jLiHuZzQQ7akUC5I59h7xu8wDgYDVR0PAQH/BAQDAgWg&#xa;MAwGA1UdEwEB/wQCMAAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMEkG&#xa;A1UdIARCMEAwNAYLKwYBBAGyMQECAjQwJTAjBggrBgEFBQcCARYXaHR0cHM6Ly9z&#xa;ZWN0aWdvLmNvbS9DUFMwCAYGZ4EMAQIBMEwGA1UdHwRFMEMwQaA/oD2GO2h0dHA6&#xa;Ly9jcmwuY29tb2RvY2EuY29tL2NQYW5lbEluY0NlcnRpZmljYXRpb25BdXRob3Jp&#xa;dHkuY3JsMH0GCCsGAQUFBwEBBHEwbzBHBggrBgEFBQcwAoY7aHR0cDovL2NydC5j&#xa;b21vZG9jYS5jb20vY1BhbmVsSW5jQ2VydGlmaWNhdGlvbkF1dGhvcml0eS5jcnQw&#xa;JAYIKwYBBQUHMAGGGGh0dHA6Ly9vY3NwLmNvbW9kb2NhLmNvbTCCAQMGCisGAQQB&#xa;1nkCBAIEgfQEgfEA7wB1AK33vvp8/xDIi509nB4+GGq0Zyldz7EMJMqFhjTr3IKK&#xa;AAABiBCQaJoAAAQDAEYwRAIgFDW5OwDdoxFQDQ9OEYS7V7YkvLbp6Ag1C43U28VV&#xa;Uh4CIBEA+WXRO4+O8tGQGCPNg0NFEl1K6X/zBWKQCos5h/o0AHYAejKMVNi3LbYg&#xa;6jjgUh7phBZwMhOFTTvSK8E6V6NS61IAAAGIEJBo/wAABAMARzBFAiEAyJOQAnsT&#xa;si5FNc2DaKTztqZVp9kbP2lFPa9iA3wtGWQCIDiguLKHf77HzoWkb0D7oVcMJhFN&#xa;tHsdiXMfX2Iq4FAAMIIBbAYDVR0RBIIBYzCCAV+CI2F1c3RyYWxpYS5zaGFyZS5s&#xa;aWJyYXJ5LmhhcnZhcmQuZWR1gipjcGFuZWwuYXVzdHJhbGlhLnNoYXJlLmxpYnJh&#xa;cnkuaGFydmFyZC5lZHWCL2NwY2FsZW5kYXJzLmF1c3RyYWxpYS5zaGFyZS5saWJy&#xa;YXJ5LmhhcnZhcmQuZWR1gi5jcGNvbnRhY3RzLmF1c3RyYWxpYS5zaGFyZS5saWJy&#xa;YXJ5LmhhcnZhcmQuZWR1gihtYWlsLmF1c3RyYWxpYS5zaGFyZS5saWJyYXJ5Lmhh&#xa;cnZhcmQuZWR1git3ZWJkaXNrLmF1c3RyYWxpYS5zaGFyZS5saWJyYXJ5LmhhcnZh&#xa;cmQuZWR1git3ZWJtYWlsLmF1c3RyYWxpYS5zaGFyZS5saWJyYXJ5LmhhcnZhcmQu&#xa;ZWR1gid3d3cuYXVzdHJhbGlhLnNoYXJlLmxpYnJhcnkuaGFydmFyZC5lZHUwDQYJ&#xa;KoZIhvcNAQELBQADggEBADrWtL2UUupUoy5+gpmUPA3zB0JuC58zMFrERyWJ2Wub&#xa;AGL1wRktEOtplKApGR2YOetmRlfC5GnVlzpSlm8q0CELsu1GUZQo7wJ6d/4TMFw3&#xa;S84neVJLYh3VbfqS7Eq+22wL/gUQ3c9l1r6cMGJq9kTuEW7I/sCki9qAiP7lyJ8H&#xa;E1WYs7E6mxJb2ozlRF47IDxfdEdgO+zpi2nhkqJtq1QYw0Ma4oHbA0eZlC5etxsP&#xa;ooRjFJ8Abpw9jYID3JFRLKX33qeQQvV0pVBRbMRT8m4GHOliR0EyBWPsBiQZjIB/&#xa;rCbFwXg2vgsO12o/XH6oAJe/4d08tPaTtF5ZLYY6htc=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="143"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="imap" product="Dovecot imapd" method="probed" conf="10"><cpe>cpe:/a:dovecot:dovecot</cpe></service><script id="imap-capabilities" output="AUTH=PLAIN AUTH=LOGINA0001 STARTTLS LOGIN-REFERRALS OK Pre-login post-login LITERAL+ IMAP4rev1 more NAMESPACE capabilities SASL-IR have ID listed IDLE ENABLE"/><script id="ssl-cert" output="Subject: commonName=australia.share.library.harvard.edu&#xa;Subject Alternative Name: DNS:australia.share.library.harvard.edu, DNS:cpanel.australia.share.library.harvard.edu, DNS:cpcalendars.australia.share.library.harvard.edu, DNS:cpcontacts.australia.share.library.harvard.edu, DNS:mail.australia.share.library.harvard.edu, DNS:webdisk.australia.share.library.harvard.edu, DNS:webmail.australia.share.library.harvard.edu, DNS:www.australia.share.library.harvard.edu&#xa;Issuer: commonName=cPanel, Inc. Certification Authority/organizationName=cPanel, Inc./stateOrProvinceName=TX/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2023-05-12T00:00:00&#xa;Not valid after:  2023-08-10T23:59:59&#xa;MD5:   d8d8 68dd 5a36 f0f5 eb01 4749 1d58 4282&#xa;SHA-1: be07 d71e a7b6 f552 fb20 e325 abd4 54ec 639e 45d7"><table key="subject">
+<elem key="commonName">australia.share.library.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">US</elem>
+<elem key="stateOrProvinceName">TX</elem>
+<elem key="commonName">cPanel, Inc. Certification Authority</elem>
+<elem key="localityName">Houston</elem>
+<elem key="organizationName">cPanel, Inc.</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">2048</elem>
+<elem key="modulus">BIGNUM: 0x55fe0f3865f8</elem>
+<elem key="exponent">BIGNUM: 0x55fe0f3866b8</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">7E:03:5A:65:41:6B:A7:7E:0A:E1:B8:9D:08:EA:1D:8E:1D:6A:C7:65</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">0C:C7:BB:8C:B8:87:B9:9C:D0:43:B6:A4:50:2E:48:E7:D8:7B:C6:EF</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">Policy: 1.3.6.1.4.1.6449.1.2.2.52&#xa;  CPS: https://sectigo.com/CPS&#xa;Policy: 2.23.140.1.2.1</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Full Name:&#xa;  URI:http://crl.comodoca.com/cPanelIncCertificationAuthority.crl</elem>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+</table>
+<table>
+<elem key="value">CA Issuers - URI:http://crt.comodoca.com/cPanelIncCertificationAuthority.crt&#xa;OCSP - URI:http://ocsp.comodoca.com</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : AD:F7:BE:FA:7C:FF:10:C8:8B:9D:3D:9C:1E:3E:18:6A:&#xa;                B4:67:29:5D:CF:B1:0C:24:CA:85:86:34:EB:DC:82:8A&#xa;    Timestamp : May 12 15:24:39.450 2023 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:14:35:B9:3B:00:DD:A3:11:50:0D:0F:4E:&#xa;                11:84:BB:57:B6:24:BC:B6:E9:E8:08:35:0B:8D:D4:DB:&#xa;                C5:55:52:1E:02:20:11:00:F9:65:D1:3B:8F:8E:F2:D1:&#xa;                90:18:23:CD:83:43:45:12:5D:4A:E9:7F:F3:05:62:90:&#xa;                0A:8B:39:87:FA:34&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 7A:32:8C:54:D8:B7:2D:B6:20:EA:38:E0:52:1E:E9:84:&#xa;                16:70:32:13:85:4D:3B:D2:2B:C1:3A:57:A3:52:EB:52&#xa;    Timestamp : May 12 15:24:39.551 2023 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:C8:93:90:02:7B:13:B2:2E:45:35:CD:&#xa;                83:68:A4:F3:B6:A6:55:A7:D9:1B:3F:69:45:3D:AF:62:&#xa;                03:7C:2D:19:64:02:20:38:A0:B8:B2:87:7F:BE:C7:CE:&#xa;                85:A4:6F:40:FB:A1:57:0C:26:11:4D:B4:7B:1D:89:73:&#xa;                1F:5F:62:2A:E0:50:00</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+<table>
+<elem key="value">DNS:australia.share.library.harvard.edu, DNS:cpanel.australia.share.library.harvard.edu, DNS:cpcalendars.australia.share.library.harvard.edu, DNS:cpcontacts.australia.share.library.harvard.edu, DNS:mail.australia.share.library.harvard.edu, DNS:webdisk.australia.share.library.harvard.edu, DNS:webmail.australia.share.library.harvard.edu, DNS:www.australia.share.library.harvard.edu</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2023-05-12T00:00:00</elem>
+<elem key="notAfter">2023-08-10T23:59:59</elem>
+</table>
+<elem key="md5">d8d868dd5a36f0f5eb0147491d584282</elem>
+<elem key="sha1">be07d71ea7b6f552fb20e325abd454ec639e45d7</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIHPDCCBiSgAwIBAgIQHvtbnsXSXoKuRRUl2puX+TANBgkqhkiG9w0BAQsFADBy&#xa;MQswCQYDVQQGEwJVUzELMAkGA1UECBMCVFgxEDAOBgNVBAcTB0hvdXN0b24xFTAT&#xa;BgNVBAoTDGNQYW5lbCwgSW5jLjEtMCsGA1UEAxMkY1BhbmVsLCBJbmMuIENlcnRp&#xa;ZmljYXRpb24gQXV0aG9yaXR5MB4XDTIzMDUxMjAwMDAwMFoXDTIzMDgxMDIzNTk1&#xa;OVowLjEsMCoGA1UEAxMjYXVzdHJhbGlhLnNoYXJlLmxpYnJhcnkuaGFydmFyZC5l&#xa;ZHUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDrsXieyATuzGlIhjXh&#xa;ftlrITrIGqQBFlr5p8NnSdkQhKgbGULuCBmOdLCUbNVYd/8dpz8l1izlx40tOYtq&#xa;JeHMCjIo8g3jvt/rl5K5zAExUL9Bd7tPwNPzUKZ3LqSw1KIuYNHVE9HyLWqzMo13&#xa;wW2icFQV317PsMRRpAe3Kt6ovsbrT36D6sRrPMjBGuaRYSPs/Q/TQq1Jlsoa3kVC&#xa;Ayjj4UWt3yUB9jIhiShHVPoR8FJYpfP4aeX/2Lt9yAzEOMpEiBILQWg1Y+DiSOkr&#xa;SISd90rLKm8MIxWO2RDk42p1pHZ4WVtAgGtA5Fs43sKbJFmruXcN85ZAul9uMX4P&#xa;opOJAgMBAAGjggQQMIIEDDAfBgNVHSMEGDAWgBR+A1plQWunfgrhuJ0I6h2OHWrH&#xa;ZTAdBgNVHQ4EFgQUDMe7jLiHuZzQQ7akUC5I59h7xu8wDgYDVR0PAQH/BAQDAgWg&#xa;MAwGA1UdEwEB/wQCMAAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMEkG&#xa;A1UdIARCMEAwNAYLKwYBBAGyMQECAjQwJTAjBggrBgEFBQcCARYXaHR0cHM6Ly9z&#xa;ZWN0aWdvLmNvbS9DUFMwCAYGZ4EMAQIBMEwGA1UdHwRFMEMwQaA/oD2GO2h0dHA6&#xa;Ly9jcmwuY29tb2RvY2EuY29tL2NQYW5lbEluY0NlcnRpZmljYXRpb25BdXRob3Jp&#xa;dHkuY3JsMH0GCCsGAQUFBwEBBHEwbzBHBggrBgEFBQcwAoY7aHR0cDovL2NydC5j&#xa;b21vZG9jYS5jb20vY1BhbmVsSW5jQ2VydGlmaWNhdGlvbkF1dGhvcml0eS5jcnQw&#xa;JAYIKwYBBQUHMAGGGGh0dHA6Ly9vY3NwLmNvbW9kb2NhLmNvbTCCAQMGCisGAQQB&#xa;1nkCBAIEgfQEgfEA7wB1AK33vvp8/xDIi509nB4+GGq0Zyldz7EMJMqFhjTr3IKK&#xa;AAABiBCQaJoAAAQDAEYwRAIgFDW5OwDdoxFQDQ9OEYS7V7YkvLbp6Ag1C43U28VV&#xa;Uh4CIBEA+WXRO4+O8tGQGCPNg0NFEl1K6X/zBWKQCos5h/o0AHYAejKMVNi3LbYg&#xa;6jjgUh7phBZwMhOFTTvSK8E6V6NS61IAAAGIEJBo/wAABAMARzBFAiEAyJOQAnsT&#xa;si5FNc2DaKTztqZVp9kbP2lFPa9iA3wtGWQCIDiguLKHf77HzoWkb0D7oVcMJhFN&#xa;tHsdiXMfX2Iq4FAAMIIBbAYDVR0RBIIBYzCCAV+CI2F1c3RyYWxpYS5zaGFyZS5s&#xa;aWJyYXJ5LmhhcnZhcmQuZWR1gipjcGFuZWwuYXVzdHJhbGlhLnNoYXJlLmxpYnJh&#xa;cnkuaGFydmFyZC5lZHWCL2NwY2FsZW5kYXJzLmF1c3RyYWxpYS5zaGFyZS5saWJy&#xa;YXJ5LmhhcnZhcmQuZWR1gi5jcGNvbnRhY3RzLmF1c3RyYWxpYS5zaGFyZS5saWJy&#xa;YXJ5LmhhcnZhcmQuZWR1gihtYWlsLmF1c3RyYWxpYS5zaGFyZS5saWJyYXJ5Lmhh&#xa;cnZhcmQuZWR1git3ZWJkaXNrLmF1c3RyYWxpYS5zaGFyZS5saWJyYXJ5LmhhcnZh&#xa;cmQuZWR1git3ZWJtYWlsLmF1c3RyYWxpYS5zaGFyZS5saWJyYXJ5LmhhcnZhcmQu&#xa;ZWR1gid3d3cuYXVzdHJhbGlhLnNoYXJlLmxpYnJhcnkuaGFydmFyZC5lZHUwDQYJ&#xa;KoZIhvcNAQELBQADggEBADrWtL2UUupUoy5+gpmUPA3zB0JuC58zMFrERyWJ2Wub&#xa;AGL1wRktEOtplKApGR2YOetmRlfC5GnVlzpSlm8q0CELsu1GUZQo7wJ6d/4TMFw3&#xa;S84neVJLYh3VbfqS7Eq+22wL/gUQ3c9l1r6cMGJq9kTuEW7I/sCki9qAiP7lyJ8H&#xa;E1WYs7E6mxJb2ozlRF47IDxfdEdgO+zpi2nhkqJtq1QYw0Ma4oHbA0eZlC5etxsP&#xa;ooRjFJ8Abpw9jYID3JFRLKX33qeQQvV0pVBRbMRT8m4GHOliR0EyBWPsBiQZjIB/&#xa;rCbFwXg2vgsO12o/XH6oAJe/4d08tPaTtF5ZLYY6htc=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:apache:http_server</cpe></service><script id="http-favicon" output="Unknown favicon MD5: 1229FF75DC6D0F30101BFD34365FEE35"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+</table>
+</script><script id="http-server-header" output="Apache"><elem>Apache</elem>
+</script><script id="http-title" output="Account Suspended&#xa;Requested resource was https://www.australia.share.library.harvard.edu/cgi-sys/suspendedpage.cgi"><elem key="title">Account Suspended</elem>
+<elem key="redirect_url">https://www.australia.share.library.harvard.edu/cgi-sys/suspendedpage.cgi</elem>
+</script><script id="http-trane-info" output="Problem with XML parsing of /evox/about"/><script id="ssl-cert" output="Subject: commonName=australia.share.library.harvard.edu&#xa;Subject Alternative Name: DNS:australia.share.library.harvard.edu, DNS:cpanel.australia.share.library.harvard.edu, DNS:cpcalendars.australia.share.library.harvard.edu, DNS:cpcontacts.australia.share.library.harvard.edu, DNS:mail.australia.share.library.harvard.edu, DNS:webdisk.australia.share.library.harvard.edu, DNS:webmail.australia.share.library.harvard.edu, DNS:www.australia.share.library.harvard.edu&#xa;Issuer: commonName=cPanel, Inc. Certification Authority/organizationName=cPanel, Inc./stateOrProvinceName=TX/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2023-05-12T00:00:00&#xa;Not valid after:  2023-08-10T23:59:59&#xa;MD5:   d8d8 68dd 5a36 f0f5 eb01 4749 1d58 4282&#xa;SHA-1: be07 d71e a7b6 f552 fb20 e325 abd4 54ec 639e 45d7"><table key="subject">
+<elem key="commonName">australia.share.library.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">US</elem>
+<elem key="stateOrProvinceName">TX</elem>
+<elem key="commonName">cPanel, Inc. Certification Authority</elem>
+<elem key="localityName">Houston</elem>
+<elem key="organizationName">cPanel, Inc.</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">2048</elem>
+<elem key="modulus">BIGNUM: 0x55fe0efcc368</elem>
+<elem key="exponent">BIGNUM: 0x55fe0efcc428</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">7E:03:5A:65:41:6B:A7:7E:0A:E1:B8:9D:08:EA:1D:8E:1D:6A:C7:65</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">0C:C7:BB:8C:B8:87:B9:9C:D0:43:B6:A4:50:2E:48:E7:D8:7B:C6:EF</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">Policy: 1.3.6.1.4.1.6449.1.2.2.52&#xa;  CPS: https://sectigo.com/CPS&#xa;Policy: 2.23.140.1.2.1</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Full Name:&#xa;  URI:http://crl.comodoca.com/cPanelIncCertificationAuthority.crl</elem>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+</table>
+<table>
+<elem key="value">CA Issuers - URI:http://crt.comodoca.com/cPanelIncCertificationAuthority.crt&#xa;OCSP - URI:http://ocsp.comodoca.com</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : AD:F7:BE:FA:7C:FF:10:C8:8B:9D:3D:9C:1E:3E:18:6A:&#xa;                B4:67:29:5D:CF:B1:0C:24:CA:85:86:34:EB:DC:82:8A&#xa;    Timestamp : May 12 15:24:39.450 2023 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:14:35:B9:3B:00:DD:A3:11:50:0D:0F:4E:&#xa;                11:84:BB:57:B6:24:BC:B6:E9:E8:08:35:0B:8D:D4:DB:&#xa;                C5:55:52:1E:02:20:11:00:F9:65:D1:3B:8F:8E:F2:D1:&#xa;                90:18:23:CD:83:43:45:12:5D:4A:E9:7F:F3:05:62:90:&#xa;                0A:8B:39:87:FA:34&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 7A:32:8C:54:D8:B7:2D:B6:20:EA:38:E0:52:1E:E9:84:&#xa;                16:70:32:13:85:4D:3B:D2:2B:C1:3A:57:A3:52:EB:52&#xa;    Timestamp : May 12 15:24:39.551 2023 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:C8:93:90:02:7B:13:B2:2E:45:35:CD:&#xa;                83:68:A4:F3:B6:A6:55:A7:D9:1B:3F:69:45:3D:AF:62:&#xa;                03:7C:2D:19:64:02:20:38:A0:B8:B2:87:7F:BE:C7:CE:&#xa;                85:A4:6F:40:FB:A1:57:0C:26:11:4D:B4:7B:1D:89:73:&#xa;                1F:5F:62:2A:E0:50:00</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+<table>
+<elem key="value">DNS:australia.share.library.harvard.edu, DNS:cpanel.australia.share.library.harvard.edu, DNS:cpcalendars.australia.share.library.harvard.edu, DNS:cpcontacts.australia.share.library.harvard.edu, DNS:mail.australia.share.library.harvard.edu, DNS:webdisk.australia.share.library.harvard.edu, DNS:webmail.australia.share.library.harvard.edu, DNS:www.australia.share.library.harvard.edu</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2023-05-12T00:00:00</elem>
+<elem key="notAfter">2023-08-10T23:59:59</elem>
+</table>
+<elem key="md5">d8d868dd5a36f0f5eb0147491d584282</elem>
+<elem key="sha1">be07d71ea7b6f552fb20e325abd454ec639e45d7</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIHPDCCBiSgAwIBAgIQHvtbnsXSXoKuRRUl2puX+TANBgkqhkiG9w0BAQsFADBy&#xa;MQswCQYDVQQGEwJVUzELMAkGA1UECBMCVFgxEDAOBgNVBAcTB0hvdXN0b24xFTAT&#xa;BgNVBAoTDGNQYW5lbCwgSW5jLjEtMCsGA1UEAxMkY1BhbmVsLCBJbmMuIENlcnRp&#xa;ZmljYXRpb24gQXV0aG9yaXR5MB4XDTIzMDUxMjAwMDAwMFoXDTIzMDgxMDIzNTk1&#xa;OVowLjEsMCoGA1UEAxMjYXVzdHJhbGlhLnNoYXJlLmxpYnJhcnkuaGFydmFyZC5l&#xa;ZHUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDrsXieyATuzGlIhjXh&#xa;ftlrITrIGqQBFlr5p8NnSdkQhKgbGULuCBmOdLCUbNVYd/8dpz8l1izlx40tOYtq&#xa;JeHMCjIo8g3jvt/rl5K5zAExUL9Bd7tPwNPzUKZ3LqSw1KIuYNHVE9HyLWqzMo13&#xa;wW2icFQV317PsMRRpAe3Kt6ovsbrT36D6sRrPMjBGuaRYSPs/Q/TQq1Jlsoa3kVC&#xa;Ayjj4UWt3yUB9jIhiShHVPoR8FJYpfP4aeX/2Lt9yAzEOMpEiBILQWg1Y+DiSOkr&#xa;SISd90rLKm8MIxWO2RDk42p1pHZ4WVtAgGtA5Fs43sKbJFmruXcN85ZAul9uMX4P&#xa;opOJAgMBAAGjggQQMIIEDDAfBgNVHSMEGDAWgBR+A1plQWunfgrhuJ0I6h2OHWrH&#xa;ZTAdBgNVHQ4EFgQUDMe7jLiHuZzQQ7akUC5I59h7xu8wDgYDVR0PAQH/BAQDAgWg&#xa;MAwGA1UdEwEB/wQCMAAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMEkG&#xa;A1UdIARCMEAwNAYLKwYBBAGyMQECAjQwJTAjBggrBgEFBQcCARYXaHR0cHM6Ly9z&#xa;ZWN0aWdvLmNvbS9DUFMwCAYGZ4EMAQIBMEwGA1UdHwRFMEMwQaA/oD2GO2h0dHA6&#xa;Ly9jcmwuY29tb2RvY2EuY29tL2NQYW5lbEluY0NlcnRpZmljYXRpb25BdXRob3Jp&#xa;dHkuY3JsMH0GCCsGAQUFBwEBBHEwbzBHBggrBgEFBQcwAoY7aHR0cDovL2NydC5j&#xa;b21vZG9jYS5jb20vY1BhbmVsSW5jQ2VydGlmaWNhdGlvbkF1dGhvcml0eS5jcnQw&#xa;JAYIKwYBBQUHMAGGGGh0dHA6Ly9vY3NwLmNvbW9kb2NhLmNvbTCCAQMGCisGAQQB&#xa;1nkCBAIEgfQEgfEA7wB1AK33vvp8/xDIi509nB4+GGq0Zyldz7EMJMqFhjTr3IKK&#xa;AAABiBCQaJoAAAQDAEYwRAIgFDW5OwDdoxFQDQ9OEYS7V7YkvLbp6Ag1C43U28VV&#xa;Uh4CIBEA+WXRO4+O8tGQGCPNg0NFEl1K6X/zBWKQCos5h/o0AHYAejKMVNi3LbYg&#xa;6jjgUh7phBZwMhOFTTvSK8E6V6NS61IAAAGIEJBo/wAABAMARzBFAiEAyJOQAnsT&#xa;si5FNc2DaKTztqZVp9kbP2lFPa9iA3wtGWQCIDiguLKHf77HzoWkb0D7oVcMJhFN&#xa;tHsdiXMfX2Iq4FAAMIIBbAYDVR0RBIIBYzCCAV+CI2F1c3RyYWxpYS5zaGFyZS5s&#xa;aWJyYXJ5LmhhcnZhcmQuZWR1gipjcGFuZWwuYXVzdHJhbGlhLnNoYXJlLmxpYnJh&#xa;cnkuaGFydmFyZC5lZHWCL2NwY2FsZW5kYXJzLmF1c3RyYWxpYS5zaGFyZS5saWJy&#xa;YXJ5LmhhcnZhcmQuZWR1gi5jcGNvbnRhY3RzLmF1c3RyYWxpYS5zaGFyZS5saWJy&#xa;YXJ5LmhhcnZhcmQuZWR1gihtYWlsLmF1c3RyYWxpYS5zaGFyZS5saWJyYXJ5Lmhh&#xa;cnZhcmQuZWR1git3ZWJkaXNrLmF1c3RyYWxpYS5zaGFyZS5saWJyYXJ5LmhhcnZh&#xa;cmQuZWR1git3ZWJtYWlsLmF1c3RyYWxpYS5zaGFyZS5saWJyYXJ5LmhhcnZhcmQu&#xa;ZWR1gid3d3cuYXVzdHJhbGlhLnNoYXJlLmxpYnJhcnkuaGFydmFyZC5lZHUwDQYJ&#xa;KoZIhvcNAQELBQADggEBADrWtL2UUupUoy5+gpmUPA3zB0JuC58zMFrERyWJ2Wub&#xa;AGL1wRktEOtplKApGR2YOetmRlfC5GnVlzpSlm8q0CELsu1GUZQo7wJ6d/4TMFw3&#xa;S84neVJLYh3VbfqS7Eq+22wL/gUQ3c9l1r6cMGJq9kTuEW7I/sCki9qAiP7lyJ8H&#xa;E1WYs7E6mxJb2ozlRF47IDxfdEdgO+zpi2nhkqJtq1QYw0Ma4oHbA0eZlC5etxsP&#xa;ooRjFJ8Abpw9jYID3JFRLKX33qeQQvV0pVBRbMRT8m4GHOliR0EyBWPsBiQZjIB/&#xa;rCbFwXg2vgsO12o/XH6oAJe/4d08tPaTtF5ZLYY6htc=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="465"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtp" product="Exim smtpd" version="4.96.2" hostname="harvard1.reclaimhosting.com" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:exim:exim:4.96.2</cpe></service><script id="smtp-commands" output="harvard1.reclaimhosting.com Hello www.australia.share.library.harvard.edu [172.183.107.219], SIZE 52428800, 8BITMIME, PIPELINING, PIPECONNECT, AUTH PLAIN LOGIN, HELP, &#xa; Commands supported: AUTH HELO EHLO MAIL RCPT DATA BDAT NOOP QUIT RSET HELP "/><script id="ssl-cert" output="Subject: commonName=australia.share.library.harvard.edu&#xa;Subject Alternative Name: DNS:australia.share.library.harvard.edu, DNS:cpanel.australia.share.library.harvard.edu, DNS:cpcalendars.australia.share.library.harvard.edu, DNS:cpcontacts.australia.share.library.harvard.edu, DNS:mail.australia.share.library.harvard.edu, DNS:webdisk.australia.share.library.harvard.edu, DNS:webmail.australia.share.library.harvard.edu, DNS:www.australia.share.library.harvard.edu&#xa;Issuer: commonName=cPanel, Inc. Certification Authority/organizationName=cPanel, Inc./stateOrProvinceName=TX/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2023-05-12T00:00:00&#xa;Not valid after:  2023-08-10T23:59:59&#xa;MD5:   d8d8 68dd 5a36 f0f5 eb01 4749 1d58 4282&#xa;SHA-1: be07 d71e a7b6 f552 fb20 e325 abd4 54ec 639e 45d7"><table key="subject">
+<elem key="commonName">australia.share.library.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">US</elem>
+<elem key="stateOrProvinceName">TX</elem>
+<elem key="commonName">cPanel, Inc. Certification Authority</elem>
+<elem key="localityName">Houston</elem>
+<elem key="organizationName">cPanel, Inc.</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">2048</elem>
+<elem key="modulus">BIGNUM: 0x55fe0f55c1c8</elem>
+<elem key="exponent">BIGNUM: 0x55fe0f862808</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">7E:03:5A:65:41:6B:A7:7E:0A:E1:B8:9D:08:EA:1D:8E:1D:6A:C7:65</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">0C:C7:BB:8C:B8:87:B9:9C:D0:43:B6:A4:50:2E:48:E7:D8:7B:C6:EF</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">Policy: 1.3.6.1.4.1.6449.1.2.2.52&#xa;  CPS: https://sectigo.com/CPS&#xa;Policy: 2.23.140.1.2.1</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Full Name:&#xa;  URI:http://crl.comodoca.com/cPanelIncCertificationAuthority.crl</elem>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+</table>
+<table>
+<elem key="value">CA Issuers - URI:http://crt.comodoca.com/cPanelIncCertificationAuthority.crt&#xa;OCSP - URI:http://ocsp.comodoca.com</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : AD:F7:BE:FA:7C:FF:10:C8:8B:9D:3D:9C:1E:3E:18:6A:&#xa;                B4:67:29:5D:CF:B1:0C:24:CA:85:86:34:EB:DC:82:8A&#xa;    Timestamp : May 12 15:24:39.450 2023 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:14:35:B9:3B:00:DD:A3:11:50:0D:0F:4E:&#xa;                11:84:BB:57:B6:24:BC:B6:E9:E8:08:35:0B:8D:D4:DB:&#xa;                C5:55:52:1E:02:20:11:00:F9:65:D1:3B:8F:8E:F2:D1:&#xa;                90:18:23:CD:83:43:45:12:5D:4A:E9:7F:F3:05:62:90:&#xa;                0A:8B:39:87:FA:34&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 7A:32:8C:54:D8:B7:2D:B6:20:EA:38:E0:52:1E:E9:84:&#xa;                16:70:32:13:85:4D:3B:D2:2B:C1:3A:57:A3:52:EB:52&#xa;    Timestamp : May 12 15:24:39.551 2023 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:C8:93:90:02:7B:13:B2:2E:45:35:CD:&#xa;                83:68:A4:F3:B6:A6:55:A7:D9:1B:3F:69:45:3D:AF:62:&#xa;                03:7C:2D:19:64:02:20:38:A0:B8:B2:87:7F:BE:C7:CE:&#xa;                85:A4:6F:40:FB:A1:57:0C:26:11:4D:B4:7B:1D:89:73:&#xa;                1F:5F:62:2A:E0:50:00</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+<table>
+<elem key="value">DNS:australia.share.library.harvard.edu, DNS:cpanel.australia.share.library.harvard.edu, DNS:cpcalendars.australia.share.library.harvard.edu, DNS:cpcontacts.australia.share.library.harvard.edu, DNS:mail.australia.share.library.harvard.edu, DNS:webdisk.australia.share.library.harvard.edu, DNS:webmail.australia.share.library.harvard.edu, DNS:www.australia.share.library.harvard.edu</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2023-05-12T00:00:00</elem>
+<elem key="notAfter">2023-08-10T23:59:59</elem>
+</table>
+<elem key="md5">d8d868dd5a36f0f5eb0147491d584282</elem>
+<elem key="sha1">be07d71ea7b6f552fb20e325abd454ec639e45d7</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIHPDCCBiSgAwIBAgIQHvtbnsXSXoKuRRUl2puX+TANBgkqhkiG9w0BAQsFADBy&#xa;MQswCQYDVQQGEwJVUzELMAkGA1UECBMCVFgxEDAOBgNVBAcTB0hvdXN0b24xFTAT&#xa;BgNVBAoTDGNQYW5lbCwgSW5jLjEtMCsGA1UEAxMkY1BhbmVsLCBJbmMuIENlcnRp&#xa;ZmljYXRpb24gQXV0aG9yaXR5MB4XDTIzMDUxMjAwMDAwMFoXDTIzMDgxMDIzNTk1&#xa;OVowLjEsMCoGA1UEAxMjYXVzdHJhbGlhLnNoYXJlLmxpYnJhcnkuaGFydmFyZC5l&#xa;ZHUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDrsXieyATuzGlIhjXh&#xa;ftlrITrIGqQBFlr5p8NnSdkQhKgbGULuCBmOdLCUbNVYd/8dpz8l1izlx40tOYtq&#xa;JeHMCjIo8g3jvt/rl5K5zAExUL9Bd7tPwNPzUKZ3LqSw1KIuYNHVE9HyLWqzMo13&#xa;wW2icFQV317PsMRRpAe3Kt6ovsbrT36D6sRrPMjBGuaRYSPs/Q/TQq1Jlsoa3kVC&#xa;Ayjj4UWt3yUB9jIhiShHVPoR8FJYpfP4aeX/2Lt9yAzEOMpEiBILQWg1Y+DiSOkr&#xa;SISd90rLKm8MIxWO2RDk42p1pHZ4WVtAgGtA5Fs43sKbJFmruXcN85ZAul9uMX4P&#xa;opOJAgMBAAGjggQQMIIEDDAfBgNVHSMEGDAWgBR+A1plQWunfgrhuJ0I6h2OHWrH&#xa;ZTAdBgNVHQ4EFgQUDMe7jLiHuZzQQ7akUC5I59h7xu8wDgYDVR0PAQH/BAQDAgWg&#xa;MAwGA1UdEwEB/wQCMAAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMEkG&#xa;A1UdIARCMEAwNAYLKwYBBAGyMQECAjQwJTAjBggrBgEFBQcCARYXaHR0cHM6Ly9z&#xa;ZWN0aWdvLmNvbS9DUFMwCAYGZ4EMAQIBMEwGA1UdHwRFMEMwQaA/oD2GO2h0dHA6&#xa;Ly9jcmwuY29tb2RvY2EuY29tL2NQYW5lbEluY0NlcnRpZmljYXRpb25BdXRob3Jp&#xa;dHkuY3JsMH0GCCsGAQUFBwEBBHEwbzBHBggrBgEFBQcwAoY7aHR0cDovL2NydC5j&#xa;b21vZG9jYS5jb20vY1BhbmVsSW5jQ2VydGlmaWNhdGlvbkF1dGhvcml0eS5jcnQw&#xa;JAYIKwYBBQUHMAGGGGh0dHA6Ly9vY3NwLmNvbW9kb2NhLmNvbTCCAQMGCisGAQQB&#xa;1nkCBAIEgfQEgfEA7wB1AK33vvp8/xDIi509nB4+GGq0Zyldz7EMJMqFhjTr3IKK&#xa;AAABiBCQaJoAAAQDAEYwRAIgFDW5OwDdoxFQDQ9OEYS7V7YkvLbp6Ag1C43U28VV&#xa;Uh4CIBEA+WXRO4+O8tGQGCPNg0NFEl1K6X/zBWKQCos5h/o0AHYAejKMVNi3LbYg&#xa;6jjgUh7phBZwMhOFTTvSK8E6V6NS61IAAAGIEJBo/wAABAMARzBFAiEAyJOQAnsT&#xa;si5FNc2DaKTztqZVp9kbP2lFPa9iA3wtGWQCIDiguLKHf77HzoWkb0D7oVcMJhFN&#xa;tHsdiXMfX2Iq4FAAMIIBbAYDVR0RBIIBYzCCAV+CI2F1c3RyYWxpYS5zaGFyZS5s&#xa;aWJyYXJ5LmhhcnZhcmQuZWR1gipjcGFuZWwuYXVzdHJhbGlhLnNoYXJlLmxpYnJh&#xa;cnkuaGFydmFyZC5lZHWCL2NwY2FsZW5kYXJzLmF1c3RyYWxpYS5zaGFyZS5saWJy&#xa;YXJ5LmhhcnZhcmQuZWR1gi5jcGNvbnRhY3RzLmF1c3RyYWxpYS5zaGFyZS5saWJy&#xa;YXJ5LmhhcnZhcmQuZWR1gihtYWlsLmF1c3RyYWxpYS5zaGFyZS5saWJyYXJ5Lmhh&#xa;cnZhcmQuZWR1git3ZWJkaXNrLmF1c3RyYWxpYS5zaGFyZS5saWJyYXJ5LmhhcnZh&#xa;cmQuZWR1git3ZWJtYWlsLmF1c3RyYWxpYS5zaGFyZS5saWJyYXJ5LmhhcnZhcmQu&#xa;ZWR1gid3d3cuYXVzdHJhbGlhLnNoYXJlLmxpYnJhcnkuaGFydmFyZC5lZHUwDQYJ&#xa;KoZIhvcNAQELBQADggEBADrWtL2UUupUoy5+gpmUPA3zB0JuC58zMFrERyWJ2Wub&#xa;AGL1wRktEOtplKApGR2YOetmRlfC5GnVlzpSlm8q0CELsu1GUZQo7wJ6d/4TMFw3&#xa;S84neVJLYh3VbfqS7Eq+22wL/gUQ3c9l1r6cMGJq9kTuEW7I/sCki9qAiP7lyJ8H&#xa;E1WYs7E6mxJb2ozlRF47IDxfdEdgO+zpi2nhkqJtq1QYw0Ma4oHbA0eZlC5etxsP&#xa;ooRjFJ8Abpw9jYID3JFRLKX33qeQQvV0pVBRbMRT8m4GHOliR0EyBWPsBiQZjIB/&#xa;rCbFwXg2vgsO12o/XH6oAJe/4d08tPaTtF5ZLYY6htc=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+<port protocol="tcp" portid="587"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtp" product="Exim smtpd" version="4.96.2" hostname="harvard1.reclaimhosting.com" method="probed" conf="10"><cpe>cpe:/a:exim:exim:4.96.2</cpe></service><script id="smtp-commands" output="harvard1.reclaimhosting.com Hello www.australia.share.library.harvard.edu [172.183.107.219], SIZE 52428800, 8BITMIME, PIPELINING, PIPECONNECT, STARTTLS, HELP, &#xa; Commands supported: AUTH STARTTLS HELO EHLO MAIL RCPT DATA BDAT NOOP QUIT RSET HELP "/><script id="ssl-cert" output="Subject: commonName=australia.share.library.harvard.edu&#xa;Subject Alternative Name: DNS:australia.share.library.harvard.edu, DNS:cpanel.australia.share.library.harvard.edu, DNS:cpcalendars.australia.share.library.harvard.edu, DNS:cpcontacts.australia.share.library.harvard.edu, DNS:mail.australia.share.library.harvard.edu, DNS:webdisk.australia.share.library.harvard.edu, DNS:webmail.australia.share.library.harvard.edu, DNS:www.australia.share.library.harvard.edu&#xa;Issuer: commonName=cPanel, Inc. Certification Authority/organizationName=cPanel, Inc./stateOrProvinceName=TX/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2023-05-12T00:00:00&#xa;Not valid after:  2023-08-10T23:59:59&#xa;MD5:   d8d8 68dd 5a36 f0f5 eb01 4749 1d58 4282&#xa;SHA-1: be07 d71e a7b6 f552 fb20 e325 abd4 54ec 639e 45d7"><table key="subject">
+<elem key="commonName">australia.share.library.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">US</elem>
+<elem key="stateOrProvinceName">TX</elem>
+<elem key="commonName">cPanel, Inc. Certification Authority</elem>
+<elem key="localityName">Houston</elem>
+<elem key="organizationName">cPanel, Inc.</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">2048</elem>
+<elem key="modulus">BIGNUM: 0x55fe0f937698</elem>
+<elem key="exponent">BIGNUM: 0x55fe0ea5af58</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">7E:03:5A:65:41:6B:A7:7E:0A:E1:B8:9D:08:EA:1D:8E:1D:6A:C7:65</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">0C:C7:BB:8C:B8:87:B9:9C:D0:43:B6:A4:50:2E:48:E7:D8:7B:C6:EF</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">Policy: 1.3.6.1.4.1.6449.1.2.2.52&#xa;  CPS: https://sectigo.com/CPS&#xa;Policy: 2.23.140.1.2.1</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Full Name:&#xa;  URI:http://crl.comodoca.com/cPanelIncCertificationAuthority.crl</elem>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+</table>
+<table>
+<elem key="value">CA Issuers - URI:http://crt.comodoca.com/cPanelIncCertificationAuthority.crt&#xa;OCSP - URI:http://ocsp.comodoca.com</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : AD:F7:BE:FA:7C:FF:10:C8:8B:9D:3D:9C:1E:3E:18:6A:&#xa;                B4:67:29:5D:CF:B1:0C:24:CA:85:86:34:EB:DC:82:8A&#xa;    Timestamp : May 12 15:24:39.450 2023 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:14:35:B9:3B:00:DD:A3:11:50:0D:0F:4E:&#xa;                11:84:BB:57:B6:24:BC:B6:E9:E8:08:35:0B:8D:D4:DB:&#xa;                C5:55:52:1E:02:20:11:00:F9:65:D1:3B:8F:8E:F2:D1:&#xa;                90:18:23:CD:83:43:45:12:5D:4A:E9:7F:F3:05:62:90:&#xa;                0A:8B:39:87:FA:34&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 7A:32:8C:54:D8:B7:2D:B6:20:EA:38:E0:52:1E:E9:84:&#xa;                16:70:32:13:85:4D:3B:D2:2B:C1:3A:57:A3:52:EB:52&#xa;    Timestamp : May 12 15:24:39.551 2023 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:C8:93:90:02:7B:13:B2:2E:45:35:CD:&#xa;                83:68:A4:F3:B6:A6:55:A7:D9:1B:3F:69:45:3D:AF:62:&#xa;                03:7C:2D:19:64:02:20:38:A0:B8:B2:87:7F:BE:C7:CE:&#xa;                85:A4:6F:40:FB:A1:57:0C:26:11:4D:B4:7B:1D:89:73:&#xa;                1F:5F:62:2A:E0:50:00</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+<table>
+<elem key="value">DNS:australia.share.library.harvard.edu, DNS:cpanel.australia.share.library.harvard.edu, DNS:cpcalendars.australia.share.library.harvard.edu, DNS:cpcontacts.australia.share.library.harvard.edu, DNS:mail.australia.share.library.harvard.edu, DNS:webdisk.australia.share.library.harvard.edu, DNS:webmail.australia.share.library.harvard.edu, DNS:www.australia.share.library.harvard.edu</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2023-05-12T00:00:00</elem>
+<elem key="notAfter">2023-08-10T23:59:59</elem>
+</table>
+<elem key="md5">d8d868dd5a36f0f5eb0147491d584282</elem>
+<elem key="sha1">be07d71ea7b6f552fb20e325abd454ec639e45d7</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIHPDCCBiSgAwIBAgIQHvtbnsXSXoKuRRUl2puX+TANBgkqhkiG9w0BAQsFADBy&#xa;MQswCQYDVQQGEwJVUzELMAkGA1UECBMCVFgxEDAOBgNVBAcTB0hvdXN0b24xFTAT&#xa;BgNVBAoTDGNQYW5lbCwgSW5jLjEtMCsGA1UEAxMkY1BhbmVsLCBJbmMuIENlcnRp&#xa;ZmljYXRpb24gQXV0aG9yaXR5MB4XDTIzMDUxMjAwMDAwMFoXDTIzMDgxMDIzNTk1&#xa;OVowLjEsMCoGA1UEAxMjYXVzdHJhbGlhLnNoYXJlLmxpYnJhcnkuaGFydmFyZC5l&#xa;ZHUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDrsXieyATuzGlIhjXh&#xa;ftlrITrIGqQBFlr5p8NnSdkQhKgbGULuCBmOdLCUbNVYd/8dpz8l1izlx40tOYtq&#xa;JeHMCjIo8g3jvt/rl5K5zAExUL9Bd7tPwNPzUKZ3LqSw1KIuYNHVE9HyLWqzMo13&#xa;wW2icFQV317PsMRRpAe3Kt6ovsbrT36D6sRrPMjBGuaRYSPs/Q/TQq1Jlsoa3kVC&#xa;Ayjj4UWt3yUB9jIhiShHVPoR8FJYpfP4aeX/2Lt9yAzEOMpEiBILQWg1Y+DiSOkr&#xa;SISd90rLKm8MIxWO2RDk42p1pHZ4WVtAgGtA5Fs43sKbJFmruXcN85ZAul9uMX4P&#xa;opOJAgMBAAGjggQQMIIEDDAfBgNVHSMEGDAWgBR+A1plQWunfgrhuJ0I6h2OHWrH&#xa;ZTAdBgNVHQ4EFgQUDMe7jLiHuZzQQ7akUC5I59h7xu8wDgYDVR0PAQH/BAQDAgWg&#xa;MAwGA1UdEwEB/wQCMAAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMEkG&#xa;A1UdIARCMEAwNAYLKwYBBAGyMQECAjQwJTAjBggrBgEFBQcCARYXaHR0cHM6Ly9z&#xa;ZWN0aWdvLmNvbS9DUFMwCAYGZ4EMAQIBMEwGA1UdHwRFMEMwQaA/oD2GO2h0dHA6&#xa;Ly9jcmwuY29tb2RvY2EuY29tL2NQYW5lbEluY0NlcnRpZmljYXRpb25BdXRob3Jp&#xa;dHkuY3JsMH0GCCsGAQUFBwEBBHEwbzBHBggrBgEFBQcwAoY7aHR0cDovL2NydC5j&#xa;b21vZG9jYS5jb20vY1BhbmVsSW5jQ2VydGlmaWNhdGlvbkF1dGhvcml0eS5jcnQw&#xa;JAYIKwYBBQUHMAGGGGh0dHA6Ly9vY3NwLmNvbW9kb2NhLmNvbTCCAQMGCisGAQQB&#xa;1nkCBAIEgfQEgfEA7wB1AK33vvp8/xDIi509nB4+GGq0Zyldz7EMJMqFhjTr3IKK&#xa;AAABiBCQaJoAAAQDAEYwRAIgFDW5OwDdoxFQDQ9OEYS7V7YkvLbp6Ag1C43U28VV&#xa;Uh4CIBEA+WXRO4+O8tGQGCPNg0NFEl1K6X/zBWKQCos5h/o0AHYAejKMVNi3LbYg&#xa;6jjgUh7phBZwMhOFTTvSK8E6V6NS61IAAAGIEJBo/wAABAMARzBFAiEAyJOQAnsT&#xa;si5FNc2DaKTztqZVp9kbP2lFPa9iA3wtGWQCIDiguLKHf77HzoWkb0D7oVcMJhFN&#xa;tHsdiXMfX2Iq4FAAMIIBbAYDVR0RBIIBYzCCAV+CI2F1c3RyYWxpYS5zaGFyZS5s&#xa;aWJyYXJ5LmhhcnZhcmQuZWR1gipjcGFuZWwuYXVzdHJhbGlhLnNoYXJlLmxpYnJh&#xa;cnkuaGFydmFyZC5lZHWCL2NwY2FsZW5kYXJzLmF1c3RyYWxpYS5zaGFyZS5saWJy&#xa;YXJ5LmhhcnZhcmQuZWR1gi5jcGNvbnRhY3RzLmF1c3RyYWxpYS5zaGFyZS5saWJy&#xa;YXJ5LmhhcnZhcmQuZWR1gihtYWlsLmF1c3RyYWxpYS5zaGFyZS5saWJyYXJ5Lmhh&#xa;cnZhcmQuZWR1git3ZWJkaXNrLmF1c3RyYWxpYS5zaGFyZS5saWJyYXJ5LmhhcnZh&#xa;cmQuZWR1git3ZWJtYWlsLmF1c3RyYWxpYS5zaGFyZS5saWJyYXJ5LmhhcnZhcmQu&#xa;ZWR1gid3d3cuYXVzdHJhbGlhLnNoYXJlLmxpYnJhcnkuaGFydmFyZC5lZHUwDQYJ&#xa;KoZIhvcNAQELBQADggEBADrWtL2UUupUoy5+gpmUPA3zB0JuC58zMFrERyWJ2Wub&#xa;AGL1wRktEOtplKApGR2YOetmRlfC5GnVlzpSlm8q0CELsu1GUZQo7wJ6d/4TMFw3&#xa;S84neVJLYh3VbfqS7Eq+22wL/gUQ3c9l1r6cMGJq9kTuEW7I/sCki9qAiP7lyJ8H&#xa;E1WYs7E6mxJb2ozlRF47IDxfdEdgO+zpi2nhkqJtq1QYw0Ma4oHbA0eZlC5etxsP&#xa;ooRjFJ8Abpw9jYID3JFRLKX33qeQQvV0pVBRbMRT8m4GHOliR0EyBWPsBiQZjIB/&#xa;rCbFwXg2vgsO12o/XH6oAJe/4d08tPaTtF5ZLYY6htc=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+<port protocol="tcp" portid="993"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="imaps" method="table" conf="3"/><script id="imap-capabilities" output="AUTH=PLAIN AUTH=LOGINA0001 IDLE LOGIN-REFERRALS OK Pre-login post-login LITERAL+ IMAP4rev1 more NAMESPACE capabilities SASL-IR ID have listed ENABLE"/><script id="ssl-cert" output="Subject: commonName=australia.share.library.harvard.edu&#xa;Subject Alternative Name: DNS:australia.share.library.harvard.edu, DNS:cpanel.australia.share.library.harvard.edu, DNS:cpcalendars.australia.share.library.harvard.edu, DNS:cpcontacts.australia.share.library.harvard.edu, DNS:mail.australia.share.library.harvard.edu, DNS:webdisk.australia.share.library.harvard.edu, DNS:webmail.australia.share.library.harvard.edu, DNS:www.australia.share.library.harvard.edu&#xa;Issuer: commonName=cPanel, Inc. Certification Authority/organizationName=cPanel, Inc./stateOrProvinceName=TX/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2023-05-12T00:00:00&#xa;Not valid after:  2023-08-10T23:59:59&#xa;MD5:   d8d8 68dd 5a36 f0f5 eb01 4749 1d58 4282&#xa;SHA-1: be07 d71e a7b6 f552 fb20 e325 abd4 54ec 639e 45d7"><table key="subject">
+<elem key="commonName">australia.share.library.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">US</elem>
+<elem key="stateOrProvinceName">TX</elem>
+<elem key="commonName">cPanel, Inc. Certification Authority</elem>
+<elem key="localityName">Houston</elem>
+<elem key="organizationName">cPanel, Inc.</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">2048</elem>
+<elem key="modulus">BIGNUM: 0x55fe0ff2e488</elem>
+<elem key="exponent">BIGNUM: 0x55fe0ff2f418</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">7E:03:5A:65:41:6B:A7:7E:0A:E1:B8:9D:08:EA:1D:8E:1D:6A:C7:65</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">0C:C7:BB:8C:B8:87:B9:9C:D0:43:B6:A4:50:2E:48:E7:D8:7B:C6:EF</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">Policy: 1.3.6.1.4.1.6449.1.2.2.52&#xa;  CPS: https://sectigo.com/CPS&#xa;Policy: 2.23.140.1.2.1</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Full Name:&#xa;  URI:http://crl.comodoca.com/cPanelIncCertificationAuthority.crl</elem>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+</table>
+<table>
+<elem key="value">CA Issuers - URI:http://crt.comodoca.com/cPanelIncCertificationAuthority.crt&#xa;OCSP - URI:http://ocsp.comodoca.com</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : AD:F7:BE:FA:7C:FF:10:C8:8B:9D:3D:9C:1E:3E:18:6A:&#xa;                B4:67:29:5D:CF:B1:0C:24:CA:85:86:34:EB:DC:82:8A&#xa;    Timestamp : May 12 15:24:39.450 2023 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:14:35:B9:3B:00:DD:A3:11:50:0D:0F:4E:&#xa;                11:84:BB:57:B6:24:BC:B6:E9:E8:08:35:0B:8D:D4:DB:&#xa;                C5:55:52:1E:02:20:11:00:F9:65:D1:3B:8F:8E:F2:D1:&#xa;                90:18:23:CD:83:43:45:12:5D:4A:E9:7F:F3:05:62:90:&#xa;                0A:8B:39:87:FA:34&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 7A:32:8C:54:D8:B7:2D:B6:20:EA:38:E0:52:1E:E9:84:&#xa;                16:70:32:13:85:4D:3B:D2:2B:C1:3A:57:A3:52:EB:52&#xa;    Timestamp : May 12 15:24:39.551 2023 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:C8:93:90:02:7B:13:B2:2E:45:35:CD:&#xa;                83:68:A4:F3:B6:A6:55:A7:D9:1B:3F:69:45:3D:AF:62:&#xa;                03:7C:2D:19:64:02:20:38:A0:B8:B2:87:7F:BE:C7:CE:&#xa;                85:A4:6F:40:FB:A1:57:0C:26:11:4D:B4:7B:1D:89:73:&#xa;                1F:5F:62:2A:E0:50:00</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+<table>
+<elem key="value">DNS:australia.share.library.harvard.edu, DNS:cpanel.australia.share.library.harvard.edu, DNS:cpcalendars.australia.share.library.harvard.edu, DNS:cpcontacts.australia.share.library.harvard.edu, DNS:mail.australia.share.library.harvard.edu, DNS:webdisk.australia.share.library.harvard.edu, DNS:webmail.australia.share.library.harvard.edu, DNS:www.australia.share.library.harvard.edu</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2023-05-12T00:00:00</elem>
+<elem key="notAfter">2023-08-10T23:59:59</elem>
+</table>
+<elem key="md5">d8d868dd5a36f0f5eb0147491d584282</elem>
+<elem key="sha1">be07d71ea7b6f552fb20e325abd454ec639e45d7</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIHPDCCBiSgAwIBAgIQHvtbnsXSXoKuRRUl2puX+TANBgkqhkiG9w0BAQsFADBy&#xa;MQswCQYDVQQGEwJVUzELMAkGA1UECBMCVFgxEDAOBgNVBAcTB0hvdXN0b24xFTAT&#xa;BgNVBAoTDGNQYW5lbCwgSW5jLjEtMCsGA1UEAxMkY1BhbmVsLCBJbmMuIENlcnRp&#xa;ZmljYXRpb24gQXV0aG9yaXR5MB4XDTIzMDUxMjAwMDAwMFoXDTIzMDgxMDIzNTk1&#xa;OVowLjEsMCoGA1UEAxMjYXVzdHJhbGlhLnNoYXJlLmxpYnJhcnkuaGFydmFyZC5l&#xa;ZHUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDrsXieyATuzGlIhjXh&#xa;ftlrITrIGqQBFlr5p8NnSdkQhKgbGULuCBmOdLCUbNVYd/8dpz8l1izlx40tOYtq&#xa;JeHMCjIo8g3jvt/rl5K5zAExUL9Bd7tPwNPzUKZ3LqSw1KIuYNHVE9HyLWqzMo13&#xa;wW2icFQV317PsMRRpAe3Kt6ovsbrT36D6sRrPMjBGuaRYSPs/Q/TQq1Jlsoa3kVC&#xa;Ayjj4UWt3yUB9jIhiShHVPoR8FJYpfP4aeX/2Lt9yAzEOMpEiBILQWg1Y+DiSOkr&#xa;SISd90rLKm8MIxWO2RDk42p1pHZ4WVtAgGtA5Fs43sKbJFmruXcN85ZAul9uMX4P&#xa;opOJAgMBAAGjggQQMIIEDDAfBgNVHSMEGDAWgBR+A1plQWunfgrhuJ0I6h2OHWrH&#xa;ZTAdBgNVHQ4EFgQUDMe7jLiHuZzQQ7akUC5I59h7xu8wDgYDVR0PAQH/BAQDAgWg&#xa;MAwGA1UdEwEB/wQCMAAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMEkG&#xa;A1UdIARCMEAwNAYLKwYBBAGyMQECAjQwJTAjBggrBgEFBQcCARYXaHR0cHM6Ly9z&#xa;ZWN0aWdvLmNvbS9DUFMwCAYGZ4EMAQIBMEwGA1UdHwRFMEMwQaA/oD2GO2h0dHA6&#xa;Ly9jcmwuY29tb2RvY2EuY29tL2NQYW5lbEluY0NlcnRpZmljYXRpb25BdXRob3Jp&#xa;dHkuY3JsMH0GCCsGAQUFBwEBBHEwbzBHBggrBgEFBQcwAoY7aHR0cDovL2NydC5j&#xa;b21vZG9jYS5jb20vY1BhbmVsSW5jQ2VydGlmaWNhdGlvbkF1dGhvcml0eS5jcnQw&#xa;JAYIKwYBBQUHMAGGGGh0dHA6Ly9vY3NwLmNvbW9kb2NhLmNvbTCCAQMGCisGAQQB&#xa;1nkCBAIEgfQEgfEA7wB1AK33vvp8/xDIi509nB4+GGq0Zyldz7EMJMqFhjTr3IKK&#xa;AAABiBCQaJoAAAQDAEYwRAIgFDW5OwDdoxFQDQ9OEYS7V7YkvLbp6Ag1C43U28VV&#xa;Uh4CIBEA+WXRO4+O8tGQGCPNg0NFEl1K6X/zBWKQCos5h/o0AHYAejKMVNi3LbYg&#xa;6jjgUh7phBZwMhOFTTvSK8E6V6NS61IAAAGIEJBo/wAABAMARzBFAiEAyJOQAnsT&#xa;si5FNc2DaKTztqZVp9kbP2lFPa9iA3wtGWQCIDiguLKHf77HzoWkb0D7oVcMJhFN&#xa;tHsdiXMfX2Iq4FAAMIIBbAYDVR0RBIIBYzCCAV+CI2F1c3RyYWxpYS5zaGFyZS5s&#xa;aWJyYXJ5LmhhcnZhcmQuZWR1gipjcGFuZWwuYXVzdHJhbGlhLnNoYXJlLmxpYnJh&#xa;cnkuaGFydmFyZC5lZHWCL2NwY2FsZW5kYXJzLmF1c3RyYWxpYS5zaGFyZS5saWJy&#xa;YXJ5LmhhcnZhcmQuZWR1gi5jcGNvbnRhY3RzLmF1c3RyYWxpYS5zaGFyZS5saWJy&#xa;YXJ5LmhhcnZhcmQuZWR1gihtYWlsLmF1c3RyYWxpYS5zaGFyZS5saWJyYXJ5Lmhh&#xa;cnZhcmQuZWR1git3ZWJkaXNrLmF1c3RyYWxpYS5zaGFyZS5saWJyYXJ5LmhhcnZh&#xa;cmQuZWR1git3ZWJtYWlsLmF1c3RyYWxpYS5zaGFyZS5saWJyYXJ5LmhhcnZhcmQu&#xa;ZWR1gid3d3cuYXVzdHJhbGlhLnNoYXJlLmxpYnJhcnkuaGFydmFyZC5lZHUwDQYJ&#xa;KoZIhvcNAQELBQADggEBADrWtL2UUupUoy5+gpmUPA3zB0JuC58zMFrERyWJ2Wub&#xa;AGL1wRktEOtplKApGR2YOetmRlfC5GnVlzpSlm8q0CELsu1GUZQo7wJ6d/4TMFw3&#xa;S84neVJLYh3VbfqS7Eq+22wL/gUQ3c9l1r6cMGJq9kTuEW7I/sCki9qAiP7lyJ8H&#xa;E1WYs7E6mxJb2ozlRF47IDxfdEdgO+zpi2nhkqJtq1QYw0Ma4oHbA0eZlC5etxsP&#xa;ooRjFJ8Abpw9jYID3JFRLKX33qeQQvV0pVBRbMRT8m4GHOliR0EyBWPsBiQZjIB/&#xa;rCbFwXg2vgsO12o/XH6oAJe/4d08tPaTtF5ZLYY6htc=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="995"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="pop3s" method="table" conf="3"/><script id="pop3-capabilities" output="SASL(PLAIN LOGIN) USER UIDL AUTH-RESP-CODE RESP-CODES TOP CAPA PIPELINING"/><script id="ssl-cert" output="Subject: commonName=australia.share.library.harvard.edu&#xa;Subject Alternative Name: DNS:australia.share.library.harvard.edu, DNS:cpanel.australia.share.library.harvard.edu, DNS:cpcalendars.australia.share.library.harvard.edu, DNS:cpcontacts.australia.share.library.harvard.edu, DNS:mail.australia.share.library.harvard.edu, DNS:webdisk.australia.share.library.harvard.edu, DNS:webmail.australia.share.library.harvard.edu, DNS:www.australia.share.library.harvard.edu&#xa;Issuer: commonName=cPanel, Inc. Certification Authority/organizationName=cPanel, Inc./stateOrProvinceName=TX/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2023-05-12T00:00:00&#xa;Not valid after:  2023-08-10T23:59:59&#xa;MD5:   d8d8 68dd 5a36 f0f5 eb01 4749 1d58 4282&#xa;SHA-1: be07 d71e a7b6 f552 fb20 e325 abd4 54ec 639e 45d7"><table key="subject">
+<elem key="commonName">australia.share.library.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">US</elem>
+<elem key="stateOrProvinceName">TX</elem>
+<elem key="commonName">cPanel, Inc. Certification Authority</elem>
+<elem key="localityName">Houston</elem>
+<elem key="organizationName">cPanel, Inc.</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">2048</elem>
+<elem key="modulus">BIGNUM: 0x55fe1009f168</elem>
+<elem key="exponent">BIGNUM: 0x55fe1009f228</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">7E:03:5A:65:41:6B:A7:7E:0A:E1:B8:9D:08:EA:1D:8E:1D:6A:C7:65</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">0C:C7:BB:8C:B8:87:B9:9C:D0:43:B6:A4:50:2E:48:E7:D8:7B:C6:EF</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">Policy: 1.3.6.1.4.1.6449.1.2.2.52&#xa;  CPS: https://sectigo.com/CPS&#xa;Policy: 2.23.140.1.2.1</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Full Name:&#xa;  URI:http://crl.comodoca.com/cPanelIncCertificationAuthority.crl</elem>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+</table>
+<table>
+<elem key="value">CA Issuers - URI:http://crt.comodoca.com/cPanelIncCertificationAuthority.crt&#xa;OCSP - URI:http://ocsp.comodoca.com</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : AD:F7:BE:FA:7C:FF:10:C8:8B:9D:3D:9C:1E:3E:18:6A:&#xa;                B4:67:29:5D:CF:B1:0C:24:CA:85:86:34:EB:DC:82:8A&#xa;    Timestamp : May 12 15:24:39.450 2023 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:14:35:B9:3B:00:DD:A3:11:50:0D:0F:4E:&#xa;                11:84:BB:57:B6:24:BC:B6:E9:E8:08:35:0B:8D:D4:DB:&#xa;                C5:55:52:1E:02:20:11:00:F9:65:D1:3B:8F:8E:F2:D1:&#xa;                90:18:23:CD:83:43:45:12:5D:4A:E9:7F:F3:05:62:90:&#xa;                0A:8B:39:87:FA:34&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 7A:32:8C:54:D8:B7:2D:B6:20:EA:38:E0:52:1E:E9:84:&#xa;                16:70:32:13:85:4D:3B:D2:2B:C1:3A:57:A3:52:EB:52&#xa;    Timestamp : May 12 15:24:39.551 2023 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:C8:93:90:02:7B:13:B2:2E:45:35:CD:&#xa;                83:68:A4:F3:B6:A6:55:A7:D9:1B:3F:69:45:3D:AF:62:&#xa;                03:7C:2D:19:64:02:20:38:A0:B8:B2:87:7F:BE:C7:CE:&#xa;                85:A4:6F:40:FB:A1:57:0C:26:11:4D:B4:7B:1D:89:73:&#xa;                1F:5F:62:2A:E0:50:00</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+<table>
+<elem key="value">DNS:australia.share.library.harvard.edu, DNS:cpanel.australia.share.library.harvard.edu, DNS:cpcalendars.australia.share.library.harvard.edu, DNS:cpcontacts.australia.share.library.harvard.edu, DNS:mail.australia.share.library.harvard.edu, DNS:webdisk.australia.share.library.harvard.edu, DNS:webmail.australia.share.library.harvard.edu, DNS:www.australia.share.library.harvard.edu</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2023-05-12T00:00:00</elem>
+<elem key="notAfter">2023-08-10T23:59:59</elem>
+</table>
+<elem key="md5">d8d868dd5a36f0f5eb0147491d584282</elem>
+<elem key="sha1">be07d71ea7b6f552fb20e325abd454ec639e45d7</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIHPDCCBiSgAwIBAgIQHvtbnsXSXoKuRRUl2puX+TANBgkqhkiG9w0BAQsFADBy&#xa;MQswCQYDVQQGEwJVUzELMAkGA1UECBMCVFgxEDAOBgNVBAcTB0hvdXN0b24xFTAT&#xa;BgNVBAoTDGNQYW5lbCwgSW5jLjEtMCsGA1UEAxMkY1BhbmVsLCBJbmMuIENlcnRp&#xa;ZmljYXRpb24gQXV0aG9yaXR5MB4XDTIzMDUxMjAwMDAwMFoXDTIzMDgxMDIzNTk1&#xa;OVowLjEsMCoGA1UEAxMjYXVzdHJhbGlhLnNoYXJlLmxpYnJhcnkuaGFydmFyZC5l&#xa;ZHUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDrsXieyATuzGlIhjXh&#xa;ftlrITrIGqQBFlr5p8NnSdkQhKgbGULuCBmOdLCUbNVYd/8dpz8l1izlx40tOYtq&#xa;JeHMCjIo8g3jvt/rl5K5zAExUL9Bd7tPwNPzUKZ3LqSw1KIuYNHVE9HyLWqzMo13&#xa;wW2icFQV317PsMRRpAe3Kt6ovsbrT36D6sRrPMjBGuaRYSPs/Q/TQq1Jlsoa3kVC&#xa;Ayjj4UWt3yUB9jIhiShHVPoR8FJYpfP4aeX/2Lt9yAzEOMpEiBILQWg1Y+DiSOkr&#xa;SISd90rLKm8MIxWO2RDk42p1pHZ4WVtAgGtA5Fs43sKbJFmruXcN85ZAul9uMX4P&#xa;opOJAgMBAAGjggQQMIIEDDAfBgNVHSMEGDAWgBR+A1plQWunfgrhuJ0I6h2OHWrH&#xa;ZTAdBgNVHQ4EFgQUDMe7jLiHuZzQQ7akUC5I59h7xu8wDgYDVR0PAQH/BAQDAgWg&#xa;MAwGA1UdEwEB/wQCMAAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMEkG&#xa;A1UdIARCMEAwNAYLKwYBBAGyMQECAjQwJTAjBggrBgEFBQcCARYXaHR0cHM6Ly9z&#xa;ZWN0aWdvLmNvbS9DUFMwCAYGZ4EMAQIBMEwGA1UdHwRFMEMwQaA/oD2GO2h0dHA6&#xa;Ly9jcmwuY29tb2RvY2EuY29tL2NQYW5lbEluY0NlcnRpZmljYXRpb25BdXRob3Jp&#xa;dHkuY3JsMH0GCCsGAQUFBwEBBHEwbzBHBggrBgEFBQcwAoY7aHR0cDovL2NydC5j&#xa;b21vZG9jYS5jb20vY1BhbmVsSW5jQ2VydGlmaWNhdGlvbkF1dGhvcml0eS5jcnQw&#xa;JAYIKwYBBQUHMAGGGGh0dHA6Ly9vY3NwLmNvbW9kb2NhLmNvbTCCAQMGCisGAQQB&#xa;1nkCBAIEgfQEgfEA7wB1AK33vvp8/xDIi509nB4+GGq0Zyldz7EMJMqFhjTr3IKK&#xa;AAABiBCQaJoAAAQDAEYwRAIgFDW5OwDdoxFQDQ9OEYS7V7YkvLbp6Ag1C43U28VV&#xa;Uh4CIBEA+WXRO4+O8tGQGCPNg0NFEl1K6X/zBWKQCos5h/o0AHYAejKMVNi3LbYg&#xa;6jjgUh7phBZwMhOFTTvSK8E6V6NS61IAAAGIEJBo/wAABAMARzBFAiEAyJOQAnsT&#xa;si5FNc2DaKTztqZVp9kbP2lFPa9iA3wtGWQCIDiguLKHf77HzoWkb0D7oVcMJhFN&#xa;tHsdiXMfX2Iq4FAAMIIBbAYDVR0RBIIBYzCCAV+CI2F1c3RyYWxpYS5zaGFyZS5s&#xa;aWJyYXJ5LmhhcnZhcmQuZWR1gipjcGFuZWwuYXVzdHJhbGlhLnNoYXJlLmxpYnJh&#xa;cnkuaGFydmFyZC5lZHWCL2NwY2FsZW5kYXJzLmF1c3RyYWxpYS5zaGFyZS5saWJy&#xa;YXJ5LmhhcnZhcmQuZWR1gi5jcGNvbnRhY3RzLmF1c3RyYWxpYS5zaGFyZS5saWJy&#xa;YXJ5LmhhcnZhcmQuZWR1gihtYWlsLmF1c3RyYWxpYS5zaGFyZS5saWJyYXJ5Lmhh&#xa;cnZhcmQuZWR1git3ZWJkaXNrLmF1c3RyYWxpYS5zaGFyZS5saWJyYXJ5LmhhcnZh&#xa;cmQuZWR1git3ZWJtYWlsLmF1c3RyYWxpYS5zaGFyZS5saWJyYXJ5LmhhcnZhcmQu&#xa;ZWR1gid3d3cuYXVzdHJhbGlhLnNoYXJlLmxpYnJhcnkuaGFydmFyZC5lZHUwDQYJ&#xa;KoZIhvcNAQELBQADggEBADrWtL2UUupUoy5+gpmUPA3zB0JuC58zMFrERyWJ2Wub&#xa;AGL1wRktEOtplKApGR2YOetmRlfC5GnVlzpSlm8q0CELsu1GUZQo7wJ6d/4TMFw3&#xa;S84neVJLYh3VbfqS7Eq+22wL/gUQ3c9l1r6cMGJq9kTuEW7I/sCki9qAiP7lyJ8H&#xa;E1WYs7E6mxJb2ozlRF47IDxfdEdgO+zpi2nhkqJtq1QYw0Ma4oHbA0eZlC5etxsP&#xa;ooRjFJ8Abpw9jYID3JFRLKX33qeQQvV0pVBRbMRT8m4GHOliR0EyBWPsBiQZjIB/&#xa;rCbFwXg2vgsO12o/XH6oAJe/4d08tPaTtF5ZLYY6htc=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+</ports>
+<times srtt="19768" rttvar="2424" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730896154"/>
+<taskend task="NSE" time="1730896154"/>
+<taskbegin task="NSE" time="1730896154"/>
+<taskend task="NSE" time="1730896154"/>
+<taskbegin task="NSE" time="1730896154"/>
+<taskend task="NSE" time="1730896154"/>
+<runstats><finished time="1730896154" timestr="Wed Nov  6 12:29:14 2024" elapsed="311.00" summary="Nmap done at Wed Nov  6 12:29:14 2024; 1 IP address (1 host up) scanned in 311.00 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
