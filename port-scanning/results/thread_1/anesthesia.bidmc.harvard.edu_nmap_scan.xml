@@ -21,3 +21,42 @@
 <taskbegin task="NSE" time="1730880176"/>
 <taskend task="NSE" time="1730880187"/>
 <taskbegin task="NSE" time="1730880187"/>
+<taskend task="NSE" time="1730880247"/>
+<taskbegin task="NSE" time="1730880247"/>
+<taskend task="NSE" time="1730880247"/>
+<host starttime="1730880115" endtime="1730880247"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="134.174.104.228" addrtype="ipv4"/>
+<hostnames>
+<hostname name="anesthesia.bidmc.harvard.edu" type="user"/>
+<hostname name="mediaservices.bidmc.harvard.edu" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="998">
+<extrareasons reason="no-responses" count="998"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" servicefp="SF-Port80-TCP:V=7.80%I=7%D=11/6%Time=672B2281%P=x86_64-pc-linux-gnu%r(GetRequest,7D,&quot;HTTP/1\.0\x20302\x20Found\x20:\x20Moved\x20Temporarily\r\nLocation:\x20https:///\r\nConnection:\x20close\r\nCache-Control:\x20no-cache\r\nPragma:\x20no-cache\r\n\r\n&quot;)%r(HTTPOptions,7D,&quot;HTTP/1\.0\x20302\x20Found\x20:\x20Moved\x20Temporarily\r\nLocation:\x20https:///\r\nConnection:\x20close\r\nCache-Control:\x20no-cache\r\nPragma:\x20no-cache\r\n\r\n&quot;)%r(FourOhFourRequest,A0,&quot;HTTP/1\.0\x20302\x20Found\x20:\x20Moved\x20Temporarily\r\nLocation:\x20https:///nice%20ports%2C/Tri%6Eity\.txt%2ebak\r\nConnection:\x20close\r\nCache-Control:\x20no-cache\r\nPragma:\x20no-cache\r\n\r\n&quot;)%r(Help,AD,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Length:\x2054\r\nConnection:\x20close\r\nCache-Control:\x20no-cache,no-store\r\nPragma:\x20no-cache\r\n\r\n&lt;html&gt;&lt;body&gt;&lt;b&gt;Http/1\.1\x20Bad\x20Request&lt;/b&gt;&lt;/body&gt;\x20&lt;/html&gt;&quot;);" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  FourOhFourRequest: &#xa;    HTTP/1.0 302 Found : Moved Temporarily&#xa;    Location: https:///nice%20ports%2C/Tri%6Eity.txt%2ebak&#xa;    Connection: close&#xa;    Cache-Control: no-cache&#xa;    Pragma: no-cache&#xa;  GetRequest, HTTPOptions: &#xa;    HTTP/1.0 302 Found : Moved Temporarily&#xa;    Location: https:///&#xa;    Connection: close&#xa;    Cache-Control: no-cache&#xa;    Pragma: no-cache&#xa;  Help: &#xa;    HTTP/1.1 400 Bad Request&#xa;    Content-Length: 54&#xa;    Connection: close&#xa;    Cache-Control: no-cache,no-store&#xa;    Pragma: no-cache&#xa;    &lt;html&gt;&lt;body&gt;&lt;b&gt;Http/1.1 Bad Request&lt;/b&gt;&lt;/body&gt; &lt;/html&gt;"><elem key="FourOhFourRequest">&#xa;    HTTP/1.0 302 Found : Moved Temporarily&#xa;    Location: https:///nice%20ports%2C/Tri%6Eity.txt%2ebak&#xa;    Connection: close&#xa;    Cache-Control: no-cache&#xa;    Pragma: no-cache</elem>
+<elem key="GetRequest, HTTPOptions">&#xa;    HTTP/1.0 302 Found : Moved Temporarily&#xa;    Location: https:///&#xa;    Connection: close&#xa;    Cache-Control: no-cache&#xa;    Pragma: no-cache</elem>
+<elem key="Help">&#xa;    HTTP/1.1 400 Bad Request&#xa;    Content-Length: 54&#xa;    Connection: close&#xa;    Cache-Control: no-cache,no-store&#xa;    Pragma: no-cache&#xa;    &lt;html&gt;&lt;body&gt;&lt;b&gt;Http/1.1 Bad Request&lt;/b&gt;&lt;/body&gt; &lt;/html&gt;</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Did not follow redirect to https://anesthesia.bidmc.harvard.edu/"><elem key="redirect_url">https://anesthesia.bidmc.harvard.edu/</elem>
+</script><script id="https-redirect" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" tunnel="ssl" method="table" conf="3"/><script id="ssl-date" output="2024-11-06T08:03:08+00:00; 0s from scanner time."><elem key="delta">0.0</elem>
+<elem key="date">2024-11-06T08:03:08+00:00</elem>
+</script><script id="tls-alpn" output="&#xa;  http/1.1"><elem>http/1.1</elem>
+</script></port>
+</ports>
+<times srtt="77181" rttvar="19703" to="155993"/>
+</host>
+<taskbegin task="NSE" time="1730880247"/>
+<taskend task="NSE" time="1730880247"/>
+<taskbegin task="NSE" time="1730880247"/>
+<taskend task="NSE" time="1730880247"/>
+<taskbegin task="NSE" time="1730880247"/>
+<taskend task="NSE" time="1730880247"/>
+<runstats><finished time="1730880247" timestr="Wed Nov  6 08:04:07 2024" elapsed="133.55" summary="Nmap done at Wed Nov  6 08:04:07 2024; 1 IP address (1 host up) scanned in 133.55 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
