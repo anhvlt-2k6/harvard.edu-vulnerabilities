@@ -17,3 +17,102 @@
 <taskbegin task="Connect Scan" time="1730888144"/>
 <taskend task="Connect Scan" time="1730888149" extrainfo="1000 total ports"/>
 <taskbegin task="Service scan" time="1730888149"/>
+<taskend task="Service scan" time="1730888224" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1730888224"/>
+<taskend task="NSE" time="1730888224"/>
+<taskbegin task="NSE" time="1730888224"/>
+<taskend task="NSE" time="1730888224"/>
+<taskbegin task="NSE" time="1730888224"/>
+<taskend task="NSE" time="1730888224"/>
+<host starttime="1730888144" endtime="1730888224"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="64.207.222.154" addrtype="ipv4"/>
+<hostnames>
+<hostname name="huit-crashplan.cadm.harvard.edu" type="user"/>
+<hostname name="us5-64-207-222-154.aws-byoip.crashplan.com" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="999">
+<extrareasons reason="no-responses" count="999"/>
+</extraports>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" tunnel="ssl" method="table" conf="3"/><script id="ssl-cert" output="Subject: commonName=*.crashplan.com/organizationName=CrashPlan Group LLC/stateOrProvinceName=Minnesota/countryName=US&#xa;Subject Alternative Name: DNS:*.crashplan.com, DNS:*.us2.crashplan.com, DNS:*.us5.crashplan.com&#xa;Issuer: commonName=DigiCert Global G2 TLS RSA SHA256 2020 CA1/organizationName=DigiCert Inc/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-01-12T00:00:00&#xa;Not valid after:  2025-02-11T23:59:59&#xa;MD5:   bc44 3801 71ee e79d 000f d85f 57f7 9464&#xa;SHA-1: 31b1 bc19 9f4a 5b01 8a0b 1bc5 b777 550c a9e8 521c"><table key="subject">
+<elem key="countryName">US</elem>
+<elem key="localityName">Minneapolis</elem>
+<elem key="commonName">*.crashplan.com</elem>
+<elem key="stateOrProvinceName">Minnesota</elem>
+<elem key="organizationName">CrashPlan Group LLC</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">DigiCert Global G2 TLS RSA SHA256 2020 CA1</elem>
+<elem key="organizationName">DigiCert Inc</elem>
+<elem key="countryName">US</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">2048</elem>
+<elem key="exponent">BIGNUM: 0x56142b3eaa58</elem>
+<elem key="type">rsa</elem>
+<elem key="modulus">BIGNUM: 0x56142b3eb7a8</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">74:85:80:C0:66:C7:DF:37:DE:CF:BD:29:37:AA:03:1D:BE:ED:CD:17</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">B8:03:B7:07:2C:64:76:32:42:89:4B:08:F3:0B:E4:69:18:00:51:98</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="value">DNS:*.crashplan.com, DNS:*.us2.crashplan.com, DNS:*.us5.crashplan.com</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+<table>
+<elem key="value">Policy: 2.23.140.1.2.2&#xa;  CPS: http://www.digicert.com/CPS</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">Full Name:&#xa;  URI:http://crl3.digicert.com/DigiCertGlobalG2TLSRSASHA2562020CA1-1.crl&#xa;Full Name:&#xa;  URI:http://crl4.digicert.com/DigiCertGlobalG2TLSRSASHA2562020CA1-1.crl</elem>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+</table>
+<table>
+<elem key="value">OCSP - URI:http://ocsp.digicert.com&#xa;CA Issuers - URI:http://cacerts.digicert.com/DigiCertGlobalG2TLSRSASHA2562020CA1-1.crt</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 4E:75:A3:27:5C:9A:10:C3:38:5B:6C:D4:DF:3F:52:EB:&#xa;                1D:F0:E0:8E:1B:8D:69:C0:B1:FA:64:B1:62:9A:39:DF&#xa;    Timestamp : Jan 12 17:23:57.486 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:67:92:47:A1:FA:4B:EB:18:8B:FB:C6:B2:&#xa;                A0:F0:C8:0F:22:0B:93:D1:05:3B:F3:60:A2:53:9B:48:&#xa;                78:D5:94:00:02:21:00:E0:5E:AA:37:AE:62:A0:94:55:&#xa;                73:27:16:34:37:66:75:35:72:8B:16:4F:D0:37:2A:BD:&#xa;                04:64:68:A6:92:7E:C8&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 7D:59:1E:12:E1:78:2A:7B:1C:61:67:7C:5E:FD:F8:D0:&#xa;                87:5C:14:A0:4E:95:9E:B9:03:2F:D9:0E:8C:2E:79:B8&#xa;    Timestamp : Jan 12 17:23:57.527 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:28:92:0C:0A:20:27:E5:26:9D:98:59:14:&#xa;                BE:F7:31:49:23:5E:0B:8D:B5:72:1B:AD:70:85:22:FB:&#xa;                C1:73:27:30:02:20:05:A2:C4:95:B3:10:08:84:55:08:&#xa;                C8:9F:3D:91:06:D8:43:50:3C:98:A5:2A:FA:D0:5B:D9:&#xa;                60:8D:17:65:CB:FD&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : E6:D2:31:63:40:77:8C:C1:10:41:06:D7:71:B9:CE:C1:&#xa;                D2:40:F6:96:84:86:FB:BA:87:32:1D:FD:1E:37:8E:50&#xa;    Timestamp : Jan 12 17:23:57.571 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:0D:D5:A4:C3:C7:41:58:D1:B8:2F:49:47:&#xa;                5C:91:EF:96:5E:2B:37:EA:60:1A:04:01:AF:48:C9:B9:&#xa;                9B:31:1B:33:02:21:00:A6:2C:25:5A:02:66:30:4E:8B:&#xa;                9B:D0:DC:1E:D4:D9:EC:20:4A:2C:A0:C1:FA:52:D1:0B:&#xa;                B5:CF:32:5B:C3:80:DD</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-01-12T00:00:00</elem>
+<elem key="notAfter">2025-02-11T23:59:59</elem>
+</table>
+<elem key="md5">bc44380171eee79d000fd85f57f79464</elem>
+<elem key="sha1">31b1bc199f4a5b018a0b1bc5b777550ca9e8521c</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIHCDCCBfCgAwIBAgIQBwAmkq9dxTL5UJVxmYxoDjANBgkqhkiG9w0BAQsFADBZ&#xa;MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMTMwMQYDVQQDEypE&#xa;aWdpQ2VydCBHbG9iYWwgRzIgVExTIFJTQSBTSEEyNTYgMjAyMCBDQTEwHhcNMjQw&#xa;MTEyMDAwMDAwWhcNMjUwMjExMjM1OTU5WjBvMQswCQYDVQQGEwJVUzESMBAGA1UE&#xa;CBMJTWlubmVzb3RhMRQwEgYDVQQHEwtNaW5uZWFwb2xpczEcMBoGA1UEChMTQ3Jh&#xa;c2hQbGFuIEdyb3VwIExMQzEYMBYGA1UEAwwPKi5jcmFzaHBsYW4uY29tMIIBIjAN&#xa;BgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA03m0ZJyq7LZhKOMjn0hgUktpApvI&#xa;9oWnAFrjj0GioWjdomQ5WttcY9ltnZ7c4Wxenvpn5CkBQLuC7P0ISqPqTPBWMQW0&#xa;fLfxf6B8LgNUDPp9G+QVaFP6u5t0VTA/KyLyQy3/nuQQx/kTBnjGwiqD/yn1qtrF&#xa;T15cyrVPr2Y0MLEUWYzR42uOm4nzr1dzc6vQ/ajHQcT83ylVKhvUeCC/IXbRjOTG&#xa;FEQvO9RnLdJyavbIGtYwKdup0DK/sjaJsCa7MzmpgJ5mPdSixNbFEnB/8b/Bo8sW&#xa;bpPtxwTU+Ys5lDx8BaPio2LE2LjddznLxQ5M3WPadMn6MgGJDQcwxX8lswIDAQAB&#xa;o4IDtDCCA7AwHwYDVR0jBBgwFoAUdIWAwGbH3zfez70pN6oDHb7tzRcwHQYDVR0O&#xa;BBYEFLgDtwcsZHYyQolLCPML5GkYAFGYMEQGA1UdEQQ9MDuCDyouY3Jhc2hwbGFu&#xa;LmNvbYITKi51czIuY3Jhc2hwbGFuLmNvbYITKi51czUuY3Jhc2hwbGFuLmNvbTA+&#xa;BgNVHSAENzA1MDMGBmeBDAECAjApMCcGCCsGAQUFBwIBFhtodHRwOi8vd3d3LmRp&#xa;Z2ljZXJ0LmNvbS9DUFMwDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUF&#xa;BwMBBggrBgEFBQcDAjCBnwYDVR0fBIGXMIGUMEigRqBEhkJodHRwOi8vY3JsMy5k&#xa;aWdpY2VydC5jb20vRGlnaUNlcnRHbG9iYWxHMlRMU1JTQVNIQTI1NjIwMjBDQTEt&#xa;MS5jcmwwSKBGoESGQmh0dHA6Ly9jcmw0LmRpZ2ljZXJ0LmNvbS9EaWdpQ2VydEds&#xa;b2JhbEcyVExTUlNBU0hBMjU2MjAyMENBMS0xLmNybDCBhwYIKwYBBQUHAQEEezB5&#xa;MCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5kaWdpY2VydC5jb20wUQYIKwYBBQUH&#xa;MAKGRWh0dHA6Ly9jYWNlcnRzLmRpZ2ljZXJ0LmNvbS9EaWdpQ2VydEdsb2JhbEcy&#xa;VExTUlNBU0hBMjU2MjAyMENBMS0xLmNydDAMBgNVHRMBAf8EAjAAMIIBfQYKKwYB&#xa;BAHWeQIEAgSCAW0EggFpAWcAdgBOdaMnXJoQwzhbbNTfP1LrHfDgjhuNacCx+mSx&#xa;Ypo53wAAAYz+s62uAAAEAwBHMEUCIGeSR6H6S+sYi/vGsqDwyA8iC5PRBTvzYKJT&#xa;m0h41ZQAAiEA4F6qN65ioJRVcycWNDdmdTVyixZP0DcqvQRkaKaSfsgAdQB9WR4S&#xa;4XgqexxhZ3xe/fjQh1wUoE6VnrkDL9kOjC55uAAAAYz+s63XAAAEAwBGMEQCICiS&#xa;DAogJ+UmnZhZFL73MUkjXguNtXIbrXCFIvvBcycwAiAFosSVsxAIhFUIyJ89kQbY&#xa;Q1A8mKUq+tBb2WCNF2XL/QB2AObSMWNAd4zBEEEG13G5zsHSQPaWhIb7uocyHf0e&#xa;N45QAAABjP6zrgMAAAQDAEcwRQIgDdWkw8dBWNG4L0lHXJHvll4rN+pgGgQBr0jJ&#xa;uZsxGzMCIQCmLCVaAmYwToub0Nwe1NnsIEosoMH6UtELtc8yW8OA3TANBgkqhkiG&#xa;9w0BAQsFAAOCAQEAIxsJn0Q1tZcHPHWA+NeG/t1xmGBmhRy7ANXebMXovSCI7cv1&#xa;97oWjGiohmLBJ6r5Lu9iS2EldrpJoHlKpV8LiN1MpCsW+3nhG97iDIBlKovyvwSj&#xa;AZmx/d2DbNSO84fpWSxmi5SISEAlF3lcI5resq5DaLyMIcoks32F1+lhJpYbL+CP&#xa;M1Y84LEFvuOWAv9RdJSFymNG1W0FgW6p0FITmd21VlBFr9whgScZPwIE+0xZ0DS0&#xa;4RBWBNns4t45SOJ3exn5V89QTMM+y17Hxlj3PA9qP/W2pfUvcZe8XXeUC4xP+q+y&#xa;GAMgljABH0dTpeZnlsbVvgXLq4oBMveHhSHgDQ==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+</ports>
+<times srtt="3652" rttvar="2783" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730888224"/>
+<taskend task="NSE" time="1730888224"/>
+<taskbegin task="NSE" time="1730888224"/>
+<taskend task="NSE" time="1730888224"/>
+<taskbegin task="NSE" time="1730888224"/>
+<taskend task="NSE" time="1730888224"/>
+<runstats><finished time="1730888224" timestr="Wed Nov  6 10:17:04 2024" elapsed="80.25" summary="Nmap done at Wed Nov  6 10:17:04 2024; 1 IP address (1 host up) scanned in 80.25 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
