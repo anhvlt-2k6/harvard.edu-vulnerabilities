@@ -17,3 +17,116 @@
 <taskbegin task="Connect Scan" time="1730888326"/>
 <taskend task="Connect Scan" time="1730888332" extrainfo="1000 total ports"/>
 <taskbegin task="Service scan" time="1730888332"/>
+<taskend task="Service scan" time="1730888344" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1730888344"/>
+<taskend task="NSE" time="1730888345"/>
+<taskbegin task="NSE" time="1730888345"/>
+<taskend task="NSE" time="1730888345"/>
+<taskbegin task="NSE" time="1730888345"/>
+<taskend task="NSE" time="1730888345"/>
+<host starttime="1730888326" endtime="1730888345"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="23.12.146.143" addrtype="ipv4"/>
+<hostnames>
+<hostname name="huit.harvard.edu" type="user"/>
+<hostname name="a23-12-146-143.deploy.static.akamaitechnologies.com" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="998">
+<extrareasons reason="no-responses" count="998"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="AkamaiGHost" extrainfo="Akamai&apos;s HTTP Acceleration/Mirror service" method="probed" conf="10"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Access Denied"><elem key="title">Access Denied</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="AkamaiGHost" extrainfo="Akamai&apos;s HTTP Acceleration/Mirror service" tunnel="ssl" method="probed" conf="10"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Access Denied"><elem key="title">Access Denied</elem>
+</script><script id="ssl-cert" output="Subject: commonName=huit.harvard.edu&#xa;Subject Alternative Name: DNS:huit.harvard.edu&#xa;Issuer: commonName=E5/organizationName=Let&apos;s Encrypt/countryName=US&#xa;Public Key type: ec&#xa;Public Key bits: 256&#xa;Signature Algorithm: ecdsa-with-SHA384&#xa;Not valid before: 2024-10-28T01:04:05&#xa;Not valid after:  2025-01-26T01:04:04&#xa;MD5:   fc00 d5c5 5d3f 778b a5d9 f863 4e36 63c0&#xa;SHA-1: 85a5 a3a9 a231 55dc cab7 8840 0ef9 1791 3b0e 96a7"><table key="subject">
+<elem key="commonName">huit.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+<elem key="countryName">US</elem>
+<elem key="commonName">E5</elem>
+</table>
+<table key="pubkey">
+<elem key="type">ec</elem>
+<elem key="bits">256</elem>
+<table key="ecdhparams">
+<table key="curve_params">
+<elem key="ec_curve_type">namedcurve</elem>
+<elem key="curve">prime256v1</elem>
+</table>
+</table>
+</table>
+<table key="extensions">
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">69:F4:43:7B:4D:BD:2F:A0:17:4D:70:28:3A:FC:26:E3:11:ED:E0:07</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">9F:2B:5F:CF:3C:21:4F:9D:04:B7:ED:2B:2C:C4:C6:70:8B:D2:D7:0D</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://e5.o.lencr.org&#xa;CA Issuers - URI:http://e5.i.lencr.org/</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:huit.harvard.edu</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 7D:59:1E:12:E1:78:2A:7B:1C:61:67:7C:5E:FD:F8:D0:&#xa;                87:5C:14:A0:4E:95:9E:B9:03:2F:D9:0E:8C:2E:79:B8&#xa;    Timestamp : Oct 28 02:02:35.121 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:26:96:D0:C5:C7:EB:DC:CE:73:BF:BE:1A:&#xa;                8A:11:27:A4:2A:91:A0:D9:E3:44:EC:86:0A:92:FE:5D:&#xa;                65:CD:83:E5:02:21:00:9E:CF:01:45:48:4C:4F:56:75:&#xa;                10:B4:FD:87:EB:28:AE:EB:07:4E:68:F2:D4:90:66:F7:&#xa;                B6:41:EE:D5:50:F5:D0&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : CF:11:56:EE:D5:2E:7C:AF:F3:87:5B:D9:69:2E:9B:E9:&#xa;                1A:71:67:4A:B0:17:EC:AC:01:D2:5B:77:CE:CC:3B:08&#xa;    Timestamp : Oct 28 02:02:35.189 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:1B:7F:48:30:9E:0C:E9:B5:BB:91:3A:71:&#xa;                49:87:43:D3:F1:B8:AA:B5:DC:EE:67:7A:13:0B:E1:E4:&#xa;                E0:F0:B7:FB:02:21:00:C4:31:E2:20:D8:23:F7:7F:E2:&#xa;                6E:BC:C3:7E:22:ED:AF:CA:36:2F:DE:1F:09:47:02:46:&#xa;                D8:2B:42:DE:DF:1C:B7</elem>
+</table>
+</table>
+<elem key="sig_algo">ecdsa-with-SHA384</elem>
+<table key="validity">
+<elem key="notBefore">2024-10-28T01:04:05</elem>
+<elem key="notAfter">2025-01-26T01:04:04</elem>
+</table>
+<elem key="md5">fc00d5c55d3f778ba5d9f8634e3663c0</elem>
+<elem key="sha1">85a5a3a9a23155dccab788400ef917913b0e96a7</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDgTCCAwegAwIBAgISA2SC6INI2VEwueROc0q5fCVlMAoGCCqGSM49BAMDMDIx&#xa;CzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJF&#xa;NTAeFw0yNDEwMjgwMTA0MDVaFw0yNTAxMjYwMTA0MDRaMBsxGTAXBgNVBAMTEGh1&#xa;aXQuaGFydmFyZC5lZHUwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAARp4DACSwsS&#xa;UEGjhIKMoiDWO0Py4moU4Tv3r8zZH8W9lxeqK7zdK0VBOTu2bfkKOWGQwGr0V+Ut&#xa;DYDRzowZI8h5o4ICEjCCAg4wDgYDVR0PAQH/BAQDAgeAMB0GA1UdJQQWMBQGCCsG&#xa;AQUFBwMBBggrBgEFBQcDAjAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBRp9EN7Tb0v&#xa;oBdNcCg6/CbjEe3gBzAfBgNVHSMEGDAWgBSfK1/PPCFPnQS37SssxMZwi9LXDTBV&#xa;BggrBgEFBQcBAQRJMEcwIQYIKwYBBQUHMAGGFWh0dHA6Ly9lNS5vLmxlbmNyLm9y&#xa;ZzAiBggrBgEFBQcwAoYWaHR0cDovL2U1LmkubGVuY3Iub3JnLzAbBgNVHREEFDAS&#xa;ghBodWl0LmhhcnZhcmQuZWR1MBMGA1UdIAQMMAowCAYGZ4EMAQIBMIIBBAYKKwYB&#xa;BAHWeQIEAgSB9QSB8gDwAHYAfVkeEuF4KnscYWd8Xv340IdcFKBOlZ65Ay/ZDowu&#xa;ebgAAAGS0Nxa8QAABAMARzBFAiAmltDFx+vcznO/vhqKESekKpGg2eNE7IYKkv5d&#xa;Zc2D5QIhAJ7PAUVITE9WdRC0/YfrKK7rB05o8tSQZve2Qe7VUPXQAHYAzxFW7tUu&#xa;fK/zh1vZaS6b6RpxZ0qwF+ysAdJbd87MOwgAAAGS0NxbNQAABAMARzBFAiAbf0gw&#xa;ngzptbuROnFJh0PT8biqtdzuZ3oTC+Hk4PC3+wIhAMQx4iDYI/d/4m68w34i7a/K&#xa;Ni/eHwlHAkbYK0Le3xy3MAoGCCqGSM49BAMDA2gAMGUCMA6nzAZWDex/3gFHBnRf&#xa;ceJm/8E0hYXZNAwa7NwzsI4MSFujgbTaTsxibJvvutBgRQIxAIFJ2q77GMaSxTBK&#xa;yqRC2InhaNqB8/d7POSXrENKIPvewu3d3YVrKiVFEYM9NXSGhQ==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="tls-alpn" output="&#xa;  http/1.1"><elem>http/1.1</elem>
+</script><script id="tls-nextprotoneg" output="&#xa;  http/1.1&#xa;  http/1.0"><elem>http/1.1</elem>
+<elem>http/1.0</elem>
+</script></port>
+</ports>
+<times srtt="1128" rttvar="2215" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730888345"/>
+<taskend task="NSE" time="1730888345"/>
+<taskbegin task="NSE" time="1730888345"/>
+<taskend task="NSE" time="1730888345"/>
+<taskbegin task="NSE" time="1730888345"/>
+<taskend task="NSE" time="1730888345"/>
+<runstats><finished time="1730888345" timestr="Wed Nov  6 10:19:05 2024" elapsed="19.02" summary="Nmap done at Wed Nov  6 10:19:05 2024; 1 IP address (1 host up) scanned in 19.02 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
