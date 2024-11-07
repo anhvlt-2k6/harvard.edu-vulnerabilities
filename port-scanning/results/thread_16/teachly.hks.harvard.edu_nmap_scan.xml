@@ -17,3 +17,106 @@
 <taskbegin task="Connect Scan" time="1730996192"/>
 <taskend task="Connect Scan" time="1730996196" extrainfo="1000 total ports"/>
 <taskbegin task="Service scan" time="1730996196"/>
+<taskend task="Service scan" time="1730996214" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1730996214"/>
+<taskend task="NSE" time="1730996215"/>
+<taskbegin task="NSE" time="1730996215"/>
+<taskend task="NSE" time="1730996215"/>
+<taskbegin task="NSE" time="1730996215"/>
+<taskend task="NSE" time="1730996215"/>
+<host starttime="1730996192" endtime="1730996215"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="34.231.156.150" addrtype="ipv4"/>
+<hostnames>
+<hostname name="teachly.hks.harvard.edu" type="user"/>
+<hostname name="ec2-34-231-156-150.compute-1.amazonaws.com" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="998">
+<extrareasons reason="no-responses" count="998"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.62" extrainfo="(Amazon Linux) OpenSSL/3.0.8" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.62</cpe></service><script id="http-server-header" output="Apache/2.4.62 (Amazon Linux) OpenSSL/3.0.8"><elem>Apache/2.4.62 (Amazon Linux) OpenSSL/3.0.8</elem>
+</script><script id="http-title" output="403 Forbidden"><elem key="title">403 Forbidden</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" product="gunicorn" servicefp="SF-Port443-TCP:V=7.80%T=SSL%I=7%D=11/7%Time=672CE7F0%P=x86_64-pc-linux-gnu%r(GetRequest,185,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nDate:\x20Thu,\x2007\x20Nov\x202024\x2016:16:48\x20GMT\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nConnection:\x20close\r\nServer:\x20gunicorn\r\nX-Content-Type-Options:\x20nosniff\r\nReferrer-Policy:\x20same-origin\r\nCross-Origin-Opener-Policy:\x20same-origin\r\n\r\n\n&lt;!doctype\x20html&gt;\n&lt;html\x20lang=\&quot;en\&quot;&gt;\n&lt;head&gt;\n\x20\x20&lt;title&gt;Bad\x20Request\x20\(400\)&lt;/title&gt;\n&lt;/head&gt;\n&lt;body&gt;\n\x20\x20&lt;h1&gt;Bad\x20Request\x20\(400\)&lt;/h1&gt;&lt;p&gt;&lt;/p&gt;\n&lt;/body&gt;\n&lt;/html&gt;\n&quot;)%r(HTTPOptions,185,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nDate:\x20Thu,\x2007\x20Nov\x202024\x2016:16:48\x20GMT\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nConnection:\x20close\r\nServer:\x20gunicorn\r\nX-Content-Type-Options:\x20nosniff\r\nReferrer-Policy:\x20same-origin\r\nCross-Origin-Opener-Policy:\x20same-origin\r\n\r\n\n&lt;!doctype\x20html&gt;\n&lt;html\x20lang=\&quot;en\&quot;&gt;\n&lt;head&gt;\n\x20\x20&lt;title&gt;Bad\x20Request\x20\(400\)&lt;/title&gt;\n&lt;/head&gt;\n&lt;body&gt;\n\x20\x20&lt;h1&gt;Bad\x20Request\x20\(400\)&lt;/h1&gt;&lt;p&gt;&lt;/p&gt;\n&lt;/body&gt;\n&lt;/html&gt;\n&quot;)%r(FourOhFourRequest,185,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nDate:\x20Thu,\x2007\x20Nov\x202024\x2016:16:48\x20GMT\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nConnection:\x20close\r\nServer:\x20gunicorn\r\nX-Content-Type-Options:\x20nosniff\r\nReferrer-Policy:\x20same-origin\r\nCross-Origin-Opener-Policy:\x20same-origin\r\n\r\n\n&lt;!doctype\x20html&gt;\n&lt;html\x20lang=\&quot;en\&quot;&gt;\n&lt;head&gt;\n\x20\x20&lt;title&gt;Bad\x20Request\x20\(400\)&lt;/title&gt;\n&lt;/head&gt;\n&lt;body&gt;\n\x20\x20&lt;h1&gt;Bad\x20Request\x20\(400\)&lt;/h1&gt;&lt;p&gt;&lt;/p&gt;\n&lt;/body&gt;\n&lt;/html&gt;\n&quot;)%r(NCP,110,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nServer:\x20awselb/2\.0\r\nDate:\x20Thu,\x2007\x20Nov\x202024\x2016:16:54\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20122\r\nConnection:\x20close\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;);" tunnel="ssl" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  FourOhFourRequest, GetRequest, HTTPOptions: &#xa;    HTTP/1.1 400 Bad Request&#xa;    Date: Thu, 07 Nov 2024 16:16:48 GMT&#xa;    Content-Type: text/html; charset=utf-8&#xa;    Connection: close&#xa;    Server: gunicorn&#xa;    X-Content-Type-Options: nosniff&#xa;    Referrer-Policy: same-origin&#xa;    Cross-Origin-Opener-Policy: same-origin&#xa;    &lt;!doctype html&gt;&#xa;    &lt;html lang=&quot;en&quot;&gt;&#xa;    &lt;head&gt;&#xa;    &lt;title&gt;Bad Request (400)&lt;/title&gt;&#xa;    &lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;h1&gt;Bad Request (400)&lt;/h1&gt;&lt;p&gt;&lt;/p&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;&#xa;  NCP: &#xa;    HTTP/1.1 400 Bad Request&#xa;    Server: awselb/2.0&#xa;    Date: Thu, 07 Nov 2024 16:16:54 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 122&#xa;    Connection: close&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;"><elem key="FourOhFourRequest, GetRequest, HTTPOptions">&#xa;    HTTP/1.1 400 Bad Request&#xa;    Date: Thu, 07 Nov 2024 16:16:48 GMT&#xa;    Content-Type: text/html; charset=utf-8&#xa;    Connection: close&#xa;    Server: gunicorn&#xa;    X-Content-Type-Options: nosniff&#xa;    Referrer-Policy: same-origin&#xa;    Cross-Origin-Opener-Policy: same-origin&#xa;    &lt;!doctype html&gt;&#xa;    &lt;html lang=&quot;en&quot;&gt;&#xa;    &lt;head&gt;&#xa;    &lt;title&gt;Bad Request (400)&lt;/title&gt;&#xa;    &lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;h1&gt;Bad Request (400)&lt;/h1&gt;&lt;p&gt;&lt;/p&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;</elem>
+<elem key="NCP">&#xa;    HTTP/1.1 400 Bad Request&#xa;    Server: awselb/2.0&#xa;    Date: Thu, 07 Nov 2024 16:16:54 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 122&#xa;    Connection: close&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;</elem>
+</script><script id="http-server-header" output="&#xa;  awselb/2.0&#xa;  gunicorn"><elem>awselb/2.0</elem>
+<elem>gunicorn</elem>
+</script><script id="http-title" output="403 Forbidden"><elem key="title">403 Forbidden</elem>
+</script><script id="ssl-cert" output="Subject: commonName=teachly.hks.harvard.edu&#xa;Subject Alternative Name: DNS:teachly.hks.harvard.edu&#xa;Issuer: commonName=Amazon RSA 2048 M02/organizationName=Amazon/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-08-21T00:00:00&#xa;Not valid after:  2025-09-19T23:59:59&#xa;MD5:   be40 f66e 64c3 c9c7 b92c 4637 be31 aad3&#xa;SHA-1: 6faf 46ae e111 a24b ce31 d6cf 94a7 cef1 4305 c327"><table key="subject">
+<elem key="commonName">teachly.hks.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">US</elem>
+<elem key="commonName">Amazon RSA 2048 M02</elem>
+<elem key="organizationName">Amazon</elem>
+</table>
+<table key="pubkey">
+<elem key="exponent">BIGNUM: 0x55c6afafddb8</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">BIGNUM: 0x55c6afafde38</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">C0:31:52:CD:5A:50:C3:82:7C:74:71:CE:CB:E9:9C:F9:7A:EB:82:E2</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">E9:70:88:D6:39:BB:D2:E0:E9:AA:34:B9:7B:EB:33:65:A4:1E:7D:CD</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:teachly.hks.harvard.edu</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://crl.r2m02.amazontrust.com/r2m02.crl</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://ocsp.r2m02.amazontrust.com&#xa;CA Issuers - URI:http://crt.r2m02.amazontrust.com/r2m02.cer</elem>
+</table>
+<table>
+<elem key="value">CA:FALSE</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 12:F1:4E:34:BD:53:72:4C:84:06:19:C3:8F:3F:7A:13:&#xa;                F8:E7:B5:62:87:88:9C:6D:30:05:84:EB:E5:86:26:3A&#xa;    Timestamp : Aug 21 15:13:02.330 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:FA:97:C4:75:DD:E8:83:C8:48:09:F7:&#xa;                37:D5:DB:F5:6E:EE:39:C9:8B:E4:A9:46:A1:F3:B3:B0:&#xa;                DB:D1:72:BE:DE:02:21:00:82:0B:59:0F:62:A6:C5:8C:&#xa;                8A:91:5E:40:C0:4E:B7:8C:EC:04:70:70:AE:E4:1C:0C:&#xa;                5F:2B:05:FD:7C:D3:2A:BF&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 7D:59:1E:12:E1:78:2A:7B:1C:61:67:7C:5E:FD:F8:D0:&#xa;                87:5C:14:A0:4E:95:9E:B9:03:2F:D9:0E:8C:2E:79:B8&#xa;    Timestamp : Aug 21 15:13:02.243 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:E0:4C:F1:28:D0:A3:35:33:97:D1:B2:&#xa;                E9:E7:7D:15:5A:B5:6D:02:0F:73:90:30:E3:EA:E6:0F:&#xa;                7A:AB:C3:ED:16:02:21:00:F7:B1:5A:07:DA:72:BA:3D:&#xa;                1F:FB:4C:71:3E:83:D3:9D:FE:3A:7D:D4:D0:D3:7C:57:&#xa;                D5:4E:01:43:A7:44:FA:F9&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : CC:FB:0F:6A:85:71:09:65:FE:95:9B:53:CE:E9:B2:7C:&#xa;                22:E9:85:5C:0D:97:8D:B6:A9:7E:54:C0:FE:4C:0D:B0&#xa;    Timestamp : Aug 21 15:13:02.227 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:1F:BC:02:CF:91:6D:72:8A:50:C4:36:34:&#xa;                3D:C6:16:C6:EF:EB:D8:6F:B1:FF:D4:86:B2:23:C7:3E:&#xa;                C5:68:2C:E8:02:20:1C:96:7C:E0:B1:D3:4B:4B:09:60:&#xa;                96:31:5D:55:68:6F:C7:EC:6B:1C:8E:89:98:50:70:F9:&#xa;                2F:54:72:2C:DB:A0</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-08-21T00:00:00</elem>
+<elem key="notAfter">2025-09-19T23:59:59</elem>
+</table>
+<elem key="md5">be40f66e64c3c9c7b92c4637be31aad3</elem>
+<elem key="sha1">6faf46aee111a24bce31d6cf94a7cef14305c327</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIF2zCCBMOgAwIBAgIQA95dht5E8LfaljOMPUFcVzANBgkqhkiG9w0BAQsFADA8&#xa;MQswCQYDVQQGEwJVUzEPMA0GA1UEChMGQW1hem9uMRwwGgYDVQQDExNBbWF6b24g&#xa;UlNBIDIwNDggTTAyMB4XDTI0MDgyMTAwMDAwMFoXDTI1MDkxOTIzNTk1OVowIjEg&#xa;MB4GA1UEAxMXdGVhY2hseS5oa3MuaGFydmFyZC5lZHUwggEiMA0GCSqGSIb3DQEB&#xa;AQUAA4IBDwAwggEKAoIBAQDFpcBlMvf/mktixUX5/tzLwVo2+6jIyUKOfdBAJQ5t&#xa;Veoqjm438/cwaAfCkDoljNa7oNnIvCoVhCVD3WawtZ+SEyaIKZy2FfAohoA5NdRt&#xa;0nC+Xj1VKw+n7w5N1wxj4DzGyZ5imQG+/6cSaCGNslUHQ0jmmUNqnnRFc2hko/99&#xa;8lC4Hq/Vj/5z0vayCf96DzAYJP0uspNkSgYTTUq+3vMOnujo9jmA2xRN/+kPO0F2&#xa;LDjo6Tzr/NBnuN/RwgJpemBnzEJgsNpgaL7nSDXJrNTLBuNiHjaaL7utscQC5aBG&#xa;JNYuaRIrH03xRGCVutBFqtNPcb2MKpOyVkV5WlHOS/17AgMBAAGjggLxMIIC7TAf&#xa;BgNVHSMEGDAWgBTAMVLNWlDDgnx0cc7L6Zz5euuC4jAdBgNVHQ4EFgQU6XCI1jm7&#xa;0uDpqjS5e+szZaQefc0wIgYDVR0RBBswGYIXdGVhY2hseS5oa3MuaGFydmFyZC5l&#xa;ZHUwEwYDVR0gBAwwCjAIBgZngQwBAgEwDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQW&#xa;MBQGCCsGAQUFBwMBBggrBgEFBQcDAjA7BgNVHR8ENDAyMDCgLqAshipodHRwOi8v&#xa;Y3JsLnIybTAyLmFtYXpvbnRydXN0LmNvbS9yMm0wMi5jcmwwdQYIKwYBBQUHAQEE&#xa;aTBnMC0GCCsGAQUFBzABhiFodHRwOi8vb2NzcC5yMm0wMi5hbWF6b250cnVzdC5j&#xa;b20wNgYIKwYBBQUHMAKGKmh0dHA6Ly9jcnQucjJtMDIuYW1hem9udHJ1c3QuY29t&#xa;L3IybTAyLmNlcjAMBgNVHRMBAf8EAjAAMIIBfwYKKwYBBAHWeQIEAgSCAW8EggFr&#xa;AWkAdwAS8U40vVNyTIQGGcOPP3oT+Oe1YoeInG0wBYTr5YYmOgAAAZF1f5l6AAAE&#xa;AwBIMEYCIQD6l8R13eiDyEgJ9zfV2/Vu7jnJi+SpRqHzs7Db0XK+3gIhAIILWQ9i&#xa;psWMipFeQMBOt4zsBHBwruQcDF8rBf180yq/AHcAfVkeEuF4KnscYWd8Xv340Idc&#xa;FKBOlZ65Ay/ZDowuebgAAAGRdX+ZIwAABAMASDBGAiEA4EzxKNCjNTOX0bLp530V&#xa;WrVtAg9zkDDj6uYPeqvD7RYCIQD3sVoH2nK6PR/7THE+g9Od/jp91NDTfFfVTgFD&#xa;p0T6+QB1AMz7D2qFcQll/pWbU87psnwi6YVcDZeNtql+VMD+TA2wAAABkXV/mRMA&#xa;AAQDAEYwRAIgH7wCz5FtcopQxDY0PcYWxu/r2G+x/9SGsiPHPsVoLOgCIByWfOCx&#xa;00tLCWCWMV1VaG/H7GscjomYUHD5L1RyLNugMA0GCSqGSIb3DQEBCwUAA4IBAQAS&#xa;Lve4tUbqzPMBKluEFJyvUIUsZ5ealLxtLda5oc+rPtahxnhWbBV0IG6KVkDoE6io&#xa;K8OolaLuvN2TAqtkrS7t0ewnkNOnwiohZV+r5XyxfHr3zH9l/kID03ieCUzHQ16G&#xa;JNLuWjFkb1hPWEuShfIVhG1NPullaOFz6dcI+yhR3GkL5urBJvxTXu4qeh5O9kem&#xa;YOrSfyC9XF/CAmN9IPsdz+cRBcwfCIaTObGSiU1HkGKkz0GFGdsINmHNrQTAHpIM&#xa;Hmb/2vT/sXpaZkfZUvtnkhcKpwk2zk3nuufNAnWZ1Y3+KcoRsPfRDzTNKPnsLvNV&#xa;jX0LZ8OLRrt3dlv7VYuX&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+</ports>
+<times srtt="6241" rttvar="2102" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730996215"/>
+<taskend task="NSE" time="1730996215"/>
+<taskbegin task="NSE" time="1730996215"/>
+<taskend task="NSE" time="1730996215"/>
+<taskbegin task="NSE" time="1730996215"/>
+<taskend task="NSE" time="1730996215"/>
+<runstats><finished time="1730996215" timestr="Thu Nov  7 16:16:55 2024" elapsed="23.35" summary="Nmap done at Thu Nov  7 16:16:55 2024; 1 IP address (1 host up) scanned in 23.35 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
