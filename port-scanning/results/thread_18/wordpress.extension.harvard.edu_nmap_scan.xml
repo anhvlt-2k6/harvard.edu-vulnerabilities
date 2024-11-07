@@ -19,3 +19,104 @@
 <taskbegin task="Service scan" time="1731007229"/>
 <taskend task="Service scan" time="1731007241" extrainfo="3 services on 1 host"/>
 <taskbegin task="NSE" time="1731007241"/>
+<taskend task="NSE" time="1731007451"/>
+<taskbegin task="NSE" time="1731007451"/>
+<taskend task="NSE" time="1731007451"/>
+<taskbegin task="NSE" time="1731007451"/>
+<taskend task="NSE" time="1731007451"/>
+<host starttime="1731007224" endtime="1731007451"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="142.93.50.230" addrtype="ipv4"/>
+<hostnames>
+<hostname name="wordpress.extension.harvard.edu" type="user"/>
+</hostnames>
+<ports><extraports state="filtered" count="997">
+<extrareasons reason="no-responses" count="997"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="7.6p1 Ubuntu 4ubuntu0.5" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.6p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.29" hostname="wordpress.extension.harvard.edu" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.29</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="Apache/2.4.29 (Ubuntu)"><elem>Apache/2.4.29 (Ubuntu)</elem>
+</script><script id="http-title" output="Did not follow redirect to https://wordpress.extension.harvard.edu/"><elem key="redirect_url">https://wordpress.extension.harvard.edu/</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssl" product="Apache httpd" extrainfo="SSL-only mode" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:apache:http_server</cpe></service><script id="http-favicon" output="Unknown favicon MD5: D41D8CD98F00B204E9800998ECF8427E"/><script id="http-server-header" output="Apache/2.4.29 (Ubuntu)"><elem>Apache/2.4.29 (Ubuntu)</elem>
+</script><script id="http-title" output="Database Error"><elem key="title">Database Error</elem>
+</script><script id="ssl-cert" output="Subject: commonName=wordpress.extension.harvard.edu&#xa;Subject Alternative Name: DNS:wordpress.extension.harvard.edu&#xa;Issuer: commonName=R10/organizationName=Let&apos;s Encrypt/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-10-26T10:45:05&#xa;Not valid after:  2025-01-24T10:45:04&#xa;MD5:   499d 50db cf9b 9665 fd84 e7bb 6a6c 3848&#xa;SHA-1: 4ed2 6a6e 1178 d79e 1c10 6edb ec70 a057 d20e 76a2"><table key="subject">
+<elem key="commonName">wordpress.extension.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+<elem key="countryName">US</elem>
+<elem key="commonName">R10</elem>
+</table>
+<table key="pubkey">
+<elem key="exponent">BIGNUM: 0x558332ef0bf8</elem>
+<elem key="modulus">BIGNUM: 0x5583336b5e08</elem>
+<elem key="bits">2048</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="critical">true</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="critical">true</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">F7:22:56:AA:F1:6D:70:77:D0:49:6E:7D:AC:69:66:80:60:C4:83:61</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">BB:BC:C3:47:A5:E4:BC:A9:C6:C3:A4:72:0C:10:8D:A2:35:E1:C8:E8</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://r10.o.lencr.org&#xa;CA Issuers - URI:http://r10.i.lencr.org/</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:wordpress.extension.harvard.edu</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : A2:E3:0A:E4:45:EF:BD:AD:9B:7E:38:ED:47:67:77:53:&#xa;                D7:82:5B:84:94:D7:2B:5E:1B:2C:C4:B9:50:A4:47:E7&#xa;    Timestamp : Oct 26 11:43:35.619 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:12:88:53:12:C8:4E:8B:82:2B:AB:57:F6:&#xa;                2C:DF:1A:2B:C9:9B:FE:52:37:A7:9D:4D:1D:50:C1:6A:&#xa;                6B:B3:A0:DF:02:20:24:32:8C:1F:53:67:0C:CC:29:90:&#xa;                CB:2C:6E:A1:56:43:47:0A:61:2E:18:DB:77:EB:88:B0:&#xa;                DB:00:70:8F:72:48&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : E0:92:B3:FC:0C:1D:C8:E7:68:36:1F:DE:61:B9:96:4D:&#xa;                0A:52:78:19:8A:72:D6:72:C4:B0:4D:A5:6D:6F:54:04&#xa;    Timestamp : Oct 26 11:43:35.627 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:0B:51:32:A8:39:95:B3:2E:40:F9:39:B5:&#xa;                0E:70:B5:3F:00:CB:D2:F6:96:91:19:28:81:03:E0:0C:&#xa;                45:35:22:13:02:20:3C:17:CF:65:C5:B8:B6:6A:AD:37:&#xa;                2B:4C:3B:33:D5:EB:B7:AF:C7:3B:09:0A:4C:77:88:9B:&#xa;                1A:06:DB:F5:E7:4D</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-10-26T10:45:05</elem>
+<elem key="notAfter">2025-01-24T10:45:04</elem>
+</table>
+<elem key="md5">499d50dbcf9b9665fd84e7bb6a6c3848</elem>
+<elem key="sha1">4ed26a6e1178d79e1c106edbec70a057d20e76a2</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFDDCCA/SgAwIBAgISBE7A8yKemYjPZ46dzY8cTpbSMA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNSMTAwHhcNMjQxMDI2MTA0NTA1WhcNMjUwMTI0MTA0NTA0WjAqMSgwJgYDVQQD&#xa;Ex93b3JkcHJlc3MuZXh0ZW5zaW9uLmhhcnZhcmQuZWR1MIIBIjANBgkqhkiG9w0B&#xa;AQEFAAOCAQ8AMIIBCgKCAQEAuDy76cXlGz5+yYhF+hKaU7aEZFHB3+LO7heqCBDY&#xa;wZw6c8NB+lrOdAE0PFUn0uOVEuY0djLISd5j4sXGYPxD2hsMA7Uc0NwPRhxrgjY7&#xa;Fy8o0qpXyEE99M+zLre5qK0MP5XS+59SFf/dcYW1TMzM5H+9zIAJ4HjiI7CHuxKg&#xa;iPJezBQkAZB0/JqXtoLdC/xUWHtlNMc8y8XfHpymorqtLnrnm3Sc5osvcjRJVJtl&#xa;GOQzk9w//JKb3HB1yaGeuHy5iwU4JySptkVrIaAKDz/LVh05SETyIP9nUTCVYUhJ&#xa;LngL9xkF1VDYYQs/pphJLnsYTWQ22ThmTQxqSglTaIix3wIDAQABo4ICITCCAh0w&#xa;DgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAM&#xa;BgNVHRMBAf8EAjAAMB0GA1UdDgQWBBT3Ilaq8W1wd9BJbn2saWaAYMSDYTAfBgNV&#xa;HSMEGDAWgBS7vMNHpeS8qcbDpHIMEI2iNeHI6DBXBggrBgEFBQcBAQRLMEkwIgYI&#xa;KwYBBQUHMAGGFmh0dHA6Ly9yMTAuby5sZW5jci5vcmcwIwYIKwYBBQUHMAKGF2h0&#xa;dHA6Ly9yMTAuaS5sZW5jci5vcmcvMCoGA1UdEQQjMCGCH3dvcmRwcmVzcy5leHRl&#xa;bnNpb24uaGFydmFyZC5lZHUwEwYDVR0gBAwwCjAIBgZngQwBAgEwggECBgorBgEE&#xa;AdZ5AgQCBIHzBIHwAO4AdQCi4wrkRe+9rZt+OO1HZ3dT14JbhJTXK14bLMS5UKRH&#xa;5wAAAZLIo5DDAAAEAwBGMEQCIBKIUxLITouCK6tX9izfGivJm/5SN6edTR1QwWpr&#xa;s6DfAiAkMowfU2cMzCmQyyxuoVZDRwphLhjbd+uIsNsAcI9ySAB1AOCSs/wMHcjn&#xa;aDYf3mG5lk0KUngZinLWcsSwTaVtb1QEAAABksijkMsAAAQDAEYwRAIgC1EyqDmV&#xa;sy5A+Tm1DnC1PwDL0vaWkRkogQPgDEU1IhMCIDwXz2XFuLZqrTcrTDsz1eu3r8c7&#xa;CQpMd4ibGgbb9edNMA0GCSqGSIb3DQEBCwUAA4IBAQBynu6sQwrO+UoNE1QiKf+N&#xa;Ag8bUj+sNtry+qXh6o76yDnnGjWAcUimd9pG85cdrhJ1+DBVKb9qk8iuAm3pNxlP&#xa;dT8hECA29Sj2lJ3DYWt/3woEOqlcSPCtksKX95fOHmimatTKlb5gRvAeMILLHA/h&#xa;KdUzF7AOGeKZIQyDC/kcHGHGPI9njN/xyC6TGqpyf+zOGeZKFXvLzOgR79W7CSQP&#xa;N30UufUvd2CkLXXiEpJNRRAp/kZCm6YovDKoWnrELdmSzRrtlN/+n7BascYqcggR&#xa;xgQ0M5JZz11RtT9/SBKrqeVlNDNEACLjxaFZs1TyMjbURR2YuxZBgbfSAdkw4yTt&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="tls-alpn" output="&#xa;  http/1.1"><elem>http/1.1</elem>
+</script></port>
+</ports>
+<times srtt="27524" rttvar="8940" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1731007451"/>
+<taskend task="NSE" time="1731007451"/>
+<taskbegin task="NSE" time="1731007451"/>
+<taskend task="NSE" time="1731007451"/>
+<taskbegin task="NSE" time="1731007451"/>
+<taskend task="NSE" time="1731007451"/>
+<runstats><finished time="1731007451" timestr="Thu Nov  7 19:24:11 2024" elapsed="228.19" summary="Nmap done at Thu Nov  7 19:24:11 2024; 1 IP address (1 host up) scanned in 228.19 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
