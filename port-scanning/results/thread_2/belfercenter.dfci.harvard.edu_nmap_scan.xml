@@ -21,3 +21,37 @@
 <taskbegin task="NSE" time="1731007567"/>
 <taskend task="NSE" time="1731007597"/>
 <taskbegin task="NSE" time="1731007597"/>
+<taskend task="NSE" time="1731007781"/>
+<taskbegin task="NSE" time="1731007781"/>
+<taskend task="NSE" time="1731007781"/>
+<host starttime="1731007398" endtime="1731007781"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="34.23.14.255" addrtype="ipv4"/>
+<hostnames>
+<hostname name="belfercenter.dfci.harvard.edu" type="user"/>
+<hostname name="dfci-welsh.hipaavault.co" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="992">
+<extrareasons reason="no-responses" count="992"/>
+</extraports>
+<port protocol="tcp" portid="25"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtp" method="table" conf="3"/><script id="smtp-commands" output="Couldn&apos;t establish connection on port 25"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" method="probed" conf="10"><cpe>cpe:/a:apache:http_server</cpe></service><script id="http-title" output="Did not follow redirect to https://belfercenter.dfci.harvard.edu/"><elem key="redirect_url">https://belfercenter.dfci.harvard.edu/</elem>
+</script></port>
+<port protocol="tcp" portid="110"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="pop3" product="Dovecot pop3d" method="probed" conf="10"><cpe>cpe:/a:dovecot:dovecot</cpe></service><script id="pop3-capabilities" output="CAPA PIPELINING UIDL TOP SASL(PLAIN LOGIN) RESP-CODES AUTH-RESP-CODE STLS USER"/></port>
+<port protocol="tcp" portid="143"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="imap" product="Dovecot imapd" method="probed" conf="10"><cpe>cpe:/a:dovecot:dovecot</cpe></service><script id="imap-capabilities" output="LITERAL+ AUTH=PLAIN capabilities OK STARTTLS IDLE post-login LOGIN-REFERRALS AUTH=LOGINA0001 more SASL-IR IMAP4rev1 ID NAMESPACE have Pre-login listed ENABLE"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssl" product="Apache httpd" extrainfo="SSL-only mode" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:apache:http_server</cpe></service><script id="http-generator" output="WordPress 6.6.2"/><script id="http-title" output="Belfer Center | Dana-Farber Cancer Center &amp;#8211; Belfer Center"><elem key="title">Belfer Center | Dana-Farber Cancer Center &amp;#8211; Belfer Center</elem>
+</script></port>
+<port protocol="tcp" portid="465"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtp" product="Exim smtpd" version="4.98" hostname="dfci-welsh.hipaavault.co" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:exim:exim:4.98</cpe></service><script id="smtp-commands" output="dfci-welsh.hipaavault.co Hello belfercenter.dfci.harvard.edu [20.109.38.197], SIZE 52428800, LIMITS MAILMAX=1000 RCPTMAX=50000, 8BITMIME, PIPELINING, PIPECONNECT, AUTH PLAIN LOGIN, HELP, &#xa; Commands supported: AUTH HELO EHLO MAIL RCPT DATA BDAT NOOP QUIT RSET HELP "/></port>
+<port protocol="tcp" portid="587"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtp" product="Exim smtpd" version="4.98" hostname="dfci-welsh.hipaavault.co" method="probed" conf="10"><cpe>cpe:/a:exim:exim:4.98</cpe></service><script id="smtp-commands" output="dfci-welsh.hipaavault.co Hello belfercenter.dfci.harvard.edu [20.109.38.197], SIZE 52428800, LIMITS MAILMAX=1000 RCPTMAX=50000, 8BITMIME, PIPELINING, PIPECONNECT, STARTTLS, HELP, &#xa; Commands supported: AUTH STARTTLS HELO EHLO MAIL RCPT DATA BDAT NOOP QUIT RSET HELP "/></port>
+<port protocol="tcp" portid="993"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="imaps" method="table" conf="3"/><script id="imap-capabilities" output="Pre-login AUTH=PLAIN capabilities OK have IDLE post-login LOGIN-REFERRALS AUTH=LOGINA0001 more SASL-IR IMAP4rev1 ID NAMESPACE LITERAL+ ENABLE listed"/></port>
+</ports>
+<times srtt="19338" rttvar="1858" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1731007781"/>
+<taskend task="NSE" time="1731007781"/>
+<taskbegin task="NSE" time="1731007781"/>
+<taskend task="NSE" time="1731007781"/>
+<taskbegin task="NSE" time="1731007781"/>
+<taskend task="NSE" time="1731007781"/>
+<runstats><finished time="1731007781" timestr="Thu Nov  7 19:29:41 2024" elapsed="383.47" summary="Nmap done at Thu Nov  7 19:29:41 2024; 1 IP address (1 host up) scanned in 383.47 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
