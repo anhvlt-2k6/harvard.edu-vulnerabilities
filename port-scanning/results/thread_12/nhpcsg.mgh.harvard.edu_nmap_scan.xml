@@ -17,3 +17,122 @@
 <taskbegin task="Connect Scan" time="1731001168"/>
 <taskend task="Connect Scan" time="1731001173" extrainfo="1000 total ports"/>
 <taskbegin task="Service scan" time="1731001173"/>
+<taskend task="Service scan" time="1731001192" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1731001192"/>
+<taskend task="NSE" time="1731001194"/>
+<taskbegin task="NSE" time="1731001194"/>
+<taskend task="NSE" time="1731001194"/>
+<taskbegin task="NSE" time="1731001194"/>
+<taskend task="NSE" time="1731001194"/>
+<host starttime="1731001168" endtime="1731001194"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="170.223.191.141" addrtype="ipv4"/>
+<hostnames>
+<hostname name="nhpcsg.mgh.harvard.edu" type="user"/>
+<hostname name="erishaproxy.partners.org" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="998">
+<extrareasons reason="no-responses" count="998"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" servicefp="SF-Port80-TCP:V=7.80%I=7%D=11/7%Time=672CFB5B%P=x86_64-pc-linux-gnu%r(GetRequest,E9,&quot;HTTP/1\.1\x20503\x20Service\x20Unavailable\r\ncontent-length:\x20107\r\ncache-control:\x20no-cache\r\ncontent-type:\x20text/html\r\nconnection:\x20close\r\n\r\n&lt;html&gt;&lt;body&gt;&lt;h1&gt;503\x20Service\x20Unavailable&lt;/h1&gt;\nNo\x20server\x20is\x20available\x20to\x20handle\x20this\x20request\.\n&lt;/body&gt;&lt;/html&gt;\n&quot;)%r(HTTPOptions,E9,&quot;HTTP/1\.1\x20503\x20Service\x20Unavailable\r\ncontent-length:\x20107\r\ncache-control:\x20no-cache\r\ncontent-type:\x20text/html\r\nconnection:\x20close\r\n\r\n&lt;html&gt;&lt;body&gt;&lt;h1&gt;503\x20Service\x20Unavailable&lt;/h1&gt;\nNo\x20server\x20is\x20available\x20to\x20handle\x20this\x20request\.\n&lt;/body&gt;&lt;/html&gt;\n&quot;)%r(RTSPRequest,CF,&quot;HTTP/1\.1\x20400\x20Bad\x20request\r\nContent-length:\x2090\r\nCache-Control:\x20no-cache\r\nConnection:\x20close\r\nContent-Type:\x20text/html\r\n\r\n&lt;html&gt;&lt;body&gt;&lt;h1&gt;400\x20Bad\x20request&lt;/h1&gt;\nYour\x20browser\x20sent\x20an\x20invalid\x20request\.\n&lt;/body&gt;&lt;/html&gt;\n&quot;)%r(X11Probe,CF,&quot;HTTP/1\.1\x20400\x20Bad\x20request\r\nContent-length:\x2090\r\nCache-Control:\x20no-cache\r\nConnection:\x20close\r\nContent-Type:\x20text/html\r\n\r\n&lt;html&gt;&lt;body&gt;&lt;h1&gt;400\x20Bad\x20request&lt;/h1&gt;\nYour\x20browser\x20sent\x20an\x20invalid\x20request\.\n&lt;/body&gt;&lt;/html&gt;\n&quot;)%r(FourOhFourRequest,E9,&quot;HTTP/1\.1\x20503\x20Service\x20Unavailable\r\ncontent-length:\x20107\r\ncache-control:\x20no-cache\r\ncontent-type:\x20text/html\r\nconnection:\x20close\r\n\r\n&lt;html&gt;&lt;body&gt;&lt;h1&gt;503\x20Service\x20Unavailable&lt;/h1&gt;\nNo\x20server\x20is\x20available\x20to\x20handle\x20this\x20request\.\n&lt;/body&gt;&lt;/html&gt;\n&quot;)%r(RPCCheck,CF,&quot;HTTP/1\.1\x20400\x20Bad\x20request\r\nContent-length:\x2090\r\nCache-Control:\x20no-cache\r\nConnection:\x20close\r\nContent-Type:\x20text/html\r\n\r\n&lt;html&gt;&lt;body&gt;&lt;h1&gt;400\x20Bad\x20request&lt;/h1&gt;\nYour\x20browser\x20sent\x20an\x20invalid\x20request\.\n&lt;/body&gt;&lt;/html&gt;\n&quot;)%r(DNSVersionBindReqTCP,CF,&quot;HTTP/1\.1\x20400\x20Bad\x20request\r\nContent-length:\x2090\r\nCache-Control:\x20no-cache\r\nConnection:\x20close\r\nContent-Type:\x20text/html\r\n\r\n&lt;html&gt;&lt;body&gt;&lt;h1&gt;400\x20Bad\x20request&lt;/h1&gt;\nYour\x20browser\x20sent\x20an\x20invalid\x20request\.\n&lt;/body&gt;&lt;/html&gt;\n&quot;);" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  DNSVersionBindReqTCP, RPCCheck, RTSPRequest, X11Probe: &#xa;    HTTP/1.1 400 Bad request&#xa;    Content-length: 90&#xa;    Cache-Control: no-cache&#xa;    Connection: close&#xa;    Content-Type: text/html&#xa;    &lt;html&gt;&lt;body&gt;&lt;h1&gt;400 Bad request&lt;/h1&gt;&#xa;    Your browser sent an invalid request.&#xa;    &lt;/body&gt;&lt;/html&gt;&#xa;  FourOhFourRequest, GetRequest, HTTPOptions: &#xa;    HTTP/1.1 503 Service Unavailable&#xa;    content-length: 107&#xa;    cache-control: no-cache&#xa;    content-type: text/html&#xa;    connection: close&#xa;    &lt;html&gt;&lt;body&gt;&lt;h1&gt;503 Service Unavailable&lt;/h1&gt;&#xa;    server is available to handle this request.&#xa;    &lt;/body&gt;&lt;/html&gt;"><elem key="DNSVersionBindReqTCP, RPCCheck, RTSPRequest, X11Probe">&#xa;    HTTP/1.1 400 Bad request&#xa;    Content-length: 90&#xa;    Cache-Control: no-cache&#xa;    Connection: close&#xa;    Content-Type: text/html&#xa;    &lt;html&gt;&lt;body&gt;&lt;h1&gt;400 Bad request&lt;/h1&gt;&#xa;    Your browser sent an invalid request.&#xa;    &lt;/body&gt;&lt;/html&gt;</elem>
+<elem key="FourOhFourRequest, GetRequest, HTTPOptions">&#xa;    HTTP/1.1 503 Service Unavailable&#xa;    content-length: 107&#xa;    cache-control: no-cache&#xa;    content-type: text/html&#xa;    connection: close&#xa;    &lt;html&gt;&lt;body&gt;&lt;h1&gt;503 Service Unavailable&lt;/h1&gt;&#xa;    server is available to handle this request.&#xa;    &lt;/body&gt;&lt;/html&gt;</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Did not follow redirect to https://nhpcsg.mgh.harvard.edu/"><elem key="redirect_url">https://nhpcsg.mgh.harvard.edu/</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" product="nginx" servicefp="SF-Port443-TCP:V=7.80%T=SSL%I=7%D=11/7%Time=672CFB61%P=x86_64-pc-linux-gnu%r(GetRequest,E9,&quot;HTTP/1\.1\x20503\x20Service\x20Unavailable\r\ncontent-length:\x20107\r\ncache-control:\x20no-cache\r\ncontent-type:\x20text/html\r\nconnection:\x20close\r\n\r\n&lt;html&gt;&lt;body&gt;&lt;h1&gt;503\x20Service\x20Unavailable&lt;/h1&gt;\nNo\x20server\x20is\x20available\x20to\x20handle\x20this\x20request\.\n&lt;/body&gt;&lt;/html&gt;\n&quot;)%r(HTTPOptions,E9,&quot;HTTP/1\.1\x20503\x20Service\x20Unavailable\r\ncontent-length:\x20107\r\ncache-control:\x20no-cache\r\ncontent-type:\x20text/html\r\nconnection:\x20close\r\n\r\n&lt;html&gt;&lt;body&gt;&lt;h1&gt;503\x20Service\x20Unavailable&lt;/h1&gt;\nNo\x20server\x20is\x20available\x20to\x20handle\x20this\x20request\.\n&lt;/body&gt;&lt;/html&gt;\n&quot;)%r(FourOhFourRequest,E9,&quot;HTTP/1\.1\x20503\x20Service\x20Unavailable\r\ncontent-length:\x20107\r\ncache-control:\x20no-cache\r\ncontent-type:\x20text/html\r\nconnection:\x20close\r\n\r\n&lt;html&gt;&lt;body&gt;&lt;h1&gt;503\x20Service\x20Unavailable&lt;/h1&gt;\nNo\x20server\x20is\x20available\x20to\x20handle\x20this\x20request\.\n&lt;/body&gt;&lt;/html&gt;\n&quot;)%r(tor-versions,CF,&quot;HTTP/1\.1\x20400\x20Bad\x20request\r\nContent-length:\x2090\r\nCache-Control:\x20no-cache\r\nConnection:\x20close\r\nContent-Type:\x20text/html\r\n\r\n&lt;html&gt;&lt;body&gt;&lt;h1&gt;400\x20Bad\x20request&lt;/h1&gt;\nYour\x20browser\x20sent\x20an\x20invalid\x20request\.\n&lt;/body&gt;&lt;/html&gt;\n&quot;)%r(RTSPRequest,CF,&quot;HTTP/1\.1\x20400\x20Bad\x20request\r\nContent-length:\x2090\r\nCache-Control:\x20no-cache\r\nConnection:\x20close\r\nContent-Type:\x20text/html\r\n\r\n&lt;html&gt;&lt;body&gt;&lt;h1&gt;400\x20Bad\x20request&lt;/h1&gt;\nYour\x20browser\x20sent\x20an\x20invalid\x20request\.\n&lt;/body&gt;&lt;/html&gt;\n&quot;)%r(RPCCheck,CF,&quot;HTTP/1\.1\x20400\x20Bad\x20request\r\nContent-length:\x2090\r\nCache-Control:\x20no-cache\r\nConnection:\x20close\r\nContent-Type:\x20text/html\r\n\r\n&lt;html&gt;&lt;body&gt;&lt;h1&gt;400\x20Bad\x20request&lt;/h1&gt;\nYour\x20browser\x20sent\x20an\x20invalid\x20request\.\n&lt;/body&gt;&lt;/html&gt;\n&quot;)%r(DNSVersionBindReqTCP,CF,&quot;HTTP/1\.1\x20400\x20Bad\x20request\r\nContent-length:\x2090\r\nCache-Control:\x20no-cache\r\nConnection:\x20close\r\nContent-Type:\x20text/html\r\n\r\n&lt;html&gt;&lt;body&gt;&lt;h1&gt;400\x20Bad\x20request&lt;/h1&gt;\nYour\x20browser\x20sent\x20an\x20invalid\x20request\.\n&lt;/body&gt;&lt;/html&gt;\n&quot;);" tunnel="ssl" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  DNSVersionBindReqTCP, RPCCheck, RTSPRequest, tor-versions: &#xa;    HTTP/1.1 400 Bad request&#xa;    Content-length: 90&#xa;    Cache-Control: no-cache&#xa;    Connection: close&#xa;    Content-Type: text/html&#xa;    &lt;html&gt;&lt;body&gt;&lt;h1&gt;400 Bad request&lt;/h1&gt;&#xa;    Your browser sent an invalid request.&#xa;    &lt;/body&gt;&lt;/html&gt;&#xa;  FourOhFourRequest, GetRequest, HTTPOptions: &#xa;    HTTP/1.1 503 Service Unavailable&#xa;    content-length: 107&#xa;    cache-control: no-cache&#xa;    content-type: text/html&#xa;    connection: close&#xa;    &lt;html&gt;&lt;body&gt;&lt;h1&gt;503 Service Unavailable&lt;/h1&gt;&#xa;    server is available to handle this request.&#xa;    &lt;/body&gt;&lt;/html&gt;"><elem key="DNSVersionBindReqTCP, RPCCheck, RTSPRequest, tor-versions">&#xa;    HTTP/1.1 400 Bad request&#xa;    Content-length: 90&#xa;    Cache-Control: no-cache&#xa;    Connection: close&#xa;    Content-Type: text/html&#xa;    &lt;html&gt;&lt;body&gt;&lt;h1&gt;400 Bad request&lt;/h1&gt;&#xa;    Your browser sent an invalid request.&#xa;    &lt;/body&gt;&lt;/html&gt;</elem>
+<elem key="FourOhFourRequest, GetRequest, HTTPOptions">&#xa;    HTTP/1.1 503 Service Unavailable&#xa;    content-length: 107&#xa;    cache-control: no-cache&#xa;    content-type: text/html&#xa;    connection: close&#xa;    &lt;html&gt;&lt;body&gt;&lt;h1&gt;503 Service Unavailable&lt;/h1&gt;&#xa;    server is available to handle this request.&#xa;    &lt;/body&gt;&lt;/html&gt;</elem>
+</script><script id="http-favicon" output="Unknown favicon MD5: D41D8CD98F00B204E9800998ECF8427E"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="nginx"><elem>nginx</elem>
+</script><script id="http-title" output="MGH Surgery: NIAID Nonhuman Primate Transplantation Tolerance ...&#xa;Requested resource was https://nhpcsg.mgh.harvard.edu/home"><elem key="title">MGH Surgery: NIAID Nonhuman Primate Transplantation Tolerance Cooperative Study Group</elem>
+<elem key="redirect_url">https://nhpcsg.mgh.harvard.edu/home</elem>
+</script><script id="http-trane-info" output="Problem with XML parsing of /evox/about"/><script id="ssl-cert" output="Subject: commonName=nhpcsg.mgh.harvard.edu/organizationName=President and Fellows of Harvard College/stateOrProvinceName=Massachusetts/countryName=US&#xa;Subject Alternative Name: DNS:nhpcsg.mgh.harvard.edu, DNS:rc-nhpcsg-u20.partners.org&#xa;Issuer: commonName=InCommon RSA Server CA 2/organizationName=Internet2/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha384WithRSAEncryption&#xa;Not valid before: 2024-08-21T00:00:00&#xa;Not valid after:  2025-08-21T23:59:59&#xa;MD5:   ac92 4cfd 974a d6e0 c5f8 cf41 b763 eb42&#xa;SHA-1: 7c42 b770 e4d0 5382 3870 b2cb de54 b527 ef48 0b39"><table key="subject">
+<elem key="stateOrProvinceName">Massachusetts</elem>
+<elem key="countryName">US</elem>
+<elem key="commonName">nhpcsg.mgh.harvard.edu</elem>
+<elem key="organizationName">President and Fellows of Harvard College</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">US</elem>
+<elem key="commonName">InCommon RSA Server CA 2</elem>
+<elem key="organizationName">Internet2</elem>
+</table>
+<table key="pubkey">
+<elem key="modulus">BIGNUM: 0x55eb2a499a78</elem>
+<elem key="exponent">BIGNUM: 0x55eb2a4999f8</elem>
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">EF:4C:00:92:A6:FB:76:2E:5E:95:E2:C9:5F:87:1B:19:D5:4D:E2:D9</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">26:2D:B5:BE:8F:C0:0B:2C:6D:3D:40:8F:43:6D:1D:44:69:E3:8B:67</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+</table>
+<table>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">Policy: 1.3.6.1.4.1.6449.1.2.2.103&#xa;  CPS: https://sectigo.com/CPS&#xa;Policy: 2.23.140.1.2.2</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Full Name:&#xa;  URI:http://crl.sectigo.com/InCommonRSAServerCA2.crl</elem>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+</table>
+<table>
+<elem key="value">CA Issuers - URI:http://crt.sectigo.com/InCommonRSAServerCA2.crt&#xa;OCSP - URI:http://ocsp.sectigo.com</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : DD:DC:CA:34:95:D7:E1:16:05:E7:95:32:FA:C7:9F:F8:&#xa;                3D:1C:50:DF:DB:00:3A:14:12:76:0A:2C:AC:BB:C8:2A&#xa;    Timestamp : Aug 21 15:03:34.664 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:6C:D7:08:20:6F:19:1A:E4:B4:E8:52:C1:&#xa;                0F:E3:A7:28:51:04:DD:37:C9:E6:49:42:54:9D:F9:6E:&#xa;                82:50:94:4B:02:20:5C:8D:BC:A4:43:D5:31:B5:4E:18:&#xa;                8A:3E:C2:3E:61:E5:80:7F:39:82:43:43:8E:8A:87:A5:&#xa;                23:88:56:3F:11:29&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 0D:E1:F2:30:2B:D3:0D:C1:40:62:12:09:EA:55:2E:FC:&#xa;                47:74:7C:B1:D7:E9:30:EF:0E:42:1E:B4:7E:4E:AA:34&#xa;    Timestamp : Aug 21 15:03:34.629 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:EA:3E:07:E2:6B:7C:3F:C9:E8:E2:B9:&#xa;                5B:7A:5B:A3:27:F0:68:81:95:BD:A7:0C:37:B2:B4:E1:&#xa;                70:E6:D8:52:7D:02:21:00:A5:0D:53:DF:56:3B:FC:BF:&#xa;                8F:38:88:6F:CE:95:8B:77:32:A2:25:C8:16:AD:6E:CF:&#xa;                AB:B6:E3:60:F0:8C:76:D1&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 12:F1:4E:34:BD:53:72:4C:84:06:19:C3:8F:3F:7A:13:&#xa;                F8:E7:B5:62:87:88:9C:6D:30:05:84:EB:E5:86:26:3A&#xa;    Timestamp : Aug 21 15:03:34.629 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:73:D3:FB:CC:39:60:8F:FC:3E:20:F6:2F:&#xa;                6A:E7:DB:E0:D4:F3:90:69:C2:91:0C:BE:5B:61:C7:9A:&#xa;                52:C1:54:B9:02:21:00:D7:69:EC:29:2C:83:22:E2:F1:&#xa;                AA:F2:31:C5:BD:19:C7:D4:41:2E:73:69:52:FD:CF:BB:&#xa;                AD:54:66:0E:B5:B7:6A</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+<table>
+<elem key="value">DNS:nhpcsg.mgh.harvard.edu, DNS:rc-nhpcsg-u20.partners.org</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+</table>
+<elem key="sig_algo">sha384WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-08-21T00:00:00</elem>
+<elem key="notAfter">2025-08-21T23:59:59</elem>
+</table>
+<elem key="md5">ac924cfd974ad6e0c5f8cf41b763eb42</elem>
+<elem key="sha1">7c42b770e4d053823870b2cbde54b527ef480b39</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIHCzCCBXOgAwIBAgIRAPRkduP0shj3memgKJKmSLQwDQYJKoZIhvcNAQEMBQAw&#xa;RDELMAkGA1UEBhMCVVMxEjAQBgNVBAoTCUludGVybmV0MjEhMB8GA1UEAxMYSW5D&#xa;b21tb24gUlNBIFNlcnZlciBDQSAyMB4XDTI0MDgyMTAwMDAwMFoXDTI1MDgyMTIz&#xa;NTk1OVoweTELMAkGA1UEBhMCVVMxFjAUBgNVBAgTDU1hc3NhY2h1c2V0dHMxMTAv&#xa;BgNVBAoTKFByZXNpZGVudCBhbmQgRmVsbG93cyBvZiBIYXJ2YXJkIENvbGxlZ2Ux&#xa;HzAdBgNVBAMTFm5ocGNzZy5tZ2guaGFydmFyZC5lZHUwggEiMA0GCSqGSIb3DQEB&#xa;AQUAA4IBDwAwggEKAoIBAQDDRzufaCkYj+OUJQOJowSWQ8LNIcRrYl3/yHAk+JER&#xa;bFyGMcWnjYY3bH0aliemWw9uFOa3GZ+DmXwQqcWK3RSlGwXGP3R0X/dIL13WzJJk&#xa;KhtDku2tGfHKfRJuaZkgWoR1eMTm4sYbfv7SMcMZd6ECBUscZEKh5kbjszfVTgcj&#xa;rJWlhK0PHjGZqeZY6kWwHKSPOGodbeKRSSvBeVZny2ZoLDuxDTPrN4vLeHz9NQkT&#xa;KuFoUtEdElcue502ZL9y7Fes9G2SDn2qXRfnfcbAXaE9sjwlJaHtXdZrXExeOK4p&#xa;YvwxrkyDdNhuzTXjv46r1zfJ6DRibds0b9jIlCYHRYRrAgMBAAGjggNBMIIDPTAf&#xa;BgNVHSMEGDAWgBTvTACSpvt2Ll6V4slfhxsZ1U3i2TAdBgNVHQ4EFgQUJi21vo/A&#xa;CyxtPUCPQ20dRGnji2cwDgYDVR0PAQH/BAQDAgWgMAwGA1UdEwEB/wQCMAAwHQYD&#xa;VR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMEkGA1UdIARCMEAwNAYLKwYBBAGy&#xa;MQECAmcwJTAjBggrBgEFBQcCARYXaHR0cHM6Ly9zZWN0aWdvLmNvbS9DUFMwCAYG&#xa;Z4EMAQICMEAGA1UdHwQ5MDcwNaAzoDGGL2h0dHA6Ly9jcmwuc2VjdGlnby5jb20v&#xa;SW5Db21tb25SU0FTZXJ2ZXJDQTIuY3JsMHAGCCsGAQUFBwEBBGQwYjA7BggrBgEF&#xa;BQcwAoYvaHR0cDovL2NydC5zZWN0aWdvLmNvbS9JbkNvbW1vblJTQVNlcnZlckNB&#xa;Mi5jcnQwIwYIKwYBBQUHMAGGF2h0dHA6Ly9vY3NwLnNlY3RpZ28uY29tMIIBfgYK&#xa;KwYBBAHWeQIEAgSCAW4EggFqAWgAdQDd3Mo0ldfhFgXnlTL6x5/4PRxQ39sAOhQS&#xa;dgosrLvIKgAAAZF1dvAIAAAEAwBGMEQCIGzXCCBvGRrktOhSwQ/jpyhRBN03yeZJ&#xa;QlSd+W6CUJRLAiBcjbykQ9UxtU4Yij7CPmHlgH85gkNDjoqHpSOIVj8RKQB3AA3h&#xa;8jAr0w3BQGISCepVLvxHdHyx1+kw7w5CHrR+Tqo0AAABkXV27+UAAAQDAEgwRgIh&#xa;AOo+B+JrfD/J6OK5W3pboyfwaIGVvacMN7K04XDm2FJ9AiEApQ1T31Y7/L+POIhv&#xa;zpWLdzKiJcgWrW7Pq7bjYPCMdtEAdgAS8U40vVNyTIQGGcOPP3oT+Oe1YoeInG0w&#xa;BYTr5YYmOgAAAZF1du/lAAAEAwBHMEUCIHPT+8w5YI/8PiD2L2rn2+DU85BpwpEM&#xa;vlthx5pSwVS5AiEA12nsKSyDIuLxqvIxxb0Zx9RBLnNpUv3Pu61UZg61t2owPQYD&#xa;VR0RBDYwNIIWbmhwY3NnLm1naC5oYXJ2YXJkLmVkdYIacmMtbmhwY3NnLXUyMC5w&#xa;YXJ0bmVycy5vcmcwDQYJKoZIhvcNAQEMBQADggGBAIe6q6F+8QvohtIw+Sinfi1U&#xa;2nxAxk57uacszjgcVvR8E6pv6G0/hx1gKsgnHsua1Vb4+B95nlFz4YQUOjDgAW2Z&#xa;Kq4svh72n9dhPy+GqQtPvt0Vu20XDSwP+Hungtgn1S0NM9Xg+Ba2rXDMVKdEM6wL&#xa;MTNSaJoRSUJryCKTfslEiRu9tkxhyL0VGS7cudx2Fhsmm4OfPVZmn6yqrGZaJ6g/&#xa;RqN7I+UJPwmD19CuXyqtKgKIsIHgdc1EP7Y3mIZ3lY6ZfkERrTmmQGHhhvfb8dT5&#xa;1xMh7q78vOLDoTNYYlwr/PbMHh6N8T9DfvTM2EVlaWhNve9pwXg0tbXE0vgUNEXv&#xa;yqsFgO4aK1lQJDzhY2dCCBOINx+2utsa6gUKZLoGsL4Mci29WcWSUYABYzwe9u2j&#xa;ZHRpwgjH0najNvVKTP1+DAMgiKw/BJ3Z5GiJcqx69nzd/HSaNawf3T8x2Jd0DVjn&#xa;IPj5xbtRowKJQKCsdFT0iBxQ6XMludbseDCUkwUwMw==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+</ports>
+<times srtt="16891" rttvar="7330" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1731001194"/>
+<taskend task="NSE" time="1731001194"/>
+<taskbegin task="NSE" time="1731001194"/>
+<taskend task="NSE" time="1731001194"/>
+<taskbegin task="NSE" time="1731001194"/>
+<taskend task="NSE" time="1731001194"/>
+<runstats><finished time="1731001194" timestr="Thu Nov  7 17:39:54 2024" elapsed="26.49" summary="Nmap done at Thu Nov  7 17:39:54 2024; 1 IP address (1 host up) scanned in 26.49 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
