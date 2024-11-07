@@ -17,3 +17,105 @@
 <taskbegin task="Connect Scan" time="1730999627"/>
 <taskend task="Connect Scan" time="1730999631" extrainfo="1000 total ports"/>
 <taskbegin task="Service scan" time="1730999631"/>
+<taskend task="Service scan" time="1730999643" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1730999643"/>
+<taskend task="NSE" time="1730999645"/>
+<taskbegin task="NSE" time="1730999645"/>
+<taskend task="NSE" time="1730999645"/>
+<taskbegin task="NSE" time="1730999645"/>
+<taskend task="NSE" time="1730999645"/>
+<host starttime="1730999627" endtime="1730999645"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="140.247.243.57" addrtype="ipv4"/>
+<hostnames>
+<hostname name="lichtmandtn02.rc.fas.harvard.edu" type="user"/>
+<hostname name="lichtmandtn02.rc.fas.harvard.edu" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="988">
+<extrareasons reason="no-responses" count="988"/>
+</extraports>
+<port protocol="tcp" portid="113"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ident" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssl" product="Apache httpd" extrainfo="SSL-only mode" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:apache:http_server</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET POST OPTIONS HEAD TRACE&#xa;  Potentially risky methods: TRACE"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+<elem>HEAD</elem>
+<elem>TRACE</elem>
+</table>
+<table key="Potentially risky methods">
+<elem>TRACE</elem>
+</table>
+</script><script id="http-server-header" output="Apache/2.4.37 (Rocky Linux) OpenSSL/1.1.1k"><elem>Apache/2.4.37 (Rocky Linux) OpenSSL/1.1.1k</elem>
+</script><script id="http-title" output="HTTP Server Test Page powered by: Rocky Linux"><elem key="title">HTTP Server Test Page powered by: Rocky Linux</elem>
+</script><script id="ssl-cert" output="Subject: commonName=nwl-b4-dtn02.rc.fas.harvard.edu/organizationName=Unspecified/countryName=US&#xa;Subject Alternative Name: DNS:nwl-b4-dtn02.rc.fas.harvard.edu&#xa;Issuer: commonName=nwl-b4-dtn02.rc.fas.harvard.edu/organizationName=Unspecified/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-10-04T01:25:30&#xa;Not valid after:  2025-10-04T01:25:30&#xa;MD5:   8a70 b99c deb9 153d dee7 e891 60eb 3324&#xa;SHA-1: c832 6edb dc15 b34c a291 68c4 3ed6 e2fa 006a ee59"><table key="subject">
+<elem key="countryName">US</elem>
+<elem key="organizationName">Unspecified</elem>
+<elem key="commonName">nwl-b4-dtn02.rc.fas.harvard.edu</elem>
+<elem key="emailAddress">root@nwl-b4-dtn02.rc.fas.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="organizationalUnitName">ca-62264048176403666</elem>
+<elem key="emailAddress">root@nwl-b4-dtn02.rc.fas.harvard.edu</elem>
+<elem key="organizationName">Unspecified</elem>
+<elem key="commonName">nwl-b4-dtn02.rc.fas.harvard.edu</elem>
+<elem key="countryName">US</elem>
+</table>
+<table key="pubkey">
+<elem key="exponent">BIGNUM: 0x56447e72fb28</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">BIGNUM: 0x56447e72fba8</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">CA:FALSE</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+</table>
+<table>
+<elem key="value">DNS:nwl-b4-dtn02.rc.fas.harvard.edu</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+<table>
+<elem key="value">D1:C5:64:E6:40:FA:F5:E6:1A:15:A7:34:8D:85:95:D6:9F:18:13:8F</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-10-04T01:25:30</elem>
+<elem key="notAfter">2025-10-04T01:25:30</elem>
+</table>
+<elem key="md5">8a70b99cdeb9153ddee7e89160eb3324</elem>
+<elem key="sha1">c8326edbdc15b34ca29168c43ed6e2fa006aee59</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFJjCCAw6gAwIBAgIIKEdqpYALCIEwDQYJKoZIhvcNAQELBQAwgaExCzAJBgNV&#xa;BAYTAlVTMRQwEgYDVQQKDAtVbnNwZWNpZmllZDEdMBsGA1UECwwUY2EtNjIyNjQw&#xa;NDgxNzY0MDM2NjYxKDAmBgNVBAMMH253bC1iNC1kdG4wMi5yYy5mYXMuaGFydmFy&#xa;ZC5lZHUxMzAxBgkqhkiG9w0BCQEWJHJvb3RAbndsLWI0LWR0bjAyLnJjLmZhcy5o&#xa;YXJ2YXJkLmVkdTAeFw0yNDEwMDQwMTI1MzBaFw0yNTEwMDQwMTI1MzBaMIGCMQsw&#xa;CQYDVQQGEwJVUzEUMBIGA1UECgwLVW5zcGVjaWZpZWQxKDAmBgNVBAMMH253bC1i&#xa;NC1kdG4wMi5yYy5mYXMuaGFydmFyZC5lZHUxMzAxBgkqhkiG9w0BCQEWJHJvb3RA&#xa;bndsLWI0LWR0bjAyLnJjLmZhcy5oYXJ2YXJkLmVkdTCCASIwDQYJKoZIhvcNAQEB&#xa;BQADggEPADCCAQoCggEBAKt4unH3K/SSyhwWn00SzLZKtecjUQEB5MabkY/ZjAlr&#xa;fxNOtqj63gx1Z3+PkfgrdeV3lb7Gh/3GgwdxWtfrzSgG1XAsoNGcJqGczHlYIZ/q&#xa;qcDiYV1adHMJfoZcpbaDd0uGNCN1apv6wB2X0SE6IgnrWo0pzt78OU5lU3JDe69C&#xa;sgphg7/sWKxQDX8JNNZ/FZGdfCWScWBJC0jQKBv5XGgFNUvZFC+G38rwBHOEYi0s&#xa;3I6Cusqa4zKh5x2wzeLqVib4QJMWrc1vjgISIrvv10/wRBK5gdkjS0cpJyn1bz7i&#xa;miBuDFv4Np5xl3roOd3bckBto0xGO9Vtj0UJYctF7XcCAwEAAaN/MH0wDgYDVR0P&#xa;AQH/BAQDAgWgMBMGA1UdJQQMMAoGCCsGAQUFBwMBMAkGA1UdEwQCMAAwKgYDVR0R&#xa;BCMwIYIfbndsLWI0LWR0bjAyLnJjLmZhcy5oYXJ2YXJkLmVkdTAfBgNVHSMEGDAW&#xa;gBTRxWTmQPr15hoVpzSNhZXWnxgTjzANBgkqhkiG9w0BAQsFAAOCAgEANUo9Bd3T&#xa;hWH0SpJT0MQ0TyVqPDHtoIzQDVVjZFU53/r5O/o9XF5aaAj/3oxHL8Bbgj50THSL&#xa;jE5+aLG9rnqWxxywrE6Mu4XWwByGbJa/rahvpMuE8ZUvGAS9L8DseMzY6WsNOAhM&#xa;Z5BPX5hOaaQyYjBK693zJi3JMsKu6ZRA0KsIO2x4w0ShCQt02MDvkbWAEso2h9FB&#xa;I/+mYrpF4fs1egQH5/ee2ZFHAe6tC1iwclLJFKuGEi8MONyWI1oQjrOU29Qah9R/&#xa;yBYkc9FApNaS1P5xlKRAnlvcSyYSVc/rzdsiLg262Wnt427Xkw6BkLqiKRIGHtR7&#xa;ssEWPV74R6uGsMAFwTWHaEEWXV99XTIUbfPfXSjl1QMbthg2nWZH8X4J7Xo3f7IE&#xa;FyaluORrgHLtCXDCEx1oLuhP95ipvHVa+SbKzdRuL32lJI9P6ZznB6QDafjiLQKa&#xa;1QAdMxooF9qWjGD8LvfTl4jbwPa/0KnmmBiJeZEDBzufkFS6f78e/kLGRzBALOlN&#xa;LpucKYTOLy+g9F3633rHP0odtDfrGUxLBU/DN595s0dmrgc06XXK5hYKLDXI+o13&#xa;6YMvWI1iQ/5u2T3MZlidB9AVuqKBPMhHzV2fGUu+J+DjenrWCndCHRUIBNcGcSdN&#xa;A5L6K4Xh7nNQGBhUiyhkwzmOL5kMDvQsDxA=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+<port protocol="tcp" portid="50000"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ibm-db2" method="table" conf="3"/></port>
+<port protocol="tcp" portid="50001"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="50002"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="iiimsf" method="table" conf="3"/></port>
+<port protocol="tcp" portid="50003"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="50006"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="50300"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="50389"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="50500"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="50636"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="50800"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+</ports>
+<times srtt="27187" rttvar="3370" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730999645"/>
+<taskend task="NSE" time="1730999645"/>
+<taskbegin task="NSE" time="1730999645"/>
+<taskend task="NSE" time="1730999645"/>
+<taskbegin task="NSE" time="1730999645"/>
+<taskend task="NSE" time="1730999645"/>
+<runstats><finished time="1730999645" timestr="Thu Nov  7 17:14:05 2024" elapsed="18.57" summary="Nmap done at Thu Nov  7 17:14:05 2024; 1 IP address (1 host up) scanned in 18.57 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
