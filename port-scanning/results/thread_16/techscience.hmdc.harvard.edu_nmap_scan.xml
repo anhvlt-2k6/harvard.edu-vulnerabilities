@@ -17,3 +17,131 @@
 <taskbegin task="Connect Scan" time="1730996444"/>
 <taskend task="Connect Scan" time="1730996449" extrainfo="1000 total ports"/>
 <taskbegin task="Service scan" time="1730996449"/>
+<taskend task="Service scan" time="1730996461" extrainfo="3 services on 1 host"/>
+<taskbegin task="NSE" time="1730996461"/>
+<taskend task="NSE" time="1730996461"/>
+<taskbegin task="NSE" time="1730996461"/>
+<taskend task="NSE" time="1730996461"/>
+<taskbegin task="NSE" time="1730996461"/>
+<taskend task="NSE" time="1730996461"/>
+<host starttime="1730996444" endtime="1730996461"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="3.88.240.218" addrtype="ipv4"/>
+<hostnames>
+<hostname name="techscience.hmdc.harvard.edu" type="user"/>
+<hostname name="ec2-3-88-240-218.compute-1.amazonaws.com" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="997">
+<extrareasons reason="no-responses" count="997"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="7.6p1 Ubuntu 4ubuntu0.5" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.6p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 99:60:43:bc:d6:7e:34:78:55:73:fb:fc:b1:fc:ca:a1 (RSA)&#xa;  256 62:73:e9:01:76:76:72:74:e7:1f:12:83:34:86:53:42 (ECDSA)&#xa;  256 3f:9b:f9:30:8e:70:a2:9f:66:64:0d:04:e0:b1:03:38 (ED25519)"><table>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDVUu8LYS/OTQLVQAqf6Pu0obgHzHV/pOUy3TLjFXcyhQkqrtJbu5d/wfrb1hG4MTzKKvXYwafYk05f5ZrdnEhHBJbSW5IAyQR0nfOvK3JfuwSrU/LfL+1qzAYuzH7Eihb5aD/Yz56yXj03XXSzCMX5GU2LmCwLJRS5brk8nu9HqghK8oCrEj8oVnluqB9SginkVUWcYNWVijZaKv71+eGrm77XDcG+JcanJQLCKNir+IPMsCNDfOxb1TwrQdZYe2r3OApoecUN6fFHYCIU/6PbZhhZ+MAQ8c/zL2A+foTznVJknZ/BSdvWCYMpTSgvPrsjlqecqPEamBBkjVUPhAKh</elem>
+<elem key="bits">2048</elem>
+<elem key="fingerprint">996043bcd67e34785573fbfcb1fccaa1</elem>
+<elem key="type">ssh-rsa</elem>
+</table>
+<table>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBMnPQ7iVZymH6sHR/W8JnMYzBD5m3ezuuABv9XfvfylbIAneNAHl+7r2LI0ADy/+ccyB7DSW0/Q+Liuz62omj2M=</elem>
+<elem key="bits">256</elem>
+<elem key="fingerprint">6273e90176767274e71f128334865342</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+</table>
+<table>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIPA6wHmUAwXiPj2mYLwRZJKJBqo/1fIp3cVnCj86y94h</elem>
+<elem key="bits">256</elem>
+<elem key="fingerprint">3f9bf9308e70a29f66640d04e0b10338</elem>
+<elem key="type">ssh-ed25519</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" version="1.14.0" extrainfo="Ubuntu" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.14.0</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="nginx/1.14.0 (Ubuntu)"><elem>nginx/1.14.0 (Ubuntu)</elem>
+</script><script id="http-title" output="Did not follow redirect to https://techscience.hmdc.harvard.edu/"><elem key="redirect_url">https://techscience.hmdc.harvard.edu/</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" version="1.14.0" extrainfo="Ubuntu" ostype="Linux" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.14.0</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: HEAD OPTIONS GET"><table key="Supported Methods">
+<elem>HEAD</elem>
+<elem>OPTIONS</elem>
+<elem>GET</elem>
+</table>
+</script><script id="http-server-header" output="nginx/1.14.0 (Ubuntu)"><elem>nginx/1.14.0 (Ubuntu)</elem>
+</script><script id="http-title" output="Home | Technology Science"><elem key="title">Home | Technology Science</elem>
+</script><script id="ssl-cert" output="Subject: commonName=techscience.org&#xa;Subject Alternative Name: DNS:techscience.org&#xa;Issuer: commonName=R10/organizationName=Let&apos;s Encrypt/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-10-28T09:55:13&#xa;Not valid after:  2025-01-26T09:55:12&#xa;MD5:   8d01 e729 c3c5 72d4 2c60 e551 2a3c 2338&#xa;SHA-1: ce9f e9a1 381d 6405 e590 a094 e771 ef28 5fdb 6498"><table key="subject">
+<elem key="commonName">techscience.org</elem>
+</table>
+<table key="issuer">
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+<elem key="commonName">R10</elem>
+<elem key="countryName">US</elem>
+</table>
+<table key="pubkey">
+<elem key="modulus">BIGNUM: 0x557ce8fcc5f8</elem>
+<elem key="bits">2048</elem>
+<elem key="exponent">BIGNUM: 0x557cea848698</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="critical">true</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="critical">true</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">CA:20:76:4D:62:D4:13:8E:BF:0B:F5:7A:CB:46:59:5C:B0:96:9C:8B</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">BB:BC:C3:47:A5:E4:BC:A9:C6:C3:A4:72:0C:10:8D:A2:35:E1:C8:E8</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://r10.o.lencr.org&#xa;CA Issuers - URI:http://r10.i.lencr.org/</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:techscience.org</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : CF:11:56:EE:D5:2E:7C:AF:F3:87:5B:D9:69:2E:9B:E9:&#xa;                1A:71:67:4A:B0:17:EC:AC:01:D2:5B:77:CE:CC:3B:08&#xa;    Timestamp : Oct 28 10:53:43.918 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:DD:CD:C2:60:94:0A:63:F3:A3:EE:63:&#xa;                17:8E:47:85:A2:69:90:40:CF:EC:B6:58:33:26:68:96:&#xa;                D6:AC:3B:4E:0E:02:20:56:79:8D:2E:48:58:93:D7:85:&#xa;                F1:08:1D:DB:AC:DF:3C:B5:2F:3E:25:E3:6D:94:36:3D:&#xa;                C3:9A:EA:34:33:F2:7F&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 13:4A:DF:1A:B5:98:42:09:78:0C:6F:EF:4C:7A:91:A4:&#xa;                16:B7:23:49:CE:58:57:6A:DF:AE:DA:A7:C2:AB:E0:22&#xa;    Timestamp : Oct 28 10:53:44.068 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:78:6E:A6:67:D1:24:D0:03:70:B6:2A:46:&#xa;                FE:73:65:AD:9E:F2:66:56:F2:F7:52:FB:08:FF:C4:E4:&#xa;                9B:96:4E:4F:02:20:72:94:86:AD:45:B8:05:EC:24:A7:&#xa;                68:C7:1B:BA:AF:CE:A3:8A:2F:09:10:5F:BF:B8:8D:79:&#xa;                E9:2E:CE:64:D5:0B</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-10-28T09:55:13</elem>
+<elem key="notAfter">2025-01-26T09:55:12</elem>
+</table>
+<elem key="md5">8d01e729c3c572d42c60e5512a3c2338</elem>
+<elem key="sha1">ce9fe9a1381d6405e590a094e771ef285fdb6498</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIE7TCCA9WgAwIBAgISBNrxSkMnTkPTJuNs/+h8LCzzMA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNSMTAwHhcNMjQxMDI4MDk1NTEzWhcNMjUwMTI2MDk1NTEyWjAaMRgwFgYDVQQD&#xa;Ew90ZWNoc2NpZW5jZS5vcmcwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIB&#xa;AQDIalRk8IG9XZ8FnC81S4zjJP/QwUolN1U8OpAG6iq96GRPqm1FdywPLOUgtEf2&#xa;kEabcafqbFSMWKTnsXF0K8EMEfe0ZPvfa1RCdukEG/n+DWLbJDTIpSyBHXjc5rty&#xa;TmjH8bFjNLxtedLemXNfjVb81F9Tnq9x3ppaS2UNEW8JdK1VyH87hhOlzj3sH/VB&#xa;OwEZ8s9hSpclqG6JJKHF547zPyy3SQMx5/GVsGLf7PDHGXCgwOlL2FyxVR2HC1Oq&#xa;ayHGsTXPzgrwZMDnmPw2ATBNsz0SFk0ff1w4p8jOzHIw78KXXRseoUxZmB73yPjO&#xa;qsG87rnnYf3SCUDjSIOTJTB9AgMBAAGjggISMIICDjAOBgNVHQ8BAf8EBAMCBaAw&#xa;HQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQCMAAwHQYD&#xa;VR0OBBYEFMogdk1i1BOOvwv1estGWVywlpyLMB8GA1UdIwQYMBaAFLu8w0el5Lyp&#xa;xsOkcgwQjaI14cjoMFcGCCsGAQUFBwEBBEswSTAiBggrBgEFBQcwAYYWaHR0cDov&#xa;L3IxMC5vLmxlbmNyLm9yZzAjBggrBgEFBQcwAoYXaHR0cDovL3IxMC5pLmxlbmNy&#xa;Lm9yZy8wGgYDVR0RBBMwEYIPdGVjaHNjaWVuY2Uub3JnMBMGA1UdIAQMMAowCAYG&#xa;Z4EMAQIBMIIBAwYKKwYBBAHWeQIEAgSB9ASB8QDvAHYAzxFW7tUufK/zh1vZaS6b&#xa;6RpxZ0qwF+ysAdJbd87MOwgAAAGS0sKibgAABAMARzBFAiEA3c3CYJQKY/Oj7mMX&#xa;jkeFommQQM/stlgzJmiW1qw7Tg4CIFZ5jS5IWJPXhfEIHdus3zy1Lz4l422UNj3D&#xa;muo0M/J/AHUAE0rfGrWYQgl4DG/vTHqRpBa3I0nOWFdq367ap8Kr4CIAAAGS0sKj&#xa;BAAABAMARjBEAiB4bqZn0STQA3C2Kkb+c2WtnvJmVvL3UvsI/8Tkm5ZOTwIgcpSG&#xa;rUW4Bewkp2jHG7qvzqOKLwkQX7+4jXnpLs5k1QswDQYJKoZIhvcNAQELBQADggEB&#xa;ABs293iMu1iOvj5saW1Ph+VDOiiIsBlj5rsjr/wY1xLB/mxmtaR7OgbJJRIk0zUx&#xa;RUfG9PE+BXatyagJTR6FC7CaAXlAIB1guKem3GvjjOPRl+2sr/3+yxqhLuF6dFwK&#xa;PvReqqIMVscwO3wi0T8cqGA4wcy8Te3+uNaprkK4kxkmekPVB2btIANATIJHQ5v6&#xa;X2MM+PVULGf9gg+c+iqMzodO68W2N7jkNjd29OuBfKo8WrVA7TiwyDqen6F6Yowz&#xa;VcIs6phtQUOqbjeilnRNvReScHcEFZ1zT7BLPz8tuMuoa6r+/uBjFJvChAVJHTVf&#xa;EYIfKScCkbffeNsP/PhJFFQ=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="tls-alpn" output="&#xa;  http/1.1"><elem>http/1.1</elem>
+</script><script id="tls-nextprotoneg" output="&#xa;  http/1.1"><elem>http/1.1</elem>
+</script></port>
+</ports>
+<times srtt="12941" rttvar="10817" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730996461"/>
+<taskend task="NSE" time="1730996461"/>
+<taskbegin task="NSE" time="1730996461"/>
+<taskend task="NSE" time="1730996461"/>
+<taskbegin task="NSE" time="1730996461"/>
+<taskend task="NSE" time="1730996461"/>
+<runstats><finished time="1730996461" timestr="Thu Nov  7 16:21:01 2024" elapsed="18.07" summary="Nmap done at Thu Nov  7 16:21:01 2024; 1 IP address (1 host up) scanned in 18.07 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
