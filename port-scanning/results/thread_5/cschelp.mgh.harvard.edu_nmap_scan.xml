@@ -17,3 +17,114 @@
 <taskbegin task="Connect Scan" time="1730992693"/>
 <taskend task="Connect Scan" time="1730992698" extrainfo="1000 total ports"/>
 <taskbegin task="Service scan" time="1730992698"/>
+<taskend task="Service scan" time="1730992710" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1730992710"/>
+<taskend task="NSE" time="1730992712"/>
+<taskbegin task="NSE" time="1730992712"/>
+<taskend task="NSE" time="1730992712"/>
+<taskbegin task="NSE" time="1730992712"/>
+<taskend task="NSE" time="1730992712"/>
+<host starttime="1730992693" endtime="1730992712"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="132.183.161.35" addrtype="ipv4"/>
+<hostnames>
+<hostname name="cschelp.mgh.harvard.edu" type="user"/>
+<hostname name="fortytwo.mgh.harvard.edu" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="996">
+<extrareasons reason="no-responses" count="996"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.58" extrainfo="(FreeBSD) OpenSSL/1.1.1t-freebsd mod_perl/2.0.12 Perl/v5.34.3" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.58</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-robots.txt" output="1 disallowed entry &#xa;/"/><script id="http-server-header" output="Apache/2.4.58 (FreeBSD) OpenSSL/1.1.1t-freebsd mod_perl/2.0.12 Perl/v5.34.3"><elem>Apache/2.4.58 (FreeBSD) OpenSSL/1.1.1t-freebsd mod_perl/2.0.12 Perl/v5.34.3</elem>
+</script><script id="http-title" output="Did not follow redirect to https://cschelp.mgh.harvard.edu/"><elem key="redirect_url">https://cschelp.mgh.harvard.edu/</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssl" product="Apache httpd" extrainfo="SSL-only mode" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:apache:http_server</cpe></service><script id="http-favicon" output="Unknown favicon MD5: 45764B180DB37340269176E919C64075"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-robots.txt" output="1 disallowed entry &#xa;/"/><script id="http-server-header" output="Apache/2.4.58 (FreeBSD) OpenSSL/1.1.1t-freebsd mod_perl/2.0.12 Perl/v5.34.3"><elem>Apache/2.4.58 (FreeBSD) OpenSSL/1.1.1t-freebsd mod_perl/2.0.12 Perl/v5.34.3</elem>
+</script><script id="http-title" output="Login"><elem key="title">Login</elem>
+</script><script id="http-trane-info" output="Problem with XML parsing of /evox/about"/><script id="ssl-cert" output="Subject: commonName=cschelp.mgh.harvard.edu&#xa;Subject Alternative Name: DNS:cschelp.mgh.harvard.edu&#xa;Issuer: commonName=R10/organizationName=Let&apos;s Encrypt/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-10-26T08:34:15&#xa;Not valid after:  2025-01-24T08:34:14&#xa;MD5:   55e9 1745 18b5 0b64 d7aa cb9d 426d 942a&#xa;SHA-1: 8333 2050 e79a 2e59 10d0 5fd1 e46d ad82 59f6 a0cf"><table key="subject">
+<elem key="commonName">cschelp.mgh.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">US</elem>
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+<elem key="commonName">R10</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="modulus">BIGNUM: 0x55b70690bbc8</elem>
+<elem key="exponent">BIGNUM: 0x55b70690bb48</elem>
+<elem key="bits">2048</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">F8:56:D4:CA:BA:9C:25:F0:F8:F8:30:9F:27:78:C8:E8:08:71:40:F4</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">BB:BC:C3:47:A5:E4:BC:A9:C6:C3:A4:72:0C:10:8D:A2:35:E1:C8:E8</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://r10.o.lencr.org&#xa;CA Issuers - URI:http://r10.i.lencr.org/</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:cschelp.mgh.harvard.edu</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 7D:59:1E:12:E1:78:2A:7B:1C:61:67:7C:5E:FD:F8:D0:&#xa;                87:5C:14:A0:4E:95:9E:B9:03:2F:D9:0E:8C:2E:79:B8&#xa;    Timestamp : Oct 26 09:32:45.622 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:F2:42:68:45:C5:DD:51:5E:C5:7D:13:&#xa;                3E:CC:D3:A6:B6:3B:EC:C5:A2:23:D4:FB:0B:19:F7:D7:&#xa;                5E:44:AA:09:38:02:21:00:F1:CB:A9:43:40:21:74:DE:&#xa;                1B:83:47:B6:C9:5A:0A:C5:76:DA:45:86:5B:CC:74:1C:&#xa;                5F:99:28:68:56:D2:06:E6&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 13:4A:DF:1A:B5:98:42:09:78:0C:6F:EF:4C:7A:91:A4:&#xa;                16:B7:23:49:CE:58:57:6A:DF:AE:DA:A7:C2:AB:E0:22&#xa;    Timestamp : Oct 26 09:32:45.811 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:B5:A1:C4:25:94:80:E4:57:0A:A8:42:&#xa;                B1:84:FB:DD:EC:F5:34:EF:D1:F0:BF:72:2E:93:18:58:&#xa;                75:58:3D:CF:BA:02:20:2E:53:9A:07:E4:B0:5C:BD:AC:&#xa;                41:85:EA:20:CA:0C:9B:CA:B3:1C:A2:2C:44:20:34:DF:&#xa;                45:70:FF:E6:CF:81:F9</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-10-26T08:34:15</elem>
+<elem key="notAfter">2025-01-24T08:34:14</elem>
+</table>
+<elem key="md5">55e9174518b50b64d7aacb9d426d942a</elem>
+<elem key="sha1">83332050e79a2e5910d05fd1e46dad8259f6a0cf</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIE/zCCA+egAwIBAgISBA0CXAhTBoLQwP9tRj7/D3TpMA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNSMTAwHhcNMjQxMDI2MDgzNDE1WhcNMjUwMTI0MDgzNDE0WjAiMSAwHgYDVQQD&#xa;Exdjc2NoZWxwLm1naC5oYXJ2YXJkLmVkdTCCASIwDQYJKoZIhvcNAQEBBQADggEP&#xa;ADCCAQoCggEBAMiozos15z/vDunaYmoYhF1tqVJuaWVgzp8QU5DIGLSygzLMPS8q&#xa;5YmjrnKHCz7/gwCTjcH/Np2GImzYBMCNgq+Hf4pyZQbkISzw1KQgjON70eJeUq69&#xa;QgPiZCz+Yce4dCoTUmClB762Uv/SFGgBABtJblYhufvQvSqgmy2dchpE86qDPpQQ&#xa;wl0OnpIMNR874XxbtTxCwTTrkxGPnFZvMB4K3gpyxJgqZvEWo0fCZp1Bi76qHmwY&#xa;GxxDTG1A8nabnq0WFsT55pPVQbARqzb+er97YDU6vg7+fLJjFjSGkRuSFjKS+TgH&#xa;29dQINtfIBh/ZWcPUOACoGBzfyHWzC3TDwcCAwEAAaOCAhwwggIYMA4GA1UdDwEB&#xa;/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/&#xa;BAIwADAdBgNVHQ4EFgQU+FbUyrqcJfD4+DCfJ3jI6AhxQPQwHwYDVR0jBBgwFoAU&#xa;u7zDR6XkvKnGw6RyDBCNojXhyOgwVwYIKwYBBQUHAQEESzBJMCIGCCsGAQUFBzAB&#xa;hhZodHRwOi8vcjEwLm8ubGVuY3Iub3JnMCMGCCsGAQUFBzAChhdodHRwOi8vcjEw&#xa;LmkubGVuY3Iub3JnLzAiBgNVHREEGzAZghdjc2NoZWxwLm1naC5oYXJ2YXJkLmVk&#xa;dTATBgNVHSAEDDAKMAgGBmeBDAECATCCAQUGCisGAQQB1nkCBAIEgfYEgfMA8QB3&#xa;AH1ZHhLheCp7HGFnfF79+NCHXBSgTpWeuQMv2Q6MLnm4AAABksgryLYAAAQDAEgw&#xa;RgIhAPJCaEXF3VFexX0TPszTprY77MWiI9T7Cxn3115Eqgk4AiEA8cupQ0AhdN4b&#xa;g0e2yVoKxXbaRYZbzHQcX5koaFbSBuYAdgATSt8atZhCCXgMb+9MepGkFrcjSc5Y&#xa;V2rfrtqnwqvgIgAAAZLIK8lzAAAEAwBHMEUCIQC1ocQllIDkVwqoQrGE+93s9TTv&#xa;0fC/ci6TGFh1WD3PugIgLlOaB+SwXL2sQYXqIMoMm8qzHKIsRCA030Vw/+bPgfkw&#xa;DQYJKoZIhvcNAQELBQADggEBAE0Ha+SMNSxPJ/wbkaowvPHh5GniXOCTfanX3Hbp&#xa;054AGX0C8on6egyguNC8OweRSJZAzYGKtbvuWjnsgWxl2BI5BAAemSpTrifmZdcG&#xa;NeTBOD7XCKd1gXvjx2lDXXO9a/V/Q/6ppQkZ8h36cb8HZtlBVOwW6mkbV6NoaZyr&#xa;vwoxxPX/Cv+Em8DSYRbnGw8joLOPwlNlcOPNXdNiDxFnMeBYaVsPsxpid2n/S2/k&#xa;ghF4j7SnkRQhdsLvyx3MT1MbvxNUBO1b1l4xoMStr6itTFMj38b6HxAPs7xM/syT&#xa;yVg23hOJzP5oPAJbn/+CVcfRs0jQYJx4bxqzKJDLbk6GWCE=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="tls-alpn" output="&#xa;  http/1.1"><elem>http/1.1</elem>
+</script></port>
+<port protocol="tcp" portid="993"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="imaps" method="table" conf="3"/></port>
+<port protocol="tcp" portid="995"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="pop3s" method="table" conf="3"/></port>
+</ports>
+<times srtt="28054" rttvar="7293" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730992712"/>
+<taskend task="NSE" time="1730992712"/>
+<taskbegin task="NSE" time="1730992712"/>
+<taskend task="NSE" time="1730992712"/>
+<taskbegin task="NSE" time="1730992712"/>
+<taskend task="NSE" time="1730992712"/>
+<runstats><finished time="1730992712" timestr="Thu Nov  7 15:18:32 2024" elapsed="20.04" summary="Nmap done at Thu Nov  7 15:18:32 2024; 1 IP address (1 host up) scanned in 20.04 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
