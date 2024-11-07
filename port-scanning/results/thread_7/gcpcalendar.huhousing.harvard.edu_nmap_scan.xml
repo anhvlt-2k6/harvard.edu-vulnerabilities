@@ -21,3 +21,120 @@
 <taskbegin task="NSE" time="1730993914"/>
 <taskend task="NSE" time="1730993934"/>
 <taskbegin task="NSE" time="1730993934"/>
+<taskend task="NSE" time="1730994121"/>
+<taskbegin task="NSE" time="1730994121"/>
+<taskend task="NSE" time="1730994121"/>
+<host starttime="1730993898" endtime="1730994121"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="185.132.6.32" addrtype="ipv4"/>
+<hostnames>
+<hostname name="gcpcalendar.huhousing.harvard.edu" type="user"/>
+<hostname name="185.132.6.32.static.a2webhosting.com" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="917">
+<extrareasons reason="no-responses" count="917"/>
+</extraports>
+<extraports state="closed" count="72">
+<extrareasons reason="conn-refused" count="72"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ftp" product="Pure-FTPd" method="probed" conf="10"><cpe>cpe:/a:pureftpd:pure-ftpd</cpe></service></port>
+<port protocol="tcp" portid="25"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtp" product="Exim smtpd" version="4.96.2" hostname="mi3-ss48.a2hosting.com" method="probed" conf="10"><cpe>cpe:/a:exim:exim:4.96.2</cpe></service><script id="smtp-commands" output="mi3-ss48.a2hosting.com Hello gcpcalendar.huhousing.harvard.edu [172.183.132.17], SIZE 78643200, 8BITMIME, PIPELINING, PIPECONNECT, AUTH PLAIN LOGIN, STARTTLS, HELP, &#xa; Commands supported: AUTH STARTTLS HELO EHLO MAIL RCPT DATA BDAT NOOP QUIT RSET HELP "/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" method="probed" conf="10"><cpe>cpe:/a:apache:http_server</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="imunify360-webshield/1.21"><elem>imunify360-webshield/1.21</elem>
+</script><script id="http-title" output="Did not follow redirect to https://gcpcalendar.huhousing.harvard.edu/403.shtml"><elem key="redirect_url">https://gcpcalendar.huhousing.harvard.edu/403.shtml</elem>
+</script><script id="http-trane-info" output="Problem with XML parsing of /evox/about"/><script id="https-redirect" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="tcp" portid="110"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="pop3" product="Dovecot pop3d" method="probed" conf="10"><cpe>cpe:/a:dovecot:dovecot</cpe></service><script id="pop3-capabilities" output="RESP-CODES CAPA UIDL SASL(PLAIN LOGIN) PIPELINING USER TOP AUTH-RESP-CODE STLS"/></port>
+<port protocol="tcp" portid="143"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="imap" product="Dovecot imapd" method="probed" conf="10"><cpe>cpe:/a:dovecot:dovecot</cpe></service><script id="imap-capabilities" output="have OK ENABLE NAMESPACE IDLE AUTH=PLAIN Pre-login capabilities SASL-IR IMAP4rev1 LITERAL+ AUTH=LOGINA0001 LOGIN-REFERRALS ID STARTTLS more listed post-login"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssl" product="Apache httpd" extrainfo="SSL-only mode" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:apache:http_server</cpe></service><script id="http-favicon" output="Unknown favicon MD5: C0525402CDE13FD205B884B5F4B7E31A"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="imunify360-webshield/1.21"><elem>imunify360-webshield/1.21</elem>
+</script><script id="http-title" output="403 Forbidden"><elem key="title">403 Forbidden</elem>
+</script><script id="http-trane-info" output="Problem with XML parsing of /evox/about"/><script id="ssl-cert" output="Subject: commonName=www.harvardgcpcalendar.a2hosted.com&#xa;Subject Alternative Name: DNS:cpanel.harvardgcpcalendar.a2hosted.com, DNS:cpcalendars.harvardgcpcalendar.a2hosted.com, DNS:cpcontacts.harvardgcpcalendar.a2hosted.com, DNS:gcpcalendar.huhousing.harvard.edu, DNS:harvardgcpcalendar.a2hosted.com, DNS:mail.harvardgcpcalendar.a2hosted.com, DNS:webdisk.harvardgcpcalendar.a2hosted.com, DNS:webmail.harvardgcpcalendar.a2hosted.com, DNS:www.harvardgcpcalendar.a2hosted.com&#xa;Issuer: commonName=R10/organizationName=Let&apos;s Encrypt/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-10-13T04:06:40&#xa;Not valid after:  2025-01-11T04:06:39&#xa;MD5:   cf34 5926 bd5e 2af8 c66b dbaa a439 312a&#xa;SHA-1: ef3c 5eb4 31aa 7814 086d 2f1d 0dd3 9ff2 fc96 8f3e"><table key="subject">
+<elem key="commonName">www.harvardgcpcalendar.a2hosted.com</elem>
+</table>
+<table key="issuer">
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+<elem key="commonName">R10</elem>
+<elem key="countryName">US</elem>
+</table>
+<table key="pubkey">
+<elem key="exponent">BIGNUM: 0x55b740df6e38</elem>
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">BIGNUM: 0x55b740ca8df8</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">3D:01:D8:6D:28:77:DB:3E:AC:24:47:D1:D5:F9:5E:74:53:C8:19:CF</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">BB:BC:C3:47:A5:E4:BC:A9:C6:C3:A4:72:0C:10:8D:A2:35:E1:C8:E8</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://r10.o.lencr.org&#xa;CA Issuers - URI:http://r10.i.lencr.org/</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:cpanel.harvardgcpcalendar.a2hosted.com, DNS:cpcalendars.harvardgcpcalendar.a2hosted.com, DNS:cpcontacts.harvardgcpcalendar.a2hosted.com, DNS:gcpcalendar.huhousing.harvard.edu, DNS:harvardgcpcalendar.a2hosted.com, DNS:mail.harvardgcpcalendar.a2hosted.com, DNS:webdisk.harvardgcpcalendar.a2hosted.com, DNS:webmail.harvardgcpcalendar.a2hosted.com, DNS:www.harvardgcpcalendar.a2hosted.com</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : CF:11:56:EE:D5:2E:7C:AF:F3:87:5B:D9:69:2E:9B:E9:&#xa;                1A:71:67:4A:B0:17:EC:AC:01:D2:5B:77:CE:CC:3B:08&#xa;    Timestamp : Oct 13 05:05:10.917 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:B2:22:77:CC:E1:A1:F1:FF:2A:93:D8:&#xa;                F4:A3:FD:3B:D4:93:F5:BE:E1:A8:61:DB:A8:B3:B7:D7:&#xa;                31:75:20:FA:15:02:21:00:94:63:E8:6C:E9:B5:DC:29:&#xa;                B6:8C:2E:D9:8D:E7:08:6C:44:DA:F9:0F:FE:95:B4:CC:&#xa;                D9:50:A3:3A:A2:6B:B2:5D&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : E0:92:B3:FC:0C:1D:C8:E7:68:36:1F:DE:61:B9:96:4D:&#xa;                0A:52:78:19:8A:72:D6:72:C4:B0:4D:A5:6D:6F:54:04&#xa;    Timestamp : Oct 13 05:05:10.840 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:2D:86:D6:AF:E9:B6:3D:30:EB:4D:FC:31:&#xa;                4A:55:CE:A7:84:AB:AA:D0:74:C5:3C:3D:60:57:DB:D1:&#xa;                A4:5E:C0:3C:02:21:00:A6:60:8E:F4:BA:82:3A:21:5B:&#xa;                F5:1A:B6:49:6F:56:0D:F6:DB:BC:8E:72:E6:4E:F9:D2:&#xa;                22:8E:85:AE:4B:39:A9</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-10-13T04:06:40</elem>
+<elem key="notAfter">2025-01-11T04:06:39</elem>
+</table>
+<elem key="md5">cf345926bd5e2af8c66bdbaaa439312a</elem>
+<elem key="sha1">ef3c5eb431aa7814086d2f1d0dd39ff2fc968f3e</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIGWjCCBUKgAwIBAgISBJc4kPXsVUAuq3Wk5pclkQUkMA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNSMTAwHhcNMjQxMDEzMDQwNjQwWhcNMjUwMTExMDQwNjM5WjAuMSwwKgYDVQQD&#xa;EyN3d3cuaGFydmFyZGdjcGNhbGVuZGFyLmEyaG9zdGVkLmNvbTCCASIwDQYJKoZI&#xa;hvcNAQEBBQADggEPADCCAQoCggEBANO/qLkxrHDBYFVnrdPe12kcd9NVW9FJ79k/&#xa;RUqdC/sEUttpndCq/Yd+Pa/4uLstyp4Negk5hAZyd/YAphBbXtVwbqWBvwNELFaw&#xa;YRNyAurWWZHT/xLoDn1y515aYXQw2+LZ9Ei17BYAbEfkmNoIJkUiHALYqdo4VkKR&#xa;/Q381oJUMZUvrRaT8rLvPpjRRVQYmtJCpsPuFXk898tI5wLwA/BgX3PkLrENyfeY&#xa;R0nFkQtvE9VPXdf+gQsmrh7kXTay3QlwLd6Sl1JTYLypeVLyUpBsJqPg+P1OcsMf&#xa;OmZRAIuXkaU+8FXSlHCmzcPygL5iHLOCJHy/OrPDlExdJ03Yi5MCAwEAAaOCA2sw&#xa;ggNnMA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUH&#xa;AwIwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQUPQHYbSh32z6sJEfR1fledFPIGc8w&#xa;HwYDVR0jBBgwFoAUu7zDR6XkvKnGw6RyDBCNojXhyOgwVwYIKwYBBQUHAQEESzBJ&#xa;MCIGCCsGAQUFBzABhhZodHRwOi8vcjEwLm8ubGVuY3Iub3JnMCMGCCsGAQUFBzAC&#xa;hhdodHRwOi8vcjEwLmkubGVuY3Iub3JnLzCCAW8GA1UdEQSCAWYwggFigiZjcGFu&#xa;ZWwuaGFydmFyZGdjcGNhbGVuZGFyLmEyaG9zdGVkLmNvbYIrY3BjYWxlbmRhcnMu&#xa;aGFydmFyZGdjcGNhbGVuZGFyLmEyaG9zdGVkLmNvbYIqY3Bjb250YWN0cy5oYXJ2&#xa;YXJkZ2NwY2FsZW5kYXIuYTJob3N0ZWQuY29tgiFnY3BjYWxlbmRhci5odWhvdXNp&#xa;bmcuaGFydmFyZC5lZHWCH2hhcnZhcmRnY3BjYWxlbmRhci5hMmhvc3RlZC5jb22C&#xa;JG1haWwuaGFydmFyZGdjcGNhbGVuZGFyLmEyaG9zdGVkLmNvbYInd2ViZGlzay5o&#xa;YXJ2YXJkZ2NwY2FsZW5kYXIuYTJob3N0ZWQuY29tgid3ZWJtYWlsLmhhcnZhcmRn&#xa;Y3BjYWxlbmRhci5hMmhvc3RlZC5jb22CI3d3dy5oYXJ2YXJkZ2NwY2FsZW5kYXIu&#xa;YTJob3N0ZWQuY29tMBMGA1UdIAQMMAowCAYGZ4EMAQIBMIIBBQYKKwYBBAHWeQIE&#xa;AgSB9gSB8wDxAHcAzxFW7tUufK/zh1vZaS6b6RpxZ0qwF+ysAdJbd87MOwgAAAGS&#xa;hEQjBQAABAMASDBGAiEAsiJ3zOGh8f8qk9j0o/071JP1vuGoYduos7fXMXUg+hUC&#xa;IQCUY+hs6bXcKbaMLtmN5whsRNr5D/6VtMzZUKM6omuyXQB2AOCSs/wMHcjnaDYf&#xa;3mG5lk0KUngZinLWcsSwTaVtb1QEAAABkoREIrgAAAQDAEcwRQIgLYbWr+m2PTDr&#xa;TfwxSlXOp4SrqtB0xTw9YFfb0aRewDwCIQCmYI70uoI6IVv1GrZJb1YN9tu8jnLm&#xa;TvnSIo6Frks5qTANBgkqhkiG9w0BAQsFAAOCAQEAwW/3SlTfiYNw8FRH+x9gvZOo&#xa;ILGoUh7rHXNSYC5UB1MRdCDMpBidlIlH7hbAWnd06ZLLWzeuUHwib1d33zaG4Ye5&#xa;6yiWqou97PZG7+9tNTPJNfPe/tBZo6KSD3cJS27EgV/stTSMEuNCPYGpVbOH9Z63&#xa;ez9OTNyKOj6CTmNiVLcCxH633bALBK4KvVmrZ7mITYNVZWhRe0ekR6Pxtmi2QPGm&#xa;2N6Awx3QIG9bGpsgfG5LJwwIxIo+Q55AcDDtq09hQ9J6yJqA5XrmlsA8ofHz9jf4&#xa;idDQjwFS3RycNGQ3QWbmoWonuxbNIxOnL87IBHffOUpuJ7QtigFDd38ONafOwA==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="tls-alpn" output="&#xa;  h2&#xa;  http/1.1"><elem>h2</elem>
+<elem>http/1.1</elem>
+</script></port>
+<port protocol="tcp" portid="465"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtp" product="Exim smtpd" version="4.96.2" hostname="mi3-ss48.a2hosting.com" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:exim:exim:4.96.2</cpe></service><script id="smtp-commands" output="mi3-ss48.a2hosting.com Hello gcpcalendar.huhousing.harvard.edu [172.183.132.17], SIZE 78643200, 8BITMIME, PIPELINING, PIPECONNECT, AUTH PLAIN LOGIN, HELP, &#xa; Commands supported: AUTH HELO EHLO MAIL RCPT DATA BDAT NOOP QUIT RSET HELP "/></port>
+<port protocol="tcp" portid="587"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtp" product="Exim smtpd" version="4.96.2" hostname="mi3-ss48.a2hosting.com" method="probed" conf="10"><cpe>cpe:/a:exim:exim:4.96.2</cpe></service><script id="smtp-commands" output="mi3-ss48.a2hosting.com Hello gcpcalendar.huhousing.harvard.edu [172.183.132.17], SIZE 78643200, 8BITMIME, PIPELINING, PIPECONNECT, AUTH PLAIN LOGIN, STARTTLS, HELP, "/><script id="smtp-ntlm-info" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="tcp" portid="993"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="imap" product="Dovecot imapd" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:dovecot:dovecot</cpe></service><script id="imap-capabilities" output="have OK ENABLE NAMESPACE IDLE listed Pre-login capabilities SASL-IR IMAP4rev1 LITERAL+ AUTH=LOGINA0001 LOGIN-REFERRALS ID more AUTH=PLAIN post-login"/></port>
+<port protocol="tcp" portid="995"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="pop3" product="Dovecot pop3d" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:dovecot:dovecot</cpe></service></port>
+<port protocol="tcp" portid="2525"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtp" product="Exim smtpd" version="4.96.2" hostname="mi3-ss48.a2hosting.com" method="probed" conf="10"><cpe>cpe:/a:exim:exim:4.96.2</cpe></service><script id="smtp-commands" output="SMTP EHLO gcpcalendar.huhousing.harvard.edu: failed to receive data: connection timeout"/></port>
+</ports>
+<times srtt="8737" rttvar="150" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730994121"/>
+<taskend task="NSE" time="1730994121"/>
+<taskbegin task="NSE" time="1730994121"/>
+<taskend task="NSE" time="1730994121"/>
+<taskbegin task="NSE" time="1730994121"/>
+<taskend task="NSE" time="1730994121"/>
+<runstats><finished time="1730994121" timestr="Thu Nov  7 15:42:01 2024" elapsed="223.36" summary="Nmap done at Thu Nov  7 15:42:01 2024; 1 IP address (1 host up) scanned in 223.36 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
