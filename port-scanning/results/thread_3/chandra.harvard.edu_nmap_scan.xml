@@ -17,3 +17,124 @@
 <taskbegin task="Connect Scan" time="1730953704"/>
 <taskend task="Connect Scan" time="1730953711" extrainfo="1000 total ports"/>
 <taskbegin task="Service scan" time="1730953711"/>
+<taskend task="Service scan" time="1730953739" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1730953739"/>
+<taskend task="NSE" time="1730953762"/>
+<taskbegin task="NSE" time="1730953762"/>
+<taskend task="NSE" time="1730953763"/>
+<taskbegin task="NSE" time="1730953763"/>
+<taskend task="NSE" time="1730953763"/>
+<host starttime="1730953704" endtime="1730953763"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="131.142.198.52" addrtype="ipv4"/>
+<hostnames>
+<hostname name="chandra.harvard.edu" type="user"/>
+<hostname name="chandra.cfa.harvard.edu" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="997">
+<extrareasons reason="no-responses" count="997"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" servicefp="SF-Port80-TCP:V=7.80%I=7%D=11/7%Time=672C41F5%P=x86_64-pc-linux-gnu%r(GetRequest,77,&quot;HTTP/1\.1\x20307\x20Temporary\x20Redirect\r\ncontent-length:\x200\r\nlocation:\x20https:///\r\ncache-control:\x20no-cache\r\nconnection:\x20close\r\n\r\n&quot;)%r(HTTPOptions,77,&quot;HTTP/1\.1\x20307\x20Temporary\x20Redirect\r\ncontent-length:\x200\r\nlocation:\x20https:///\r\ncache-control:\x20no-cache\r\nconnection:\x20close\r\n\r\n&quot;)%r(RTSPRequest,CF,&quot;HTTP/1\.1\x20400\x20Bad\x20request\r\nContent-length:\x2090\r\nCache-Control:\x20no-cache\r\nConnection:\x20close\r\nContent-Type:\x20text/html\r\n\r\n&lt;html&gt;&lt;body&gt;&lt;h1&gt;400\x20Bad\x20request&lt;/h1&gt;\nYour\x20browser\x20sent\x20an\x20invalid\x20request\.\n&lt;/body&gt;&lt;/html&gt;\n&quot;)%r(X11Probe,CF,&quot;HTTP/1\.1\x20400\x20Bad\x20request\r\nContent-length:\x2090\r\nCache-Control:\x20no-cache\r\nConnection:\x20close\r\nContent-Type:\x20text/html\r\n\r\n&lt;html&gt;&lt;body&gt;&lt;h1&gt;400\x20Bad\x20request&lt;/h1&gt;\nYour\x20browser\x20sent\x20an\x20invalid\x20request\.\n&lt;/body&gt;&lt;/html&gt;\n&quot;)%r(FourOhFourRequest,9A,&quot;HTTP/1\.1\x20307\x20Temporary\x20Redirect\r\ncontent-length:\x200\r\nlocation:\x20https:///nice%20ports%2C/Tri%6Eity\.txt%2ebak\r\ncache-control:\x20no-cache\r\nconnection:\x20close\r\n\r\n&quot;)%r(RPCCheck,CF,&quot;HTTP/1\.1\x20400\x20Bad\x20request\r\nContent-length:\x2090\r\nCache-Control:\x20no-cache\r\nConnection:\x20close\r\nContent-Type:\x20text/html\r\n\r\n&lt;html&gt;&lt;body&gt;&lt;h1&gt;400\x20Bad\x20request&lt;/h1&gt;\nYour\x20browser\x20sent\x20an\x20invalid\x20request\.\n&lt;/body&gt;&lt;/html&gt;\n&quot;)%r(DNSVersionBindReqTCP,CF,&quot;HTTP/1\.1\x20400\x20Bad\x20request\r\nContent-length:\x2090\r\nCache-Control:\x20no-cache\r\nConnection:\x20close\r\nContent-Type:\x20text/html\r\n\r\n&lt;html&gt;&lt;body&gt;&lt;h1&gt;400\x20Bad\x20request&lt;/h1&gt;\nYour\x20browser\x20sent\x20an\x20invalid\x20request\.\n&lt;/body&gt;&lt;/html&gt;\n&quot;)%r(DNSStatusRequestTCP,CF,&quot;HTTP/1\.1\x20400\x20Bad\x20request\r\nContent-length:\x2090\r\nCache-Control:\x20no-cache\r\nConnection:\x20close\r\nContent-Type:\x20text/html\r\n\r\n&lt;html&gt;&lt;body&gt;&lt;h1&gt;400\x20Bad\x20request&lt;/h1&gt;\nYour\x20browser\x20sent\x20an\x20invalid\x20request\.\n&lt;/body&gt;&lt;/html&gt;\n&quot;)%r(Help,CF,&quot;HTTP/1\.1\x20400\x20Bad\x20request\r\nContent-length:\x2090\r\nCache-Control:\x20no-cache\r\nConnection:\x20close\r\nContent-Type:\x20text/html\r\n\r\n&lt;html&gt;&lt;body&gt;&lt;h1&gt;400\x20Bad\x20request&lt;/h1&gt;\nYour\x20browser\x20sent\x20an\x20invalid\x20request\.\n&lt;/body&gt;&lt;/html&gt;\n&quot;);" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  DNSStatusRequestTCP, DNSVersionBindReqTCP, Help, RPCCheck, RTSPRequest, X11Probe: &#xa;    HTTP/1.1 400 Bad request&#xa;    Content-length: 90&#xa;    Cache-Control: no-cache&#xa;    Connection: close&#xa;    Content-Type: text/html&#xa;    &lt;html&gt;&lt;body&gt;&lt;h1&gt;400 Bad request&lt;/h1&gt;&#xa;    Your browser sent an invalid request.&#xa;    &lt;/body&gt;&lt;/html&gt;&#xa;  FourOhFourRequest: &#xa;    HTTP/1.1 307 Temporary Redirect&#xa;    content-length: 0&#xa;    location: https:///nice%20ports%2C/Tri%6Eity.txt%2ebak&#xa;    cache-control: no-cache&#xa;    connection: close&#xa;  GetRequest, HTTPOptions: &#xa;    HTTP/1.1 307 Temporary Redirect&#xa;    content-length: 0&#xa;    location: https:///&#xa;    cache-control: no-cache&#xa;    connection: close"><elem key="DNSStatusRequestTCP, DNSVersionBindReqTCP, Help, RPCCheck, RTSPRequest, X11Probe">&#xa;    HTTP/1.1 400 Bad request&#xa;    Content-length: 90&#xa;    Cache-Control: no-cache&#xa;    Connection: close&#xa;    Content-Type: text/html&#xa;    &lt;html&gt;&lt;body&gt;&lt;h1&gt;400 Bad request&lt;/h1&gt;&#xa;    Your browser sent an invalid request.&#xa;    &lt;/body&gt;&lt;/html&gt;</elem>
+<elem key="FourOhFourRequest">&#xa;    HTTP/1.1 307 Temporary Redirect&#xa;    content-length: 0&#xa;    location: https:///nice%20ports%2C/Tri%6Eity.txt%2ebak&#xa;    cache-control: no-cache&#xa;    connection: close</elem>
+<elem key="GetRequest, HTTPOptions">&#xa;    HTTP/1.1 307 Temporary Redirect&#xa;    content-length: 0&#xa;    location: https:///&#xa;    cache-control: no-cache&#xa;    connection: close</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Did not follow redirect to https://chandra.harvard.edu/"><elem key="redirect_url">https://chandra.harvard.edu/</elem>
+</script><script id="https-redirect" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="tcp" portid="113"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ident" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" product="Apache" servicefp="SF-Port443-TCP:V=7.80%T=SSL%I=7%D=11/7%Time=672C41FC%P=x86_64-pc-linux-gnu%r(GetRequest,2CAC,&quot;HTTP/1\.1\x20200\x20OK\r\ndate:\x20Thu,\x2007\x20Nov\x202024\x2004:28:44\x20GMT\r\nserver:\x20Apache\r\ncontent-type:\x20text/html;\x20charset=UTF-8\r\nset-cookie:\x20SERVERID=cxcweb48;\x20path=/\r\nconnection:\x20close\r\n\r\n&lt;!DOCTYPE\x20html&gt;\n&lt;head&gt;\n&lt;meta\x20http-equiv=\&quot;Content-Type\&quot;\x20content=\&quot;text/html;\x20charset=iso-8859-1\&quot;\x20/&gt;\n&lt;title&gt;Chandra\x20X-ray\x20Observatory\x20-\x20NASA&apos;s\x20flagship\x20X-ray\x20telescope&lt;/title&gt;\n&lt;meta\x20http-equiv=\&quot;keywords\&quot;\x20content=\&quot;chandra,\x20chandra\x20x-ray\x20observatory,\x20chandra\x20x-ray\x20center,\x20chandra\x20x-ray,\x20cxo,\x20chandra\x20images,\x20x-ray\x20images,\x20chandra\x20pictures,\x20x-ray\x20astronomy\x20pictures,\x20chandra\x20photos,\x20x-ray\x20astronomy\x20photos,\x20x-ray\x20astronomy\x20news,\x20chandra\x20press,\x20chandra\x20news,\x20chandra\x20science,\x20chandra\x20resources,\x20formerly\x20axaf,\x20cxc,\x20telescope,\x20observatory,\x20x-ray,\x20astronomy,\x20astrophysics,\x20axaf\&quot;\x20/&gt;\n&lt;meta\x20http-equiv=\&quot;description\&quot;\x20content=\&quot;NASA&apos;s\x20sophisticated\x20telescope\x20is\x20specially\x20designed\x20to\x20detect\x20X-ray\x20emission\x20from\x20very\x20hot\x20regions\x20of\x20the\x20Universe\.&quot;)%r(HTTPOptions,2CAC,&quot;HTTP/1\.1\x20200\x20OK\r\ndate:\x20Thu,\x2007\x20Nov\x202024\x2004:28:44\x20GMT\r\nserver:\x20Apache\r\ncontent-type:\x20text/html;\x20charset=UTF-8\r\nset-cookie:\x20SERVERID=cxcweb48;\x20path=/\r\nconnection:\x20close\r\n\r\n&lt;!DOCTYPE\x20html&gt;\n&lt;head&gt;\n&lt;meta\x20http-equiv=\&quot;Content-Type\&quot;\x20content=\&quot;text/html;\x20charset=iso-8859-1\&quot;\x20/&gt;\n&lt;title&gt;Chandra\x20X-ray\x20Observatory\x20-\x20NASA&apos;s\x20flagship\x20X-ray\x20telescope&lt;/title&gt;\n&lt;meta\x20http-equiv=\&quot;keywords\&quot;\x20content=\&quot;chandra,\x20chandra\x20x-ray\x20observatory,\x20chandra\x20x-ray\x20center,\x20chandra\x20x-ray,\x20cxo,\x20chandra\x20images,\x20x-ray\x20images,\x20chandra\x20pictures,\x20x-ray\x20astronomy\x20pictures,\x20chandra\x20photos,\x20x-ray\x20astronomy\x20photos,\x20x-ray\x20astronomy\x20news,\x20chandra\x20press,\x20chandra\x20news,\x20chandra\x20science,\x20chandra\x20resources,\x20formerly\x20axaf,\x20cxc,\x20telescope,\x20observatory,\x20x-ray,\x20astronomy,\x20astrophysics,\x20axaf\&quot;\x20/&gt;\n&lt;meta\x20http-equiv=\&quot;description\&quot;\x20content=\&quot;NASA&apos;s\x20sophisticated\x20telescope\x20is\x20specially\x20designed\x20to\x20detect\x20X-ray\x20emission\x20from\x20very\x20hot\x20regions\x20of\x20the\x20Universe\.&quot;);" tunnel="ssl" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  GetRequest, HTTPOptions: &#xa;    HTTP/1.1 200 OK&#xa;    date: Thu, 07 Nov 2024 04:28:44 GMT&#xa;    server: Apache&#xa;    content-type: text/html; charset=UTF-8&#xa;    set-cookie: SERVERID=cxcweb48; path=/&#xa;    connection: close&#xa;    &lt;!DOCTYPE html&gt;&#xa;    &lt;head&gt;&#xa;    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=iso-8859-1&quot; /&gt;&#xa;    &lt;title&gt;Chandra X-ray Observatory - NASA&apos;s flagship X-ray telescope&lt;/title&gt;&#xa;    &lt;meta http-equiv=&quot;keywords&quot; content=&quot;chandra, chandra x-ray observatory, chandra x-ray center, chandra x-ray, cxo, chandra images, x-ray images, chandra pictures, x-ray astronomy pictures, chandra photos, x-ray astronomy photos, x-ray astronomy news, chandra press, chandra news, chandra science, chandra resources, formerly axaf, cxc, telescope, observatory, x-ray, astronomy, astrophysics, axaf&quot; /&gt;&#xa;    &lt;meta http-equiv=&quot;description&quot; content=&quot;NASA&apos;s sophisticated telescope is specially designed to detect X-ray emission from very hot regions of the Universe."><elem key="GetRequest, HTTPOptions">&#xa;    HTTP/1.1 200 OK&#xa;    date: Thu, 07 Nov 2024 04:28:44 GMT&#xa;    server: Apache&#xa;    content-type: text/html; charset=UTF-8&#xa;    set-cookie: SERVERID=cxcweb48; path=/&#xa;    connection: close&#xa;    &lt;!DOCTYPE html&gt;&#xa;    &lt;head&gt;&#xa;    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=iso-8859-1&quot; /&gt;&#xa;    &lt;title&gt;Chandra X-ray Observatory - NASA&apos;s flagship X-ray telescope&lt;/title&gt;&#xa;    &lt;meta http-equiv=&quot;keywords&quot; content=&quot;chandra, chandra x-ray observatory, chandra x-ray center, chandra x-ray, cxo, chandra images, x-ray images, chandra pictures, x-ray astronomy pictures, chandra photos, x-ray astronomy photos, x-ray astronomy news, chandra press, chandra news, chandra science, chandra resources, formerly axaf, cxc, telescope, observatory, x-ray, astronomy, astrophysics, axaf&quot; /&gt;&#xa;    &lt;meta http-equiv=&quot;description&quot; content=&quot;NASA&apos;s sophisticated telescope is specially designed to detect X-ray emission from very hot regions of the Universe.</elem>
+</script><script id="http-favicon" output="Unknown favicon MD5: 605B2D73C918A232BEF90B9C3ACD1346"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="Apache"><elem>Apache</elem>
+</script><script id="http-title" output="Chandra X-ray Observatory - NASA&apos;s flagship X-ray telescope"><elem key="title">Chandra X-ray Observatory - NASA&apos;s flagship X-ray telescope</elem>
+</script><script id="ssl-cert" output="Subject: commonName=chandra.harvard.edu/organizationName=President and Fellows of Harvard College/stateOrProvinceName=Massachusetts/countryName=US&#xa;Subject Alternative Name: DNS:chandra.harvard.edu, DNS:chandra.cfa.harvard.edu, DNS:www.chandra.cfa.harvard.edu, DNS:www.chandra.harvard.edu, DNS:xrtpub.cfa.harvard.edu, DNS:xrtpub.harvard.edu&#xa;Issuer: commonName=InCommon RSA Server CA 2/organizationName=Internet2/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha384WithRSAEncryption&#xa;Not valid before: 2024-04-12T00:00:00&#xa;Not valid after:  2025-04-12T23:59:59&#xa;MD5:   f772 5b50 8aca e58f e9bb df0e 8c43 40ce&#xa;SHA-1: eeb7 b847 b9d3 61a5 754d 0acb 285c 60c8 3ae1 886c"><table key="subject">
+<elem key="countryName">US</elem>
+<elem key="commonName">chandra.harvard.edu</elem>
+<elem key="stateOrProvinceName">Massachusetts</elem>
+<elem key="organizationName">President and Fellows of Harvard College</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">US</elem>
+<elem key="commonName">InCommon RSA Server CA 2</elem>
+<elem key="organizationName">Internet2</elem>
+</table>
+<table key="pubkey">
+<elem key="exponent">BIGNUM: 0x55e8b813b1e8</elem>
+<elem key="modulus">BIGNUM: 0x55e8b749ef58</elem>
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">EF:4C:00:92:A6:FB:76:2E:5E:95:E2:C9:5F:87:1B:19:D5:4D:E2:D9</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">93:BB:01:22:D6:BA:AD:93:33:34:DC:A3:BF:EF:3E:A1:F1:CE:33:D5</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="value">CA:FALSE</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">Policy: 1.3.6.1.4.1.6449.1.2.2.103&#xa;  CPS: https://sectigo.com/CPS&#xa;Policy: 2.23.140.1.2.2</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Full Name:&#xa;  URI:http://crl.sectigo.com/InCommonRSAServerCA2.crl</elem>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+</table>
+<table>
+<elem key="value">CA Issuers - URI:http://crt.sectigo.com/InCommonRSAServerCA2.crt&#xa;OCSP - URI:http://ocsp.sectigo.com</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : CF:11:56:EE:D5:2E:7C:AF:F3:87:5B:D9:69:2E:9B:E9:&#xa;                1A:71:67:4A:B0:17:EC:AC:01:D2:5B:77:CE:CC:3B:08&#xa;    Timestamp : Apr 12 00:19:21.177 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:E1:87:0C:07:72:A0:D1:81:7A:97:71:&#xa;                99:E5:72:44:3A:FF:9D:61:F1:D2:54:45:2F:37:C2:4D:&#xa;                61:F6:82:05:3B:02:20:53:AF:2F:46:68:DB:2A:55:7C:&#xa;                20:0F:04:3B:93:5A:99:9E:7C:78:56:48:32:B6:B9:1E:&#xa;                8C:46:2D:AC:99:A9:84&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : A2:E3:0A:E4:45:EF:BD:AD:9B:7E:38:ED:47:67:77:53:&#xa;                D7:82:5B:84:94:D7:2B:5E:1B:2C:C4:B9:50:A4:47:E7&#xa;    Timestamp : Apr 12 00:19:21.149 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:94:CA:32:1C:ED:C2:D2:A6:33:F4:18:&#xa;                47:1A:4B:72:AC:A3:17:53:A4:DE:E3:01:E0:6A:20:CA:&#xa;                8C:2F:D0:30:66:02:20:12:35:25:D3:4F:B8:B2:1C:E0:&#xa;                65:7E:55:FD:26:B2:92:66:D5:95:D6:5B:3F:58:34:47:&#xa;                B6:E0:E1:E1:BC:28:E9&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 4E:75:A3:27:5C:9A:10:C3:38:5B:6C:D4:DF:3F:52:EB:&#xa;                1D:F0:E0:8E:1B:8D:69:C0:B1:FA:64:B1:62:9A:39:DF&#xa;    Timestamp : Apr 12 00:19:21.146 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:36:F1:C1:01:58:1F:14:D4:CE:D1:0F:ED:&#xa;                12:2A:D2:1C:F7:0E:42:C1:62:8D:3F:5B:36:90:9A:36:&#xa;                93:C1:2B:06:02:21:00:D8:81:A6:70:F1:55:C8:69:A9:&#xa;                17:37:18:63:1E:C4:22:09:DA:AB:3E:A2:3F:B3:F4:96:&#xa;                74:4E:87:86:EA:66:D2</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+<table>
+<elem key="value">DNS:chandra.harvard.edu, DNS:chandra.cfa.harvard.edu, DNS:www.chandra.cfa.harvard.edu, DNS:www.chandra.harvard.edu, DNS:xrtpub.cfa.harvard.edu, DNS:xrtpub.harvard.edu</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+</table>
+<elem key="sig_algo">sha384WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notAfter">2025-04-12T23:59:59</elem>
+<elem key="notBefore">2024-04-12T00:00:00</elem>
+</table>
+<elem key="md5">f7725b508acae58fe9bbdf0e8c4340ce</elem>
+<elem key="sha1">eeb7b847b9d361a5754d0acb285c60c83ae1886c</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIHZzCCBc+gAwIBAgIRAOBFAvIN/7Mv5DYTXJGD5/EwDQYJKoZIhvcNAQEMBQAw&#xa;RDELMAkGA1UEBhMCVVMxEjAQBgNVBAoTCUludGVybmV0MjEhMB8GA1UEAxMYSW5D&#xa;b21tb24gUlNBIFNlcnZlciBDQSAyMB4XDTI0MDQxMjAwMDAwMFoXDTI1MDQxMjIz&#xa;NTk1OVowdjELMAkGA1UEBhMCVVMxFjAUBgNVBAgTDU1hc3NhY2h1c2V0dHMxMTAv&#xa;BgNVBAoTKFByZXNpZGVudCBhbmQgRmVsbG93cyBvZiBIYXJ2YXJkIENvbGxlZ2Ux&#xa;HDAaBgNVBAMTE2NoYW5kcmEuaGFydmFyZC5lZHUwggEiMA0GCSqGSIb3DQEBAQUA&#xa;A4IBDwAwggEKAoIBAQCk4K2p35nNEmFPfS7WiA2vJ0PxWhzjV3rcdjGTMgz8e0FC&#xa;5PFgHU9ModYm76npgzH4x6fda2ecKETR4HP/bHAS7dIapmvUPkyETXpSPHE+tjzC&#xa;+3PgVeWFMlQyEfIRwf7uMyEzBspMswTwpLLEnK64acftCXoSlEw7KgPHi/+hM4y+&#xa;QG1D8MmFn0WZ4cn8gz9Sr/4nElGB61nlD6OAPkqA0+/qt7jJM3sc3IlRk5rXGzwo&#xa;apox4F96WQRMoRXcj3SRjG6kZtFuW12vaKh10rJ8JW0NMydQrFU1XMVNyBBmnla4&#xa;o9gBlu/DRFFZDnIeBUu1ZIcmeyO2p3u5TBaK8putAgMBAAGjggOgMIIDnDAfBgNV&#xa;HSMEGDAWgBTvTACSpvt2Ll6V4slfhxsZ1U3i2TAdBgNVHQ4EFgQUk7sBIta6rZMz&#xa;NNyjv+8+ofHOM9UwDgYDVR0PAQH/BAQDAgWgMAwGA1UdEwEB/wQCMAAwHQYDVR0l&#xa;BBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMEkGA1UdIARCMEAwNAYLKwYBBAGyMQEC&#xa;AmcwJTAjBggrBgEFBQcCARYXaHR0cHM6Ly9zZWN0aWdvLmNvbS9DUFMwCAYGZ4EM&#xa;AQICMEAGA1UdHwQ5MDcwNaAzoDGGL2h0dHA6Ly9jcmwuc2VjdGlnby5jb20vSW5D&#xa;b21tb25SU0FTZXJ2ZXJDQTIuY3JsMHAGCCsGAQUFBwEBBGQwYjA7BggrBgEFBQcw&#xa;AoYvaHR0cDovL2NydC5zZWN0aWdvLmNvbS9JbkNvbW1vblJTQVNlcnZlckNBMi5j&#xa;cnQwIwYIKwYBBQUHMAGGF2h0dHA6Ly9vY3NwLnNlY3RpZ28uY29tMIIBfgYKKwYB&#xa;BAHWeQIEAgSCAW4EggFqAWgAdgDPEVbu1S58r/OHW9lpLpvpGnFnSrAX7KwB0lt3&#xa;zsw7CAAAAY7PrFPZAAAEAwBHMEUCIQDhhwwHcqDRgXqXcZnlckQ6/51h8dJURS83&#xa;wk1h9oIFOwIgU68vRmjbKlV8IA8EO5NamZ58eFZIMra5HoxGLayZqYQAdgCi4wrk&#xa;Re+9rZt+OO1HZ3dT14JbhJTXK14bLMS5UKRH5wAAAY7PrFO9AAAEAwBHMEUCIQCU&#xa;yjIc7cLSpjP0GEcaS3KsoxdTpN7jAeBqIMqML9AwZgIgEjUl00+4shzgZX5V/Say&#xa;kmbVldZbP1g0R7bg4eG8KOkAdgBOdaMnXJoQwzhbbNTfP1LrHfDgjhuNacCx+mSx&#xa;Ypo53wAAAY7PrFO6AAAEAwBHMEUCIDbxwQFYHxTUztEP7RIq0hz3DkLBYo0/WzaQ&#xa;mjaTwSsGAiEA2IGmcPFVyGmpFzcYYx7EIgnaqz6iP7P0lnROh4bqZtIwgZsGA1Ud&#xa;EQSBkzCBkIITY2hhbmRyYS5oYXJ2YXJkLmVkdYIXY2hhbmRyYS5jZmEuaGFydmFy&#xa;ZC5lZHWCG3d3dy5jaGFuZHJhLmNmYS5oYXJ2YXJkLmVkdYIXd3d3LmNoYW5kcmEu&#xa;aGFydmFyZC5lZHWCFnhydHB1Yi5jZmEuaGFydmFyZC5lZHWCEnhydHB1Yi5oYXJ2&#xa;YXJkLmVkdTANBgkqhkiG9w0BAQwFAAOCAYEAZf+CRf1i5/oq+HH1XIaUKhq/t9Hc&#xa;dvEbdmV8KA8zrr4TvI/dELOaLn2OzvweE8+0gh95wkRFxfbB3vTlCbCzYMh+/hnH&#xa;KacBdXT/FAv90YWzG7T/vxopyDFvNHNJoUTfHu3mG+axV0VoA65mvOUtyLJMTM6X&#xa;8NKbaEqld8M0i65UDI5jJDcg1eaTQ3FI2QbW1ly2eSI5G/Id6KpbHVmDtysKB3oT&#xa;eUdz71Yz+9jp+HRj4muFIU7lwna4MTjkxkUpb0Xoig3yI32EGoUk+jRiBPaAhcMh&#xa;+OVf8c8h0B3FDE5n6FoP9GGD9vdEaxqnf7u230H4MOR1swdwDE4RxazmQ8VVc00x&#xa;49G07vs7Gso4/vHpyn8o6sABip0E5XCONvv1PGrmym2yyXy4abpyuYV+WC/8fsCb&#xa;bcuTChAAeSYj/4p35XTAaPlmYHBycDPLXWe+fhdEaFdW1DIxwevD1Mwk0uNx7C51&#xa;DTAz69Jx470Iu26VLiy87XXWAQ7t9DYeIq9t&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="tls-alpn" output="&#xa;  h2&#xa;  http/1.1"><elem>h2</elem>
+<elem>http/1.1</elem>
+</script></port>
+</ports>
+<times srtt="74382" rttvar="18398" to="147974"/>
+</host>
+<taskbegin task="NSE" time="1730953763"/>
+<taskend task="NSE" time="1730953763"/>
+<taskbegin task="NSE" time="1730953763"/>
+<taskend task="NSE" time="1730953763"/>
+<taskbegin task="NSE" time="1730953763"/>
+<taskend task="NSE" time="1730953763"/>
+<runstats><finished time="1730953763" timestr="Thu Nov  7 04:29:23 2024" elapsed="59.21" summary="Nmap done at Thu Nov  7 04:29:23 2024; 1 IP address (1 host up) scanned in 59.21 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
