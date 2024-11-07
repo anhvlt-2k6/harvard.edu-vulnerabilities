@@ -19,3 +19,132 @@
 <taskbegin task="Service scan" time="1730991557"/>
 <taskend task="Service scan" time="1730991574" extrainfo="2 services on 1 host"/>
 <taskbegin task="NSE" time="1730991574"/>
+<taskend task="NSE" time="1730991577"/>
+<taskbegin task="NSE" time="1730991577"/>
+<taskend task="NSE" time="1730991577"/>
+<taskbegin task="NSE" time="1730991577"/>
+<taskend task="NSE" time="1730991577"/>
+<host starttime="1730991552" endtime="1730991577"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="54.152.236.36" addrtype="ipv4"/>
+<hostnames>
+<hostname name="waltharius.fas.harvard.edu" type="user"/>
+<hostname name="ec2-54-152-236-36.compute-1.amazonaws.com" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="991">
+<extrareasons reason="no-responses" count="991"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="awselb/2.0" servicefp="SF-Port80-TCP:V=7.80%I=7%D=11/7%Time=672CD5CB%P=x86_64-pc-linux-gnu%r(GetRequest,AD,&quot;HTTP/1\.1\x20200\x20OK\r\nServer:\x20awselb/2\.0\r\nDate:\x20Thu,\x2007\x20Nov\x202024\x2014:59:23\x20GMT\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nContent-Length:\x2017\r\nConnection:\x20close\r\n\r\nService\x20not\x20found&quot;)%r(HTTPOptions,AD,&quot;HTTP/1\.1\x20200\x20OK\r\nServer:\x20awselb/2\.0\r\nDate:\x20Thu,\x2007\x20Nov\x202024\x2014:59:23\x20GMT\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nContent-Length:\x2017\r\nConnection:\x20close\r\n\r\nService\x20not\x20found&quot;)%r(RTSPRequest,7A,&quot;&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(X11Probe,110,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nServer:\x20awselb/2\.0\r\nDate:\x20Thu,\x2007\x20Nov\x202024\x2014:59:23\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20122\r\nConnection:\x20close\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(FourOhFourRequest,AD,&quot;HTTP/1\.1\x20200\x20OK\r\nServer:\x20awselb/2\.0\r\nDate:\x20Thu,\x2007\x20Nov\x202024\x2014:59:23\x20GMT\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nContent-Length:\x2017\r\nConnection:\x20close\r\n\r\nService\x20not\x20found&quot;)%r(RPCCheck,110,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nServer:\x20awselb/2\.0\r\nDate:\x20Thu,\x2007\x20Nov\x202024\x2014:59:28\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20122\r\nConnection:\x20close\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;)%r(DNSVersionBindReqTCP,110,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nServer:\x20awselb/2\.0\r\nDate:\x20Thu,\x2007\x20Nov\x202024\x2014:59:28\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20122\r\nConnection:\x20close\r\n\r\n&lt;html&gt;\r\n&lt;head&gt;&lt;title&gt;400\x20Bad\x20Request&lt;/title&gt;&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;center&gt;&lt;h1&gt;400\x20Bad\x20Request&lt;/h1&gt;&lt;/center&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;\r\n&quot;);" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  DNSVersionBindReqTCP, RPCCheck: &#xa;    HTTP/1.1 400 Bad Request&#xa;    Server: awselb/2.0&#xa;    Date: Thu, 07 Nov 2024 14:59:28 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 122&#xa;    Connection: close&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;&#xa;  FourOhFourRequest, GetRequest, HTTPOptions: &#xa;    HTTP/1.1 200 OK&#xa;    Server: awselb/2.0&#xa;    Date: Thu, 07 Nov 2024 14:59:23 GMT&#xa;    Content-Type: text/plain; charset=utf-8&#xa;    Content-Length: 17&#xa;    Connection: close&#xa;    Service not found&#xa;  RTSPRequest: &#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;&#xa;  X11Probe: &#xa;    HTTP/1.1 400 Bad Request&#xa;    Server: awselb/2.0&#xa;    Date: Thu, 07 Nov 2024 14:59:23 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 122&#xa;    Connection: close&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;"><elem key="DNSVersionBindReqTCP, RPCCheck">&#xa;    HTTP/1.1 400 Bad Request&#xa;    Server: awselb/2.0&#xa;    Date: Thu, 07 Nov 2024 14:59:28 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 122&#xa;    Connection: close&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;</elem>
+<elem key="FourOhFourRequest, GetRequest, HTTPOptions">&#xa;    HTTP/1.1 200 OK&#xa;    Server: awselb/2.0&#xa;    Date: Thu, 07 Nov 2024 14:59:23 GMT&#xa;    Content-Type: text/plain; charset=utf-8&#xa;    Content-Length: 17&#xa;    Connection: close&#xa;    Service not found</elem>
+<elem key="RTSPRequest">&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;</elem>
+<elem key="X11Probe">&#xa;    HTTP/1.1 400 Bad Request&#xa;    Server: awselb/2.0&#xa;    Date: Thu, 07 Nov 2024 14:59:23 GMT&#xa;    Content-Type: text/html&#xa;    Content-Length: 122&#xa;    Connection: close&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&lt;title&gt;400 Bad Request&lt;/title&gt;&lt;/head&gt;&#xa;    &lt;body&gt;&#xa;    &lt;center&gt;&lt;h1&gt;400 Bad Request&lt;/h1&gt;&lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="&#xa;  Apache/2.4.51 (Debian)&#xa;  awselb/2.0"><elem>Apache/2.4.51 (Debian)</elem>
+<elem>awselb/2.0</elem>
+</script><script id="http-title" output="Did not follow redirect to https://waltharius.fas.harvard.edu/Table_of_Contents"><elem key="redirect_url">https://waltharius.fas.harvard.edu/Table_of_Contents</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" product="awselb/2.0" servicefp="SF-Port443-TCP:V=7.80%T=SSL%I=7%D=11/7%Time=672CD5D1%P=x86_64-pc-linux-gnu%r(GetRequest,AD,&quot;HTTP/1\.1\x20200\x20OK\r\nServer:\x20awselb/2\.0\r\nDate:\x20Thu,\x2007\x20Nov\x202024\x2014:59:29\x20GMT\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nContent-Length:\x2017\r\nConnection:\x20close\r\n\r\nService\x20not\x20found&quot;)%r(HTTPOptions,AD,&quot;HTTP/1\.1\x20200\x20OK\r\nServer:\x20awselb/2\.0\r\nDate:\x20Thu,\x2007\x20Nov\x202024\x2014:59:29\x20GMT\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nContent-Length:\x2017\r\nConnection:\x20close\r\n\r\nService\x20not\x20found&quot;)%r(FourOhFourRequest,AD,&quot;HTTP/1\.1\x20200\x20OK\r\nServer:\x20awselb/2\.0\r\nDate:\x20Thu,\x2007\x20Nov\x202024\x2014:59:29\x20GMT\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nContent-Length:\x2017\r\nConnection:\x20close\r\n\r\nService\x20not\x20found&quot;);" tunnel="ssl" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  FourOhFourRequest, GetRequest, HTTPOptions: &#xa;    HTTP/1.1 200 OK&#xa;    Server: awselb/2.0&#xa;    Date: Thu, 07 Nov 2024 14:59:29 GMT&#xa;    Content-Type: text/plain; charset=utf-8&#xa;    Content-Length: 17&#xa;    Connection: close&#xa;    Service not found"><elem key="FourOhFourRequest, GetRequest, HTTPOptions">&#xa;    HTTP/1.1 200 OK&#xa;    Server: awselb/2.0&#xa;    Date: Thu, 07 Nov 2024 14:59:29 GMT&#xa;    Content-Type: text/plain; charset=utf-8&#xa;    Content-Length: 17&#xa;    Connection: close&#xa;    Service not found</elem>
+</script><script id="http-generator" output="MediaWiki 1.31.16"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="&#xa;  Apache/2.4.51 (Debian)&#xa;  awselb/2.0"><elem>Apache/2.4.51 (Debian)</elem>
+<elem>awselb/2.0</elem>
+</script><script id="http-title" output="Waltharius&#xa;Requested resource was https://waltharius.fas.harvard.edu/Table_of_Contents"><elem key="title">Waltharius</elem>
+<elem key="redirect_url">https://waltharius.fas.harvard.edu/Table_of_Contents</elem>
+</script><script id="ssl-cert" output="Subject: commonName=waltharius.fas.harvard.edu&#xa;Subject Alternative Name: DNS:waltharius.fas.harvard.edu&#xa;Issuer: commonName=Amazon RSA 2048 M02/organizationName=Amazon/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-07-10T00:00:00&#xa;Not valid after:  2025-08-06T23:59:59&#xa;MD5:   b35a fdd8 b7a4 b62a 41a0 734f 9f6e 12e3&#xa;SHA-1: e671 910c a57a 3cfa c588 5bdf f04c 5886 3d88 035f"><table key="subject">
+<elem key="commonName">waltharius.fas.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">US</elem>
+<elem key="organizationName">Amazon</elem>
+<elem key="commonName">Amazon RSA 2048 M02</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">2048</elem>
+<elem key="exponent">BIGNUM: 0x564c848adb08</elem>
+<elem key="type">rsa</elem>
+<elem key="modulus">BIGNUM: 0x564c82c31878</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">C0:31:52:CD:5A:50:C3:82:7C:74:71:CE:CB:E9:9C:F9:7A:EB:82:E2</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">08:4D:96:A3:6C:FA:A0:56:5A:4A:FB:F7:4F:FE:C2:3A:E0:DC:CF:84</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="value">DNS:waltharius.fas.harvard.edu</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+<table>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">Full Name:&#xa;  URI:http://crl.r2m02.amazontrust.com/r2m02.crl</elem>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+</table>
+<table>
+<elem key="value">OCSP - URI:http://ocsp.r2m02.amazontrust.com&#xa;CA Issuers - URI:http://crt.r2m02.amazontrust.com/r2m02.cer</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 12:F1:4E:34:BD:53:72:4C:84:06:19:C3:8F:3F:7A:13:&#xa;                F8:E7:B5:62:87:88:9C:6D:30:05:84:EB:E5:86:26:3A&#xa;    Timestamp : Jul 10 07:22:14.805 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:9D:F5:82:7E:16:66:90:33:46:D0:6D:&#xa;                0B:7D:B9:A2:95:B1:B1:5A:FD:DC:44:5C:9F:BE:8D:CB:&#xa;                6E:A7:4D:D6:29:02:20:12:CB:D5:C8:D5:3F:A5:1B:C5:&#xa;                33:68:27:B7:71:16:37:A5:74:93:DD:A3:93:34:C2:57:&#xa;                6D:EB:E5:07:C6:8D:38&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 7D:59:1E:12:E1:78:2A:7B:1C:61:67:7C:5E:FD:F8:D0:&#xa;                87:5C:14:A0:4E:95:9E:B9:03:2F:D9:0E:8C:2E:79:B8&#xa;    Timestamp : Jul 10 07:22:14.674 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:FF:06:9F:3D:01:26:97:51:FB:F3:16:&#xa;                04:12:01:59:43:AE:09:58:87:33:53:6A:23:B3:B0:B1:&#xa;                C3:B2:9A:BE:16:02:20:00:85:89:E5:BC:61:3D:72:51:&#xa;                5E:5F:EE:CC:E5:FE:42:7A:08:91:75:85:DC:8B:9E:B9:&#xa;                5A:87:6E:81:FB:68:50&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : CC:FB:0F:6A:85:71:09:65:FE:95:9B:53:CE:E9:B2:7C:&#xa;                22:E9:85:5C:0D:97:8D:B6:A9:7E:54:C0:FE:4C:0D:B0&#xa;    Timestamp : Jul 10 07:22:14.681 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:60:2A:00:FF:60:CC:92:C7:94:3D:AC:3D:&#xa;                72:9A:21:87:8A:13:45:04:1E:0F:81:8A:2A:F7:16:8E:&#xa;                B4:99:8A:54:02:21:00:B3:BB:C5:09:01:FC:E8:8A:C4:&#xa;                5B:E4:AE:F0:86:01:0B:CE:9F:18:F5:5F:9D:6D:CC:43:&#xa;                4C:F2:A2:F0:0B:F8:B2</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-07-10T00:00:00</elem>
+<elem key="notAfter">2025-08-06T23:59:59</elem>
+</table>
+<elem key="md5">b35afdd8b7a4b62a41a0734f9f6e12e3</elem>
+<elem key="sha1">e671910ca57a3cfac5885bdff04c58863d88035f</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIF4DCCBMigAwIBAgIQD/UtzW8mH/6oOLEOPy4ZnDANBgkqhkiG9w0BAQsFADA8&#xa;MQswCQYDVQQGEwJVUzEPMA0GA1UEChMGQW1hem9uMRwwGgYDVQQDExNBbWF6b24g&#xa;UlNBIDIwNDggTTAyMB4XDTI0MDcxMDAwMDAwMFoXDTI1MDgwNjIzNTk1OVowJTEj&#xa;MCEGA1UEAxMad2FsdGhhcml1cy5mYXMuaGFydmFyZC5lZHUwggEiMA0GCSqGSIb3&#xa;DQEBAQUAA4IBDwAwggEKAoIBAQCeQ4FGFJVHNAanAflIGEgG272+xYqF4k8jpHQf&#xa;xKHThCcFgufy8Zog//H9g6ZUEKvQSjBNypinPrp9mGjdgbHWp1QkBwNa7S2Jkr87&#xa;fjRFMxtw8x5XpEBUUP3nMCkv2b9gjkfCDxYwLSVty1vc9UZJeO5fQYi6WOa29tcg&#xa;L/LEFIQsBH1v/N8pjx5UzoLsEZz4fWhPDc1n5Db2MFjoxd45qp+eE4mbtiLCvq8r&#xa;LJrZQLZvrb1NOp5bnbhrHzgLO2xyBAzvjwxScUodFHs/ONt/DlWJuJ1JzQplfXpR&#xa;hPfndxNhvyZt7g6kqu0fyJzHAgA9yf26lx4ir1zw7K196hL/AgMBAAGjggLzMIIC&#xa;7zAfBgNVHSMEGDAWgBTAMVLNWlDDgnx0cc7L6Zz5euuC4jAdBgNVHQ4EFgQUCE2W&#xa;o2z6oFZaSvv3T/7COuDcz4QwJQYDVR0RBB4wHIIad2FsdGhhcml1cy5mYXMuaGFy&#xa;dmFyZC5lZHUwEwYDVR0gBAwwCjAIBgZngQwBAgEwDgYDVR0PAQH/BAQDAgWgMB0G&#xa;A1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjA7BgNVHR8ENDAyMDCgLqAshipo&#xa;dHRwOi8vY3JsLnIybTAyLmFtYXpvbnRydXN0LmNvbS9yMm0wMi5jcmwwdQYIKwYB&#xa;BQUHAQEEaTBnMC0GCCsGAQUFBzABhiFodHRwOi8vb2NzcC5yMm0wMi5hbWF6b250&#xa;cnVzdC5jb20wNgYIKwYBBQUHMAKGKmh0dHA6Ly9jcnQucjJtMDIuYW1hem9udHJ1&#xa;c3QuY29tL3IybTAyLmNlcjAMBgNVHRMBAf8EAjAAMIIBfgYKKwYBBAHWeQIEAgSC&#xa;AW4EggFqAWgAdgAS8U40vVNyTIQGGcOPP3oT+Oe1YoeInG0wBYTr5YYmOgAAAZCb&#xa;hXuVAAAEAwBHMEUCIQCd9YJ+FmaQM0bQbQt9uaKVsbFa/dxEXJ++jctup03WKQIg&#xa;EsvVyNU/pRvFM2gnt3EWN6V0k92jkzTCV23r5QfGjTgAdgB9WR4S4XgqexxhZ3xe&#xa;/fjQh1wUoE6VnrkDL9kOjC55uAAAAZCbhXsSAAAEAwBHMEUCIQD/Bp89ASaXUfvz&#xa;FgQSAVlDrglYhzNTaiOzsLHDspq+FgIgAIWJ5bxhPXJRXl/uzOX+QnoIkXWF3Iue&#xa;uVqHboH7aFAAdgDM+w9qhXEJZf6Vm1PO6bJ8IumFXA2XjbapflTA/kwNsAAAAZCb&#xa;hXsZAAAEAwBHMEUCIGAqAP9gzJLHlD2sPXKaIYeKE0UEHg+Biir3Fo60mYpUAiEA&#xa;s7vFCQH86IrEW+Su8IYBC86fGPVfnW3MQ0zyovAL+LIwDQYJKoZIhvcNAQELBQAD&#xa;ggEBAHdiO1TcKeYtqZUP/RVxsv3Shlqk77jgM41o+pXpV1xs3PBhCBTpUzH0k9mB&#xa;XZCfFC9g8vBaTFLi3armp+PMA1ll9nO3oHbF9ZszKnkgaPxeJJftN/T/0SnImobE&#xa;4GIugGM1oGgWVVCToAJBNos0iZb6US34d7EdRreJp/sAibcwzXUW7m1ypMXK/jZP&#xa;9iw/dU7IsjXUCuyP6nBtVvnOt1StJDoXey3DrwZE/FxaGiMPXDBujMklchr3ssbX&#xa;5NaD5Siot8oasAuhd7sQbaNvvH82z1QesaVF7yELZQ9E7gK5ep0eOFLO7laKdYi4&#xa;sGukS7NOxERF0TqPX9dbcY0C4BA=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="tls-alpn" output="&#xa;  h2&#xa;  http/1.1"><elem>h2</elem>
+<elem>http/1.1</elem>
+</script><script id="tls-nextprotoneg" output="&#xa;  h2&#xa;  http/1.1"><elem>h2</elem>
+<elem>http/1.1</elem>
+</script></port>
+<port protocol="tcp" portid="8000"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="http-alt" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8001"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="vcom-tunnel" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8002"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="teradataordbms" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8007"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ajp12" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8008"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8009"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ajp13" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8010"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="xmpp" method="table" conf="3"/></port>
+</ports>
+<times srtt="1996" rttvar="515" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730991577"/>
+<taskend task="NSE" time="1730991577"/>
+<taskbegin task="NSE" time="1730991577"/>
+<taskend task="NSE" time="1730991577"/>
+<taskbegin task="NSE" time="1730991577"/>
+<taskend task="NSE" time="1730991577"/>
+<runstats><finished time="1730991577" timestr="Thu Nov  7 14:59:37 2024" elapsed="25.27" summary="Nmap done at Thu Nov  7 14:59:37 2024; 1 IP address (1 host up) scanned in 25.27 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
