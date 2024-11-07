@@ -17,3 +17,116 @@
 <taskbegin task="Connect Scan" time="1731009227"/>
 <taskend task="Connect Scan" time="1731009231" extrainfo="1000 total ports"/>
 <taskbegin task="Service scan" time="1731009231"/>
+<taskend task="Service scan" time="1731009243" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1731009243"/>
+<taskend task="NSE" time="1731009250"/>
+<taskbegin task="NSE" time="1731009250"/>
+<taskend task="NSE" time="1731009250"/>
+<taskbegin task="NSE" time="1731009250"/>
+<taskend task="NSE" time="1731009250"/>
+<host starttime="1731009227" endtime="1731009250"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="142.250.31.121" addrtype="ipv4"/>
+<hostnames>
+<hostname name="bhex.cfa.harvard.edu" type="user"/>
+<hostname name="bj-in-f121.1e100.net" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="998">
+<extrareasons reason="no-responses" count="998"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Google httpd" method="probed" conf="10"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="&#xa;  ESF&#xa;  ghs"><elem>ESF</elem>
+<elem>ghs</elem>
+</script><script id="http-title" output="Did not follow redirect to https://bhex.cfa.harvard.edu/"><elem key="redirect_url">https://bhex.cfa.harvard.edu/</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Google httpd" tunnel="ssl" method="probed" conf="10"/><script id="http-methods" output="&#xa;  Supported Methods: HEAD GET OPTIONS"><table key="Supported Methods">
+<elem>HEAD</elem>
+<elem>GET</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="&#xa;  ESF&#xa;  ghs"><elem>ESF</elem>
+<elem>ghs</elem>
+</script><script id="http-title" output="The Black Hole Explorer"><elem key="title">The Black Hole Explorer</elem>
+</script><script id="ssl-cert" output="Subject: commonName=bhex.cfa.harvard.edu&#xa;Subject Alternative Name: DNS:bhex.cfa.harvard.edu&#xa;Issuer: commonName=WR3/organizationName=Google Trust Services/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-10-29T21:01:22&#xa;Not valid after:  2025-01-27T21:51:13&#xa;MD5:   0fdd 0ee7 a30a f34c 5a31 825f ee32 1642&#xa;SHA-1: 2c1b a63b 78db dbde 08d8 466c 4cde 6516 17ff d82a"><table key="subject">
+<elem key="commonName">bhex.cfa.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="organizationName">Google Trust Services</elem>
+<elem key="commonName">WR3</elem>
+<elem key="countryName">US</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">2048</elem>
+<elem key="exponent">BIGNUM: 0x55b40a4ad7b8</elem>
+<elem key="modulus">BIGNUM: 0x55b40a4ae2f8</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="value">CA:FALSE</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">3A:26:16:34:C5:FF:2A:BB:74:D3:9B:27:D0:F8:2D:08:87:77:14:05</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">C7:81:F5:FD:8E:88:D9:00:3C:4D:63:A2:50:31:24:A0:CE:23:FE:23</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://o.pki.goog/s/wr3/A8E&#xa;CA Issuers - URI:http://i.pki.goog/wr3.crt</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:bhex.cfa.harvard.edu</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://c.pki.goog/wr3/pWMcua2EXkY.crl</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : CF:11:56:EE:D5:2E:7C:AF:F3:87:5B:D9:69:2E:9B:E9:&#xa;                1A:71:67:4A:B0:17:EC:AC:01:D2:5B:77:CE:CC:3B:08&#xa;    Timestamp : Oct 29 22:01:23.070 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:1F:AD:D6:D3:A4:36:21:19:05:8C:F5:66:&#xa;                23:C7:34:FC:73:0E:84:BF:E5:A5:E7:BF:1C:65:FA:FC:&#xa;                4A:69:52:9C:02:20:41:96:0F:B9:32:05:4D:C6:BF:41:&#xa;                21:88:E7:84:46:37:E1:D2:81:1A:F0:DB:7E:CC:92:DD:&#xa;                C9:8A:67:42:F1:45&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : A2:E3:0A:E4:45:EF:BD:AD:9B:7E:38:ED:47:67:77:53:&#xa;                D7:82:5B:84:94:D7:2B:5E:1B:2C:C4:B9:50:A4:47:E7&#xa;    Timestamp : Oct 29 22:01:24.042 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:04:97:73:9B:13:11:09:91:B1:84:F1:86:&#xa;                B4:ED:3F:2C:40:77:8C:E1:0E:B9:19:76:E3:C9:81:E9:&#xa;                A5:82:42:E5:02:21:00:C6:B9:13:EF:FA:3B:03:04:2D:&#xa;                FF:D3:47:E5:20:D6:FA:E5:E8:7E:38:53:B3:93:1D:AB:&#xa;                84:79:15:3C:D7:87:45</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-10-29T21:01:22</elem>
+<elem key="notAfter">2025-01-27T21:51:13</elem>
+</table>
+<elem key="md5">0fdd0ee7a30af34c5a31825fee321642</elem>
+<elem key="sha1">2c1ba63b78dbdbde08d8466c4cde651617ffd82a</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFMjCCBBqgAwIBAgIQA8Fw/VjocdEQwByfrPW7FjANBgkqhkiG9w0BAQsFADA7&#xa;MQswCQYDVQQGEwJVUzEeMBwGA1UEChMVR29vZ2xlIFRydXN0IFNlcnZpY2VzMQww&#xa;CgYDVQQDEwNXUjMwHhcNMjQxMDI5MjEwMTIyWhcNMjUwMTI3MjE1MTEzWjAfMR0w&#xa;GwYDVQQDExRiaGV4LmNmYS5oYXJ2YXJkLmVkdTCCASIwDQYJKoZIhvcNAQEBBQAD&#xa;ggEPADCCAQoCggEBAKS1K4vVM07yVYpts7b8S32J/ZJgXE1cZYDXhTjApB9nQh6V&#xa;2xu3JY0tayjrJ3LG/RsEcCHTpeP4PZlnANghZN6GB0msJ/5k2lm47fBSNaJHJUsC&#xa;0Z/lplq2g+pr8en9WOi6SPyOnFUhCXoZMluZF/TFtrsi7oXhexkYbwYkJQ15i2Xe&#xa;mFwpMaAHa8GJUnpfoCru8snUzJsViIzxO9phzL5waCqRgM56mY5zY5MGYlBDynaP&#xa;v/P7QkgaJCd+1IP+CUqpSLCCm/VtEdFc/zoxqoLJeNIGrBxQMs00l/RKWyJNduJ2&#xa;5Im8hWVjK5piJeLkYhasqi/q88Dljju6LaVCU9ECAwEAAaOCAkwwggJIMA4GA1Ud&#xa;DwEB/wQEAwIFoDATBgNVHSUEDDAKBggrBgEFBQcDATAMBgNVHRMBAf8EAjAAMB0G&#xa;A1UdDgQWBBQ6JhY0xf8qu3TTmyfQ+C0Ih3cUBTAfBgNVHSMEGDAWgBTHgfX9jojZ&#xa;ADxNY6JQMSSgziP+IzBeBggrBgEFBQcBAQRSMFAwJwYIKwYBBQUHMAGGG2h0dHA6&#xa;Ly9vLnBraS5nb29nL3Mvd3IzL0E4RTAlBggrBgEFBQcwAoYZaHR0cDovL2kucGtp&#xa;Lmdvb2cvd3IzLmNydDAfBgNVHREEGDAWghRiaGV4LmNmYS5oYXJ2YXJkLmVkdTAT&#xa;BgNVHSAEDDAKMAgGBmeBDAECATA2BgNVHR8ELzAtMCugKaAnhiVodHRwOi8vYy5w&#xa;a2kuZ29vZy93cjMvcFdNY3VhMkVYa1kuY3JsMIIBAwYKKwYBBAHWeQIEAgSB9ASB&#xa;8QDvAHUAzxFW7tUufK/zh1vZaS6b6RpxZ0qwF+ysAdJbd87MOwgAAAGS2kw/fgAA&#xa;BAMARjBEAiAfrdbTpDYhGQWM9WYjxzT8cw6Ev+Wl578cZfr8SmlSnAIgQZYPuTIF&#xa;Tca/QSGI54RGN+HSgRrw237Mkt3JimdC8UUAdgCi4wrkRe+9rZt+OO1HZ3dT14Jb&#xa;hJTXK14bLMS5UKRH5wAAAZLaTENKAAAEAwBHMEUCIASXc5sTEQmRsYTxhrTtPyxA&#xa;d4zhDrkZduPJgemlgkLlAiEAxrkT7/o7AwQt/9NH5SDW+uXofjhTs5Mdq4R5FTzX&#xa;h0UwDQYJKoZIhvcNAQELBQADggEBADKz38SkPgpRIGJMBlmDcXjIFRUM7oD6VEGt&#xa;ZUfi8iL03BjdyC8jcyHzh7cRuicJN7jWDghWEE+GYaNbBEAeQ+pMLiNYkig2j5ZX&#xa;r+7Xj96LgIXFZMxataTrpkq688Pxf4ywiqleLZ0SR6ARN2KBdE3FrTgeIkk10SMX&#xa;PLQOmT/LjqiCwl+dJ10tNZ/L12q1+JmOnydY1UyXSyxMQs7D4kCIKGBYm7Il/sMq&#xa;NPDek78yhUZY+utl2VGJ1AnzMiz80NHcvNWrkfwn04dFBkOK6+QCIn4prDEiqKj2&#xa;FiTRj/HWW/LsQUus0MkcGM7wBHNJmFJnHWS3kCtPi3du00RmS8A=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+</ports>
+<times srtt="6008" rttvar="2028" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1731009250"/>
+<taskend task="NSE" time="1731009250"/>
+<taskbegin task="NSE" time="1731009250"/>
+<taskend task="NSE" time="1731009250"/>
+<taskbegin task="NSE" time="1731009250"/>
+<taskend task="NSE" time="1731009250"/>
+<runstats><finished time="1731009250" timestr="Thu Nov  7 19:54:10 2024" elapsed="23.70" summary="Nmap done at Thu Nov  7 19:54:10 2024; 1 IP address (1 host up) scanned in 23.70 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
