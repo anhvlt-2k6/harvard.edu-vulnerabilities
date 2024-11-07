@@ -17,3 +17,110 @@
 <taskbegin task="Connect Scan" time="1730989087"/>
 <taskend task="Connect Scan" time="1730989092" extrainfo="1000 total ports"/>
 <taskbegin task="Service scan" time="1730989092"/>
+<taskprogress task="Service scan" time="1730989216" percent="66.67" remaining="62" etc="1730989278"/>
+<taskend task="Service scan" time="1730989221" extrainfo="3 services on 1 host"/>
+<taskbegin task="NSE" time="1730989221"/>
+<taskend task="NSE" time="1730989249"/>
+<taskbegin task="NSE" time="1730989249"/>
+<taskend task="NSE" time="1730989251"/>
+<taskbegin task="NSE" time="1730989251"/>
+<taskend task="NSE" time="1730989251"/>
+<host starttime="1730989087" endtime="1730989251"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="140.247.198.56" addrtype="ipv4"/>
+<hostnames>
+<hostname name="vpn-in.dce.harvard.edu" type="user"/>
+<hostname name="vpn-in.dce.harvard.edu" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="996">
+<extrareasons reason="no-responses" count="996"/>
+</extraports>
+<port protocol="tcp" portid="113"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ident" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Cisco ASA SSL VPN" tunnel="ssl" method="probed" conf="10"/><script id="http-methods" output="&#xa;  Supported Methods: GET POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Site doesn&apos;t have a title (text/html; charset=utf-8)."></script><script id="http-trane-info" output="Problem with XML parsing of /evox/about"/><script id="ssl-cert" output="Subject: commonName=vpn.dce.harvard.edu/organizationName=President and Fellows of Harvard College/stateOrProvinceName=Massachusetts/countryName=US&#xa;Subject Alternative Name: DNS:vpn.dce.harvard.edu, DNS:vpn-in.dce.harvard.edu&#xa;Issuer: commonName=InCommon RSA Server CA 2/organizationName=Internet2/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha384WithRSAEncryption&#xa;Not valid before: 2024-07-30T00:00:00&#xa;Not valid after:  2025-07-30T23:59:59&#xa;MD5:   fdb0 8f93 7b40 8887 826d 0e15 0a5e c21f&#xa;SHA-1: 89be 1394 87ad 0c2e ede0 6d75 663e 418a 2ffb 90af"><table key="subject">
+<elem key="stateOrProvinceName">Massachusetts</elem>
+<elem key="countryName">US</elem>
+<elem key="commonName">vpn.dce.harvard.edu</elem>
+<elem key="organizationName">President and Fellows of Harvard College</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">InCommon RSA Server CA 2</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">Internet2</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="modulus">BIGNUM: 0x55b78a6f4108</elem>
+<elem key="exponent">BIGNUM: 0x55b78a781328</elem>
+<elem key="bits">2048</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">EF:4C:00:92:A6:FB:76:2E:5E:95:E2:C9:5F:87:1B:19:D5:4D:E2:D9</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">C3:3C:1D:48:4D:EE:29:15:37:E2:DB:2A:6F:29:58:B9:3B:99:7D:2C</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="value">CA:FALSE</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">Policy: 1.3.6.1.4.1.6449.1.2.2.103&#xa;  CPS: https://sectigo.com/CPS&#xa;Policy: 2.23.140.1.2.2</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Full Name:&#xa;  URI:http://crl.sectigo.com/InCommonRSAServerCA2.crl</elem>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+</table>
+<table>
+<elem key="value">CA Issuers - URI:http://crt.sectigo.com/InCommonRSAServerCA2.crt&#xa;OCSP - URI:http://ocsp.sectigo.com</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : DD:DC:CA:34:95:D7:E1:16:05:E7:95:32:FA:C7:9F:F8:&#xa;                3D:1C:50:DF:DB:00:3A:14:12:76:0A:2C:AC:BB:C8:2A&#xa;    Timestamp : Jul 30 13:29:37.041 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:FD:0B:E2:B3:D6:D2:54:23:15:D5:EB:&#xa;                07:09:E6:92:BC:78:F1:AC:77:EA:A2:EA:65:72:64:8A:&#xa;                0E:0E:7E:97:34:02:21:00:96:4C:18:BC:B1:6B:1A:1C:&#xa;                85:2D:92:40:EE:F7:28:99:32:F3:16:BF:7E:37:B1:F0:&#xa;                E6:55:A6:AA:8B:1E:AE:1F&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 0D:E1:F2:30:2B:D3:0D:C1:40:62:12:09:EA:55:2E:FC:&#xa;                47:74:7C:B1:D7:E9:30:EF:0E:42:1E:B4:7E:4E:AA:34&#xa;    Timestamp : Jul 30 13:29:36.967 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:4E:47:5C:45:76:69:B7:5A:D8:3A:20:07:&#xa;                CF:3A:01:CE:14:23:56:90:3A:6B:86:74:9D:D2:1F:10:&#xa;                D8:4D:1F:BF:02:21:00:D4:2C:3D:5D:1F:CA:5B:3D:48:&#xa;                6B:77:3D:DA:55:9D:1D:40:D9:F9:67:F1:6D:17:80:DE:&#xa;                7B:BF:2C:25:2A:63:88&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 12:F1:4E:34:BD:53:72:4C:84:06:19:C3:8F:3F:7A:13:&#xa;                F8:E7:B5:62:87:88:9C:6D:30:05:84:EB:E5:86:26:3A&#xa;    Timestamp : Jul 30 13:29:36.959 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:BF:EF:79:A8:D2:9A:62:84:C3:B2:0F:&#xa;                57:33:8B:C3:C0:16:79:5B:2F:21:CB:ED:79:80:F9:35:&#xa;                F5:47:9F:EB:6E:02:21:00:90:6F:B6:E1:A0:F8:64:DC:&#xa;                3E:FA:DD:02:29:E8:D1:82:A1:1C:D2:82:6C:D7:6B:EE:&#xa;                01:EF:51:D3:FF:A6:2E:05</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+<table>
+<elem key="value">DNS:vpn.dce.harvard.edu, DNS:vpn-in.dce.harvard.edu</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+</table>
+<elem key="sig_algo">sha384WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notAfter">2025-07-30T23:59:59</elem>
+<elem key="notBefore">2024-07-30T00:00:00</elem>
+</table>
+<elem key="md5">fdb08f937b408887826d0e150a5ec21f</elem>
+<elem key="sha1">89be139487ad0c2eede06d75663e418a2ffb90af</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIHAzCCBWugAwIBAgIRAP3UzCO7OHbJBNwDqpCySBkwDQYJKoZIhvcNAQEMBQAw&#xa;RDELMAkGA1UEBhMCVVMxEjAQBgNVBAoTCUludGVybmV0MjEhMB8GA1UEAxMYSW5D&#xa;b21tb24gUlNBIFNlcnZlciBDQSAyMB4XDTI0MDczMDAwMDAwMFoXDTI1MDczMDIz&#xa;NTk1OVowdjELMAkGA1UEBhMCVVMxFjAUBgNVBAgTDU1hc3NhY2h1c2V0dHMxMTAv&#xa;BgNVBAoTKFByZXNpZGVudCBhbmQgRmVsbG93cyBvZiBIYXJ2YXJkIENvbGxlZ2Ux&#xa;HDAaBgNVBAMTE3Zwbi5kY2UuaGFydmFyZC5lZHUwggEiMA0GCSqGSIb3DQEBAQUA&#xa;A4IBDwAwggEKAoIBAQDK/Y4PN+L/hf5Exzw2XF3ooDA/ml7okHFeQFU+Eva7Rgxz&#xa;gtnUcab8XOxSar/vca76sp2jUN/i69b5L0MYIAVK+WiSCjt41jnVrzAfogzUIlle&#xa;Unoy99Ig7MIal9z7vwfU4eyXhsNXCYi7WoiZ4B8T2tuaKCOfGcPnmgA3uNfteSmH&#xa;BI35bBp8U34ZGSYa3KjuzvUOmzI3FNDIQIJ8rtOGkWQ2akh5TD+VLIw811kQsWaK&#xa;xcnvGGMpV3jwNSY9Q9ipzITbeHK38f1mzdxeb+/ipg9EpmJX/P/kEkviTU1kniDs&#xa;lqGaVlp0XbP0T+niFD7cXMgg08XGPAnV4qr6uVCTAgMBAAGjggM8MIIDODAfBgNV&#xa;HSMEGDAWgBTvTACSpvt2Ll6V4slfhxsZ1U3i2TAdBgNVHQ4EFgQUwzwdSE3uKRU3&#xa;4tsqbylYuTuZfSwwDgYDVR0PAQH/BAQDAgWgMAwGA1UdEwEB/wQCMAAwHQYDVR0l&#xa;BBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMEkGA1UdIARCMEAwNAYLKwYBBAGyMQEC&#xa;AmcwJTAjBggrBgEFBQcCARYXaHR0cHM6Ly9zZWN0aWdvLmNvbS9DUFMwCAYGZ4EM&#xa;AQICMEAGA1UdHwQ5MDcwNaAzoDGGL2h0dHA6Ly9jcmwuc2VjdGlnby5jb20vSW5D&#xa;b21tb25SU0FTZXJ2ZXJDQTIuY3JsMHAGCCsGAQUFBwEBBGQwYjA7BggrBgEFBQcw&#xa;AoYvaHR0cDovL2NydC5zZWN0aWdvLmNvbS9JbkNvbW1vblJTQVNlcnZlckNBMi5j&#xa;cnQwIwYIKwYBBQUHMAGGF2h0dHA6Ly9vY3NwLnNlY3RpZ28uY29tMIIBgAYKKwYB&#xa;BAHWeQIEAgSCAXAEggFsAWoAdwDd3Mo0ldfhFgXnlTL6x5/4PRxQ39sAOhQSdgos&#xa;rLvIKgAAAZED1QIRAAAEAwBIMEYCIQD9C+Kz1tJUIxXV6wcJ5pK8ePGsd+qi6mVy&#xa;ZIoODn6XNAIhAJZMGLyxaxochS2SQO73KJky8xa/fjex8OZVpqqLHq4fAHYADeHy&#xa;MCvTDcFAYhIJ6lUu/Ed0fLHX6TDvDkIetH5OqjQAAAGRA9UBxwAABAMARzBFAiBO&#xa;R1xFdmm3Wtg6IAfPOgHOFCNWkDprhnSd0h8Q2E0fvwIhANQsPV0fyls9SGt3PdpV&#xa;nR1A2fln8W0XgN57vywlKmOIAHcAEvFONL1TckyEBhnDjz96E/jntWKHiJxtMAWE&#xa;6+WGJjoAAAGRA9UBvwAABAMASDBGAiEAv+95qNKaYoTDsg9XM4vDwBZ5Wy8hy+15&#xa;gPk19Uef624CIQCQb7bhoPhk3D763QIp6NGCoRzSgmzXa+4B71HT/6YuBTA2BgNV&#xa;HREELzAtghN2cG4uZGNlLmhhcnZhcmQuZWR1ghZ2cG4taW4uZGNlLmhhcnZhcmQu&#xa;ZWR1MA0GCSqGSIb3DQEBDAUAA4IBgQARNMAeQfb1MDectTiILyz0jhPRrXw5lmJh&#xa;bLtia/S+Q4LuIakDW+sXUzIpoyt7NtTgh0p3eC3id3FmK4zO8gCOv20lOzzH6LJt&#xa;sM9bEExa/Y74IGoqPtbtL5zA6t2U0QISpI3owF1Bm07zjVgHfYMnQ7H2mfthegDO&#xa;HuhNUZ0kyQ5DuaNldaudc+C4ezc//5+11QL2JrLBsAIpvI9ehYCciCuyNscDQgJG&#xa;0IGVThCPS5Dz9NGFUuLxFPYHnEH0REkrV2YiUYvXH5Gt6w7Oot/V4FBepq71Gs1o&#xa;t6osm8SG9AOlOsQywo1K9dAipFvtomnmPAP1hmFK+rAwusNhSpYPUne1W32D+N+x&#xa;4MIFBJOxCLxf9s5v5tep/JlB7pQi/lh3yK+dDd92HjQUxN3Jfut3olVC92cMNRps&#xa;VS8rSAjgfg2lqC2jCqiHGH0XSwDFQWqTeE2jqb1muY73YYIyvJoHDYkFbCgoluzN&#xa;ICG6rJa5gDQTrbiVTMql3G0kKU4CYMI=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+<port protocol="tcp" portid="2000"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="cisco-sccp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5060"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="sip" method="table" conf="3"/></port>
+</ports>
+<times srtt="12013" rttvar="4163" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1730989251"/>
+<taskend task="NSE" time="1730989251"/>
+<taskbegin task="NSE" time="1730989251"/>
+<taskend task="NSE" time="1730989251"/>
+<taskbegin task="NSE" time="1730989251"/>
+<taskend task="NSE" time="1730989251"/>
+<runstats><finished time="1730989251" timestr="Thu Nov  7 14:20:51 2024" elapsed="164.03" summary="Nmap done at Thu Nov  7 14:20:51 2024; 1 IP address (1 host up) scanned in 164.03 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
