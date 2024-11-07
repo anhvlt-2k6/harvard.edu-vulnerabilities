@@ -19,3 +19,108 @@
 <taskbegin task="Service scan" time="1731013417"/>
 <taskend task="Service scan" time="1731013429" extrainfo="2 services on 1 host"/>
 <taskbegin task="NSE" time="1731013429"/>
+<taskend task="NSE" time="1731013432"/>
+<taskbegin task="NSE" time="1731013432"/>
+<taskend task="NSE" time="1731013433"/>
+<taskbegin task="NSE" time="1731013433"/>
+<taskend task="NSE" time="1731013433"/>
+<host starttime="1731013410" endtime="1731013433"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="140.247.95.197" addrtype="ipv4"/>
+<hostnames>
+<hostname name="apophenia.wjh.harvard.edu" type="user"/>
+<hostname name="*.apophenia.wjh.harvard.edu" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="997">
+<extrareasons reason="no-responses" count="997"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" version="1.10.3" extrainfo="Ubuntu" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.10.3</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+</table>
+</script><script id="http-server-header" output="nginx/1.10.3 (Ubuntu)"><elem>nginx/1.10.3 (Ubuntu)</elem>
+</script><script id="http-title" output="Welcome to nginx!"><elem key="title">Welcome to nginx!</elem>
+</script></port>
+<port protocol="tcp" portid="113"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="ident" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" version="1.10.3" extrainfo="Ubuntu" ostype="Linux" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.10.3</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+</table>
+</script><script id="http-server-header" output="nginx/1.10.3 (Ubuntu)"><elem>nginx/1.10.3 (Ubuntu)</elem>
+</script><script id="http-title" output="Welcome to nginx!"><elem key="title">Welcome to nginx!</elem>
+</script><script id="ssl-cert" output="Subject: commonName=apophenia.wjh.harvard.edu&#xa;Subject Alternative Name: DNS:apophenia.wjh.harvard.edu, DNS:www.apophenia.wjh.harvard.edu&#xa;Issuer: commonName=R11/organizationName=Let&apos;s Encrypt/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-09-26T05:32:11&#xa;Not valid after:  2024-12-25T05:32:10&#xa;MD5:   0705 2e32 80fc 6787 0d03 4508 18b9 3fc2&#xa;SHA-1: ca85 6880 18e5 a96e 24b6 4ad0 ddab bf62 b3f4 84d1"><table key="subject">
+<elem key="commonName">apophenia.wjh.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">US</elem>
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+<elem key="commonName">R11</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">2048</elem>
+<elem key="modulus">BIGNUM: 0x55f36c975418</elem>
+<elem key="type">rsa</elem>
+<elem key="exponent">BIGNUM: 0x55f36c943b38</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">F7:EC:71:21:EE:05:74:1D:4E:59:AD:DD:BA:3A:94:A5:FF:A7:AA:D6</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">C5:CF:46:A4:EA:F4:C3:C0:7A:6C:95:C4:2D:B0:5E:92:2F:26:E3:B9</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://r11.o.lencr.org&#xa;CA Issuers - URI:http://r11.i.lencr.org/</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:apophenia.wjh.harvard.edu, DNS:www.apophenia.wjh.harvard.edu</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 3F:17:4B:4F:D7:22:47:58:94:1D:65:1C:84:BE:0D:12:&#xa;                ED:90:37:7F:1F:85:6A:EB:C1:BF:28:85:EC:F8:64:6E&#xa;    Timestamp : Sep 26 06:30:41.751 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:0C:AB:39:75:0B:E6:5D:33:44:9D:29:AF:&#xa;                48:B9:59:87:89:9E:A7:A1:83:4E:95:B3:22:8E:AB:DB:&#xa;                73:26:31:BA:02:20:34:31:6E:AB:0B:0B:13:21:18:BA:&#xa;                E8:A1:43:91:0B:D9:3D:E8:60:2A:45:9D:89:BF:C2:DB:&#xa;                61:0D:CE:A8:F8:8B&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : EE:CD:D0:64:D5:DB:1A:CE:C5:5C:B7:9D:B4:CD:13:A2:&#xa;                32:87:46:7C:BC:EC:DE:C3:51:48:59:46:71:1F:B5:9B&#xa;    Timestamp : Sep 26 06:30:41.750 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:5A:1C:05:A6:35:9E:03:FC:1A:02:F6:9F:&#xa;                88:AF:2F:A1:CF:A9:46:89:18:67:B9:C3:31:B7:ED:67:&#xa;                69:07:F5:FB:02:21:00:DB:7F:C9:62:CE:A1:03:46:DF:&#xa;                48:49:53:F6:FA:5F:AA:2B:FB:2C:87:07:BA:71:4D:33:&#xa;                C3:C4:81:04:01:C7:D0</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notAfter">2024-12-25T05:32:10</elem>
+<elem key="notBefore">2024-09-26T05:32:11</elem>
+</table>
+<elem key="md5">07052e3280fc67870d03450818b93fc2</elem>
+<elem key="sha1">ca85688018e5a96e24b64ad0ddabbf62b3f484d1</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFIDCCBAigAwIBAgISBFL7ZLOmNmn38x/NmoihPAC9MA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNSMTEwHhcNMjQwOTI2MDUzMjExWhcNMjQxMjI1MDUzMjEwWjAkMSIwIAYDVQQD&#xa;ExlhcG9waGVuaWEud2poLmhhcnZhcmQuZWR1MIIBIjANBgkqhkiG9w0BAQEFAAOC&#xa;AQ8AMIIBCgKCAQEAxtKuxdkobxShQDl5lI6K9SOB7ZP16x5ETVQukfsr26qChsYV&#xa;+bOVzfkuMIg7Bvl8bNnTypKfXxA0UTzZJk7C01Sj0F81BlgaLxoNdAImdqDRsMXy&#xa;VQU16E7U7GrqWi0W/izKUswPNH5YQsMbF9v+xha7tpuHQYP/If6shiSbh+cxL7dv&#xa;3XimZBhThZmmaNGE7ln9fgPcAH2YUYHPqFr2cf1U8klbCXjmf7YfcSn5bsiY3eRZ&#xa;nLsrZrMX1d9+zgh3rzlugZZTtaNkP1Kv1r6+ab27fycuTvhoINm3zKJI4dYwXVgX&#xa;vXTzLX+KKsUC8yrqImjgDGO/Zf2oCjKP1L6jJQIDAQABo4ICOzCCAjcwDgYDVR0P&#xa;AQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAMBgNVHRMB&#xa;Af8EAjAAMB0GA1UdDgQWBBT37HEh7gV0HU5Zrd26OpSl/6eq1jAfBgNVHSMEGDAW&#xa;gBTFz0ak6vTDwHpslcQtsF6SLybjuTBXBggrBgEFBQcBAQRLMEkwIgYIKwYBBQUH&#xa;MAGGFmh0dHA6Ly9yMTEuby5sZW5jci5vcmcwIwYIKwYBBQUHMAKGF2h0dHA6Ly9y&#xa;MTEuaS5sZW5jci5vcmcvMEMGA1UdEQQ8MDqCGWFwb3BoZW5pYS53amguaGFydmFy&#xa;ZC5lZHWCHXd3dy5hcG9waGVuaWEud2poLmhhcnZhcmQuZWR1MBMGA1UdIAQMMAow&#xa;CAYGZ4EMAQIBMIIBAwYKKwYBBAHWeQIEAgSB9ASB8QDvAHUAPxdLT9ciR1iUHWUc&#xa;hL4NEu2QN38fhWrrwb8ohez4ZG4AAAGSLQZRVwAABAMARjBEAiAMqzl1C+ZdM0Sd&#xa;Ka9IuVmHiZ6noYNOlbMijqvbcyYxugIgNDFuqwsLEyEYuuihQ5EL2T3oYCpFnYm/&#xa;wtthDc6o+IsAdgDuzdBk1dsazsVct520zROiModGfLzs3sNRSFlGcR+1mwAAAZIt&#xa;BlFWAAAEAwBHMEUCIFocBaY1ngP8GgL2n4ivL6HPqUaJGGe5wzG37WdpB/X7AiEA&#xa;23/JYs6hA0bfSElT9vpfqiv7LIcHunFNM8PEgQQBx9AwDQYJKoZIhvcNAQELBQAD&#xa;ggEBAJCV0J5nO/k2IKlAvN4WDZL//hPxdzVClGT6jZz5V14Ik2to2uEGyKzNbEgu&#xa;3NewP50Y5kJqosmLrAoPPz8yGbuFNytCy2SlYunF0KAyxgV/jonmWy4zgb0INwCL&#xa;LEYPg3yIZI4f5S+x2vAT4bfIkMnPOAHCfR9NVQ+DMLrjfVqO36M+1AOPMcV6i8Hv&#xa;mofbRsHoiZZvo5QPw0MStsOdKp1ytmll275IkfT1KIGWIPxr2fmZcCRz5JT8gb4y&#xa;Hu0v7vM5KhLbpL4bQRTA+/OnIjbwyApqm+sIcsm/HFdsAG8CKmK0NBvkG6bX5nr2&#xa;yWMwlw7MXhBVVm6JJqLXbDJ9H8M=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="tls-alpn" output="&#xa;  http/1.1"><elem>http/1.1</elem>
+</script><script id="tls-nextprotoneg" output="&#xa;  http/1.1"><elem>http/1.1</elem>
+</script></port>
+</ports>
+<times srtt="75216" rttvar="14857" to="134644"/>
+</host>
+<taskbegin task="NSE" time="1731013433"/>
+<taskend task="NSE" time="1731013433"/>
+<taskbegin task="NSE" time="1731013433"/>
+<taskend task="NSE" time="1731013433"/>
+<taskbegin task="NSE" time="1731013433"/>
+<taskend task="NSE" time="1731013433"/>
+<runstats><finished time="1731013433" timestr="Thu Nov  7 21:03:53 2024" elapsed="23.35" summary="Nmap done at Thu Nov  7 21:03:53 2024; 1 IP address (1 host up) scanned in 23.35 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
