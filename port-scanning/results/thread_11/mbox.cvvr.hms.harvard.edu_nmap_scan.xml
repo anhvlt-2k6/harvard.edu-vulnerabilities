@@ -19,3 +19,583 @@
 <taskbegin task="Service scan" time="1731003460"/>
 <taskend task="Service scan" time="1731003486" extrainfo="12 services on 1 host"/>
 <taskbegin task="NSE" time="1731003486"/>
+<taskend task="NSE" time="1731003597"/>
+<taskbegin task="NSE" time="1731003597"/>
+<taskend task="NSE" time="1731003599"/>
+<taskbegin task="NSE" time="1731003599"/>
+<taskend task="NSE" time="1731003599"/>
+<host starttime="1731003444" endtime="1731003599"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="192.252.154.28" addrtype="ipv4"/>
+<hostnames>
+<hostname name="mbox.cvvr.hms.harvard.edu" type="user"/>
+<hostname name="s449.sureserver.com" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="988">
+<extrareasons reason="no-responses" count="988"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ftp" product="ProFTPD" hostname="192.252.154.28" ostype="Unix" method="probed" conf="10"><cpe>cpe:/a:proftpd:proftpd</cpe></service><script id="ssl-cert" output="Subject: commonName=ssl.s449.sureserver.com&#xa;Subject Alternative Name: DNS:db.s449.sureserver.com, DNS:dns.s449.sureserver.com, DNS:ftp.s449.sureserver.com, DNS:imap.s449.sureserver.com, DNS:imap4.s449.sureserver.com, DNS:incoming.s449.sureserver.com, DNS:mail.s449.sureserver.com, DNS:mbox.s449.sureserver.com, DNS:mysql.s449.sureserver.com, DNS:mysql4.s449.sureserver.com, DNS:mysql5.s449.sureserver.com, DNS:ns.s449.sureserver.com, DNS:outgoing.s449.sureserver.com, DNS:pop.s449.sureserver.com, DNS:pop3.s449.sureserver.com, DNS:s449.sureserver.com, DNS:smtp.s449.sureserver.com, DNS:ssl.s449.sureserver.com, DNS:webmail.s449.sureserver.com, DNS:www.s449.sureserver.com&#xa;Issuer: commonName=R11/organizationName=Let&apos;s Encrypt/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-10-27T08:55:35&#xa;Not valid after:  2025-01-25T08:55:34&#xa;MD5:   dba9 aaf7 8754 b091 ef0c 9026 ed64 df14&#xa;SHA-1: b068 bcb0 5e82 8f95 d1fe 9d1a 4f6a 2d0f 4145 5ce6"><table key="subject">
+<elem key="commonName">ssl.s449.sureserver.com</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">US</elem>
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+<elem key="commonName">R11</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="modulus">BIGNUM: 0x560e62819d38</elem>
+<elem key="bits">2048</elem>
+<elem key="exponent">BIGNUM: 0x560e622b11f8</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+</table>
+<table>
+<elem key="value">8A:17:47:9F:C6:25:00:86:0E:BC:F5:DA:85:AA:5A:35:3F:82:8B:0D</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="value">C5:CF:46:A4:EA:F4:C3:C0:7A:6C:95:C4:2D:B0:5E:92:2F:26:E3:B9</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">OCSP - URI:http://r11.o.lencr.org&#xa;CA Issuers - URI:http://r11.i.lencr.org/</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">DNS:db.s449.sureserver.com, DNS:dns.s449.sureserver.com, DNS:ftp.s449.sureserver.com, DNS:imap.s449.sureserver.com, DNS:imap4.s449.sureserver.com, DNS:incoming.s449.sureserver.com, DNS:mail.s449.sureserver.com, DNS:mbox.s449.sureserver.com, DNS:mysql.s449.sureserver.com, DNS:mysql4.s449.sureserver.com, DNS:mysql5.s449.sureserver.com, DNS:ns.s449.sureserver.com, DNS:outgoing.s449.sureserver.com, DNS:pop.s449.sureserver.com, DNS:pop3.s449.sureserver.com, DNS:s449.sureserver.com, DNS:smtp.s449.sureserver.com, DNS:ssl.s449.sureserver.com, DNS:webmail.s449.sureserver.com, DNS:www.s449.sureserver.com</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+<table>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : A2:E3:0A:E4:45:EF:BD:AD:9B:7E:38:ED:47:67:77:53:&#xa;                D7:82:5B:84:94:D7:2B:5E:1B:2C:C4:B9:50:A4:47:E7&#xa;    Timestamp : Oct 27 09:54:05.962 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:22:99:20:31:6F:E3:F6:4C:4E:56:A8:A8:&#xa;                A7:E9:79:92:5C:9D:60:95:83:32:5C:E1:01:98:BE:34:&#xa;                0B:02:86:B6:02:21:00:D5:E2:C2:F4:25:91:F7:D5:29:&#xa;                1E:11:7E:63:52:7E:73:DA:D0:D3:43:49:6C:BC:83:49:&#xa;                AA:C4:80:D9:4A:0A:50&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : CF:11:56:EE:D5:2E:7C:AF:F3:87:5B:D9:69:2E:9B:E9:&#xa;                1A:71:67:4A:B0:17:EC:AC:01:D2:5B:77:CE:CC:3B:08&#xa;    Timestamp : Oct 27 09:54:06.039 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:63:87:28:FD:75:73:36:02:12:C6:E4:62:&#xa;                6F:6C:D5:ED:5F:96:20:D6:3D:BE:66:16:95:2E:59:8E:&#xa;                A9:F9:97:F3:02:20:4A:4C:0A:73:C0:1A:8B:4F:D4:D3:&#xa;                29:CC:48:09:D8:AF:F7:D5:C7:70:61:F1:38:CE:B6:50:&#xa;                AF:AF:D4:11:74:40</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-10-27T08:55:35</elem>
+<elem key="notAfter">2025-01-25T08:55:34</elem>
+</table>
+<elem key="md5">dba9aaf78754b091ef0c9026ed64df14</elem>
+<elem key="sha1">b068bcb05e828f95d1fe9d1a4f6a2d0f41455ce6</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIG9TCCBd2gAwIBAgISA/VlZLbFiqVRo7TRmsQ/Ws+vMA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNSMTEwHhcNMjQxMDI3MDg1NTM1WhcNMjUwMTI1MDg1NTM0WjAiMSAwHgYDVQQD&#xa;Exdzc2wuczQ0OS5zdXJlc2VydmVyLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEP&#xa;ADCCAQoCggEBAMs0PZ6LptaC2eQq8px1jbmHhwyqM/B6GAaULB4Mny78mNWUdIMg&#xa;BE2vKLxyj4u9fMASKWEXYmNgfYTBOuqFtB9wCTxyTLtqvkeBi3RDWie+pLym7rK4&#xa;C+kUd1GAsC6NfTOK/sPoN4BiQg7PMFYjlHceyhueKnIIUEEU/M7GEoMAsV/FUIk6&#xa;90QcvuPi+S6QPWIJQFHsr26DdXE2Vm1Cb8akLhd1tPyc5UvzHeYjkGLQYXR70O6p&#xa;GrrujjAdWNf7T9K97VRk2JsNga5oANrhuFYreNAcIgP/zRiGo1/uJ3tOt+HGEoiX&#xa;8RLKIO6K465jpG3uXCboUEhWfcKLymE7EkMCAwEAAaOCBBIwggQOMA4GA1UdDwEB&#xa;/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/&#xa;BAIwADAdBgNVHQ4EFgQUihdHn8YlAIYOvPXahapaNT+Ciw0wHwYDVR0jBBgwFoAU&#xa;xc9GpOr0w8B6bJXELbBeki8m47kwVwYIKwYBBQUHAQEESzBJMCIGCCsGAQUFBzAB&#xa;hhZodHRwOi8vcjExLm8ubGVuY3Iub3JnMCMGCCsGAQUFBzAChhdodHRwOi8vcjEx&#xa;LmkubGVuY3Iub3JnLzCCAhgGA1UdEQSCAg8wggILghZkYi5zNDQ5LnN1cmVzZXJ2&#xa;ZXIuY29tghdkbnMuczQ0OS5zdXJlc2VydmVyLmNvbYIXZnRwLnM0NDkuc3VyZXNl&#xa;cnZlci5jb22CGGltYXAuczQ0OS5zdXJlc2VydmVyLmNvbYIZaW1hcDQuczQ0OS5z&#xa;dXJlc2VydmVyLmNvbYIcaW5jb21pbmcuczQ0OS5zdXJlc2VydmVyLmNvbYIYbWFp&#xa;bC5zNDQ5LnN1cmVzZXJ2ZXIuY29tghhtYm94LnM0NDkuc3VyZXNlcnZlci5jb22C&#xa;GW15c3FsLnM0NDkuc3VyZXNlcnZlci5jb22CGm15c3FsNC5zNDQ5LnN1cmVzZXJ2&#xa;ZXIuY29tghpteXNxbDUuczQ0OS5zdXJlc2VydmVyLmNvbYIWbnMuczQ0OS5zdXJl&#xa;c2VydmVyLmNvbYIcb3V0Z29pbmcuczQ0OS5zdXJlc2VydmVyLmNvbYIXcG9wLnM0&#xa;NDkuc3VyZXNlcnZlci5jb22CGHBvcDMuczQ0OS5zdXJlc2VydmVyLmNvbYITczQ0&#xa;OS5zdXJlc2VydmVyLmNvbYIYc210cC5zNDQ5LnN1cmVzZXJ2ZXIuY29tghdzc2wu&#xa;czQ0OS5zdXJlc2VydmVyLmNvbYIbd2VibWFpbC5zNDQ5LnN1cmVzZXJ2ZXIuY29t&#xa;ghd3d3cuczQ0OS5zdXJlc2VydmVyLmNvbTATBgNVHSAEDDAKMAgGBmeBDAECATCC&#xa;AQMGCisGAQQB1nkCBAIEgfQEgfEA7wB2AKLjCuRF772tm3447Udnd1PXgluElNcr&#xa;XhssxLlQpEfnAAABks1lrgoAAAQDAEcwRQIgIpkgMW/j9kxOVqiop+l5klydYJWD&#xa;MlzhAZi+NAsChrYCIQDV4sL0JZH31SkeEX5jUn5z2tDTQ0lsvINJqsSA2UoKUAB1&#xa;AM8RVu7VLnyv84db2Wkum+kacWdKsBfsrAHSW3fOzDsIAAABks1lrlcAAAQDAEYw&#xa;RAIgY4co/XVzNgISxuRib2zV7V+WINY9vmYWlS5Zjqn5l/MCIEpMCnPAGotP1NMp&#xa;zEgJ2K/31cdwYfE4zrZQr6/UEXRAMA0GCSqGSIb3DQEBCwUAA4IBAQBFn/lvFcFM&#xa;uYiUPKWvgGPXC53aXvohIbpORHVYrTyli8Yif1g95lQQVmpf/AHS8JGfJHBoBf38&#xa;TCr7xtWK8++PpnjUi7OQVkgIkdp0aEP+8XBTCLZs0ReoGGa+QB/ZljDvfiKX7b2i&#xa;OPdA1t4H2pTP44JqnBqP7GKmy3L6D09NdReKY122uE/3bmLr7cJTPM7A9FlBIx++&#xa;ZGBsDFZjaICevX85JIKNqyzWdVg+7PjIK518ApvWPKJCBlFHvTmIgtMDXncbVxro&#xa;EzOtLGNtuMQQ/cbBaXXL3mWGZ2VltmbWn/zW7+p9HB00yfkw+8uxuVxAZY6c/JmG&#xa;xI7fYxxGX1wT&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="tls-alpn" output="&#xa;  ftp"><elem>ftp</elem>
+</script><script id="tls-nextprotoneg" output="&#xa;  ftp"><elem>ftp</elem>
+</script></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="8.4p1 Debian 5+deb11u3" extrainfo="protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:8.4p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service></port>
+<port protocol="tcp" portid="25"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtp" product="netqmail smtpd" version="1.04" ostype="Unix" method="probed" conf="10"/><script id="smtp-commands" output="s449.sureserver.com, STARTTLS, PIPELINING, 8BITMIME, AUTH LOGIN PLAIN CRAM-MD5, SIZE 0, &#xa; netqmail home page: http://qmail.org/netqmail "/><script id="ssl-cert" output="Subject: commonName=ssl.s449.sureserver.com&#xa;Subject Alternative Name: DNS:db.s449.sureserver.com, DNS:dns.s449.sureserver.com, DNS:ftp.s449.sureserver.com, DNS:imap.s449.sureserver.com, DNS:imap4.s449.sureserver.com, DNS:incoming.s449.sureserver.com, DNS:mail.s449.sureserver.com, DNS:mbox.s449.sureserver.com, DNS:mysql.s449.sureserver.com, DNS:mysql4.s449.sureserver.com, DNS:mysql5.s449.sureserver.com, DNS:ns.s449.sureserver.com, DNS:outgoing.s449.sureserver.com, DNS:pop.s449.sureserver.com, DNS:pop3.s449.sureserver.com, DNS:s449.sureserver.com, DNS:smtp.s449.sureserver.com, DNS:ssl.s449.sureserver.com, DNS:webmail.s449.sureserver.com, DNS:www.s449.sureserver.com&#xa;Issuer: commonName=R11/organizationName=Let&apos;s Encrypt/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-10-27T08:55:35&#xa;Not valid after:  2025-01-25T08:55:34&#xa;MD5:   dba9 aaf7 8754 b091 ef0c 9026 ed64 df14&#xa;SHA-1: b068 bcb0 5e82 8f95 d1fe 9d1a 4f6a 2d0f 4145 5ce6"><table key="subject">
+<elem key="commonName">ssl.s449.sureserver.com</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">US</elem>
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+<elem key="commonName">R11</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="modulus">BIGNUM: 0x560e6383d998</elem>
+<elem key="bits">2048</elem>
+<elem key="exponent">BIGNUM: 0x560e63551438</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+</table>
+<table>
+<elem key="value">8A:17:47:9F:C6:25:00:86:0E:BC:F5:DA:85:AA:5A:35:3F:82:8B:0D</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="value">C5:CF:46:A4:EA:F4:C3:C0:7A:6C:95:C4:2D:B0:5E:92:2F:26:E3:B9</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">OCSP - URI:http://r11.o.lencr.org&#xa;CA Issuers - URI:http://r11.i.lencr.org/</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">DNS:db.s449.sureserver.com, DNS:dns.s449.sureserver.com, DNS:ftp.s449.sureserver.com, DNS:imap.s449.sureserver.com, DNS:imap4.s449.sureserver.com, DNS:incoming.s449.sureserver.com, DNS:mail.s449.sureserver.com, DNS:mbox.s449.sureserver.com, DNS:mysql.s449.sureserver.com, DNS:mysql4.s449.sureserver.com, DNS:mysql5.s449.sureserver.com, DNS:ns.s449.sureserver.com, DNS:outgoing.s449.sureserver.com, DNS:pop.s449.sureserver.com, DNS:pop3.s449.sureserver.com, DNS:s449.sureserver.com, DNS:smtp.s449.sureserver.com, DNS:ssl.s449.sureserver.com, DNS:webmail.s449.sureserver.com, DNS:www.s449.sureserver.com</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+<table>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : A2:E3:0A:E4:45:EF:BD:AD:9B:7E:38:ED:47:67:77:53:&#xa;                D7:82:5B:84:94:D7:2B:5E:1B:2C:C4:B9:50:A4:47:E7&#xa;    Timestamp : Oct 27 09:54:05.962 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:22:99:20:31:6F:E3:F6:4C:4E:56:A8:A8:&#xa;                A7:E9:79:92:5C:9D:60:95:83:32:5C:E1:01:98:BE:34:&#xa;                0B:02:86:B6:02:21:00:D5:E2:C2:F4:25:91:F7:D5:29:&#xa;                1E:11:7E:63:52:7E:73:DA:D0:D3:43:49:6C:BC:83:49:&#xa;                AA:C4:80:D9:4A:0A:50&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : CF:11:56:EE:D5:2E:7C:AF:F3:87:5B:D9:69:2E:9B:E9:&#xa;                1A:71:67:4A:B0:17:EC:AC:01:D2:5B:77:CE:CC:3B:08&#xa;    Timestamp : Oct 27 09:54:06.039 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:63:87:28:FD:75:73:36:02:12:C6:E4:62:&#xa;                6F:6C:D5:ED:5F:96:20:D6:3D:BE:66:16:95:2E:59:8E:&#xa;                A9:F9:97:F3:02:20:4A:4C:0A:73:C0:1A:8B:4F:D4:D3:&#xa;                29:CC:48:09:D8:AF:F7:D5:C7:70:61:F1:38:CE:B6:50:&#xa;                AF:AF:D4:11:74:40</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-10-27T08:55:35</elem>
+<elem key="notAfter">2025-01-25T08:55:34</elem>
+</table>
+<elem key="md5">dba9aaf78754b091ef0c9026ed64df14</elem>
+<elem key="sha1">b068bcb05e828f95d1fe9d1a4f6a2d0f41455ce6</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIG9TCCBd2gAwIBAgISA/VlZLbFiqVRo7TRmsQ/Ws+vMA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNSMTEwHhcNMjQxMDI3MDg1NTM1WhcNMjUwMTI1MDg1NTM0WjAiMSAwHgYDVQQD&#xa;Exdzc2wuczQ0OS5zdXJlc2VydmVyLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEP&#xa;ADCCAQoCggEBAMs0PZ6LptaC2eQq8px1jbmHhwyqM/B6GAaULB4Mny78mNWUdIMg&#xa;BE2vKLxyj4u9fMASKWEXYmNgfYTBOuqFtB9wCTxyTLtqvkeBi3RDWie+pLym7rK4&#xa;C+kUd1GAsC6NfTOK/sPoN4BiQg7PMFYjlHceyhueKnIIUEEU/M7GEoMAsV/FUIk6&#xa;90QcvuPi+S6QPWIJQFHsr26DdXE2Vm1Cb8akLhd1tPyc5UvzHeYjkGLQYXR70O6p&#xa;GrrujjAdWNf7T9K97VRk2JsNga5oANrhuFYreNAcIgP/zRiGo1/uJ3tOt+HGEoiX&#xa;8RLKIO6K465jpG3uXCboUEhWfcKLymE7EkMCAwEAAaOCBBIwggQOMA4GA1UdDwEB&#xa;/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/&#xa;BAIwADAdBgNVHQ4EFgQUihdHn8YlAIYOvPXahapaNT+Ciw0wHwYDVR0jBBgwFoAU&#xa;xc9GpOr0w8B6bJXELbBeki8m47kwVwYIKwYBBQUHAQEESzBJMCIGCCsGAQUFBzAB&#xa;hhZodHRwOi8vcjExLm8ubGVuY3Iub3JnMCMGCCsGAQUFBzAChhdodHRwOi8vcjEx&#xa;LmkubGVuY3Iub3JnLzCCAhgGA1UdEQSCAg8wggILghZkYi5zNDQ5LnN1cmVzZXJ2&#xa;ZXIuY29tghdkbnMuczQ0OS5zdXJlc2VydmVyLmNvbYIXZnRwLnM0NDkuc3VyZXNl&#xa;cnZlci5jb22CGGltYXAuczQ0OS5zdXJlc2VydmVyLmNvbYIZaW1hcDQuczQ0OS5z&#xa;dXJlc2VydmVyLmNvbYIcaW5jb21pbmcuczQ0OS5zdXJlc2VydmVyLmNvbYIYbWFp&#xa;bC5zNDQ5LnN1cmVzZXJ2ZXIuY29tghhtYm94LnM0NDkuc3VyZXNlcnZlci5jb22C&#xa;GW15c3FsLnM0NDkuc3VyZXNlcnZlci5jb22CGm15c3FsNC5zNDQ5LnN1cmVzZXJ2&#xa;ZXIuY29tghpteXNxbDUuczQ0OS5zdXJlc2VydmVyLmNvbYIWbnMuczQ0OS5zdXJl&#xa;c2VydmVyLmNvbYIcb3V0Z29pbmcuczQ0OS5zdXJlc2VydmVyLmNvbYIXcG9wLnM0&#xa;NDkuc3VyZXNlcnZlci5jb22CGHBvcDMuczQ0OS5zdXJlc2VydmVyLmNvbYITczQ0&#xa;OS5zdXJlc2VydmVyLmNvbYIYc210cC5zNDQ5LnN1cmVzZXJ2ZXIuY29tghdzc2wu&#xa;czQ0OS5zdXJlc2VydmVyLmNvbYIbd2VibWFpbC5zNDQ5LnN1cmVzZXJ2ZXIuY29t&#xa;ghd3d3cuczQ0OS5zdXJlc2VydmVyLmNvbTATBgNVHSAEDDAKMAgGBmeBDAECATCC&#xa;AQMGCisGAQQB1nkCBAIEgfQEgfEA7wB2AKLjCuRF772tm3447Udnd1PXgluElNcr&#xa;XhssxLlQpEfnAAABks1lrgoAAAQDAEcwRQIgIpkgMW/j9kxOVqiop+l5klydYJWD&#xa;MlzhAZi+NAsChrYCIQDV4sL0JZH31SkeEX5jUn5z2tDTQ0lsvINJqsSA2UoKUAB1&#xa;AM8RVu7VLnyv84db2Wkum+kacWdKsBfsrAHSW3fOzDsIAAABks1lrlcAAAQDAEYw&#xa;RAIgY4co/XVzNgISxuRib2zV7V+WINY9vmYWlS5Zjqn5l/MCIEpMCnPAGotP1NMp&#xa;zEgJ2K/31cdwYfE4zrZQr6/UEXRAMA0GCSqGSIb3DQEBCwUAA4IBAQBFn/lvFcFM&#xa;uYiUPKWvgGPXC53aXvohIbpORHVYrTyli8Yif1g95lQQVmpf/AHS8JGfJHBoBf38&#xa;TCr7xtWK8++PpnjUi7OQVkgIkdp0aEP+8XBTCLZs0ReoGGa+QB/ZljDvfiKX7b2i&#xa;OPdA1t4H2pTP44JqnBqP7GKmy3L6D09NdReKY122uE/3bmLr7cJTPM7A9FlBIx++&#xa;ZGBsDFZjaICevX85JIKNqyzWdVg+7PjIK518ApvWPKJCBlFHvTmIgtMDXncbVxro&#xa;EzOtLGNtuMQQ/cbBaXXL3mWGZ2VltmbWn/zW7+p9HB00yfkw+8uxuVxAZY6c/JmG&#xa;xI7fYxxGX1wT&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="domain" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" method="probed" conf="10"><cpe>cpe:/a:apache:http_server</cpe></service><script id="http-favicon" output="Unknown favicon MD5: 3E9793B4E0E70DA9DA8D1BC094D6F4CD"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-robots.txt" output="1 disallowed entry &#xa;/"/><script id="http-server-header" output="Apache"><elem>Apache</elem>
+</script><script id="http-title" output="Did not follow redirect to https://mbox.cvvr.hms.harvard.edu/?"><elem key="redirect_url">https://mbox.cvvr.hms.harvard.edu/?</elem>
+</script></port>
+<port protocol="tcp" portid="110"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="pop3" product="Dovecot pop3d" method="probed" conf="10"><cpe>cpe:/a:dovecot:dovecot</cpe></service><script id="pop3-capabilities" output="SASL(PLAIN) STLS RESP-CODES UIDL PIPELINING AUTH-RESP-CODE TOP USER CAPA"/><script id="ssl-cert" output="Subject: commonName=ssl.s449.sureserver.com&#xa;Subject Alternative Name: DNS:db.s449.sureserver.com, DNS:dns.s449.sureserver.com, DNS:ftp.s449.sureserver.com, DNS:imap.s449.sureserver.com, DNS:imap4.s449.sureserver.com, DNS:incoming.s449.sureserver.com, DNS:mail.s449.sureserver.com, DNS:mbox.s449.sureserver.com, DNS:mysql.s449.sureserver.com, DNS:mysql4.s449.sureserver.com, DNS:mysql5.s449.sureserver.com, DNS:ns.s449.sureserver.com, DNS:outgoing.s449.sureserver.com, DNS:pop.s449.sureserver.com, DNS:pop3.s449.sureserver.com, DNS:s449.sureserver.com, DNS:smtp.s449.sureserver.com, DNS:ssl.s449.sureserver.com, DNS:webmail.s449.sureserver.com, DNS:www.s449.sureserver.com&#xa;Issuer: commonName=R11/organizationName=Let&apos;s Encrypt/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-10-27T08:55:35&#xa;Not valid after:  2025-01-25T08:55:34&#xa;MD5:   dba9 aaf7 8754 b091 ef0c 9026 ed64 df14&#xa;SHA-1: b068 bcb0 5e82 8f95 d1fe 9d1a 4f6a 2d0f 4145 5ce6"><table key="subject">
+<elem key="commonName">ssl.s449.sureserver.com</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">US</elem>
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+<elem key="commonName">R11</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="modulus">BIGNUM: 0x560e62430718</elem>
+<elem key="bits">2048</elem>
+<elem key="exponent">BIGNUM: 0x560e621e6f88</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+</table>
+<table>
+<elem key="value">8A:17:47:9F:C6:25:00:86:0E:BC:F5:DA:85:AA:5A:35:3F:82:8B:0D</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="value">C5:CF:46:A4:EA:F4:C3:C0:7A:6C:95:C4:2D:B0:5E:92:2F:26:E3:B9</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">OCSP - URI:http://r11.o.lencr.org&#xa;CA Issuers - URI:http://r11.i.lencr.org/</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">DNS:db.s449.sureserver.com, DNS:dns.s449.sureserver.com, DNS:ftp.s449.sureserver.com, DNS:imap.s449.sureserver.com, DNS:imap4.s449.sureserver.com, DNS:incoming.s449.sureserver.com, DNS:mail.s449.sureserver.com, DNS:mbox.s449.sureserver.com, DNS:mysql.s449.sureserver.com, DNS:mysql4.s449.sureserver.com, DNS:mysql5.s449.sureserver.com, DNS:ns.s449.sureserver.com, DNS:outgoing.s449.sureserver.com, DNS:pop.s449.sureserver.com, DNS:pop3.s449.sureserver.com, DNS:s449.sureserver.com, DNS:smtp.s449.sureserver.com, DNS:ssl.s449.sureserver.com, DNS:webmail.s449.sureserver.com, DNS:www.s449.sureserver.com</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+<table>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : A2:E3:0A:E4:45:EF:BD:AD:9B:7E:38:ED:47:67:77:53:&#xa;                D7:82:5B:84:94:D7:2B:5E:1B:2C:C4:B9:50:A4:47:E7&#xa;    Timestamp : Oct 27 09:54:05.962 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:22:99:20:31:6F:E3:F6:4C:4E:56:A8:A8:&#xa;                A7:E9:79:92:5C:9D:60:95:83:32:5C:E1:01:98:BE:34:&#xa;                0B:02:86:B6:02:21:00:D5:E2:C2:F4:25:91:F7:D5:29:&#xa;                1E:11:7E:63:52:7E:73:DA:D0:D3:43:49:6C:BC:83:49:&#xa;                AA:C4:80:D9:4A:0A:50&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : CF:11:56:EE:D5:2E:7C:AF:F3:87:5B:D9:69:2E:9B:E9:&#xa;                1A:71:67:4A:B0:17:EC:AC:01:D2:5B:77:CE:CC:3B:08&#xa;    Timestamp : Oct 27 09:54:06.039 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:63:87:28:FD:75:73:36:02:12:C6:E4:62:&#xa;                6F:6C:D5:ED:5F:96:20:D6:3D:BE:66:16:95:2E:59:8E:&#xa;                A9:F9:97:F3:02:20:4A:4C:0A:73:C0:1A:8B:4F:D4:D3:&#xa;                29:CC:48:09:D8:AF:F7:D5:C7:70:61:F1:38:CE:B6:50:&#xa;                AF:AF:D4:11:74:40</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-10-27T08:55:35</elem>
+<elem key="notAfter">2025-01-25T08:55:34</elem>
+</table>
+<elem key="md5">dba9aaf78754b091ef0c9026ed64df14</elem>
+<elem key="sha1">b068bcb05e828f95d1fe9d1a4f6a2d0f41455ce6</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIG9TCCBd2gAwIBAgISA/VlZLbFiqVRo7TRmsQ/Ws+vMA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNSMTEwHhcNMjQxMDI3MDg1NTM1WhcNMjUwMTI1MDg1NTM0WjAiMSAwHgYDVQQD&#xa;Exdzc2wuczQ0OS5zdXJlc2VydmVyLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEP&#xa;ADCCAQoCggEBAMs0PZ6LptaC2eQq8px1jbmHhwyqM/B6GAaULB4Mny78mNWUdIMg&#xa;BE2vKLxyj4u9fMASKWEXYmNgfYTBOuqFtB9wCTxyTLtqvkeBi3RDWie+pLym7rK4&#xa;C+kUd1GAsC6NfTOK/sPoN4BiQg7PMFYjlHceyhueKnIIUEEU/M7GEoMAsV/FUIk6&#xa;90QcvuPi+S6QPWIJQFHsr26DdXE2Vm1Cb8akLhd1tPyc5UvzHeYjkGLQYXR70O6p&#xa;GrrujjAdWNf7T9K97VRk2JsNga5oANrhuFYreNAcIgP/zRiGo1/uJ3tOt+HGEoiX&#xa;8RLKIO6K465jpG3uXCboUEhWfcKLymE7EkMCAwEAAaOCBBIwggQOMA4GA1UdDwEB&#xa;/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/&#xa;BAIwADAdBgNVHQ4EFgQUihdHn8YlAIYOvPXahapaNT+Ciw0wHwYDVR0jBBgwFoAU&#xa;xc9GpOr0w8B6bJXELbBeki8m47kwVwYIKwYBBQUHAQEESzBJMCIGCCsGAQUFBzAB&#xa;hhZodHRwOi8vcjExLm8ubGVuY3Iub3JnMCMGCCsGAQUFBzAChhdodHRwOi8vcjEx&#xa;LmkubGVuY3Iub3JnLzCCAhgGA1UdEQSCAg8wggILghZkYi5zNDQ5LnN1cmVzZXJ2&#xa;ZXIuY29tghdkbnMuczQ0OS5zdXJlc2VydmVyLmNvbYIXZnRwLnM0NDkuc3VyZXNl&#xa;cnZlci5jb22CGGltYXAuczQ0OS5zdXJlc2VydmVyLmNvbYIZaW1hcDQuczQ0OS5z&#xa;dXJlc2VydmVyLmNvbYIcaW5jb21pbmcuczQ0OS5zdXJlc2VydmVyLmNvbYIYbWFp&#xa;bC5zNDQ5LnN1cmVzZXJ2ZXIuY29tghhtYm94LnM0NDkuc3VyZXNlcnZlci5jb22C&#xa;GW15c3FsLnM0NDkuc3VyZXNlcnZlci5jb22CGm15c3FsNC5zNDQ5LnN1cmVzZXJ2&#xa;ZXIuY29tghpteXNxbDUuczQ0OS5zdXJlc2VydmVyLmNvbYIWbnMuczQ0OS5zdXJl&#xa;c2VydmVyLmNvbYIcb3V0Z29pbmcuczQ0OS5zdXJlc2VydmVyLmNvbYIXcG9wLnM0&#xa;NDkuc3VyZXNlcnZlci5jb22CGHBvcDMuczQ0OS5zdXJlc2VydmVyLmNvbYITczQ0&#xa;OS5zdXJlc2VydmVyLmNvbYIYc210cC5zNDQ5LnN1cmVzZXJ2ZXIuY29tghdzc2wu&#xa;czQ0OS5zdXJlc2VydmVyLmNvbYIbd2VibWFpbC5zNDQ5LnN1cmVzZXJ2ZXIuY29t&#xa;ghd3d3cuczQ0OS5zdXJlc2VydmVyLmNvbTATBgNVHSAEDDAKMAgGBmeBDAECATCC&#xa;AQMGCisGAQQB1nkCBAIEgfQEgfEA7wB2AKLjCuRF772tm3447Udnd1PXgluElNcr&#xa;XhssxLlQpEfnAAABks1lrgoAAAQDAEcwRQIgIpkgMW/j9kxOVqiop+l5klydYJWD&#xa;MlzhAZi+NAsChrYCIQDV4sL0JZH31SkeEX5jUn5z2tDTQ0lsvINJqsSA2UoKUAB1&#xa;AM8RVu7VLnyv84db2Wkum+kacWdKsBfsrAHSW3fOzDsIAAABks1lrlcAAAQDAEYw&#xa;RAIgY4co/XVzNgISxuRib2zV7V+WINY9vmYWlS5Zjqn5l/MCIEpMCnPAGotP1NMp&#xa;zEgJ2K/31cdwYfE4zrZQr6/UEXRAMA0GCSqGSIb3DQEBCwUAA4IBAQBFn/lvFcFM&#xa;uYiUPKWvgGPXC53aXvohIbpORHVYrTyli8Yif1g95lQQVmpf/AHS8JGfJHBoBf38&#xa;TCr7xtWK8++PpnjUi7OQVkgIkdp0aEP+8XBTCLZs0ReoGGa+QB/ZljDvfiKX7b2i&#xa;OPdA1t4H2pTP44JqnBqP7GKmy3L6D09NdReKY122uE/3bmLr7cJTPM7A9FlBIx++&#xa;ZGBsDFZjaICevX85JIKNqyzWdVg+7PjIK518ApvWPKJCBlFHvTmIgtMDXncbVxro&#xa;EzOtLGNtuMQQ/cbBaXXL3mWGZ2VltmbWn/zW7+p9HB00yfkw+8uxuVxAZY6c/JmG&#xa;xI7fYxxGX1wT&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+<port protocol="tcp" portid="143"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="imap" product="Dovecot imapd" method="probed" conf="10"><cpe>cpe:/a:dovecot:dovecot</cpe></service><script id="imap-capabilities" output="STARTTLS IMAP4rev1 have OK SASL-IR post-login listed capabilities Pre-login LOGIN-REFERRALS AUTH=PLAINA0001 LITERAL+ ENABLE more IDLE ID"/><script id="ssl-cert" output="Subject: commonName=ssl.s449.sureserver.com&#xa;Subject Alternative Name: DNS:db.s449.sureserver.com, DNS:dns.s449.sureserver.com, DNS:ftp.s449.sureserver.com, DNS:imap.s449.sureserver.com, DNS:imap4.s449.sureserver.com, DNS:incoming.s449.sureserver.com, DNS:mail.s449.sureserver.com, DNS:mbox.s449.sureserver.com, DNS:mysql.s449.sureserver.com, DNS:mysql4.s449.sureserver.com, DNS:mysql5.s449.sureserver.com, DNS:ns.s449.sureserver.com, DNS:outgoing.s449.sureserver.com, DNS:pop.s449.sureserver.com, DNS:pop3.s449.sureserver.com, DNS:s449.sureserver.com, DNS:smtp.s449.sureserver.com, DNS:ssl.s449.sureserver.com, DNS:webmail.s449.sureserver.com, DNS:www.s449.sureserver.com&#xa;Issuer: commonName=R11/organizationName=Let&apos;s Encrypt/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-10-27T08:55:35&#xa;Not valid after:  2025-01-25T08:55:34&#xa;MD5:   dba9 aaf7 8754 b091 ef0c 9026 ed64 df14&#xa;SHA-1: b068 bcb0 5e82 8f95 d1fe 9d1a 4f6a 2d0f 4145 5ce6"><table key="subject">
+<elem key="commonName">ssl.s449.sureserver.com</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">US</elem>
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+<elem key="commonName">R11</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="modulus">BIGNUM: 0x560e6241e648</elem>
+<elem key="bits">2048</elem>
+<elem key="exponent">BIGNUM: 0x560e6212e458</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+</table>
+<table>
+<elem key="value">8A:17:47:9F:C6:25:00:86:0E:BC:F5:DA:85:AA:5A:35:3F:82:8B:0D</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="value">C5:CF:46:A4:EA:F4:C3:C0:7A:6C:95:C4:2D:B0:5E:92:2F:26:E3:B9</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">OCSP - URI:http://r11.o.lencr.org&#xa;CA Issuers - URI:http://r11.i.lencr.org/</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">DNS:db.s449.sureserver.com, DNS:dns.s449.sureserver.com, DNS:ftp.s449.sureserver.com, DNS:imap.s449.sureserver.com, DNS:imap4.s449.sureserver.com, DNS:incoming.s449.sureserver.com, DNS:mail.s449.sureserver.com, DNS:mbox.s449.sureserver.com, DNS:mysql.s449.sureserver.com, DNS:mysql4.s449.sureserver.com, DNS:mysql5.s449.sureserver.com, DNS:ns.s449.sureserver.com, DNS:outgoing.s449.sureserver.com, DNS:pop.s449.sureserver.com, DNS:pop3.s449.sureserver.com, DNS:s449.sureserver.com, DNS:smtp.s449.sureserver.com, DNS:ssl.s449.sureserver.com, DNS:webmail.s449.sureserver.com, DNS:www.s449.sureserver.com</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+<table>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : A2:E3:0A:E4:45:EF:BD:AD:9B:7E:38:ED:47:67:77:53:&#xa;                D7:82:5B:84:94:D7:2B:5E:1B:2C:C4:B9:50:A4:47:E7&#xa;    Timestamp : Oct 27 09:54:05.962 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:22:99:20:31:6F:E3:F6:4C:4E:56:A8:A8:&#xa;                A7:E9:79:92:5C:9D:60:95:83:32:5C:E1:01:98:BE:34:&#xa;                0B:02:86:B6:02:21:00:D5:E2:C2:F4:25:91:F7:D5:29:&#xa;                1E:11:7E:63:52:7E:73:DA:D0:D3:43:49:6C:BC:83:49:&#xa;                AA:C4:80:D9:4A:0A:50&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : CF:11:56:EE:D5:2E:7C:AF:F3:87:5B:D9:69:2E:9B:E9:&#xa;                1A:71:67:4A:B0:17:EC:AC:01:D2:5B:77:CE:CC:3B:08&#xa;    Timestamp : Oct 27 09:54:06.039 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:63:87:28:FD:75:73:36:02:12:C6:E4:62:&#xa;                6F:6C:D5:ED:5F:96:20:D6:3D:BE:66:16:95:2E:59:8E:&#xa;                A9:F9:97:F3:02:20:4A:4C:0A:73:C0:1A:8B:4F:D4:D3:&#xa;                29:CC:48:09:D8:AF:F7:D5:C7:70:61:F1:38:CE:B6:50:&#xa;                AF:AF:D4:11:74:40</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-10-27T08:55:35</elem>
+<elem key="notAfter">2025-01-25T08:55:34</elem>
+</table>
+<elem key="md5">dba9aaf78754b091ef0c9026ed64df14</elem>
+<elem key="sha1">b068bcb05e828f95d1fe9d1a4f6a2d0f41455ce6</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIG9TCCBd2gAwIBAgISA/VlZLbFiqVRo7TRmsQ/Ws+vMA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNSMTEwHhcNMjQxMDI3MDg1NTM1WhcNMjUwMTI1MDg1NTM0WjAiMSAwHgYDVQQD&#xa;Exdzc2wuczQ0OS5zdXJlc2VydmVyLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEP&#xa;ADCCAQoCggEBAMs0PZ6LptaC2eQq8px1jbmHhwyqM/B6GAaULB4Mny78mNWUdIMg&#xa;BE2vKLxyj4u9fMASKWEXYmNgfYTBOuqFtB9wCTxyTLtqvkeBi3RDWie+pLym7rK4&#xa;C+kUd1GAsC6NfTOK/sPoN4BiQg7PMFYjlHceyhueKnIIUEEU/M7GEoMAsV/FUIk6&#xa;90QcvuPi+S6QPWIJQFHsr26DdXE2Vm1Cb8akLhd1tPyc5UvzHeYjkGLQYXR70O6p&#xa;GrrujjAdWNf7T9K97VRk2JsNga5oANrhuFYreNAcIgP/zRiGo1/uJ3tOt+HGEoiX&#xa;8RLKIO6K465jpG3uXCboUEhWfcKLymE7EkMCAwEAAaOCBBIwggQOMA4GA1UdDwEB&#xa;/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/&#xa;BAIwADAdBgNVHQ4EFgQUihdHn8YlAIYOvPXahapaNT+Ciw0wHwYDVR0jBBgwFoAU&#xa;xc9GpOr0w8B6bJXELbBeki8m47kwVwYIKwYBBQUHAQEESzBJMCIGCCsGAQUFBzAB&#xa;hhZodHRwOi8vcjExLm8ubGVuY3Iub3JnMCMGCCsGAQUFBzAChhdodHRwOi8vcjEx&#xa;LmkubGVuY3Iub3JnLzCCAhgGA1UdEQSCAg8wggILghZkYi5zNDQ5LnN1cmVzZXJ2&#xa;ZXIuY29tghdkbnMuczQ0OS5zdXJlc2VydmVyLmNvbYIXZnRwLnM0NDkuc3VyZXNl&#xa;cnZlci5jb22CGGltYXAuczQ0OS5zdXJlc2VydmVyLmNvbYIZaW1hcDQuczQ0OS5z&#xa;dXJlc2VydmVyLmNvbYIcaW5jb21pbmcuczQ0OS5zdXJlc2VydmVyLmNvbYIYbWFp&#xa;bC5zNDQ5LnN1cmVzZXJ2ZXIuY29tghhtYm94LnM0NDkuc3VyZXNlcnZlci5jb22C&#xa;GW15c3FsLnM0NDkuc3VyZXNlcnZlci5jb22CGm15c3FsNC5zNDQ5LnN1cmVzZXJ2&#xa;ZXIuY29tghpteXNxbDUuczQ0OS5zdXJlc2VydmVyLmNvbYIWbnMuczQ0OS5zdXJl&#xa;c2VydmVyLmNvbYIcb3V0Z29pbmcuczQ0OS5zdXJlc2VydmVyLmNvbYIXcG9wLnM0&#xa;NDkuc3VyZXNlcnZlci5jb22CGHBvcDMuczQ0OS5zdXJlc2VydmVyLmNvbYITczQ0&#xa;OS5zdXJlc2VydmVyLmNvbYIYc210cC5zNDQ5LnN1cmVzZXJ2ZXIuY29tghdzc2wu&#xa;czQ0OS5zdXJlc2VydmVyLmNvbYIbd2VibWFpbC5zNDQ5LnN1cmVzZXJ2ZXIuY29t&#xa;ghd3d3cuczQ0OS5zdXJlc2VydmVyLmNvbTATBgNVHSAEDDAKMAgGBmeBDAECATCC&#xa;AQMGCisGAQQB1nkCBAIEgfQEgfEA7wB2AKLjCuRF772tm3447Udnd1PXgluElNcr&#xa;XhssxLlQpEfnAAABks1lrgoAAAQDAEcwRQIgIpkgMW/j9kxOVqiop+l5klydYJWD&#xa;MlzhAZi+NAsChrYCIQDV4sL0JZH31SkeEX5jUn5z2tDTQ0lsvINJqsSA2UoKUAB1&#xa;AM8RVu7VLnyv84db2Wkum+kacWdKsBfsrAHSW3fOzDsIAAABks1lrlcAAAQDAEYw&#xa;RAIgY4co/XVzNgISxuRib2zV7V+WINY9vmYWlS5Zjqn5l/MCIEpMCnPAGotP1NMp&#xa;zEgJ2K/31cdwYfE4zrZQr6/UEXRAMA0GCSqGSIb3DQEBCwUAA4IBAQBFn/lvFcFM&#xa;uYiUPKWvgGPXC53aXvohIbpORHVYrTyli8Yif1g95lQQVmpf/AHS8JGfJHBoBf38&#xa;TCr7xtWK8++PpnjUi7OQVkgIkdp0aEP+8XBTCLZs0ReoGGa+QB/ZljDvfiKX7b2i&#xa;OPdA1t4H2pTP44JqnBqP7GKmy3L6D09NdReKY122uE/3bmLr7cJTPM7A9FlBIx++&#xa;ZGBsDFZjaICevX85JIKNqyzWdVg+7PjIK518ApvWPKJCBlFHvTmIgtMDXncbVxro&#xa;EzOtLGNtuMQQ/cbBaXXL3mWGZ2VltmbWn/zW7+p9HB00yfkw+8uxuVxAZY6c/JmG&#xa;xI7fYxxGX1wT&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssl" product="Apache httpd" extrainfo="SSL-only mode" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:apache:http_server</cpe></service><script id="http-favicon" output="Unknown favicon MD5: 3E9793B4E0E70DA9DA8D1BC094D6F4CD"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-robots.txt" output="1 disallowed entry &#xa;/"/><script id="http-server-header" output="Apache"><elem>Apache</elem>
+</script><script id="http-title" output="Webmail - Login "><elem key="title">Webmail - Login </elem>
+</script><script id="ssl-cert" output="Subject: commonName=*.cvvr.hms.harvard.edu&#xa;Subject Alternative Name: DNS:*.cvvr.hms.harvard.edu, DNS:cvvr.hms.harvard.edu&#xa;Issuer: commonName=R10/organizationName=Let&apos;s Encrypt/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-09-11T16:51:45&#xa;Not valid after:  2024-12-10T16:51:44&#xa;MD5:   1b6c b736 ebd3 52c6 6d63 6e24 5d8b eaaa&#xa;SHA-1: c375 2392 da6b a01a 166d eee1 4bb5 0420 e720 0896"><table key="subject">
+<elem key="commonName">*.cvvr.hms.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">US</elem>
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+<elem key="commonName">R10</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="modulus">BIGNUM: 0x560e6343ca48</elem>
+<elem key="bits">2048</elem>
+<elem key="exponent">BIGNUM: 0x560e6343c9c8</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+</table>
+<table>
+<elem key="value">D1:9F:7A:B6:F6:CB:A5:0E:07:43:2A:A5:63:AC:AB:FF:DE:E5:CE:05</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="value">BB:BC:C3:47:A5:E4:BC:A9:C6:C3:A4:72:0C:10:8D:A2:35:E1:C8:E8</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">OCSP - URI:http://r10.o.lencr.org&#xa;CA Issuers - URI:http://r10.i.lencr.org/</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">DNS:*.cvvr.hms.harvard.edu, DNS:cvvr.hms.harvard.edu</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+<table>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 48:B0:E3:6B:DA:A6:47:34:0F:E5:6A:02:FA:9D:30:EB:&#xa;                1C:52:01:CB:56:DD:2C:81:D9:BB:BF:AB:39:D8:84:73&#xa;    Timestamp : Sep 11 17:50:15.335 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:F8:6E:6F:4B:32:92:07:0A:73:6C:47:&#xa;                41:8C:05:12:41:8A:6D:6F:36:91:68:FD:22:BE:5B:F1:&#xa;                B9:5A:22:AF:12:02:20:40:F2:E8:37:2B:20:B2:DF:AC:&#xa;                39:82:F0:A5:14:D1:AC:18:A9:59:8F:38:0F:0F:9D:41:&#xa;                B2:EE:A7:7D:CC:65:99&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : EE:CD:D0:64:D5:DB:1A:CE:C5:5C:B7:9D:B4:CD:13:A2:&#xa;                32:87:46:7C:BC:EC:DE:C3:51:48:59:46:71:1F:B5:9B&#xa;    Timestamp : Sep 11 17:50:15.335 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:66:7C:92:F0:8A:26:B4:EF:EA:0A:9F:87:&#xa;                62:89:80:CF:A7:5A:C5:C7:4C:DE:85:76:E9:45:BF:E3:&#xa;                21:CD:E9:2E:02:21:00:FA:1D:67:CF:73:DD:21:94:DD:&#xa;                79:2C:71:03:5D:31:BF:C2:40:4C:F4:FC:D3:A7:36:34:&#xa;                CD:23:DE:81:C8:92:53</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-09-11T16:51:45</elem>
+<elem key="notAfter">2024-12-10T16:51:44</elem>
+</table>
+<elem key="md5">1b6cb736ebd352c66d636e245d8beaaa</elem>
+<elem key="sha1">c3752392da6ba01a166deee14bb50420e7200896</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFEjCCA/qgAwIBAgISBNo0ukVqoS30OEBDUR+8EaISMA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNSMTAwHhcNMjQwOTExMTY1MTQ1WhcNMjQxMjEwMTY1MTQ0WjAhMR8wHQYDVQQD&#xa;DBYqLmN2dnIuaG1zLmhhcnZhcmQuZWR1MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8A&#xa;MIIBCgKCAQEAoeSYcbFdT14HfjaId6moU44gxXOMeJNVgdKP91pMxwMdnE9zPgbz&#xa;zpryxAGO7MPBJRu8OBd4+pPhnlMFN+WdfZDT9Rhh2JzZvwCuje3NLdpMif73li5f&#xa;LpBZvPHH74qOBYwFkbAzoWhQJIDxfwykl3711IGWB0xkqRmIDlvnYg1I4GWssBVs&#xa;JmlMAIjUDaCIc6zuWwFfb29oiJ+7inXK5qOK3F88lN3CxWzR3yAqzHoKgo/U3jHk&#xa;T0zBArIHXJNXefsKEt44pqbjMDuR2HcT4VE4N0hdU2gLpLAQfD6tjq61c1kn26JS&#xa;rlNBhxj66+mEavI7l4XdUPZ7A1VU5iHMDwIDAQABo4ICMDCCAiwwDgYDVR0PAQH/&#xa;BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAMBgNVHRMBAf8E&#xa;AjAAMB0GA1UdDgQWBBTRn3q29sulDgdDKqVjrKv/3uXOBTAfBgNVHSMEGDAWgBS7&#xa;vMNHpeS8qcbDpHIMEI2iNeHI6DBXBggrBgEFBQcBAQRLMEkwIgYIKwYBBQUHMAGG&#xa;Fmh0dHA6Ly9yMTAuby5sZW5jci5vcmcwIwYIKwYBBQUHMAKGF2h0dHA6Ly9yMTAu&#xa;aS5sZW5jci5vcmcvMDcGA1UdEQQwMC6CFiouY3Z2ci5obXMuaGFydmFyZC5lZHWC&#xa;FGN2dnIuaG1zLmhhcnZhcmQuZWR1MBMGA1UdIAQMMAowCAYGZ4EMAQIBMIIBBAYK&#xa;KwYBBAHWeQIEAgSB9QSB8gDwAHYASLDja9qmRzQP5WoC+p0w6xxSActW3SyB2bu/&#xa;qznYhHMAAAGR4jUVJwAABAMARzBFAiEA+G5vSzKSBwpzbEdBjAUSQYptbzaRaP0i&#xa;vlvxuVoirxICIEDy6DcrILLfrDmC8KUU0awYqVmPOA8PnUGy7qd9zGWZAHYA7s3Q&#xa;ZNXbGs7FXLedtM0TojKHRny87N7DUUhZRnEftZsAAAGR4jUVJwAABAMARzBFAiBm&#xa;fJLwiia07+oKn4diiYDPp1rFx0zehXbpRb/jIc3pLgIhAPodZ89z3SGU3XkscQNd&#xa;Mb/CQEz0/NOnNjTNI96ByJJTMA0GCSqGSIb3DQEBCwUAA4IBAQCww28FnNxvjKrF&#xa;0jRE4qC48HbMkNE/YgW3vwWB9PKWGWtel6qS7/5ZDY2m5oEaW+yoEF13fReGlbM3&#xa;PzhBpVhtLVZXSc7Gkk2rcZIZjnGSR2y77sJRmOQrC1XT0TYB/J4Q+7z7jaUaxsR+&#xa;7Wu32lK6Wnz4iN/FIUuBZlpdonILip0Pm/zeXZEsApW/xYP/4IRPcRMjDwqJaEQK&#xa;RMkE712hpIdBmAV3MpbsQS/elXS2oD7ow7wIzFEPsffffLEgJfoXaUmaaxX0jThJ&#xa;5nbFgvoDOH2LRAO0QadDG9QN933MEC1m42VJngYzVglpmZWtW/Jhhjb5ymzXC+XF&#xa;AvcL7rHI&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="587"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtp" product="netqmail smtpd" version="1.04" ostype="Unix" method="probed" conf="10"/><script id="smtp-commands" output="s449.sureserver.com, STARTTLS, PIPELINING, 8BITMIME, AUTH LOGIN PLAIN CRAM-MD5, SIZE 0, &#xa; netqmail home page: http://qmail.org/netqmail "/><script id="ssl-cert" output="Subject: commonName=ssl.s449.sureserver.com&#xa;Subject Alternative Name: DNS:db.s449.sureserver.com, DNS:dns.s449.sureserver.com, DNS:ftp.s449.sureserver.com, DNS:imap.s449.sureserver.com, DNS:imap4.s449.sureserver.com, DNS:incoming.s449.sureserver.com, DNS:mail.s449.sureserver.com, DNS:mbox.s449.sureserver.com, DNS:mysql.s449.sureserver.com, DNS:mysql4.s449.sureserver.com, DNS:mysql5.s449.sureserver.com, DNS:ns.s449.sureserver.com, DNS:outgoing.s449.sureserver.com, DNS:pop.s449.sureserver.com, DNS:pop3.s449.sureserver.com, DNS:s449.sureserver.com, DNS:smtp.s449.sureserver.com, DNS:ssl.s449.sureserver.com, DNS:webmail.s449.sureserver.com, DNS:www.s449.sureserver.com&#xa;Issuer: commonName=R11/organizationName=Let&apos;s Encrypt/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-10-27T08:55:35&#xa;Not valid after:  2025-01-25T08:55:34&#xa;MD5:   dba9 aaf7 8754 b091 ef0c 9026 ed64 df14&#xa;SHA-1: b068 bcb0 5e82 8f95 d1fe 9d1a 4f6a 2d0f 4145 5ce6"><table key="subject">
+<elem key="commonName">ssl.s449.sureserver.com</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">US</elem>
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+<elem key="commonName">R11</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="modulus">BIGNUM: 0x560e62d95c18</elem>
+<elem key="bits">2048</elem>
+<elem key="exponent">BIGNUM: 0x560e62d95b88</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+</table>
+<table>
+<elem key="value">8A:17:47:9F:C6:25:00:86:0E:BC:F5:DA:85:AA:5A:35:3F:82:8B:0D</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="value">C5:CF:46:A4:EA:F4:C3:C0:7A:6C:95:C4:2D:B0:5E:92:2F:26:E3:B9</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">OCSP - URI:http://r11.o.lencr.org&#xa;CA Issuers - URI:http://r11.i.lencr.org/</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">DNS:db.s449.sureserver.com, DNS:dns.s449.sureserver.com, DNS:ftp.s449.sureserver.com, DNS:imap.s449.sureserver.com, DNS:imap4.s449.sureserver.com, DNS:incoming.s449.sureserver.com, DNS:mail.s449.sureserver.com, DNS:mbox.s449.sureserver.com, DNS:mysql.s449.sureserver.com, DNS:mysql4.s449.sureserver.com, DNS:mysql5.s449.sureserver.com, DNS:ns.s449.sureserver.com, DNS:outgoing.s449.sureserver.com, DNS:pop.s449.sureserver.com, DNS:pop3.s449.sureserver.com, DNS:s449.sureserver.com, DNS:smtp.s449.sureserver.com, DNS:ssl.s449.sureserver.com, DNS:webmail.s449.sureserver.com, DNS:www.s449.sureserver.com</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+<table>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : A2:E3:0A:E4:45:EF:BD:AD:9B:7E:38:ED:47:67:77:53:&#xa;                D7:82:5B:84:94:D7:2B:5E:1B:2C:C4:B9:50:A4:47:E7&#xa;    Timestamp : Oct 27 09:54:05.962 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:22:99:20:31:6F:E3:F6:4C:4E:56:A8:A8:&#xa;                A7:E9:79:92:5C:9D:60:95:83:32:5C:E1:01:98:BE:34:&#xa;                0B:02:86:B6:02:21:00:D5:E2:C2:F4:25:91:F7:D5:29:&#xa;                1E:11:7E:63:52:7E:73:DA:D0:D3:43:49:6C:BC:83:49:&#xa;                AA:C4:80:D9:4A:0A:50&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : CF:11:56:EE:D5:2E:7C:AF:F3:87:5B:D9:69:2E:9B:E9:&#xa;                1A:71:67:4A:B0:17:EC:AC:01:D2:5B:77:CE:CC:3B:08&#xa;    Timestamp : Oct 27 09:54:06.039 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:63:87:28:FD:75:73:36:02:12:C6:E4:62:&#xa;                6F:6C:D5:ED:5F:96:20:D6:3D:BE:66:16:95:2E:59:8E:&#xa;                A9:F9:97:F3:02:20:4A:4C:0A:73:C0:1A:8B:4F:D4:D3:&#xa;                29:CC:48:09:D8:AF:F7:D5:C7:70:61:F1:38:CE:B6:50:&#xa;                AF:AF:D4:11:74:40</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-10-27T08:55:35</elem>
+<elem key="notAfter">2025-01-25T08:55:34</elem>
+</table>
+<elem key="md5">dba9aaf78754b091ef0c9026ed64df14</elem>
+<elem key="sha1">b068bcb05e828f95d1fe9d1a4f6a2d0f41455ce6</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIG9TCCBd2gAwIBAgISA/VlZLbFiqVRo7TRmsQ/Ws+vMA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNSMTEwHhcNMjQxMDI3MDg1NTM1WhcNMjUwMTI1MDg1NTM0WjAiMSAwHgYDVQQD&#xa;Exdzc2wuczQ0OS5zdXJlc2VydmVyLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEP&#xa;ADCCAQoCggEBAMs0PZ6LptaC2eQq8px1jbmHhwyqM/B6GAaULB4Mny78mNWUdIMg&#xa;BE2vKLxyj4u9fMASKWEXYmNgfYTBOuqFtB9wCTxyTLtqvkeBi3RDWie+pLym7rK4&#xa;C+kUd1GAsC6NfTOK/sPoN4BiQg7PMFYjlHceyhueKnIIUEEU/M7GEoMAsV/FUIk6&#xa;90QcvuPi+S6QPWIJQFHsr26DdXE2Vm1Cb8akLhd1tPyc5UvzHeYjkGLQYXR70O6p&#xa;GrrujjAdWNf7T9K97VRk2JsNga5oANrhuFYreNAcIgP/zRiGo1/uJ3tOt+HGEoiX&#xa;8RLKIO6K465jpG3uXCboUEhWfcKLymE7EkMCAwEAAaOCBBIwggQOMA4GA1UdDwEB&#xa;/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/&#xa;BAIwADAdBgNVHQ4EFgQUihdHn8YlAIYOvPXahapaNT+Ciw0wHwYDVR0jBBgwFoAU&#xa;xc9GpOr0w8B6bJXELbBeki8m47kwVwYIKwYBBQUHAQEESzBJMCIGCCsGAQUFBzAB&#xa;hhZodHRwOi8vcjExLm8ubGVuY3Iub3JnMCMGCCsGAQUFBzAChhdodHRwOi8vcjEx&#xa;LmkubGVuY3Iub3JnLzCCAhgGA1UdEQSCAg8wggILghZkYi5zNDQ5LnN1cmVzZXJ2&#xa;ZXIuY29tghdkbnMuczQ0OS5zdXJlc2VydmVyLmNvbYIXZnRwLnM0NDkuc3VyZXNl&#xa;cnZlci5jb22CGGltYXAuczQ0OS5zdXJlc2VydmVyLmNvbYIZaW1hcDQuczQ0OS5z&#xa;dXJlc2VydmVyLmNvbYIcaW5jb21pbmcuczQ0OS5zdXJlc2VydmVyLmNvbYIYbWFp&#xa;bC5zNDQ5LnN1cmVzZXJ2ZXIuY29tghhtYm94LnM0NDkuc3VyZXNlcnZlci5jb22C&#xa;GW15c3FsLnM0NDkuc3VyZXNlcnZlci5jb22CGm15c3FsNC5zNDQ5LnN1cmVzZXJ2&#xa;ZXIuY29tghpteXNxbDUuczQ0OS5zdXJlc2VydmVyLmNvbYIWbnMuczQ0OS5zdXJl&#xa;c2VydmVyLmNvbYIcb3V0Z29pbmcuczQ0OS5zdXJlc2VydmVyLmNvbYIXcG9wLnM0&#xa;NDkuc3VyZXNlcnZlci5jb22CGHBvcDMuczQ0OS5zdXJlc2VydmVyLmNvbYITczQ0&#xa;OS5zdXJlc2VydmVyLmNvbYIYc210cC5zNDQ5LnN1cmVzZXJ2ZXIuY29tghdzc2wu&#xa;czQ0OS5zdXJlc2VydmVyLmNvbYIbd2VibWFpbC5zNDQ5LnN1cmVzZXJ2ZXIuY29t&#xa;ghd3d3cuczQ0OS5zdXJlc2VydmVyLmNvbTATBgNVHSAEDDAKMAgGBmeBDAECATCC&#xa;AQMGCisGAQQB1nkCBAIEgfQEgfEA7wB2AKLjCuRF772tm3447Udnd1PXgluElNcr&#xa;XhssxLlQpEfnAAABks1lrgoAAAQDAEcwRQIgIpkgMW/j9kxOVqiop+l5klydYJWD&#xa;MlzhAZi+NAsChrYCIQDV4sL0JZH31SkeEX5jUn5z2tDTQ0lsvINJqsSA2UoKUAB1&#xa;AM8RVu7VLnyv84db2Wkum+kacWdKsBfsrAHSW3fOzDsIAAABks1lrlcAAAQDAEYw&#xa;RAIgY4co/XVzNgISxuRib2zV7V+WINY9vmYWlS5Zjqn5l/MCIEpMCnPAGotP1NMp&#xa;zEgJ2K/31cdwYfE4zrZQr6/UEXRAMA0GCSqGSIb3DQEBCwUAA4IBAQBFn/lvFcFM&#xa;uYiUPKWvgGPXC53aXvohIbpORHVYrTyli8Yif1g95lQQVmpf/AHS8JGfJHBoBf38&#xa;TCr7xtWK8++PpnjUi7OQVkgIkdp0aEP+8XBTCLZs0ReoGGa+QB/ZljDvfiKX7b2i&#xa;OPdA1t4H2pTP44JqnBqP7GKmy3L6D09NdReKY122uE/3bmLr7cJTPM7A9FlBIx++&#xa;ZGBsDFZjaICevX85JIKNqyzWdVg+7PjIK518ApvWPKJCBlFHvTmIgtMDXncbVxro&#xa;EzOtLGNtuMQQ/cbBaXXL3mWGZ2VltmbWn/zW7+p9HB00yfkw+8uxuVxAZY6c/JmG&#xa;xI7fYxxGX1wT&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+<port protocol="tcp" portid="993"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="imap" product="Dovecot imapd" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:dovecot:dovecot</cpe></service><script id="imap-capabilities" output="IMAP4rev1 Pre-login OK SASL-IR have post-login listed capabilities LOGIN-REFERRALS AUTH=PLAINA0001 LITERAL+ ENABLE more IDLE ID"/><script id="ssl-cert" output="Subject: commonName=ssl.s449.sureserver.com&#xa;Subject Alternative Name: DNS:db.s449.sureserver.com, DNS:dns.s449.sureserver.com, DNS:ftp.s449.sureserver.com, DNS:imap.s449.sureserver.com, DNS:imap4.s449.sureserver.com, DNS:incoming.s449.sureserver.com, DNS:mail.s449.sureserver.com, DNS:mbox.s449.sureserver.com, DNS:mysql.s449.sureserver.com, DNS:mysql4.s449.sureserver.com, DNS:mysql5.s449.sureserver.com, DNS:ns.s449.sureserver.com, DNS:outgoing.s449.sureserver.com, DNS:pop.s449.sureserver.com, DNS:pop3.s449.sureserver.com, DNS:s449.sureserver.com, DNS:smtp.s449.sureserver.com, DNS:ssl.s449.sureserver.com, DNS:webmail.s449.sureserver.com, DNS:www.s449.sureserver.com&#xa;Issuer: commonName=R11/organizationName=Let&apos;s Encrypt/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-10-27T08:55:35&#xa;Not valid after:  2025-01-25T08:55:34&#xa;MD5:   dba9 aaf7 8754 b091 ef0c 9026 ed64 df14&#xa;SHA-1: b068 bcb0 5e82 8f95 d1fe 9d1a 4f6a 2d0f 4145 5ce6"><table key="subject">
+<elem key="commonName">ssl.s449.sureserver.com</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">US</elem>
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+<elem key="commonName">R11</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="modulus">BIGNUM: 0x560e6285eb08</elem>
+<elem key="bits">2048</elem>
+<elem key="exponent">BIGNUM: 0x560e6211b8f8</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+</table>
+<table>
+<elem key="value">8A:17:47:9F:C6:25:00:86:0E:BC:F5:DA:85:AA:5A:35:3F:82:8B:0D</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="value">C5:CF:46:A4:EA:F4:C3:C0:7A:6C:95:C4:2D:B0:5E:92:2F:26:E3:B9</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">OCSP - URI:http://r11.o.lencr.org&#xa;CA Issuers - URI:http://r11.i.lencr.org/</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">DNS:db.s449.sureserver.com, DNS:dns.s449.sureserver.com, DNS:ftp.s449.sureserver.com, DNS:imap.s449.sureserver.com, DNS:imap4.s449.sureserver.com, DNS:incoming.s449.sureserver.com, DNS:mail.s449.sureserver.com, DNS:mbox.s449.sureserver.com, DNS:mysql.s449.sureserver.com, DNS:mysql4.s449.sureserver.com, DNS:mysql5.s449.sureserver.com, DNS:ns.s449.sureserver.com, DNS:outgoing.s449.sureserver.com, DNS:pop.s449.sureserver.com, DNS:pop3.s449.sureserver.com, DNS:s449.sureserver.com, DNS:smtp.s449.sureserver.com, DNS:ssl.s449.sureserver.com, DNS:webmail.s449.sureserver.com, DNS:www.s449.sureserver.com</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+<table>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : A2:E3:0A:E4:45:EF:BD:AD:9B:7E:38:ED:47:67:77:53:&#xa;                D7:82:5B:84:94:D7:2B:5E:1B:2C:C4:B9:50:A4:47:E7&#xa;    Timestamp : Oct 27 09:54:05.962 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:22:99:20:31:6F:E3:F6:4C:4E:56:A8:A8:&#xa;                A7:E9:79:92:5C:9D:60:95:83:32:5C:E1:01:98:BE:34:&#xa;                0B:02:86:B6:02:21:00:D5:E2:C2:F4:25:91:F7:D5:29:&#xa;                1E:11:7E:63:52:7E:73:DA:D0:D3:43:49:6C:BC:83:49:&#xa;                AA:C4:80:D9:4A:0A:50&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : CF:11:56:EE:D5:2E:7C:AF:F3:87:5B:D9:69:2E:9B:E9:&#xa;                1A:71:67:4A:B0:17:EC:AC:01:D2:5B:77:CE:CC:3B:08&#xa;    Timestamp : Oct 27 09:54:06.039 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:63:87:28:FD:75:73:36:02:12:C6:E4:62:&#xa;                6F:6C:D5:ED:5F:96:20:D6:3D:BE:66:16:95:2E:59:8E:&#xa;                A9:F9:97:F3:02:20:4A:4C:0A:73:C0:1A:8B:4F:D4:D3:&#xa;                29:CC:48:09:D8:AF:F7:D5:C7:70:61:F1:38:CE:B6:50:&#xa;                AF:AF:D4:11:74:40</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-10-27T08:55:35</elem>
+<elem key="notAfter">2025-01-25T08:55:34</elem>
+</table>
+<elem key="md5">dba9aaf78754b091ef0c9026ed64df14</elem>
+<elem key="sha1">b068bcb05e828f95d1fe9d1a4f6a2d0f41455ce6</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIG9TCCBd2gAwIBAgISA/VlZLbFiqVRo7TRmsQ/Ws+vMA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNSMTEwHhcNMjQxMDI3MDg1NTM1WhcNMjUwMTI1MDg1NTM0WjAiMSAwHgYDVQQD&#xa;Exdzc2wuczQ0OS5zdXJlc2VydmVyLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEP&#xa;ADCCAQoCggEBAMs0PZ6LptaC2eQq8px1jbmHhwyqM/B6GAaULB4Mny78mNWUdIMg&#xa;BE2vKLxyj4u9fMASKWEXYmNgfYTBOuqFtB9wCTxyTLtqvkeBi3RDWie+pLym7rK4&#xa;C+kUd1GAsC6NfTOK/sPoN4BiQg7PMFYjlHceyhueKnIIUEEU/M7GEoMAsV/FUIk6&#xa;90QcvuPi+S6QPWIJQFHsr26DdXE2Vm1Cb8akLhd1tPyc5UvzHeYjkGLQYXR70O6p&#xa;GrrujjAdWNf7T9K97VRk2JsNga5oANrhuFYreNAcIgP/zRiGo1/uJ3tOt+HGEoiX&#xa;8RLKIO6K465jpG3uXCboUEhWfcKLymE7EkMCAwEAAaOCBBIwggQOMA4GA1UdDwEB&#xa;/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/&#xa;BAIwADAdBgNVHQ4EFgQUihdHn8YlAIYOvPXahapaNT+Ciw0wHwYDVR0jBBgwFoAU&#xa;xc9GpOr0w8B6bJXELbBeki8m47kwVwYIKwYBBQUHAQEESzBJMCIGCCsGAQUFBzAB&#xa;hhZodHRwOi8vcjExLm8ubGVuY3Iub3JnMCMGCCsGAQUFBzAChhdodHRwOi8vcjEx&#xa;LmkubGVuY3Iub3JnLzCCAhgGA1UdEQSCAg8wggILghZkYi5zNDQ5LnN1cmVzZXJ2&#xa;ZXIuY29tghdkbnMuczQ0OS5zdXJlc2VydmVyLmNvbYIXZnRwLnM0NDkuc3VyZXNl&#xa;cnZlci5jb22CGGltYXAuczQ0OS5zdXJlc2VydmVyLmNvbYIZaW1hcDQuczQ0OS5z&#xa;dXJlc2VydmVyLmNvbYIcaW5jb21pbmcuczQ0OS5zdXJlc2VydmVyLmNvbYIYbWFp&#xa;bC5zNDQ5LnN1cmVzZXJ2ZXIuY29tghhtYm94LnM0NDkuc3VyZXNlcnZlci5jb22C&#xa;GW15c3FsLnM0NDkuc3VyZXNlcnZlci5jb22CGm15c3FsNC5zNDQ5LnN1cmVzZXJ2&#xa;ZXIuY29tghpteXNxbDUuczQ0OS5zdXJlc2VydmVyLmNvbYIWbnMuczQ0OS5zdXJl&#xa;c2VydmVyLmNvbYIcb3V0Z29pbmcuczQ0OS5zdXJlc2VydmVyLmNvbYIXcG9wLnM0&#xa;NDkuc3VyZXNlcnZlci5jb22CGHBvcDMuczQ0OS5zdXJlc2VydmVyLmNvbYITczQ0&#xa;OS5zdXJlc2VydmVyLmNvbYIYc210cC5zNDQ5LnN1cmVzZXJ2ZXIuY29tghdzc2wu&#xa;czQ0OS5zdXJlc2VydmVyLmNvbYIbd2VibWFpbC5zNDQ5LnN1cmVzZXJ2ZXIuY29t&#xa;ghd3d3cuczQ0OS5zdXJlc2VydmVyLmNvbTATBgNVHSAEDDAKMAgGBmeBDAECATCC&#xa;AQMGCisGAQQB1nkCBAIEgfQEgfEA7wB2AKLjCuRF772tm3447Udnd1PXgluElNcr&#xa;XhssxLlQpEfnAAABks1lrgoAAAQDAEcwRQIgIpkgMW/j9kxOVqiop+l5klydYJWD&#xa;MlzhAZi+NAsChrYCIQDV4sL0JZH31SkeEX5jUn5z2tDTQ0lsvINJqsSA2UoKUAB1&#xa;AM8RVu7VLnyv84db2Wkum+kacWdKsBfsrAHSW3fOzDsIAAABks1lrlcAAAQDAEYw&#xa;RAIgY4co/XVzNgISxuRib2zV7V+WINY9vmYWlS5Zjqn5l/MCIEpMCnPAGotP1NMp&#xa;zEgJ2K/31cdwYfE4zrZQr6/UEXRAMA0GCSqGSIb3DQEBCwUAA4IBAQBFn/lvFcFM&#xa;uYiUPKWvgGPXC53aXvohIbpORHVYrTyli8Yif1g95lQQVmpf/AHS8JGfJHBoBf38&#xa;TCr7xtWK8++PpnjUi7OQVkgIkdp0aEP+8XBTCLZs0ReoGGa+QB/ZljDvfiKX7b2i&#xa;OPdA1t4H2pTP44JqnBqP7GKmy3L6D09NdReKY122uE/3bmLr7cJTPM7A9FlBIx++&#xa;ZGBsDFZjaICevX85JIKNqyzWdVg+7PjIK518ApvWPKJCBlFHvTmIgtMDXncbVxro&#xa;EzOtLGNtuMQQ/cbBaXXL3mWGZ2VltmbWn/zW7+p9HB00yfkw+8uxuVxAZY6c/JmG&#xa;xI7fYxxGX1wT&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+<port protocol="tcp" portid="995"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="pop3" product="Dovecot pop3d" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:dovecot:dovecot</cpe></service><script id="pop3-capabilities" output="UIDL PIPELINING AUTH-RESP-CODE SASL(PLAIN) USER TOP CAPA RESP-CODES"/><script id="ssl-cert" output="Subject: commonName=ssl.s449.sureserver.com&#xa;Subject Alternative Name: DNS:db.s449.sureserver.com, DNS:dns.s449.sureserver.com, DNS:ftp.s449.sureserver.com, DNS:imap.s449.sureserver.com, DNS:imap4.s449.sureserver.com, DNS:incoming.s449.sureserver.com, DNS:mail.s449.sureserver.com, DNS:mbox.s449.sureserver.com, DNS:mysql.s449.sureserver.com, DNS:mysql4.s449.sureserver.com, DNS:mysql5.s449.sureserver.com, DNS:ns.s449.sureserver.com, DNS:outgoing.s449.sureserver.com, DNS:pop.s449.sureserver.com, DNS:pop3.s449.sureserver.com, DNS:s449.sureserver.com, DNS:smtp.s449.sureserver.com, DNS:ssl.s449.sureserver.com, DNS:webmail.s449.sureserver.com, DNS:www.s449.sureserver.com&#xa;Issuer: commonName=R11/organizationName=Let&apos;s Encrypt/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-10-27T08:55:35&#xa;Not valid after:  2025-01-25T08:55:34&#xa;MD5:   dba9 aaf7 8754 b091 ef0c 9026 ed64 df14&#xa;SHA-1: b068 bcb0 5e82 8f95 d1fe 9d1a 4f6a 2d0f 4145 5ce6"><table key="subject">
+<elem key="commonName">ssl.s449.sureserver.com</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">US</elem>
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+<elem key="commonName">R11</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="modulus">BIGNUM: 0x560e631107c8</elem>
+<elem key="bits">2048</elem>
+<elem key="exponent">BIGNUM: 0x560e63b68ef8</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+</table>
+<table>
+<elem key="value">8A:17:47:9F:C6:25:00:86:0E:BC:F5:DA:85:AA:5A:35:3F:82:8B:0D</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="value">C5:CF:46:A4:EA:F4:C3:C0:7A:6C:95:C4:2D:B0:5E:92:2F:26:E3:B9</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">OCSP - URI:http://r11.o.lencr.org&#xa;CA Issuers - URI:http://r11.i.lencr.org/</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">DNS:db.s449.sureserver.com, DNS:dns.s449.sureserver.com, DNS:ftp.s449.sureserver.com, DNS:imap.s449.sureserver.com, DNS:imap4.s449.sureserver.com, DNS:incoming.s449.sureserver.com, DNS:mail.s449.sureserver.com, DNS:mbox.s449.sureserver.com, DNS:mysql.s449.sureserver.com, DNS:mysql4.s449.sureserver.com, DNS:mysql5.s449.sureserver.com, DNS:ns.s449.sureserver.com, DNS:outgoing.s449.sureserver.com, DNS:pop.s449.sureserver.com, DNS:pop3.s449.sureserver.com, DNS:s449.sureserver.com, DNS:smtp.s449.sureserver.com, DNS:ssl.s449.sureserver.com, DNS:webmail.s449.sureserver.com, DNS:www.s449.sureserver.com</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+<table>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : A2:E3:0A:E4:45:EF:BD:AD:9B:7E:38:ED:47:67:77:53:&#xa;                D7:82:5B:84:94:D7:2B:5E:1B:2C:C4:B9:50:A4:47:E7&#xa;    Timestamp : Oct 27 09:54:05.962 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:22:99:20:31:6F:E3:F6:4C:4E:56:A8:A8:&#xa;                A7:E9:79:92:5C:9D:60:95:83:32:5C:E1:01:98:BE:34:&#xa;                0B:02:86:B6:02:21:00:D5:E2:C2:F4:25:91:F7:D5:29:&#xa;                1E:11:7E:63:52:7E:73:DA:D0:D3:43:49:6C:BC:83:49:&#xa;                AA:C4:80:D9:4A:0A:50&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : CF:11:56:EE:D5:2E:7C:AF:F3:87:5B:D9:69:2E:9B:E9:&#xa;                1A:71:67:4A:B0:17:EC:AC:01:D2:5B:77:CE:CC:3B:08&#xa;    Timestamp : Oct 27 09:54:06.039 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:63:87:28:FD:75:73:36:02:12:C6:E4:62:&#xa;                6F:6C:D5:ED:5F:96:20:D6:3D:BE:66:16:95:2E:59:8E:&#xa;                A9:F9:97:F3:02:20:4A:4C:0A:73:C0:1A:8B:4F:D4:D3:&#xa;                29:CC:48:09:D8:AF:F7:D5:C7:70:61:F1:38:CE:B6:50:&#xa;                AF:AF:D4:11:74:40</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-10-27T08:55:35</elem>
+<elem key="notAfter">2025-01-25T08:55:34</elem>
+</table>
+<elem key="md5">dba9aaf78754b091ef0c9026ed64df14</elem>
+<elem key="sha1">b068bcb05e828f95d1fe9d1a4f6a2d0f41455ce6</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIG9TCCBd2gAwIBAgISA/VlZLbFiqVRo7TRmsQ/Ws+vMA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNSMTEwHhcNMjQxMDI3MDg1NTM1WhcNMjUwMTI1MDg1NTM0WjAiMSAwHgYDVQQD&#xa;Exdzc2wuczQ0OS5zdXJlc2VydmVyLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEP&#xa;ADCCAQoCggEBAMs0PZ6LptaC2eQq8px1jbmHhwyqM/B6GAaULB4Mny78mNWUdIMg&#xa;BE2vKLxyj4u9fMASKWEXYmNgfYTBOuqFtB9wCTxyTLtqvkeBi3RDWie+pLym7rK4&#xa;C+kUd1GAsC6NfTOK/sPoN4BiQg7PMFYjlHceyhueKnIIUEEU/M7GEoMAsV/FUIk6&#xa;90QcvuPi+S6QPWIJQFHsr26DdXE2Vm1Cb8akLhd1tPyc5UvzHeYjkGLQYXR70O6p&#xa;GrrujjAdWNf7T9K97VRk2JsNga5oANrhuFYreNAcIgP/zRiGo1/uJ3tOt+HGEoiX&#xa;8RLKIO6K465jpG3uXCboUEhWfcKLymE7EkMCAwEAAaOCBBIwggQOMA4GA1UdDwEB&#xa;/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/&#xa;BAIwADAdBgNVHQ4EFgQUihdHn8YlAIYOvPXahapaNT+Ciw0wHwYDVR0jBBgwFoAU&#xa;xc9GpOr0w8B6bJXELbBeki8m47kwVwYIKwYBBQUHAQEESzBJMCIGCCsGAQUFBzAB&#xa;hhZodHRwOi8vcjExLm8ubGVuY3Iub3JnMCMGCCsGAQUFBzAChhdodHRwOi8vcjEx&#xa;LmkubGVuY3Iub3JnLzCCAhgGA1UdEQSCAg8wggILghZkYi5zNDQ5LnN1cmVzZXJ2&#xa;ZXIuY29tghdkbnMuczQ0OS5zdXJlc2VydmVyLmNvbYIXZnRwLnM0NDkuc3VyZXNl&#xa;cnZlci5jb22CGGltYXAuczQ0OS5zdXJlc2VydmVyLmNvbYIZaW1hcDQuczQ0OS5z&#xa;dXJlc2VydmVyLmNvbYIcaW5jb21pbmcuczQ0OS5zdXJlc2VydmVyLmNvbYIYbWFp&#xa;bC5zNDQ5LnN1cmVzZXJ2ZXIuY29tghhtYm94LnM0NDkuc3VyZXNlcnZlci5jb22C&#xa;GW15c3FsLnM0NDkuc3VyZXNlcnZlci5jb22CGm15c3FsNC5zNDQ5LnN1cmVzZXJ2&#xa;ZXIuY29tghpteXNxbDUuczQ0OS5zdXJlc2VydmVyLmNvbYIWbnMuczQ0OS5zdXJl&#xa;c2VydmVyLmNvbYIcb3V0Z29pbmcuczQ0OS5zdXJlc2VydmVyLmNvbYIXcG9wLnM0&#xa;NDkuc3VyZXNlcnZlci5jb22CGHBvcDMuczQ0OS5zdXJlc2VydmVyLmNvbYITczQ0&#xa;OS5zdXJlc2VydmVyLmNvbYIYc210cC5zNDQ5LnN1cmVzZXJ2ZXIuY29tghdzc2wu&#xa;czQ0OS5zdXJlc2VydmVyLmNvbYIbd2VibWFpbC5zNDQ5LnN1cmVzZXJ2ZXIuY29t&#xa;ghd3d3cuczQ0OS5zdXJlc2VydmVyLmNvbTATBgNVHSAEDDAKMAgGBmeBDAECATCC&#xa;AQMGCisGAQQB1nkCBAIEgfQEgfEA7wB2AKLjCuRF772tm3447Udnd1PXgluElNcr&#xa;XhssxLlQpEfnAAABks1lrgoAAAQDAEcwRQIgIpkgMW/j9kxOVqiop+l5klydYJWD&#xa;MlzhAZi+NAsChrYCIQDV4sL0JZH31SkeEX5jUn5z2tDTQ0lsvINJqsSA2UoKUAB1&#xa;AM8RVu7VLnyv84db2Wkum+kacWdKsBfsrAHSW3fOzDsIAAABks1lrlcAAAQDAEYw&#xa;RAIgY4co/XVzNgISxuRib2zV7V+WINY9vmYWlS5Zjqn5l/MCIEpMCnPAGotP1NMp&#xa;zEgJ2K/31cdwYfE4zrZQr6/UEXRAMA0GCSqGSIb3DQEBCwUAA4IBAQBFn/lvFcFM&#xa;uYiUPKWvgGPXC53aXvohIbpORHVYrTyli8Yif1g95lQQVmpf/AHS8JGfJHBoBf38&#xa;TCr7xtWK8++PpnjUi7OQVkgIkdp0aEP+8XBTCLZs0ReoGGa+QB/ZljDvfiKX7b2i&#xa;OPdA1t4H2pTP44JqnBqP7GKmy3L6D09NdReKY122uE/3bmLr7cJTPM7A9FlBIx++&#xa;ZGBsDFZjaICevX85JIKNqyzWdVg+7PjIK518ApvWPKJCBlFHvTmIgtMDXncbVxro&#xa;EzOtLGNtuMQQ/cbBaXXL3mWGZ2VltmbWn/zW7+p9HB00yfkw+8uxuVxAZY6c/JmG&#xa;xI7fYxxGX1wT&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+<port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="mysql" product="MySQL" version="5.7.44-percona-sure1-log" method="probed" conf="10"><cpe>cpe:/a:mysql:mysql:5.7.44-percona-sure1-log</cpe></service><script id="mysql-info" output="&#xa;  Protocol: 10&#xa;  Version: 5.7.44-percona-sure1-log&#xa;  Thread ID: 1277372&#xa;  Capabilities flags: 65535&#xa;  Some Capabilities: FoundRows, SupportsCompression, IgnoreSpaceBeforeParenthesis, Support41Auth, SupportsTransactions, SupportsLoadDataLocal, IgnoreSigpipes, InteractiveClient, ConnectWithDatabase, DontAllowDatabaseTableColumn, LongPassword, LongColumnFlag, ODBCClient, SwitchToSSLAfterHandshake, Speaks41ProtocolNew, Speaks41ProtocolOld, SupportsMultipleResults, SupportsAuthPlugins, SupportsMultipleStatments&#xa;  Status: Autocommit&#xa;  Salt: iS_LMRG\x05\x15M\x14\x1C\x0B\x156msFY\&#xa;  Auth Plugin Name: mysql_native_password"><elem key="Protocol">10</elem>
+<elem key="Version">5.7.44-percona-sure1-log</elem>
+<elem key="Thread ID">1277372</elem>
+<elem key="Capabilities flags">65535</elem>
+<table key="Some Capabilities">
+<elem>FoundRows</elem>
+<elem>SupportsCompression</elem>
+<elem>IgnoreSpaceBeforeParenthesis</elem>
+<elem>Support41Auth</elem>
+<elem>SupportsTransactions</elem>
+<elem>SupportsLoadDataLocal</elem>
+<elem>IgnoreSigpipes</elem>
+<elem>InteractiveClient</elem>
+<elem>ConnectWithDatabase</elem>
+<elem>DontAllowDatabaseTableColumn</elem>
+<elem>LongPassword</elem>
+<elem>LongColumnFlag</elem>
+<elem>ODBCClient</elem>
+<elem>SwitchToSSLAfterHandshake</elem>
+<elem>Speaks41ProtocolNew</elem>
+<elem>Speaks41ProtocolOld</elem>
+<elem>SupportsMultipleResults</elem>
+<elem>SupportsAuthPlugins</elem>
+<elem>SupportsMultipleStatments</elem>
+</table>
+<elem key="Status">Autocommit</elem>
+<elem key="Salt">iS_LMRG\x05\x15M\x14\x1C\x0B\x156msFY\</elem>
+<elem key="Auth Plugin Name">mysql_native_password</elem>
+</script></port>
+</ports>
+<times srtt="17071" rttvar="463" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1731003599"/>
+<taskend task="NSE" time="1731003599"/>
+<taskbegin task="NSE" time="1731003599"/>
+<taskend task="NSE" time="1731003599"/>
+<taskbegin task="NSE" time="1731003599"/>
+<taskend task="NSE" time="1731003599"/>
+<runstats><finished time="1731003599" timestr="Thu Nov  7 18:19:59 2024" elapsed="154.76" summary="Nmap done at Thu Nov  7 18:19:59 2024; 1 IP address (1 host up) scanned in 154.76 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
