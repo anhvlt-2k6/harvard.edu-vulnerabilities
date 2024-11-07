@@ -17,3 +17,131 @@
 <taskbegin task="Connect Scan" time="1731001895"/>
 <taskend task="Connect Scan" time="1731001899" extrainfo="1000 total ports"/>
 <taskbegin task="Service scan" time="1731001899"/>
+<taskend task="Service scan" time="1731001911" extrainfo="3 services on 1 host"/>
+<taskbegin task="NSE" time="1731001911"/>
+<taskend task="NSE" time="1731001916"/>
+<taskbegin task="NSE" time="1731001916"/>
+<taskend task="NSE" time="1731001917"/>
+<taskbegin task="NSE" time="1731001917"/>
+<taskend task="NSE" time="1731001917"/>
+<host starttime="1731001895" endtime="1731001917"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="18.190.132.112" addrtype="ipv4"/>
+<hostnames>
+<hostname name="icgd.bwh.harvard.edu" type="user"/>
+<hostname name="ec2-18-190-132-112.us-east-2.compute.amazonaws.com" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="996">
+<extrareasons reason="no-responses" count="996"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="7.4" extrainfo="protocol 2.0" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.4</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 b8:d2:be:34:25:a7:33:53:fa:ee:f3:60:ed:e1:80:07 (RSA)&#xa;  256 24:d1:a3:41:fa:b2:83:24:e5:8f:96:d9:5d:84:b1:01 (ECDSA)&#xa;  256 e0:85:ef:7d:22:1b:68:0d:5d:60:1b:ed:c5:98:24:70 (ED25519)"><table>
+<elem key="bits">2048</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDIkbgsMm+/ldmgp60PK0c9q6gOZofY91jTU7UXppfP6semoyJUqMe9B3ZQeUfpzeyQp8bLozimjLJYOW1hvDMtdc/FWz2H7YJ9JSCwVQO80yihZNBmbfmRWuU5F24SKCpdDSQS8zqhp3G8+mvx0nMcdMq1CSLqVEwjbAFUYHcVy37L9iBDbQt6SmO4zG4TeFhdz/ylUMhe2ugw9nE5wRqBeMM+JL7Zosaitv4ClBgUyX0qoOxzYnWEhKGGIchoErnwHFXbcR9NYAL6x9GxVIFIXbCMZmc7OfjJ2pHTpIKUVwR3DOvx9cB5dHf3kz+uG13WWvEnl65bnFEoFdrQkEhP</elem>
+<elem key="fingerprint">b8d2be3425a73353faeef360ede18007</elem>
+</table>
+<table>
+<elem key="bits">256</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBEJcYuP/7Ik1Wtz+wjmW+wpMniQp6vVqR2NJaNUImirudkdQTbQlnKaieDPuROdAQKykFs4slY3iIzuhGjC1l2I=</elem>
+<elem key="fingerprint">24d1a341fab28324e58f96d95d84b101</elem>
+</table>
+<table>
+<elem key="bits">256</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIN5ywM4sQjhu4GXlzkSJeEgejcmeVBjzN43GZC0yaz5z</elem>
+<elem key="fingerprint">e085ef7d221b680d5d601bedc5982470</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.51" extrainfo="() OpenSSL/1.0.2k-fips" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.51</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="Apache/2.4.51 () OpenSSL/1.0.2k-fips"><elem>Apache/2.4.51 () OpenSSL/1.0.2k-fips</elem>
+</script><script id="http-title" output="Did not follow redirect to https://icgd.bwh.harvard.edu/"><elem key="redirect_url">https://icgd.bwh.harvard.edu/</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssl" product="Apache httpd" extrainfo="SSL-only mode" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:apache:http_server</cpe></service><script id="http-favicon" output="Unknown favicon MD5: 28D1E7AD8BC4D9D9B0E582E1478CE994"/><script id="http-generator"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="Apache/2.4.51 () OpenSSL/1.0.2k-fips"><elem>Apache/2.4.51 () OpenSSL/1.0.2k-fips</elem>
+</script><script id="http-title" output="Home | International Center for Genetic Disease at Harvard Med..."><elem key="title">Home | International Center for Genetic Disease at Harvard Medical School</elem>
+</script><script id="ssl-cert" output="Subject: commonName=icgd.bwh.harvard.edu&#xa;Subject Alternative Name: DNS:icgd.bwh.harvard.edu&#xa;Issuer: commonName=R10/organizationName=Let&apos;s Encrypt/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-09-18T14:14:04&#xa;Not valid after:  2024-12-17T14:14:03&#xa;MD5:   7b84 fff9 e87f 10e2 74a8 fd41 6e96 0440&#xa;SHA-1: d422 e80f 0b99 71df fe72 0b82 9992 42db cae4 8811"><table key="subject">
+<elem key="commonName">icgd.bwh.harvard.edu</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">R10</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">2048</elem>
+<elem key="modulus">BIGNUM: 0x55fe6bdff298</elem>
+<elem key="type">rsa</elem>
+<elem key="exponent">BIGNUM: 0x55fe6cea8df8</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Key Usage</elem>
+</table>
+<table>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+<elem key="name">X509v3 Extended Key Usage</elem>
+</table>
+<table>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+</table>
+<table>
+<elem key="value">14:65:51:63:07:21:CE:84:B9:0E:9E:40:F6:B8:49:47:2B:ED:88:02</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="value">BB:BC:C3:47:A5:E4:BC:A9:C6:C3:A4:72:0C:10:8D:A2:35:E1:C8:E8</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">OCSP - URI:http://r10.o.lencr.org&#xa;CA Issuers - URI:http://r10.i.lencr.org/</elem>
+<elem key="name">Authority Information Access</elem>
+</table>
+<table>
+<elem key="value">DNS:icgd.bwh.harvard.edu</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+<table>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+<elem key="name">X509v3 Certificate Policies</elem>
+</table>
+<table>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 19:98:10:71:09:F0:D6:52:2E:30:80:D2:9E:3F:64:BB:&#xa;                83:6E:28:CC:F9:0F:52:8E:EE:DF:CE:4A:3F:16:B4:CA&#xa;    Timestamp : Sep 18 15:12:34.486 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:E2:F3:02:2A:8A:C8:2C:1B:5C:F9:83:&#xa;                C4:CD:19:DF:83:48:05:FC:94:7F:50:D8:5F:47:3B:14:&#xa;                52:A6:41:46:0D:02:20:71:D7:E8:A1:DB:1D:75:20:56:&#xa;                3E:DC:A8:4D:C7:DA:11:B8:D8:7E:40:DA:9E:67:4B:14:&#xa;                20:2F:57:45:27:2A:00&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 76:FF:88:3F:0A:B6:FB:95:51:C2:61:CC:F5:87:BA:34:&#xa;                B4:A4:CD:BB:29:DC:68:42:0A:9F:E6:67:4C:5A:3A:74&#xa;    Timestamp : Sep 18 15:12:34.546 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:53:C8:DD:BD:CC:72:05:68:9C:5D:C5:7D:&#xa;                3B:B2:66:5D:C9:B9:FD:3F:40:2C:B5:7B:9E:E0:DC:90:&#xa;                46:C5:60:60:02:20:15:C3:0A:81:67:89:8C:E3:9D:66:&#xa;                DC:8B:06:8F:3F:52:08:B5:EA:09:B8:B1:96:1C:A4:45:&#xa;                6B:41:2A:13:B8:9B</elem>
+<elem key="name">CT Precertificate SCTs</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notAfter">2024-12-17T14:14:03</elem>
+<elem key="notBefore">2024-09-18T14:14:04</elem>
+</table>
+<elem key="md5">7b84fff9e87f10e274a8fd416e960440</elem>
+<elem key="sha1">d422e80f0b9971dffe720b82999242dbcae48811</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIE9zCCA9+gAwIBAgISA8fgPzT3tSoGWZb0ybinE53uMA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNSMTAwHhcNMjQwOTE4MTQxNDA0WhcNMjQxMjE3MTQxNDAzWjAfMR0wGwYDVQQD&#xa;ExRpY2dkLmJ3aC5oYXJ2YXJkLmVkdTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCC&#xa;AQoCggEBANU0zUfZvsTjNPgli/23jX4ZodPemyOtLxuoh0epbtS43TIelcPOVzhB&#xa;1lSu5oqSSp+e4reMfCE1zQN/B/NJYqGQMI6diri9qrloURXTUFQAw/aKoE9mnv3i&#xa;U3CZl2QLx4WmmXU1zK/Cr8DQ8OamVokUl/1r3bocTQewtgJmRqAqft7vizusbZux&#xa;0xePko6osmZm8El909cGdFRhfo3SMlvQK+9pFlLn5fIFqUPlI6bmFfmr93sC0hrE&#xa;GBrQA3MZ5Lg0bvr+LIHFY0wN1Sjw7B7AaYE1v5ttY30fWiVf6h6uGY+BxpxoLYuH&#xa;laGLg65VexUtRyly0gswkBf7kbLTITUCAwEAAaOCAhcwggITMA4GA1UdDwEB/wQE&#xa;AwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIw&#xa;ADAdBgNVHQ4EFgQUFGVRYwchzoS5Dp5A9rhJRyvtiAIwHwYDVR0jBBgwFoAUu7zD&#xa;R6XkvKnGw6RyDBCNojXhyOgwVwYIKwYBBQUHAQEESzBJMCIGCCsGAQUFBzABhhZo&#xa;dHRwOi8vcjEwLm8ubGVuY3Iub3JnMCMGCCsGAQUFBzAChhdodHRwOi8vcjEwLmku&#xa;bGVuY3Iub3JnLzAfBgNVHREEGDAWghRpY2dkLmJ3aC5oYXJ2YXJkLmVkdTATBgNV&#xa;HSAEDDAKMAgGBmeBDAECATCCAQMGCisGAQQB1nkCBAIEgfQEgfEA7wB2ABmYEHEJ&#xa;8NZSLjCA0p4/ZLuDbijM+Q9Sju7fzko/FrTKAAABkgWxPLYAAAQDAEcwRQIhAOLz&#xa;AiqKyCwbXPmDxM0Z34NIBfyUf1DYX0c7FFKmQUYNAiBx1+ih2x11IFY+3KhNx9oR&#xa;uNh+QNqeZ0sUIC9XRScqAAB1AHb/iD8KtvuVUcJhzPWHujS0pM27KdxoQgqf5mdM&#xa;Wjp0AAABkgWxPPIAAAQDAEYwRAIgU8jdvcxyBWicXcV9O7JmXcm5/T9ALLV7nuDc&#xa;kEbFYGACIBXDCoFniYzjnWbciwaPP1IIteoJuLGWHKRFa0EqE7ibMA0GCSqGSIb3&#xa;DQEBCwUAA4IBAQA98XAMYUcxr8Hg86cWYkHlhVTCrODGGUAdR9mbfVtkwdVOtotT&#xa;XCy8SMmoSbjfWSe7eUfZjRE5R0WKdSusoYmFT2D5+v+/QDcXYV1fKiDX1Ei/zgb3&#xa;c9TjNaNbu/EwavKk+0hBoD43hf9AvuCDO9QG87qLqkqmpAOVr+qqxDqcph3w/iX/&#xa;glQXmYPPdvQiZho+AnGhbBDCdJyiKf4D3YspJuuORpv/heJN1fuy7DscwANa8Oja&#xa;cHJ47xn5yc94XYwoe7nwSYW6v1pWBqiOZW7Sok15mn/NajJvk27QQwrxKksneKSV&#xa;O4YseltptS4/3YeFAQPxZ2Bxjmnlruqz+PBf&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="tls-alpn" output="&#xa;  http/1.1"><elem>http/1.1</elem>
+</script></port>
+<port protocol="tcp" portid="3306"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="mysql" method="table" conf="3"/></port>
+</ports>
+<times srtt="23694" rttvar="7577" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1731001917"/>
+<taskend task="NSE" time="1731001917"/>
+<taskbegin task="NSE" time="1731001917"/>
+<taskend task="NSE" time="1731001917"/>
+<taskbegin task="NSE" time="1731001917"/>
+<taskend task="NSE" time="1731001917"/>
+<runstats><finished time="1731001917" timestr="Thu Nov  7 17:51:57 2024" elapsed="22.63" summary="Nmap done at Thu Nov  7 17:51:57 2024; 1 IP address (1 host up) scanned in 22.63 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
